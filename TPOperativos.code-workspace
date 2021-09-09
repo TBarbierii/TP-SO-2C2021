@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "Modulo1"
+		},
+		{
+			"path": "Modulo2"
+		},
+		{
+			"path": "Modulo3"
+		},
+		{
+			"path": "shared"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"modulo1.h": "c",
+			"shared_utils.h": "c"
+		}
+	}
+}
