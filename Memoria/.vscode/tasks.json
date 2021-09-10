@@ -10,12 +10,12 @@
             ]
         },
         {
-            "label": "Modulo3 Normal",
+            "label": "Memoria Normal",
             "type": "shell",
             "command": "./exec.sh"
         },
         {
-            "label": "Modulo3 Valgrind",
+            "label": "Memoria Valgrind",
             "type": "shell",
             "command": "./vexec.sh"
         }

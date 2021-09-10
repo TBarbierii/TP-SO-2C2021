@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Modulo1",
+            "name": "Kernel",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Modulo1",
+            "program": "${workspaceFolder}/Kernel",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

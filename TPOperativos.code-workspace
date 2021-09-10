@@ -1,22 +1,19 @@
 {
 	"folders": [
 		{
-			"path": "Modulo1"
+			"path": "Kernel"
 		},
 		{
-			"path": "Modulo2"
+			"path": "MateLib"
 		},
 		{
-			"path": "Modulo3"
+			"path": "Memoria"
 		},
 		{
 			"path": "shared"
+		},
+		{
+			"path": "SWAmP"
 		}
-	],
-	"settings": {
-		"files.associations": {
-			"modulo1.h": "c",
-			"shared_utils.h": "c"
-		}
-	}
+	]
 }

@@ -1,4 +1,4 @@
-PROCESS_NAME=Modulo2
+PROCESS_NAME=SWAmP
 IDIR =./include
 SHARED_IDIR = ../shared/include
 CC=gcc

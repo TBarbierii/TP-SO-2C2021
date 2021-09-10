@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Modulo3",
+            "name": "SWAmP",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Modulo3",
+            "program": "${workspaceFolder}/SWAmP",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

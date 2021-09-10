@@ -10,12 +10,12 @@
             ]
         },
         {
-            "label": "Modulo1 Normal",
+            "label": "SWAmP Normal",
             "type": "shell",
             "command": "./exec.sh"
         },
         {
-            "label": "Modulo1 Valgrind",
+            "label": "SWAmP Valgrind",
             "type": "shell",
             "command": "./vexec.sh"
         }

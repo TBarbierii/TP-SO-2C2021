@@ -10,12 +10,12 @@
             ]
         },
         {
-            "label": "Modulo2 Normal",
+            "label": "Kernel Normal",
             "type": "shell",
             "command": "./exec.sh"
         },
         {
-            "label": "Modulo2 Valgrind",
+            "label": "Kernel Valgrind",
             "type": "shell",
             "command": "./vexec.sh"
         }

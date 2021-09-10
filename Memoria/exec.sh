@@ -1,5 +1,5 @@
 #!/bin/bash
-FILE=Modulo1
+FILE=Memoria
 make $FILE
 if test -f "./$FILE"; then
     ./$FILE

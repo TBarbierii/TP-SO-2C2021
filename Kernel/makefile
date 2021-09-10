@@ -1,4 +1,4 @@
-PROCESS_NAME=Modulo1
+PROCESS_NAME=Kernel
 IDIR =./include
 SHARED_IDIR = ../shared/include
 CC=gcc

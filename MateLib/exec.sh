@@ -1,5 +1,5 @@
 #!/bin/bash
-FILE=Modulo2
+FILE=MateLib
 make $FILE
 if test -f "./$FILE"; then
     ./$FILE

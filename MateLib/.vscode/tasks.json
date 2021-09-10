@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Make",
+            "type": "shell",
+            "command": "make",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "MateLib Normal",
+            "type": "shell",
+            "command": "./exec.sh"
+        },
+        {
+            "label": "MateLib Valgrind",
+            "type": "shell",
+            "command": "./vexec.sh"
+        }
+    ]
+}

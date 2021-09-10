@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Modulo2",
+            "name": "Memoria",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Modulo2",
+            "program": "${workspaceFolder}/Memoria",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
