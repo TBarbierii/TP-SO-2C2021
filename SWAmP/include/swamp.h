@@ -1,5 +1,5 @@
-#ifndef PROCESO3_H
-#define PROCESO3_H
+#ifndef SWAMP_H
+#define SWAMP_H
 
 #include <stdio.h>
 #include <commons/log.h>
