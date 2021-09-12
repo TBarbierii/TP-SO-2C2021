@@ -1,4 +1,4 @@
-#include "Modulo2.h"
+#include "Kernel.h"
 
 int main(){
     t_log* logger = log_create("./cfg/proceso2.log", "PROCESO1", true, LOG_LEVEL_INFO);

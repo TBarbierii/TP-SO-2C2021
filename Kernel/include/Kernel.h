@@ -1,5 +1,5 @@
-#ifndef PROCESO2_H
-#define PROCESO2_H
+#ifndef KERNEL_H
+#define KERNEL_H
 
 #include <stdio.h>
 #include <commons/log.h>
