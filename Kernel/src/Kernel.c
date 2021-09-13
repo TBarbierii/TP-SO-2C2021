@@ -4,7 +4,6 @@
 void inicializarListas(){
     procesosNew = list_create();
     procesosReady = list_create();
-    procesosBlockIO = list_create();
     procesosExec = list_create();
     procesosExit = list_create();
     procesosSuspendedReady = list_create();
@@ -15,7 +14,6 @@ void finalizarListas(){
     list_destroy(procesosNew);
     list_destroy(procesosReady);
     list_destroy(procesosExec);
-    list_destroy(procesosBlockIO);
     list_destroy(procesosExit);
     list_destroy(procesosSuspendedReady);
     list_destroy(procesosSuspendedBlock);
