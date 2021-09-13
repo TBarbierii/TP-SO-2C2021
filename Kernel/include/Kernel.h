@@ -9,7 +9,8 @@
 #include <commons/collections/list.h>
 #include <commons/config.h>
 #include <semaphore.h>
-
+#include <string.h>
+#include <commons/string.h>
 
 /* variables obtenidas del config*/
 
@@ -53,10 +54,15 @@ typedef struct
 }dispositivoIO;
 
 
+
+
+/* funciones */
 void inicializarListas();
 void finalizarListas();
 t_config* inicializarConfig();
+void obtenerValoresDelConfig(t_config* configActual);
+void inicializarDispositivosIO(char ** dispositivos, char** duraciones);
 void finalizarConfig(t_config* configUsado);
-
+void finalizarDispositivosIO();
 
 #endif
