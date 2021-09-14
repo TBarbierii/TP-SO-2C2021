@@ -11,6 +11,7 @@
 #include <semaphore.h>
 #include <string.h>
 #include <commons/string.h>
+#include "PlanificadorLargoPlazo.h"
 
 /* variables obtenidas del config*/
 
@@ -53,7 +54,9 @@ typedef struct
     t_list* listaDeProcesosEnEspera;
 }dispositivoIO;
 
+//Semaforos compartidos en los distintos planificadores
 
+sem_t * modificarReady ;
 
 
 /* funciones */
