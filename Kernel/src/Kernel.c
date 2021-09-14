@@ -77,11 +77,12 @@ void inicializarDispositivosIO(char ** dispositivos, char** duraciones){
         free(nombreActual);
         free(duracionActual);
     }
-    
-    list_destroy(duracionesDispositivos);
-    list_destroy(nombresDispositivos);
     free(dispositivos);
     free(duraciones);
+    list_destroy(duracionesDispositivos);
+    list_destroy(nombresDispositivos);
+    
+    
 }
 
 
