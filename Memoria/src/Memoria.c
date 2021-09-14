@@ -9,6 +9,7 @@ void obtenerValoresDelConfig(t_config* configActual){
     ipSWAmP = config_get_string_value(configActual, "IP_SWAMP");
     puertoSWAmP = config_get_string_value(configActual, "PUERTO_SWAMP");
     tamanio = config_get_int_value(configActual, "TAMANIO");
+    tamanioPagina = config_get_int_value(configActual, "TAMANIO_PAGINA");
     algoritmoReemplazoMMU = config_get_string_value(configActual, "ALGORITMO_REEMPLAZO_MMU");
     tipoAsignacion = config_get_string_value(configActual, "TIPO_ASIGNACION");
     marcosMaximos = config_get_int_value(configActual, "MARCOS_MAXIMOS");
@@ -22,9 +23,12 @@ void finalizarConfig(t_config* configUsado){
     config_destroy(configUsado);
 }
 
+void inicializarMemoria() {
+    memoriaPrincipal = malloc(tamanio);
+}
 
-
-
+void finalizarMemoria() {
+}
 
 int main(){
 
