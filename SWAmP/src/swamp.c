@@ -1,9 +1,13 @@
 #include "swamp.h"
-#include "swamp_lib.c"
 
 int main(){
-    t_log* logger = log_create("./cfg/proceso3.log", "PROCESO3", true, LOG_LEVEL_INFO);
-    log_info(logger, "Soy el proceso 3! %s", mi_funcion_compartida());
-    log_destroy(logger);
+    t_log* logger_swamp = log_create("./cfg/logger_swamp.log", "SWAmP", true, LOG_LEVEL_INFO);
+    t_config* config_swamp = config_create("./cfg/swamp.config");
 
+    obtenerValoresDelConfig(config_swamp);
+
+
+
+    log_destroy(logger_swamp);
+    config_destroy(config_swamp);
 }
