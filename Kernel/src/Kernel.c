@@ -10,6 +10,11 @@ void inicializarListas(){
     procesosSuspendedBlock = list_create();
 }
 
+void inicializarSemaforos(){
+    sem_init(modificarReady,1,1); 
+
+}
+
 void finalizarListas(){
     list_destroy(procesosNew);
     list_destroy(procesosReady);
