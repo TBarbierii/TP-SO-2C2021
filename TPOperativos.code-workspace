@@ -24,7 +24,9 @@
 			"string.h": "c",
 			"semaphore.h": "c",
 			"stdio.h": "c",
-			"log.h": "c"
+			"log.h": "c",
+			"matelib.h": "c",
+			"shared_utils.h": "c"
 		}
 	}
 }
