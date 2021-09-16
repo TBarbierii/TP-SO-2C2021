@@ -15,5 +15,16 @@
 		{
 			"path": "SWAmP"
 		}
-	]
+	],
+	"settings": {
+		"files.associations": {
+			"kernel.h": "c",
+			"list.h": "c",
+			"PlanificadorLargoPlazo.C": "cpp",
+			"string.h": "c",
+			"semaphore.h": "c",
+			"stdio.h": "c",
+			"log.h": "c"
+		}
+	}
 }
