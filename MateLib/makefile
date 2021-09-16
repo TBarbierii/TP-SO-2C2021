@@ -1,4 +1,4 @@
-PROCESS_NAME=MateLib
+PROCESS_NAME=matelib
 IDIR =./include
 SHARED_IDIR = ../shared/include
 CC=gcc
