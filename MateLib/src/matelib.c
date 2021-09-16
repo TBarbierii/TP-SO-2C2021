@@ -4,41 +4,47 @@
 
 //------------------General Functions---------------------/
 int mate_init(mate_instance *lib_ref, char *config){
+    
     inicializarPrimerasCosas(lib_ref,config);
     int conexion = conectarseABackEnd(lib_ref);
     
-    solicitarIniciarPatota(conexion, lib_ref);
-    recibir_mensaje(conexion, lib_ref);
-    
-    close(conexion);
+    if(conexion == -1){
+        lib_ref->group_info->backEndConectado = ERROR;
+    }else{
 
-    if(lib_ref->pid < 0 ){
-        perror("No se pudo crear la instancia :(");
-        return -1;
+        solicitarIniciarPatota(conexion, lib_ref->group_info);
+        recibir_mensaje(conexion, lib_ref->group_info);
+        
+
+        if(lib_ref->group_info->pid < 0 ){
+            perror("No se pudo crear la instancia :(");
+            return -1;
+        }
+
+        lib_ref->group_info->conexionConBackEnd = conexion;
+        
+        
+        char* nombreLog = string_new();
+        string_append(&nombreLog, "Proceso ");
+        string_append(&nombreLog, string_itoa((int) lib_ref->group_info->pid));
+        string_append(&nombreLog, ".log");
+
+        lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",0,LOG_LEVEL_DEBUG);
+
+        free(nombreLog);
     }
-
-    char* nombreLog = string_new();
-    string_append(&nombreLog, "Proceso ");
-    string_append(&nombreLog, string_itoa((int) lib_ref->pid));
-    string_append(&nombreLog, ".log");
-
-    lib_ref->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",0,LOG_LEVEL_DEBUG);
-
-    free(nombreLog);
-
-    return lib_ref->backEndConectado;
+    return lib_ref->group_info->backEndConectado;
 }
 
 
 
 int mate_close(mate_instance *lib_ref){
 
-    int conexion = conectarseABackEnd(lib_ref);
     
-    solicitarCerrarPatota(conexion, lib_ref);
-    recibir_mensaje(conexion, lib_ref);
+    solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
 
-    close(conexion);
+    close(lib_ref->group_info->conexionConBackEnd);
 
     return 0;
 }
@@ -91,15 +97,17 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 int conectarseABackEnd(mate_instance *lib_ref){
     
-    return crear_conexion(lib_ref->ipBackEnd, lib_ref->puertoBackEnd);
+    return crear_conexion(lib_ref->group_info->ipBackEnd, lib_ref->group_info->puertoBackEnd);
 }
 
 void inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
 
+    lib_ref->group_info = malloc(sizeof(mate_struct));
+
     t_config* datosBackEnd = config_create(config);
-    lib_ref->configUtilizado = datosBackEnd;
-    lib_ref->ipBackEnd = config_get_string_value(datosBackEnd,"IP_BACKEND");
-    lib_ref->puertoBackEnd = config_get_string_value(datosBackEnd,"PUERTO_BACKEND");
+    lib_ref->group_info->configUtilizado = datosBackEnd;
+    lib_ref->group_info->ipBackEnd = config_get_string_value(datosBackEnd,"IP_BACKEND");
+    lib_ref->group_info->puertoBackEnd = config_get_string_value(datosBackEnd,"PUERTO_BACKEND");
     free(config);
 }
 
@@ -142,18 +150,20 @@ void agregarInfoAdministrativa(mate_instance* lib_ref, t_buffer* buffer){
 	void* stream = buffer->stream;
 	int offset = 0;
 
-	memcpy(&(lib_ref->pid), stream+offset, sizeof(uint32_t));
+	memcpy(&(lib_ref->group_info->pid), stream+offset, sizeof(uint32_t));
 	offset += sizeof(uint32_t);
 
-	memcpy(&(lib_ref->backEndConectado), stream+offset, sizeof(uint32_t));
+	memcpy(&(lib_ref->group_info->backEndConectado), stream+offset, sizeof(uint32_t));
 
 }
 
 
 
 void liberarEstructurasDeProceso(mate_instance* lib_ref){
-    config_destroy(lib_ref->configUtilizado);
-    log_destroy(lib_ref->loggerProceso);
+    config_destroy(lib_ref->group_info->configUtilizado);
+    log_destroy(lib_ref->group_info->loggerProceso);
+    free(lib_ref->group_info);
+    free(lib_ref);
 }
 
 
@@ -177,7 +187,7 @@ void solicitarCerrarPatota(int conexion, mate_instance* lib_ref){
 
     paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
-    memcpy(paquete->buffer->stream, lib_ref->pid, paquete->buffer->size);
+    memcpy(paquete->buffer->stream, lib_ref->group_info->pid, paquete->buffer->size);
 
     int bytes = paquete->buffer->size + sizeof(cod_operacion) + sizeof(uint32_t);
     void* contenido_a_enviar= serializar_paquete(paquete, bytes);

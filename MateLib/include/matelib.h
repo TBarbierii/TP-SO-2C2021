@@ -12,16 +12,24 @@
 
 typedef struct mate_instance
 {
-    void *group_info;
+    mate_struct* group_info;
 
+} mate_instance;
+
+
+typedef struct
+{
     uint32_t pid;
+    
+    int conexionConBackEnd;
     char* ipBackEnd;
     char* puertoBackEnd;
-    uint32_t backEndConectado;
+    backend backEndConectado;
+
     t_log* loggerProceso;
     t_config* configUtilizado;
 
-} mate_instance;
+}mate_struct;
 
 
 typedef enum{
