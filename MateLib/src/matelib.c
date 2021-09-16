@@ -5,9 +5,9 @@
 //------------------General Functions---------------------/
 int mate_init(mate_instance *lib_ref, char *config){
     
-    inicializarPrimerasCosas(lib_ref,config);
-    int conexion = conectarseABackEnd(lib_ref);
+    int conexion = inicializarPrimerasCosas(lib_ref,config);
     
+
     if(conexion == -1){
         lib_ref->group_info->backEndConectado = ERROR;
     }else{
@@ -95,20 +95,19 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 //--------- Funciones extras---------//
 
-int conectarseABackEnd(mate_instance *lib_ref){
-    
-    return crear_conexion(lib_ref->group_info->ipBackEnd, lib_ref->group_info->puertoBackEnd);
-}
 
-void inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
+int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
 
     lib_ref->group_info = malloc(sizeof(mate_struct));
 
     t_config* datosBackEnd = config_create(config);
-    lib_ref->group_info->configUtilizado = datosBackEnd;
-    lib_ref->group_info->ipBackEnd = config_get_string_value(datosBackEnd,"IP_BACKEND");
-    lib_ref->group_info->puertoBackEnd = config_get_string_value(datosBackEnd,"PUERTO_BACKEND");
+    char* ipBackEnd = config_get_string_value(datosBackEnd,"IP_BACKEND");
+    char* puertoBackEnd = config_get_string_value(datosBackEnd,"PUERTO_BACKEND");
+    int conexionConBackEnd = crear_conexion(ipBackEnd, puertoBackEnd);
+    
     free(config);
+
+    return conexionConBackEnd;
 }
 
 
@@ -160,7 +159,6 @@ void agregarInfoAdministrativa(mate_instance* lib_ref, t_buffer* buffer){
 
 
 void liberarEstructurasDeProceso(mate_instance* lib_ref){
-    config_destroy(lib_ref->group_info->configUtilizado);
     log_destroy(lib_ref->group_info->loggerProceso);
     free(lib_ref->group_info);
     free(lib_ref);

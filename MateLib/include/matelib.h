@@ -12,22 +12,18 @@
 
 typedef struct mate_instance
 {
-    mate_struct* group_info;
+    mate_struct* group_info; // Tenemos un puntero a la estructura del "Carpincho" (es decir su estructura administrativa). 
 
 } mate_instance;
 
 
 typedef struct
 {
-    uint32_t pid;
+    uint32_t pid; // identificador de cada proceso que se vaya a instanciar.
     
-    int conexionConBackEnd;
-    char* ipBackEnd;
-    char* puertoBackEnd;
-    backend backEndConectado;
-
-    t_log* loggerProceso;
-    t_config* configUtilizado;
+    int conexionConBackEnd; // se obtiene informacion del backend (memoria o kernel) - guarda el socket al servidor que se esta conectando.
+    backend backEndConectado; // id de backend al que nos estamos conectando. En caso de que sea -1 error.
+    t_log* loggerProceso; // el log nos va a dar la referencia a la hora de planificar al proceso.
 
 }mate_struct;
 
@@ -36,7 +32,7 @@ typedef enum{
 
     ERROR = -1,
     KERNEL = 0,
-    MEMORIA = 1
+    MEMORIA = 1 
 
 }backend;
 
@@ -79,9 +75,9 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 /*------ Funciones extras --------*/
 
-int conectarseABackEnd(mate_instance *lib_ref);
+// int conectarseABackEnd(char* ipBackEnd, char*puertoBackEnd);
 
-void inicializarPrimerasCosas(mate_instance *lib_ref, char *config);
+int inicializarPrimerasCosas(mate_instance *lib_ref, char *config);
 
 void recibir_mensaje(int conexion, mate_instance* lib_ref);
 

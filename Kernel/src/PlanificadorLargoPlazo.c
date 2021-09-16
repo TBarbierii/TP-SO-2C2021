@@ -8,9 +8,9 @@ void planificadorLargoPlazo(){
         sem_wait(semaforoProcesosEnNew);
         sem_wait(semaforoDeMultiprogramacion);
 
-        char* proceso = list_remove(procesosNew,0); // todavia no sabemos la estructura del proceso por ende tampoco el tipo    
+        proceso* procesoNuevo = (proceso*) list_remove(procesosNew,0); // todavia no sabemos la estructura del proceso por ende tampoco el tipo    
         sem_wait(modificarReady);
-        list_add(procesosReady,proceso);
+        list_add(procesosReady,procesoNuevo);
         sem_post(modificarReady);
     }
 }

@@ -13,6 +13,17 @@
 #include <commons/string.h>
 #include "PlanificadorLargoPlazo.h"
 
+
+/* Procesos */
+typedef struct{
+    int pid ;
+    int conexion; // es el socket del proceso -- duda
+    int estimacionAnterior; // es para el algoritmo SJF 
+    int tiempoDeEspera; // para HRRN
+    int ultimaRafaga ; 
+
+}proceso ;
+
 /* variables obtenidas del config*/
 
 char* ipMemoria;
@@ -34,6 +45,7 @@ t_list* procesosSuspendedReady;
 
 /* lista de semaforos actuales inicializados */
 t_list* semaforosActuales;
+
 /* estructura de los semaforos */
 typedef struct /* */
 {
@@ -41,6 +53,7 @@ typedef struct /* */
     int valor;
     sem_t* semaforoActual; //quiza esto no va a ser necesario, xq quiza tengamos que hacerlo mas teorico nosotros
     t_list* listaDeProcesosEnEspera;
+
 }semaforo;
 
 
