@@ -12,8 +12,8 @@ int mate_init(mate_instance *lib_ref, char *config){
         lib_ref->group_info->backEndConectado = ERROR;
     }else{
 
-        solicitarIniciarPatota(conexion, lib_ref->group_info);
-        recibir_mensaje(conexion, lib_ref->group_info);
+        solicitarIniciarPatota(conexion, lib_ref);
+        recibir_mensaje(conexion, lib_ref);
         
 
         if(lib_ref->group_info->pid < 0 ){
@@ -40,11 +40,8 @@ int mate_init(mate_instance *lib_ref, char *config){
 
 int mate_close(mate_instance *lib_ref){
 
-    
     solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
     recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-
-    close(lib_ref->group_info->conexionConBackEnd);
 
     return 0;
 }
@@ -118,7 +115,6 @@ void recibir_mensaje(int conexion, mate_instance* lib_ref) {
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
 		perror("Fallo en recibir la info de la conexion");
-		return 1;
 	}
 
 	paquete->buffer = malloc(sizeof(t_buffer));
@@ -134,7 +130,8 @@ void recibir_mensaje(int conexion, mate_instance* lib_ref) {
         case CERRAR_INSTANCIA:;
             liberarEstructurasDeProceso(lib_ref);
             break;
-		
+		case INICIAR_SEMAFORO:;
+            break;
 	}
 
 
@@ -161,6 +158,7 @@ void agregarInfoAdministrativa(mate_instance* lib_ref, t_buffer* buffer){
 void liberarEstructurasDeProceso(mate_instance* lib_ref){
     log_destroy(lib_ref->group_info->loggerProceso);
     free(lib_ref->group_info);
+    close(lib_ref->group_info->conexionConBackEnd);
     free(lib_ref);
 }
 
@@ -170,12 +168,8 @@ void liberarEstructurasDeProceso(mate_instance* lib_ref){
 void solicitarIniciarPatota(int conexion, mate_instance* lib_ref){
     
     t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
-    int bytes = paquete->buffer->size + sizeof(cod_operacion) + sizeof(uint32_t);
-    void* contenido_a_enviar= serializar_paquete(paquete, bytes);
-    
-    send(conexion, contenido_a_enviar,bytes,0);
-    
-    free(contenido_a_enviar);
+
+    enviarPaquete(paquete,conexion);
 }
 
 
@@ -185,12 +179,38 @@ void solicitarCerrarPatota(int conexion, mate_instance* lib_ref){
 
     paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
-    memcpy(paquete->buffer->stream, lib_ref->group_info->pid, paquete->buffer->size);
+    memcpy(paquete->buffer->stream, &(lib_ref->group_info->pid), paquete->buffer->size);
+
+    enviarPaquete(paquete,conexion);
+}
+
+
+
+void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned int valor){
+    t_paquete* paquete = crear_paquete(INICIAR_SEMAFORO);
+
+    paquete->buffer->size = sizeof(uint32_t)*2 + string_length(nombreSemaforo) +1;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+
+    int desplazamiento = 0;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(string_length(nombreSemaforo)+1) , sizeof(uint32_t)); //NOSE PORQUE PINGO ESTA FALLANDO ACA
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(paquete->buffer->stream + desplazamiento, nombreSemaforo , string_length(nombreSemaforo)+1);
+    desplazamiento += string_length(nombreSemaforo)+1;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+
+    enviarPaquete(paquete,conexion);
+}
+
+
+
+void enviarPaquete(t_paquete* paquete, int conexion){
 
     int bytes = paquete->buffer->size + sizeof(cod_operacion) + sizeof(uint32_t);
     void* contenido_a_enviar= serializar_paquete(paquete, bytes);
-    
     send(conexion, contenido_a_enviar,bytes,0);
-    
     free(contenido_a_enviar);
 }

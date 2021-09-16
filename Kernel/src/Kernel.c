@@ -8,9 +8,10 @@ void inicializarListas(){
     procesosExit = list_create();
     procesosSuspendedReady = list_create();
     procesosSuspendedBlock = list_create();
+    semaforosActuales = list_create();
 }
 
-void inicializarSemaforos(){
+void inicializarSemaforosGlobales(){
     sem_init(modificarReady,1,1); 
 
 }
@@ -22,6 +23,7 @@ void finalizarListas(){
     list_destroy(procesosExit);
     list_destroy(procesosSuspendedReady);
     list_destroy(procesosSuspendedBlock);
+    list_destroy(semaforosActuales);
 }
 
 

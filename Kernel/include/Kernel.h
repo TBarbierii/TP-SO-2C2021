@@ -1,9 +1,15 @@
 #ifndef KERNEL_H
 #define KERNEL_H
 
+
+#include<commons/log.h>
 #include <stdio.h>
 #include <commons/log.h>
 #include <stdbool.h>
+#include <signal.h>
+#include <unistd.h>
+#include <sys/socket.h>
+#include <netdb.h>
 #include <stdlib.h>
 #include "shared_utils.h"
 #include <commons/collections/list.h>
@@ -12,7 +18,8 @@
 #include <string.h>
 #include <commons/string.h>
 #include "PlanificadorLargoPlazo.h"
-
+#include "Semaforos.h"
+#include <pthread.h>
 
 /* Procesos */
 typedef struct{
@@ -74,8 +81,10 @@ sem_t * modificarReady ;
 
 /* funciones */
 void inicializarListas();
+void inicializarSemaforosGlobales();
 void finalizarListas();
 t_config* inicializarConfig();
+
 void obtenerValoresDelConfig(t_config* configActual);
 void inicializarDispositivosIO(char ** dispositivos, char** duraciones);
 void finalizarConfig(t_config* configUsado);

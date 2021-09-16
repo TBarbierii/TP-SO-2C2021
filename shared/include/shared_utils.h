@@ -1,20 +1,24 @@
 #ifndef SHARED_UTILS_H
 #define SHARED_UTILS_H
 
-#include <stdio.h>
-#include <stdint.h>
-#include <commons/log.h>
-#include <stdbool.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<signal.h>
+#include<unistd.h>
 #include<sys/socket.h>
 #include<netdb.h>
+#include<string.h>
+ #include <pthread.h>
 #include<commons/log.h>
+#include<commons/collections/list.h>
 
 t_log* logger;
 
 
 typedef enum{
 	INICIALIZAR_ESTRUCTURA = 0,
-	CERRAR_INSTANCIA = 1
+	CERRAR_INSTANCIA = 1,
+	INICIAR_SEMAFORO = 2
 
 }cod_operacion;
 

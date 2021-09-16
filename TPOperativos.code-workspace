@@ -26,7 +26,12 @@
 			"stdio.h": "c",
 			"log.h": "c",
 			"matelib.h": "c",
-			"shared_utils.h": "c"
+			"shared_utils.h": "c",
+			"utils.h": "c",
+			"stdint.h": "c",
+			"semaforos.h": "c",
+			"signal.h": "c",
+			"planificadorlargoplazo.h": "c"
 		}
 	}
 }

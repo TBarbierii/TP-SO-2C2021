@@ -53,12 +53,12 @@ uint32_t esperar_cliente(uint32_t socket_servidor)
 void atender_solicitudes_multihilo(char* ip_servidor, char* puerto){
 	//crea un hilo por cada cliente que se conecta y lo atiende. El servidor ya estaria levantado
 
-	uint32_t servidor = iniciar_servidor(ip_servidor, puerto);
-	pthread_t* cliente;
+	// uint32_t servidor = iniciar_servidor(ip_servidor, puerto);
+	// pthread_t* cliente;
 	while(1){
-		uint32_t conexion_cliente = esperar_cliente(servidor);
+	//	uint32_t conexion_cliente = esperar_cliente(servidor);
 	//	pthread_create(&cliente,NULL,(void*)atender_solicitud,conexion_cliente);
-		pthread_detach(cliente);
+	//	pthread_detach(cliente);
 	}
 
 }

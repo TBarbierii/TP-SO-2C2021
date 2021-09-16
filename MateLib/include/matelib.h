@@ -4,17 +4,25 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include <string.h>
+#include <stdlib.h>
 #include <commons/log.h>
 #include "shared_utils.h"
 #include <commons/config.h>
 #include <commons/string.h>
+#include<sys/socket.h>
+#include <unistd.h>
 
 
-typedef struct mate_instance
-{
-    mate_struct* group_info; // Tenemos un puntero a la estructura del "Carpincho" (es decir su estructura administrativa). 
 
-} mate_instance;
+
+typedef enum{
+
+    ERROR = -1,
+    KERNEL = 0,
+    MEMORIA = 1 
+
+}backend;
 
 
 typedef struct
@@ -28,14 +36,11 @@ typedef struct
 }mate_struct;
 
 
-typedef enum{
+typedef struct mate_instance
+{
+    mate_struct* group_info; // Tenemos un puntero a la estructura del "Carpincho" (es decir su estructura administrativa). 
 
-    ERROR = -1,
-    KERNEL = 0,
-    MEMORIA = 1 
-
-}backend;
-
+} mate_instance;
 
 
 typedef char *mate_io_resource;
@@ -91,6 +96,8 @@ void solicitarIniciarPatota(int conexion, mate_instance* lib_ref);
 
 void solicitarCerrarPatota(int conexion, mate_instance* lib_ref);
 
+void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned int valor);
 
+void enviarPaquete(t_paquete* paquete, int conexion);
 
 #endif
