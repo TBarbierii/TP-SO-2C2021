@@ -20,13 +20,13 @@ void obtenerValoresDelConfig(t_config* configActual){
         contador++;
     }
 
-    crear_archivos_swap(archivos_swap);
+    crear_archivos_swap(archivos_swap, (tamanio_swap/tamanio_pagina));
 
     list_destroy(archivos_swap);
-    free(file_swap);
+    free(file_swap); //sobre esto, nose si se deberia hacer un free, xq creo que eso se hace recien cuando haga el config_Destroy()
 }
 
-void crear_archivos_swap(t_list* archivos_swap) {
+void crear_archivos_swap(t_list* archivos_swap, int cantidadParticiones) {
 
 //    struct stat* sb;
 
@@ -54,8 +54,29 @@ void crear_archivos_swap(t_list* archivos_swap) {
 */
         memcpy(nuevo_swap->swap_file, &caracter_llenado, sizeof(char));
 
+
+        /* faltaria crear las particiiones para el archivo swap */
+        nuevo_swap->particiones_swap = crearListaDeParticiones(cantidadParticiones);
+
     }
 
 }
 
+t_list* crearListaDeParticiones(int cantidadParticiones){
+
+    t_list* listaParticiones = list_create();
+
+    for(int i=0; i < cantidadParticiones ; i++){
+        list_add(listaParticiones, particionNueva(i));
+    }
+    return listaParticiones;
+}
+
+
+particion* particionNueva(int numero){
+    particion* particionNueva = malloc(sizeof(particion));
+    particionNueva->esta_libre = 1;
+    particionNueva->num_particion = numero;
+    return particionNueva;
+}
 

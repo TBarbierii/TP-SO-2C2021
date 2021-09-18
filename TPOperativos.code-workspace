@@ -31,7 +31,9 @@
 			"stdint.h": "c",
 			"semaforos.h": "c",
 			"signal.h": "c",
-			"planificadorlargoplazo.h": "c"
+			"planificadorlargoplazo.h": "c",
+			"swamp.h": "c",
+			"swamp_lib.h": "c"
 		}
 	}
 }

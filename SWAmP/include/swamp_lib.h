@@ -41,6 +41,7 @@ typedef struct {
 }swap_files;
 
 typedef struct {
+    int num_particion; //quiza para el orden xq creo q importaba
     int pid;
     int numero_marco;
     int esta_libre;
@@ -50,7 +51,8 @@ typedef struct {
 /* Declaracion de funciones */
 
 void obtenerValoresDelConfig(t_config* configActual);
-void crear_archivos_swap(t_list* archivos_swap);
-
+void crear_archivos_swap(t_list* archivos_swap, int cantidadParticiones);
+t_list* crearListaDeParticiones(int cantidadParticiones);
+particion* particionNueva(int numero);
 
 #endif
