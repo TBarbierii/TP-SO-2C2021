@@ -12,7 +12,12 @@ void inicializarListas(){
 }
 
 void inicializarSemaforosGlobales(){
-    sem_init(modificarReady,1,1); 
+
+    contadorProcesos = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(contadorProcesos,NULL);
+
+    modificarReady = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(modificarReady,NULL);
 
 }
 
@@ -110,7 +115,13 @@ void finalizarDispositivosIO(){
 }
 
 
+
+
+
+
+
 int main(){
+    cantidadDeProcesosActual = 0;
     inicializarListas();
     t_config* configActual = inicializarConfig();
     obtenerValoresDelConfig(configActual);

@@ -18,7 +18,11 @@ t_log* logger;
 typedef enum{
 	INICIALIZAR_ESTRUCTURA = 0,
 	CERRAR_INSTANCIA = 1,
-	INICIAR_SEMAFORO = 2
+	INICIAR_SEMAFORO = 2,
+	SEM_WAIT = 3,
+	SEM_SIGNAL = 4,
+	CERRAR_SEMAFORO = 5,
+	CONECTAR_IO = 6
 
 }cod_operacion;
 

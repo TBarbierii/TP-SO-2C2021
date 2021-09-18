@@ -31,6 +31,12 @@ typedef struct{
 
 }proceso ;
 
+
+/* contador de procesos */
+int cantidadDeProcesosActual;
+
+pthread_mutex_t* contadorProcesos;
+
 /* variables obtenidas del config*/
 
 char* ipMemoria;
@@ -76,7 +82,7 @@ typedef struct
 
 //Semaforos compartidos en los distintos planificadores
 
-sem_t * modificarReady ;
+pthread_mutex_t * modificarReady ;
 
 
 /* funciones */

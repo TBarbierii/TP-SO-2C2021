@@ -98,6 +98,14 @@ void solicitarCerrarPatota(int conexion, mate_instance* lib_ref);
 
 void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned int valor);
 
+void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo);
+
+void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo);
+
+void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo);
+
+void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg);
+
 void enviarPaquete(t_paquete* paquete, int conexion);
 
 #endif

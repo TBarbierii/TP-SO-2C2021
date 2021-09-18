@@ -52,16 +52,21 @@ int mate_close(mate_instance *lib_ref){
 
 
 //-----------------Semaphore Functions---------------------/
-int mate_sem_init(mate_instance *lib_ref, mate_sem_name sem, unsigned int value);
+int mate_sem_init(mate_instance *lib_ref, mate_sem_name sem, unsigned int value){
 
-int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem);
+}
 
-int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem);
+int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
 
-int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem);
+}
 
+int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
 
+}
 
+int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
+
+}
 
 
 //--------------------IO Functions------------------------/
@@ -205,6 +210,59 @@ void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned in
     enviarPaquete(paquete,conexion);
 }
 
+
+void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo){
+    t_paquete* paquete = crear_paquete(SEM_WAIT);
+
+    paquete->buffer->size = sizeof(uint32_t) + string_length(nombreSemaforo) +1;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+
+    int desplazamiento = 0;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(string_length(nombreSemaforo)+1) , sizeof(uint32_t)); //NOSE PORQUE PINGO ESTA FALLANDO ACA
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(paquete->buffer->stream + desplazamiento, nombreSemaforo , string_length(nombreSemaforo)+1);
+
+    enviarPaquete(paquete,conexion);
+}
+
+void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo){
+    t_paquete* paquete = crear_paquete(SEM_SIGNAL);
+
+    paquete->buffer->size = sizeof(uint32_t) + string_length(nombreSemaforo) +1;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+
+    int desplazamiento = 0;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(string_length(nombreSemaforo)+1) , sizeof(uint32_t)); //NOSE PORQUE PINGO ESTA FALLANDO ACA
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(paquete->buffer->stream + desplazamiento, nombreSemaforo , string_length(nombreSemaforo)+1);
+
+    enviarPaquete(paquete,conexion);
+}
+
+
+void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo){
+    t_paquete* paquete = crear_paquete(CERRAR_SEMAFORO);
+
+    paquete->buffer->size = sizeof(uint32_t) + string_length(nombreSemaforo) +1;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+
+    int desplazamiento = 0;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(string_length(nombreSemaforo)+1) , sizeof(uint32_t)); //NOSE PORQUE PINGO ESTA FALLANDO ACA
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(paquete->buffer->stream + desplazamiento, nombreSemaforo , string_length(nombreSemaforo)+1);
+
+    enviarPaquete(paquete,conexion);
+}
+
+void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg){
+    
+}
 
 
 void enviarPaquete(t_paquete* paquete, int conexion){
