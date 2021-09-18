@@ -28,20 +28,33 @@ void obtenerValoresDelConfig(t_config* configActual){
 
 void crear_archivos_swap(t_list* archivos_swap) {
 
+//    struct stat* sb;
+
+    char caracter_llenado = '\0';
+
     while(! list_is_empty(archivos_swap)) {
+
+        swap_files* nuevo_swap = malloc(sizeof(swap_files));
+
         char* path_swap = (char*) list_remove(archivos_swap, 0);
 
         int fd = open(path_swap, O_CREAT | O_RDWR, (mode_t) 0777);
 
         truncate(path_swap, tamanio_swap);
 
-        swap_file = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+        nuevo_swap->swap_file = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+/*
+        int estado = stat(nuevo_swap->path, sb);
 
-        int estado = stat(path_swap);
+        if(estado != -1) {
+            log_info(logger_swamp, "Archivos de swap creados y de tamaño: %i", tamanio_swap);
+        }else{
+            exit(-1);
+        }
+*/
+        memcpy(nuevo_swap->swap_file, &caracter_llenado, sizeof(char));
 
     }
-
-
 
 }
 

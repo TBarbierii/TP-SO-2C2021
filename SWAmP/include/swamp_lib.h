@@ -15,7 +15,7 @@
 #include <sys/mman.h>
 
 
-/* variables obtenidas del config*/
+/* variables obtenidas del config */
 
 char* ip_swap;
 int puerto_swap;
@@ -25,23 +25,32 @@ int marcos_maximos;
 int retardo_swap;
 
 
+/* Variables globales */
+
 t_list* lista_swap_files;
-
-void obtenerValoresDelConfig(t_config* configActual);
-void crear_archivos_swap(t_list* archivos_swap);
+t_log* logger_swamp;
 
 
-typedef struct swap_files {
+/* Estructuras */
+
+typedef struct {
     char* path;
     int fd_swap;
     void* swap_file;
     t_list* particiones_swap;
-};
+}swap_files;
 
-typedef struct particion {
+typedef struct {
     int pid;
     int numero_marco;
     int esta_libre;
-};
+}particion;
+
+
+/* Declaracion de funciones */
+
+void obtenerValoresDelConfig(t_config* configActual);
+void crear_archivos_swap(t_list* archivos_swap);
+
 
 #endif
