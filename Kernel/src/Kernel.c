@@ -13,13 +13,67 @@ void inicializarListas(){
 
 void inicializarSemaforosGlobales(){
 
+    /* mutexs */
+
     contadorProcesos = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(contadorProcesos,NULL);
 
     modificarReady = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(modificarReady,NULL);
 
+    modificarNew = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(modificarNew,NULL);
+
+    modificarExec = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(modificarExec,NULL);
+
+    modificarExit = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(modificarExit,NULL);
+
+    modificarSuspendedReady = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(modificarSuspendedReady,NULL);
+
+    nivelMultiProgramacionBajaPrioridad = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(nivelMultiProgramacionBajaPrioridad,NULL);
+
+    pthread_mutex_lock(nivelMultiProgramacionBajaPrioridad);
+
+
+    /* semaforos */
+
+    hayProcesosNew = malloc(sizeof(sem_t));
+    sem_init(hayProcesosNew,1,0);
+
+    hayProcesosReady = malloc(sizeof(sem_t));
+    sem_init(hayProcesosReady,1,0);
+
+    nivelMultiProgramacionGeneral = malloc(sizeof(sem_t));
+    sem_init(nivelMultiProgramacionGeneral,1,gradoMultiProgramacion);
+
+    nivelMultiprocesamiento = malloc(sizeof(sem_t));
+    sem_init(nivelMultiprocesamiento,1,gradoMultiProcesamiento);
+
+
 }
+
+void finalizarSemaforosGlobales(){
+
+    pthread_mutex_destroy(contadorProcesos);
+
+    pthread_mutex_destroy(modificarNew);
+    pthread_mutex_destroy(modificarReady);
+    pthread_mutex_destroy(modificarExec);
+    pthread_mutex_destroy(modificarExit);
+    pthread_mutex_destroy(modificarSuspendedReady);
+    pthread_mutex_destroy(nivelMultiProgramacionBajaPrioridad);
+
+    sem_destroy(hayProcesosNew);
+    sem_destroy(hayProcesosReady);
+    sem_destroy(nivelMultiProgramacionGeneral);
+    sem_destroy(nivelMultiprocesamiento);
+
+}
+
 
 void finalizarListas(){
     list_destroy(procesosNew);
@@ -125,6 +179,7 @@ int main(){
     inicializarListas();
     t_config* configActual = inicializarConfig();
     obtenerValoresDelConfig(configActual);
+    inicializarSemaforosGlobales();
 
     /* toda la logica de los planificadores y del servidor */
     

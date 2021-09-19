@@ -51,7 +51,7 @@ int gradoMultiProcesamiento;
 t_list* procesosNew;
 t_list* procesosReady;
 t_list* procesosExec;
-t_list* procesosExit;
+t_list* procesosExit; //esta quiza ni la necesitemos
 t_list* procesosSuspendedBlock;
 t_list* procesosSuspendedReady;
 
@@ -82,7 +82,22 @@ typedef struct
 
 //Semaforos compartidos en los distintos planificadores
 
-pthread_mutex_t * modificarReady ;
+pthread_mutex_t * modificarReady;
+pthread_mutex_t * modificarNew;
+pthread_mutex_t * modificarExec;
+pthread_mutex_t * modificarExit;
+pthread_mutex_t * modificarSuspendedReady;
+
+pthread_mutex_t * nivelMultiProgramacionBajaPrioridad; //esto es para el planificador de largo plazo
+
+sem_t* hayProcesosNew;
+sem_t* hayProcesosReady;
+
+sem_t* nivelMultiprocesamiento;
+sem_t* nivelMultiProgramacionGeneral;
+
+sem_t* procesoNecesitaEntrarEnReady;
+
 
 
 /* funciones */

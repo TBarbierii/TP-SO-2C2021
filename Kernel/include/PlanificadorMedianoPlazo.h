@@ -7,7 +7,14 @@
 #include "shared_utils.h"
 #include <commons/collections/list.h>
 #include <commons/config.h>
+#include "Kernel.h"
 
 
+
+/* funciones */
+
+void planificadorMedianoPlazo();
+void thread1_PMP();
+void thread2_PMP();
 
 #endif

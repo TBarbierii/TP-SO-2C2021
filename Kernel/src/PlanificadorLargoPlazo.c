@@ -2,22 +2,18 @@
 
 void planificadorLargoPlazo(){
 
-    inicializarSemaforos();
-
     while(1){
-        sem_wait(semaforoProcesosEnNew);
-        sem_wait(semaforoDeMultiprogramacion);
+        sem_wait(hayProcesosNew);
+        pthread_mutex_lock(nivelMultiProgramacionBajaPrioridad);
 
-        proceso* procesoNuevo = (proceso*) list_remove(procesosNew,0); // todavia no sabemos la estructura del proceso por ende tampoco el tipo    
-        sem_wait(modificarReady);
-        list_add(procesosReady,procesoNuevo);
-        sem_post(modificarReady);
+        pthread_mutex_lock(modificarNew);
+            proceso* procesoNuevo = (proceso*) list_remove(procesosNew,0);   
+        pthread_mutex_unlock(modificarNew);
+
+        pthread_mutex_lock(modificarReady);
+            list_add(procesosReady,procesoNuevo);
+        pthread_mutex_unlock(modificarReady);
+
+        sem_post(hayProcesosReady);
     }
-}
-
-void inicializarSemaforos(){
-
-    sem_init(semaforoDeMultiprogramacion,1, gradoMultiProgramacion);
-    sem_init(semaforoProcesosEnNew, 1,0);
-
 }

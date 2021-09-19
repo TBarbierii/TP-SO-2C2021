@@ -10,15 +10,11 @@
 #include "Kernel.h"
 #include <semaphore.h>
 
-//Variables globales
 
-sem_t * semaforoDeMultiprogramacion;
-sem_t * semaforoProcesosEnNew;
 
-// -----
+/* funciones */
 
 void planificadorLargoPlazo();
-void inicializarSemaforos();
 
 
 #endif
