@@ -33,24 +33,42 @@ typedef struct {
 
 }heapMetadata;
 
+
 typedef struct {
 
     uint32_t id_pagina;
+    uint32_t tamanio;
     marco marco;
     uint8_t presente;
 
 }pagina;
 
+//funcion para asignar paginas a medida que se crean?
+
+typedef struct {
+
+    uint32_t id_carpincho;
+    t_list* tabla_de_paginas;//esto seria una lista de paginas
+    t_list* allocs;
+
+}carpincho;
+
+//buscar o crear alloc
+//agregarlo a la lista de allocs
+//verificar si te pasaste del tamaño de la pagina
+//  si me pase-> crear otra pagina y seguir
+//
+
 typedef struct {
 
     uint32_t id_marco;
+    uint32_t comienzo_en_memoria;
 
 }marco;
 
 typedef struct {
 
     t_list* paginas;
-    uint32_t id_carpincho;
 
 }tablaDePagina;
 
@@ -66,4 +84,7 @@ void obtenerValoresDelConfig(t_config* configActual);
 void inicializarMemoria();
 void liberarMemoria();
 
+// Conexiones
+void atender_solicitudes_multihilo();
+void atender_solicitudes(uint32_t);
 #endif
