@@ -34,7 +34,8 @@
 			"planificadorlargoplazo.h": "c",
 			"swamp.h": "c",
 			"swamp_lib.h": "c",
-			"planificadormedianoplazo.h": "c"
+			"planificadormedianoplazo.h": "c",
+			"pthread.h": "c"
 		}
 	}
 }

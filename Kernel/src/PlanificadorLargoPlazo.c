@@ -4,7 +4,7 @@ void planificadorLargoPlazo(){
 
     while(1){
         sem_wait(hayProcesosNew);
-        pthread_mutex_lock(nivelMultiProgramacionBajaPrioridad);
+        pthread_mutex_lock(nivelMultiProgramacionBajaPrioridad); //baja prioridad son los procesos que estan en New
 
         pthread_mutex_lock(modificarNew);
             proceso* procesoNuevo = (proceso*) list_remove(procesosNew,0);   

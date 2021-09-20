@@ -219,7 +219,7 @@ void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned in
     int desplazamiento = 0;
     uint32_t tamanioNombre = string_length(nombreSemaforo)+1;
 
-    memcpy(paquete->buffer->stream + desplazamiento, &(tamanioNombre) , sizeof(uint32_t)); //NOSE PORQUE PINGO ESTA FALLANDO ACA
+    memcpy(paquete->buffer->stream + desplazamiento, &(tamanioNombre) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
     memcpy(paquete->buffer->stream + desplazamiento, nombreSemaforo , tamanioNombre);
