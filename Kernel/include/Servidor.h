@@ -10,4 +10,8 @@
 #include "Kernel.h"
 
 
+void atenderSolicitudesKernel(char* ip_servidor, char* puerto);
+int atenderMensajeEnKernel(int conexion);
+void inicializarProcesoNuevo(int conexion);
+
 #endif

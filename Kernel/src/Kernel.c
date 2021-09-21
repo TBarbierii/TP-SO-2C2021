@@ -171,9 +171,6 @@ void finalizarDispositivosIO(){
 
 
 
-
-
-
 int main(){
     cantidadDeProcesosActual = 0;
     inicializarListas();

@@ -30,7 +30,7 @@ int mate_init(mate_instance *lib_ref, char *config){
         string_append(&nombreLog, ".log");
 
         lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",0,LOG_LEVEL_DEBUG);
-
+        
         free(nombreLog);
     }
     return lib_ref->group_info->backEndConectado;
@@ -292,13 +292,6 @@ void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, v
 }
 
 
-void enviarPaquete(t_paquete* paquete, int conexion){
-
-    int bytes = paquete->buffer->size + sizeof(cod_operacion) + sizeof(uint32_t);
-    void* contenido_a_enviar= serializar_paquete(paquete, bytes);
-    send(conexion, contenido_a_enviar,bytes,0);
-    free(contenido_a_enviar);
-}
 
 
 

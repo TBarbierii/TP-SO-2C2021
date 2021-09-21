@@ -14,6 +14,14 @@
 
 t_log* logger;
 
+typedef enum{
+
+    ERROR = -1,
+    KERNEL = 0,
+    MEMORIA = 1 
+
+}backend;
+
 
 typedef enum{
 	INICIALIZAR_ESTRUCTURA = 0,
@@ -26,13 +34,13 @@ typedef enum{
 
 }cod_operacion;
 
-typedef struct
+typedef struct buffer
 {
 	uint32_t size;
 	void* stream;
 } t_buffer;
 
-typedef struct
+typedef struct paquete
 {
 	cod_operacion codigo_operacion;
 	t_buffer* buffer;
@@ -46,6 +54,6 @@ int crear_conexion(char *ip, char* puerto);
 void* serializar_paquete(t_paquete* paquete, int bytes);
 void crear_buffer(t_paquete* paquete);
 t_paquete* crear_paquete(cod_operacion codigo);
-
+void enviarPaquete(t_paquete* paquete, int conexion);
 
 #endif

@@ -14,13 +14,7 @@
 #include <unistd.h>
 
 
-typedef enum{
 
-    ERROR = -1,
-    KERNEL = 0,
-    MEMORIA = 1 
-
-}backend;
 
 
 typedef struct
@@ -103,7 +97,5 @@ void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo);
 void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo);
 
 void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg);
-
-void enviarPaquete(t_paquete* paquete, int conexion);
 
 #endif

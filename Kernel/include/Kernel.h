@@ -23,7 +23,7 @@
 
 /* Procesos */
 typedef struct{
-    int pid ;
+    uint32_t pid ;
     int conexion; // es el socket del proceso -- duda
     int estimacionAnterior; // es para el algoritmo SJF 
     int tiempoDeEspera; // para HRRN
@@ -33,7 +33,7 @@ typedef struct{
 
 
 /* contador de procesos */
-int cantidadDeProcesosActual;
+uint32_t cantidadDeProcesosActual;
 
 pthread_mutex_t* contadorProcesos;
 
@@ -110,5 +110,8 @@ void obtenerValoresDelConfig(t_config* configActual);
 void inicializarDispositivosIO(char ** dispositivos, char** duraciones);
 void finalizarConfig(t_config* configUsado);
 void finalizarDispositivosIO();
+
+
+
 
 #endif
