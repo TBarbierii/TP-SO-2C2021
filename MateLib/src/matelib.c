@@ -53,26 +53,56 @@ int mate_close(mate_instance *lib_ref){
 
 //-----------------Semaphore Functions---------------------/
 int mate_sem_init(mate_instance *lib_ref, mate_sem_name sem, unsigned int value){
-    return 0;
+    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+    }
+
 }
 
 int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
-    return 0;
+    
+    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+    }
 }
 
 int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
-    return 0;
+    
+    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+    }
 }
 
 int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
-    return 0;
+    
+    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+    }
 }
 
 
 //--------------------IO Functions------------------------/
 
 int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void *msg){
-    return 0;
+    
+    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+    }
 }
 
 
@@ -84,19 +114,43 @@ int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void *msg){
 //--------------Memory Module Functions-------------------/
 
 mate_pointer mate_memalloc(mate_instance *lib_ref, int size){
-    return 0;
+    
+    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
+    } 
 }
 
 int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
-    return 0;
+    
+    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
+    } 
 }
 
 int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *dest, int size){
-    return 0;
+    
+    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
+    } 
 }
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
-    return 0;    
+    
+    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
+        /* toda la logica de lo que tiene que hacer */
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
+    }   
 }
 
 
@@ -292,7 +346,20 @@ void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, v
 }
 
 
+int validarConexionPosible(int tipoSolicitado, int tipoActual){
 
+    if(tipoSolicitado == KERNEL){ 
+        if(tipoActual == KERNEL){ //si deseo hacer una operacion de tipo General (Kernel), el backend entonces debe ser de tipo kernel
+            return 1;
+        }
+    }else if(tipoSolicitado == MEMORIA){ 
+        if(tipoActual == KERNEL || tipoActual == MEMORIA){ //si deseo hacer una operacion de tipo Memoria, con que el backend no sea un error de conexion, se puede. EL kernel hara de pasamanos
+            return 1;
+        }
+    }
+
+    return 0; //el otro caso seria que el tipoActual sea error o que no cumpla las condiciones prestablecidas, entonces retorna 0 en referencia que no se podra hacer
+}
 
 
 int main(){

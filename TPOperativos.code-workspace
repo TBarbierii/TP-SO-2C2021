@@ -38,7 +38,8 @@
 			"pthread.h": "c",
 			"servidor.h": "c",
 			"unistd.h": "c",
-			"config.h": "c"
+			"config.h": "c",
+			"planificadorcortoplazo.h": "c"
 		}
 	}
 }

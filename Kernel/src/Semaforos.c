@@ -26,8 +26,9 @@ void destruirSemaforo(char* nombreSem){
         }
     }
 
-    semaforo* semaforoActual =(semaforo*) list_remove_by_condition(semaforosActuales, buscarPorNombre);
+    semaforo* semaforoNuevo = list_remove_by_condition(semaforosActuales, buscarPorNombre);
     
-    free(semaforoActual->nombre);
-    free(semaforoActual);
+    free(semaforoNuevo->nombre);
+    free(semaforoNuevo);
+    
 }

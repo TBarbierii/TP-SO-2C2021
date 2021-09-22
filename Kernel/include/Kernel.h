@@ -1,13 +1,12 @@
 #ifndef KERNEL_H
 #define KERNEL_H
 
-
-#include<commons/log.h>
 #include <stdio.h>
 #include <commons/log.h>
 #include <stdbool.h>
 #include <signal.h>
 #include <unistd.h>
+#include <pthread.h>
 #include <sys/socket.h>
 #include <netdb.h>
 #include <stdlib.h>
@@ -18,11 +17,13 @@
 #include <string.h>
 #include <commons/string.h>
 #include "PlanificadorLargoPlazo.h"
+#include "PlanificadorMedianoPlazo.h"
+#include "PlanificadorCortoPlazo.h"
 #include "Semaforos.h"
-#include <pthread.h>
+#include "Servidor.h"
 
 /* Procesos */
-typedef struct{
+typedef struct proceso{
     uint32_t pid ;
     int conexion; // es el socket del proceso -- duda
     int estimacionAnterior; // es para el algoritmo SJF 

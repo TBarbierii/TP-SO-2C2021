@@ -117,6 +117,13 @@ void cerrarProceso(t_buffer* bufferActual){
 
 }
 
+void informarCierreDeProceso(int conexion){
+
+	t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
+    enviarPaquete(paquete,conexion);
+
+}
+
 
 void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual){
 
@@ -135,7 +142,7 @@ void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual){
 	sem_post(nivelMultiprocesamiento); //aumento el grado de multiprogramacion y multiprocesamiento
 	sem_post(nivelMultiProgramacionGeneral);
 
-	informarCierreDeProceso(procesoActual);
+	informarCierreDeProceso(procesoActual->conexion);
 
 
 	close(procesoActual->conexion); //cierro la conexion
@@ -144,9 +151,3 @@ void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual){
 
 }
 
-void informarCierreDeProceso(proceso* procesoActual){
-
-	t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
-    enviarPaquete(paquete,procesoActual->conexion);
-
-}

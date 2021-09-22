@@ -14,7 +14,7 @@
 
 t_log* logger;
 
-typedef enum{
+typedef enum backend{
 
     ERROR = -1,
     KERNEL = 0,

@@ -98,4 +98,8 @@ void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo);
 
 void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg);
 
+int validarConexionPosible(int tipoSolicitado, int tipoActual);
+
+
+
 #endif
