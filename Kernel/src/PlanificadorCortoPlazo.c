@@ -25,7 +25,7 @@ void planificadorCortoPlazo(){
     }
 }
 
-void replanificarSegunAlgoritmo(){
+void replanificarSegunAlgoritmo(){ 
 
 }
 
@@ -78,14 +78,23 @@ void AumentarTiempoEspera(proceso* unCarpincho){
 	unCarpincho->tiempoDeEspera++;
 }
 
+proceso* CalcularResponseRatio(proceso* unCarpincho) {
+	unCarpincho = (proceso*) CalcularEstimacion(unCarpincho);
+	unCarpincho->responseRatio = 1 + (unCarpincho->tiempoDeEspera / unCarpincho->rafagaEstimada);
+	return unCarpincho;
+}
 
+bool comparadorResponseRatio(proceso* unCarpincho, proceso* otroCarpincho) {
+	return unCarpincho->responseRatio >= otroCarpincho->responseRatio;
+}
 void aplicarHRRN(){
 
 	if (!list_is_empty(procesosReady) && list_is_empty(procesosExec)) 
 	{
-		t_list* aux = list_map(procesosReady, (void*) calcularHRRN);
-		list_sort(aux, (void*) comparadorHRRN); // a implementar
+		t_list* aux = list_map(procesosReady, (void*) CalcularResponseRatio); //calcula la estimación de todos los procesos para después ordenarla segun la priorirdad
+		list_sort(aux, (void*) comparadorResponseRatio); // lo mismo que SJF, ordena segun un criterio (en este caso el de mayor responseRAtio)
 
 
 	}
 } 
+

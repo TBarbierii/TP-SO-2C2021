@@ -30,6 +30,7 @@ typedef struct proceso{
     int tiempoDeEspera; // para HRRN
     int ultimaRafagaEjecutada ; // este es el real Anterior para SJF
     int rafagaEstimada; //para JFS
+    int responseRatio; // HRRN
 }proceso ;
 
 
