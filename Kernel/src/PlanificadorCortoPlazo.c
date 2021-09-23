@@ -48,3 +48,44 @@ int rompoElHiloSegunElCodigo(int codigo){
     return 0;
 }
 
+/* Planificación SJF */
+
+proceso* calcularEstimacion(proceso* unCarpincho) {
+	unCarpincho->rafagaEstimada = (alfa * estimacion_inicial)+ ((unCarpincho->ultimaRafagaEjecutada) * (1 - alfa) );
+	return unCarpincho;
+}
+
+bool comparadorDeRafagas(proceso* unCarpincho, proceso* otroCarpincho) {
+	return unCarpincho->rafagaEstimada <= otroCarpincho->rafagaEstimada;
+}
+
+void aplicarSJF() {
+
+
+	if (!list_is_empty(procesosReady) && list_is_empty(procesosExec))  //enrealidad no es necesario que la lista de exec este vacia
+		{  
+		t_list* aux = list_map(procesosReady, (void*) calcularEstimacion); //mapeo la lista de procesos en REady con calcularEStimación para asi definir que proceso pone a ejecutar.
+		list_sort(aux, (void*) comparadorDeRafagas); //con list_sort se ordena la lista segun un criterio (en este caso va a ordenarlo por las rafagas)
+
+		}
+			
+	}
+
+
+/* HRNN  */
+
+void AumentarTiempoEspera(proceso* unCarpincho){
+	unCarpincho->tiempoDeEspera++;
+}
+
+
+void aplicarHRRN(){
+
+	if (!list_is_empty(procesosReady) && list_is_empty(procesosExec)) 
+	{
+		t_list* aux = list_map(procesosReady, (void*) calcularHRRN);
+		list_sort(aux, (void*) comparadorHRRN); // a implementar
+
+
+	}
+} 

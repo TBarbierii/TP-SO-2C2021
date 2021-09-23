@@ -96,6 +96,8 @@ void obtenerValoresDelConfig(t_config* configActual){
     puertoMemoria = config_get_string_value(configActual, "PUERTO_MEMORIA");
     algoritmoPlanificacion = config_get_string_value(configActual, "ALGORITMO_PLANIFICACION");
     retardoCPU = config_get_int_value(configActual, "RETARDO_CPU");
+    estimacion_inicial = config_get_int_value(configActual, "ESTIMACION_INICIAL");
+    alfa = config_get_int_value(configActual, "ALFA");
     gradoMultiProgramacion = config_get_int_value(configActual, "GRADO_MULTIPROGRAMACION");
     gradoMultiProcesamiento = config_get_int_value(configActual, "GRADO_MULTIPROCESAMIENTO");
     char** nombresDispositivosIO = config_get_array_value(configActual, "DISPOSITIVOS_IO");

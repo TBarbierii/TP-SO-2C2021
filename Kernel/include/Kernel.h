@@ -28,8 +28,8 @@ typedef struct proceso{
     int conexion; // es el socket del proceso -- duda
     int estimacionAnterior; // es para el algoritmo SJF 
     int tiempoDeEspera; // para HRRN
-    int ultimaRafaga ; 
-
+    int ultimaRafagaEjecutada ; // este es el real Anterior para SJF
+    int rafagaEstimada; //para JFS
 }proceso ;
 
 
@@ -43,6 +43,9 @@ pthread_mutex_t* contadorProcesos;
 char* ipMemoria;
 char* puertoMemoria;
 char* algoritmoPlanificacion;
+int estimacion_inicial;
+int alfa;
+/* listas de dispositivos_io, duraciones_io */
 int retardoCPU;
 int gradoMultiProgramacion;
 int gradoMultiProcesamiento;
