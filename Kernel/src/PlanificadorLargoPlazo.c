@@ -15,6 +15,8 @@ void planificadorLargoPlazo(){
 
         pthread_mutex_lock(modificarReady);
             list_add(procesosReady,procesoNuevo);
+            procesoNuevo->tiempoDeArriboColaReady = clock(); //esto sirve para HRRN, para estimar cuando empezo un proceso a estar en ready y cuanto tiempo pasa ahi
+
             log_info(logger,"Se pone en la cola de ready a un nuevo carpincho. Carpincho: ", string_itoa(procesoNuevo->pid));
         pthread_mutex_unlock(modificarReady);
 

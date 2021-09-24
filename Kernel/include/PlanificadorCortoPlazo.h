@@ -18,6 +18,7 @@
 #include <commons/string.h>
 #include <pthread.h>
 #include "Kernel.h"
+#include <time.h>
 
 void planificadorCortoPlazo();
 void replanificarSegunAlgoritmo();

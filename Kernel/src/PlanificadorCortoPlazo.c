@@ -40,6 +40,9 @@ void replanificarSegunAlgoritmo(){
 
 void rutinaDeProceso(proceso* procesoEjecutando){
     
+    clock_t arranqueEjecucion = clock();
+
+
     char* nombreLogger = string_new();
     string_append(&nombreLogger,".cfg/Carpincho");
     string_append(&nombreLogger, string_itoa(procesoEjecutando->pid));
@@ -55,6 +58,10 @@ void rutinaDeProceso(proceso* procesoEjecutando){
         int codigoOperacion = atenderMensajeEnKernel(procesoEjecutando->conexion);
         if(rompoElHiloSegunElCodigo(codigoOperacion)){
             log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento");
+            
+            clock_t finEjecucion = clock();
+
+            procesoEjecutando->ultimaRafagaEjecutada = (double)(finEjecucion - arranqueEjecucion) / CLOCKS_PER_SEC;
             break;
         }
     }
@@ -114,12 +121,15 @@ void aplicarSJF() {
 
 /* HRNN  */
 
-void AumentarTiempoEspera(proceso* unCarpincho){
+void AumentarTiempoEspera(proceso* unCarpincho){ //con lo de las funciones clock creo que esto no seria necesario 
 	unCarpincho->tiempoDeEspera++;
 }
 
 void CalcularResponseRatio(proceso* unCarpincho) {
-	calcularEstimacion(unCarpincho);
+	calcularEstimacion(unCarpincho); 
+    clock_t finTiempoEsperando = clock();
+    unCarpincho->tiempoDeEspera = (double)(finTiempoEsperando - unCarpincho->tiempoDeArriboColaReady) / CLOCKS_PER_SEC;
+
 	unCarpincho->responseRatio = 1 + (unCarpincho->tiempoDeEspera / unCarpincho->rafagaEstimada);
 }
 
