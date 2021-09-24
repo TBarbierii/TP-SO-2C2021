@@ -73,7 +73,7 @@ void inicializarProcesoNuevo(int conexion){
 	procesoNuevo->conexion = conexion;
 	procesoNuevo->estimacionAnterior = 1 /*tengo q asignarle al del config */;
 	procesoNuevo->tiempoDeEspera = 0;
-	procesoNuevo->ultimaRafaga = 0;
+	procesoNuevo->ultimaRafagaEjecutada = 0;
 
 	pthread_mutex_lock(modificarNew);
 		list_add(procesosNew, procesoNuevo);

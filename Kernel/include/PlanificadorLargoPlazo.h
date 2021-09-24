@@ -16,5 +16,4 @@
 
 void planificadorLargoPlazo();
 
-
 #endif

@@ -2,18 +2,13 @@
 
 void planificadorLargoPlazo(){
 
-    pthread_t * t1, t2;
-    t1 = malloc(sizeof(pthread_t));
-    t2 = malloc(sizeof(pthread_t));
+    pthread_t  t1, t2;
 
-    pthread_create(t1, NULL,(void *) thread1_PMP, NULL);
-    pthread_create(t2, NULL,(void *) thread2_PMP, NULL);
+    pthread_create(&t1, NULL,(void *) thread1_PMP, NULL);
+    pthread_create(&t2, NULL,(void *) thread2_PMP, NULL);
     
-    pthread_detach(&t1);
-    pthread_detach(&t2);
-
-    free(t1);
-    free(t2);
+    pthread_detach(t1);
+    pthread_detach(t2);
 }
 
 

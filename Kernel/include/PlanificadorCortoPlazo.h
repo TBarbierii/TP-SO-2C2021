@@ -24,5 +24,18 @@ void replanificarSegunAlgoritmo();
 void rutinaDeProceso(proceso* procesoEjecutando);
 int rompoElHiloSegunElCodigo(int codigo);
 
+void replanificacion();
+
+/* SJF */
+void calcularEstimacion(proceso* unCarpincho);
+bool comparadorDeRafagas(proceso* unCarpincho, proceso* otroCarpincho);
+void aplicarSJF();
+
+/* HRRN */
+void AumentarTiempoEspera(proceso* unCarpincho);
+void CalcularResponseRatio(proceso* unCarpincho);
+bool comparadorResponseRatio(proceso* unCarpincho, proceso* otroCarpincho);
+void aplicarHRRN();
+
 
 #endif
