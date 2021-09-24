@@ -33,6 +33,7 @@ t_log* logger_swamp;
 
 /* Estructuras */
 
+// Es necesaria esta estructura? 
 typedef struct {
     char* path;
     int fd_swap;
@@ -45,6 +46,7 @@ typedef struct {
     int pid;
     int numero_marco;
     int esta_libre;
+    void* inicio_particion;
 }particion;
 
 

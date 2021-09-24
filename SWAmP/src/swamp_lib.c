@@ -65,9 +65,16 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidadParticiones) {
 t_list* crearListaDeParticiones(int cantidadParticiones){
 
     t_list* listaParticiones = list_create();
+    int offset_particion = 0;
 
     for(int i=0; i < cantidadParticiones ; i++){
-        list_add(listaParticiones, particionNueva(i));
+        particion* particion_swap = malloc(sizeof(particion));
+        swap_files* nuevo_swap = malloc(sizeof(swap_files));
+        particion_swap->num_particion = i;
+        particion_swap->inicio_particion = nuevo_swap->swap_file + offset_particion;
+        particion_swap->esta_libre = 1;
+        offset_particion += tamanio_pagina;
+        list_add(listaParticiones, particion_swap);
     }
     return listaParticiones;
 }
