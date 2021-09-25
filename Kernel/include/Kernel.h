@@ -22,19 +22,7 @@
 #include "Semaforos.h"
 #include "Servidor.h"
 
-/* Procesos */
-typedef struct proceso{
-    
-    uint32_t pid ;
-    int conexion; // es el socket del proceso -- duda
-    int estimacionAnterior; // es para el algoritmo SJF 
-    double tiempoDeEspera; // para HRRN
-    double ultimaRafagaEjecutada ; // este es el real Anterior para SJF
-    int rafagaEstimada; //para JFS
-    int responseRatio; // HRRN
-    clock_t tiempoDeArriboColaReady; //esto nos va a servir cuando queremos calcular el tiempo que estuvo esperando un proceso en la cola de Ready, donde esta variable va a ser el inicio de cuando entro a ready
 
-}proceso ;
 
 
 /* contador de procesos */
@@ -47,8 +35,8 @@ pthread_mutex_t* contadorProcesos;
 char* ipMemoria;
 char* puertoMemoria;
 char* algoritmoPlanificacion;
-int estimacion_inicial;
-int alfa;
+double estimacion_inicial;
+double alfa;
 /* listas de dispositivos_io, duraciones_io */
 int retardoCPU;
 int gradoMultiProgramacion;
@@ -106,7 +94,11 @@ sem_t* nivelMultiProgramacionGeneral;
 
 sem_t* procesoNecesitaEntrarEnReady;
 
+/* otros mutex */
 
+//mutex de semaforos
+
+pthread_mutex_t* controladorSemaforos;
 
 /* funciones */
 void inicializarListas();

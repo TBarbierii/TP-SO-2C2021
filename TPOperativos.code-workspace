@@ -39,7 +39,8 @@
 			"servidor.h": "c",
 			"unistd.h": "c",
 			"config.h": "c",
-			"planificadorcortoplazo.h": "c"
+			"planificadorcortoplazo.h": "c",
+			"socket.h": "c"
 		}
 	}
 }

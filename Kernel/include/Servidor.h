@@ -13,8 +13,8 @@
 
 void atenderSolicitudesKernel(char* ip_servidor, char* puerto);
 int atenderMensajeEnKernel(int conexion);
+void enviarInformacionAdministrativaDelProceso(proceso_kernel* proceso);
 void inicializarProcesoNuevo(int conexion);
-void enviarInformacionAdministrativaDelProceso(proceso* proceso);
 void cerrarProceso(t_buffer* bufferActual);
 void informarCierreDeProceso(int conexion);
 void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual);

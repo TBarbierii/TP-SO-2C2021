@@ -1,0 +1,43 @@
+[INFO] 10:03:58:460 Kernel/(6489:6489): Se inicializan el config y las listas de planificacion
+[INFO] 10:13:40:849 Kernel/(6906:6906): Se inicializan el config y las listas de planificacion
+[INFO] 10:14:38:304 Kernel/(6994:6994): Se inicializan el config y las listas de planificacion
+[INFO] 10:15:17:321 Kernel/(7067:7067): Se inicializan el config y las listas de planificacion
+[INFO] 10:15:17:433 Kernel/(7067:7067): Se inicializan los valores provenientes del config
+[INFO] 10:15:17:441 Kernel/(7067:7067): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:15:17:448 Kernel/(7067:7067): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas
+[INFO] 10:16:05:654 Kernel/(7143:7143): Se inicializan el config y las listas de planificacion
+[INFO] 10:16:50:322 Kernel/(7214:7214): Se inicializan el config y las listas de planificacion
+[INFO] 10:16:50:437 Kernel/(7214:7214): Se inicializan los valores provenientes del config
+[INFO] 10:16:50:442 Kernel/(7214:7214): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:16:50:447 Kernel/(7214:7214): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas
+[INFO] 10:17:04:363 Kernel/(7288:7288): Se inicializan el config y las listas de planificacion
+[INFO] 10:17:04:485 Kernel/(7288:7288): Se inicializan los valores provenientes del config
+[INFO] 10:17:04:491 Kernel/(7288:7288): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:17:04:496 Kernel/(7288:7288): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas
+[INFO] 10:17:50:667 Kernel/(7362:7362): Se inicializan el config y las listas de planificacion
+[INFO] 10:17:50:767 Kernel/(7362:7362): Se inicializan los valores provenientes del config
+[INFO] 10:17:50:772 Kernel/(7362:7362): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:17:50:779 Kernel/(7362:7362): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas
+[INFO] 10:28:12:185 Kernel/(7556:7556): Se inicializan el config y las listas de planificacion
+[INFO] 10:28:12:313 Kernel/(7556:7556): Se inicializan los valores provenientes del config
+[INFO] 10:28:12:315 Kernel/(7556:7556): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:28:12:320 Kernel/(7556:7556): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas
+[INFO] 10:30:02:641 Kernel/(7628:7628): Se inicializan el config y las listas de planificacion
+[INFO] 10:30:02:794 Kernel/(7628:7628): Se inicializan los valores provenientes del config
+[INFO] 10:30:02:795 Kernel/(7628:7628): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:30:35:999 Kernel/(7701:7701): Se inicializan el config y las listas de planificacion
+[INFO] 10:30:36:154 Kernel/(7701:7701): Se inicializan los valores provenientes del config
+[INFO] 10:30:36:160 Kernel/(7701:7701): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:30:36:166 Kernel/(7701:7701): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas
+[INFO] 10:30:53:357 Kernel/(7769:7769): Se inicializan el config y las listas de planificacion
+[INFO] 10:30:53:574 Kernel/(7769:7769): Se inicializan los valores provenientes del config
+[INFO] 10:30:53:580 Kernel/(7769:7769): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:30:53:588 Kernel/(7769:7769): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas
+[INFO] 10:31:30:240 Kernel/(7861:7861): Se inicializan el config y las listas de planificacion
+[INFO] 10:31:30:358 Kernel/(7861:7861): Se inicializan los valores provenientes del config
+[INFO] 10:31:30:364 Kernel/(7861:7861): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:31:30:372 Kernel/(7861:7861): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas
+[INFO] 10:33:10:793 Kernel/(7938:7938): Se inicializan el config y las listas de planificacion
+[INFO] 10:33:10:908 Kernel/(7938:7938): Se inicializan los valores provenientes del config
+[INFO] 10:33:10:914 Kernel/(7938:7938): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 10:33:10:922 Kernel/(7938:7938): Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas

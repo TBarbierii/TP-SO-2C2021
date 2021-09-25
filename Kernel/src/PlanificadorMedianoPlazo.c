@@ -1,6 +1,6 @@
 #include "PlanificadorMedianoPlazo.h"
 
-void planificadorLargoPlazo(){
+void planificadorMedianoPlazo(){
 
     pthread_t  t1, t2;
 
@@ -30,7 +30,7 @@ void thread2_PMP(){
             }else{
 
                pthread_mutex_lock(modificarSuspendedReady);
-                    proceso* procesoParaPreparar = list_remove(procesosSuspendedReady,0);
+                    proceso_kernel* procesoParaPreparar = list_remove(procesosSuspendedReady,0);
                 pthread_mutex_unlock(modificarSuspendedReady);
 
                 pthread_mutex_lock(modificarReady);

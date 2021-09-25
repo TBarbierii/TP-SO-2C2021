@@ -1,16 +1,32 @@
 #ifndef SHARED_UTILS_H
 #define SHARED_UTILS_H
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<signal.h>
-#include<unistd.h>
-#include<sys/socket.h>
-#include<netdb.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <unistd.h>
+#include <sys/socket.h>
+#include <netdb.h>
+#include <string.h>
 #include <pthread.h>
-#include<commons/log.h>
-#include<commons/collections/list.h>
+#include <commons/log.h>
+#include <commons/collections/list.h>
+
+/* Procesos */
+typedef struct proceso{
+    
+    uint32_t pid ;
+    int conexion; // es el socket del proceso
+    double tiempoDeEspera; // para HRRN
+    double ultimaRafagaEjecutada ; // este es el real Anterior para SJF
+    double rafagaEstimada; //para JFS
+    int responseRatio; // HRRN
+    clock_t tiempoDeArriboColaReady; //esto nos va a servir cuando queremos calcular el tiempo que estuvo esperando un proceso en la cola de Ready, donde esta variable va a ser el inicio de cuando entro a ready
+
+}proceso_kernel ;
+
+
+
 
 t_log* logger;
 

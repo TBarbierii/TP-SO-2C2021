@@ -1,44 +1,7 @@
 #include "PlanificadorCortoPlazo.h"
 
-void planificadorCortoPlazo(){
 
-    t_log* logger = log_create(".cfg/PlanificadorCortoPlazo.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
-
-    log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: ", algoritmoPlanificacion);
-    
-    while(1){
-        sem_wait(hayProcesosReady);
-        sem_wait(nivelMultiprocesamiento);
-        
-        pthread_mutex_lock(modificarReady);
-
-            replanificacion(); //en este momento replanifico y ordeno la lista de readys segun el criterio seleccionado
-            proceso* procesoListoParaEjecutar = list_remove(procesosReady, 0);
-            log_debug(logger, "Se saca un carpincho de la lista de readys para ejecutar. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
-
-        pthread_mutex_unlock(modificarReady);
-    
-        pthread_mutex_lock(modificarExec);
-            list_add(procesosExec, procesoListoParaEjecutar);
-            log_debug(logger, "Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
-        pthread_mutex_unlock(modificarExec);
-
-        pthread_t hiloDeEjecucion;
-        log_debug(logger, "Se crea un hilo para el carpincho. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
-        pthread_create(&hiloDeEjecucion, NULL, (void *) rutinaDeProceso, procesoListoParaEjecutar);
-        pthread_detach(hiloDeEjecucion);
-
-    }
-
-    log_destroy(logger);
-
-}
-
-void replanificarSegunAlgoritmo(){ 
-
-}
-
-void rutinaDeProceso(proceso* procesoEjecutando){
+void rutinaDeProceso(proceso_kernel* procesoEjecutando){
     
     clock_t arranqueEjecucion = clock();
 
@@ -68,6 +31,48 @@ void rutinaDeProceso(proceso* procesoEjecutando){
 
 }
 
+
+
+void planificadorCortoPlazo(){
+
+    t_log* logger = log_create(".cfg/PlanificadorCortoPlazo.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
+
+    log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: ", algoritmoPlanificacion);
+    
+    while(1){
+        sem_wait(hayProcesosReady);
+        sem_wait(nivelMultiprocesamiento);
+        
+        pthread_mutex_lock(modificarReady);
+
+            replanificacion(); //en este momento replanifico y ordeno la lista de readys segun el criterio seleccionado
+            proceso_kernel* procesoListoParaEjecutar = list_remove(procesosReady, 0);
+            log_debug(logger, "Se saca un carpincho de la lista de readys para ejecutar. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
+
+        pthread_mutex_unlock(modificarReady);
+    
+        pthread_mutex_lock(modificarExec);
+            list_add(procesosExec, procesoListoParaEjecutar);
+            log_debug(logger, "Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
+        pthread_mutex_unlock(modificarExec);
+
+        pthread_t hiloDeEjecucion;
+        log_debug(logger, "Se crea un hilo para el carpincho. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
+        pthread_create(&hiloDeEjecucion, NULL, (void *) rutinaDeProceso, procesoListoParaEjecutar);
+        pthread_detach(hiloDeEjecucion);
+
+    }
+
+    log_destroy(logger);
+
+}
+
+void replanificarSegunAlgoritmo(){ 
+
+}
+
+
+
 int rompoElHiloSegunElCodigo(int codigo){
     if(codigo == CERRAR_INSTANCIA || codigo == SEM_WAIT || codigo == SEM_SIGNAL || codigo == CONECTAR_IO){
         return 1;
@@ -91,12 +96,12 @@ void replanificacion(){
 
 /* Planificación SJF */
 
-void calcularEstimacion(proceso* unCarpincho) {
-	unCarpincho->rafagaEstimada = (alfa * estimacion_inicial)+ ((unCarpincho->ultimaRafagaEjecutada) * (1 - alfa) );
+void calcularEstimacion(proceso_kernel* unCarpincho) {
+	unCarpincho->rafagaEstimada = (alfa * unCarpincho->rafagaEstimada)+ ((unCarpincho->ultimaRafagaEjecutada) * (1 - alfa) );
 }
 
-bool comparadorDeRafagas(proceso* unCarpincho, proceso* otroCarpincho) {
-	return unCarpincho->rafagaEstimada <= otroCarpincho->rafagaEstimada;
+bool comparadorDeRafagas(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho) {
+	return unCarpincho->rafagaEstimada < otroCarpincho->rafagaEstimada;
 }
 
 void aplicarSJF() {
@@ -121,11 +126,11 @@ void aplicarSJF() {
 
 /* HRNN  */
 
-void AumentarTiempoEspera(proceso* unCarpincho){ //con lo de las funciones clock creo que esto no seria necesario 
+void AumentarTiempoEspera(proceso_kernel* unCarpincho){ //con lo de las funciones clock creo que esto no seria necesario 
 	unCarpincho->tiempoDeEspera++;
 }
 
-void CalcularResponseRatio(proceso* unCarpincho) {
+void CalcularResponseRatio(proceso_kernel* unCarpincho) {
 	calcularEstimacion(unCarpincho); 
     clock_t finTiempoEsperando = clock();
     unCarpincho->tiempoDeEspera = (double)(finTiempoEsperando - unCarpincho->tiempoDeArriboColaReady) / CLOCKS_PER_SEC;
@@ -133,8 +138,8 @@ void CalcularResponseRatio(proceso* unCarpincho) {
 	unCarpincho->responseRatio = 1 + (unCarpincho->tiempoDeEspera / unCarpincho->rafagaEstimada);
 }
 
-bool comparadorResponseRatio(proceso* unCarpincho, proceso* otroCarpincho) {
-	return unCarpincho->responseRatio >= otroCarpincho->responseRatio;
+bool comparadorResponseRatio(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho) {
+	return unCarpincho->responseRatio > otroCarpincho->responseRatio;
 }
 void aplicarHRRN(){
 

@@ -38,6 +38,9 @@ void inicializarSemaforosGlobales(){
 
     pthread_mutex_lock(nivelMultiProgramacionBajaPrioridad);
 
+    
+    controladorSemaforos = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(controladorSemaforos,NULL);
 
     /* semaforos */
 
@@ -59,18 +62,30 @@ void inicializarSemaforosGlobales(){
 void finalizarSemaforosGlobales(){
 
     pthread_mutex_destroy(contadorProcesos);
-
+    free(contadorProcesos);
     pthread_mutex_destroy(modificarNew);
+    free(modificarNew);
     pthread_mutex_destroy(modificarReady);
+    free(modificarReady);
     pthread_mutex_destroy(modificarExec);
+    free(modificarExec);
     pthread_mutex_destroy(modificarExit);
+    free(modificarExit);
     pthread_mutex_destroy(modificarSuspendedReady);
+    free(modificarSuspendedReady);
     pthread_mutex_destroy(nivelMultiProgramacionBajaPrioridad);
-
+    free(nivelMultiProgramacionBajaPrioridad);
+    pthread_mutex_destroy(controladorSemaforos);
+    free(controladorSemaforos);
     sem_destroy(hayProcesosNew);
+    free(hayProcesosNew);
     sem_destroy(hayProcesosReady);
+    free(hayProcesosReady);
     sem_destroy(nivelMultiProgramacionGeneral);
+    free(nivelMultiProgramacionGeneral);
     sem_destroy(nivelMultiprocesamiento);
+    free(nivelMultiprocesamiento);
+
 
 }
 
@@ -96,8 +111,8 @@ void obtenerValoresDelConfig(t_config* configActual){
     puertoMemoria = config_get_string_value(configActual, "PUERTO_MEMORIA");
     algoritmoPlanificacion = config_get_string_value(configActual, "ALGORITMO_PLANIFICACION");
     retardoCPU = config_get_int_value(configActual, "RETARDO_CPU");
-    estimacion_inicial = config_get_int_value(configActual, "ESTIMACION_INICIAL");
-    alfa = config_get_int_value(configActual, "ALFA");
+    estimacion_inicial = config_get_double_value(configActual, "ESTIMACION_INICIAL");
+    alfa = config_get_double_value(configActual, "ALFA");
     gradoMultiProgramacion = config_get_int_value(configActual, "GRADO_MULTIPROGRAMACION");
     gradoMultiProcesamiento = config_get_int_value(configActual, "GRADO_MULTIPROCESAMIENTO");
     char** nombresDispositivosIO = config_get_array_value(configActual, "DISPOSITIVOS_IO");
@@ -175,10 +190,11 @@ void finalizarDispositivosIO(){
 
 int main(){
 
-    t_log* logger = log_create(".cfg/Kernel.log","Kernel",0,LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/Kernel.log","Kernel",0,LOG_LEVEL_DEBUG);
 
     
     cantidadDeProcesosActual = 0;
+
     inicializarListas();
     t_config* configActual = inicializarConfig();
     
@@ -191,6 +207,9 @@ int main(){
     inicializarSemaforosGlobales();
 
     log_info(logger,"Se inicializan los semaforos utilizados para la sincronizacion de los planificadores");
+    
+    
+    
     /* toda la logica de los planificadores y del servidor */
     
 
@@ -202,6 +221,7 @@ int main(){
 
 
     finalizarListas();
+    finalizarSemaforosGlobales();
     finalizarDispositivosIO();
     finalizarConfig(configActual);
 

@@ -22,20 +22,20 @@
 
 void planificadorCortoPlazo();
 void replanificarSegunAlgoritmo();
-void rutinaDeProceso(proceso* procesoEjecutando);
+void rutinaDeProceso(proceso_kernel* procesoEjecutando);
 int rompoElHiloSegunElCodigo(int codigo);
 
 void replanificacion();
 
 /* SJF */
-void calcularEstimacion(proceso* unCarpincho);
-bool comparadorDeRafagas(proceso* unCarpincho, proceso* otroCarpincho);
+void calcularEstimacion(proceso_kernel* unCarpincho);
+bool comparadorDeRafagas(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho);
 void aplicarSJF();
 
 /* HRRN */
-void AumentarTiempoEspera(proceso* unCarpincho);
-void CalcularResponseRatio(proceso* unCarpincho);
-bool comparadorResponseRatio(proceso* unCarpincho, proceso* otroCarpincho);
+void AumentarTiempoEspera(proceso_kernel* unCarpincho);
+void CalcularResponseRatio(proceso_kernel* unCarpincho);
+bool comparadorResponseRatio(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho);
 void aplicarHRRN();
 
 

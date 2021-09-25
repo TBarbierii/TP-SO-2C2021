@@ -5,13 +5,12 @@ void atenderSolicitudesKernel(char* ip_servidor, char* puerto){
 	//crea un hilo por cada cliente que se conecta y lo atiende. El servidor ya estaria levantado
 
 	 int servidor = iniciar_servidor(ip_servidor, puerto); // devuelve el socket del servidor
-	 pthread_t* cliente;
+	 pthread_t cliente;
 	while(1){
 		int conexion = esperar_cliente(servidor);
-		pthread_create(&cliente,NULL,(void*)atenderMensajeEnKernel,conexion);
+		pthread_create(&cliente,NULL,(void*)atenderMensajeEnKernel,(void *) conexion);
 		pthread_detach(cliente);
 	}
-
 }
 
 int atenderMensajeEnKernel(int conexion) {
@@ -61,31 +60,7 @@ int atenderMensajeEnKernel(int conexion) {
 	
 }
 
-
-
-void inicializarProcesoNuevo(int conexion){
-
-	proceso* procesoNuevo = malloc(sizeof(proceso));
-	pthread_mutex_lock(contadorProcesos);
-		procesoNuevo->pid = cantidadDeProcesosActual;
-		cantidadDeProcesosActual++;
-	pthread_mutex_unlock(contadorProcesos);
-	procesoNuevo->conexion = conexion;
-	procesoNuevo->estimacionAnterior = 1 /*tengo q asignarle al del config */;
-	procesoNuevo->tiempoDeEspera = 0;
-	procesoNuevo->ultimaRafagaEjecutada = 0;
-
-	pthread_mutex_lock(modificarNew);
-		list_add(procesosNew, procesoNuevo);
-	pthread_mutex_unlock(modificarNew);
-	sem_post(hayProcesosNew);
-	sem_post(procesoNecesitaEntrarEnReady);
-
-	enviarInformacionAdministrativaDelProceso(procesoNuevo);
-
-}
-
-void enviarInformacionAdministrativaDelProceso(proceso* proceso){
+void enviarInformacionAdministrativaDelProceso(proceso_kernel* proceso){
 
 	t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
 
@@ -104,6 +79,27 @@ void enviarInformacionAdministrativaDelProceso(proceso* proceso){
 
 }
 
+void inicializarProcesoNuevo(int conexion){
+
+	proceso_kernel* procesoNuevo = malloc(sizeof(proceso_kernel));
+	pthread_mutex_lock(contadorProcesos);
+		procesoNuevo->pid = cantidadDeProcesosActual;
+		cantidadDeProcesosActual++;
+	pthread_mutex_unlock(contadorProcesos);
+	procesoNuevo->conexion = conexion;
+	procesoNuevo->rafagaEstimada = estimacion_inicial;
+	procesoNuevo->tiempoDeEspera = 0;
+	procesoNuevo->ultimaRafagaEjecutada = 0;
+
+	pthread_mutex_lock(modificarNew);
+		list_add(procesosNew, procesoNuevo);
+	pthread_mutex_unlock(modificarNew);
+	sem_post(hayProcesosNew);
+	sem_post(procesoNecesitaEntrarEnReady);
+
+	enviarInformacionAdministrativaDelProceso(procesoNuevo);
+
+}
 
 void cerrarProceso(t_buffer* bufferActual){
 
@@ -128,7 +124,7 @@ void informarCierreDeProceso(int conexion){
 void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual){
 
 	/* notificar a memoria */
-	int buscarProcesoPorPid(proceso* proceso){
+	bool buscarProcesoPorPid(proceso_kernel* proceso){
 		if(proceso->pid == pidActual){
 			return 1;
 		}
@@ -136,7 +132,7 @@ void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual){
 	}
 
 	pthread_mutex_lock(modificarExec); //busco al proceso y lo saco
-		proceso* procesoActual =list_remove_by_condition(procesosExec, buscarProcesoPorPid);
+		proceso_kernel* procesoActual =list_remove_by_condition(procesosExec, buscarProcesoPorPid);
 	pthread_mutex_lock(modificarExec);
 
 	sem_post(nivelMultiprocesamiento); //aumento el grado de multiprogramacion y multiprocesamiento
