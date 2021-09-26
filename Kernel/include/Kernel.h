@@ -47,6 +47,7 @@ int gradoMultiProcesamiento;
 t_list* procesosNew;
 t_list* procesosReady;
 t_list* procesosExec;
+t_list* procesosBlocked;
 t_list* procesosExit; //esta quiza ni la necesitemos
 t_list* procesosSuspendedBlock;
 t_list* procesosSuspendedReady;
@@ -83,6 +84,8 @@ pthread_mutex_t * modificarNew;
 pthread_mutex_t * modificarExec;
 pthread_mutex_t * modificarExit;
 pthread_mutex_t * modificarSuspendedReady;
+pthread_mutex_t * modificarBlocked;
+pthread_mutex_t * modificarSuspendedBlocked;
 
 pthread_mutex_t * nivelMultiProgramacionBajaPrioridad; //esto es para el planificador de largo plazo
 

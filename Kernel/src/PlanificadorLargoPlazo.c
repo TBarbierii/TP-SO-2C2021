@@ -2,9 +2,12 @@
 
 void planificadorLargoPlazo(){
 
-    t_log* logger = log_create(".cfg/PlanificadorLargoPlazo.log","PlanificadorLargoPlazo", 0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/PlanificadorLargoPlazoActual.log","PlanificadorLargoPlazo", 0, LOG_LEVEL_DEBUG);
 
     while(1){
+
+        log_debug(logger,"Se inicializa la planificacion de largo plazo con algoritmo FIFO");
+
         sem_wait(hayProcesosNew);
         pthread_mutex_lock(nivelMultiProgramacionBajaPrioridad); //baja prioridad son los procesos que estan en New
 

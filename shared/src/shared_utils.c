@@ -29,7 +29,6 @@ uint32_t iniciar_servidor(char* ip_servidor, char* puerto)
 
     freeaddrinfo(servinfo);
 
-    log_trace(logger, "Listo para escuchar a mi cliente");
 
     return socket_servidor;
 }
@@ -44,8 +43,6 @@ uint32_t esperar_cliente(uint32_t socket_servidor)
 	uint32_t tam_direccion = sizeof(struct sockaddr_in);
 
 	uint32_t socket_cliente = accept(socket_servidor, (void*) &dir_cliente, &tam_direccion);
-
-	log_info(logger, "Se conecto un cliente!");
 
 	return socket_cliente;
 }

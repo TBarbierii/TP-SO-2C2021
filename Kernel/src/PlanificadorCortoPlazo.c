@@ -7,11 +7,11 @@ void rutinaDeProceso(proceso_kernel* procesoEjecutando){
 
 
     char* nombreLogger = string_new();
-    string_append(&nombreLogger,".cfg/Carpincho");
+    string_append(&nombreLogger,"cfg/Carpincho");
     string_append(&nombreLogger, string_itoa(procesoEjecutando->pid));
     string_append(&nombreLogger,".log");
 
-    t_log* logger = log_create(nombreLogger,"Carpincho", 0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create(nombreLogger,"Carpincho", 0, LOG_LEVEL_INFO);
 
     free(nombreLogger);
 
@@ -35,11 +35,11 @@ void rutinaDeProceso(proceso_kernel* procesoEjecutando){
 
 void planificadorCortoPlazo(){
 
-    t_log* logger = log_create(".cfg/PlanificadorCortoPlazo.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
 
-    log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: ", algoritmoPlanificacion);
-    
     while(1){
+        log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: %s",algoritmoPlanificacion);
+
         sem_wait(hayProcesosReady);
         sem_wait(nivelMultiprocesamiento);
         
@@ -66,11 +66,6 @@ void planificadorCortoPlazo(){
     log_destroy(logger);
 
 }
-
-void replanificarSegunAlgoritmo(){ 
-
-}
-
 
 
 int rompoElHiloSegunElCodigo(int codigo){
@@ -106,32 +101,19 @@ bool comparadorDeRafagas(proceso_kernel* unCarpincho, proceso_kernel* otroCarpin
 
 void aplicarSJF() {
 
-    //lo del IF LO saco, ya que lo de aplicar SJF siempre se hace cuando haya grado de multiprocesamiento y haya procesos en ready esperando, asi que no seria necesario evaluar tal condicion
-
-	list_iterate(procesosReady, (void*) calcularEstimacion); //esto va a iterar cada elemento de la lista, y va a aplicarle el cambio de la ultima rafaga
-	
-    //podriamos hacer que se calcule los procesos su ultima estimacion, y no seria necesario crear una nueva lista, ya que podriamos evaluarla con la lista de ready
-
     list_sort(procesosReady, (void*) comparadorDeRafagas); //con list_sort se ordena la lista segun un criterio (en este caso va a ordenarlo por las rafagas)
-
 				
 }
-
-
-
-
-
 
 
 
 /* HRNN  */
 
 void AumentarTiempoEspera(proceso_kernel* unCarpincho){ //con lo de las funciones clock creo que esto no seria necesario 
-	unCarpincho->tiempoDeEspera++;
+	unCarpincho->tiempoDeEspera++; //esta funcion quiza no sea necesaria
 }
 
 void CalcularResponseRatio(proceso_kernel* unCarpincho) {
-	calcularEstimacion(unCarpincho); 
     clock_t finTiempoEsperando = clock();
     unCarpincho->tiempoDeEspera = (double)(finTiempoEsperando - unCarpincho->tiempoDeArriboColaReady) / CLOCKS_PER_SEC;
 
@@ -141,6 +123,8 @@ void CalcularResponseRatio(proceso_kernel* unCarpincho) {
 bool comparadorResponseRatio(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho) {
 	return unCarpincho->responseRatio > otroCarpincho->responseRatio;
 }
+
+
 void aplicarHRRN(){
 
 		list_iterate(procesosReady, (void*) CalcularResponseRatio); //calcula la estimación de todos los procesos para después ordenarla segun la priorirdad

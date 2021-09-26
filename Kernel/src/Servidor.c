@@ -1,26 +1,40 @@
 #include "Servidor.h"
 
 
-void atenderSolicitudesKernel(char* ip_servidor, char* puerto){
+void atenderSolicitudesKernel(){
 	//crea un hilo por cada cliente que se conecta y lo atiende. El servidor ya estaria levantado
 
-	 int servidor = iniciar_servidor(ip_servidor, puerto); // devuelve el socket del servidor
-	 pthread_t cliente;
+	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_DEBUG);
+
+	int servidor = iniciar_servidor(ipMemoria, puertoMemoria); // devuelve el socket del servidor
+	
+	log_info(logger,"Inicializamos el servidor para que se nos unan los carpinchos");
+
 	while(1){
+		pthread_t cliente;
 		int conexion = esperar_cliente(servidor);
+		log_info(logger,"Se unio un carpincho");
+		
 		pthread_create(&cliente,NULL,(void*)atenderMensajeEnKernel,(void *) conexion);
 		pthread_detach(cliente);
 	}
+
+	log_destroy(logger);
+
 }
 
 int atenderMensajeEnKernel(int conexion) {
+
+	t_log* logger =  log_create("cfg/Servidor.log","Servidor",0,LOG_LEVEL_ERROR);
 
 	t_paquete* paquete = malloc(sizeof(paquete));
 
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
-		perror("Fallo en recibir la info de la conexion");
+		log_error(logger,"Fallo en recibir la info de la conexion");
 	}
+	
+	log_info(logger,"Recibimos la informacion de un carpincho");
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
@@ -30,10 +44,10 @@ int atenderMensajeEnKernel(int conexion) {
 
 	switch(paquete->codigo_operacion){
         case INICIALIZAR_ESTRUCTURA:;
-			inicializarProcesoNuevo(conexion);
+			inicializarProcesoNuevo(conexion, logger);
 			break;
         case CERRAR_INSTANCIA:;
-			cerrarProceso(paquete->buffer);
+			cerrarProceso(paquete->buffer, logger);
             break;
 		case INICIAR_SEMAFORO:;
             break;
@@ -55,6 +69,7 @@ int atenderMensajeEnKernel(int conexion) {
 
 	free(paquete->buffer);
 	free(paquete);
+	log_destroy(logger);
 
 	return valorOperacion;
 	
@@ -79,13 +94,17 @@ void enviarInformacionAdministrativaDelProceso(proceso_kernel* proceso){
 
 }
 
-void inicializarProcesoNuevo(int conexion){
+void inicializarProcesoNuevo(int conexion,t_log* logger){
+
 
 	proceso_kernel* procesoNuevo = malloc(sizeof(proceso_kernel));
+	
 	pthread_mutex_lock(contadorProcesos);
 		procesoNuevo->pid = cantidadDeProcesosActual;
+		log_info(logger,"Un nuevo carpincho se une a la manada del kernel, y su pid es:",string_itoa(procesoNuevo->pid));
 		cantidadDeProcesosActual++;
 	pthread_mutex_unlock(contadorProcesos);
+
 	procesoNuevo->conexion = conexion;
 	procesoNuevo->rafagaEstimada = estimacion_inicial;
 	procesoNuevo->tiempoDeEspera = 0;
@@ -101,7 +120,10 @@ void inicializarProcesoNuevo(int conexion){
 
 }
 
-void cerrarProceso(t_buffer* bufferActual){
+
+
+
+void cerrarProceso(t_buffer* bufferActual,t_log* logger){
 
 	void* stream = bufferActual->stream;
 	uint32_t pidProcesoAEliminar;
@@ -109,7 +131,9 @@ void cerrarProceso(t_buffer* bufferActual){
 
 	memcpy(&(pidProcesoAEliminar), stream+desplazamiento, sizeof(uint32_t));
 
-	cerrarProcesoKernelYDemasConexiones(pidProcesoAEliminar);
+	
+
+	cerrarProcesoKernelYDemasConexiones(pidProcesoAEliminar, logger);
 
 }
 
@@ -121,15 +145,18 @@ void informarCierreDeProceso(int conexion){
 }
 
 
-void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual){
+void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual,t_log* logger){
 
-	/* notificar a memoria */
+	
 	bool buscarProcesoPorPid(proceso_kernel* proceso){
 		if(proceso->pid == pidActual){
 			return 1;
 		}
 		return 0;
 	}
+
+	/* notificar a memoria */
+	log_info(logger,"Le notificamos a memoria para que libere la memoria del carpincho: ", string_itoa(pidActual));
 
 	pthread_mutex_lock(modificarExec); //busco al proceso y lo saco
 		proceso_kernel* procesoActual =list_remove_by_condition(procesosExec, buscarProcesoPorPid);
@@ -140,8 +167,7 @@ void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual){
 
 	informarCierreDeProceso(procesoActual->conexion);
 
-
-	close(procesoActual->conexion); //cierro la conexion
+	log_info(logger,"Se nos va el carpincho:",string_itoa(procesoActual->pid));
 
 	free(procesoActual); //libero la estructura
 

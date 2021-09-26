@@ -17,10 +17,12 @@ typedef struct proceso{
     
     uint32_t pid ;
     int conexion; // es el socket del proceso
+
     double tiempoDeEspera; // para HRRN
     double ultimaRafagaEjecutada ; // este es el real Anterior para SJF
     double rafagaEstimada; //para JFS
-    int responseRatio; // HRRN
+    double responseRatio; // HRRN
+	
     clock_t tiempoDeArriboColaReady; //esto nos va a servir cuando queremos calcular el tiempo que estuvo esperando un proceso en la cola de Ready, donde esta variable va a ser el inicio de cuando entro a ready
 
 }proceso_kernel ;

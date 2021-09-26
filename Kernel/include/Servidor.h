@@ -11,13 +11,14 @@
 
 
 
-void atenderSolicitudesKernel(char* ip_servidor, char* puerto);
+void atenderSolicitudesKernel();
+
 int atenderMensajeEnKernel(int conexion);
 void enviarInformacionAdministrativaDelProceso(proceso_kernel* proceso);
-void inicializarProcesoNuevo(int conexion);
-void cerrarProceso(t_buffer* bufferActual);
+void inicializarProcesoNuevo(int conexion,t_log* logger);
+void cerrarProceso(t_buffer* bufferActual,t_log* logger);
 void informarCierreDeProceso(int conexion);
-void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual);
+void cerrarProcesoKernelYDemasConexiones(uint32_t pidActual,t_log* logger);
 
 
 #endif

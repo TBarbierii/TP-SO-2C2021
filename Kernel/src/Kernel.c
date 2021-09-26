@@ -6,6 +6,7 @@ void inicializarListas(){
     procesosReady = list_create();
     procesosExec = list_create();
     procesosExit = list_create();
+    procesosBlocked = list_create();
     procesosSuspendedReady = list_create();
     procesosSuspendedBlock = list_create();
     semaforosActuales = list_create();
@@ -30,8 +31,15 @@ void inicializarSemaforosGlobales(){
     modificarExit = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(modificarExit,NULL);
 
+    modificarBlocked = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(modificarBlocked,NULL);
+
     modificarSuspendedReady = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(modificarSuspendedReady,NULL);
+
+    modificarSuspendedBlocked = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(modificarSuspendedBlocked,NULL);
+
 
     nivelMultiProgramacionBajaPrioridad = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(nivelMultiProgramacionBajaPrioridad,NULL);
@@ -50,19 +58,20 @@ void inicializarSemaforosGlobales(){
     hayProcesosReady = malloc(sizeof(sem_t));
     sem_init(hayProcesosReady,1,0);
 
+    procesoNecesitaEntrarEnReady = malloc(sizeof(sem_t));
+    sem_init(procesoNecesitaEntrarEnReady,1,0);
+
     nivelMultiProgramacionGeneral = malloc(sizeof(sem_t));
     sem_init(nivelMultiProgramacionGeneral,1,gradoMultiProgramacion);
 
     nivelMultiprocesamiento = malloc(sizeof(sem_t));
     sem_init(nivelMultiprocesamiento,1,gradoMultiProcesamiento);
 
-
 }
 
 void finalizarSemaforosGlobales(){
 
-    pthread_mutex_destroy(contadorProcesos);
-    free(contadorProcesos);
+    
     pthread_mutex_destroy(modificarNew);
     free(modificarNew);
     pthread_mutex_destroy(modificarReady);
@@ -71,12 +80,22 @@ void finalizarSemaforosGlobales(){
     free(modificarExec);
     pthread_mutex_destroy(modificarExit);
     free(modificarExit);
+    pthread_mutex_destroy(modificarBlocked);
+    free(modificarBlocked);
     pthread_mutex_destroy(modificarSuspendedReady);
     free(modificarSuspendedReady);
+    pthread_mutex_destroy(modificarSuspendedBlocked);
+    free(modificarSuspendedBlocked);
+
+    pthread_mutex_destroy(contadorProcesos);
+    free(contadorProcesos);
     pthread_mutex_destroy(nivelMultiProgramacionBajaPrioridad);
     free(nivelMultiProgramacionBajaPrioridad);
     pthread_mutex_destroy(controladorSemaforos);
     free(controladorSemaforos);
+
+
+
     sem_destroy(hayProcesosNew);
     free(hayProcesosNew);
     sem_destroy(hayProcesosReady);
@@ -95,6 +114,7 @@ void finalizarListas(){
     list_destroy(procesosReady);
     list_destroy(procesosExec);
     list_destroy(procesosExit);
+    list_destroy(procesosBlocked);
     list_destroy(procesosSuspendedReady);
     list_destroy(procesosSuspendedBlock);
     list_destroy(semaforosActuales);
@@ -106,6 +126,7 @@ t_config* inicializarConfig(){
 }
 
 void obtenerValoresDelConfig(t_config* configActual){
+
 
     ipMemoria = config_get_string_value(configActual, "IP_MEMORIA");
     puertoMemoria = config_get_string_value(configActual, "PUERTO_MEMORIA");
@@ -190,7 +211,7 @@ void finalizarDispositivosIO(){
 
 int main(){
 
-    t_log* logger = log_create("cfg/Kernel.log","Kernel",0,LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/KernelActual.log","KernelActual",0,LOG_LEVEL_INFO);
 
     
     cantidadDeProcesosActual = 0;
@@ -210,13 +231,22 @@ int main(){
     
     
     
-    /* toda la logica de los planificadores y del servidor */
+/* toda la logica de los planificadores y del servidor */
     
-
-
-
-
-
+    pthread_t servidor, pCortoPlazo, pLargoPlazo, pMedianoPlazo;
+		
+    pthread_create(&servidor,NULL,(void*)atenderSolicitudesKernel,NULL);
+      pthread_create(&pLargoPlazo,NULL,(void*)planificadorLargoPlazo,NULL);
+      pthread_create(&pCortoPlazo,NULL,(void*)planificadorCortoPlazo,NULL);
+      pthread_create(&pMedianoPlazo,NULL,(void*)planificadorMedianoPlazo,NULL);
+        
+      pthread_join(servidor,NULL);
+      pthread_join(pMedianoPlazo,NULL);
+      pthread_join(pLargoPlazo,NULL);
+      pthread_join(pCortoPlazo,NULL);
+      
+     
+/* ------------------------------------------ */
 
 
 

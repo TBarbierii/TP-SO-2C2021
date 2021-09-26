@@ -14,7 +14,7 @@
 /* funciones */
 
 void planificadorMedianoPlazo();
-void thread1_PMP();
-void thread2_PMP();
+void thread1_PMP(t_log* logger);
+void thread2_PMP(t_log* logger);
 
 #endif
