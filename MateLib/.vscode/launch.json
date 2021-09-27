@@ -5,17 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "MateLib",
+            "name": "Matelib",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/MateLib",
+            "program": "${workspaceFolder}/Matelib",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "preLaunchTask": "Make",
             "setupCommands": [
                 {
                     "description": "Habilitar la impresión con sangría para gdb",

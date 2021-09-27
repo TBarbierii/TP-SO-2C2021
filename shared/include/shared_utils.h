@@ -67,7 +67,7 @@ typedef struct paquete
 
 
 uint32_t iniciar_servidor(char* ip_servidor, char* puerto);
-uint32_t esperar_cliente(uint32_t socket_servidor);
+int esperar_cliente(int socket_servidor);
 int crear_conexion(char *ip, char* puerto);
 void* serializar_paquete(t_paquete* paquete, int bytes);
 void crear_buffer(t_paquete* paquete);

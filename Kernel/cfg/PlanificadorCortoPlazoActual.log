@@ -1,2 +1,7 @@
-[DEBUG] 11:03:00:140 PlanificadorCortoPlazo/(6992:6994): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 11:05:26:959 PlanificadorCortoPlazo/(7168:7171): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 13:32:06:621 PlanificadorCortoPlazo/(4316:4319): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 13:32:15:597 PlanificadorCortoPlazo/(4316:4319): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 13:32:15:597 PlanificadorCortoPlazo/(4316:4319): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[DEBUG] 13:32:15:597 PlanificadorCortoPlazo/(4316:4319): Se crea un hilo para el carpincho. Carpincho: 0
+[INFO] 13:32:15:609 PlanificadorCortoPlazo/(4316:4342): Se ejecuto tarea de conexion
+[INFO] 13:32:15:720 PlanificadorCortoPlazo/(4316:4342): La tarea realizada fue: 1
+[INFO] 13:32:15:720 PlanificadorCortoPlazo/(4316:4342): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento

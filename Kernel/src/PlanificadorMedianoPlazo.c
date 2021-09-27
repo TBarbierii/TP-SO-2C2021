@@ -8,10 +8,10 @@ void planificadorMedianoPlazo(){
 
     pthread_t  t1, t2;
 
-    pthread_create(&t1, NULL,(void *) thread1_PMP, logger);
+ //   pthread_create(&t1, NULL,(void *) thread1_PMP, logger); este tenemos que analizarlo
     pthread_create(&t2, NULL,(void *) thread2_PMP, logger);
     
-    pthread_join(t1,NULL);
+ //   pthread_join(t1,NULL);
     pthread_join(t2,NULL);
 
     log_destroy(logger);
@@ -52,10 +52,11 @@ void thread2_PMP(t_log* logger){
             int verdadero = list_is_empty(procesosSuspendedReady);
         pthread_mutex_unlock(modificarSuspendedReady);
             if(verdadero){
+                log_info(logger,"Se busca un proceso de new");
                 pthread_mutex_unlock(nivelMultiProgramacionBajaPrioridad);
             }else{
-
-               pthread_mutex_lock(modificarSuspendedReady);
+                log_info(logger,"Se busca un proceso de suspended-ready");
+                pthread_mutex_lock(modificarSuspendedReady);
                     proceso_kernel* procesoParaPreparar = list_remove(procesosSuspendedReady,0);
                 pthread_mutex_unlock(modificarSuspendedReady);
 

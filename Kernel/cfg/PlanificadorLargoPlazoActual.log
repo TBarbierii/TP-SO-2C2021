@@ -1,2 +1,3 @@
-[DEBUG] 11:03:00:144 PlanificadorLargoPlazo/(6992:6993): Se inicializa la planificacion de largo plazo con algoritmo FIFO
-[DEBUG] 11:05:26:962 PlanificadorLargoPlazo/(7168:7170): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 13:32:06:621 PlanificadorLargoPlazo/(4316:4318): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 13:32:15:597 PlanificadorLargoPlazo/(4316:4318): Se esta sacando un carpincho de la cola de new. Carpincho: 0
+[INFO] 13:32:15:597 PlanificadorLargoPlazo/(4316:4318): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0

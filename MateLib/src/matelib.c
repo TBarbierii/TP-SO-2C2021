@@ -14,24 +14,6 @@ int mate_init(mate_instance *lib_ref, char *config){
 
         solicitarIniciarPatota(conexion, lib_ref);
         recibir_mensaje(conexion, lib_ref);
-        
-
-        if(lib_ref->group_info->pid < 0 ){
-            perror("No se pudo crear la instancia :(");
-            return -1;
-        }
-
-        lib_ref->group_info->conexionConBackEnd = conexion;
-        
-        
-        char* nombreLog = string_new();
-        string_append(&nombreLog, "Proceso ");
-        string_append(&nombreLog, string_itoa((int) lib_ref->group_info->pid));
-        string_append(&nombreLog, ".log");
-
-        lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",0,LOG_LEVEL_DEBUG);
-        
-        free(nombreLog);
     }
     return lib_ref->group_info->backEndConectado;
 }
@@ -40,10 +22,16 @@ int mate_init(mate_instance *lib_ref, char *config){
 
 int mate_close(mate_instance *lib_ref){
 
-    solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+        log_info(lib_ref->group_info->loggerProceso,"Se ha solicitado cerrar el carpincho, este es un hasta adios");
 
-    return 0;
+        solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        log_info(lib_ref->group_info->loggerProceso,"Se envio info para cerrarlo");
+        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    }else{
+        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+        return -1;
+    }    
 }
 
 
@@ -58,6 +46,7 @@ int mate_sem_init(mate_instance *lib_ref, mate_sem_name sem, unsigned int value)
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+        return -1;
     }
 
 }
@@ -69,6 +58,7 @@ int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+        return -1;
     }
 }
 
@@ -79,6 +69,7 @@ int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+        return -1;
     }
 }
 
@@ -89,6 +80,7 @@ int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+        return -1;
     }
 }
 
@@ -102,6 +94,7 @@ int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void *msg){
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+        return -1;
     }
 }
 
@@ -120,6 +113,7 @@ mate_pointer mate_memalloc(mate_instance *lib_ref, int size){
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
+        return -1;
     } 
 }
 
@@ -130,6 +124,7 @@ int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
+        return -1;
     } 
 }
 
@@ -140,6 +135,7 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *dest, int si
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
+        return -1;
     } 
 }
 
@@ -150,6 +146,7 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
+        return -1;
     }   
 }
 
@@ -171,32 +168,40 @@ int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
     char* puertoBackEnd = config_get_string_value(datosBackEnd,"PUERTO_BACKEND");
     int conexionConBackEnd = crear_conexion(ipBackEnd, puertoBackEnd);
     
-    free(config);
+    lib_ref->group_info->config = datosBackEnd;
+    
 
     return conexionConBackEnd;
 }
 
 
-void recibir_mensaje(int conexion, mate_instance* lib_ref) {
+int recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
-	t_paquete* paquete = malloc(sizeof(paquete));
+	t_paquete* paquete = malloc(sizeof(t_paquete));
+
 
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
 		perror("Fallo en recibir la info de la conexion");
+        return -1;
 	}
+    int codigoOperacion = paquete->codigo_operacion;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
 
+    if(paquete->buffer->size > 0){
 	paquete->buffer->stream = malloc(paquete->buffer->size);
 	recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
+    }
 
+    
 	switch(paquete->codigo_operacion){
         case INICIALIZAR_ESTRUCTURA:;
-            agregarInfoAdministrativa(lib_ref, paquete->buffer);
+            agregarInfoAdministrativa(conexion,lib_ref, paquete->buffer);
 			break;
         case CERRAR_INSTANCIA:;
+            log_info(lib_ref->group_info->loggerProceso,"Estamos recibiendo todo para cerrar la conexion y terminar");
             liberarEstructurasDeProceso(lib_ref);
             break;
 		case INICIAR_SEMAFORO:;
@@ -218,9 +223,11 @@ void recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	free(paquete->buffer);
 	free(paquete);
+
+    return codigoOperacion;
 }
 
-void agregarInfoAdministrativa(mate_instance* lib_ref, t_buffer* buffer){
+void agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* buffer){
 	void* stream = buffer->stream;
 	int offset = 0;
 
@@ -229,15 +236,40 @@ void agregarInfoAdministrativa(mate_instance* lib_ref, t_buffer* buffer){
 
 	memcpy(&(lib_ref->group_info->backEndConectado), stream+offset, sizeof(uint32_t));
 
+    if(lib_ref->group_info->pid < 0 ){
+            perror("No se pudo crear la instancia :(");
+    }else{
+
+    lib_ref->group_info->conexionConBackEnd = conexion;
+        
+        
+    char* nombreLog = string_new();
+    string_append(&nombreLog, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/Proceso");
+    char* pidCarpincho = string_itoa((int) lib_ref->group_info->pid);
+    string_append(&nombreLog, pidCarpincho);
+    string_append(&nombreLog, ".log");
+
+    lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",0,LOG_LEVEL_DEBUG);
+    
+    log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
+
+    free(pidCarpincho);
+    free(nombreLog);
+    }
+
 }
 
 
 
 void liberarEstructurasDeProceso(mate_instance* lib_ref){
+    
+    log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso");
+    
     log_destroy(lib_ref->group_info->loggerProceso);
-    free(lib_ref->group_info);
+    config_destroy(lib_ref->group_info->config);
     close(lib_ref->group_info->conexionConBackEnd);
-    free(lib_ref);
+    free(lib_ref->group_info);
+    //free(lib_ref);
 }
 
 
@@ -363,5 +395,8 @@ int validarConexionPosible(int tipoSolicitado, int tipoActual){
 
 
 int main(){
+    mate_instance referencia;
+    mate_init(&referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    mate_close(&referencia);
     return 0;
 }

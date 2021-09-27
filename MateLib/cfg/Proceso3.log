@@ -1,0 +1,5 @@
+[INFO] 23:16:34:670 loggerContenidoProceso/(14914:14914): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 23:16:34:670 loggerContenidoProceso/(14914:14914): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 23:16:34:671 loggerContenidoProceso/(14914:14914): Se envio info para cerrarlo
+[INFO] 23:16:34:674 loggerContenidoProceso/(14914:14914): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 23:16:34:674 loggerContenidoProceso/(14914:14914): Se liberan todas las estructuras del proceso
