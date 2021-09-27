@@ -27,17 +27,17 @@ int retardo_swap;
 
 /* Variables globales */
 
+t_list* listaParticiones;
 t_list* lista_swap_files;
 t_log* logger_swamp;
 
 
 /* Estructuras */
 
-// Es necesaria esta estructura? 
 typedef struct {
     char* path;
-    int fd_swap;
-    void* swap_file;
+    int fd_swap;       // Es necesario?
+    void* swap_file;   // Es necesario?
     t_list* particiones_swap;
 }swap_files;
 
@@ -49,6 +49,15 @@ typedef struct {
     void* inicio_particion;
 }particion;
 
+typedef struct {
+    int tamanio;
+    int num_pagina;
+}pagina;
+
+typedef struct {
+    pagina* pagina;
+    particion* frame;
+}pagina_y_particion;
 
 /* Declaracion de funciones */
 
