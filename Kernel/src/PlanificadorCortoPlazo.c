@@ -5,20 +5,14 @@ void rutinaDeProceso(proceso_kernel* procesoEjecutando){
     
     clock_t arranqueEjecucion = clock();
 
+    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
 
-    char* nombreLogger = string_new();
-    string_append(&nombreLogger,"cfg/Carpincho");
-    string_append(&nombreLogger, string_itoa(procesoEjecutando->pid));
-    string_append(&nombreLogger,".log");
-
-    t_log* logger = log_create(nombreLogger,"Carpincho", 0, LOG_LEVEL_INFO);
-
-    free(nombreLogger);
 
     while(1){
         
         log_info(logger, "Se ejecuto tarea de conexion");
         int codigoOperacion = atenderMensajeEnKernel(procesoEjecutando->conexion);
+        log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
         if(rompoElHiloSegunElCodigo(codigoOperacion)){
             log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento");
             
@@ -36,10 +30,10 @@ void rutinaDeProceso(proceso_kernel* procesoEjecutando){
 void planificadorCortoPlazo(){
 
     t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
-
+    log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: %s",algoritmoPlanificacion);
+  
     while(1){
-        log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: %s",algoritmoPlanificacion);
-
+    
         sem_wait(hayProcesosReady);
         sem_wait(nivelMultiprocesamiento);
         
@@ -47,17 +41,16 @@ void planificadorCortoPlazo(){
 
             replanificacion(); //en este momento replanifico y ordeno la lista de readys segun el criterio seleccionado
             proceso_kernel* procesoListoParaEjecutar = list_remove(procesosReady, 0);
-            log_debug(logger, "Se saca un carpincho de la lista de readys para ejecutar. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
-
+            log_debug(logger, "Se saca un carpincho de la lista de readys para ejecutar. Carpincho: %d",procesoListoParaEjecutar->pid);
         pthread_mutex_unlock(modificarReady);
     
         pthread_mutex_lock(modificarExec);
             list_add(procesosExec, procesoListoParaEjecutar);
-            log_debug(logger, "Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
+            log_debug(logger, "Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: %d", procesoListoParaEjecutar->pid);
         pthread_mutex_unlock(modificarExec);
 
         pthread_t hiloDeEjecucion;
-        log_debug(logger, "Se crea un hilo para el carpincho. Carpincho: ", string_itoa(procesoListoParaEjecutar->pid));
+        log_debug(logger, "Se crea un hilo para el carpincho. Carpincho: %d", procesoListoParaEjecutar->pid);
         pthread_create(&hiloDeEjecucion, NULL, (void *) rutinaDeProceso, procesoListoParaEjecutar);
         pthread_detach(hiloDeEjecucion);
 

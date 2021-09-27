@@ -2,33 +2,26 @@
 
 uint32_t iniciar_servidor(char* ip_servidor, char* puerto)
 {
-	uint32_t socket_servidor;
+	int socket_servidor;
 
-    struct addrinfo hints, *servinfo, *p;
+	struct addrinfo hints, *servinfo;
 
-    memset(&hints, 0, sizeof(hints));
-    hints.ai_family = AF_UNSPEC;
-    hints.ai_socktype = SOCK_STREAM;
-    hints.ai_flags = AI_PASSIVE;
+	memset(&hints, 0, sizeof(hints));
+	hints.ai_family = AF_INET;
+	hints.ai_socktype = SOCK_STREAM;
+	hints.ai_flags = AI_PASSIVE;
+
 
     getaddrinfo(ip_servidor, puerto, &hints, &servinfo);
 
-    for (p=servinfo; p != NULL; p = p->ai_next)
-    {
-        if ((socket_servidor = socket(p->ai_family, p->ai_socktype, p->ai_protocol)) == -1)
-            continue;
+    socket_servidor = socket(servinfo->ai_family, 
+                         servinfo->ai_socktype, 
+                         servinfo->ai_protocol);
 
-        if (bind(socket_servidor, p->ai_addr, p->ai_addrlen) == -1) {
-            close(socket_servidor);
-            continue;
-        }
-        break;
-    }
-
+	bind(socket_servidor, servinfo->ai_addr, servinfo->ai_addrlen);
 	listen(socket_servidor, SOMAXCONN);
 
     freeaddrinfo(servinfo);
-
 
     return socket_servidor;
 }
@@ -37,12 +30,10 @@ uint32_t iniciar_servidor(char* ip_servidor, char* puerto)
 
 
 
-uint32_t esperar_cliente(uint32_t socket_servidor)
+int esperar_cliente(int socket_servidor)
 {
-	struct sockaddr_in dir_cliente;
-	uint32_t tam_direccion = sizeof(struct sockaddr_in);
-
-	uint32_t socket_cliente = accept(socket_servidor, (void*) &dir_cliente, &tam_direccion);
+	
+	int socket_cliente = accept(socket_servidor, NULL, NULL);
 
 	return socket_cliente;
 }
@@ -57,7 +48,6 @@ int crear_conexion(char *ip, char* puerto)
 	memset(&hints, 0, sizeof(hints));
 	hints.ai_family = AF_UNSPEC;
 	hints.ai_socktype = SOCK_STREAM;
-	hints.ai_flags = AI_PASSIVE;
 
 	getaddrinfo(ip, puerto, &hints, &server_info);
 
@@ -70,12 +60,7 @@ int crear_conexion(char *ip, char* puerto)
         return -1;
     }
 
-	if(connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen) == -1){
-        perror("No se pudo conectar al servidor");
-        freeaddrinfo(server_info);
-        return -1;
-    };
-    
+	connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen);
 	freeaddrinfo(server_info);
 	return socket_cliente;
 }
@@ -88,8 +73,8 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 	
 	int desplazamiento = 0;
 	
-	memcpy(contenido_serializado + desplazamiento, &(paquete->codigo_operacion), sizeof(int));
-	desplazamiento+= sizeof(int);
+	memcpy(contenido_serializado + desplazamiento, &(paquete->codigo_operacion), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
 	
 	memcpy(contenido_serializado + desplazamiento, &(paquete->buffer->size), sizeof(uint32_t));
 	desplazamiento+= sizeof(uint32_t);

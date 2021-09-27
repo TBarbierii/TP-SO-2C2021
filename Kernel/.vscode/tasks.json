@@ -10,12 +10,12 @@
             ]
         },
         {
-            "label": "Kernel Normal",
+            "label": "Kernel normal",
             "type": "shell",
             "command": "./exec.sh"
         },
         {
-            "label": "Kernel Valgrind",
+            "label": "Kernel valgrind",
             "type": "shell",
             "command": "./vexec.sh"
         }

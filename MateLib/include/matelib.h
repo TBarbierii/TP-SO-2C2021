@@ -24,7 +24,7 @@ typedef struct
     int conexionConBackEnd; // se obtiene informacion del backend (memoria o kernel) - guarda el socket al servidor que se esta conectando.
     backend backEndConectado; // id de backend al que nos estamos conectando. En caso de que sea -1 error.
     t_log* loggerProceso; // el log nos va a dar la referencia a la hora de planificar al proceso.
-
+    t_config* config;
 }mate_struct;
 
 
@@ -78,7 +78,7 @@ int inicializarPrimerasCosas(mate_instance *lib_ref, char *config);
 
 void recibir_mensaje(int conexion, mate_instance* lib_ref);
 
-void agregarInfoAdministrativa(mate_instance* lib_ref, t_buffer* buffer);
+void agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* buffer);
 
 void liberarEstructurasDeProceso(mate_instance* lib_ref);
 
