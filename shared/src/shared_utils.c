@@ -109,4 +109,8 @@ void enviarPaquete(t_paquete* paquete, int conexion){
     void* contenido_a_enviar= serializar_paquete(paquete, bytes);
     send(conexion, contenido_a_enviar,bytes,0);
     free(contenido_a_enviar);
+	free(paquete->buffer->stream);
+	free(paquete->buffer);
+	free(paquete);
+
 }

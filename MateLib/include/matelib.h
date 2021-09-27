@@ -76,7 +76,7 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 int inicializarPrimerasCosas(mate_instance *lib_ref, char *config);
 
-void recibir_mensaje(int conexion, mate_instance* lib_ref);
+int recibir_mensaje(int conexion, mate_instance* lib_ref);
 
 void agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* buffer);
 

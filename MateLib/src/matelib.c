@@ -22,14 +22,16 @@ int mate_init(mate_instance *lib_ref, char *config){
 
 int mate_close(mate_instance *lib_ref){
 
-    log_info(lib_ref->group_info->loggerProceso,"Se ha solicitado cerrar el carpincho, este es un hasta adios");
+    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+        log_info(lib_ref->group_info->loggerProceso,"Se ha solicitado cerrar el carpincho, este es un hasta adios");
 
-    solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    log_info(lib_ref->group_info->loggerProceso,"Se envio info para cerrarlo");
-    recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    log_info(lib_ref->group_info->loggerProceso,"Se recibe el OK para cerrar");
-
-    return 0;
+        solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        log_info(lib_ref->group_info->loggerProceso,"Se envio info para cerrarlo");
+        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    }else{
+        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+        return -1;
+    }    
 }
 
 
@@ -173,15 +175,17 @@ int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
 }
 
 
-void recibir_mensaje(int conexion, mate_instance* lib_ref) {
+int recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
-	t_paquete* paquete = malloc(sizeof(paquete));
+	t_paquete* paquete = malloc(sizeof(t_paquete));
 
 
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
 		perror("Fallo en recibir la info de la conexion");
+        return -1;
 	}
+    int codigoOperacion = paquete->codigo_operacion;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
@@ -219,6 +223,8 @@ void recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	free(paquete->buffer);
 	free(paquete);
+
+    return codigoOperacion;
 }
 
 void agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* buffer){
@@ -239,13 +245,15 @@ void agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* b
         
     char* nombreLog = string_new();
     string_append(&nombreLog, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/Proceso");
-    string_append(&nombreLog, string_itoa((int) lib_ref->group_info->pid));
+    char* pidCarpincho = string_itoa((int) lib_ref->group_info->pid);
+    string_append(&nombreLog, pidCarpincho);
     string_append(&nombreLog, ".log");
 
     lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",0,LOG_LEVEL_DEBUG);
     
     log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
 
+    free(pidCarpincho);
     free(nombreLog);
     }
 
