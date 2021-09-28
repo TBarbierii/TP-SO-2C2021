@@ -4,6 +4,10 @@ t_config* inicializarConfig(){
     return config_create("cfg/ConfiguracionMemoria.config");
 }
 
+void inicializarListas(){
+    carpinchos = list_create();
+}
+
 void obtenerValoresDelConfig(t_config* configActual){
 
     ipSWAmP = config_get_string_value(configActual, "IP_SWAMP");

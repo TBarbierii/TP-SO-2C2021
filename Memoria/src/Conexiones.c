@@ -1,4 +1,4 @@
-#include "Memoria.h"
+#include "Conexiones.h"
 
 uint32_t recibir_operacion(uint32_t socket_cliente)
 {
@@ -11,6 +11,17 @@ uint32_t recibir_operacion(uint32_t socket_cliente)
 		close(socket_cliente);
 		return -1;
 	}
+}
+
+void* recibir_buffer(int* size, int socket_cliente)
+{
+	void * buffer;
+
+	recv(socket_cliente, size, sizeof(int), MSG_WAITALL);
+	buffer = malloc(*size);
+	recv(socket_cliente, buffer, *size, MSG_WAITALL);
+
+	return buffer;
 }
 
 void atender_solicitudes_multihilo(char* ip_servidor, char* puerto){
@@ -29,21 +40,50 @@ void atender_solicitudes_multihilo(char* ip_servidor, char* puerto){
 void atender_solicitudes(uint32_t conexion){
 uint32_t cod_op = recibir_operacion(conexion);
 	
+	switch(cod_op)
+	{
+	
 
-			switch(cod_op)
-			{
-
-			case /*memalloc*/:
-
-			case /*memfree*/:
-            case /*memwrite*/:
-            case /*memread*/:	
-			case -1:
-				log_error(logger, "el cliente se desconecto. Terminando servidor");
-				break;
-			default:
-				log_warning(logger, "Entro al default");
-				break;
-			}
+	case INICIALIZAR_ESTRUCTURA: //caso de que no haya kernel
+		//recibir_mateinit();
+		//devolver pid, y un 1;
+	case MEMALLOC:
+		//recibir_memalloc();
+		
+	case MEMFREE:
+		//recibir_memfree();
+	case MEMREAD:
+		//recibir_memread();
+	case MEMWRITE:	
+		//recibir_memwrite();
+	case CERRAR_INSTANCIA:
+		//RECIBIR_cerrar();
+		break;
+	case -1:
+		log_error(logger, "el cliente se desconecto. Terminando servidor");
+		break;
+	default:
+		log_warning(logger, "Entro al default");
+		break;
+	}
 }
+
+
+uint32_t recibir_memalloc(int socket_cliente) //devuelve DL del comienzo del bloque (no del heap)
+{
+	uint32_t size, offset;
+	t_memalloc alloc;
+	void* buffer = recibir_buffer(&size, socket_cliente);
+	
+	memcpy(alloc.pid, buffer, sizeof(uint32_t));
+	offset =+ sizeof(uint32_t);
+	memcpy(alloc.tamanio, buffer + offset,sizeof(uint32_t));
+
+	free(buffer);
+
+	administrar_allocs(alloc);
+
+	//escribir_en_memoria(dl); //aca se graba en memoria los allocs reservados. Devuelve el comienzo del marco
+
+	return 0;
 }
