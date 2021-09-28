@@ -83,6 +83,8 @@ uint32_t recibir_memalloc(int socket_cliente) //devuelve DL del comienzo del blo
 
 	administrar_allocs(alloc);
 
+	
+
 	//escribir_en_memoria(dl); //aca se graba en memoria los allocs reservados. Devuelve el comienzo del marco
 
 	return 0;

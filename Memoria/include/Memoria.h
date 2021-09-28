@@ -123,6 +123,8 @@ t_list* marcos;
 t_config* inicializarConfig();
 void inicializarListas();
 void administrar_allocs(t_memalloc);
+uint32_t buscar_o_agregar_espacio(t_carpincho* , uint32_t );
+uint32_t administrar_paginas(t_carpincho*);
 void finalizarConfig(t_config* configUsado);
 void obtenerValoresDelConfig(t_config* configActual);
 void inicializarMemoria();

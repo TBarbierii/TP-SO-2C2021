@@ -6,12 +6,22 @@ void administrar_allocs(t_memalloc alloc){
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc.pid;
 	}
-    //semaforo?a
+    //semaforo?
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
     //semaforo?
     //si no lo encuentra crearlo
+    if (carpincho == NULL){
+     carpincho = malloc(sizeof(t_carpincho));
+     carpincho->id_carpincho = alloc.pid;
+     carpincho->tabla_de_paginas = list_create();
+     carpincho->allocs = list_create();
+     //tlb
+     list_add(carpincho, carpinchos);
+    }
 
-    buscar_o_agregar_espacio(carpincho, alloc.tamanio); //aca se crearian las paginas en el carpincho. Solo sirven para calcular la DF creo
+    uint32_t desplazamiento_alloc = buscar_o_agregar_espacio(carpincho, alloc.tamanio); //aca se crearian las paginas en el carpincho. Solo sirven para calcular la DF creo
+
+    uint32_t numero_de_pagina = administrar_paginas(carpincho);
 
     uint32_t marco = escribir_en_memoria(carpincho); //aca se graba en memoria los allocs reservados. Devuelve el id_marco
 
@@ -20,55 +30,68 @@ void administrar_allocs(t_memalloc alloc){
 }
 
 
-void buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanio){ //ver que retornar
+uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido){ //devuelve desplazamiento (inicio del espacio) respecto a la pagina
 
-    if(list_size(carpincho->allocs == 0)){
-    heapMetadata* alloc = malloc(sizeof(heapMetadata));
-    alloc->isFree = true;
-    alloc->prevAlloc = NULL;
-    
-        if(tamanio + 9 != tamanioPagina){// crea otro alloc si sobra espacio en la pagina o si se pasa
-            
-            alloc->nextAlloc = 9 + tamanio;
-            heapMetadata* nextAlloc = malloc(sizeof(heapMetadata));
-            nextAlloc->isFree = true;
-            nextAlloc->prevAlloc = alloc->nextAlloc - 9 + tamanio;
-            nextAlloc->nextAlloc = NULL;
-            list_add(carpincho->allocs, alloc);
-            list_add(carpincho->allocs, nextAlloc);
-        }else{//aca entro justo y no se crea otro alloc
+   if(list_size(carpincho->allocs) == 0){
+       heapMetadata* alloc = malloc(sizeof(heapMetadata));
+       alloc->nextAlloc = NULL;
+       alloc->isFree = true;
+       alloc->nextAlloc = tamanioPedido + 9;
+
+       heapMetadata* next_alloc = malloc(sizeof(heapMetadata));
+       next_alloc->isFree = true;
+       next_alloc->prevAlloc = 0;
+       next_alloc->nextAlloc = NULL;
+
+        return 9; //el espacio del primer alloc siempre va a empezar en 9
+
+   }else{//buscar espacio. se podria delegar todo esto porque tambien aca habria que hacer lo de dividir y consolidar allocs
+
+        uint32_t espacioEncontrado, cantidadDeAllocs = list_size(carpincho->allocs);
+        heapMetadata *allocActual, *allocSiguiente;
+
+        for(uint32_t i = 0; i < cantidadDeAllocs; i++){
+
+            allocActual = list_get(carpincho->allocs, i);
+            allocSiguiente = list_get(carpincho->allocs, i + 1);
+
+            if(allocActual->isFree){
+                espacioEncontrado = allocActual->nextAlloc - allocSiguiente->prevAlloc - 9;
+            }
+
+            if (tamanioPedido == espacioEncontrado || tamanioPedido < espacioEncontrado + 9) // +9 porque si es mas chico en lo que sobra tiene que entrar el otro heap (aunque tambien habria que agregar +minimo_espacio_aceptable)
+            break; //sale del for
+        }
         
-            alloc->nextAlloc = NULL;
-            list_add(carpincho->allocs, alloc);
-        }
-    
-    uint32_t cantidad_paginas_necesarias = (9 + tamanio)/tamanioPagina;
+        //todo esto que sigue es para calcualr el desplazamiento de donde empieza el espacio libre
+        uint32_t posicionAllocActual = allocSiguiente->prevAlloc;
+        uint32_t paginaDelAllocActual;
 
-        for(int i=0; i<cantidad_paginas_necesarias; i++){    
-            t_pagina* nuevaPagina = malloc(sizeof(t_pagina));
-            nuevaPagina->esNueva = true;
-            nuevaPagina->id_pagina = i; //generar ids unicos
-            list_add(carpincho->tabla_de_paginas, nuevaPagina);
-        }
-    }else{//hasta aca seria si un carpincho reserva un alloc por primera vez
-    //recorrer los allocs hasta encontrar espacio (teniendo en cuenta que si se tiene que se separar tiene que entrar el heap), si no hay lugar agregar al final que deberia haber uno en NULL (fusionar si es necesario) y/o agregar una pagina nueva
-    uint32_t espacio_encontrado = 0;
+        for(uint32_t i=1; i <= list_size(carpincho->tabla_de_paginas); i++){
 
-    void verificar_espacios(heapMetadata* alloc){
-
-        if(alloc->isFree){
-        espacio_encontrado = alloc->nextAlloc - espacio_encontrado;
+            if(posicionAllocActual < tamanioPagina * i){
+            paginaDelAllocActual = i;
+            break; 
+            }    
         }
 
-        if(espacio_encontrado - 9 == tamanio || espacio_encontrado - 9 > tamanio + 9){//dios que poronga esto lo planearon con el orto. podria quedar un alloc de 0B?
-    
-        }
-    
-    }
+        return tamanioPagina - (paginaDelAllocActual * tamanioPagina - posicionAllocActual) +9 ; //el desplazamiento relativo a la pagina
 
-    list_iterate(carpincho->allocs, (void*)verificar_espacios);
-    //oljsdhgfvasdhgañnb no sirve un list iterate creo
-    }
+   }
+
+}
+
+uint32_t administrar_paginas(t_carpincho* carpincho){
+
+        heapMetadata *anteultimoAlloc = list_get(carpincho->allocs, list_size(carpincho->allocs)-2);
+
+        uint32_t posicionUltimoAlloc = anteultimoAlloc->nextAlloc;
+
+        uint32_t cantidadDePaginasNecesarias = ceil(posicionUltimoAlloc/tamanioPagina);
+
+        uint32_t cantidadDePaginasACrear =cantidadDePaginasNecesarias - list_size(carpincho->tabla_de_paginas);
+
+        //aca quede. crear paginas y agregar a tabla de paginas 
 
 }
 
