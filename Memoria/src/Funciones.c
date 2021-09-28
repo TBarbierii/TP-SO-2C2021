@@ -42,7 +42,7 @@ void buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanio){ //ver q
             list_add(carpincho->allocs, alloc);
         }
     
-    uint32_t cantidad_paginas_necesarias = ceil((9 + tamanio)/tamanioPagina);
+    uint32_t cantidad_paginas_necesarias = (9 + tamanio)/tamanioPagina;
 
         for(int i=0; i<cantidad_paginas_necesarias; i++){    
             t_pagina* nuevaPagina = malloc(sizeof(t_pagina));
