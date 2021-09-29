@@ -133,6 +133,10 @@ void obtenerValoresDelConfig(t_config* configActual);
 void inicializarMemoria();
 void liberarMemoria();
 
+void enviar_pagina(uint32_t id_pagina, void* contenido);
+
+void pedir_pagina(uint32_t id_pagina);
+
 uint32_t asignarPaginas(t_carpincho*);
 
 /* Auxiliares */

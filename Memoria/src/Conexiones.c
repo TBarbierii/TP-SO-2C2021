@@ -89,3 +89,73 @@ uint32_t recibir_memalloc(int socket_cliente) //devuelve DL del comienzo del blo
 
 	return 0;
 }
+
+
+
+/* mensajes con swamp */
+
+void enviar_tipo_asignacion(char* tipoAsignacion){//mandar al principio despues de leer config
+
+	uint32_t tipo;
+
+	if(strcmp(tipoAsignacion, "FIJA") == 0) tipo = 1;
+	if(strcmp(tipoAsignacion, "DINAMICA") == 0) tipo = 0;
+
+	t_paquete *paquete = crear_paquete(TIPOASIGNACION);
+
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(tipo) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+	uint32_t conexionSwamp = crear_conexion(ipSWAmP, puertoSWAmP);
+
+	enviarPaquete(paquete, conexionSwamp);
+
+}
+
+void enviar_pagina(uint32_t id_pagina, void* contenido){
+
+	t_paquete *paquete = crear_paquete(ENVIAR_PAGINA);
+
+	paquete->buffer->size = sizeof(uint32_t) + tamanioPagina;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(id_pagina) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, contenido , tamanioPagina);
+
+	uint32_t conexionSwamp = crear_conexion(ipSWAmP, puertoSWAmP);
+
+	enviarPaquete(paquete, conexionSwamp);
+
+
+
+}
+
+void pedir_pagina(uint32_t id_pagina){
+
+	t_paquete *paquete = crear_paquete(ENVIAR_PAGINA);
+
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(id_pagina) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+	uint32_t conexionSwamp = crear_conexion(ipSWAmP, puertoSWAmP);
+
+	enviarPaquete(paquete, conexionSwamp);
+
+	void* buffer = recibir_buffer(tamanioPagina, conexionSwamp);
+
+	t_pagina *pagina = 
+
+	//desarmar buffer. armar pagina y ponerla de nuevo en memoria
+
+
+}
