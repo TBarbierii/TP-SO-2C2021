@@ -1,17 +1,17 @@
 #include "swamp.h"
 #include "swamp_lib.h"
 
-void obtenerValoresDelConfig(t_config* configActual){
+void obtener_valores_config(t_config* config_actual){
 
     int contador = 0;
 
-    ip_swap = config_get_string_value(configActual, "IP");
-    puerto_swap = config_get_int_value(configActual, "PUERTO");
-    tamanio_swap = config_get_int_value(configActual, "TAMANIO_SWAP");
-    tamanio_pagina = config_get_int_value(configActual, "TAMANIO_PAGINA");
-    char** file_swap = config_get_array_value(configActual, "ARCHIVOS_SWAP");
-    marcos_maximos = config_get_int_value(configActual, "MARCOS_MAXIMOS");
-    retardo_swap = config_get_int_value(configActual, "RETARDO_SWAP");
+    ip_swap = config_get_string_value(config_actual, "IP");
+    puerto_swap = config_get_int_value(config_actual, "PUERTO");
+    tamanio_swap = config_get_int_value(config_actual, "TAMANIO_SWAP");
+    tamanio_pagina = config_get_int_value(config_actual, "TAMANIO_PAGINA");
+    char** file_swap = config_get_array_value(config_actual, "ARCHIVOS_SWAP");
+    marcos_maximos = config_get_int_value(config_actual, "MARCOS_MAXIMOS");
+    retardo_swap = config_get_int_value(config_actual, "RETARDO_SWAP");
     
     t_list* archivos_swap = list_create();
 
@@ -26,9 +26,9 @@ void obtenerValoresDelConfig(t_config* configActual){
     free(file_swap); //sobre esto, nose si se deberia hacer un free, xq creo que eso se hace recien cuando haga el config_Destroy()
 }
 
-void crear_archivos_swap(t_list* archivos_swap, int cantidadParticiones) {
+void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones) {
 
-    struct stat* sb;
+    //struct stat* sb;
 
     char caracter_llenado = '\0';
 
@@ -44,47 +44,47 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidadParticiones) {
 
         nuevo_swap->swap_file = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
-        int estado = stat(nuevo_swap->path, sb);
+        //int estado = stat(nuevo_swap->path, sb);
 
-        if(estado != -1) {
+        /*if(estado != -1) {
             log_info(logger_swamp, "Archivos de swap creados y de tamaño: %i", tamanio_swap);
         }else{
             exit(-1);
         }
-
+        */
         memcpy(nuevo_swap->swap_file, &caracter_llenado, sizeof(char));
 
 
         /* faltaria crear las particiones para el archivo swap */
-        nuevo_swap->particiones_swap = crearListaDeParticiones(cantidadParticiones);
+        nuevo_swap->particiones_swap = crear_lista_particiones(cantidad_particiones);
 
     }
 
 }
 
-t_list* crearListaDeParticiones(int cantidadParticiones){
+t_list* crear_lista_particiones(int cantidad_particiones){
 
-    listaParticiones = list_create();
+    lista_particiones = list_create();
     int offset_particion = 0;
 
-    for(int i=0; i < cantidadParticiones ; i++){
+    for(int i=0; i < cantidad_particiones; i++){
         particion* particion_swap = malloc(sizeof(particion));
         swap_files* nuevo_swap = malloc(sizeof(swap_files));
         particion_swap->num_particion = i;
         particion_swap->inicio_particion = nuevo_swap->swap_file + offset_particion;
         particion_swap->esta_libre = 1;
         offset_particion += tamanio_pagina;
-        list_add(listaParticiones, particion_swap);
+        list_add(lista_particiones, particion_swap);
     }
-    return listaParticiones;
+    return lista_particiones;
 }
 
 
-particion* particionNueva(int numero){
-    particion* particionNueva = malloc(sizeof(particion));
-    particionNueva->esta_libre = 1;
-    particionNueva->num_particion = numero;
-    return particionNueva;
+particion* particion_nueva(int numero){
+    particion* particion_nueva = malloc(sizeof(particion));
+    particion_nueva->esta_libre = 1;
+    particion_nueva->num_particion = numero;
+    return particion_nueva;
 }
 
 particion* buscar_particion_libre(char* path_swap) {
@@ -95,8 +95,8 @@ particion* buscar_particion_libre(char* path_swap) {
 
     int fd = open(file->path, O_RDWR);
 
-	for(int i=0; i < listaParticiones->elements_count; i++){
-		frame = list_get(listaParticiones,i);
+	for(int i=0; i < lista_particiones->elements_count; i++){
+		frame = list_get(lista_particiones,i);
 
 		if(frame->esta_libre){
 			return frame;
@@ -114,8 +114,8 @@ int cantidad_frames_disponibles(char* path_swap) {
 
     int fd = open(file->path, O_RDWR);
 
-    for(int i=0; i < listaParticiones->elements_count; i++){
-		frame = list_get(listaParticiones,i);
+    for(int i=0; i < lista_particiones->elements_count; i++){
+		frame = list_get(lista_particiones,i);
     
 		if(frame->esta_libre){
             frames_libres++;
@@ -124,41 +124,4 @@ int cantidad_frames_disponibles(char* path_swap) {
     return frames_libres;
 }
 
-void asignacion_fija(int pid) {
 
-
-
-}
-
-
-int iniciar_servidor_swamp(void) {
-
-	int socket_swamp;
-
-    struct addrinfo hints, *servinfo, *p;
-
-    memset(&hints, 0, sizeof(hints));
-    hints.ai_family = AF_UNSPEC;
-    hints.ai_socktype = SOCK_STREAM;
-    hints.ai_flags = AI_PASSIVE;
-
-    getaddrinfo(ip_swap, puerto_swap, &hints, &servinfo);
-
-	socket_swamp = socket(servinfo->ai_family, 
-    	                	servinfo->ai_socktype,
-        	            	servinfo->ai_protocol);
-
-	bind(socket_swamp, servinfo->ai_addr, servinfo->ai_addrlen);
-
-	listen(socket_swamp, SOMAXCONN);
-
-    freeaddrinfo(servinfo);
-
-    log_trace(logger, "Listo para escuchar a ram");
-
-    return socket_swamp;
-}
-
-void* conexion_ram() {
-    
-}
