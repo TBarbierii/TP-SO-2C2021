@@ -24,6 +24,8 @@ char *algoritmoReemplazoTLB;
 uint32_t retardoAciertoTLB;
 uint32_t retardoFAlloTLB;
 
+uint32_t id_pag; //inicializar en algun lado 
+
 /* Estructuras Administrativas */
 
 
@@ -77,6 +79,8 @@ typedef struct {
 
     uint32_t id_marco;
     uint32_t comienzo_en_memoria;
+    uint32_t proceso_asignado;
+    bool estaLibre;
 
 }t_marco;
 
@@ -84,7 +88,6 @@ typedef struct {
 
     uint32_t id_pagina;
     uint8_t esNueva;
-    uint32_t tamanio;
     t_marco marco;
     uint8_t presente;
 
@@ -124,13 +127,16 @@ t_config* inicializarConfig();
 void inicializarListas();
 void administrar_allocs(t_memalloc);
 uint32_t buscar_o_agregar_espacio(t_carpincho* , uint32_t );
-uint32_t administrar_paginas(t_carpincho*);
+void administrar_paginas(t_carpincho*);
 void finalizarConfig(t_config* configUsado);
 void obtenerValoresDelConfig(t_config* configActual);
 void inicializarMemoria();
 void liberarMemoria();
 
-uint32_t escribir_en_memoria(t_carpincho*);
+uint32_t asignarPaginas(t_carpincho*);
 
+/* Auxiliares */
+uint32_t generadorIdsPaginas();
+uint32_t generarDireccionLogica(uint32_t , uint32_t);
 
 #endif

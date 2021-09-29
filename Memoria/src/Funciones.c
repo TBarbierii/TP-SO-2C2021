@@ -43,7 +43,7 @@ uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido
        next_alloc->prevAlloc = 0;
        next_alloc->nextAlloc = NULL;
 
-        return 9; //el espacio del primer alloc siempre va a empezar en 9
+        return generarDireccionLogica(generadorIdsPaginas(), 9); //el espacio del primer alloc siempre va a empezar en 9
 
    }else{//buscar espacio. se podria delegar todo esto porque tambien aca habria que hacer lo de dividir y consolidar allocs
 
@@ -75,13 +75,14 @@ uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido
             }    
         }
 
-        return tamanioPagina - (paginaDelAllocActual * tamanioPagina - posicionAllocActual) +9 ; //el desplazamiento relativo a la pagina
+        uint32_t desplazamiento =  tamanioPagina - (paginaDelAllocActual * tamanioPagina - posicionAllocActual) +9 ; //el desplazamiento relativo a la pagina
 
+        return generarDireccionLogica(generadorIdsPaginas, desplazamiento);
    }
 
 }
 
-uint32_t administrar_paginas(t_carpincho* carpincho){
+void administrar_paginas(t_carpincho* carpincho){
 
         heapMetadata *anteultimoAlloc = list_get(carpincho->allocs, list_size(carpincho->allocs)-2);
 
@@ -91,12 +92,43 @@ uint32_t administrar_paginas(t_carpincho* carpincho){
 
         uint32_t cantidadDePaginasACrear =cantidadDePaginasNecesarias - list_size(carpincho->tabla_de_paginas);
 
-        //aca quede. crear paginas y agregar a tabla de paginas 
+        for (uint32_t i=0; i < cantidadDePaginasACrear; i++){
+
+            t_pagina *pagina = malloc(sizeof(t_pagina));
+
+            pagina->esNueva=true;
+            pagina->id_pagina = generadorIdsPaginas();
+
+            list_add(carpincho->tabla_de_paginas, pagina);    
+        }
 
 }
 
-uint32_t escribir_en_memoria(t_carpincho* carpincho){
-    //verificar los marcos asignados del proceso? para ver si que no se pase de los maximos
-    //aca entra lo de asignacion
-    return 0;
+uint32_t asignarPaginas(t_carpincho* carpincho){
+    
+    if(strcmp(tipoAsignacion, "FIJA"){
+
+        bool estanLibres(t_marco* marco){
+            return marco->estaLibre;
+        }
+
+        t_list *marcos_libres = list_filter(marcos, estanLibres);
+
+        t_list *marcos_asignados = list_take(marcos_libres; marcosMaximos);
+
+        void marcarOcupados(t_marco marco){
+            marco->estaLibre = false;
+            marco->proceso_asignado = carpincho->id_carpincho;
+        }
+
+        list_iterate(marcos_asignados, marcarOcupados);
+
+        escribir_marcos(marcos_asignados, carpincho); //aca escribir las paginas nuevas en los marcos_asignados. diferenciar los algoritmos en el caso de que haya que reemplazar. aca es la comunicacion con swap 
+
+    }
+    if(strcmp(tipoAsignacion, "DINAMICA"){
+        
+        //recorres todos los marcos hasta encontrar alguno(o mas) libres
+    }
+
 }
