@@ -63,6 +63,7 @@ uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido
             break; //sale del for
         }
         
+        //falta dividir en caso de que sobre lugar
         //todo esto que sigue es para calcualr el desplazamiento de donde empieza el espacio libre
         uint32_t posicionAllocActual = allocSiguiente->prevAlloc;
         uint32_t paginaDelAllocActual;
@@ -108,22 +109,22 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
     
     if(strcmp(tipoAsignacion, "FIJA"){
 
-        bool estanLibres(t_marco* marco){
-            return marco->estaLibre;
+        bool noEstanAsignados(t_marco* marco){
+            return marco->proceso_asignado == -1;
         }
 
-        t_list *marcos_libres = list_filter(marcos, estanLibres);
+        t_list *marcos_sin_asignar = list_filter(marcos, noEstanAsignados);
 
-        t_list *marcos_asignados = list_take(marcos_libres; marcosMaximos);
+        t_list *marcos_a_asignar = list_take(marcos_sin_asignar; marcosMaximos);
 
         void marcarOcupados(t_marco marco){
             marco->estaLibre = false;
             marco->proceso_asignado = carpincho->id_carpincho;
         }
 
-        list_iterate(marcos_asignados, marcarOcupados);
+        list_iterate(marcos_a_asignar, marcarOcupados);
 
-        escribir_marcos(marcos_asignados, carpincho); //aca escribir las paginas nuevas en los marcos_asignados. diferenciar los algoritmos en el caso de que haya que reemplazar. aca es la comunicacion con swap 
+        escribir_marcos(marcos_a_asignar, carpincho); //aca escribir las paginas nuevas en los marcos_asignados. diferenciar los algoritmos en el caso de que haya que reemplazar. aca es la comunicacion con swap 
 
     }
     if(strcmp(tipoAsignacion, "DINAMICA"){
@@ -131,4 +132,43 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
         //recorres todos los marcos hasta encontrar alguno(o mas) libres
     }
 
+}
+
+void escribir_marcos(t_list* marcos_a_asignar, t_carpincho* carpincho){
+
+    void* stream_allocs = generar_stream_allocs(carpincho);
+
+    void escribir_paginas_en_marcos(t_marco* marco){
+
+        for(uint32_t i=0; i<list_size(carpincho->tabla_de_paginas); i++){
+            t_pagina* pagina = list_get(carpincho->tabla_de_paginas, i);
+            if(pagina->esNueva){
+                memcpy(memoriaPrincipal + marco->comienzo, stream_allocs + (i*tamanioPagina), tamanioPagina);
+            }
+        }
+
+    }
+
+    list_iterate(marcos_a_asignar, (void*)escribir_paginas_en_marcos);
+
+}
+
+void* generar_stream_allocs(t_carpincho* carpincho){
+
+    void* stream_allocs = malloc(tamanioPagina * list_size(carpincho->tabla_de_paginas));
+ 
+        uint32_t desplazamiento =0, cantidadDeAllocs = list_size(carpincho->allocs);
+        heapMetadata *allocActual;
+
+            for(uint32_t i = 0; i < cantidadDeAllocs; i++){
+
+            allocActual = list_get(carpincho->allocs, i);
+
+            memcpy(stream_allocs + desplazamiento, allocActual, sizeof(heapMetadata));//llena con el primer alloc
+
+            desplazamiento = allocActual->nextAlloc;
+
+        }
+
+    return stream_allocs;
 }

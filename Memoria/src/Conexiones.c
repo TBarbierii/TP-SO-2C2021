@@ -153,7 +153,7 @@ void pedir_pagina(uint32_t id_pagina){
 
 	void* buffer = recibir_buffer(tamanioPagina, conexionSwamp);
 
-	t_pagina *pagina = 
+	//t_pagina *pagina = 
 
 	//desarmar buffer. armar pagina y ponerla de nuevo en memoria
 

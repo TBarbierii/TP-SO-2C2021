@@ -78,8 +78,8 @@ typedef struct{
 typedef struct {
 
     uint32_t id_marco;
-    uint32_t comienzo_en_memoria;
-    uint32_t proceso_asignado;
+    uint32_t comienzo;
+    uint32_t proceso_asignado;//al empezar inicializar todo en -1
     bool estaLibre;
 
 }t_marco;
