@@ -1,17 +1,100 @@
-[INFO] 13:32:06:621 Servidor/(4316:4317): Inicializamos el servidor para que se nos unan los carpinchos
-[INFO] 13:32:15:590 Servidor/(4316:4317): Se unio un carpincho
-[INFO] 13:32:15:596 Servidor/(4316:4341): Recibimos la informacion de un carpincho
-[INFO] 13:32:15:596 Servidor/(4316:4341): El codigo de operacion es: 0
-[INFO] 13:32:15:596 Servidor/(4316:4341): El tamaño del paquete es
-[INFO] 13:32:15:596 Servidor/(4316:4341): Vamos a inicializar un carpincho
-[INFO] 13:32:15:596 Servidor/(4316:4341): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
-[INFO] 13:32:15:596 Servidor/(4316:4341): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
-[INFO] 13:32:15:720 Servidor/(4316:4342): Recibimos la informacion de un carpincho
-[INFO] 13:32:15:720 Servidor/(4316:4342): El codigo de operacion es: 1
-[INFO] 13:32:15:720 Servidor/(4316:4342): El tamaño del paquete es
-[INFO] 13:32:15:720 Servidor/(4316:4342): Vamos a eliminar un carpincho
-[INFO] 13:32:15:720 Servidor/(4316:4342): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 13:32:15:720 Servidor/(4316:4342): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 13:32:15:720 Servidor/(4316:4342): Enviamos que queremos cerrar el carpincho
-[INFO] 13:32:15:720 Servidor/(4316:4342): Se envio la info
-[INFO] 13:32:15:720 Servidor/(4316:4342): Se nos va el carpincho: 0
+[INFO] 16:16:50:733 Servidor/(4833:4835): Inicializamos el servidor para que se nos unan los carpinchos
+[INFO] 16:16:57:404 Servidor/(4833:4835): Se unio un carpincho
+[INFO] 16:16:57:406 Servidor/(4833:4865): Recibimos la informacion de un carpincho
+[INFO] 16:16:57:409 Servidor/(4833:4865): El codigo de operacion es: 0
+[INFO] 16:16:57:418 Servidor/(4833:4865): El tamaño del paquete es
+[INFO] 16:16:57:420 Servidor/(4833:4865): Vamos a inicializar un carpincho
+[INFO] 16:16:57:422 Servidor/(4833:4865): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 16:16:57:441 Servidor/(4833:4865): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 16:16:57:520 Servidor/(4833:4869): Recibimos la informacion de un carpincho
+[INFO] 16:16:57:520 Servidor/(4833:4869): El codigo de operacion es: 1
+[INFO] 16:16:57:520 Servidor/(4833:4869): El tamaño del paquete es
+[INFO] 16:16:57:528 Servidor/(4833:4869): Vamos a eliminar un carpincho
+[INFO] 16:16:57:539 Servidor/(4833:4869): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 16:16:57:548 Servidor/(4833:4869): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 16:16:57:549 Servidor/(4833:4869): Enviamos que queremos cerrar el carpincho
+[INFO] 16:16:57:568 Servidor/(4833:4869): Se envio la info
+[INFO] 16:16:57:573 Servidor/(4833:4869): Se nos va el carpincho: 0
+[INFO] 16:25:34:348 Servidor/(3336:3338): Inicializamos el servidor para que se nos unan los carpinchos
+[INFO] 16:25:40:710 Servidor/(3336:3338): Se unio un carpincho
+[INFO] 16:25:40:717 Servidor/(3336:3389): Recibimos la informacion de un carpincho
+[INFO] 16:25:40:718 Servidor/(3336:3389): El codigo de operacion es: 0
+[INFO] 16:25:40:730 Servidor/(3336:3389): El tamaño del paquete es
+[INFO] 16:25:40:731 Servidor/(3336:3389): Vamos a inicializar un carpincho
+[INFO] 16:25:40:731 Servidor/(3336:3389): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 16:25:40:734 Servidor/(3336:3389): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 16:25:40:782 Servidor/(3336:3393): Recibimos la informacion de un carpincho
+[INFO] 16:25:40:783 Servidor/(3336:3393): El codigo de operacion es: 1
+[INFO] 16:25:40:784 Servidor/(3336:3393): El tamaño del paquete es
+[INFO] 16:25:40:785 Servidor/(3336:3393): Vamos a eliminar un carpincho
+[INFO] 16:25:40:785 Servidor/(3336:3393): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 16:25:40:787 Servidor/(3336:3393): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 16:25:40:788 Servidor/(3336:3393): Enviamos que queremos cerrar el carpincho
+[INFO] 16:25:40:804 Servidor/(3336:3393): Se envio la info
+[INFO] 16:25:40:805 Servidor/(3336:3393): Se nos va el carpincho: 0
+[INFO] 16:33:24:977 Servidor/(3636:3638): Inicializamos el servidor para que se nos unan los carpinchos
+[INFO] 16:33:28:338 Servidor/(3636:3638): Se unio un carpincho
+[INFO] 16:33:28:343 Servidor/(3636:3671): Recibimos la informacion de un carpincho
+[INFO] 16:33:28:344 Servidor/(3636:3671): El codigo de operacion es: 0
+[INFO] 16:33:28:345 Servidor/(3636:3671): El tamaño del paquete es
+[INFO] 16:33:28:347 Servidor/(3636:3671): Vamos a inicializar un carpincho
+[INFO] 16:33:28:348 Servidor/(3636:3671): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 16:33:28:349 Servidor/(3636:3671): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 16:33:28:414 Servidor/(3636:3675): Recibimos la informacion de un carpincho
+[INFO] 16:33:28:414 Servidor/(3636:3675): El codigo de operacion es: 1
+[INFO] 16:33:28:414 Servidor/(3636:3675): El tamaño del paquete es
+[INFO] 16:33:28:415 Servidor/(3636:3675): Vamos a eliminar un carpincho
+[INFO] 16:33:28:415 Servidor/(3636:3675): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 16:33:28:417 Servidor/(3636:3675): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 16:33:28:418 Servidor/(3636:3675): Enviamos que queremos cerrar el carpincho
+[INFO] 16:33:28:435 Servidor/(3636:3675): Se envio la info
+[INFO] 16:33:28:436 Servidor/(3636:3675): Se nos va el carpincho: 0
+[INFO] 16:38:19:867 Servidor/(3848:3850): Inicializamos el servidor para que se nos unan los carpinchos
+[INFO] 16:38:22:908 Servidor/(3848:3850): Se unio un carpincho
+[INFO] 16:38:22:913 Servidor/(3848:3873): Recibimos la informacion de un carpincho
+[INFO] 16:38:22:914 Servidor/(3848:3873): El codigo de operacion es: 0
+[INFO] 16:38:22:914 Servidor/(3848:3873): El tamaño del paquete es
+[INFO] 16:38:22:916 Servidor/(3848:3873): Vamos a inicializar un carpincho
+[INFO] 16:38:22:917 Servidor/(3848:3873): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 16:38:22:918 Servidor/(3848:3873): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 16:38:22:977 Servidor/(3848:3877): Recibimos la informacion de un carpincho
+[INFO] 16:38:22:977 Servidor/(3848:3877): El codigo de operacion es: 1
+[INFO] 16:38:22:977 Servidor/(3848:3877): El tamaño del paquete es
+[INFO] 16:38:22:978 Servidor/(3848:3877): Vamos a eliminar un carpincho
+[INFO] 16:38:22:978 Servidor/(3848:3877): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 16:38:22:980 Servidor/(3848:3877): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 16:38:22:981 Servidor/(3848:3877): Enviamos que queremos cerrar el carpincho
+[INFO] 16:38:22:999 Servidor/(3848:3877): Se envio la info
+[INFO] 16:38:23:000 Servidor/(3848:3877): Se nos va el carpincho: 0
+[INFO] 16:38:28:553 Servidor/(3848:3850): Se unio un carpincho
+[INFO] 16:38:28:556 Servidor/(3848:3897): Recibimos la informacion de un carpincho
+[INFO] 16:38:28:556 Servidor/(3848:3897): El codigo de operacion es: 0
+[INFO] 16:38:28:560 Servidor/(3848:3897): El tamaño del paquete es
+[INFO] 16:38:28:560 Servidor/(3848:3897): Vamos a inicializar un carpincho
+[INFO] 16:38:28:560 Servidor/(3848:3897): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 16:38:28:561 Servidor/(3848:3897): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 16:38:28:563 Servidor/(3848:3898): Recibimos la informacion de un carpincho
+[INFO] 16:38:28:563 Servidor/(3848:3898): El codigo de operacion es: 1
+[INFO] 16:38:28:563 Servidor/(3848:3898): El tamaño del paquete es
+[INFO] 16:38:28:563 Servidor/(3848:3898): Vamos a eliminar un carpincho
+[INFO] 16:38:28:563 Servidor/(3848:3898): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 16:38:28:564 Servidor/(3848:3898): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 16:38:28:564 Servidor/(3848:3898): Enviamos que queremos cerrar el carpincho
+[INFO] 16:38:28:564 Servidor/(3848:3898): Se envio la info
+[INFO] 16:38:28:567 Servidor/(3848:3898): Se nos va el carpincho: 1
+[INFO] 16:38:30:697 Servidor/(3848:3850): Se unio un carpincho
+[INFO] 16:38:30:700 Servidor/(3848:3916): Recibimos la informacion de un carpincho
+[INFO] 16:38:30:700 Servidor/(3848:3916): El codigo de operacion es: 0
+[INFO] 16:38:30:701 Servidor/(3848:3916): El tamaño del paquete es
+[INFO] 16:38:30:701 Servidor/(3848:3916): Vamos a inicializar un carpincho
+[INFO] 16:38:30:701 Servidor/(3848:3916): Un nuevo carpincho se une a la manada del kernel, y su pid es: 2
+[INFO] 16:38:30:701 Servidor/(3848:3916): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 2
+[INFO] 16:38:30:704 Servidor/(3848:3917): Recibimos la informacion de un carpincho
+[INFO] 16:38:30:704 Servidor/(3848:3917): El codigo de operacion es: 1
+[INFO] 16:38:30:705 Servidor/(3848:3917): El tamaño del paquete es
+[INFO] 16:38:30:708 Servidor/(3848:3917): Vamos a eliminar un carpincho
+[INFO] 16:38:30:708 Servidor/(3848:3917): Le notificamos a memoria para que libere la memoria del carpincho: 2
+[INFO] 16:38:30:708 Servidor/(3848:3917): Sacamos al carpincho de ejecucion. Pid: 2
+[INFO] 16:38:30:709 Servidor/(3848:3917): Enviamos que queremos cerrar el carpincho
+[INFO] 16:38:30:709 Servidor/(3848:3917): Se envio la info
+[INFO] 16:38:30:709 Servidor/(3848:3917): Se nos va el carpincho: 2

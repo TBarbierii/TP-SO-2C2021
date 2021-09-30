@@ -13,15 +13,22 @@ void rutinaDeProceso(proceso_kernel* procesoEjecutando){
         log_info(logger, "Se ejecuto tarea de conexion");
         int codigoOperacion = atenderMensajeEnKernel(procesoEjecutando->conexion);
         log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
-        if(rompoElHiloSegunElCodigo(codigoOperacion)){
-            log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento");
+        if(rompoElHiloSegunElCodigo(codigoOperacion) == 1){
+            log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo");
             
             clock_t finEjecucion = clock();
 
             procesoEjecutando->ultimaRafagaEjecutada = (double)(finEjecucion - arranqueEjecucion) / CLOCKS_PER_SEC;
             break;
+        }else if(rompoElHiloSegunElCodigo(codigoOperacion) == 2){
+            log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho");
+            sem_post(nivelMultiProgramacionGeneral);
+            sem_post(nivelMultiprocesamiento);
+            break;
         }
     }
+
+    log_destroy(logger);
 
 }
 
@@ -62,8 +69,10 @@ void planificadorCortoPlazo(){
 
 
 int rompoElHiloSegunElCodigo(int codigo){
-    if(codigo == CERRAR_INSTANCIA || codigo == SEM_WAIT || codigo == SEM_SIGNAL || codigo == CONECTAR_IO){
+    if( codigo == SEM_WAIT || codigo == SEM_SIGNAL || codigo == CONECTAR_IO){
         return 1;
+    }else if(codigo == CERRAR_INSTANCIA ){
+        return 2;
     }
     return 0;
 }

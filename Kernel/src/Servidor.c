@@ -27,7 +27,7 @@ int atenderMensajeEnKernel(int conexion) {
 
 	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_DEBUG);
 
-	t_paquete* paquete = malloc(sizeof(paquete));
+	t_paquete* paquete = malloc(sizeof(t_paquete));
 
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
@@ -46,7 +46,7 @@ int atenderMensajeEnKernel(int conexion) {
 	if(paquete->buffer->size > 0){
 	paquete->buffer->stream = malloc(paquete->buffer->size);
 	recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
-	}
+    }
 	
 
 	switch(paquete->codigo_operacion){
@@ -98,7 +98,7 @@ int atenderMensajeEnKernel(int conexion) {
 void inicializarProcesoNuevo(int conexion ,t_log* logger){
 
 
-	proceso_kernel* procesoNuevo = malloc(sizeof(proceso_kernel));
+	proceso_kernel* procesoNuevo =(proceso_kernel*) malloc(sizeof(proceso_kernel));
 	
 	pthread_mutex_lock(contadorProcesos);
 		procesoNuevo->pid = cantidadDeProcesosActual;
