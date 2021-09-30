@@ -6,7 +6,7 @@ void obtener_valores_config(t_config* config_actual){
     int contador = 0;
 
     ip_swap = config_get_string_value(config_actual, "IP");
-    puerto_swap = config_get_int_value(config_actual, "PUERTO");
+    puerto_swap = config_get_string_value(config_actual, "PUERTO");
     tamanio_swap = config_get_int_value(config_actual, "TAMANIO_SWAP");
     tamanio_pagina = config_get_int_value(config_actual, "TAMANIO_PAGINA");
     char** file_swap = config_get_array_value(config_actual, "ARCHIVOS_SWAP");
@@ -29,19 +29,15 @@ void obtener_valores_config(t_config* config_actual){
 void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones) {
 
     //struct stat* sb;
-
     char caracter_llenado = '\0';
 
     while(! list_is_empty(archivos_swap)) {
-
         swap_files* nuevo_swap = malloc(sizeof(swap_files));
-
         char* path_swap = (char*) list_remove(archivos_swap, 0);
 
         int fd = open(path_swap, O_CREAT | O_RDWR, (mode_t) 0777);
 
         truncate(path_swap, tamanio_swap);
-
         nuevo_swap->swap_file = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
         //int estado = stat(nuevo_swap->path, sb);
@@ -52,12 +48,12 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones) {
             exit(-1);
         }
         */
+        nuevo_swap->path = string_new();
+
+        string_append(&(nuevo_swap->path), path_swap);
+
         memcpy(nuevo_swap->swap_file, &caracter_llenado, sizeof(char));
-
-
-        /* faltaria crear las particiones para el archivo swap */
         nuevo_swap->particiones_swap = crear_lista_particiones(cantidad_particiones);
-
     }
 
 }
@@ -68,11 +64,9 @@ t_list* crear_lista_particiones(int cantidad_particiones){
     int offset_particion = 0;
 
     for(int i=0; i < cantidad_particiones; i++){
-        particion* particion_swap = malloc(sizeof(particion));
+        particion* particion_swap = particion_nueva(i);
         swap_files* nuevo_swap = malloc(sizeof(swap_files));
-        particion_swap->num_particion = i;
         particion_swap->inicio_particion = nuevo_swap->swap_file + offset_particion;
-        particion_swap->esta_libre = 1;
         offset_particion += tamanio_pagina;
         list_add(lista_particiones, particion_swap);
     }
@@ -95,33 +89,44 @@ particion* buscar_particion_libre(char* path_swap) {
 
     int fd = open(file->path, O_RDWR);
 
-	for(int i=0; i < lista_particiones->elements_count; i++){
-		frame = list_get(lista_particiones,i);
+    if(fd == 0) {
+        log_error(logger_swamp, "No se pudo abrir el archivo f");
+    }else{
+        for(int i=0; i < lista_particiones->elements_count; i++){
+            frame = list_get(lista_particiones,i);
 
-		if(frame->esta_libre){
-			return frame;
-		}
-	}
-	return NULL;
+            if(frame->esta_libre){
+                return frame;
+            }
+        }
+    }
+    return NULL;
 }
 
 int cantidad_frames_disponibles(char* path_swap) {
     particion* frame = malloc(sizeof(particion));
     swap_files* file = malloc(sizeof(swap_files));
     int frames_libres = 0;
-
+    
     file->path = path_swap;
-
+    
     int fd = open(file->path, O_RDWR);
 
-    for(int i=0; i < lista_particiones->elements_count; i++){
-		frame = list_get(lista_particiones,i);
+    if(fd == 0) {
+        log_error(logger_swamp, "No se pudo abrir el archivo f");
+    }else{
+        for(int i=0; i < lista_particiones->elements_count; i++){
+		    frame = list_get(lista_particiones,i);
     
-		if(frame->esta_libre){
-            frames_libres++;
-		}
-	}
+	    	if(frame->esta_libre){
+                frames_libres++;
+	    	}
+	    }
+    }
     return frames_libres;
 }
 
+void crear_paginas() {
 
+    
+}
