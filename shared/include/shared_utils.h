@@ -55,6 +55,7 @@ typedef enum{
 	MEMWRITE,
 	ENVIAR_PAGINA,
 	PEDIR_PAGINA,
+	RECIBIR_PAGINA,
 	TIPOASIGNACION
 
 }cod_operacion;
