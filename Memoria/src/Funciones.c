@@ -107,7 +107,7 @@ void administrar_paginas(t_carpincho* carpincho){
 
 uint32_t asignarPaginas(t_carpincho* carpincho){
     
-    if(strcmp(tipoAsignacion, "FIJA"){
+    if(strcmp(tipoAsignacion, "FIJA") == 0){
 
         bool noEstanAsignados(t_marco* marco){
             return marco->proceso_asignado == -1;
