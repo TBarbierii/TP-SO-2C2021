@@ -1,20 +1,5 @@
-[INFO] 16:16:57:457 loggerContenidoProceso/(4864:4864): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 16:16:57:457 loggerContenidoProceso/(4864:4864): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 16:16:57:457 loggerContenidoProceso/(4864:4864): Se envio info para cerrarlo
-[INFO] 16:16:57:550 loggerContenidoProceso/(4864:4864): Estamos recibiendo todo para cerrar la conexion y terminar
-[INFO] 16:16:57:550 loggerContenidoProceso/(4864:4864): Se liberan todas las estructuras del proceso
-[INFO] 16:25:40:752 loggerContenidoProceso/(3386:3386): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 16:25:40:752 loggerContenidoProceso/(3386:3386): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 16:25:40:752 loggerContenidoProceso/(3386:3386): Se envio info para cerrarlo
-[INFO] 16:25:40:788 loggerContenidoProceso/(3386:3386): Estamos recibiendo todo para cerrar la conexion y terminar
-[INFO] 16:25:40:788 loggerContenidoProceso/(3386:3386): Se liberan todas las estructuras del proceso
-[INFO] 16:33:28:383 loggerContenidoProceso/(3668:3668): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 16:33:28:383 loggerContenidoProceso/(3668:3668): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 16:33:28:383 loggerContenidoProceso/(3668:3668): Se envio info para cerrarlo
-[INFO] 16:33:28:418 loggerContenidoProceso/(3668:3668): Estamos recibiendo todo para cerrar la conexion y terminar
-[INFO] 16:33:28:418 loggerContenidoProceso/(3668:3668): Se liberan todas las estructuras del proceso
-[INFO] 16:38:22:945 loggerContenidoProceso/(3870:3870): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 16:38:22:945 loggerContenidoProceso/(3870:3870): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 16:38:22:945 loggerContenidoProceso/(3870:3870): Se envio info para cerrarlo
-[INFO] 16:38:22:981 loggerContenidoProceso/(3870:3870): Estamos recibiendo todo para cerrar la conexion y terminar
-[INFO] 16:38:22:981 loggerContenidoProceso/(3870:3870): Se liberan todas las estructuras del proceso
+[INFO] 15:26:59:734 loggerContenidoProceso/(4859:4859): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:26:59:849 loggerContenidoProceso/(4859:4859): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 15:26:59:857 loggerContenidoProceso/(4859:4859): Se envio info para cerrarlo
+[INFO] 15:26:59:864 loggerContenidoProceso/(4859:4859): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:26:59:865 loggerContenidoProceso/(4859:4859): Se liberan todas las estructuras del proceso
