@@ -55,7 +55,6 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones) {
         memcpy(nuevo_swap->swap_file, &caracter_llenado, sizeof(char));
         nuevo_swap->particiones_swap = crear_lista_particiones(cantidad_particiones);
     }
-
 }
 
 t_list* crear_lista_particiones(int cantidad_particiones){
@@ -100,6 +99,7 @@ particion* buscar_particion_libre(char* path_swap) {
             }
         }
     }
+    close(fd);
     return NULL;
 }
 
@@ -117,16 +117,57 @@ int cantidad_frames_disponibles(char* path_swap) {
     }else{
         for(int i=0; i < lista_particiones->elements_count; i++){
 		    frame = list_get(lista_particiones,i);
-    
+
 	    	if(frame->esta_libre){
                 frames_libres++;
 	    	}
 	    }
     }
+    close(fd);
     return frames_libres;
 }
 
-void crear_paginas() {
+t_list* crear_paginas_swap(char* path_swap) {
 
-    
+    t_pagina* pagina = malloc(sizeof(t_pagina));
+    swap_files* file = malloc(sizeof(swap_files));
+    t_list* paginas_swap = list_create();
+    file->path = path_swap;
+    int offset = 0;
+
+    int fd = open(file->path, O_RDWR);
+
+    for(int i = 0; i < tamanio_swap / tamanio_pagina; i++) {
+        pagina->num_pagina = i;
+        offset += tamanio_pagina;
+        list_add(paginas_swap, pagina);
+    }
+    close(fd);
+    return paginas_swap;
 }
+/*
+void manejar_asignacion() {
+
+    uint32_t tipo_asignacion = recibir_tipo_asignacion(t_buffer* buffer);
+
+	switch(paquete->codigo_operacion){
+        case ENVIAR_PAGINA:;
+			//enviar_pagina(uint32_t id_pagina, void* contenido, int conexion);
+			break;
+
+        case RECIBIR_PAGINA:;
+			//recibir_pagina(uint32_t id_pagina);
+        	break;
+
+		case TIPOASIGNACION:;
+			//recibir_tipo_asignacion()
+			close(conexion);
+       		break;
+
+		default:;
+		log_info(logger,"No se metio por ningun lado wtf");
+		break;
+	}
+
+}
+*/

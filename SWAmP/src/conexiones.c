@@ -89,8 +89,8 @@ int atender_mensaje_ram(int conexion) {
 	return valorOperacion;
 	
 }
-
-void recibir_tipo_asignacion(t_buffer* buffer) {
+// Habria otra forma para mandarlo para manejar losa tipos de asignacion?
+uint32_t recibir_tipo_asignacion(t_buffer* buffer) {
 
 	void* data = buffer->stream;
 	uint32_t tipo;
@@ -105,8 +105,7 @@ void recibir_tipo_asignacion(t_buffer* buffer) {
 		tipo_asignacion = malloc(sizeof(char) * 8 + 1);	
 		strcpy(tipo_asignacion, "DINAMICA");
 	} 
-
-
+	return tipo;
 }
 
 void recibir_pagina(t_buffer* buffer) {
@@ -118,7 +117,7 @@ void recibir_pagina(t_buffer* buffer) {
 
 	memcpy(&(id_pagina), data + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
-    memcpy(&(contenido), data + desplazamiento , tamanioPagina);
+    memcpy(&(contenido), data + desplazamiento , tamanio_pagina);
 
 	// Deberia tener el PID para ver en que archivo guardar la pagina
 
