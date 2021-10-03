@@ -23,6 +23,10 @@ void atenderSolicitudesKernel(){
 
 }
 
+
+
+
+
 int atenderMensajeEnKernel(int conexion) {
 
 	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_DEBUG);
@@ -40,7 +44,6 @@ int atenderMensajeEnKernel(int conexion) {
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
-	log_info(logger,"El tamaño del paquete es", paquete->buffer->size);
 
 
 	if(paquete->buffer->size > 0){
@@ -61,7 +64,9 @@ int atenderMensajeEnKernel(int conexion) {
         break;
 
 		case INICIAR_SEMAFORO:;
-        break;
+			log_info(logger,"Vamos a inicializar un semaforo");
+			iniciarSemaforo(paquete->buffer, conexion);
+		break;
 
         case SEM_WAIT:;
         break;
@@ -182,17 +187,55 @@ void enviarInformacionAdministrativaDelProceso(proceso_kernel* proceso){
 
 
 
-
-
-
 void informarCierreDeProceso(proceso_kernel* proceso,t_log* loggerActual){
 
 	t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t valorReturn = 0;
+	int desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(valorReturn) , sizeof(uint32_t));
 
 	log_info(loggerActual,"Enviamos que queremos cerrar el carpincho");
     enviarPaquete(paquete,proceso->conexion);
-	log_info(loggerActual,"Se envio la info");
 
 }
 
 
+void iniciarSemaforo(t_buffer * buffer, int conexion){
+	
+	void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int tamanioNombre;
+	int valor;
+
+	memcpy(&(tamanioNombre), stream+desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+
+	char* nombre = malloc(tamanioNombre);
+	memcpy(nombre, stream+desplazamiento, tamanioNombre);
+	desplazamiento += tamanioNombre;
+
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+	
+	crearSemaforo(nombre,valor);
+	
+	avisarInicializacionDeSemaforo(conexion);
+
+
+}
+
+void avisarInicializacionDeSemaforo(int conexion){
+
+	t_paquete* paquete = crear_paquete(INICIAR_SEMAFORO);
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t valorReturn = 0;
+	int desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(valorReturn) , sizeof(uint32_t));
+
+    enviarPaquete(paquete,conexion);
+
+}
