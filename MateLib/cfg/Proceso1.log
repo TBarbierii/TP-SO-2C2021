@@ -1,0 +1,9 @@
+[INFO] 15:47:04:315 loggerContenidoProceso/(8277:8277): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:47:04:407 loggerContenidoProceso/(8277:8277): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 15:47:04:421 loggerContenidoProceso/(8277:8277): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:47:04:422 loggerContenidoProceso/(8277:8277): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:47:04:423 loggerContenidoProceso/(8277:8277): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 15:47:04:430 loggerContenidoProceso/(8277:8277): Se envio info para cerrarlo
+[INFO] 15:47:04:434 loggerContenidoProceso/(8277:8277): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:47:04:435 loggerContenidoProceso/(8277:8277): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 15:47:04:435 loggerContenidoProceso/(8277:8277): Se liberan todas las estructuras del proceso

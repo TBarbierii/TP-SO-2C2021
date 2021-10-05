@@ -82,6 +82,10 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
 
 int liberarEstructurasDeProceso(t_buffer* buffer, mate_instance* lib_ref);
 
+int notificacionDeCreacionDeSemaforo(t_buffer* buffer, t_log* logger);
+
+int notificacionDeDestruccionDeSemaforo(t_buffer* buffer, t_log* logger);
+
 /* ------- Solicitudes  --------------------- */
 
 void solicitarIniciarPatota(int conexion, mate_instance* lib_ref);
@@ -99,6 +103,7 @@ void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo);
 void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg);
 
 int validarConexionPosible(int tipoSolicitado, int tipoActual);
+
 
 
 

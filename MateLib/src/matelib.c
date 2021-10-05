@@ -42,18 +42,33 @@ int mate_close(mate_instance *lib_ref){
 //-----------------Semaphore Functions---------------------/
 int mate_sem_init(mate_instance *lib_ref, mate_sem_name sem, unsigned int value){
     if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
-         
+        
         log_info(lib_ref->group_info->loggerProceso,"Solicitamos inicializar un semaforo de nombre: %s, con valor : %d", sem, value);
         inicializarSemaforo(lib_ref->group_info->conexionConBackEnd, sem, value);
         return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
         return 0;
+        
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
         return -1;
     }
 
 }
+
+int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
+    
+    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+        log_info(lib_ref->group_info->loggerProceso,"Solicitamos destruir un semaforo de nombre: %s", sem);
+        liberarSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
+        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return 0;
+    }else{
+        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
+        return -1;
+    }
+}
+
+
 
 int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
     
@@ -77,16 +92,7 @@ int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
     }
 }
 
-int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
-    
-    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
-        return 0;
-    }else{
-        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
-        return -1;
-    }
-}
+
 
 
 //--------------------IO Functions------------------------/
@@ -209,13 +215,15 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
             break;
 		case INICIAR_SEMAFORO:;
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso");
-            valorRetorno = 0;
+            valorRetorno = notificacionDeCreacionDeSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case SEM_WAIT:;
             break;
         case SEM_SIGNAL:;
             break;
         case CERRAR_SEMAFORO:;
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado cerrar un semaforo y obtenemos una respuesta en base a eso");
+            valorRetorno = notificacionDeDestruccionDeSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case CONECTAR_IO:;
             break;
@@ -233,6 +241,9 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
     return valorRetorno;
 }
+
+
+/* */
 
 int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* buffer){
 	void* stream = buffer->stream;
@@ -316,6 +327,22 @@ int notificacionDeCreacionDeSemaforo(t_buffer* buffer, t_log* logger){
 }
 
 
+int notificacionDeDestruccionDeSemaforo(t_buffer* buffer, t_log* logger){
+    
+    void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+
+    if(valor == 0){
+        log_info(logger,"Se pudo destruir el semaforo que se solicito destruir");
+    }else{
+        log_error(logger,"No se pudo destruir el semaforo que se solicito destruir");
+    }
+
+    return valor;
+}
+
 /* ------- Solicitudes  --------------------- */
 
 void solicitarIniciarPatota(int conexion, mate_instance* lib_ref){
@@ -361,7 +388,26 @@ void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned in
 }
 
 
+void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo){
+    t_paquete* paquete = crear_paquete(CERRAR_SEMAFORO);
+
+    paquete->buffer->size = sizeof(uint32_t) + strlen(nombreSemaforo)+1;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+
+    int desplazamiento = 0;
+    uint32_t tamanioNombre = strlen(nombreSemaforo)+1;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(tamanioNombre) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(paquete->buffer->stream + desplazamiento, nombreSemaforo , tamanioNombre);
+
+    enviarPaquete(paquete,conexion);
+}
+
+
 void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo){
+    
     t_paquete* paquete = crear_paquete(SEM_WAIT);
 
     paquete->buffer->size = sizeof(uint32_t) + string_length(nombreSemaforo) +1;
@@ -396,25 +442,7 @@ void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo){
 }
 
 
-void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo){
-    t_paquete* paquete = crear_paquete(CERRAR_SEMAFORO);
-
-    paquete->buffer->size = sizeof(uint32_t) + string_length(nombreSemaforo) +1;
-    paquete->buffer->stream = malloc(paquete->buffer->size);
-
-    int desplazamiento = 0;
-    uint32_t tamanioNombre = string_length(nombreSemaforo)+1;
-
-    memcpy(paquete->buffer->stream + desplazamiento, &(tamanioNombre) , sizeof(uint32_t));
-    desplazamiento += sizeof(uint32_t);
-
-    memcpy(paquete->buffer->stream + desplazamiento, nombreSemaforo , tamanioNombre);
-
-    enviarPaquete(paquete,conexion);
-}
-
-
-
+/* IO */
 
 
 void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg){
@@ -439,10 +467,14 @@ int validarConexionPosible(int tipoSolicitado, int tipoActual){
 
 
 int main(){
-    mate_instance referencia;
-    mate_init(&referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    mate_sem_init(&referencia,(mate_sem_name) "SEM1", 1);
-    mate_close(&referencia);
-    //free(referencia);
+    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
+
+    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    mate_sem_init(referencia,"SEM2", 1);
+    mate_sem_destroy(referencia,"SEM2");
+
+    mate_close(referencia);
+    free(referencia);
+
     return 0;
 }

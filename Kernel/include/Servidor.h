@@ -19,7 +19,8 @@ void inicializarProcesoNuevo(int conexion,t_log* logger);
 void cerrarProceso(t_buffer* bufferActual,t_log* logger);
 void informarCierreDeProceso(proceso_kernel* proceso,t_log* loggerActual);
 void iniciarSemaforo(t_buffer * buffer, int conexion);
-void avisarInicializacionDeSemaforo(int conexion);
-
+void cerrarSemaforo(t_buffer * buffer, int conexion);
+void avisarInicializacionDeSemaforo(int conexion, int valor);
+void avisarDestruccionDeSemaforo(int conexion, int valor);
 
 #endif

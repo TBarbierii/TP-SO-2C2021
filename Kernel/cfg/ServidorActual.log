@@ -1,34 +1,52 @@
-[INFO] 20:10:57:880 Servidor/(4872:4875): Inicializamos el servidor para que se nos unan los carpinchos
-[INFO] 20:11:13:244 Servidor/(4872:4875): Se unio un carpincho
-[INFO] 20:11:13:250 Servidor/(4872:4927): Recibimos la informacion de un carpincho
-[INFO] 20:11:13:251 Servidor/(4872:4927): El codigo de operacion es: 0
-[INFO] 20:11:13:251 Servidor/(4872:4927): Vamos a inicializar un carpincho
-[INFO] 20:11:13:252 Servidor/(4872:4927): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
-[INFO] 20:11:13:253 Servidor/(4872:4927): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
-[INFO] 20:11:13:329 Servidor/(4872:4928): Recibimos la informacion de un carpincho
-[INFO] 20:11:13:329 Servidor/(4872:4928): El codigo de operacion es: 2
-[INFO] 20:11:13:329 Servidor/(4872:4928): Vamos a inicializar un semaforo
-[INFO] 20:11:13:335 Servidor/(4872:4928): Recibimos la informacion de un carpincho
-[INFO] 20:11:13:335 Servidor/(4872:4928): El codigo de operacion es: 1
-[INFO] 20:11:13:335 Servidor/(4872:4928): Vamos a eliminar un carpincho
-[INFO] 20:11:13:336 Servidor/(4872:4928): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 20:11:13:337 Servidor/(4872:4928): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 20:11:13:338 Servidor/(4872:4928): Enviamos que queremos cerrar el carpincho
-[INFO] 20:11:13:344 Servidor/(4872:4928): Se nos va el carpincho: 0
-[INFO] 20:11:49:800 Servidor/(4989:4995): Inicializamos el servidor para que se nos unan los carpinchos
-[INFO] 20:12:10:350 Servidor/(4989:4995): Se unio un carpincho
-[INFO] 20:12:10:356 Servidor/(4989:5040): Recibimos la informacion de un carpincho
-[INFO] 20:12:10:356 Servidor/(4989:5040): El codigo de operacion es: 0
-[INFO] 20:12:10:357 Servidor/(4989:5040): Vamos a inicializar un carpincho
-[INFO] 20:12:10:357 Servidor/(4989:5040): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
-[INFO] 20:12:10:358 Servidor/(4989:5040): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
-[INFO] 20:12:10:431 Servidor/(4989:5042): Recibimos la informacion de un carpincho
-[INFO] 20:12:10:431 Servidor/(4989:5042): El codigo de operacion es: 2
-[INFO] 20:12:10:432 Servidor/(4989:5042): Vamos a inicializar un semaforo
-[INFO] 20:12:10:437 Servidor/(4989:5042): Recibimos la informacion de un carpincho
-[INFO] 20:12:10:437 Servidor/(4989:5042): El codigo de operacion es: 1
-[INFO] 20:12:10:437 Servidor/(4989:5042): Vamos a eliminar un carpincho
-[INFO] 20:12:10:438 Servidor/(4989:5042): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 20:12:10:439 Servidor/(4989:5042): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 20:12:10:440 Servidor/(4989:5042): Enviamos que queremos cerrar el carpincho
-[INFO] 20:12:10:444 Servidor/(4989:5042): Se nos va el carpincho: 0
+[INFO] 15:45:58:919 Servidor/(8102:8107): Inicializamos el servidor para que se nos unan los carpinchos
+[INFO] 15:46:28:169 Servidor/(8102:8107): Se unio un carpincho
+[INFO] 15:46:28:182 Servidor/(8102:8188): Recibimos la informacion de un carpincho
+[INFO] 15:46:28:183 Servidor/(8102:8188): El codigo de operacion es: 0
+[INFO] 15:46:28:188 Servidor/(8102:8188): Vamos a inicializar un carpincho
+[INFO] 15:46:28:189 Servidor/(8102:8188): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 15:46:28:193 Servidor/(8102:8188): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 15:46:28:327 Servidor/(8102:8190): Recibimos la informacion de un carpincho
+[INFO] 15:46:28:327 Servidor/(8102:8190): El codigo de operacion es: 5
+[INFO] 15:46:28:328 Servidor/(8102:8190): Vamos a cerrar un semaforo
+[INFO] 15:46:28:343 Servidor/(8102:8190): Recibimos la informacion de un carpincho
+[INFO] 15:46:28:343 Servidor/(8102:8190): El codigo de operacion es: 1
+[INFO] 15:46:28:343 Servidor/(8102:8190): Vamos a eliminar un carpincho
+[INFO] 15:46:28:344 Servidor/(8102:8190): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 15:46:28:346 Servidor/(8102:8190): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 15:46:28:348 Servidor/(8102:8190): Enviamos que queremos cerrar el carpincho
+[INFO] 15:46:28:352 Servidor/(8102:8190): Se nos va el carpincho: 0
+[INFO] 15:47:04:268 Servidor/(8102:8107): Se unio un carpincho
+[INFO] 15:47:04:276 Servidor/(8102:8279): Recibimos la informacion de un carpincho
+[INFO] 15:47:04:276 Servidor/(8102:8279): El codigo de operacion es: 0
+[INFO] 15:47:04:276 Servidor/(8102:8279): Vamos a inicializar un carpincho
+[INFO] 15:47:04:276 Servidor/(8102:8279): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 15:47:04:277 Servidor/(8102:8279): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 15:47:04:413 Servidor/(8102:8280): Recibimos la informacion de un carpincho
+[INFO] 15:47:04:413 Servidor/(8102:8280): El codigo de operacion es: 2
+[INFO] 15:47:04:413 Servidor/(8102:8280): Vamos a inicializar un semaforo
+[INFO] 15:47:04:432 Servidor/(8102:8280): Recibimos la informacion de un carpincho
+[INFO] 15:47:04:432 Servidor/(8102:8280): El codigo de operacion es: 1
+[INFO] 15:47:04:432 Servidor/(8102:8280): Vamos a eliminar un carpincho
+[INFO] 15:47:04:433 Servidor/(8102:8280): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 15:47:04:433 Servidor/(8102:8280): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 15:47:04:434 Servidor/(8102:8280): Enviamos que queremos cerrar el carpincho
+[INFO] 15:47:04:436 Servidor/(8102:8280): Se nos va el carpincho: 1
+[INFO] 15:47:26:531 Servidor/(8102:8107): Se unio un carpincho
+[INFO] 15:47:26:538 Servidor/(8102:8343): Recibimos la informacion de un carpincho
+[INFO] 15:47:26:538 Servidor/(8102:8343): El codigo de operacion es: 0
+[INFO] 15:47:26:539 Servidor/(8102:8343): Vamos a inicializar un carpincho
+[INFO] 15:47:26:539 Servidor/(8102:8343): Un nuevo carpincho se une a la manada del kernel, y su pid es: 2
+[INFO] 15:47:26:539 Servidor/(8102:8343): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 2
+[INFO] 15:47:26:667 Servidor/(8102:8344): Recibimos la informacion de un carpincho
+[INFO] 15:47:26:667 Servidor/(8102:8344): El codigo de operacion es: 2
+[INFO] 15:47:26:667 Servidor/(8102:8344): Vamos a inicializar un semaforo
+[INFO] 15:47:26:676 Servidor/(8102:8344): Recibimos la informacion de un carpincho
+[INFO] 15:47:26:677 Servidor/(8102:8344): El codigo de operacion es: 5
+[INFO] 15:47:26:677 Servidor/(8102:8344): Vamos a cerrar un semaforo
+[INFO] 15:47:26:684 Servidor/(8102:8344): Recibimos la informacion de un carpincho
+[INFO] 15:47:26:684 Servidor/(8102:8344): El codigo de operacion es: 1
+[INFO] 15:47:26:685 Servidor/(8102:8344): Vamos a eliminar un carpincho
+[INFO] 15:47:26:685 Servidor/(8102:8344): Le notificamos a memoria para que libere la memoria del carpincho: 2
+[INFO] 15:47:26:685 Servidor/(8102:8344): Sacamos al carpincho de ejecucion. Pid: 2
+[INFO] 15:47:26:685 Servidor/(8102:8344): Enviamos que queremos cerrar el carpincho
+[INFO] 15:47:26:685 Servidor/(8102:8344): Se nos va el carpincho: 2
