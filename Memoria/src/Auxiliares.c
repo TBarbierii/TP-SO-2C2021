@@ -46,3 +46,9 @@ uint32_t generadorIdsCarpinchos(){
     return id_carpincho++;
 
 }
+
+uint32_t generadorIdsMarcos(){
+
+	return id_marco++;
+	
+}

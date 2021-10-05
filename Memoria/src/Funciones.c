@@ -134,6 +134,26 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
 
 }
 
+void crear_marcos(){
+
+    uint32_t cantidad_marcos = tamanio/tamanioPagina;
+
+        for(uint32_t i=0; i<cantidad_marcos; i++){
+
+            t_marco* marco = malloc(sizeof(t_marco));
+
+            marco->id_marco = generadorIdsMarcos();
+            marco->proceso_asignado = -1;
+            marco->estaLibre = true;
+            marco->comienzo = 0; //Aca deberia haber una funcion recursiva que le vaya cambiando donde empieza
+                                 //El primero en 0, el segundo 0 + tamanioPagina y asi.
+
+            list_add(marco, marcos);
+
+        }
+
+}
+
 void escribir_marcos(t_list* marcos_a_asignar, t_carpincho* carpincho){
 
     void* stream_allocs = generar_stream_allocs(carpincho);
