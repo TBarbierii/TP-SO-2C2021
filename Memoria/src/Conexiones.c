@@ -44,7 +44,8 @@ uint32_t cod_op = recibir_operacion(conexion);
 	{
 	
 
-	case INICIALIZAR_ESTRUCTURA: //caso de que no haya kernel
+	case INICIALIZAR_ESTRUCTURA:
+		//inicializar_carpincho(int,t_log);
 		//recibir_mateinit();
 		//devolver pid, y un 1;
 	case MEMALLOC:
@@ -57,7 +58,7 @@ uint32_t cod_op = recibir_operacion(conexion);
 	case MEMWRITE:	
 		//recibir_memwrite();
 	case CERRAR_INSTANCIA:
-		//RECIBIR_cerrar();
+		//cerrar_carpincho();
 		break;
 	case -1:
 		log_error(logger, "el cliente se desconecto. Terminando servidor");
@@ -88,6 +89,111 @@ uint32_t recibir_memalloc(int socket_cliente) //devuelve DL del comienzo del blo
 	//escribir_en_memoria(dl); //aca se graba en memoria los allocs reservados. Devuelve el comienzo del marco
 
 	return 0;
+}
+
+void inicializar_carpincho(int conexion ,t_log* logger){
+
+	//Si hay kernel hacer algo, sino hacer otra cosa, sino dividir el switch
+
+	uint32_t size, offset;
+	t_memalloc alloc;
+	void* buffer = recibir_buffer(&size, conexion);
+	
+	memcpy(alloc.pid, buffer, sizeof(uint32_t));
+	offset =+ sizeof(uint32_t);
+	memcpy(alloc.tamanio, buffer + offset,sizeof(uint32_t));
+
+	free(buffer);
+
+	t_carpincho* carpincho = malloc(sizeof(t_carpincho));
+	
+//	pthread_mutex_lock(contadorProcesos);
+		carpincho->id_carpincho = generadorIdsCarpinchos();
+		log_info(logger,"Un nuevo carpincho se une a la manada de memoria, y su pid es: %d",carpincho->id_carpincho);
+//	pthread_mutex_unlock(contadorProcesos);
+
+//	carpincho->conexion = conexion;
+
+//	pthread_mutex_lock(modificarNew);
+		list_add(carpincho, carpinchos);
+		log_info(logger,"Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: %d",carpincho->id_carpincho);
+//	pthread_mutex_unlock(modificarNew);
+
+//	enviarInformacionAdministrativaDelProceso(procesoNuevo);
+	
+//	sem_post(hayProcesosNew);
+//	sem_post(procesoNecesitaEntrarEnReady);
+	
+
+}
+
+uint32_t recibir_memfree(int socket_cliente) {
+
+	uint32_t size, offset, carpincho;
+	void* buffer = recibir_buffer(&size, socket_cliente);
+	
+	memcpy(&carpincho, buffer, sizeof(uint32_t));
+
+	free(buffer);
+
+	//liberar_alloc();
+
+	return 0;
+}
+
+uint32_t recibir_memread(int socket_cliente) {
+
+	uint32_t size, offset, carpincho, direccion_logica;
+	void* buffer = recibir_buffer(&size, socket_cliente);
+	
+	memcpy(&carpincho, buffer, sizeof(uint32_t));
+	offset =+ sizeof(uint32_t);
+	memcpy(&direccion_logica, buffer + offset,sizeof(uint32_t));
+
+	free(buffer);
+
+	//leer_memoria(direccion_logica, carpincho); Retorna un void*
+	//enviar_contenido_leido(); Retorna un void*
+
+	return 0;
+}
+
+uint32_t recibir_memwrite(int socket_cliente) {
+
+	uint32_t size, offset, carpincho, direccion_logica, tamanio;
+	void* buffer = recibir_buffer(&size, socket_cliente);
+	
+	memcpy(&carpincho, buffer, sizeof(uint32_t));
+	offset =+ sizeof(uint32_t);
+	memcpy(&direccion_logica, buffer + offset,sizeof(uint32_t));
+	offset =+ sizeof(uint32_t);
+	memcpy(&tamanio, buffer + offset, sizeof(uint32_t));
+	offset =+ sizeof(uint32_t);
+
+	void* contenido = malloc(tamanio);
+
+	memcpy(contenido, buffer + offset, tamanio);
+
+	free(buffer);
+
+	//escribir_memoria(direccion_logica, contenido, tamanio); Retorna un entero si se pudo escribir o no
+
+	return 0;
+}
+
+uint32_t cerrar_carpincho(int conexion ,t_log* logger) {
+
+	uint32_t size, offset, carpincho;
+	void* buffer = recibir_buffer(&size, conexion);
+	
+	memcpy(&carpincho, buffer, sizeof(uint32_t));
+
+	free(buffer);
+
+	//eliminar_carpincho();
+
+	return 0;
+
 }
 
 

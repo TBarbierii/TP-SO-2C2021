@@ -4,24 +4,32 @@
 void rutinaDeProceso(proceso_kernel* procesoEjecutando){
     
     clock_t arranqueEjecucion = clock();
-
     t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
-
-
+    
     while(1){
         
         log_info(logger, "Se ejecuto tarea de conexion");
         int codigoOperacion = atenderMensajeEnKernel(procesoEjecutando->conexion);
         log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
-        if(rompoElHiloSegunElCodigo(codigoOperacion)){
-            log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento");
-            
-            clock_t finEjecucion = clock();
+        if(rompoElHiloSegunElCodigo(codigoOperacion) == 1){
 
+            log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo");
+            clock_t finEjecucion = clock();
             procesoEjecutando->ultimaRafagaEjecutada = (double)(finEjecucion - arranqueEjecucion) / CLOCKS_PER_SEC;
+            calcularEstimacion(procesoEjecutando); //aaca calculo la ultima estimacion nueva en base a la ultima rafaga ejecutada
             break;
+
+        }else if(rompoElHiloSegunElCodigo(codigoOperacion) == 2){
+            
+            log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho");
+            sem_post(nivelMultiProgramacionGeneral);
+            sem_post(nivelMultiprocesamiento);
+            break;
+
         }
     }
+
+    log_destroy(logger);
 
 }
 
@@ -62,15 +70,20 @@ void planificadorCortoPlazo(){
 
 
 int rompoElHiloSegunElCodigo(int codigo){
-    if(codigo == CERRAR_INSTANCIA || codigo == SEM_WAIT || codigo == SEM_SIGNAL || codigo == CONECTAR_IO){
+    
+    if( codigo == SEM_WAIT || codigo == SEM_SIGNAL || codigo == CONECTAR_IO){
         return 1;
+    }else if(codigo == CERRAR_INSTANCIA ){
+        return 2;
     }
     return 0;
+
 }
 
 
 /* seleccionar Planificador */
 void replanificacion(){
+
     if(strcmp(algoritmoPlanificacion, "HRRN") == 0){
         aplicarHRRN();
     }else if(strcmp(algoritmoPlanificacion, "SJF") == 0){
@@ -78,6 +91,7 @@ void replanificacion(){
     }else{
         perror("No se puede replanificar porque no hay un algoritmo identificado");
     }
+
 }
 
 
@@ -85,11 +99,15 @@ void replanificacion(){
 /* Planificación SJF */
 
 void calcularEstimacion(proceso_kernel* unCarpincho) {
-	unCarpincho->rafagaEstimada = (alfa * unCarpincho->rafagaEstimada)+ ((unCarpincho->ultimaRafagaEjecutada) * (1 - alfa) );
+	
+    unCarpincho->rafagaEstimada = (alfa * unCarpincho->rafagaEstimada)+ ((unCarpincho->ultimaRafagaEjecutada) * (1 - alfa) );
+
 }
 
 bool comparadorDeRafagas(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho) {
-	return unCarpincho->rafagaEstimada < otroCarpincho->rafagaEstimada;
+	
+    return unCarpincho->rafagaEstimada < otroCarpincho->rafagaEstimada;
+
 }
 
 void aplicarSJF() {
@@ -103,25 +121,30 @@ void aplicarSJF() {
 /* HRNN  */
 
 void AumentarTiempoEspera(proceso_kernel* unCarpincho){ //con lo de las funciones clock creo que esto no seria necesario 
-	unCarpincho->tiempoDeEspera++; //esta funcion quiza no sea necesaria
+	
+    unCarpincho->tiempoDeEspera++; //esta funcion quiza no sea necesaria
+
 }
 
 void CalcularResponseRatio(proceso_kernel* unCarpincho) {
+    
     clock_t finTiempoEsperando = clock();
     unCarpincho->tiempoDeEspera = (double)(finTiempoEsperando - unCarpincho->tiempoDeArriboColaReady) / CLOCKS_PER_SEC;
-
 	unCarpincho->responseRatio = 1 + (unCarpincho->tiempoDeEspera / unCarpincho->rafagaEstimada);
+
 }
 
 bool comparadorResponseRatio(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho) {
-	return unCarpincho->responseRatio > otroCarpincho->responseRatio;
+	
+    return unCarpincho->responseRatio > otroCarpincho->responseRatio;
+
 }
 
 
 void aplicarHRRN(){
 
-		list_iterate(procesosReady, (void*) CalcularResponseRatio); //calcula la estimación de todos los procesos para después ordenarla segun la priorirdad
-		list_sort(procesosReady, (void*) comparadorResponseRatio); // lo mismo que SJF, ordena segun un criterio (en este caso el de mayor responseRAtio)
+	list_iterate(procesosReady, (void*) CalcularResponseRatio); //calcula la estimación de todos los procesos para después ordenarla segun la priorirdad
+	list_sort(procesosReady, (void*) comparadorResponseRatio); // lo mismo que SJF, ordena segun un criterio (en este caso el de mayor responseRAtio)
 
 } 
 

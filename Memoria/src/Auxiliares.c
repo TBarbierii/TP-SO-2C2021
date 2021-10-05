@@ -40,3 +40,15 @@ uint32_t generarDireccionLogica(uint32_t id, uint32_t desplazamiento){
 	uint32_t direccionLogica = atoi(a);
 	return direccionLogica;
 }
+
+uint32_t generadorIdsCarpinchos(){
+
+    return id_carpincho++;
+
+}
+
+uint32_t generadorIdsMarcos(){
+
+	return id_marco++;
+	
+}

@@ -23,7 +23,7 @@ int iniciar_servidor_swamp();
 void atender_conexion_ram(uint32_t);
 void recibir_tipo_asignacion(t_buffer*);
 uint32_t recibir_operacion(uint32_t);
-void enviar_pagina(uint32_t, void*);
-void recibir_pagina(uint32_t);
+void enviar_pagina(uint32_t, void*, int);
+void recibir_pagina(t_buffer*);
 
 #endif

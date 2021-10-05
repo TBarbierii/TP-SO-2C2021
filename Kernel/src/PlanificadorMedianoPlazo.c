@@ -8,10 +8,10 @@ void planificadorMedianoPlazo(){
 
     pthread_t  t1, t2;
 
- //   pthread_create(&t1, NULL,(void *) thread1_PMP, logger); este tenemos que analizarlo
+    pthread_create(&t1, NULL,(void *) thread1_PMP, logger); //este tenemos que analizarlo
     pthread_create(&t2, NULL,(void *) thread2_PMP, logger);
     
- //   pthread_join(t1,NULL);
+    pthread_join(t1,NULL);
     pthread_join(t2,NULL);
 
     log_destroy(logger);
@@ -23,7 +23,7 @@ void thread1_PMP(t_log* logger){
     log_debug(logger,"Incializado el thread que permite suspender procesos para evitar IO bound");
 
     while(1){
-
+        sem_wait(signalSuspensionProceso);
         pthread_mutex_lock(modificarNew);
         pthread_mutex_lock(modificarReady);
         pthread_mutex_lock(modificarBlocked);

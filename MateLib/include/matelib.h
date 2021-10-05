@@ -28,7 +28,7 @@ typedef struct
 }mate_struct;
 
 
-typedef struct mate_instance
+typedef struct
 {
     mate_struct* group_info; // Tenemos un puntero a la estructura del "Carpincho" (es decir su estructura administrativa). 
 
@@ -78,9 +78,13 @@ int inicializarPrimerasCosas(mate_instance *lib_ref, char *config);
 
 int recibir_mensaje(int conexion, mate_instance* lib_ref);
 
-void agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* buffer);
+int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* buffer);
 
-void liberarEstructurasDeProceso(mate_instance* lib_ref);
+int liberarEstructurasDeProceso(t_buffer* buffer, mate_instance* lib_ref);
+
+int notificacionDeCreacionDeSemaforo(t_buffer* buffer, t_log* logger);
+
+int notificacionDeDestruccionDeSemaforo(t_buffer* buffer, t_log* logger);
 
 /* ------- Solicitudes  --------------------- */
 
@@ -99,6 +103,7 @@ void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo);
 void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg);
 
 int validarConexionPosible(int tipoSolicitado, int tipoActual);
+
 
 
 

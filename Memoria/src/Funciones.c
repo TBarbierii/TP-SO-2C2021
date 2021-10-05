@@ -107,7 +107,7 @@ void administrar_paginas(t_carpincho* carpincho){
 
 uint32_t asignarPaginas(t_carpincho* carpincho){
     
-    if(strcmp(tipoAsignacion, "FIJA"){
+    if(strcmp(tipoAsignacion, "FIJA") == 0){
 
         bool noEstanAsignados(t_marco* marco){
             return marco->proceso_asignado == -1;
@@ -131,6 +131,26 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
         
         //recorres todos los marcos hasta encontrar alguno(o mas) libres
     }
+
+}
+
+void crear_marcos(){
+
+    uint32_t cantidad_marcos = tamanio/tamanioPagina;
+
+        for(uint32_t i=0; i<cantidad_marcos; i++){
+
+            t_marco* marco = malloc(sizeof(t_marco));
+
+            marco->id_marco = generadorIdsMarcos();
+            marco->proceso_asignado = -1;
+            marco->estaLibre = true;
+            marco->comienzo = 0; //Aca deberia haber una funcion recursiva que le vaya cambiando donde empieza
+                                 //El primero en 0, el segundo 0 + tamanioPagina y asi.
+
+            list_add(marco, marcos);
+
+        }
 
 }
 

@@ -67,6 +67,8 @@ void inicializarSemaforosGlobales(){
     nivelMultiprocesamiento = malloc(sizeof(sem_t));
     sem_init(nivelMultiprocesamiento,1,gradoMultiProcesamiento);
 
+    signalSuspensionProceso = malloc(sizeof(sem_t));
+    sem_init(signalSuspensionProceso,1,0);
 }
 
 void finalizarSemaforosGlobales(){
@@ -104,6 +106,9 @@ void finalizarSemaforosGlobales(){
     free(nivelMultiProgramacionGeneral);
     sem_destroy(nivelMultiprocesamiento);
     free(nivelMultiprocesamiento);
+
+    sem_destroy(signalSuspensionProceso);
+    free(signalSuspensionProceso);
 
 
 }

@@ -61,7 +61,7 @@ typedef struct /* */
 {
     char* nombre;
     int valor;
-    sem_t* semaforoActual; //quiza esto no va a ser necesario, xq quiza tengamos que hacerlo mas teorico nosotros
+    pthread_mutex_t* semaforoActual; //quiza esto no va a ser necesario, xq quiza tengamos que hacerlo mas teorico nosotros
     t_list* listaDeProcesosEnEspera;
 
 }semaforo;
@@ -94,14 +94,18 @@ sem_t* hayProcesosReady;
 
 sem_t* nivelMultiprocesamiento;
 sem_t* nivelMultiProgramacionGeneral;
+sem_t* signalSuspensionProceso; // este semaforo lo vamos a utilizar desde block para que el algortimo de medianoplazo verifique si tiene que pasar un proceso a suspendido
+
 
 sem_t* procesoNecesitaEntrarEnReady;
 
 /* otros mutex */
 
+
 //mutex de semaforos
 
 pthread_mutex_t* controladorSemaforos;
+
 
 /* funciones */
 void inicializarListas();

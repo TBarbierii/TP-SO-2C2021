@@ -1,0 +1,3 @@
+[INFO] 15:47:04:419 Semaforos/(8102:8280): Se ha creado un nuevo semaforo de nombre: SEM2 y valor: 1
+[WARNING] 15:47:26:670 Semaforos/(8102:8344): Se esta intentando crear un semaforo: SEM2 pero ya esta creado
+[INFO] 15:47:26:678 Semaforos/(8102:8344): Se va a destruir un semaforo llamado: SEM2

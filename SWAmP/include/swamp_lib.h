@@ -30,6 +30,7 @@ char* ip_ram;
 char* puerto_ram;
 char* tipo_asignacion;
 
+
 /* Variables globales */
 
 t_list* lista_particiones;
@@ -41,7 +42,7 @@ t_log* logger_swamp;
 
 typedef struct {
     char* path;
-    int fd_swap;       // Es necesario?
+    int fd_swap;       
     void* swap_file;   
     t_list* particiones_swap;
 }swap_files;
@@ -54,15 +55,15 @@ typedef struct {
 }particion;
 
 typedef struct {
-    uint32_t tamanio;
     uint32_t num_pagina;
-}pagina;
+}t_pagina;
 
 typedef struct {
     swap_files* file_swap;
     particion* frame;
-    pagina* pagina;
+    t_pagina* pagina;
 }pagina_y_particion_swap;
+
 
 /* Declaracion de funciones */
 

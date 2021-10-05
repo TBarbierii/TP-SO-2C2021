@@ -23,11 +23,15 @@ void atenderSolicitudesKernel(){
 
 }
 
+
+
+
+
 int atenderMensajeEnKernel(int conexion) {
 
 	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_DEBUG);
 
-	t_paquete* paquete = malloc(sizeof(paquete));
+	t_paquete* paquete = malloc(sizeof(t_paquete));
 
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
@@ -40,13 +44,12 @@ int atenderMensajeEnKernel(int conexion) {
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
-	log_info(logger,"El tamaño del paquete es", paquete->buffer->size);
 
 
 	if(paquete->buffer->size > 0){
 	paquete->buffer->stream = malloc(paquete->buffer->size);
 	recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
-	}
+    }
 	
 
 	switch(paquete->codigo_operacion){
@@ -61,7 +64,9 @@ int atenderMensajeEnKernel(int conexion) {
         break;
 
 		case INICIAR_SEMAFORO:;
-        break;
+			log_info(logger,"Vamos a inicializar un semaforo");
+			iniciarSemaforo(paquete->buffer, conexion);
+		break;
 
         case SEM_WAIT:;
         break;
@@ -70,6 +75,8 @@ int atenderMensajeEnKernel(int conexion) {
         break;
 
         case CERRAR_SEMAFORO:;
+			log_info(logger,"Vamos a cerrar un semaforo");
+			cerrarSemaforo(paquete->buffer, conexion);
         break;
 
         case CONECTAR_IO:;
@@ -98,7 +105,7 @@ int atenderMensajeEnKernel(int conexion) {
 void inicializarProcesoNuevo(int conexion ,t_log* logger){
 
 
-	proceso_kernel* procesoNuevo = malloc(sizeof(proceso_kernel));
+	proceso_kernel* procesoNuevo =(proceso_kernel*) malloc(sizeof(proceso_kernel));
 	
 	pthread_mutex_lock(contadorProcesos);
 		procesoNuevo->pid = cantidadDeProcesosActual;
@@ -182,17 +189,85 @@ void enviarInformacionAdministrativaDelProceso(proceso_kernel* proceso){
 
 
 
-
-
-
 void informarCierreDeProceso(proceso_kernel* proceso,t_log* loggerActual){
 
 	t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t valorReturn = 0;
+	int desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(valorReturn) , sizeof(uint32_t));
 
 	log_info(loggerActual,"Enviamos que queremos cerrar el carpincho");
     enviarPaquete(paquete,proceso->conexion);
-	log_info(loggerActual,"Se envio la info");
 
 }
 
 
+void iniciarSemaforo(t_buffer * buffer, int conexion){
+	
+	void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int tamanioNombre;
+	int valor;
+
+	memcpy(&(tamanioNombre), stream+desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+
+	char* nombre = malloc(tamanioNombre);
+	memcpy(nombre, stream+desplazamiento, tamanioNombre);
+	desplazamiento += tamanioNombre;
+
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+	
+	int valorReturn = crearSemaforo(nombre,valor);
+	
+	avisarInicializacionDeSemaforo(conexion,valorReturn);
+
+
+}
+
+
+void cerrarSemaforo(t_buffer * buffer, int conexion){
+	
+	void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int tamanioNombre;
+
+	memcpy(&(tamanioNombre), stream+desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+
+	char* nombre = malloc(tamanioNombre);
+	memcpy(nombre, stream+desplazamiento, tamanioNombre);
+	
+	int valorReturn = destruirSemaforo(nombre);
+	
+	avisarDestruccionDeSemaforo(conexion,valorReturn);
+}
+
+void avisarInicializacionDeSemaforo(int conexion, int valor){
+
+	t_paquete* paquete = crear_paquete(INICIAR_SEMAFORO);
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	int desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+
+    enviarPaquete(paquete,conexion);
+
+}
+
+void avisarDestruccionDeSemaforo(int conexion, int valor){
+
+	t_paquete* paquete = crear_paquete(CERRAR_SEMAFORO);
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	int desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+
+    enviarPaquete(paquete,conexion);
+
+}

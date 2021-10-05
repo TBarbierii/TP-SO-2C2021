@@ -9,7 +9,7 @@
 #include <commons/config.h>
 #include "Kernel.h"
 
-void crearSemaforo(char* nombreSem, unsigned int valorSem);
-void destruirSemaforo(char* nombreSem);
+int crearSemaforo(char* nombreSem, unsigned int valorSem);
+int destruirSemaforo(char* nombreSem);
 
 #endif

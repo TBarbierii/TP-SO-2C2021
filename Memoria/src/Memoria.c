@@ -16,7 +16,7 @@ void obtenerValoresDelConfig(t_config* configActual){
     tamanioPagina = config_get_int_value(configActual, "TAMANIO_PAGINA");
     algoritmoReemplazoMMU = config_get_string_value(configActual, "ALGORITMO_REEMPLAZO_MMU");
     tipoAsignacion = config_get_string_value(configActual, "TIPO_ASIGNACION");
-    marcosMaximos = config_get_int_value(configActual, "MARCOS_MAXIMOS");
+    marcosMaximos = config_get_int_value(configActual, "MARCOS_POR_PROCESO");
     cantidadEntradasTLB = config_get_int_value(configActual, "CANTIDAD_ENTRADAS_TLB");
     algoritmoReemplazoTLB = config_get_string_value(configActual, "ALGORITMO_REEMPLAZO_TLB");
     retardoAciertoTLB = config_get_int_value(configActual, "RETARDO_ACIERTO_TLB");

@@ -25,6 +25,8 @@ uint32_t retardoAciertoTLB;
 uint32_t retardoFAlloTLB;
 
 uint32_t id_pag; //inicializar en algun lado 
+uint32_t id_carpincho; //inicializar
+uint32_t id_marco; //inicializar
 
 /* Estructuras Administrativas */
 
@@ -141,6 +143,8 @@ uint32_t asignarPaginas(t_carpincho*);
 
 /* Auxiliares */
 uint32_t generadorIdsPaginas();
+uint32_t generadorIdsCarpinchos();
+uint32_t generadorIdsMarcos();
 uint32_t generarDireccionLogica(uint32_t , uint32_t);
 
 #endif
