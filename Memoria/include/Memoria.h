@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <commons/log.h>
 #include <commons/config.h>
+#include <commons/string.h>
 #include <commons/collections/list.h>
 #include <stdbool.h>
 #include <math.h>
@@ -127,9 +128,12 @@ t_list* marcos;
 
 t_config* inicializarConfig();
 void inicializarListas();
-void administrar_allocs(t_memalloc);
+uint32_t administrar_allocs(t_memalloc);
 uint32_t buscar_o_agregar_espacio(t_carpincho* , uint32_t );
-void administrar_paginas(t_carpincho*);
+uint32_t administrar_paginas(t_carpincho* , uint32_t );
+void* generar_stream_allocs(t_carpincho* );
+void escribir_marcos(t_list* , t_carpincho* );
+uint32_t asignarPaginas(t_carpincho* );
 void finalizarConfig(t_config* configUsado);
 void obtenerValoresDelConfig(t_config* configActual);
 void inicializarMemoria();

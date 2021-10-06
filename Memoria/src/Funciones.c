@@ -1,7 +1,7 @@
 #include "Memoria.h"
 
 
-void administrar_allocs(t_memalloc alloc){
+uint32_t administrar_allocs(t_memalloc alloc){
 
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc.pid;
@@ -16,16 +16,16 @@ void administrar_allocs(t_memalloc alloc){
      carpincho->tabla_de_paginas = list_create();
      carpincho->allocs = list_create();
      //tlb
-     list_add(carpincho, carpinchos);
+     list_add(carpinchos, carpincho);
     }
 
-    uint32_t desplazamiento_alloc = buscar_o_agregar_espacio(carpincho, alloc.tamanio); //aca se crearian las paginas en el carpincho. Solo sirven para calcular la DF creo
+    uint32_t posicionAlloc = buscar_o_agregar_espacio(carpincho, alloc.tamanio); //aca se crearian las paginas en el carpincho. Solo sirven para calcular la DF creo
 
-    uint32_t numero_de_pagina = administrar_paginas(carpincho);
+    uint32_t direccionLogica = administrar_paginas(carpincho, posicionAlloc);
 
-    uint32_t marco = escribir_en_memoria(carpincho); //aca se graba en memoria los allocs reservados. Devuelve el id_marco
+    asignarPaginas(carpincho); //aca se graba en memoria los allocs reservados.
 
-
+    return direccionLogica;
 
 }
 
@@ -34,7 +34,7 @@ uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido
 
    if(list_size(carpincho->allocs) == 0){
        heapMetadata* alloc = malloc(sizeof(heapMetadata));
-       alloc->nextAlloc = NULL;
+       alloc->nextAlloc = NULL;//esto no se puede
        alloc->isFree = true;
        alloc->nextAlloc = tamanioPedido + 9;
 
@@ -43,7 +43,7 @@ uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido
        next_alloc->prevAlloc = 0;
        next_alloc->nextAlloc = NULL;
 
-        return generarDireccionLogica(generadorIdsPaginas(), 9); //el espacio del primer alloc siempre va a empezar en 9
+        return 0; 
 
    }else{//buscar espacio. se podria delegar todo esto porque tambien aca habria que hacer lo de dividir y consolidar allocs
 
@@ -63,27 +63,16 @@ uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido
             break; //sale del for
         }
         
-        //falta dividir en caso de que sobre lugar
-        //todo esto que sigue es para calcualr el desplazamiento de donde empieza el espacio libre
+        //falta dividir en caso de que sobre lugar 
+
         uint32_t posicionAllocActual = allocSiguiente->prevAlloc;
-        uint32_t paginaDelAllocActual;
 
-        for(uint32_t i=1; i <= list_size(carpincho->tabla_de_paginas); i++){
-
-            if(posicionAllocActual < tamanioPagina * i){
-            paginaDelAllocActual = i;
-            break; 
-            }    
-        }
-
-        uint32_t desplazamiento =  tamanioPagina - (paginaDelAllocActual * tamanioPagina - posicionAllocActual) +9 ; //el desplazamiento relativo a la pagina
-
-        return generarDireccionLogica(generadorIdsPaginas, desplazamiento);
+        return posicionAllocActual;
    }
 
 }
 
-void administrar_paginas(t_carpincho* carpincho){
+uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t posicionAlloc){
 
         heapMetadata *anteultimoAlloc = list_get(carpincho->allocs, list_size(carpincho->allocs)-2);
 
@@ -103,6 +92,22 @@ void administrar_paginas(t_carpincho* carpincho){
             list_add(carpincho->tabla_de_paginas, pagina);    
         }
 
+        //todo esto que sigue es para calcualr el desplazamiento de donde empieza el espacio libre
+        uint32_t i;
+        t_pagina *paginaDelAllocActual;
+
+        for(i=1; i <= list_size(carpincho->tabla_de_paginas); i++){
+
+            if(posicionAlloc < tamanioPagina * i){
+            paginaDelAllocActual = list_get(carpincho->tabla_de_paginas, i-1);
+            break; 
+            }    
+        }
+
+        uint32_t desplazamiento =  tamanioPagina - (i * tamanioPagina - posicionAlloc) +9 ; //el desplazamiento relativo a la pagina
+
+    return generarDireccionLogica(paginaDelAllocActual->id_pagina, desplazamiento);
+
 }
 
 uint32_t asignarPaginas(t_carpincho* carpincho){
@@ -113,30 +118,45 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
             return marco->proceso_asignado == -1;
         }
 
-        t_list *marcos_sin_asignar = list_filter(marcos, noEstanAsignados);
+        t_list *marcos_sin_asignar = list_filter(marcos, (void*)noEstanAsignados);
 
-        t_list *marcos_a_asignar = list_take(marcos_sin_asignar; marcosMaximos);
+        t_list *marcos_a_asignar = list_take(marcos_sin_asignar, marcosMaximos);
 
-        void marcarOcupados(t_marco marco){
+        void marcarOcupados(t_marco *marco){
             marco->estaLibre = false;
             marco->proceso_asignado = carpincho->id_carpincho;
         }
 
-        list_iterate(marcos_a_asignar, marcarOcupados);
+        list_iterate(marcos_a_asignar, (void*)marcarOcupados);
 
         escribir_marcos(marcos_a_asignar, carpincho); //aca escribir las paginas nuevas en los marcos_asignados. diferenciar los algoritmos en el caso de que haya que reemplazar. aca es la comunicacion con swap 
 
     }
-    if(strcmp(tipoAsignacion, "DINAMICA"){
+    if(strcmp(tipoAsignacion, "DINAMICA") ==0 ){
         
-        //recorres todos los marcos hasta encontrar alguno(o mas) libres
-    }
+        bool noEstanAsignados(t_marco* marco){
+        return marco->proceso_asignado == -1;
+        }
 
+        t_list *marcos_a_asignar = list_filter(marcos, (void*)noEstanAsignados);
+
+        void marcarOcupados(t_marco *marco){
+            marco->estaLibre = false;
+            marco->proceso_asignado = carpincho->id_carpincho;
+        }
+
+        list_iterate(marcos_a_asignar, (void*)marcarOcupados);
+
+        escribir_marcos(marcos_a_asignar, carpincho);
+    }
+   
+   return 0;
 }
 
 void crear_marcos(){
 
     uint32_t cantidad_marcos = tamanio/tamanioPagina;
+    uint32_t offset = 0;
 
         for(uint32_t i=0; i<cantidad_marcos; i++){
 
@@ -145,10 +165,10 @@ void crear_marcos(){
             marco->id_marco = generadorIdsMarcos();
             marco->proceso_asignado = -1;
             marco->estaLibre = true;
-            marco->comienzo = 0; //Aca deberia haber una funcion recursiva que le vaya cambiando donde empieza
-                                 //El primero en 0, el segundo 0 + tamanioPagina y asi.
+            marco->comienzo = offset; //Aca deberia haber una funcion recursiva que le vaya cambiando donde empieza
+            offset += tamanioPagina;                     //El primero en 0, el segundo 0 + tamanioPagina y asi.
 
-            list_add(marco, marcos);
+            list_add(marcos, marco);
 
         }
 

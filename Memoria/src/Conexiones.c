@@ -13,7 +13,7 @@ uint32_t recibir_operacion(uint32_t socket_cliente)
 	}
 }
 
-void* recibir_buffer(int* size, int socket_cliente)
+void* recibir_buffer(uint32_t * size, int socket_cliente)
 {
 	void * buffer;
 
@@ -82,13 +82,7 @@ uint32_t recibir_memalloc(int socket_cliente) //devuelve DL del comienzo del blo
 
 	free(buffer);
 
-	administrar_allocs(alloc);
-
-	
-
-	//escribir_en_memoria(dl); //aca se graba en memoria los allocs reservados. Devuelve el comienzo del marco
-
-	return 0;
+	return administrar_allocs(alloc);
 }
 
 void inicializar_carpincho(int conexion ,t_log* logger){
@@ -115,7 +109,7 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 //	carpincho->conexion = conexion;
 
 //	pthread_mutex_lock(modificarNew);
-		list_add(carpincho, carpinchos);
+		list_add(carpinchos, carpincho);
 		log_info(logger,"Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: %d",carpincho->id_carpincho);
 //	pthread_mutex_unlock(modificarNew);
 
@@ -244,6 +238,8 @@ void enviar_pagina(uint32_t id_pagina, void* contenido){
 
 void pedir_pagina(uint32_t id_pagina){
 
+	uint32_t size;
+
 	t_paquete *paquete = crear_paquete(ENVIAR_PAGINA);
 
 	paquete->buffer->size = sizeof(uint32_t);
@@ -257,7 +253,7 @@ void pedir_pagina(uint32_t id_pagina){
 
 	enviarPaquete(paquete, conexionSwamp);
 
-	void* buffer = recibir_buffer(tamanioPagina, conexionSwamp);
+	void* buffer = recibir_buffer(&size, conexionSwamp);
 
 	//t_pagina *pagina = 
 
