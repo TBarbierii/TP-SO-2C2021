@@ -1,10 +1,10 @@
 #include "Memoria.h"
 
 
-uint32_t administrar_allocs(t_memalloc alloc){
+uint32_t administrar_allocs(t_memalloc* alloc){
 
     bool buscarCarpincho(t_carpincho* c){
-		return c->id_carpincho == alloc.pid;
+		return c->id_carpincho == alloc->pid;
 	}
     //semaforo?
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
@@ -12,14 +12,14 @@ uint32_t administrar_allocs(t_memalloc alloc){
     //si no lo encuentra crearlo
     if (carpincho == NULL){
      carpincho = malloc(sizeof(t_carpincho));
-     carpincho->id_carpincho = alloc.pid;
+     carpincho->id_carpincho = alloc->pid;
      carpincho->tabla_de_paginas = list_create();
      carpincho->allocs = list_create();
      //tlb
      list_add(carpinchos, carpincho);
     }
 
-    uint32_t posicionAlloc = buscar_o_agregar_espacio(carpincho, alloc.tamanio); //aca se crearian las paginas en el carpincho. Solo sirven para calcular la DF creo
+    uint32_t posicionAlloc = buscar_o_agregar_espacio(carpincho, alloc->tamanio); //aca se crearian las paginas en el carpincho. Solo sirven para calcular la DF creo
 
     uint32_t direccionLogica = administrar_paginas(carpincho, posicionAlloc);
 
@@ -34,14 +34,18 @@ uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido
 
    if(list_size(carpincho->allocs) == 0){
        heapMetadata* alloc = malloc(sizeof(heapMetadata));
-       alloc->nextAlloc = NULL;//esto no se puede
+       alloc->nextAlloc = -1;
        alloc->isFree = true;
        alloc->nextAlloc = tamanioPedido + 9;
+
+       list_add(carpincho->allocs, alloc);
 
        heapMetadata* next_alloc = malloc(sizeof(heapMetadata));
        next_alloc->isFree = true;
        next_alloc->prevAlloc = 0;
-       next_alloc->nextAlloc = NULL;
+       next_alloc->nextAlloc = -1;
+
+       list_add(carpincho->allocs, next_alloc);
 
         return 0; 
 
@@ -78,7 +82,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t posicionAlloc){
 
         uint32_t posicionUltimoAlloc = anteultimoAlloc->nextAlloc;
 
-        uint32_t cantidadDePaginasNecesarias = ceil(posicionUltimoAlloc/tamanioPagina);
+        uint32_t cantidadDePaginasNecesarias = ceil((float)posicionUltimoAlloc/tamanioPagina);
 
         uint32_t cantidadDePaginasACrear =cantidadDePaginasNecesarias - list_size(carpincho->tabla_de_paginas);
 
@@ -156,7 +160,7 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
 void crear_marcos(){
 
     uint32_t cantidad_marcos = tamanio/tamanioPagina;
-    uint32_t offset = 0;
+
 
         for(uint32_t i=0; i<cantidad_marcos; i++){
 
@@ -165,8 +169,8 @@ void crear_marcos(){
             marco->id_marco = generadorIdsMarcos();
             marco->proceso_asignado = -1;
             marco->estaLibre = true;
-            marco->comienzo = offset; //Aca deberia haber una funcion recursiva que le vaya cambiando donde empieza
-            offset += tamanioPagina;                     //El primero en 0, el segundo 0 + tamanioPagina y asi.
+            marco->comienzo = i * tamanioPagina; //Aca deberia haber una funcion recursiva que le vaya cambiando donde empieza
+                  //El primero en 0, el segundo 0 + tamanioPagina y asi.
 
             list_add(marcos, marco);
 
@@ -185,6 +189,7 @@ void escribir_marcos(t_list* marcos_a_asignar, t_carpincho* carpincho){
             if(pagina->esNueva){
                 memcpy(memoriaPrincipal + marco->comienzo, stream_allocs + (i*tamanioPagina), tamanioPagina);
             }
+            pagina->esNueva = false;
         }
 
     }

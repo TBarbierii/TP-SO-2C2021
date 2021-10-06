@@ -73,15 +73,15 @@ uint32_t cod_op = recibir_operacion(conexion);
 uint32_t recibir_memalloc(int socket_cliente) //devuelve DL del comienzo del bloque (no del heap)
 {
 	uint32_t size, offset;
-	t_memalloc alloc;
+	t_memalloc *alloc = malloc(sizeof(t_memalloc));
 	void* buffer = recibir_buffer(&size, socket_cliente);
 	
-	memcpy(alloc.pid, buffer, sizeof(uint32_t));
+	memcpy(alloc->pid, buffer, sizeof(uint32_t));
 	offset =+ sizeof(uint32_t);
-	memcpy(alloc.tamanio, buffer + offset,sizeof(uint32_t));
+	memcpy(alloc->tamanio, buffer + offset,sizeof(uint32_t));
 
 	free(buffer);
-
+	
 	return administrar_allocs(alloc);
 }
 

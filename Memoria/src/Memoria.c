@@ -6,6 +6,7 @@ t_config* inicializarConfig(){
 
 void inicializarListas(){
     carpinchos = list_create();
+    marcos = list_create();
 }
 
 void obtenerValoresDelConfig(t_config* configActual){
@@ -29,6 +30,14 @@ void finalizarConfig(t_config* configUsado){
 
 void inicializarMemoria() {
     memoriaPrincipal = malloc(tamanio);
+    crear_marcos();
+}
+
+void inicializarTodo(){
+    inicializarListas();
+    id_pag = 1;
+    id_carpincho = 1;
+    id_marco = 0;
 }
 
 void finalizarMemoria() {
@@ -38,6 +47,16 @@ int main(){
 
     t_config* configActual = inicializarConfig();
     obtenerValoresDelConfig(configActual);
+    inicializarTodo();
+    inicializarMemoria();
+
+    t_memalloc *alloc = malloc(sizeof(t_memalloc));
+    alloc->pid = 5;
+    alloc->tamanio = 11;
+
+    uint32_t direccionLogica = administrar_allocs(alloc);
+
+
     finalizarConfig(configActual);
     return 0;
 }

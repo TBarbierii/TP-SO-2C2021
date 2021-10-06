@@ -66,8 +66,8 @@ typedef struct {
 
 typedef struct {
 
-    uint32_t prevAlloc;
-    uint32_t nextAlloc;
+    int32_t prevAlloc;
+    int32_t nextAlloc;
     uint8_t isFree;
 
 }heapMetadata;
@@ -82,7 +82,7 @@ typedef struct {
 
     uint32_t id_marco;
     uint32_t comienzo;
-    uint32_t proceso_asignado;//al empezar inicializar todo en -1
+    int32_t proceso_asignado;//al empezar inicializar todo en -1
     bool estaLibre;
 
 }t_marco;
@@ -128,7 +128,7 @@ t_list* marcos;
 
 t_config* inicializarConfig();
 void inicializarListas();
-uint32_t administrar_allocs(t_memalloc);
+uint32_t administrar_allocs(t_memalloc*);
 uint32_t buscar_o_agregar_espacio(t_carpincho* , uint32_t );
 uint32_t administrar_paginas(t_carpincho* , uint32_t );
 void* generar_stream_allocs(t_carpincho* );
@@ -137,6 +137,7 @@ uint32_t asignarPaginas(t_carpincho* );
 void finalizarConfig(t_config* configUsado);
 void obtenerValoresDelConfig(t_config* configActual);
 void inicializarMemoria();
+void crear_marcos();
 void liberarMemoria();
 
 void enviar_pagina(uint32_t id_pagina, void* contenido);
