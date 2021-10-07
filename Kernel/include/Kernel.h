@@ -61,7 +61,7 @@ typedef struct /* */
 {
     char* nombre;
     int valor;
-    pthread_mutex_t* semaforoActual; //quiza esto no va a ser necesario, xq quiza tengamos que hacerlo mas teorico nosotros
+    pthread_mutex_t* mutex; //quiza esto no va a ser necesario, xq quiza tengamos que hacerlo mas teorico nosotros
     t_list* listaDeProcesosEnEspera;
 
 }semaforo;

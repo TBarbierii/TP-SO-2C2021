@@ -12,15 +12,21 @@
 
 
 void atenderSolicitudesKernel();
-
 int atenderMensajeEnKernel(int conexion);
+
 void enviarInformacionAdministrativaDelProceso(proceso_kernel* proceso);
 void inicializarProcesoNuevo(int conexion,t_log* logger);
+
 void cerrarProceso(t_buffer* bufferActual,t_log* logger);
 void informarCierreDeProceso(proceso_kernel* proceso,t_log* loggerActual);
+
 void iniciarSemaforo(t_buffer * buffer, int conexion);
-void cerrarSemaforo(t_buffer * buffer, int conexion);
 void avisarInicializacionDeSemaforo(int conexion, int valor);
+
+void cerrarSemaforo(t_buffer * buffer, int conexion);
 void avisarDestruccionDeSemaforo(int conexion, int valor);
+
+void hacerPostDeSemaforo(t_buffer * buffer, int conexion);
+void avisarPostDeSemaforo(int conexion, int valor);
 
 #endif

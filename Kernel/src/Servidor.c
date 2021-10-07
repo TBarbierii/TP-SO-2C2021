@@ -72,6 +72,8 @@ int atenderMensajeEnKernel(int conexion) {
         break;
 
         case SEM_SIGNAL:;
+			log_info(logger,"Vamos a hacer un post de un semaforo");
+			hacerPostDeSemaforo(paquete->buffer, conexion);
         break;
 
         case CERRAR_SEMAFORO:;
@@ -225,6 +227,7 @@ void iniciarSemaforo(t_buffer * buffer, int conexion){
 	
 	avisarInicializacionDeSemaforo(conexion,valorReturn);
 
+	//free(nombre); ROMPE TODO CON ESTO
 
 }
 
@@ -244,7 +247,32 @@ void cerrarSemaforo(t_buffer * buffer, int conexion){
 	int valorReturn = destruirSemaforo(nombre);
 	
 	avisarDestruccionDeSemaforo(conexion,valorReturn);
+
+	//free(nombre); ROMPE TODO CON ESTO
 }
+
+void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
+	
+	void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int tamanioNombre;
+
+	memcpy(&(tamanioNombre), stream+desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+
+	char* nombre = malloc(tamanioNombre);
+	memcpy(nombre, stream+desplazamiento, tamanioNombre);
+	
+	int valorReturn = realizarSignalDeSemaforo(nombre);
+	
+	avisarPostDeSemaforo(conexion,valorReturn);
+
+	free(nombre);
+}
+
+
+/* AVISOS A MATELIB DE SEMAFOROS */
+
 
 void avisarInicializacionDeSemaforo(int conexion, int valor){
 
@@ -262,6 +290,20 @@ void avisarInicializacionDeSemaforo(int conexion, int valor){
 void avisarDestruccionDeSemaforo(int conexion, int valor){
 
 	t_paquete* paquete = crear_paquete(CERRAR_SEMAFORO);
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	int desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+
+    enviarPaquete(paquete,conexion);
+
+}
+
+
+void avisarPostDeSemaforo(int conexion, int valor){
+
+	t_paquete* paquete = crear_paquete(SEM_SIGNAL);
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	int desplazamiento = 0;

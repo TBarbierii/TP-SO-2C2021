@@ -73,8 +73,12 @@ int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
 int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
     
     if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
+        
+        log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un signal sobre el semaforo: %s", sem);
+        liberarSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
+        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
         return 0;
+        
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
         return -1;
@@ -84,8 +88,12 @@ int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
 int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
     
     if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
+        
+        log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un signal sobre el semaforo: %s", sem);
+        realizarPostSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
+        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
         return 0;
+        
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
         return -1;
@@ -220,6 +228,8 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
         case SEM_WAIT:;
             break;
         case SEM_SIGNAL:;
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso");
+            valorRetorno = notificacionDePostSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case CERRAR_SEMAFORO:;
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado cerrar un semaforo y obtenemos una respuesta en base a eso");
@@ -342,6 +352,27 @@ int notificacionDeDestruccionDeSemaforo(t_buffer* buffer, t_log* logger){
 
     return valor;
 }
+
+
+int notificacionDePostSemaforo(t_buffer* buffer, t_log* logger){
+    
+    void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+
+    if(valor == 0){
+        log_info(logger,"Se pudo hacer el post del semaforo");
+    }else{
+        log_error(logger,"No see pudo realizar el post del semaforo solicitado");
+    }
+
+    return valor;
+}
+
+
+
+
 
 /* ------- Solicitudes  --------------------- */
 
@@ -471,7 +502,8 @@ int main(){
 
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     mate_sem_init(referencia,"SEM2", 1);
-    mate_sem_destroy(referencia,"SEM2");
+    mate_sem_post(referencia, "SEM2");
+    //mate_sem_destroy(referencia,"SEM2");
 
     mate_close(referencia);
     free(referencia);

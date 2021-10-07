@@ -41,7 +41,8 @@
 			"config.h": "c",
 			"planificadorcortoplazo.h": "c",
 			"socket.h": "c",
-			"memoria.h": "c"
+			"memoria.h": "c",
+			"stdbool.h": "c"
 		}
 	}
 }

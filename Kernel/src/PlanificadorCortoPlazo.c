@@ -71,7 +71,7 @@ void planificadorCortoPlazo(){
 
 int rompoElHiloSegunElCodigo(int codigo){
     
-    if( codigo == SEM_WAIT || codigo == SEM_SIGNAL || codigo == CONECTAR_IO){
+    if(codigo == SEM_WAIT || codigo == CONECTAR_IO){
         return 1;
     }else if(codigo == CERRAR_INSTANCIA ){
         return 2;

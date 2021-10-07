@@ -86,6 +86,8 @@ int notificacionDeCreacionDeSemaforo(t_buffer* buffer, t_log* logger);
 
 int notificacionDeDestruccionDeSemaforo(t_buffer* buffer, t_log* logger);
 
+int notificacionDePostSemaforo(t_buffer* buffer, t_log* logger);
+
 /* ------- Solicitudes  --------------------- */
 
 void solicitarIniciarPatota(int conexion, mate_instance* lib_ref);
