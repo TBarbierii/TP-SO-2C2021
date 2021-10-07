@@ -72,11 +72,11 @@ typedef struct {
 
 }heapMetadata;
 
-typedef struct{
+/*typedef struct{
     uint32_t pagina;
     uint8_t estaPartido;
     heapMetadata heap;
-}alloc;
+}alloc;*/
 
 typedef struct {
 
@@ -139,6 +139,8 @@ void obtenerValoresDelConfig(t_config* configActual);
 void inicializarMemoria();
 void crear_marcos();
 void liberarMemoria();
+void enviarInformacionAdministrativaDelProceso(t_carpincho* carpincho);
+void inicializar_carpincho(int conexion ,t_log* logger);
 
 void enviar_pagina(uint32_t id_pagina, void* contenido);
 
@@ -151,5 +153,8 @@ uint32_t generadorIdsPaginas();
 uint32_t generadorIdsCarpinchos();
 uint32_t generadorIdsMarcos();
 uint32_t generarDireccionLogica(uint32_t , uint32_t);
+uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica);
+uint32_t obtenerId(uint32_t);
+uint32_t obtenerDesplazamiento(uint32_t);
 
 #endif

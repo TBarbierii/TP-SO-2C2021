@@ -51,7 +51,7 @@ int main(){
     inicializarMemoria();
 
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
-    alloc->pid = 5;
+    alloc->pid = 8;
     alloc->tamanio = 11;
 
     uint32_t direccionLogica = administrar_allocs(alloc);

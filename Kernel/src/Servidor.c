@@ -53,7 +53,7 @@ int atenderMensajeEnKernel(int conexion) {
 	
 
 	switch(paquete->codigo_operacion){
-        case INICIALIZAR_ESTRUCTURA:;
+        case INICIALIZAR_ESTRUCTURA:
 			log_info(logger,"Vamos a inicializar un carpincho");
 			inicializarProcesoNuevo(conexion, logger);
 			break;
