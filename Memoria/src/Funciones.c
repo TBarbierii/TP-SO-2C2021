@@ -217,3 +217,75 @@ void* generar_stream_allocs(t_carpincho* carpincho){
 
     return stream_allocs;
 }
+
+void liberar_alloc(uint32_t carpincho, uint32_t DL){
+
+    uint32_t DF = calcular_direccion_fisica(carpincho, DL);
+
+    uint32_t posicionHeap = DF -9;
+
+    bool buscarCarpincho(t_carpincho* s){
+	return s->id_carpincho == id;
+	}
+
+	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
+    
+    int32_t contador = 0;
+    bool buscarHeap(heapMetadata *alloc){
+        contador++;
+        return alloc->nextAlloc == posicionHeap;
+    }
+
+    heapMetadata *alloc = list_find(capybara->allocs, (void*)buscarHeap);
+
+    heapMetadata *allocPosta = list_get(capybara->allocs,contador);
+
+    allocPosta->isFree = true;
+
+    //consolidar_allocs y liberar_paginas
+
+}
+
+void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
+
+    uint32_t id = obtenerId(DL);
+
+	uint32_t desplazamiento = obtenerDesplazamiento(DL);
+
+    bool buscarCarpincho(t_carpincho* s){
+	return s->id_carpincho == id;
+	};
+
+	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
+
+    uint32_t DF = calcular_direccion_fisica(carpincho, DL);
+
+    void* leido = malloc(tam);
+
+    bool estaCortado = desplazamiento + tam > tamanioPagina;
+
+    if(estaCortado){//y si son 3 pags?
+
+        int32_t contador = 0;
+       
+        bool buscar_pagina_inicio(t_pagina* pagina){
+            contador++;
+            return = pagina->id_pagina == id; 
+        };
+        
+        t_pagina* primeraPagina = list_find(capybara->tabla_de_paginas, (void*)buscar_pagina_inicio);
+        t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
+
+        uint32_t bytesPrimeraLectura = primeraPagina->marco.comienzo + tamanioPagina - tam;
+
+        memcpy(leido, memoriaPrincipal + DF, bytesPrimeraLectura);
+        memcpy(leido, memoriaPrincipal + (paginaSiguiente->marco.comienzo), tam - bytesPrimeraLectura);
+
+    }else{
+        memcpy(leido, memoriaPrincipal + DF, tam);
+    }
+     
+ 
+    return leido;
+
+}

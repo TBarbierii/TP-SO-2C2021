@@ -225,8 +225,6 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso");
             valorRetorno = notificacionDeCreacionDeSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
-        case SEM_WAIT:;
-            break;
         case SEM_SIGNAL:;
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso");
             valorRetorno = notificacionDePostSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
@@ -235,7 +233,18 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado cerrar un semaforo y obtenemos una respuesta en base a eso");
             valorRetorno = notificacionDeDestruccionDeSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
+        /* las que faltan */
+        case SEM_WAIT:;
+            break;
         case CONECTAR_IO:;
+            break;
+        case MEMALLOC:;
+            break;
+        case MEMFREE:;
+            break;
+        case MEMREAD:;
+            break;
+        case MEMWRITE:;
             break;
         default:;
             break;
@@ -253,7 +262,7 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
 }
 
 
-/* */
+/* Respuestas del Backend */
 
 int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* buffer){
 	void* stream = buffer->stream;
@@ -376,6 +385,8 @@ int notificacionDePostSemaforo(t_buffer* buffer, t_log* logger){
 
 /* ------- Solicitudes  --------------------- */
 
+
+/* estructuracion */
 void solicitarIniciarPatota(int conexion, mate_instance* lib_ref){
     
     t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
@@ -395,7 +406,7 @@ void solicitarCerrarPatota(int conexion, mate_instance* lib_ref){
     enviarPaquete(paquete,conexion);
 }
 
- 
+ /* semaforos */
 
 void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned int valor){
     
@@ -481,6 +492,81 @@ void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, v
 }
 
 
+/* MEMORIA */
+
+void realizarMemAlloc(int conexion, uint32_t pid, int size){
+
+    t_paquete* paquete = crear_paquete(MEMALLOC);
+
+    paquete->buffer->size = sizeof(uint32_t) * 2;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+    int desplazamiento = 0;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, &(size) , sizeof(uint32_t));
+
+    enviarPaquete(paquete,conexion);
+
+}
+void realizarMemFree(int conexion, uint32_t pid, mate_pointer addr){
+
+    t_paquete* paquete = crear_paquete(MEMFREE);
+
+    paquete->buffer->size = sizeof(uint32_t) + sizeof(int32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+    int desplazamiento = 0;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, &(addr) , sizeof(int32_t));
+
+    enviarPaquete(paquete,conexion);
+}
+
+void realizarMemRead(int conexion, uint32_t pid, mate_pointer origin, int size){
+    
+    t_paquete* paquete = crear_paquete(MEMREAD);
+
+    paquete->buffer->size = sizeof(uint32_t) *2 + sizeof(int32_t) + size;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+    int desplazamiento = 0;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, &(origin) , sizeof(int32_t));
+    desplazamiento += sizeof(int32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, &(size) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    enviarPaquete(paquete,conexion);
+
+}
+
+void realizarMemWrite(int conexion, uint32_t pid, void *origin, mate_pointer dest, int size){
+
+    t_paquete* paquete = crear_paquete(MEMWRITE);
+
+    paquete->buffer->size = sizeof(uint32_t) *2 + sizeof(int32_t) + size;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+    int desplazamiento = 0;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, &(dest) , sizeof(int32_t));
+    desplazamiento += sizeof(int32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, &(size) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, origin , size);
+
+    enviarPaquete(paquete,conexion);    
+
+
+}
+
+
+/*VALIDACIONES PARA REALIZAR TAREAS */
+
 int validarConexionPosible(int tipoSolicitado, int tipoActual){
 
     if(tipoSolicitado == KERNEL){ 
@@ -503,7 +589,7 @@ int main(){
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     mate_sem_init(referencia,"SEM2", 1);
     mate_sem_post(referencia, "SEM2");
-    //mate_sem_destroy(referencia,"SEM2");
+    mate_sem_destroy(referencia,"SEM2");
 
     mate_close(referencia);
     free(referencia);
