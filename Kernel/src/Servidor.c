@@ -53,7 +53,7 @@ int atenderMensajeEnKernel(int conexion) {
 	
 
 	switch(paquete->codigo_operacion){
-        case INICIALIZAR_ESTRUCTURA:
+        case INICIALIZAR_ESTRUCTURA:;
 			log_info(logger,"Vamos a inicializar un carpincho");
 			inicializarProcesoNuevo(conexion, logger);
 			break;
@@ -248,7 +248,7 @@ void cerrarSemaforo(t_buffer * buffer, int conexion){
 	
 	avisarDestruccionDeSemaforo(conexion,valorReturn);
 
-	//free(nombre); ROMPE TODO CON ESTO
+	//free(nombre); ROMPE TODO CON ESTO, pero la duda era el porque?, sera xq se libera cuando se libera el buffer?
 }
 
 void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
