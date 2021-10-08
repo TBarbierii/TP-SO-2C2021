@@ -145,29 +145,63 @@ t_list* crear_paginas_swap(char* path_swap) {
     close(fd);
     return paginas_swap;
 }
-/*
+
 void manejar_asignacion() {
 
-    uint32_t tipo_asignacion = recibir_tipo_asignacion(t_buffer* buffer);
+	if(strcmp(tipo_asignacion, "FIJA") == 1) {
+        asignacion_fija();
+        log_info(logger_swamp, "Tipo de asignacion a utilizar es %s", tipo_asignacion);
+    }else{
+        asignacion_dinamica();
+        log_info(logger_swamp, "Tipo de asignacion a utilizar es %s", tipo_asignacion);
+    }
+}
 
-	switch(paquete->codigo_operacion){
-        case ENVIAR_PAGINA:;
-			//enviar_pagina(uint32_t id_pagina, void* contenido, int conexion);
-			break;
-
-        case RECIBIR_PAGINA:;
-			//recibir_pagina(uint32_t id_pagina);
-        	break;
-
-		case TIPOASIGNACION:;
-			//recibir_tipo_asignacion()
-			close(conexion);
-       		break;
-
-		default:;
-		log_info(logger,"No se metio por ningun lado wtf");
-		break;
-	}
+void asignacion_fija() {
 
 }
+
+void asignacion_dinamica() {
+
+}
+
+void guardar_pagina(uint32_t PID) {
+
+    swap_files* file = malloc(sizeof(swap_files));
+    
+    
+    if(strcmp(tipo_asignacion, "FIJA") == 1) {
+
+    }else{
+
+    }
+
+}
+/*
+t_pagina* buscar_pagina(uint32_t id_pagina) {
+
+    pagina_y_particion_swap* file = malloc(sizeof(pagina_y_particion_swap));
+    file->file_swap->path = 
+    file->frame = buscar_particion_libre();
+}
 */
+int verificar_pid_en_swap_file(uint32_t PID, char* path_swap) {
+
+    swap_files* file = malloc(sizeof(swap_files));
+    file->path = path_swap;
+    int valor = 0;
+
+    int fd = open(file->path, O_RDWR);
+    if(fd == 0) {
+        log_error(logger_swamp, "Error al querer abrir el file %s", file->path);
+    }
+
+    for(int i = 0; i < file->procesos_swap->elements_count; i++) {
+        valor = list_get(file->procesos_swap->elements_count, i);
+        if(valor == PID) {
+            log_info(logger_swamp, "PID presente en %s", file->path);
+            return 1;
+        }
+    }
+    return 0;
+}

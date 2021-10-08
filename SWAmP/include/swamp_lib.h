@@ -45,10 +45,11 @@ typedef struct {
     int fd_swap;       
     void* swap_file;   
     t_list* particiones_swap;
+    t_list* procesos_swap;
 }swap_files;
 
 typedef struct {
-    int num_particion; //quiza para el orden xq creo q importaba
+    int num_particion; 
     int pid;
     int esta_libre;
     void* inicio_particion;
@@ -67,11 +68,25 @@ typedef struct {
 
 /* Declaracion de funciones */
 
-void obtener_valores_config(t_config* configActual);
-void crear_archivos_swap(t_list* archivos_swap, int cantidadParticiones);
-t_list* crear_lista_particiones(int cantidadParticiones);
-particion* particion_nueva(int numero);
+/* Inicializacion */
+void obtener_valores_config(t_config*);
+void crear_archivos_swap(t_list*, int);
+t_list* crear_lista_particiones(int);
+
+/*  Particiones  */
 particion* buscar_particion_libre(char*);
+particion* particion_nueva(int);
 int cantidad_frames_disponibles(char*);
+
+/*    Paginas    */
+t_pagina* buscar_pagina(uint32_t);
+//void guardar_pagina(int);
+
+/*  Asignaciones  */
+void asignacion_fija();
+void asignacion_dinamica();
+
+/*   Auxiliares   */
+int verificar_pid_en_swap_file(uint32_t, char*);
 
 #endif

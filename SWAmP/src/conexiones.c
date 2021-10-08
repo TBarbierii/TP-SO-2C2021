@@ -62,6 +62,7 @@ int atender_mensaje_ram(int conexion) {
 			break;
 
         case RECIBIR_PAGINA:;
+			// Faltaria modificar para recibir el PID
 			//recibir_pagina(uint32_t id_pagina);
         	break;
 
@@ -89,7 +90,7 @@ int atender_mensaje_ram(int conexion) {
 	return valorOperacion;
 	
 }
-// Habria otra forma para mandarlo para manejar losa tipos de asignacion?
+// Habria otra forma para mandarlo para manejar los tipos de asignacion?
 uint32_t recibir_tipo_asignacion(t_buffer* buffer) {
 
 	void* data = buffer->stream;
@@ -107,7 +108,7 @@ uint32_t recibir_tipo_asignacion(t_buffer* buffer) {
 	} 
 	return tipo;
 }
-
+// Faltaria modificar para recibir el PID
 void recibir_pagina(t_buffer* buffer) {
 
 	void* data = buffer->stream;
