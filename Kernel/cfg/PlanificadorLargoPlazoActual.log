@@ -1,7 +1,11 @@
-[DEBUG] 23:30:50:079 PlanificadorLargoPlazo/(9106:9110): Se inicializa la planificacion de largo plazo con algoritmo FIFO
-[INFO] 23:30:54:166 PlanificadorLargoPlazo/(9106:9110): Se esta sacando un carpincho de la cola de new. Carpincho: 0
-[INFO] 23:30:54:167 PlanificadorLargoPlazo/(9106:9110): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
-[INFO] 23:32:06:809 PlanificadorLargoPlazo/(9106:9110): Se esta sacando un carpincho de la cola de new. Carpincho: 1
-[INFO] 23:32:06:809 PlanificadorLargoPlazo/(9106:9110): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 1
-[INFO] 23:32:10:320 PlanificadorLargoPlazo/(9106:9110): Se esta sacando un carpincho de la cola de new. Carpincho: 2
-[INFO] 23:32:10:320 PlanificadorLargoPlazo/(9106:9110): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 2
+[DEBUG] 15:01:21:075 PlanificadorLargoPlazo/(9769:9777): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 15:02:25:731 PlanificadorLargoPlazo/(9769:9777): Se esta sacando un carpincho de la cola de new. Carpincho: 0
+[INFO] 15:02:25:732 PlanificadorLargoPlazo/(9769:9777): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
+[INFO] 15:03:21:071 PlanificadorLargoPlazo/(9769:9777): Se esta sacando un carpincho de la cola de new. Carpincho: 1
+[INFO] 15:03:21:071 PlanificadorLargoPlazo/(9769:9777): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 1
+[INFO] 15:03:22:984 PlanificadorLargoPlazo/(9769:9777): Se esta sacando un carpincho de la cola de new. Carpincho: 2
+[INFO] 15:03:22:984 PlanificadorLargoPlazo/(9769:9777): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 2
+[INFO] 15:03:45:192 PlanificadorLargoPlazo/(9769:9777): Se esta sacando un carpincho de la cola de new. Carpincho: 3
+[INFO] 15:03:45:192 PlanificadorLargoPlazo/(9769:9777): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 3
+[INFO] 15:03:55:060 PlanificadorLargoPlazo/(9769:9777): Se esta sacando un carpincho de la cola de new. Carpincho: 4
+[INFO] 15:03:55:060 PlanificadorLargoPlazo/(9769:9777): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 4

@@ -524,7 +524,7 @@ void realizarMemFree(int conexion, uint32_t pid, mate_pointer addr){
     enviarPaquete(paquete,conexion);
 }
 
-void realizarMemRead(int conexion, uint32_t pid, mate_pointer origin, void *dest, int size){
+void realizarMemRead(int conexion, uint32_t pid, mate_pointer origin, int size){
     
     t_paquete* paquete = crear_paquete(MEMREAD);
 
@@ -538,7 +538,6 @@ void realizarMemRead(int conexion, uint32_t pid, mate_pointer origin, void *dest
     desplazamiento += sizeof(int32_t);
     memcpy(paquete->buffer->stream + desplazamiento, &(size) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
-    memcpy(paquete->buffer->stream + desplazamiento, dest , size);
 
     enviarPaquete(paquete,conexion);
 
@@ -590,7 +589,7 @@ int main(){
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     mate_sem_init(referencia,"SEM2", 1);
     mate_sem_post(referencia, "SEM2");
-    //mate_sem_destroy(referencia,"SEM2");
+    mate_sem_destroy(referencia,"SEM2");
 
     mate_close(referencia);
     free(referencia);

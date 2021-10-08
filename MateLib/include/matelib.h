@@ -115,7 +115,7 @@ void realizarMemAlloc(int conexion, uint32_t pid, int size);
 
 void realizarMemFree(int conexion, uint32_t pid, mate_pointer addr);
 
-void realizarMemRead(int conexion, uint32_t pid, mate_pointer origin, void *dest, int size);
+void realizarMemRead(int conexion, uint32_t pid, mate_pointer origin, int size);
 
 void realizarMemWrite(int conexion, uint32_t pid, void *origin, mate_pointer dest, int size);
 

@@ -114,10 +114,12 @@ int realizarSignalDeSemaforo(char* nombreSem){
 
         semaforoActual->valor++;
 
+        log_info(logger,"Se realizo un signal del semaforo: %s y el valor se incremento a: %d", nombreSem, semaforoActual->valor);
+
         if(!list_is_empty(semaforoActual->listaDeProcesosEnEspera)){ // si tiene procesos esperando, liberamos 1
             
             proceso_kernel* procesoLiberado = list_remove(semaforoActual->listaDeProcesosEnEspera, 0);
-            log_info(logger,"Alguien hizo un sem_post, por lo tanto se libera un proceso de la lista de espera del semaforo: %s", nombreSem);
+            log_info(logger,"Se libera un proceso de la lista de espera del semaforo: %s", nombreSem);
             pthread_mutex_unlock(semaforoActual->mutex);
 
             /* sacamos al proceso de la lista de bloqueados */
@@ -128,7 +130,7 @@ int realizarSignalDeSemaforo(char* nombreSem){
 
         }else{ // si no tiene procesos esperando, solo notificamos que se cambios el valor del semaforo
             
-            log_info(logger,"Alguien hizo un sem_post del semaforo: %s, aunque como no tiene procesos esperando solo se aumenta su valor", nombreSem);
+            log_info(logger,"Como el semaforo: %s, no tiene procesos esperando solo se aumenta su valor", nombreSem);
             pthread_mutex_unlock(semaforoActual->mutex);
         }
 

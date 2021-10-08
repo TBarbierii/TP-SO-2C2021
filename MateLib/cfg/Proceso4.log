@@ -1,0 +1,15 @@
+[INFO] 15:03:55:077 loggerContenidoProceso/(9989:9989): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:03:55:116 loggerContenidoProceso/(9989:9989): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 15:03:55:120 loggerContenidoProceso/(9989:9989): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:03:55:120 loggerContenidoProceso/(9989:9989): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:03:55:121 loggerContenidoProceso/(9989:9989): Solicitamos hacer un signal sobre el semaforo: SEM2
+[INFO] 15:03:55:124 loggerContenidoProceso/(9989:9989): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:03:55:124 loggerContenidoProceso/(9989:9989): Se pudo hacer el post del semaforo
+[INFO] 15:03:55:125 loggerContenidoProceso/(9989:9989): Solicitamos destruir un semaforo de nombre: SEM2
+[INFO] 15:03:55:127 loggerContenidoProceso/(9989:9989): Habiamos solicitado cerrar un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:03:55:128 loggerContenidoProceso/(9989:9989): Se pudo destruir el semaforo que se solicito destruir
+[INFO] 15:03:55:128 loggerContenidoProceso/(9989:9989): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 15:03:55:131 loggerContenidoProceso/(9989:9989): Se envio info para cerrarlo
+[INFO] 15:03:55:131 loggerContenidoProceso/(9989:9989): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:03:55:131 loggerContenidoProceso/(9989:9989): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 15:03:55:132 loggerContenidoProceso/(9989:9989): Se liberan todas las estructuras del proceso
