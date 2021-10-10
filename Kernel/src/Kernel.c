@@ -50,6 +50,10 @@ void inicializarSemaforosGlobales(){
     controladorSemaforos = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(controladorSemaforos,NULL);
 
+    controladorIO = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(controladorIO,NULL);
+    
+
     /* semaforos */
 
     hayProcesosNew = malloc(sizeof(sem_t));
@@ -95,6 +99,9 @@ void finalizarSemaforosGlobales(){
     free(nivelMultiProgramacionBajaPrioridad);
     pthread_mutex_destroy(controladorSemaforos);
     free(controladorSemaforos);
+    pthread_mutex_destroy(controladorIO);
+    free(controladorIO);
+    
 
 
 
@@ -175,12 +182,21 @@ void inicializarDispositivosIO(char ** dispositivos, char** duraciones){
         int sizeNombre = string_length(nombreActual)+1;
 
         dispositivoIO* nuevoDispositivo = (dispositivoIO*) malloc(sizeof(dispositivoIO));
+
+
         nuevoDispositivo->nombre = (char*) malloc(sizeof(char)*sizeNombre);
         nuevoDispositivo->listaDeProcesosEnEspera = list_create();
         strcpy(nuevoDispositivo->nombre, nombreActual);
         nuevoDispositivo->duracionRafaga = atoi(duracionActual);
-        
-        
+        /* un semaforo activador para avisarle que un proceso lo va a ejecutar y otro para agregar o quitar elementos de su lista de espera */
+        nuevoDispositivo->activadorDispositivo = malloc(sizeof(sem_t));
+        sem_init(nuevoDispositivo->activadorDispositivo,1,0);
+
+        nuevoDispositivo->mutex = malloc(sizeof(pthread_mutex_t));
+        pthread_mutex_init(nuevoDispositivo->mutex,NULL);
+
+
+
         list_add(dispositivosIODisponibles, nuevoDispositivo);
 
         free(nombreActual);

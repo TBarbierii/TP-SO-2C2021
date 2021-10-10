@@ -75,6 +75,9 @@ typedef struct
     char* nombre;
     int duracionRafaga;
     t_list* listaDeProcesosEnEspera;
+    sem_t* activadorDispositivo;
+    pthread_mutex_t* mutex;
+
 }dispositivoIO;
 
 //Semaforos compartidos en los distintos planificadores
@@ -102,9 +105,10 @@ sem_t* procesoNecesitaEntrarEnReady;
 /* otros mutex */
 
 
-//mutex de semaforos
+//mutex de semaforos Y IO
 
 pthread_mutex_t* controladorSemaforos;
+pthread_mutex_t* controladorIO;
 
 
 /* funciones */
