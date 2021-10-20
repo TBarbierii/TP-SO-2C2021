@@ -33,7 +33,6 @@ char* tipo_asignacion;
 
 /* Variables globales */
 
-t_list* lista_particiones;
 t_list* lista_swap_files;
 t_log* logger_swamp;
 
@@ -41,9 +40,8 @@ t_log* logger_swamp;
 /* Estructuras */
 
 typedef struct {
-    char* path;
-    int fd_swap;       
-    void* swap_file;   
+    char* path;     
+    void* swap_file;   // tendria que estar aca o creado en cada funcion
     t_list* particiones_swap;
     t_list* procesos_swap;
 }swap_files;
@@ -52,18 +50,9 @@ typedef struct {
     int num_particion; 
     int pid;
     int esta_libre;
-    void* inicio_particion;
+    int inicio_particion;
+    int num_pagina;
 }particion;
-
-typedef struct {
-    uint32_t num_pagina;
-}t_pagina;
-
-typedef struct {
-    swap_files* file_swap;
-    particion* frame;
-    t_pagina* pagina;
-}pagina_y_particion_swap;
 
 
 /* Declaracion de funciones */
@@ -74,12 +63,12 @@ void crear_archivos_swap(t_list*, int);
 t_list* crear_lista_particiones(int);
 
 /*  Particiones  */
-particion* buscar_particion_libre(char*);
+particion* buscar_particion_libre_asignacion_dinamica(char*);
 particion* particion_nueva(int);
 int cantidad_frames_disponibles(char*);
 
 /*    Paginas    */
-t_pagina* buscar_pagina(uint32_t);
+int pagina_libre(particion*);
 //void guardar_pagina(int);
 
 /*  Asignaciones  */

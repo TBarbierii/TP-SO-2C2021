@@ -28,7 +28,7 @@ void obtener_valores_config(t_config* config_actual){
 
 void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones) {
 
-    //struct stat* sb;
+    struct stat* sb;
     char caracter_llenado = '\0';
 
     while(! list_is_empty(archivos_swap)) {
@@ -40,32 +40,34 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones) {
         truncate(path_swap, tamanio_swap);
         nuevo_swap->swap_file = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
-        //int estado = stat(nuevo_swap->path, sb);
+        int estado = fstat(fd, sb);
 
-        /*if(estado != -1) {
+        if(estado != -1) {
             log_info(logger_swamp, "Archivos de swap creados y de tamaño: %i", tamanio_swap);
         }else{
             exit(-1);
         }
-        */
-        nuevo_swap->path = string_new();
 
-        string_append(&(nuevo_swap->path), path_swap);
+        nuevo_swap->path = path_swap;
 
         memcpy(nuevo_swap->swap_file, &caracter_llenado, sizeof(char));
         nuevo_swap->particiones_swap = crear_lista_particiones(cantidad_particiones);
+
+        munmap(nuevo_swap->swap_file, tamanio_swap);
+        close(fd);
+
+        list_add(lista_swap_files, nuevo_swap);
     }
 }
 
 t_list* crear_lista_particiones(int cantidad_particiones){
 
-    lista_particiones = list_create();
+    t_list* lista_particiones = list_create();
     int offset_particion = 0;
 
     for(int i=0; i < cantidad_particiones; i++){
         particion* particion_swap = particion_nueva(i);
-        swap_files* nuevo_swap = malloc(sizeof(swap_files));
-        particion_swap->inicio_particion = nuevo_swap->swap_file + offset_particion;
+        particion_swap->inicio_particion = offset_particion;
         offset_particion += tamanio_pagina;
         list_add(lista_particiones, particion_swap);
     }
@@ -80,27 +82,37 @@ particion* particion_nueva(int numero){
     return particion_nueva;
 }
 
-particion* buscar_particion_libre(char* path_swap) {
-    particion* frame = malloc(sizeof(particion));
-    swap_files* file = malloc(sizeof(swap_files));
+swap_files* encontrar_swap_file(char* path_swap) {
 
-    file->path = path_swap;
+    int encontrar_archivo(swap_files* archivo_swap) {
+        if(strcmp(path_swap, archivo_swap->path) == 0) {
+            return 1;
+        }
+        return 0;
+    }
+    swap_files* swap = list_find(lista_swap_files, encontrar_archivo);
 
-    int fd = open(file->path, O_RDWR);
+    return swap;
+}
 
-    if(fd == 0) {
-        log_error(logger_swamp, "No se pudo abrir el archivo f");
-    }else{
-        for(int i=0; i < lista_particiones->elements_count; i++){
-            frame = list_get(lista_particiones,i);
+particion* buscar_particion_libre_asignacion_dinamica(char* path_swap) {
 
-            if(frame->esta_libre){
-                return frame;
-            }
+    if(swap != NULL) {
+        log_info(logger_swamp, "Se encontro el archivo buscado");
+        particion* particion_nueva = list_find(swap->particiones_swap, pagina_libre);
+        if(particion_nueva != NULL) {
+            return particion_nueva;
         }
     }
-    close(fd);
+    
     return NULL;
+}
+
+int pagina_libre(particion* particion_nueva) {
+    if(particion_nueva->esta_libre == 1) {
+        return 1;
+    }
+    return 0;
 }
 
 int cantidad_frames_disponibles(char* path_swap) {
@@ -127,42 +139,13 @@ int cantidad_frames_disponibles(char* path_swap) {
     return frames_libres;
 }
 
-t_list* crear_paginas_swap(char* path_swap) {
-
-    t_pagina* pagina = malloc(sizeof(t_pagina));
-    swap_files* file = malloc(sizeof(swap_files));
-    t_list* paginas_swap = list_create();
-    file->path = path_swap;
-    int offset = 0;
-
-    int fd = open(file->path, O_RDWR);
-
-    for(int i = 0; i < tamanio_swap / tamanio_pagina; i++) {
-        pagina->num_pagina = i;
-        offset += tamanio_pagina;
-        list_add(paginas_swap, pagina);
-    }
-    close(fd);
-    return paginas_swap;
-}
-
 void manejar_asignacion() {
 
 	if(strcmp(tipo_asignacion, "FIJA") == 1) {
-        asignacion_fija();
         log_info(logger_swamp, "Tipo de asignacion a utilizar es %s", tipo_asignacion);
     }else{
-        asignacion_dinamica();
         log_info(logger_swamp, "Tipo de asignacion a utilizar es %s", tipo_asignacion);
     }
-}
-
-void asignacion_fija() {
-
-}
-
-void asignacion_dinamica() {
-
 }
 
 void guardar_pagina(uint32_t PID) {
@@ -177,14 +160,7 @@ void guardar_pagina(uint32_t PID) {
     }
 
 }
-/*
-t_pagina* buscar_pagina(uint32_t id_pagina) {
 
-    pagina_y_particion_swap* file = malloc(sizeof(pagina_y_particion_swap));
-    file->file_swap->path = 
-    file->frame = buscar_particion_libre();
-}
-*/
 int verificar_pid_en_swap_file(uint32_t PID, char* path_swap) {
 
     swap_files* file = malloc(sizeof(swap_files));
