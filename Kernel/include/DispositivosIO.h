@@ -10,6 +10,16 @@
 #include "Kernel.h"
 #include "Semaforos.h"
 
+/* estructura dispositivos IO */
+typedef struct 
+{
+    char* nombre;
+    int duracionRafaga;
+    t_list* listaDeProcesosEnEspera;
+    sem_t* activadorDispositivo;
+    pthread_mutex_t* mutex;
+
+}dispositivoIO;
 
 void ejecutarDispositivosIO();
 void rutinaDispositivoIO(dispositivoIO* dispositivo);

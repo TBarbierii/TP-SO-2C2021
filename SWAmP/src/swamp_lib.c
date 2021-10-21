@@ -90,6 +90,7 @@ swap_files* encontrar_swap_file(char* path_swap) {
         }
         return 0;
     }
+
     swap_files* swap = list_find(lista_swap_files, encontrar_archivo);
 
     return swap;
@@ -97,9 +98,11 @@ swap_files* encontrar_swap_file(char* path_swap) {
 
 particion* buscar_particion_libre_asignacion_dinamica(char* path_swap) {
 
-    if(swap != NULL) {
+    swap_files* archivoBuscado = encontrar_swap_file(path_swap);
+
+    if(archivoBuscado != NULL) {
         log_info(logger_swamp, "Se encontro el archivo buscado");
-        particion* particion_nueva = list_find(swap->particiones_swap, pagina_libre);
+        particion* particion_nueva = list_find(archivoBuscado->particiones_swap, pagina_libre);
         if(particion_nueva != NULL) {
             return particion_nueva;
         }
@@ -115,36 +118,30 @@ int pagina_libre(particion* particion_nueva) {
     return 0;
 }
 
+
+
 int cantidad_frames_disponibles(char* path_swap) {
-    particion* frame = malloc(sizeof(particion));
-    swap_files* file = malloc(sizeof(swap_files));
+    
     int frames_libres = 0;
-    
-    file->path = path_swap;
-    
-    int fd = open(file->path, O_RDWR);
+    swap_files* archivoSwap = encontrar_swap_file(path_swap);
+    t_list* particiones_libres;
 
-    if(fd == 0) {
-        log_error(logger_swamp, "No se pudo abrir el archivo f");
-    }else{
-        for(int i=0; i < lista_particiones->elements_count; i++){
-		    frame = list_get(lista_particiones,i);
+    //aca vamos a poner las particiones libres de un archivo
+    particiones_libres = list_filter(archivoSwap->particiones_swap, pagina_libre); 
 
-	    	if(frame->esta_libre){
-                frames_libres++;
-	    	}
-	    }
-    }
-    close(fd);
-    return frames_libres;
+    int cantidad_frames =  list_size(particiones_libres);
+    
+    list_destroy(particiones_libres);
+
+    return cantidad_frames;
 }
 
 void manejar_asignacion() {
 
-	if(strcmp(tipo_asignacion, "FIJA") == 1) {
-        log_info(logger_swamp, "Tipo de asignacion a utilizar es %s", tipo_asignacion);
+	if(tipo_asignacion == 1) {
+        log_info(logger_swamp, "Tipo de asignacion a utilizar es FIJA");
     }else{
-        log_info(logger_swamp, "Tipo de asignacion a utilizar es %s", tipo_asignacion);
+        log_info(logger_swamp, "Tipo de asignacion a utilizar es DINAMICA");
     }
 }
 
@@ -161,23 +158,18 @@ void guardar_pagina(uint32_t PID) {
 
 }
 
+
 int verificar_pid_en_swap_file(uint32_t PID, char* path_swap) {
 
-    swap_files* file = malloc(sizeof(swap_files));
-    file->path = path_swap;
-    int valor = 0;
+    swap_files* archivoSwap = encontrar_swap_file(path_swap);
 
-    int fd = open(file->path, O_RDWR);
-    if(fd == 0) {
-        log_error(logger_swamp, "Error al querer abrir el file %s", file->path);
-    }
-
-    for(int i = 0; i < file->procesos_swap->elements_count; i++) {
-        valor = list_get(file->procesos_swap->elements_count, i);
-        if(valor == PID) {
-            log_info(logger_swamp, "PID presente en %s", file->path);
+    bool seEncuentraElProcesoEnElArchivo(particion* particion){
+        if(particion->pid == PID){
             return 1;
         }
+        return 0;
     }
-    return 0;
+
+    return list_any_satisfy(archivoSwap->particiones_swap, seEncuentraElProcesoEnElArchivo);
+
 }

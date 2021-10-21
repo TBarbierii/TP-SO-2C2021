@@ -9,10 +9,21 @@
 #include <commons/config.h>
 #include "Kernel.h"
 
+/* estructura de los semaforos */
+typedef struct /* */
+{
+    char* nombre;
+    int valor;
+    pthread_mutex_t* mutex; //quiza esto no va a ser necesario, xq quiza tengamos que hacerlo mas teorico nosotros
+    t_list* listaDeProcesosEnEspera;
+
+}semaforo;
+
+
 int crearSemaforo(char* nombreSem, unsigned int valorSem);
 int destruirSemaforo(char* nombreSem);
 int realizarSignalDeSemaforo(char* nombreSem);
 void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado);
-
+int realizarWaitDeSemaforo(char* nombreSem, int pid);
 
 #endif

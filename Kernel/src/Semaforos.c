@@ -119,8 +119,9 @@ int realizarSignalDeSemaforo(char* nombreSem){
         if(!list_is_empty(semaforoActual->listaDeProcesosEnEspera)){ // si tiene procesos esperando, liberamos 1
             
             proceso_kernel* procesoLiberado = list_remove(semaforoActual->listaDeProcesosEnEspera, 0);
-            log_info(logger,"Se libera un proceso de la lista de espera del semaforo: %s", nombreSem);
             pthread_mutex_unlock(semaforoActual->mutex);
+
+            log_info(logger,"Se libera un proceso de la lista de espera del semaforo: %s", nombreSem);
 
             /* sacamos al proceso de la lista de bloqueados */
             ponerEnElReadyIndicado(procesoLiberado);
@@ -129,9 +130,9 @@ int realizarSignalDeSemaforo(char* nombreSem){
 
 
         }else{ // si no tiene procesos esperando, solo notificamos que se cambios el valor del semaforo
-            
-            log_info(logger,"Como el semaforo: %s, no tiene procesos esperando solo se aumenta su valor", nombreSem);
             pthread_mutex_unlock(semaforoActual->mutex);
+            log_info(logger,"Como el semaforo: %s, no tiene procesos esperando solo se aumenta su valor", nombreSem);
+            
         }
 
         
@@ -148,7 +149,85 @@ int realizarSignalDeSemaforo(char* nombreSem){
 
 
 
+int realizarWaitDeSemaforo(char* nombreSem, int pid){
+
+    t_log* logger = log_create("cfg/Semaforos.log","Semaforos",0,LOG_LEVEL_INFO);
+
+    bool semaforoConNombreSolicitado(semaforo* semaforoActual){
+        if(strcmp(semaforoActual->nombre ,nombreSem) == 0){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
+    //arancamos a buscar el elemento si se encuentra en la lista de semaforos
+    pthread_mutex_lock(controladorSemaforos);
+        semaforo* semaforoActual = list_find(semaforosActuales, semaforoConNombreSolicitado);
+    pthread_mutex_unlock(controladorSemaforos);
+
+
+    if(semaforoActual != NULL){ //si el semaforo existe, realizamos los respectivos cambios
+
+        pthread_mutex_lock(semaforoActual->mutex);
+
+        semaforoActual->valor--;
+
+        log_info(logger,"Se realizo un post del semaforo: %s y el valor decrecio a: %d", nombreSem, semaforoActual->valor);
+
+        if(semaforoActual->valor < 0){ //si el valor es menor a 1, lo vamos a bloquear
+            
+            bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
+                if(procesoBuscado->pid == pid){
+                    return 1;
+                }else{
+                    return 0;
+                }
+            }
+
+            //lo sacamos de la lista de ejecucion
+            pthread_mutex_lock(modificarExec);
+            proceso_kernel* procesoLiberado = list_remove_by_condition(procesosExec,buscarProcesoConPid);
+            pthread_mutex_lock(modificarExec);
+            list_add(semaforoActual->listaDeProcesosEnEspera, procesoLiberado);
+
+            pthread_mutex_unlock(semaforoActual->mutex);
+
+
+            log_info(logger,"Se agrega el proceso con Pid: en bloqueado, y se agrega en la lista de espera del semaforo: %s", pid, nombreSem);
+            
+
+            /* agregamos al proceso en la lista de bloqueados */
+            pthread_mutex_lock(modificarBlocked);
+            list_add(procesosBlocked,procesoLiberado);
+            pthread_mutex_unlock(modificarBlocked);
+
+            
+            return 0;
+
+        }else{ // si el valor no es <0, no se bloquearia el proceso
+            
+            log_info(logger,"Se ejecuto un wait sobre un semaforo:%s, pero como el valor no era menor a 1, entonces no se bloqueo", nombreSem);
+            pthread_mutex_unlock(semaforoActual->mutex);
+
+
+            return 2;
+        }
+    
+    }else{ //si no existe avisamos que se quiso hacer un acmbio sobre un semaforo que no existe
+        
+        log_warning(logger,"Se esta intentando hacer un post de un semaforo: %s, el cual no existe", nombreSem);
+        log_destroy(logger);
+        return 1;
+
+    }
+}
+
+
+
 /* esta es tanto para semaforos como para IO */
+
+
 void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado){
     
     bool seEncuentraProceso(proceso_kernel* procesoActual){ 

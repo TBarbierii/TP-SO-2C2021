@@ -28,7 +28,7 @@ uint32_t retardo_swap;
 
 char* ip_ram;
 char* puerto_ram;
-char* tipo_asignacion;
+int tipo_asignacion;
 
 
 /* Variables globales */
@@ -43,7 +43,7 @@ typedef struct {
     char* path;     
     void* swap_file;   // tendria que estar aca o creado en cada funcion
     t_list* particiones_swap;
-    t_list* procesos_swap;
+    
 }swap_files;
 
 typedef struct {
@@ -52,6 +52,8 @@ typedef struct {
     int esta_libre;
     int inicio_particion;
     int num_pagina;
+    int hay_contenido //esto es para que el proceso, cuando busque una pagina de las que le pertenecen, 
+                      //pueda buscar las que no estan siendo utilizadas actualemnte, en caso de utilizarla se pone en 1, en caso de que se libere, la ponemos en 0.
 }particion;
 
 

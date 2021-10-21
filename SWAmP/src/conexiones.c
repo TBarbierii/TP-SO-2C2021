@@ -11,8 +11,8 @@ int iniciar_servidor_swamp() {
 
 	while(1){
 		int conexion = esperar_cliente(servidor);
-		log_info(logger,"Se unio un carpincho");
-		recibir_operacion(conexion);
+		log_info(logger,"Nos llega una solicitud de memoria para realizar algo");
+		atender_mensaje_ram(conexion);
 	}
 
 	log_destroy(logger);
@@ -51,12 +51,15 @@ int atender_mensaje_ram(int conexion) {
 
 
 	if(paquete->buffer->size > 0){
-	paquete->buffer->stream = malloc(paquete->buffer->size);
-	recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
+		paquete->buffer->stream = malloc(paquete->buffer->size);
+		recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
 	}
 	
 
 	switch(paquete->codigo_operacion){
+
+
+
         case ENVIAR_PAGINA:;
 			//enviar_pagina(uint32_t id_pagina, void* contenido, int conexion);
 			break;
@@ -67,13 +70,16 @@ int atender_mensaje_ram(int conexion) {
         	break;
 
 		case TIPOASIGNACION:;
-			//recibir_tipo_asignacion()
+			recibir_tipo_asignacion(paquete->buffer);
 			close(conexion);
        		break;
 
 		default:;
 		log_info(logger,"No se metio por ningun lado wtf");
 		break;
+
+
+
 	}
 	
 	
@@ -94,20 +100,13 @@ int atender_mensaje_ram(int conexion) {
 uint32_t recibir_tipo_asignacion(t_buffer* buffer) {
 
 	void* data = buffer->stream;
-	uint32_t tipo;
 
-	memcpy(&(tipo), data, sizeof(uint32_t));
-
-	if(tipo == 1) {
-		tipo_asignacion = malloc(sizeof(char) * 4 + 1);	
-		strcpy(tipo_asignacion, "FIJA");
-	} 
-	if(tipo == 0) {
-		tipo_asignacion = malloc(sizeof(char) * 8 + 1);	
-		strcpy(tipo_asignacion, "DINAMICA");
-	} 
-	return tipo;
+	memcpy(&(tipo_asignacion), data, sizeof(uint32_t));
+	
+	return tipo_asignacion;
 }
+
+
 // Faltaria modificar para recibir el PID
 void recibir_pagina(t_buffer* buffer) {
 

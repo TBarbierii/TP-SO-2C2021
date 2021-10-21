@@ -250,6 +250,8 @@ int main(){
 
     log_info(logger,"Se inicializan los semaforos utilizados para la sincronizacion de los planificadores");
     
+
+    ejecutarDispositivosIO();
     
     
 /* toda la logica de los planificadores y del servidor */
