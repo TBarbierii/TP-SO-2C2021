@@ -50,12 +50,9 @@ int main(){
     inicializarTodo();
     inicializarMemoria();
 
-    t_memalloc *alloc = malloc(sizeof(t_memalloc));
-    alloc->pid = 8;
-    alloc->tamanio = 11;
+    atender_solicitudes_multihilo();
 
-    uint32_t direccionLogica = administrar_allocs(alloc);
-
+    //uint32_t direccionLogica = administrar_allocs(alloc);
 
     finalizarConfig(configActual);
     return 0;

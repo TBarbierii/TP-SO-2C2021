@@ -102,6 +102,7 @@ typedef struct {
     uint32_t id_carpincho;
     t_list* tabla_de_paginas;//esto seria una lista de paginas
     t_list* allocs;
+    uint32_t conexion;
     //una tlb por cada carpincho?
 
 }t_carpincho;
