@@ -21,6 +21,7 @@
 #include "PlanificadorCortoPlazo.h"
 #include "Semaforos.h"
 #include "Servidor.h"
+#include "DispositivosIO.h"
 
 
 
@@ -56,29 +57,11 @@ t_list* procesosSuspendedReady;
 /* lista de semaforos actuales inicializados */
 t_list* semaforosActuales;
 
-/* estructura de los semaforos */
-typedef struct /* */
-{
-    char* nombre;
-    int valor;
-    pthread_mutex_t* mutex; //quiza esto no va a ser necesario, xq quiza tengamos que hacerlo mas teorico nosotros
-    t_list* listaDeProcesosEnEspera;
-
-}semaforo;
-
 
 /* lista de dispositivos IO inicializados*/
 t_list* dispositivosIODisponibles;
-/* estructura dispositivos IO */
-typedef struct 
-{
-    char* nombre;
-    int duracionRafaga;
-    t_list* listaDeProcesosEnEspera;
-    sem_t* activadorDispositivo;
-    pthread_mutex_t* mutex;
 
-}dispositivoIO;
+
 
 //Semaforos compartidos en los distintos planificadores
 

@@ -3,6 +3,9 @@
 
 void ejecutarDispositivosIO(){
 
+
+    t_log* loggerDevicesIO = log_create("cfg/DispositivosIO.log","DispositivosIO", 0, LOG_LEVEL_DEBUG);
+
     t_list* listaParaEjecutarHilosDeDispositivos = list_create();
 
     pthread_mutex_lock(controladorIO);
@@ -13,9 +16,13 @@ void ejecutarDispositivosIO(){
 
         dispositivoIO* dispositivoActual= list_remove(listaParaEjecutarHilosDeDispositivos,0);
         /* crear el hilo y bla bla bla */
-        
-
+        pthread_t hiloDeEjecucion;
+        log_debug(loggerDevicesIO, "Se crea un hilo para ejecutar el Dispositivio IO: %s, con tiempo de espera: %d", dispositivoActual->nombre, dispositivoActual->duracionRafaga);
+        pthread_create(&hiloDeEjecucion, NULL, (void *) rutinaDispositivoIO, dispositivoActual);
+        pthread_detach(hiloDeEjecucion);
     }
+
+    log_destroy(loggerDevicesIO);
 }
 
 
