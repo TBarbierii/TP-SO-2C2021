@@ -24,6 +24,6 @@ int crearSemaforo(char* nombreSem, unsigned int valorSem);
 int destruirSemaforo(char* nombreSem);
 int realizarSignalDeSemaforo(char* nombreSem);
 void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado);
-
+int realizarWaitDeSemaforo(char* nombreSem, int pid);
 
 #endif

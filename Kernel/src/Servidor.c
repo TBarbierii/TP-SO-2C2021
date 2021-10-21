@@ -69,6 +69,7 @@ int atenderMensajeEnKernel(int conexion) {
 		break;
 
         case SEM_WAIT:;
+			log_info(logger,"Vamos a hacer un wait de un semaforo");
         break;
 
         case SEM_SIGNAL:;
@@ -270,6 +271,27 @@ void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
 	free(nombre);
 }
 
+void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
+	
+	void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int tamanioNombre;
+
+	memcpy(&(tamanioNombre), stream+desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+
+	char* nombre = malloc(tamanioNombre);
+	memcpy(nombre, stream+desplazamiento, tamanioNombre);
+	
+	int valorReturn = realizarSignalDeSemaforo(nombre);
+	
+	avisarPostDeSemaforo(conexion,valorReturn);
+
+	free(nombre);
+}
+
+
+
 
 /* AVISOS A MATELIB DE SEMAFOROS */
 
@@ -311,5 +333,35 @@ void avisarPostDeSemaforo(int conexion, int valor){
 	memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
 
     enviarPaquete(paquete,conexion);
+
+}
+
+
+
+void avisarWaitDeSemaforo(int conexion, int valor){
+
+
+	if(valor == 2){
+		//esto lo vamos a usar como que funciono todo, pero a diferencia de que haga un wait y se bloquee, el 2 vamos a hacer que no se bloquee
+		t_paquete* paquete = crear_paquete(SEM_SIGNAL);
+		paquete->buffer->size = sizeof(uint32_t);
+		paquete->buffer->stream = malloc(paquete->buffer->size);
+		int desplazamiento = 0;
+		int valorNuevo = 0;
+		memcpy(paquete->buffer->stream + desplazamiento, &(valorNuevo) , sizeof(uint32_t));
+
+		enviarPaquete(paquete,conexion);
+	}else{
+		t_paquete* paquete = crear_paquete(SEM_SIGNAL);
+		paquete->buffer->size = sizeof(uint32_t);
+		paquete->buffer->stream = malloc(paquete->buffer->size);
+		int desplazamiento = 0;
+
+		memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+
+		enviarPaquete(paquete,conexion);
+	}
+
+	
 
 }
