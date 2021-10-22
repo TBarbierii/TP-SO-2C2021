@@ -6,3 +6,7 @@
 [DEBUG] 11:30:09:714 DispositivosIO/(30910:30910): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
 [DEBUG] 11:30:09:718 DispositivosIO/(30910:30910): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
 [DEBUG] 11:30:09:719 DispositivosIO/(30910:30910): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[DEBUG] 17:40:35:807 DispositivosIO/(7986:7986): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 25000
+[DEBUG] 17:40:35:897 DispositivosIO/(7986:7986): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 17:40:35:919 DispositivosIO/(7986:7986): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 17:40:35:926 DispositivosIO/(7986:7986): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020

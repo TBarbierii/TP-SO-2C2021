@@ -167,7 +167,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
     pthread_mutex_unlock(controladorSemaforos);
 
 
-    if(semaforoActual != NULL){ //si el semaforo existe, realizamos los respectivos cambios
+    if(semaforoActual != NULL){ //si el semaforo existe, realizamos los respectivos cambios (funciona como un wait ya que modificamos el valor de dicho semaforo)
 
         pthread_mutex_lock(semaforoActual->mutex);
 
@@ -189,7 +189,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             pthread_mutex_lock(modificarExec);
             proceso_kernel* procesoLiberado = list_remove_by_condition(procesosExec,buscarProcesoConPid);
             pthread_mutex_lock(modificarExec);
-            list_add(semaforoActual->listaDeProcesosEnEspera, procesoLiberado);
+            list_add(semaforoActual->listaDeProcesosEnEspera, procesoLiberado); /* lo agregamos a la lista de bloqueados del semaforo */
 
             pthread_mutex_unlock(semaforoActual->mutex);
 
@@ -214,9 +214,9 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             return 2;
         }
     
-    }else{ //si no existe avisamos que se quiso hacer un acmbio sobre un semaforo que no existe
+    }else{ //si no existe avisamos que se quiso hacer un cambio sobre un semaforo que no existe
         
-        log_warning(logger,"Se esta intentando hacer un post de un semaforo: %s, el cual no existe", nombreSem);
+        log_warning(logger,"Se esta intentando hacer un wait de un semaforo: %s, el cual no existe", nombreSem);
         log_destroy(logger);
         return 1;
 

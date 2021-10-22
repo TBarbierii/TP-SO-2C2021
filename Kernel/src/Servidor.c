@@ -51,6 +51,7 @@ int atenderMensajeEnKernel(int conexion) {
 	recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
     }
 	
+	int valorOperacion = paquete->codigo_operacion;
 
 	switch(paquete->codigo_operacion){
         case INICIALIZAR_ESTRUCTURA:;
@@ -70,6 +71,7 @@ int atenderMensajeEnKernel(int conexion) {
 
         case SEM_WAIT:;
 			log_info(logger,"Vamos a hacer un wait de un semaforo");
+			valorOperacion = hacerWaitDeSemaforo(paquete->buffer, conexion);
         break;
 
         case SEM_SIGNAL:;
@@ -91,7 +93,6 @@ int atenderMensajeEnKernel(int conexion) {
 	}
 	
 	
-	int valorOperacion = paquete->codigo_operacion;
 
     if(paquete->buffer->size > 0){
 	    free(paquete->buffer->stream);
@@ -271,11 +272,15 @@ void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
 	free(nombre);
 }
 
-void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
+int hacerWaitDeSemaforo(t_buffer * buffer, int conexion){
 	
 	void* stream = buffer->stream;
 	int desplazamiento = 0;
 	int tamanioNombre;
+	int pid;
+
+	memcpy(&(pid), stream+desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
 
 	memcpy(&(tamanioNombre), stream+desplazamiento, sizeof(uint32_t));
 	desplazamiento += sizeof(uint32_t);
@@ -283,11 +288,16 @@ void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
 	char* nombre = malloc(tamanioNombre);
 	memcpy(nombre, stream+desplazamiento, tamanioNombre);
 	
-	int valorReturn = realizarSignalDeSemaforo(nombre);
+	int valorReturn = realizarWaitDeSemaforo(nombre, pid);
 	
-	avisarPostDeSemaforo(conexion,valorReturn);
+	avisarWaitDeSemaforo(conexion,valorReturn);
 
 	free(nombre);
+
+	if(valorReturn == 0){
+		return SEM_WAIT;
+	}else {
+	return SEM_WAIT_NOBLOQUEANTE; }
 }
 
 
@@ -336,14 +346,12 @@ void avisarPostDeSemaforo(int conexion, int valor){
 
 }
 
-
-
 void avisarWaitDeSemaforo(int conexion, int valor){
 
 
 	if(valor == 2){
 		//esto lo vamos a usar como que funciono todo, pero a diferencia de que haga un wait y se bloquee, el 2 vamos a hacer que no se bloquee
-		t_paquete* paquete = crear_paquete(SEM_SIGNAL);
+		t_paquete* paquete = crear_paquete(SEM_WAIT);
 		paquete->buffer->size = sizeof(uint32_t);
 		paquete->buffer->stream = malloc(paquete->buffer->size);
 		int desplazamiento = 0;
@@ -352,7 +360,7 @@ void avisarWaitDeSemaforo(int conexion, int valor){
 
 		enviarPaquete(paquete,conexion);
 	}else{
-		t_paquete* paquete = crear_paquete(SEM_SIGNAL);
+		t_paquete* paquete = crear_paquete(SEM_WAIT);
 		paquete->buffer->size = sizeof(uint32_t);
 		paquete->buffer->stream = malloc(paquete->buffer->size);
 		int desplazamiento = 0;

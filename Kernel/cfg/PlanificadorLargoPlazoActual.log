@@ -12,3 +12,6 @@
 [DEBUG] 11:27:52:288 PlanificadorLargoPlazo/(30601:30606): Se inicializa la planificacion de largo plazo con algoritmo FIFO
 [DEBUG] 11:28:58:781 PlanificadorLargoPlazo/(30761:30766): Se inicializa la planificacion de largo plazo con algoritmo FIFO
 [DEBUG] 11:30:09:730 PlanificadorLargoPlazo/(30910:30924): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 17:40:35:961 PlanificadorLargoPlazo/(7986:7995): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 17:41:14:486 PlanificadorLargoPlazo/(7986:7995): Se esta sacando un carpincho de la cola de new. Carpincho: 0
+[INFO] 17:41:14:512 PlanificadorLargoPlazo/(7986:7995): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
