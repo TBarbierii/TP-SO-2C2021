@@ -50,9 +50,23 @@ int main(){
     inicializarTodo();
     inicializarMemoria();
 
-    atender_solicitudes_multihilo();
+    //atender_solicitudes_multihilo();
 
-    //uint32_t direccionLogica = administrar_allocs(alloc);
+    t_memalloc *alloc = malloc(sizeof(t_memalloc));
+    alloc->pid = 8;
+    alloc->tamanio = 45;
+
+    uint32_t direccionLogica = administrar_allocs(alloc);
+
+
+    void* prueba = "Esta es una prueba de un texto de dos pags\0";
+
+    escribir_memoria(8, direccionLogica, prueba, 44);
+
+    void* hola = leer_memoria(direccionLogica, 8, 44);
+
+    printf("\nSe leyo: %s", (char*)hola);
+
 
     finalizarConfig(configActual);
     return 0;

@@ -95,7 +95,6 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 		carpincho->tabla_de_paginas = list_create();
 		carpincho->allocs = list_create();
 		carpincho->conexion = conexion;
-		
 		log_info(logger,"Agregamos nuevo carpincho a memoria, y su pid es: %d",carpincho->id_carpincho);
 
 		//mutex
@@ -222,7 +221,7 @@ uint32_t recibir_memwrite(int socket_cliente) {
 
 	printf("\nRecibimos memwrite: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
 
-	//escribir_memoria(direccion_logica, contenido, tamanio); Retorna un entero si se pudo escribir o no
+	//escribir_memoria(carpincho, direccion_logica, contenido, tamanio); Retorna un entero si se pudo escribir o no
 
 	return 0;
 }

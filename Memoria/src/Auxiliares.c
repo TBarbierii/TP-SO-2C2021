@@ -58,6 +58,19 @@ uint32_t obtenerId(uint32_t num){
 
 }
 
+uint32_t obtenerDesplazamiento(uint32_t num){
+
+		char* id = string_new();
+
+		uint32_t id_retornado;
+
+		id = string_itoa(num);
+		id =  string_substring_from(id, 3);
+
+		return id_retornado = atoi(id);
+
+}
+
 uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica){
 
 	uint32_t direccionFisica;
@@ -67,18 +80,18 @@ uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica)
 	uint32_t desplazamiento = obtenerDesplazamiento(direccionLogica);
 
 		bool buscarCarpincho(t_carpincho* s){
-			return s->id_carpincho == id;
-		}
+			return s->id_carpincho == carpincho;
+		};
 
 		t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
 
-		bool buscarpagina(t_pagina* s){
+		bool buscarPagina(t_pagina* s){
 			return s->id_pagina == id;
-		}
+		};
 
 		t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
 
-		direccionFisica = pagina->marco.comienzo + desplazamiento; //ver si es . o ->
+		direccionFisica = pagina->marco->comienzo + desplazamiento; //ver si es . o ->
 
 	return direccionFisica;
 }

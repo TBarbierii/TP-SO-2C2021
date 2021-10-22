@@ -5,7 +5,7 @@ uint32_t administrar_allocs(t_memalloc* alloc){
 
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc->pid;
-	}
+	};
     //semaforo?
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
     //semaforo?
@@ -120,7 +120,7 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
 
         bool noEstanAsignados(t_marco* marco){
             return marco->proceso_asignado == -1;
-        }
+        };
 
         t_list *marcos_sin_asignar = list_filter(marcos, (void*)noEstanAsignados);
 
@@ -129,7 +129,7 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
         void marcarOcupados(t_marco *marco){
             marco->estaLibre = false;
             marco->proceso_asignado = carpincho->id_carpincho;
-        }
+        };
 
         list_iterate(marcos_a_asignar, (void*)marcarOcupados);
 
@@ -140,7 +140,7 @@ uint32_t asignarPaginas(t_carpincho* carpincho){
         
         bool noEstanAsignados(t_marco* marco){
         return marco->proceso_asignado == -1;
-        }
+        };
 
         t_list *marcos_a_asignar = list_filter(marcos, (void*)noEstanAsignados);
 
@@ -181,16 +181,16 @@ void crear_marcos(){
 void escribir_marcos(t_list* marcos_a_asignar, t_carpincho* carpincho){
 
     void* stream_allocs = generar_stream_allocs(carpincho);
-
+    uint32_t contador =0;
     void escribir_paginas_en_marcos(t_marco* marco){
 
-        for(uint32_t i=0; i<list_size(carpincho->tabla_de_paginas); i++){
-            t_pagina* pagina = list_get(carpincho->tabla_de_paginas, i);
-            if(pagina->esNueva){
-                memcpy(memoriaPrincipal + marco->comienzo, stream_allocs + (i*tamanioPagina), tamanioPagina);
-            }
+            t_pagina* pagina = list_get(carpincho->tabla_de_paginas, contador);
+            if(pagina != NULL  && pagina->esNueva ){
+                memcpy(memoriaPrincipal + marco->comienzo, stream_allocs + (contador*tamanioPagina), tamanioPagina);
             pagina->esNueva = false;
-        }
+            pagina->marco = marco;
+            contador++; 
+            }
 
     }
 
@@ -220,13 +220,15 @@ void* generar_stream_allocs(t_carpincho* carpincho){
 
 void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
+    uint32_t id = obtenerId(DL);
+
     uint32_t DF = calcular_direccion_fisica(carpincho, DL);
 
-    uint32_t posicionHeap = DF -9;
+    uint32_t posicionHeap = DF - 9;
 
     bool buscarCarpincho(t_carpincho* s){
 	return s->id_carpincho == id;
-	}
+	};
 
 	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
     
@@ -234,7 +236,7 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
     bool buscarHeap(heapMetadata *alloc){
         contador++;
         return alloc->nextAlloc == posicionHeap;
-    }
+    };
 
     heapMetadata *alloc = list_find(capybara->allocs, (void*)buscarHeap);
 
@@ -253,7 +255,7 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
 	uint32_t desplazamiento = obtenerDesplazamiento(DL);
 
     bool buscarCarpincho(t_carpincho* s){
-	return s->id_carpincho == id;
+	return s->id_carpincho == carpincho;
 	};
 
 	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
@@ -264,22 +266,22 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
 
     bool estaCortado = desplazamiento + tam > tamanioPagina;
 
-    if(estaCortado){//y si son 3 pags?
+    if(estaCortado){//y si son 3 pags? // si son mas de 2,ver la cant de paginas que son y hacerlo para los pedazos cortados. las del medio se leen enteras
 
         int32_t contador = 0;
        
         bool buscar_pagina_inicio(t_pagina* pagina){
             contador++;
-            return = pagina->id_pagina == id; 
+            return pagina->id_pagina == id; 
         };
         
         t_pagina* primeraPagina = list_find(capybara->tabla_de_paginas, (void*)buscar_pagina_inicio);
         t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
 
-        uint32_t bytesPrimeraLectura = primeraPagina->marco.comienzo + tamanioPagina - tam;
+        uint32_t bytesPrimeraLectura =tamanioPagina - desplazamiento;
 
         memcpy(leido, memoriaPrincipal + DF, bytesPrimeraLectura);
-        memcpy(leido, memoriaPrincipal + (paginaSiguiente->marco.comienzo), tam - bytesPrimeraLectura);
+        memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (paginaSiguiente->marco->comienzo), tam - bytesPrimeraLectura);
 
     }else{
         memcpy(leido, memoriaPrincipal + DF, tam);
@@ -288,4 +290,45 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
  
     return leido;
 
+}
+
+uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* contenido, uint32_t tam){
+
+    uint32_t id = obtenerId(direccion_logica);
+
+	uint32_t desplazamiento = obtenerDesplazamiento(direccion_logica);
+
+    bool buscarCarpincho(t_carpincho* s){
+	return s->id_carpincho == carpincho;
+	};
+
+	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
+
+    uint32_t DF = calcular_direccion_fisica(carpincho, direccion_logica);
+
+    bool estaCortado = desplazamiento + tam > tamanioPagina;
+
+    if(estaCortado){//y si son 3 pags?
+
+        int32_t contador = 0;
+       
+        bool buscar_pagina_inicio(t_pagina* pagina){
+            contador++;
+            return pagina->id_pagina == id; 
+        };
+        
+        t_pagina* primeraPagina = list_find(capybara->tabla_de_paginas, (void*)buscar_pagina_inicio);
+        t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
+
+        uint32_t bytesPrimeraEscritura = tamanioPagina - desplazamiento;
+
+        memcpy(memoriaPrincipal + DF, contenido , bytesPrimeraEscritura);
+        memcpy(memoriaPrincipal + (paginaSiguiente->marco->comienzo), contenido + bytesPrimeraEscritura, tam - bytesPrimeraEscritura);
+        return 0;
+    }else{
+        memcpy(memoriaPrincipal + DF, contenido , tam);
+        return 0;
+    }
+     
+ 
 }
