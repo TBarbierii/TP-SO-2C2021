@@ -1,4 +1,21 @@
-[INFO] 16:59:11:420 SWAmP/(6763:6763): Se crearon los arch
-[INFO] 17:01:03:725 SWAmP/(6807:6807): Se crearon los arch
-[INFO] 17:01:54:645 SWAmP/(6845:6845): Se crearon los arch
-[INFO] 17:08:21:204 SWAmP/(7026:7026): Se crearon los arch
+[INFO] 12:46:45:293 SWAmP/(9166:9166): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 12:46:45:352 SWAmP/(9166:9166): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 12:46:45:360 SWAmP/(9166:9166): Se han creado todos los archivos
+[INFO] 12:48:13:015 SWAmP/(9273:9273): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 12:48:13:075 SWAmP/(9273:9273): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 12:48:13:082 SWAmP/(9273:9273): Se han creado todos los archivos
+[INFO] 12:48:38:539 SWAmP/(9280:9280): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 12:48:38:597 SWAmP/(9280:9280): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 12:48:38:604 SWAmP/(9280:9280): Se han creado todos los archivos
+[INFO] 12:49:07:417 SWAmP/(9327:9327): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 12:49:07:473 SWAmP/(9327:9327): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 12:49:07:483 SWAmP/(9327:9327): Se han creado todos los archivos
+[INFO] 12:49:50:976 SWAmP/(9360:9360): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 12:49:51:033 SWAmP/(9360:9360): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 12:49:51:044 SWAmP/(9360:9360): Se han creado todos los archivos
+[INFO] 12:50:19:564 SWAmP/(9406:9406): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 12:50:19:622 SWAmP/(9406:9406): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 12:50:19:631 SWAmP/(9406:9406): Se han creado todos los archivos
+[INFO] 12:50:53:353 SWAmP/(9440:9440): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 12:50:53:426 SWAmP/(9440:9440): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 12:50:53:436 SWAmP/(9440:9440): Se han creado todos los archivos

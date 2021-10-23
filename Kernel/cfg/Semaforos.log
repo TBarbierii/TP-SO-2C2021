@@ -1,0 +1,7 @@
+[INFO] 23:30:54:336 Semaforos/(9106:9134): Se ha creado un nuevo semaforo de nombre: SEM2 y valor: 1
+[INFO] 23:30:54:358 Semaforos/(9106:9134): Alguien hizo un sem_post del semaforo: SEM2, aunque como no tiene procesos esperando solo se aumenta su valor
+[INFO] 23:30:54:376 Semaforos/(9106:9134): Se va a destruir un semaforo llamado: SEM2
+[INFO] 23:32:06:923 Semaforos/(9106:9448): Se ha creado un nuevo semaforo de nombre: SEM2 y valor: 1
+[INFO] 23:32:06:942 Semaforos/(9106:9448): Alguien hizo un sem_post del semaforo: SEM2, aunque como no tiene procesos esperando solo se aumenta su valor
+[WARNING] 23:32:10:431 Semaforos/(9106:9458): Se esta intentando crear un semaforo: SEM2 pero ya esta creado
+[INFO] 23:32:10:448 Semaforos/(9106:9458): Alguien hizo un sem_post del semaforo: SEM2, aunque como no tiene procesos esperando solo se aumenta su valor

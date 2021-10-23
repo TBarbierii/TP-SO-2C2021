@@ -1,0 +1,6 @@
+[DEBUG] 23:30:50:085 PlanificadorMedianoPlazo/(9106:9112): Se inicializa la planificacion de mediano plazo
+[DEBUG] 23:30:50:088 PlanificadorMedianoPlazo/(9106:9114): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 23:30:50:088 PlanificadorMedianoPlazo/(9106:9113): Incializado el thread que permite suspender procesos para evitar IO bound
+[INFO] 23:30:54:165 PlanificadorMedianoPlazo/(9106:9114): Se busca un proceso de new
+[INFO] 23:32:06:809 PlanificadorMedianoPlazo/(9106:9114): Se busca un proceso de new
+[INFO] 23:32:10:319 PlanificadorMedianoPlazo/(9106:9114): Se busca un proceso de new

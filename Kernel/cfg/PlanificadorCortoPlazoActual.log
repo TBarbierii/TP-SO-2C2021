@@ -1,0 +1,33 @@
+[DEBUG] 23:30:50:062 PlanificadorCortoPlazo/(9106:9111): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 23:30:54:173 PlanificadorCortoPlazo/(9106:9111): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 23:30:54:190 PlanificadorCortoPlazo/(9106:9111): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[DEBUG] 23:30:54:190 PlanificadorCortoPlazo/(9106:9111): Se crea un hilo para el carpincho. Carpincho: 0
+[INFO] 23:30:54:197 PlanificadorCortoPlazo/(9106:9134): Se ejecuto tarea de conexion
+[INFO] 23:30:54:347 PlanificadorCortoPlazo/(9106:9134): La tarea realizada fue: 2
+[INFO] 23:30:54:351 PlanificadorCortoPlazo/(9106:9134): Se ejecuto tarea de conexion
+[INFO] 23:30:54:366 PlanificadorCortoPlazo/(9106:9134): La tarea realizada fue: 4
+[INFO] 23:30:54:367 PlanificadorCortoPlazo/(9106:9134): Se ejecuto tarea de conexion
+[INFO] 23:30:54:385 PlanificadorCortoPlazo/(9106:9134): La tarea realizada fue: 5
+[INFO] 23:30:54:387 PlanificadorCortoPlazo/(9106:9134): Se ejecuto tarea de conexion
+[INFO] 23:30:54:405 PlanificadorCortoPlazo/(9106:9134): La tarea realizada fue: 1
+[INFO] 23:30:54:405 PlanificadorCortoPlazo/(9106:9134): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 23:32:06:810 PlanificadorCortoPlazo/(9106:9111): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 23:32:06:810 PlanificadorCortoPlazo/(9106:9111): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 23:32:06:810 PlanificadorCortoPlazo/(9106:9111): Se crea un hilo para el carpincho. Carpincho: 1
+[INFO] 23:32:06:819 PlanificadorCortoPlazo/(9106:9448): Se ejecuto tarea de conexion
+[INFO] 23:32:06:924 PlanificadorCortoPlazo/(9106:9448): La tarea realizada fue: 2
+[INFO] 23:32:06:924 PlanificadorCortoPlazo/(9106:9448): Se ejecuto tarea de conexion
+[INFO] 23:32:06:942 PlanificadorCortoPlazo/(9106:9448): La tarea realizada fue: 4
+[INFO] 23:32:06:942 PlanificadorCortoPlazo/(9106:9448): Se ejecuto tarea de conexion
+[INFO] 23:32:06:959 PlanificadorCortoPlazo/(9106:9448): La tarea realizada fue: 1
+[INFO] 23:32:06:959 PlanificadorCortoPlazo/(9106:9448): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 23:32:10:320 PlanificadorCortoPlazo/(9106:9111): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2
+[DEBUG] 23:32:10:320 PlanificadorCortoPlazo/(9106:9111): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 23:32:10:320 PlanificadorCortoPlazo/(9106:9111): Se crea un hilo para el carpincho. Carpincho: 2
+[INFO] 23:32:10:332 PlanificadorCortoPlazo/(9106:9458): Se ejecuto tarea de conexion
+[INFO] 23:32:10:440 PlanificadorCortoPlazo/(9106:9458): La tarea realizada fue: 2
+[INFO] 23:32:10:443 PlanificadorCortoPlazo/(9106:9458): Se ejecuto tarea de conexion
+[INFO] 23:32:10:448 PlanificadorCortoPlazo/(9106:9458): La tarea realizada fue: 4
+[INFO] 23:32:10:448 PlanificadorCortoPlazo/(9106:9458): Se ejecuto tarea de conexion
+[INFO] 23:32:10:454 PlanificadorCortoPlazo/(9106:9458): La tarea realizada fue: 1
+[INFO] 23:32:10:454 PlanificadorCortoPlazo/(9106:9458): Se realizo una operacion que termina con la ejecucion del Carpincho

@@ -2,6 +2,7 @@
 #define SWAMP_LIB_H
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <commons/log.h>
 #include <commons/config.h>
 #include <commons/string.h>
@@ -21,10 +22,10 @@
 
 char* ip_swap;
 char* puerto_swap;
-uint32_t tamanio_swap;
-uint32_t tamanio_pagina;
+int tamanio_swap;
+int tamanio_pagina;
 int marcos_maximos;
-uint32_t retardo_swap;
+int retardo_swap;
 
 char* ip_ram;
 char* puerto_ram;
@@ -41,7 +42,7 @@ t_log* logger_swamp;
 
 typedef struct {
     char* path;     
-    void* swap_file;   // tendria que estar aca o creado en cada funcion
+
     t_list* particiones_swap;
     
 }swap_files;
@@ -52,7 +53,7 @@ typedef struct {
     int esta_libre;
     int inicio_particion;
     int num_pagina;
-    int hay_contenido //esto es para que el proceso, cuando busque una pagina de las que le pertenecen, 
+    int hay_contenido; //esto es para que el proceso, cuando busque una pagina de las que le pertenecen, 
                       //pueda buscar las que no estan siendo utilizadas actualemnte, en caso de utilizarla se pone en 1, en caso de que se libere, la ponemos en 0.
 }particion;
 
@@ -60,24 +61,29 @@ typedef struct {
 /* Declaracion de funciones */
 
 /* Inicializacion */
-void obtener_valores_config(t_config*);
-void crear_archivos_swap(t_list*, int);
+void obtener_valores_config(t_config* config_actual, t_log* logger);
+void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log* logger);
 t_list* crear_lista_particiones(int);
 
 /*  Particiones  */
 particion* buscar_particion_libre_asignacion_dinamica(char*);
 particion* particion_nueva(int);
 int cantidad_frames_disponibles(char*);
+swap_files* encontrar_swap_file(char* path_swap);
+
 
 /*    Paginas    */
 int pagina_libre(particion*);
-//void guardar_pagina(int);
 
 /*  Asignaciones  */
-void asignacion_fija();
-void asignacion_dinamica();
+void manejar_asignacion();
 
 /*   Auxiliares   */
 int verificar_pid_en_swap_file(uint32_t, char*);
+
+/* Finalizacion */
+void eliminarParticiones(t_list* listaParticiones);
+void destruirArchivosSwapFiles();
+
 
 #endif
