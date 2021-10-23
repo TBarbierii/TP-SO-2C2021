@@ -29,7 +29,7 @@ void atenderSolicitudesKernel(){
 
 int atenderMensajeEnKernel(int conexion) {
 
-	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_DEBUG);
+	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_ERROR);
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
 

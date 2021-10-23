@@ -20,7 +20,7 @@
 // Declaracion de funciones
 
 int iniciar_servidor_swamp();
-void atender_conexion_ram(uint32_t);
+int atender_mensaje_ram(int conexion);
 uint32_t recibir_tipo_asignacion(t_buffer*);
 uint32_t recibir_operacion(uint32_t);
 void enviar_pagina(uint32_t, void*, int);

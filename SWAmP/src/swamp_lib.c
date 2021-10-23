@@ -1,9 +1,11 @@
-#include "swamp.h"
 #include "swamp_lib.h"
 
-void obtener_valores_config(t_config* config_actual){
 
-    int contador = 0;
+
+/* Inicializacion */
+void obtener_valores_config(t_config* config_actual, t_log* logger){
+
+   
 
     ip_swap = config_get_string_value(config_actual, "IP");
     puerto_swap = config_get_string_value(config_actual, "PUERTO");
@@ -14,51 +16,60 @@ void obtener_valores_config(t_config* config_actual){
     retardo_swap = config_get_int_value(config_actual, "RETARDO_SWAP");
     
     t_list* archivos_swap = list_create();
+    int contador = 0;
 
     while(file_swap[contador] != NULL) {
         list_add(archivos_swap, file_swap[contador]);
         contador++;
     }
 
-    crear_archivos_swap(archivos_swap, (tamanio_swap/tamanio_pagina));
+    crear_archivos_swap(archivos_swap, (tamanio_swap/tamanio_pagina), logger);
+    
+    
+    log_info(logger, "Se han creado todos los archivos");
 
+    free(file_swap);
     list_destroy(archivos_swap);
-    free(file_swap); //sobre esto, nose si se deberia hacer un free, xq creo que eso se hace recien cuando haga el config_Destroy()
+   
 }
 
-void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones) {
+void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log* logger) {
 
-    struct stat* sb;
-    char caracter_llenado = '\0';
+    char* caracter_llenado = '\0';
+    
 
-    while(! list_is_empty(archivos_swap)) {
-        swap_files* nuevo_swap = malloc(sizeof(swap_files));
+    while(!list_is_empty(archivos_swap)) {
+
         char* path_swap = (char*) list_remove(archivos_swap, 0);
+        int sizeNombre = string_length(path_swap)+1;
+
+        swap_files* nuevoArchivo = malloc(sizeof(swap_files));
+        nuevoArchivo->path = (char*) malloc(sizeNombre * sizeof(char));
+        strcpy(nuevoArchivo->path, path_swap);
 
         int fd = open(path_swap, O_CREAT | O_RDWR, (mode_t) 0777);
-
+        
         truncate(path_swap, tamanio_swap);
-        nuevo_swap->swap_file = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+        
+        void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
-        int estado = fstat(fd, sb);
-
-        if(estado != -1) {
-            log_info(logger_swamp, "Archivos de swap creados y de tamaño: %i", tamanio_swap);
-        }else{
-            exit(-1);
-        }
-
-        nuevo_swap->path = path_swap;
-
-        memcpy(nuevo_swap->swap_file, &caracter_llenado, sizeof(char));
-        nuevo_swap->particiones_swap = crear_lista_particiones(cantidad_particiones);
-
-        munmap(nuevo_swap->swap_file, tamanio_swap);
+        memcpy(contenidoArchivo, &caracter_llenado, sizeof(char));
+    
+        munmap(contenidoArchivo, tamanio_swap);
+        
         close(fd);
+        
+        nuevoArchivo->particiones_swap = crear_lista_particiones((tamanio_swap/tamanio_pagina));
+        list_add(lista_swap_files, nuevoArchivo);
 
-        list_add(lista_swap_files, nuevo_swap);
+        log_info(logger,"Se crea el archivo SWAP en el path: %s y de size: %d",nuevoArchivo->path, tamanio_swap);
+        
+        free(path_swap);
+
     }
+    
 }
+
 
 t_list* crear_lista_particiones(int cantidad_particiones){
 
@@ -75,10 +86,14 @@ t_list* crear_lista_particiones(int cantidad_particiones){
 }
 
 
+
+/*  Particiones  */
+
 particion* particion_nueva(int numero){
     particion* particion_nueva = malloc(sizeof(particion));
     particion_nueva->esta_libre = 1;
     particion_nueva->num_particion = numero;
+    particion_nueva->hay_contenido = 0;
     return particion_nueva;
 }
 
@@ -111,18 +126,9 @@ particion* buscar_particion_libre_asignacion_dinamica(char* path_swap) {
     return NULL;
 }
 
-int pagina_libre(particion* particion_nueva) {
-    if(particion_nueva->esta_libre == 1) {
-        return 1;
-    }
-    return 0;
-}
-
-
 
 int cantidad_frames_disponibles(char* path_swap) {
     
-    int frames_libres = 0;
     swap_files* archivoSwap = encontrar_swap_file(path_swap);
     t_list* particiones_libres;
 
@@ -136,6 +142,20 @@ int cantidad_frames_disponibles(char* path_swap) {
     return cantidad_frames;
 }
 
+
+
+/*    Paginas    */
+int pagina_libre(particion* particion_nueva) {
+    if(particion_nueva->esta_libre == 1) {
+        return 1;
+    }
+    return 0;
+}
+
+
+
+
+/*  Asignaciones  */
 void manejar_asignacion() {
 
 	if(tipo_asignacion == 1) {
@@ -145,20 +165,11 @@ void manejar_asignacion() {
     }
 }
 
-void guardar_pagina(uint32_t PID) {
-
-    swap_files* file = malloc(sizeof(swap_files));
-    
-    
-    if(strcmp(tipo_asignacion, "FIJA") == 1) {
-
-    }else{
-
-    }
-
-}
 
 
+
+
+/*   Auxiliares   */
 int verificar_pid_en_swap_file(uint32_t PID, char* path_swap) {
 
     swap_files* archivoSwap = encontrar_swap_file(path_swap);
@@ -172,4 +183,35 @@ int verificar_pid_en_swap_file(uint32_t PID, char* path_swap) {
 
     return list_any_satisfy(archivoSwap->particiones_swap, seEncuentraElProcesoEnElArchivo);
 
+}
+
+
+
+/* vamos a probar si podemos escribir sobre el primer archivo swapFile */
+swap_files* primerSwapFileDisponible(){
+
+    return list_get(lista_swap_files,0);
+}
+
+
+/* Finalizacion */
+
+void destruirArchivosSwapFiles(){
+
+    while(!list_is_empty(lista_swap_files)){
+        swap_files* archivoSwap = list_remove(lista_swap_files,0);
+        free(archivoSwap->path);
+        eliminarParticiones(archivoSwap->particiones_swap);
+        free(archivoSwap);
+    }
+
+}
+
+void eliminarParticiones(t_list* listaParticiones){
+    
+    while(!list_is_empty(listaParticiones)){
+        particion* particionAEliminar = list_remove(listaParticiones,0);
+        free(particionAEliminar);
+    }
+    list_destroy(listaParticiones);
 }

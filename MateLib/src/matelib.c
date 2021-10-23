@@ -74,8 +74,8 @@ int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
     
     if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
         
-        log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un signal sobre el semaforo: %s", sem);
-        liberarSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
+        log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un wait sobre el semaforo: %s", sem);
+        realizarWaitSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
         return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
         return 0;
         
@@ -235,6 +235,8 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
             break;
         /* las que faltan */
         case SEM_WAIT:;
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso");
+            valorRetorno = notificacionDeWaitSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case CONECTAR_IO:;
             break;
@@ -379,7 +381,21 @@ int notificacionDePostSemaforo(t_buffer* buffer, t_log* logger){
     return valor;
 }
 
+int notificacionDeWaitSemaforo(t_buffer* buffer, t_log* logger){
+    
+    void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
+    if(valor == 0){
+        log_info(logger,"Se pudo hacer el wait del semaforo");
+    }else{
+        log_error(logger,"No see pudo realizar el wait al semaforo solicitado");
+    }
+
+    return valor;
+}
 
 
 
@@ -448,15 +464,19 @@ void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo){
 }
 
 
-void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo){
+void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo, int pid){
     
     t_paquete* paquete = crear_paquete(SEM_WAIT);
 
-    paquete->buffer->size = sizeof(uint32_t) + string_length(nombreSemaforo) +1;
+    paquete->buffer->size = sizeof(uint32_t)*2 + string_length(nombreSemaforo) +1;
     paquete->buffer->stream = malloc(paquete->buffer->size);
 
     int desplazamiento = 0;
     uint32_t tamanioNombre = string_length(nombreSemaforo)+1;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
 
     memcpy(paquete->buffer->stream + desplazamiento, &(tamanioNombre) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
@@ -582,3 +602,19 @@ int validarConexionPosible(int tipoSolicitado, int tipoActual){
     return 0; //el otro caso seria que el tipoActual sea error o que no cumpla las condiciones prestablecidas, entonces retorna 0 en referencia que no se podra hacer
 }
 
+<<<<<<< HEAD
+=======
+
+int main(){
+    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
+
+    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    
+    mate_sem_post(referencia,"SEM2");
+   
+    mate_close(referencia);
+    free(referencia);
+
+    return 0;
+}
+>>>>>>> 3486cf37eb166b280d7777eef750b2872c49c999
