@@ -11,8 +11,6 @@ int crearSemaforo(char* nombreSem, unsigned int valorSem){
         return 0;
     }
 
-
-
     pthread_mutex_lock(controladorSemaforos);
         t_list* listaTemporal = list_filter(semaforosActuales, semaforoYaCreado); //vamos a usar esta lista para ver si esta vacia, si no encontro  un semaforo con tal nombre, sera vacia, entonces lo vamos a crear desde 0
                                                                                   // sino no lo vamos a crear y avisamos que ya estaba creado
@@ -173,7 +171,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
 
         semaforoActual->valor--;
 
-        log_info(logger,"Se realizo un post del semaforo: %s y el valor decrecio a: %d", nombreSem, semaforoActual->valor);
+        log_info(logger,"Se realizo un wait del semaforo: %s y el valor decrecio a: %d", nombreSem, semaforoActual->valor);
 
         if(semaforoActual->valor < 0){ //si el valor es menor a 1, lo vamos a bloquear
             
@@ -188,13 +186,13 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             //lo sacamos de la lista de ejecucion
             pthread_mutex_lock(modificarExec);
             proceso_kernel* procesoLiberado = list_remove_by_condition(procesosExec,buscarProcesoConPid);
-            pthread_mutex_lock(modificarExec);
-            list_add(semaforoActual->listaDeProcesosEnEspera, procesoLiberado); /* lo agregamos a la lista de bloqueados del semaforo */
+            pthread_mutex_unlock(modificarExec);
 
+            list_add(semaforoActual->listaDeProcesosEnEspera, procesoLiberado); /* lo agregamos a la lista de bloqueados del semaforo */
             pthread_mutex_unlock(semaforoActual->mutex);
 
 
-            log_info(logger,"Se agrega el proceso con Pid: en bloqueado, y se agrega en la lista de espera del semaforo: %s", pid, nombreSem);
+            log_info(logger,"Se agrega el proceso con Pid:%d en bloqueado, y se agrega en la lista de espera del semaforo: %s", pid, nombreSem);
             
 
             /* agregamos al proceso en la lista de bloqueados */

@@ -91,6 +91,8 @@ int notificacionDeDestruccionDeSemaforo(t_buffer* buffer, t_log* logger);
 
 int notificacionDePostSemaforo(t_buffer* buffer, t_log* logger);
 
+int notificacionDeWaitSemaforo(t_buffer* buffer, t_log* logger);
+
 /* ------- Solicitudes  --------------------- */
 
 /* estructuracion */
@@ -101,7 +103,7 @@ void solicitarCerrarPatota(int conexion, mate_instance* lib_ref);
  /* semaforos */
 void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned int valor);
 
-void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo);
+void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo, int pid);
 
 void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo);
 
