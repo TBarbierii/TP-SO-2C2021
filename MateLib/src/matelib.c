@@ -582,17 +582,3 @@ int validarConexionPosible(int tipoSolicitado, int tipoActual){
     return 0; //el otro caso seria que el tipoActual sea error o que no cumpla las condiciones prestablecidas, entonces retorna 0 en referencia que no se podra hacer
 }
 
-
-int main(){
-    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
-
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    mate_sem_init(referencia,"SEM2", 1);
-    mate_sem_post(referencia, "SEM2");
-    mate_sem_destroy(referencia,"SEM2");
-
-    mate_close(referencia);
-    free(referencia);
-
-    return 0;
-}
