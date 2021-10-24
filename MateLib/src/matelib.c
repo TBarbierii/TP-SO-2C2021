@@ -26,8 +26,8 @@ int mate_close(mate_instance *lib_ref){
         log_info(lib_ref->group_info->loggerProceso,"Se ha solicitado cerrar el carpincho, este es un hasta adios");
 
         solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        log_info(lib_ref->group_info->loggerProceso,"Se envio info para cerrarlo");
-        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
     }else{
         perror("Se esta intentando realizar una operacion general, pero como la conexion fue erronea no se pudo");
         return -1;
@@ -45,8 +45,9 @@ int mate_sem_init(mate_instance *lib_ref, mate_sem_name sem, unsigned int value)
         
         log_info(lib_ref->group_info->loggerProceso,"Solicitamos inicializar un semaforo de nombre: %s, con valor : %d", sem, value);
         inicializarSemaforo(lib_ref->group_info->conexionConBackEnd, sem, value);
-        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return 0;
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
+        
         
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
@@ -60,8 +61,8 @@ int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
     if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
         log_info(lib_ref->group_info->loggerProceso,"Solicitamos destruir un semaforo de nombre: %s", sem);
         liberarSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
-        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return 0;
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
         return -1;
@@ -76,8 +77,8 @@ int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
         
         log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un wait sobre el semaforo: %s", sem);
         realizarWaitSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
-        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return 0;
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
         
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
@@ -91,8 +92,8 @@ int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
         
         log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un signal sobre el semaforo: %s", sem);
         realizarPostSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
-        return recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return 0;
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
         
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
@@ -105,10 +106,12 @@ int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
 
 //--------------------IO Functions------------------------/
 
-int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void *msg){
+int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void* msg){
     
     if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
+        log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar una operacion IO sobre el dispositivo: %s", io);
+        realizarLlamadoDispositivoIO(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, io);
+        msg = recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
         return 0;
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
@@ -192,7 +195,7 @@ int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
 }
 
 
-int recibir_mensaje(int conexion, mate_instance* lib_ref) {
+void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
 
@@ -203,6 +206,7 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
         return -1;
 	}
     int valorRetorno;
+    void* retornoMensaje;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
@@ -239,7 +243,8 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
             valorRetorno = notificacionDeWaitSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case CONECTAR_IO:;
-            break;
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso");
+            retornoMensaje = notificacionIO(paquete->buffer, lib_ref->group_info->loggerProceso);
         case MEMALLOC:;
             break;
         case MEMFREE:;
@@ -259,6 +264,10 @@ int recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	free(paquete->buffer);
 	free(paquete);
+
+    if(paquete->codigo_operacion == CONECTAR_IO || paquete->codigo_operacion == MEMREAD){
+        return retornoMensaje;
+    }
 
     return valorRetorno;
 }
@@ -397,7 +406,35 @@ int notificacionDeWaitSemaforo(t_buffer* buffer, t_log* logger){
     return valor;
 }
 
+void* notificacionIO(t_buffer* buffer, t_log* logger){
+    
+    void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
 
+    //habria que innicializarlo??
+    void* mensajeRecibido;
+
+    
+    int espacioDeMensaje;
+
+
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    if(valor == 0){
+        log_info(logger,"Se pudo realizar con exito la operacion IO");
+    }else{
+        log_error(logger,"No see pudo realizar la operacion IO");
+    }
+
+    memcpy(&(espacioDeMensaje), stream+desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(mensajeRecibido, stream+desplazamiento, espacioDeMensaje);
+
+    return mensajeRecibido;
+}
 
 /* ------- Solicitudes  --------------------- */
 
@@ -507,7 +544,24 @@ void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo){
 /* IO */
 
 
-void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg){
+void realizarLlamadoDispositivoIO(int conexion, int pid, mate_io_resource io){
+
+    t_paquete* paquete = crear_paquete(CONECTAR_IO);
+    paquete->buffer->size = sizeof(uint32_t) + string_length(io) +1;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+
+    int desplazamiento = 0;
+    uint32_t tamanioNombre = string_length(io)+1;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(tamanioNombre) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(paquete->buffer->stream + desplazamiento, io , tamanioNombre+1);
+
+    enviarPaquete(paquete,conexion);
     
 }
 
@@ -602,8 +656,6 @@ int validarConexionPosible(int tipoSolicitado, int tipoActual){
     return 0; //el otro caso seria que el tipoActual sea error o que no cumpla las condiciones prestablecidas, entonces retorna 0 en referencia que no se podra hacer
 }
 
-<<<<<<< HEAD
-=======
 
 int main(){
     mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
@@ -617,4 +669,4 @@ int main(){
 
     return 0;
 }
->>>>>>> 3486cf37eb166b280d7777eef750b2872c49c999
+

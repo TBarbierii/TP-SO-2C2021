@@ -77,7 +77,7 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 int inicializarPrimerasCosas(mate_instance *lib_ref, char *config);
 
-int recibir_mensaje(int conexion, mate_instance* lib_ref);
+void* recibir_mensaje(int conexion, mate_instance* lib_ref);
 
 /* Respuestas del Backend */
 
@@ -92,6 +92,8 @@ int notificacionDeDestruccionDeSemaforo(t_buffer* buffer, t_log* logger);
 int notificacionDePostSemaforo(t_buffer* buffer, t_log* logger);
 
 int notificacionDeWaitSemaforo(t_buffer* buffer, t_log* logger);
+
+void* notificacionIO(t_buffer* buffer, t_log* logger);
 
 /* ------- Solicitudes  --------------------- */
 
@@ -110,7 +112,7 @@ void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo);
 void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo);
 
 /* IO */
-void realizarLlamadoDispositivoIO(mate_instance *lib_ref, mate_io_resource io, void *msg);
+void realizarLlamadoDispositivoIO(int conexion, int pid, mate_io_resource io);
 
 /* MEMORIA */
 void realizarMemAlloc(int conexion, uint32_t pid, int size);
