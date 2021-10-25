@@ -35,7 +35,7 @@ void obtener_valores_config(t_config* config_actual, t_log* logger){
 
 void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log* logger) {
 
-    char* caracter_llenado = '\0';
+    char caracter_llenado = '\0';
     
 
     while(!list_is_empty(archivos_swap)) {
@@ -49,16 +49,16 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log*
 
         int fd = open(path_swap, O_CREAT | O_RDWR, (mode_t) 0777);
         
+        if(access(path_swap, F_OK) == -1) {
+		
         truncate(path_swap, tamanio_swap);
-        
         void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-
-        memcpy(contenidoArchivo, &caracter_llenado, sizeof(char));
-    
+        memcpy(contenidoArchivo, &(caracter_llenado), sizeof(char));
         munmap(contenidoArchivo, tamanio_swap);
-        
         close(fd);
-        
+    
+    }
+
         nuevoArchivo->particiones_swap = crear_lista_particiones((tamanio_swap/tamanio_pagina));
         list_add(lista_swap_files, nuevoArchivo);
 
@@ -214,4 +214,73 @@ void eliminarParticiones(t_list* listaParticiones){
         free(particionAEliminar);
     }
     list_destroy(listaParticiones);
+}
+
+void escribirContenido(){
+
+    /*aca vamos a verificar si hay un archivo donde se encuentre el pid, y sino vamos a buscar directamente el archivo con mas espacio */
+
+}
+
+/* una funcion el tema de asigancion */
+
+
+
+
+void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagina, int pid, char* nombreArchivo,t_log* logger){
+
+    
+    swap_files* archivoAEscribir = encontrar_swap_file(nombreArchivo);
+
+    char* contenido = (char *) mensajeAEscribir; 
+    int size = string_length(contenido);
+
+    if(archivoAEscribir != NULL){
+
+        int buscarParticionDeseada(particion* particionBuscada){
+            if(particionBuscada->num_particion == marco){
+                return 1;
+            }
+            return 0;
+        }
+
+        printf("xd");
+
+        particion* particionAmodificar = list_find(archivoAEscribir->particiones_swap, buscarParticionDeseada);
+
+        if(particionAmodificar != NULL){
+            
+            particionAmodificar->esta_libre = 0;
+            particionAmodificar->hay_contenido = 1;
+            particionAmodificar->pid = pid;
+            particionAmodificar->num_pagina = pagina;
+
+            
+            int fd = open(archivoAEscribir->path, O_CREAT | O_RDWR, (mode_t) 0777);
+            void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+            memcpy(contenidoArchivo + particionAmodificar->inicio_particion, mensajeAEscribir, size);
+            
+
+            if(size < tamanio_pagina){
+                int cantidadRestante = tamanio_pagina-size;
+                    for(int i=0; i < cantidadRestante-1; i++ ){
+                        char vacio = '-';
+                        memcpy(contenidoArchivo + particionAmodificar->inicio_particion + size + i, &(vacio), sizeof(char));
+                    }
+                    char separador = '\n';
+                    memcpy(contenidoArchivo + particionAmodificar->inicio_particion + size + cantidadRestante-1, &(separador), sizeof(char));
+            }
+
+            munmap(contenidoArchivo, tamanio_swap);
+            close(fd);
+
+            log_info(logger,"Se guardo el contenido correctamente");
+
+        }else{
+            log_info(logger,"No se encontro la siguiente particion");
+        }
+    }else{
+        log_info(logger,"No se encontro el archivo ");
+    }
+    
 }

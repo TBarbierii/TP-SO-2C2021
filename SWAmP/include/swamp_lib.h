@@ -85,5 +85,9 @@ int verificar_pid_en_swap_file(uint32_t, char*);
 void eliminarParticiones(t_list* listaParticiones);
 void destruirArchivosSwapFiles();
 
+void escribirContenido();
+void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagina, int pid, char* nombreArchivo,t_log* logger);
+
+
 
 #endif
