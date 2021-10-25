@@ -93,7 +93,7 @@ int notificacionDePostSemaforo(t_buffer* buffer, t_log* logger);
 
 int notificacionDeWaitSemaforo(t_buffer* buffer, t_log* logger);
 
-void* notificacionIO(t_buffer* buffer, t_log* logger);
+int notificacionIO(t_buffer* buffer, t_log* logger);
 
 /* ------- Solicitudes  --------------------- */
 
@@ -112,7 +112,7 @@ void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo);
 void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo);
 
 /* IO */
-void realizarLlamadoDispositivoIO(int conexion, int pid, mate_io_resource io);
+void realizarLlamadoDispositivoIO(int conexion, int pid, char* io);
 
 /* MEMORIA */
 void realizarMemAlloc(int conexion, uint32_t pid, int size);

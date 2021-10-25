@@ -85,6 +85,8 @@ int atenderMensajeEnKernel(int conexion) {
         break;
 
         case CONECTAR_IO:;
+			log_info(logger,"Vamos a realizar una peticion a un dispositivo IO");
+			conectarDispositivoIO(paquete->buffer, conexion);
         break;
 
 		default:;
@@ -251,6 +253,7 @@ void cerrarSemaforo(t_buffer * buffer, int conexion){
 	avisarDestruccionDeSemaforo(conexion,valorReturn);
 
 	//free(nombre); ROMPE TODO CON ESTO, pero la duda era el porque?, sera xq se libera cuando se libera el buffer?
+
 }
 
 void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
@@ -301,6 +304,29 @@ int hacerWaitDeSemaforo(t_buffer * buffer, int conexion){
 }
 
 
+int conectarDispositivoIO(t_buffer* buffer, int conexion){
+    
+	int desplazamiento = 0;
+    int pid;
+	int tamanioNombre;
+	char* nombreDispositivo;
+	
+
+    memcpy(&(pid), buffer->stream + desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(&(tamanioNombre), buffer->stream + desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+	nombreDispositivo = malloc(tamanioNombre);
+
+    memcpy(nombreDispositivo, buffer->stream + desplazamiento , tamanioNombre);
+
+	int valorRetorno = realizarOperacionIO(pid, nombreDispositivo);
+
+	avisarconexionConDispositivoIO(conexion, valorRetorno);
+
+}
 
 
 /* AVISOS A MATELIB DE SEMAFOROS */
@@ -371,5 +397,19 @@ void avisarWaitDeSemaforo(int conexion, int valor){
 	}
 
 	
+
+}
+
+
+void avisarconexionConDispositivoIO(int conexion, int valor){
+
+	t_paquete* paquete = crear_paquete(CONECTAR_IO);
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	int desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+
+    enviarPaquete(paquete,conexion);
 
 }

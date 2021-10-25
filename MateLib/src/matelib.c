@@ -111,8 +111,8 @@ int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void* msg){
     if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
         log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar una operacion IO sobre el dispositivo: %s", io);
         realizarLlamadoDispositivoIO(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, io);
-        msg = recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return 0;
+        int valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valor;
     }else{
         perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
         return -1;
@@ -206,7 +206,7 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
         return -1;
 	}
     int valorRetorno;
-    void* retornoMensaje;
+    //void* retornoMensaje;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
@@ -244,7 +244,7 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
             break;
         case CONECTAR_IO:;
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso");
-            retornoMensaje = notificacionIO(paquete->buffer, lib_ref->group_info->loggerProceso);
+            valorRetorno = notificacionIO(paquete->buffer, lib_ref->group_info->loggerProceso);
         case MEMALLOC:;
             break;
         case MEMFREE:;
@@ -264,11 +264,11 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	free(paquete->buffer);
 	free(paquete);
-
+/* 
     if(paquete->codigo_operacion == CONECTAR_IO || paquete->codigo_operacion == MEMREAD){
         return retornoMensaje;
     }
-
+*/
     return valorRetorno;
 }
 
@@ -406,17 +406,15 @@ int notificacionDeWaitSemaforo(t_buffer* buffer, t_log* logger){
     return valor;
 }
 
-void* notificacionIO(t_buffer* buffer, t_log* logger){
+int notificacionIO(t_buffer* buffer, t_log* logger){
     
     void* stream = buffer->stream;
 	int desplazamiento = 0;
 	int valor;
 
     //habria que innicializarlo??
-    void* mensajeRecibido;
-
-    
-    int espacioDeMensaje;
+    //void* mensajeRecibido;
+    //int espacioDeMensaje;
 
 
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
@@ -427,13 +425,15 @@ void* notificacionIO(t_buffer* buffer, t_log* logger){
     }else{
         log_error(logger,"No see pudo realizar la operacion IO");
     }
-
+/* 
     memcpy(&(espacioDeMensaje), stream+desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
     memcpy(mensajeRecibido, stream+desplazamiento, espacioDeMensaje);
 
     return mensajeRecibido;
+    */
+   return valor;
 }
 
 /* ------- Solicitudes  --------------------- */
@@ -544,14 +544,16 @@ void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo){
 /* IO */
 
 
-void realizarLlamadoDispositivoIO(int conexion, int pid, mate_io_resource io){
+void realizarLlamadoDispositivoIO(int conexion, int pid, char* io){
 
     t_paquete* paquete = crear_paquete(CONECTAR_IO);
-    paquete->buffer->size = sizeof(uint32_t) + string_length(io) +1;
+    uint32_t tamanioNombre = string_length(io)+1;
+
+    paquete->buffer->size = sizeof(uint32_t) + sizeof(uint32_t)  + tamanioNombre;
     paquete->buffer->stream = malloc(paquete->buffer->size);
 
     int desplazamiento = 0;
-    uint32_t tamanioNombre = string_length(io)+1;
+    
 
     memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
@@ -559,7 +561,7 @@ void realizarLlamadoDispositivoIO(int conexion, int pid, mate_io_resource io){
     memcpy(paquete->buffer->stream + desplazamiento, &(tamanioNombre) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
-    memcpy(paquete->buffer->stream + desplazamiento, io , tamanioNombre+1);
+    memcpy(paquete->buffer->stream + desplazamiento, io , tamanioNombre);
 
     enviarPaquete(paquete,conexion);
     
@@ -662,7 +664,7 @@ int main(){
 
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     
-    mate_sem_post(referencia,"SEM2");
+    mate_call_io(referencia,"laguna","asd");
    
     mate_close(referencia);
     free(referencia);
