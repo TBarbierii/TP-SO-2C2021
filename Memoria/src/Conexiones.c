@@ -24,10 +24,11 @@ void* recibir_buffer(uint32_t * size, int socket_cliente)
 	return buffer;
 }
 
-void atender_solicitudes_multihilo(char* ip_servidor, char* puerto){
+void atender_solicitudes_multihilo(){
 	//crea un hilo por cada cliente que se conecta y lo atiende. El servidor ya estaria levantado
 
-	 uint32_t servidor = iniciar_servidor(ip_servidor, puerto);
+	 uint32_t servidor = iniciar_servidor(ip, puerto);
+	 printf("\nSe inicio el servidor.\n");
 	 pthread_t* cliente;
 	while(1){
 		uint32_t conexion_cliente = esperar_cliente(servidor);
@@ -47,13 +48,13 @@ void atender_solicitudes_memoria(uint32_t conexion){
 	case INICIALIZAR_ESTRUCTURA: //cuando no hay kernel. Si hay nunca llega este mensaje
 		inicializar_carpincho(conexion, logger);
 	case MEMALLOC:
-		recibir_memalloc(conexion);	
+		recibir_memalloc(conexion, logger);	
 	case MEMFREE:
-		recibir_memfree(conexion);
+		recibir_memfree(conexion, logger);
 	case MEMREAD:
-		recibir_memread(conexion);
+		recibir_memread(conexion, logger);
 	case MEMWRITE:	
-		recibir_memwrite(conexion);
+		recibir_memwrite(conexion, logger);
 	case CERRAR_INSTANCIA:
 		cerrar_carpincho(conexion, logger);
 		break;
@@ -67,7 +68,7 @@ void atender_solicitudes_memoria(uint32_t conexion){
 }
 
 
-uint32_t recibir_memalloc(int socket_cliente) //devuelve DL del comienzo del bloque (no del heap)
+uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del comienzo del bloque (no del heap)
 {
 	uint32_t size, offset;
 	t_memalloc *alloc = malloc(sizeof(t_memalloc));
@@ -78,7 +79,7 @@ uint32_t recibir_memalloc(int socket_cliente) //devuelve DL del comienzo del blo
 	memcpy(alloc->tamanio, buffer + offset,sizeof(uint32_t));
 
 	free(buffer);
-	printf("\nLLego el proceso para allocar: \n Pid: %i \nTamanio: %i", alloc->pid, alloc->tamanio);
+	log_info(logger, "\nLLego el proceso para allocar: \n Pid: %i \nTamanio: %i", alloc->pid, alloc->tamanio);
 	
 	uint32_t direccionLogica = administrar_allocs(alloc);
 
@@ -97,9 +98,10 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 		carpincho->conexion = conexion;
 		log_info(logger,"Agregamos nuevo carpincho a memoria, y su pid es: %d",carpincho->id_carpincho);
 
-		//mutex
+		pthread_mutex_lock(listaCarpinchos);
 		list_add(carpinchos, carpincho);
-		//mutex
+		pthread_mutex_unlock(listaCarpinchos);
+
 		log_info(logger,"Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: %d",carpincho->id_carpincho);
 
 
@@ -162,7 +164,7 @@ void informarCierreDeProceso(t_carpincho* carpincho,t_log* loggerActual){
 
 }
 
-uint32_t recibir_memfree(int socket_cliente) {
+uint32_t recibir_memfree(int socket_cliente, t_log* logger) {
 
 	uint32_t size, offset=0, carpincho, direccionLogica;
 	void* buffer = recibir_buffer(&size, socket_cliente);
@@ -173,14 +175,14 @@ uint32_t recibir_memfree(int socket_cliente) {
 
 	free(buffer);
 
-	printf("\nRecibimos memfree: \n Pid: %i \nDirecLogica: %i", carpincho, direccionLogica);
+	log_info(logger, "\nRecibimos memfree: \n Pid: %i \nDirecLogica: %i", carpincho, direccionLogica);
 
 	liberar_alloc(carpincho, direccionLogica);
 
 	return 0;
 }
 
-uint32_t recibir_memread(int socket_cliente) {
+uint32_t recibir_memread(int socket_cliente, t_log* logger) {
 
 	uint32_t size, offset, carpincho, direccion_logica, tamanio;
 	void* buffer = recibir_buffer(&size, socket_cliente);
@@ -193,7 +195,7 @@ uint32_t recibir_memread(int socket_cliente) {
 
 	free(buffer);
 
-	printf("\nRecibimos memread: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
+	log_info(logger, "\nRecibimos memread: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
 
 	void* leido = leer_memoria(direccion_logica, carpincho, tamanio);
 	//enviar_contenido_leido(); Retorna un void*
@@ -201,7 +203,7 @@ uint32_t recibir_memread(int socket_cliente) {
 	return 0;
 }
 
-uint32_t recibir_memwrite(int socket_cliente) {
+uint32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 
 	uint32_t size, offset, carpincho, direccion_logica, tamanio;
 	void* buffer = recibir_buffer(&size, socket_cliente);
@@ -219,7 +221,7 @@ uint32_t recibir_memwrite(int socket_cliente) {
 
 	free(buffer);
 
-	printf("\nRecibimos memwrite: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
+	log_info(logger, "\nRecibimos memwrite: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
 
 	//escribir_memoria(carpincho, direccion_logica, contenido, tamanio); Retorna un entero si se pudo escribir o no
 

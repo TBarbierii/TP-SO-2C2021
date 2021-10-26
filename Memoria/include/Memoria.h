@@ -13,8 +13,8 @@
 
 /* Varibales obtenidas del config */
 
-char* ipSWAmP;
-char* puertoSWAmP;
+char* ip;
+char* puerto;
 uint32_t tamanio;
 uint32_t tamanioPagina;
 char* algoritmoReemplazoMMU;
@@ -24,10 +24,16 @@ uint32_t cantidadEntradasTLB;
 char *algoritmoReemplazoTLB;
 uint32_t retardoAciertoTLB;
 uint32_t retardoFAlloTLB;
+char* ipSWAmP;
+char* puertoSWAmP;
 
 uint32_t id_pag; //inicializar en algun lado 
 uint32_t id_carpincho; //inicializar
 uint32_t id_marco; //inicializar
+
+/* Semaforos */
+
+pthread_mutex_t * listaCarpinchos;
 
 /* Estructuras Administrativas */
 
@@ -70,7 +76,7 @@ typedef struct {
     int32_t nextAlloc;
     uint8_t isFree;
 
-}heapMetadata;
+} __attribute__((packed)) heapMetadata ;
 
 /*typedef struct{
     uint32_t pagina;
@@ -103,7 +109,6 @@ typedef struct {
     t_list* tabla_de_paginas;//esto seria una lista de paginas
     t_list* allocs;
     uint32_t conexion;
-    //una tlb por cada carpincho?
 
 }t_carpincho;
 
