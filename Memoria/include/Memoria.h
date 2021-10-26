@@ -151,7 +151,7 @@ void inicializar_carpincho(int conexion ,t_log* logger);
 void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam);
 uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* contenido, uint32_t tam);
 
-void enviar_pagina(uint32_t id_pagina, void* contenido);
+void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido);
 
 void pedir_pagina(uint32_t id_pagina);
 

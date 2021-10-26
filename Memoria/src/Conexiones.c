@@ -17,7 +17,7 @@ void* recibir_buffer(uint32_t * size, int socket_cliente)
 {
 	void * buffer;
 
-	recv(socket_cliente, size, sizeof(int), MSG_WAITALL);
+	recv(socket_cliente, size, sizeof(uint32_t), MSG_WAITALL);
 	buffer = malloc(*size);
 	recv(socket_cliente, buffer, *size, MSG_WAITALL);
 
@@ -28,6 +28,7 @@ void atender_solicitudes_multihilo(){
 	//crea un hilo por cada cliente que se conecta y lo atiende. El servidor ya estaria levantado
 
 	 uint32_t servidor = iniciar_servidor(ip, puerto);
+	 
 	 printf("\nSe inicio el servidor.\n");
 	 pthread_t* cliente;
 	while(1){
@@ -39,24 +40,34 @@ void atender_solicitudes_multihilo(){
 }
 
 void atender_solicitudes_memoria(uint32_t conexion){
+	t_log* logger =  log_create("cfg/Servidor.log","Servidor",1,LOG_LEVEL_DEBUG);
+	while (1)
+	{
+	
 	uint32_t cod_op = recibir_operacion(conexion);
-	t_log* logger =  log_create("cfg/Servidor.log","Servidor",0,LOG_LEVEL_DEBUG);
+	
 
 	switch(cod_op)
 	{
 	
 	case INICIALIZAR_ESTRUCTURA: //cuando no hay kernel. Si hay nunca llega este mensaje
 		inicializar_carpincho(conexion, logger);
+			break;
 	case MEMALLOC:
 		recibir_memalloc(conexion, logger);	
+			break;
 	case MEMFREE:
 		recibir_memfree(conexion, logger);
+			break;
 	case MEMREAD:
 		recibir_memread(conexion, logger);
+			break;
 	case MEMWRITE:	
 		recibir_memwrite(conexion, logger);
+			break;
 	case CERRAR_INSTANCIA:
 		cerrar_carpincho(conexion, logger);
+
 		break;
 	case -1:
 		log_error(logger, "el cliente se desconecto. Terminando servidor");
@@ -64,6 +75,10 @@ void atender_solicitudes_memoria(uint32_t conexion){
 	default:
 		log_warning(logger, "Entro al default");
 		break;
+	}
+		if(cod_op == CERRAR_INSTANCIA ){
+			break;
+		}
 	}
 }
 
@@ -89,7 +104,9 @@ uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del c
 
 void inicializar_carpincho(int conexion ,t_log* logger){
 
-
+	uint32_t size;
+	recv(conexion, &size, sizeof(uint32_t), MSG_WAITALL);
+	
 	t_carpincho* carpincho = malloc(sizeof(t_carpincho));
 	
 		carpincho->id_carpincho = generadorIdsCarpinchos();
@@ -158,9 +175,9 @@ void informarCierreDeProceso(t_carpincho* carpincho,t_log* loggerActual){
 
 	memcpy(paquete->buffer->stream, &(valorReturn) , sizeof(uint32_t));
 
-	log_info(loggerActual,"Enviamos que queremos cerrar el carpincho");
+	log_info(loggerActual,"Enviamos que queremos cerrar el carpincho", carpincho->id_carpincho);
     enviarPaquete(paquete, carpincho->conexion);
-	//cerrar conexion?
+	//cerrar hilo
 
 }
 
@@ -254,7 +271,7 @@ void enviar_tipo_asignacion(char* tipoAsignacion){//mandar al principio despues 
 
 }
 
-void enviar_pagina(uint32_t id_pagina, void* contenido){
+void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 	t_paquete *paquete = crear_paquete(ENVIAR_PAGINA);
 
@@ -262,6 +279,8 @@ void enviar_pagina(uint32_t id_pagina, void* contenido){
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	uint32_t desplazamiento=0;
 
+	memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
 	memcpy(paquete->buffer->stream + desplazamiento, &(id_pagina) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
     memcpy(paquete->buffer->stream + desplazamiento, contenido , tamanioPagina);
