@@ -24,7 +24,7 @@ typedef struct
 void ejecutarDispositivosIO();
 void rutinaDispositivoIO(dispositivoIO* dispositivo);
 void agregarProcesoADispositivo(proceso_kernel* proceso, dispositivoIO* device);
-
+int realizarOperacionIO(int pid, char* nombreDevice);
 
 
 #endif

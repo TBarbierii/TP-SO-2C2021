@@ -9,6 +9,7 @@
 #include <commons/config.h>
 #include "Kernel.h"
 #include "Semaforos.h"
+#include "DispositivosIO.h"
 
 
 void atenderSolicitudesKernel();
@@ -29,4 +30,10 @@ void avisarDestruccionDeSemaforo(int conexion, int valor);
 void hacerPostDeSemaforo(t_buffer * buffer, int conexion);
 void avisarPostDeSemaforo(int conexion, int valor);
 
+int hacerWaitDeSemaforo(t_buffer * buffer, int conexion);
+void avisarWaitDeSemaforo(int conexion, int valor);
+
+
+int conectarDispositivoIO(t_buffer* buffer, int conexion);
+void avisarconexionConDispositivoIO(int conexion, int valor);
 #endif

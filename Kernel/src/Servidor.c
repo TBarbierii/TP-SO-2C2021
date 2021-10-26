@@ -29,7 +29,7 @@ void atenderSolicitudesKernel(){
 
 int atenderMensajeEnKernel(int conexion) {
 
-	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_DEBUG);
+	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_ERROR);
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
 
@@ -51,6 +51,7 @@ int atenderMensajeEnKernel(int conexion) {
 	recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
     }
 	
+	int valorOperacion = paquete->codigo_operacion;
 
 	switch(paquete->codigo_operacion){
         case INICIALIZAR_ESTRUCTURA:;
@@ -70,6 +71,7 @@ int atenderMensajeEnKernel(int conexion) {
 
         case SEM_WAIT:;
 			log_info(logger,"Vamos a hacer un wait de un semaforo");
+			valorOperacion = hacerWaitDeSemaforo(paquete->buffer, conexion);
         break;
 
         case SEM_SIGNAL:;
@@ -83,6 +85,8 @@ int atenderMensajeEnKernel(int conexion) {
         break;
 
         case CONECTAR_IO:;
+			log_info(logger,"Vamos a realizar una peticion a un dispositivo IO");
+			conectarDispositivoIO(paquete->buffer, conexion);
         break;
 
 		default:;
@@ -91,7 +95,6 @@ int atenderMensajeEnKernel(int conexion) {
 	}
 	
 	
-	int valorOperacion = paquete->codigo_operacion;
 
     if(paquete->buffer->size > 0){
 	    free(paquete->buffer->stream);
@@ -250,6 +253,7 @@ void cerrarSemaforo(t_buffer * buffer, int conexion){
 	avisarDestruccionDeSemaforo(conexion,valorReturn);
 
 	//free(nombre); ROMPE TODO CON ESTO, pero la duda era el porque?, sera xq se libera cuando se libera el buffer?
+
 }
 
 void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
@@ -271,11 +275,15 @@ void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
 	free(nombre);
 }
 
-void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
+int hacerWaitDeSemaforo(t_buffer * buffer, int conexion){
 	
 	void* stream = buffer->stream;
 	int desplazamiento = 0;
 	int tamanioNombre;
+	int pid;
+
+	memcpy(&(pid), stream+desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
 
 	memcpy(&(tamanioNombre), stream+desplazamiento, sizeof(uint32_t));
 	desplazamiento += sizeof(uint32_t);
@@ -283,14 +291,42 @@ void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
 	char* nombre = malloc(tamanioNombre);
 	memcpy(nombre, stream+desplazamiento, tamanioNombre);
 	
-	int valorReturn = realizarSignalDeSemaforo(nombre);
+	int valorReturn = realizarWaitDeSemaforo(nombre, pid);
 	
-	avisarPostDeSemaforo(conexion,valorReturn);
+	avisarWaitDeSemaforo(conexion,valorReturn);
 
 	free(nombre);
+
+	if(valorReturn == 0){
+		return SEM_WAIT;
+	}else {
+	return SEM_WAIT_NOBLOQUEANTE; }
 }
 
 
+int conectarDispositivoIO(t_buffer* buffer, int conexion){
+    
+	int desplazamiento = 0;
+    int pid;
+	int tamanioNombre;
+	char* nombreDispositivo;
+	
+
+    memcpy(&(pid), buffer->stream + desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    memcpy(&(tamanioNombre), buffer->stream + desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+	nombreDispositivo = malloc(tamanioNombre);
+
+    memcpy(nombreDispositivo, buffer->stream + desplazamiento , tamanioNombre);
+
+	int valorRetorno = realizarOperacionIO(pid, nombreDispositivo);
+
+	avisarconexionConDispositivoIO(conexion, valorRetorno);
+
+}
 
 
 /* AVISOS A MATELIB DE SEMAFOROS */
@@ -336,14 +372,12 @@ void avisarPostDeSemaforo(int conexion, int valor){
 
 }
 
-
-
 void avisarWaitDeSemaforo(int conexion, int valor){
 
 
 	if(valor == 2){
 		//esto lo vamos a usar como que funciono todo, pero a diferencia de que haga un wait y se bloquee, el 2 vamos a hacer que no se bloquee
-		t_paquete* paquete = crear_paquete(SEM_SIGNAL);
+		t_paquete* paquete = crear_paquete(SEM_WAIT);
 		paquete->buffer->size = sizeof(uint32_t);
 		paquete->buffer->stream = malloc(paquete->buffer->size);
 		int desplazamiento = 0;
@@ -352,7 +386,7 @@ void avisarWaitDeSemaforo(int conexion, int valor){
 
 		enviarPaquete(paquete,conexion);
 	}else{
-		t_paquete* paquete = crear_paquete(SEM_SIGNAL);
+		t_paquete* paquete = crear_paquete(SEM_WAIT);
 		paquete->buffer->size = sizeof(uint32_t);
 		paquete->buffer->stream = malloc(paquete->buffer->size);
 		int desplazamiento = 0;
@@ -363,5 +397,19 @@ void avisarWaitDeSemaforo(int conexion, int valor){
 	}
 
 	
+
+}
+
+
+void avisarconexionConDispositivoIO(int conexion, int valor){
+
+	t_paquete* paquete = crear_paquete(CONECTAR_IO);
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	int desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+
+    enviarPaquete(paquete,conexion);
 
 }

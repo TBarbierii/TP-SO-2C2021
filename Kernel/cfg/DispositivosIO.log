@@ -1,8 +1,10 @@
-[DEBUG] 11:27:52:269 DispositivosIO/(30601:30601): Se crea un hilo para ejecutar el Dispositivio IO: laguna
-[DEBUG] 11:27:52:275 DispositivosIO/(30601:30601): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas
-[DEBUG] 11:28:58:760 DispositivosIO/(30761:30761): Se crea un hilo para ejecutar el Dispositivio IO: laguna
-[DEBUG] 11:28:58:766 DispositivosIO/(30761:30761): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas
-[DEBUG] 11:30:09:707 DispositivosIO/(30910:30910): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 25000
-[DEBUG] 11:30:09:714 DispositivosIO/(30910:30910): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
-[DEBUG] 11:30:09:718 DispositivosIO/(30910:30910): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
-[DEBUG] 11:30:09:719 DispositivosIO/(30910:30910): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[DEBUG] 21:59:15:729 DispositivosIO/(7532:7532): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 21:59:15:746 DispositivosIO/(7532:7532): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 21:59:15:760 DispositivosIO/(7532:7532): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 21:59:15:762 DispositivosIO/(7532:7532): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[INFO] 21:59:18:462 DispositivosIO/(7532:7555): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 21:59:18:463 DispositivosIO/(7532:7534): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 21:59:20:501 DispositivosIO/(7532:7566): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 21:59:28:468 DispositivosIO/(7532:7534): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 21:59:28:476 DispositivosIO/(7532:7534): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 21:59:38:477 DispositivosIO/(7532:7534): Termino de ejecutar el proceso:1 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite

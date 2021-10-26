@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "CarpinchOs"
+		},
+		{
 			"path": "Kernel"
 		},
 		{
@@ -15,35 +18,5 @@
 		{
 			"path": "SWAmP"
 		}
-	],
-	"settings": {
-		"files.associations": {
-			"kernel.h": "c",
-			"list.h": "c",
-			"PlanificadorLargoPlazo.C": "cpp",
-			"string.h": "c",
-			"semaphore.h": "c",
-			"stdio.h": "c",
-			"log.h": "c",
-			"matelib.h": "c",
-			"shared_utils.h": "c",
-			"utils.h": "c",
-			"stdint.h": "c",
-			"semaforos.h": "c",
-			"signal.h": "c",
-			"planificadorlargoplazo.h": "c",
-			"swamp.h": "c",
-			"swamp_lib.h": "c",
-			"planificadormedianoplazo.h": "c",
-			"pthread.h": "c",
-			"servidor.h": "c",
-			"unistd.h": "c",
-			"config.h": "c",
-			"planificadorcortoplazo.h": "c",
-			"socket.h": "c",
-			"memoria.h": "c",
-			"stdbool.h": "c",
-			"dispositivosio.h": "c"
-		}
-	}
+	]
 }

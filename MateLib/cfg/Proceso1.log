@@ -1,12 +1,8 @@
-[INFO] 15:03:21:087 loggerContenidoProceso/(9921:9921): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 15:03:21:125 loggerContenidoProceso/(9921:9921): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
-[INFO] 15:03:21:130 loggerContenidoProceso/(9921:9921): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
-[ERROR] 15:03:21:131 loggerContenidoProceso/(9921:9921): No se pudo inicializar el semaforo que se solicito inicializar
-[INFO] 15:03:21:132 loggerContenidoProceso/(9921:9921): Solicitamos hacer un signal sobre el semaforo: SEM2
-[INFO] 15:03:21:137 loggerContenidoProceso/(9921:9921): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
-[INFO] 15:03:21:137 loggerContenidoProceso/(9921:9921): Se pudo hacer el post del semaforo
-[INFO] 15:03:21:138 loggerContenidoProceso/(9921:9921): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 15:03:21:140 loggerContenidoProceso/(9921:9921): Se envio info para cerrarlo
-[INFO] 15:03:21:141 loggerContenidoProceso/(9921:9921): Estamos recibiendo todo para cerrar la conexion y terminar
-[INFO] 15:03:21:141 loggerContenidoProceso/(9921:9921): Se pudo cerrar el proceso correctamente en el BackEnd
-[INFO] 15:03:21:141 loggerContenidoProceso/(9921:9921): Se liberan todas las estructuras del proceso
+[INFO] 21:59:20:112 loggerContenidoProceso/(7563:7563): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 21:59:20:485 loggerContenidoProceso/(7563:7563): Solicitamos realizar una operacion IO sobre el dispositivo: laguna
+[INFO] 21:59:20:504 loggerContenidoProceso/(7563:7563): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:59:20:513 loggerContenidoProceso/(7563:7563): Se pudo realizar con exito la operacion IO
+[INFO] 21:59:20:515 loggerContenidoProceso/(7563:7563): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 21:59:38:483 loggerContenidoProceso/(7563:7563): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 21:59:38:484 loggerContenidoProceso/(7563:7563): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 21:59:38:485 loggerContenidoProceso/(7563:7563): Se liberan todas las estructuras del proceso
