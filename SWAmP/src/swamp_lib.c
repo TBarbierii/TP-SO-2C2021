@@ -216,9 +216,36 @@ void eliminarParticiones(t_list* listaParticiones){
     list_destroy(listaParticiones);
 }
 
-void escribirContenido(){
+void escribirContenido(void* mensajeAEscribir, int pid, t_log* logger){
 
     /*aca vamos a verificar si hay un archivo donde se encuentre el pid, y sino vamos a buscar directamente el archivo con mas espacio */
+    // Estaria bien utilizar list_get_maximum aca?
+    swap_files* archivo_swap = list_get_maximum(lista_swap_files, cantidad_frames_disponibles);
+    
+    if() {
+
+    }
+
+    int tiene_paginas_en_swap_file = verificar_pid_en_swap_file(pid, archivo_swap->path);
+
+
+    /*if(tipo_asignacion) {
+        particion* marco = buscar_particion_libre_asignacion_dinamica(archivo_swap->path);
+    }else{
+
+    }
+    
+    if(tiene_paginas_en_swap_file == 1) {
+        log_info(logger, "El proceso tiene paginas en este archivo de swap");
+        escribirContenidoSobreElArchivo(mensajeAEscribir, marco, int pagina, int pid, char* nombreArchivo, logger);
+    }else{
+
+    }
+    */
+
+
+
+
 
 }
 
@@ -262,13 +289,13 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagi
             
 
             if(size < tamanio_pagina){
-                int cantidadRestante = tamanio_pagina-size;
-                    for(int i=0; i < cantidadRestante-1; i++ ){
-                        char vacio = '-';
-                        memcpy(contenidoArchivo + particionAmodificar->inicio_particion + size + i, &(vacio), sizeof(char));
-                    }
-                    char separador = '\n';
-                    memcpy(contenidoArchivo + particionAmodificar->inicio_particion + size + cantidadRestante-1, &(separador), sizeof(char));
+                int cantidadRestante = tamanio_pagina - size;
+                for(int i=0; i < cantidadRestante-1; i++ ){
+                    char vacio = '-';
+                    memcpy(contenidoArchivo + particionAmodificar->inicio_particion + size + i, &(vacio), sizeof(char));
+                }
+                char separador = '\n';
+                memcpy(contenidoArchivo + particionAmodificar->inicio_particion + size + cantidadRestante-1, &(separador), sizeof(char));
             }
 
             munmap(contenidoArchivo, tamanio_swap);
@@ -284,3 +311,12 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagi
     }
     
 }
+/*
+swap_files* archivo_con_mayor_marcos_disponibles() {
+
+    // Tengo dudas con el list_get_maximum
+    int cantidad_frames = tamanio_swap / tamanio_pagina;
+    swap_files* archivo_swap = list_get_maximum(lista_swap_files, (cantidad_frames_disponibles, cantidad_frames));
+
+
+}*/

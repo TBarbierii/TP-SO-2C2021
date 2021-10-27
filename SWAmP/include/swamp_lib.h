@@ -42,9 +42,7 @@ t_log* logger_swamp;
 
 typedef struct {
     char* path;     
-
     t_list* particiones_swap;
-    
 }swap_files;
 
 typedef struct {

@@ -66,7 +66,7 @@ int atender_mensaje_ram(int conexion) {
 
         case RECIBIR_PAGINA:;
 			// Faltaria modificar para recibir el PID
-			//recibir_pagina(uint32_t id_pagina);
+			//recibir_pagina(uint32_t pid, uint32_t id_pagina);
         	break;
 
 		case TIPOASIGNACION:;
@@ -108,7 +108,7 @@ uint32_t recibir_tipo_asignacion(t_buffer* buffer) {
 
 
 // Faltaria modificar para recibir el PID
-void recibir_pagina(t_buffer* buffer) {
+void recibir_pagina(uint32_t pid, t_buffer* buffer) {
 
 	void* data = buffer->stream;
 	void* contenido;
