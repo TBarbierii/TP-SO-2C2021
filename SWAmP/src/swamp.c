@@ -11,7 +11,7 @@ int main(){
     //ACA SOLO VA A ESTAR EL SERVIDOR, xq va a ser paginacion bajo demanda, hasta que nos manden peticiones, no hacemoas mas nada
     //iniciar_servidor_swamp();
 
-
+    leer_contenido(0, 0, logger_swamp);
     
     log_destroy(logger_swamp);
     config_destroy(config_swamp);

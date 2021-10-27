@@ -72,12 +72,15 @@ swap_files* encontrar_swap_file(char* path_swap);
 
 /*    Paginas    */
 int pagina_libre(particion*);
+void leer_contenido(uint32_t pid, uint32_t id_pagina, t_log* logger);
 
 /*  Asignaciones  */
 void manejar_asignacion();
 
 /*   Auxiliares   */
 int verificar_pid_en_swap_file(uint32_t, char*);
+int pid_se_encuentra_en_particion(swap_files*, uint32_t);
+void* encontrar_swap_file_en_base_a_pid(uint32_t);
 
 /* Finalizacion */
 void eliminarParticiones(t_list* listaParticiones);
