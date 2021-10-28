@@ -6,7 +6,7 @@ CFLAGS=-I$(IDIR) -I$(SHARED_IDIR) -g -Wall
 
 ODIR=./obj
 SRCDIR =./src
-LIBS=-lcommons -lpthread -lreadline -lcunit -lrt
+LIBS=-lcommons -lpthread -lreadline -lcunit -lrt -L "MateLib/include/matelib.h"
 
 SHARED_SRCDIR = ../shared/src
 SHARED_ODIR = ../shared/obj
@@ -30,15 +30,20 @@ SHARED_OBJ = $(patsubst $(SHARED_SRCDIR)/%.c,$(SHARED_ODIR)/%.o,$(SHARED_SRC))
 $(PROCESS_NAME): $(OBJ) $(SHARED_OBJ)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
-
+build-example-lib:
+	cd ../MateLib/src/ && \
+	$(CC) -c -Wall -Werror -I"../../" -fpic matelib.c && \
+	$(CC) -shared matelib.o -o libmate.so && \
+	rm matelib.o
 
 build-example: build-example-lib
-	cd CarpinchOs/src && \
-	$(CC) -g3 -Wall -L"../MateLib" -I"../../" carpincho.c -lmate -lpthread -lrt -o carpincho
+	cd src/ && \
+	$(CC) -g3 -Wall -L"../MateLib/src/" -I"../../" carpincho.c -lmate -lpthread -lrt -o carpincho
 
 run: build-example
-	cd CarpinchOs/src && \
-	LD_LIBRARY_PATH="../MateLib/" ./MateLib
+	cd src/ && \
+	LD_LIBRARY_PATH="../MateLib/src/" ./carpincho
+
 
 .PHONY: clean
 

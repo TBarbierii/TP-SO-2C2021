@@ -12,7 +12,10 @@
         {
             "label": "Kernel normal",
             "type": "shell",
-            "command": "./exec.sh"
+            "command": "./exec.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "Kernel valgrind",
