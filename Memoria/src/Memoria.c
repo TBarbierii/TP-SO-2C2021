@@ -111,6 +111,8 @@ list_add(carpinchos, carpincho);
     escribir_memoria(2, direccionLogica2, prueba2, 44);
     escribir_memoria(7, direccionLogica3, prueba3, 19);
 
+    
+
     void* hola = leer_memoria(direccionLogica, 8, 70);
     void* hola1 = leer_memoria(direccionLogica1, 8, 20);
     void* hola2 = leer_memoria(direccionLogica2, 2, 44);
