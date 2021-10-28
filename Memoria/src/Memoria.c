@@ -56,7 +56,10 @@ int main(){
     inicializarTodo();
     inicializarMemoria();
 
-    atender_solicitudes_multihilo();
+    //enviar_tipo_asignacion(tipoAsignacion);
+    //enviar_pagina(0, 0, "buenass--------------");
+
+    //atender_solicitudes_multihilo();
 
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     alloc->pid = 8;
@@ -90,6 +93,19 @@ list_add(carpinchos, carpincho);
      carpincho2->allocs = list_create();
      list_add(carpinchos, carpincho2);
 
+    t_memalloc *alloc4 = malloc(sizeof(t_memalloc));
+    alloc3->pid = 12;
+    alloc3->tamanio = 20;
+
+    t_carpincho* carpincho4 = malloc(sizeof(t_carpincho));
+     carpincho4->id_carpincho = alloc4->pid;
+     carpincho4->tabla_de_paginas = list_create();
+     carpincho4->allocs = list_create();
+     list_add(carpinchos, carpincho4);
+
+
+
+
     
 
     uint32_t direccionLogica = administrar_allocs(alloc);
@@ -99,6 +115,8 @@ list_add(carpinchos, carpincho);
     uint32_t direccionLogica3 = administrar_allocs(alloc3);
    
     uint32_t direccionLogica1 = administrar_allocs(alloc1);
+
+    uint32_t direcLogica4 = administrar_allocs(alloc4);
 
     void* prueba = "Esta es una prueba de un texto de tre paginas osea como max 70 bytes\0";
     void* prueba1 = "carpincho 8, de 20\0";
@@ -110,8 +128,14 @@ list_add(carpinchos, carpincho);
     escribir_memoria(8, direccionLogica1, prueba1, 20);
     escribir_memoria(2, direccionLogica2, prueba2, 44);
     escribir_memoria(7, direccionLogica3, prueba3, 19);
-
+    
     void* hola = leer_memoria(direccionLogica, 8, 70);
+
+    t_pagina *pagina = list_get(carpincho->tabla_de_paginas, 0);
+
+    enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, hola);
+
+ 
     void* hola1 = leer_memoria(direccionLogica1, 8, 20);
     void* hola2 = leer_memoria(direccionLogica2, 2, 44);
     void* hola3 = leer_memoria(direccionLogica3, 7, 19);

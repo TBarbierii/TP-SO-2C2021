@@ -78,3 +78,230 @@
 [INFO] 13:59:15:931 a/(11188:11188): El codigo de operacion es: 14
 [INFO] 13:59:15:931 a/(11188:11188): El tamaño del paquete es 4
 [INFO] 13:59:15:932 a/(11188:11188): Tipo de asignacion incorrecto wtf
+[INFO] 14:41:13:747 a/(5924:5924): Recibimos la informacion de la RAM
+[INFO] 14:41:13:747 a/(5924:5924): El codigo de operacion es: 14
+[INFO] 14:41:13:747 a/(5924:5924): El tamaño del paquete es 4
+[INFO] 14:41:13:747 a/(5924:5924): Tipo de asignacion es FIJA
+[ERROR] 14:49:05:323 a/(5924:5924): Fallo en recibir la info de la conexion
+[ERROR] 14:49:54:380 a/(5924:5924): Fallo en recibir la info de la conexion
+[ERROR] 14:51:28:914 a/(7128:7128): Fallo en recibir la info de la conexion
+[ERROR] 14:52:36:169 a/(7128:7128): Fallo en recibir la info de la conexion
+[INFO] 14:52:54:640 a/(7594:7594): Recibimos la informacion de la RAM
+[INFO] 14:52:54:640 a/(7594:7594): El codigo de operacion es: 14
+[INFO] 14:52:54:640 a/(7594:7594): El tamaño del paquete es 4
+[INFO] 14:52:54:640 a/(7594:7594): Tipo de asignacion es FIJA
+[INFO] 14:53:00:200 a/(7594:7594): Recibimos la informacion de la RAM
+[INFO] 14:53:00:200 a/(7594:7594): El codigo de operacion es: 11
+[INFO] 14:53:00:200 a/(7594:7594): El tamaño del paquete es 36
+[INFO] 14:56:50:739 a/(8016:8016): Recibimos la informacion de la RAM
+[INFO] 14:56:50:739 a/(8016:8016): El codigo de operacion es: 14
+[INFO] 14:56:50:739 a/(8016:8016): El tamaño del paquete es 4
+[INFO] 14:56:50:739 a/(8016:8016): Tipo de asignacion es FIJA
+[INFO] 14:56:51:282 a/(8016:8016): Recibimos la informacion de la RAM
+[INFO] 14:56:51:283 a/(8016:8016): El codigo de operacion es: 11
+[INFO] 14:56:51:283 a/(8016:8016): El tamaño del paquete es 36
+[INFO] 14:58:32:354 a/(8392:8392): Recibimos la informacion de la RAM
+[INFO] 14:58:32:355 a/(8392:8392): El codigo de operacion es: 11
+[INFO] 14:58:32:355 a/(8392:8392): El tamaño del paquete es 36
+[INFO] 15:08:03:185 a/(9529:9529): Recibimos la informacion de la RAM
+[INFO] 15:08:03:185 a/(9529:9529): El codigo de operacion es: 14
+[INFO] 15:08:03:185 a/(9529:9529): El tamaño del paquete es 4
+[INFO] 15:08:03:185 a/(9529:9529): Tipo de asignacion es FIJA
+[INFO] 15:08:03:185 a/(9529:9529): Recibimos la informacion de la RAM
+[INFO] 15:08:03:185 a/(9529:9529): El codigo de operacion es: 11
+[INFO] 15:08:03:185 a/(9529:9529): El tamaño del paquete es 40
+[INFO] 15:12:01:728 a/(10046:10046): Recibimos la informacion de la RAM
+[INFO] 15:12:01:728 a/(10046:10046): El codigo de operacion es: 14
+[INFO] 15:12:01:728 a/(10046:10046): El tamaño del paquete es 4
+[INFO] 15:12:01:728 a/(10046:10046): Tipo de asignacion es FIJA
+[INFO] 15:12:01:728 a/(10046:10046): Recibimos la informacion de la RAM
+[INFO] 15:12:01:728 a/(10046:10046): El codigo de operacion es: 11
+[INFO] 15:12:01:728 a/(10046:10046): El tamaño del paquete es 40
+[INFO] 15:13:46:21 a/(10318:10318): Recibimos la informacion de la RAM
+[INFO] 15:13:46:21 a/(10318:10318): El codigo de operacion es: 14
+[INFO] 15:13:46:21 a/(10318:10318): El tamaño del paquete es 4
+[INFO] 15:13:46:21 a/(10318:10318): Tipo de asignacion es FIJA
+[INFO] 15:13:46:22 a/(10318:10318): Recibimos la informacion de la RAM
+[INFO] 15:13:46:22 a/(10318:10318): El codigo de operacion es: 11
+[INFO] 15:13:46:22 a/(10318:10318): El tamaño del paquete es 40
+[INFO] 15:17:15:360 a/(10495:10495): Recibimos la informacion de la RAM
+[INFO] 15:17:15:360 a/(10495:10495): El codigo de operacion es: 14
+[INFO] 15:17:15:360 a/(10495:10495): El tamaño del paquete es 4
+[INFO] 15:17:15:360 a/(10495:10495): Tipo de asignacion es FIJA
+[INFO] 15:17:15:360 a/(10495:10495): Recibimos la informacion de la RAM
+[INFO] 15:17:15:360 a/(10495:10495): El codigo de operacion es: 11
+[INFO] 15:17:15:360 a/(10495:10495): El tamaño del paquete es 40
+[INFO] 15:21:37:933 a/(10828:10828): Recibimos la informacion de la RAM
+[INFO] 15:21:37:933 a/(10828:10828): El codigo de operacion es: 14
+[INFO] 15:21:37:933 a/(10828:10828): El tamaño del paquete es 4
+[INFO] 15:21:37:933 a/(10828:10828): Tipo de asignacion es FIJA
+[INFO] 15:21:37:933 a/(10828:10828): Recibimos la informacion de la RAM
+[INFO] 15:21:37:933 a/(10828:10828): El codigo de operacion es: 11
+[INFO] 15:21:37:933 a/(10828:10828): El tamaño del paquete es 40
+[INFO] 15:21:57:982 a/(10867:10867): Recibimos la informacion de la RAM
+[INFO] 15:21:57:982 a/(10867:10867): El codigo de operacion es: 14
+[INFO] 15:21:57:982 a/(10867:10867): El tamaño del paquete es 4
+[INFO] 15:21:57:982 a/(10867:10867): Tipo de asignacion es FIJA
+[INFO] 15:21:57:982 a/(10867:10867): Recibimos la informacion de la RAM
+[INFO] 15:21:57:982 a/(10867:10867): El codigo de operacion es: 11
+[INFO] 15:21:57:982 a/(10867:10867): El tamaño del paquete es 40
+[INFO] 15:23:58:74 a/(11005:11005): Recibimos la informacion de la RAM
+[INFO] 15:23:58:74 a/(11005:11005): El codigo de operacion es: 14
+[INFO] 15:23:58:74 a/(11005:11005): El tamaño del paquete es 4
+[INFO] 15:23:58:74 a/(11005:11005): Tipo de asignacion es FIJA
+[INFO] 15:23:58:74 a/(11005:11005): Recibimos la informacion de la RAM
+[INFO] 15:23:58:74 a/(11005:11005): El codigo de operacion es: 11
+[INFO] 15:23:58:74 a/(11005:11005): El tamaño del paquete es 40
+[INFO] 15:23:58:74 a/(11005:11005): entro aca
+[INFO] 15:25:05:316 a/(11098:11098): Recibimos la informacion de la RAM
+[INFO] 15:25:05:316 a/(11098:11098): El codigo de operacion es: 14
+[INFO] 15:25:05:316 a/(11098:11098): El tamaño del paquete es 4
+[INFO] 15:25:05:316 a/(11098:11098): Tipo de asignacion es FIJA
+[INFO] 15:25:05:316 a/(11098:11098): Recibimos la informacion de la RAM
+[INFO] 15:25:05:316 a/(11098:11098): El codigo de operacion es: 11
+[INFO] 15:25:05:316 a/(11098:11098): El tamaño del paquete es 40
+[INFO] 15:27:01:535 a/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 15:27:02:285 a/(11348:11348): El codigo de operacion es: 14
+[INFO] 15:27:04:37 a/(11348:11348): El tamaño del paquete es 4
+[INFO] 15:27:08:566 a/(11348:11348): Tipo de asignacion es FIJA
+[INFO] 15:27:33:358 a/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 15:27:33:358 a/(11348:11348): El codigo de operacion es: 11
+[INFO] 15:27:33:358 a/(11348:11348): El tamaño del paquete es 40
+[INFO] 15:29:52:181 a/(11931:11931): Recibimos la informacion de la RAM
+[INFO] 15:29:52:181 a/(11931:11931): El codigo de operacion es: 14
+[INFO] 15:29:52:181 a/(11931:11931): El tamaño del paquete es 4
+[INFO] 15:29:52:181 a/(11931:11931): Tipo de asignacion es FIJA
+[INFO] 15:29:59:461 a/(11931:11931): Recibimos la informacion de la RAM
+[INFO] 15:29:59:964 a/(11931:11931): El codigo de operacion es: 11
+[INFO] 15:30:00:782 a/(11931:11931): El tamaño del paquete es 40
+[INFO] 15:30:10:684 a/(11931:11931): id 0
+[INFO] 15:31:55:528 a/(12147:12147): Recibimos la informacion de la RAM
+[INFO] 15:31:55:528 a/(12147:12147): El codigo de operacion es: 14
+[INFO] 15:31:55:528 a/(12147:12147): El tamaño del paquete es 4
+[INFO] 15:31:55:528 a/(12147:12147): Tipo de asignacion es FIJA
+[INFO] 15:32:04:541 a/(12147:12147): Recibimos la informacion de la RAM
+[INFO] 15:32:04:720 a/(12147:12147): El codigo de operacion es: 11
+[INFO] 15:32:05:495 a/(12147:12147): El tamaño del paquete es 40
+[INFO] 15:32:11:20 a/(12147:12147): id 0
+[INFO] 15:32:41:956 a/(12333:12333): Recibimos la informacion de la RAM
+[INFO] 15:32:41:956 a/(12333:12333): El codigo de operacion es: 14
+[INFO] 15:32:41:956 a/(12333:12333): El tamaño del paquete es 4
+[INFO] 15:32:41:956 a/(12333:12333): Tipo de asignacion es FIJA
+[INFO] 15:32:45:907 a/(12333:12333): Recibimos la informacion de la RAM
+[INFO] 15:32:46:57 a/(12333:12333): El codigo de operacion es: 11
+[INFO] 15:32:46:938 a/(12333:12333): El tamaño del paquete es 40
+[INFO] 15:33:24:707 a/(12333:12333): id 0
+[INFO] 15:34:20:255 a/(12525:12525): Recibimos la informacion de la RAM
+[INFO] 15:34:20:452 a/(12525:12525): El codigo de operacion es: 14
+[INFO] 15:34:22:490 a/(12525:12525): El tamaño del paquete es 4
+[INFO] 15:34:28:216 a/(12525:12525): Tipo de asignacion es FIJA
+[INFO] 15:34:38:706 a/(12525:12525): Recibimos la informacion de la RAM
+[INFO] 15:34:39:192 a/(12525:12525): El codigo de operacion es: 11
+[INFO] 15:34:40:473 a/(12525:12525): El tamaño del paquete es 40
+[INFO] 15:34:59:849 a/(12525:12525): id 0
+[INFO] 15:35:38:900 a/(12700:12700): Recibimos la informacion de la RAM
+[INFO] 15:35:38:900 a/(12700:12700): El codigo de operacion es: 14
+[INFO] 15:35:38:900 a/(12700:12700): El tamaño del paquete es 4
+[INFO] 15:35:38:900 a/(12700:12700): Tipo de asignacion es FIJA
+[INFO] 15:35:41:896 a/(12700:12700): Recibimos la informacion de la RAM
+[INFO] 15:35:42:24 a/(12700:12700): El codigo de operacion es: 11
+[INFO] 15:35:42:625 a/(12700:12700): El tamaño del paquete es 40
+[INFO] 15:35:50:330 a/(12700:12700): id 0
+[INFO] 15:37:06:354 a/(12865:12865): Recibimos la informacion de la RAM
+[INFO] 15:37:06:354 a/(12865:12865): El codigo de operacion es: 14
+[INFO] 15:37:06:354 a/(12865:12865): El tamaño del paquete es 4
+[INFO] 15:37:06:354 a/(12865:12865): Tipo de asignacion es FIJA
+[INFO] 15:37:10:185 a/(12865:12865): Recibimos la informacion de la RAM
+[INFO] 15:37:10:484 a/(12865:12865): El codigo de operacion es: 11
+[INFO] 15:37:11:244 a/(12865:12865): El tamaño del paquete es 40
+[INFO] 15:37:18:227 a/(12865:12865): id 0
+[INFO] 15:38:52:813 a/(13020:13020): Recibimos la informacion de la RAM
+[INFO] 15:38:52:813 a/(13020:13020): El codigo de operacion es: 14
+[INFO] 15:38:52:813 a/(13020:13020): El tamaño del paquete es 4
+[INFO] 15:38:52:813 a/(13020:13020): Tipo de asignacion es FIJA
+[INFO] 15:38:52:813 a/(13020:13020): Recibimos la informacion de la RAM
+[INFO] 15:38:52:813 a/(13020:13020): El codigo de operacion es: 11
+[INFO] 15:38:52:813 a/(13020:13020): El tamaño del paquete es 40
+[INFO] 15:38:52:813 a/(13020:13020): id 0
+[INFO] 15:38:52:813 a/(13020:13020): contenido buenass-----------------------
+[INFO] 15:39:56:662 a/(13093:13093): Recibimos la informacion de la RAM
+[INFO] 15:39:56:662 a/(13093:13093): El codigo de operacion es: 14
+[INFO] 15:39:56:662 a/(13093:13093): El tamaño del paquete es 4
+[INFO] 15:39:56:662 a/(13093:13093): Tipo de asignacion es FIJA
+[INFO] 15:39:56:662 a/(13093:13093): Recibimos la informacion de la RAM
+[INFO] 15:39:56:662 a/(13093:13093): El codigo de operacion es: 11
+[INFO] 15:39:56:662 a/(13093:13093): El tamaño del paquete es 40
+[INFO] 15:39:56:662 a/(13093:13093): id 0
+[INFO] 15:39:56:662 a/(13093:13093): contenido buenass-----------------------
+[INFO] 15:40:53:48 a/(13208:13208): Recibimos la informacion de la RAM
+[INFO] 15:40:53:48 a/(13208:13208): El codigo de operacion es: 14
+[INFO] 15:40:53:49 a/(13208:13208): El tamaño del paquete es 4
+[INFO] 15:40:53:49 a/(13208:13208): Tipo de asignacion es FIJA
+[INFO] 15:40:57:924 a/(13208:13208): Recibimos la informacion de la RAM
+[INFO] 15:40:58:140 a/(13208:13208): El codigo de operacion es: 11
+[INFO] 15:41:01:408 a/(13208:13208): El tamaño del paquete es 40
+[INFO] 15:41:12:783 a/(13208:13208): id 0
+[INFO] 15:41:13:770 a/(13208:13208): contenido buenass-----------------------
+[INFO] 15:42:52:5 a/(13383:13383): Recibimos la informacion de la RAM
+[INFO] 15:42:52:5 a/(13383:13383): El codigo de operacion es: 14
+[INFO] 15:42:52:5 a/(13383:13383): El tamaño del paquete es 4
+[INFO] 15:42:52:5 a/(13383:13383): Tipo de asignacion es FIJA
+[INFO] 15:42:52:5 a/(13383:13383): Recibimos la informacion de la RAM
+[INFO] 15:42:52:5 a/(13383:13383): El codigo de operacion es: 11
+[INFO] 15:42:52:5 a/(13383:13383): El tamaño del paquete es 40
+[INFO] 15:42:52:5 a/(13383:13383): id 0
+[INFO] 15:42:52:5 a/(13383:13383): contenido buenass-----------------------
+[INFO] 15:46:21:70 a/(13569:13569): Recibimos la informacion de la RAM
+[INFO] 15:46:21:70 a/(13569:13569): El codigo de operacion es: 14
+[INFO] 15:46:21:70 a/(13569:13569): El tamaño del paquete es 4
+[INFO] 15:46:21:70 a/(13569:13569): Tipo de asignacion es FIJA
+[INFO] 15:46:21:71 a/(13569:13569): Recibimos la informacion de la RAM
+[INFO] 15:46:21:71 a/(13569:13569): El codigo de operacion es: 11
+[INFO] 15:46:21:71 a/(13569:13569): El tamaño del paquete es 40
+[INFO] 15:46:21:71 a/(13569:13569): id 0
+[INFO] 15:46:21:71 a/(13569:13569): contenido buenass-------------------------
+[INFO] 15:47:40:586 a/(13985:13985): Recibimos la informacion de la RAM
+[INFO] 15:47:40:587 a/(13985:13985): El codigo de operacion es: 14
+[INFO] 15:47:40:587 a/(13985:13985): El tamaño del paquete es 4
+[INFO] 15:47:40:587 a/(13985:13985): Tipo de asignacion es FIJA
+[INFO] 15:47:40:588 a/(13985:13985): Recibimos la informacion de la RAM
+[INFO] 15:47:40:588 a/(13985:13985): El codigo de operacion es: 11
+[INFO] 15:47:40:588 a/(13985:13985): El tamaño del paquete es 40
+[INFO] 15:47:40:588 a/(13985:13985): id 0
+[INFO] 15:47:40:588 a/(13985:13985): contenido buenass-------------------------
+[INFO] 15:49:06:961 a/(14078:14078): Recibimos la informacion de la RAM
+[INFO] 15:49:06:961 a/(14078:14078): El codigo de operacion es: 14
+[INFO] 15:49:06:962 a/(14078:14078): El tamaño del paquete es 4
+[INFO] 15:49:06:963 a/(14078:14078): Tipo de asignacion es FIJA
+[INFO] 15:49:06:966 a/(14078:14078): Recibimos la informacion de la RAM
+[INFO] 15:49:06:967 a/(14078:14078): El codigo de operacion es: 11
+[INFO] 15:49:06:968 a/(14078:14078): El tamaño del paquete es 40
+[INFO] 15:49:06:973 a/(14078:14078): id 0
+[INFO] 15:49:06:977 a/(14078:14078): contenido buenass-------------------------
+[INFO] 15:52:45:457 a/(14328:14328): Recibimos la informacion de la RAM
+[INFO] 15:52:45:457 a/(14328:14328): El codigo de operacion es: 14
+[INFO] 15:52:45:457 a/(14328:14328): El tamaño del paquete es 4
+[INFO] 15:52:45:457 a/(14328:14328): Tipo de asignacion es FIJA
+[INFO] 15:52:45:458 a/(14328:14328): Recibimos la informacion de la RAM
+[INFO] 15:52:45:458 a/(14328:14328): El codigo de operacion es: 11
+[INFO] 15:52:45:458 a/(14328:14328): El tamaño del paquete es 40
+[INFO] 15:52:45:458 a/(14328:14328): id 0
+[INFO] 15:52:45:458 a/(14328:14328): contenido buenass-------------------------
+[INFO] 16:01:39:692 a/(15063:15063): Recibimos la informacion de la RAM
+[INFO] 16:01:39:692 a/(15063:15063): El codigo de operacion es: 14
+[INFO] 16:01:39:692 a/(15063:15063): El tamaño del paquete es 4
+[INFO] 16:01:39:692 a/(15063:15063): Tipo de asignacion es FIJA
+[INFO] 16:01:39:692 a/(15063:15063): Recibimos la informacion de la RAM
+[INFO] 16:01:39:692 a/(15063:15063): El codigo de operacion es: 11
+[INFO] 16:01:39:692 a/(15063:15063): El tamaño del paquete es 40
+[INFO] 16:01:39:692 a/(15063:15063): id 0
+[INFO] 16:01:39:692 a/(15063:15063): contenido buenass--------------
+[INFO] 16:02:13:275 a/(15221:15221): Recibimos la informacion de la RAM
+[INFO] 16:02:13:275 a/(15221:15221): El codigo de operacion es: 14
+[INFO] 16:02:13:275 a/(15221:15221): El tamaño del paquete es 4
+[INFO] 16:02:13:275 a/(15221:15221): Tipo de asignacion es FIJA
+[INFO] 16:02:13:275 a/(15221:15221): Recibimos la informacion de la RAM
+[INFO] 16:02:13:275 a/(15221:15221): El codigo de operacion es: 11
+[INFO] 16:02:13:275 a/(15221:15221): El tamaño del paquete es 40
+[INFO] 16:02:13:275 a/(15221:15221): id 0
+[INFO] 16:02:13:275 a/(15221:15221): contenido buenass--------------

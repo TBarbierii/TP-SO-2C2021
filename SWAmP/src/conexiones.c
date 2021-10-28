@@ -58,12 +58,13 @@ int atender_mensaje_ram(int conexion) {
 
 	switch(paquete->codigo_operacion){
 
-        case ENVIAR_PAGINA:;
+        case RECIBIR_PAGINA:
 			atender_solicitud_pedido_de_pagina(paquete->buffer, conexion);
 			break;
 
-        case RECIBIR_PAGINA:;
-			recibir_pagina(paquete->buffer);
+        case ENVIAR_PAGINA:;
+			
+			recibir_pagina(paquete->buffer, logger_servidor);
 			notificar_escritura_de_pagina(conexion);
         	break;
 
@@ -112,21 +113,24 @@ uint32_t recibir_tipo_asignacion(t_buffer* buffer, t_log* logger) {
 	return tipo_asignacion;
 }
 
-void recibir_pagina(t_buffer* buffer) {
+void recibir_pagina(t_buffer* buffer, t_log *logger) {
 
 	void* data = buffer->stream;
-	void* contenido;
+	void* contenido = malloc(tamanio_pagina);
 	int desplazamiento = 0;
 	uint32_t id_pagina;
 	uint32_t PID;
 
 	memcpy(&(PID), data + desplazamiento, sizeof(uint32_t));
 	desplazamiento += sizeof(uint32_t);
+	
 	memcpy(&(id_pagina), data + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
-    memcpy(&(contenido), data + desplazamiento , tamanio_pagina);
+	log_info(logger, "id %i", id_pagina);
+    memcpy(contenido, data + desplazamiento , tamanio_pagina);
+	log_info(logger, "contenido %s", (char*)contenido);
 
-	escribirContenido(contenido, id_pagina, PID, logger_swamp);
+	escribirContenido(contenido, id_pagina, PID, logger);
 
 }
 
