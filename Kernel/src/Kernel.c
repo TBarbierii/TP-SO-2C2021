@@ -229,7 +229,7 @@ void finalizarDispositivosIO(){
 
 
 
-
+/*
 int main(){
 
     t_log* logger = log_create("cfg/KernelActual.log","KernelActual",0,LOG_LEVEL_INFO);
@@ -252,9 +252,9 @@ int main(){
     
 
     ejecutarDispositivosIO();
+  
     
-    
-/* toda la logica de los planificadores y del servidor */
+// toda la logica de los planificadores y del servidor 
     
     pthread_t servidor, pCortoPlazo, pLargoPlazo, pMedianoPlazo;
 		
@@ -269,7 +269,7 @@ int main(){
       pthread_join(pCortoPlazo,NULL);
       
      
-/* ------------------------------------------ */
+// ------------------------------------------ 
 
 
 
@@ -284,5 +284,6 @@ int main(){
 
     return 0;
 }
+*/
 
 

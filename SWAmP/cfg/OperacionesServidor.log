@@ -1,0 +1,80 @@
+[INFO] 13:49:29:763 a/(9757:9757): Recibimos la informacion de la RAM
+[INFO] 13:49:29:764 a/(9757:9757): El codigo de operacion es: 14
+[INFO] 13:49:29:767 a/(9757:9757): El tamaño del paquete es 4
+[INFO] 13:49:29:770 a/(9757:9757): Tipo de asignacion es FIJA
+[INFO] 13:51:42:838 a/(9905:9905): Recibimos la informacion de la RAM
+[INFO] 13:51:42:839 a/(9905:9905): El codigo de operacion es: 14
+[INFO] 13:51:42:839 a/(9905:9905): El tamaño del paquete es 4
+[INFO] 13:51:42:840 a/(9905:9905): Tipo de asignacion es FIJA
+[INFO] 13:52:46:205 a/(10098:10098): Recibimos la informacion de la RAM
+[INFO] 13:52:46:205 a/(10098:10098): El codigo de operacion es: 14
+[INFO] 13:52:46:206 a/(10098:10098): El tamaño del paquete es 4
+[INFO] 13:52:46:206 a/(10098:10098): Tipo de asignacion es DINAMICA
+[INFO] 13:54:04:333 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:04:333 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:04:334 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:04:335 a/(10548:10548): Tipo de asignacion es DINAMICA
+[INFO] 13:54:13:571 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:13:572 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:13:572 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:13:572 a/(10548:10548): Tipo de asignacion es DINAMICA
+[INFO] 13:54:16:030 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:16:030 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:16:030 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:16:030 a/(10548:10548): Tipo de asignacion es DINAMICA
+[INFO] 13:54:16:819 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:16:819 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:16:819 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:16:819 a/(10548:10548): Tipo de asignacion es DINAMICA
+[INFO] 13:54:17:453 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:17:453 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:17:453 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:17:453 a/(10548:10548): Tipo de asignacion es DINAMICA
+[INFO] 13:54:18:105 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:18:105 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:18:105 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:18:105 a/(10548:10548): Tipo de asignacion es DINAMICA
+[INFO] 13:54:18:698 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:18:698 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:18:698 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:18:699 a/(10548:10548): Tipo de asignacion es DINAMICA
+[INFO] 13:54:32:832 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:32:832 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:32:832 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:32:833 a/(10548:10548): Tipo de asignacion es FIJA
+[INFO] 13:54:34:009 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:34:010 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:34:010 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:34:010 a/(10548:10548): Tipo de asignacion es FIJA
+[INFO] 13:54:34:654 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:34:655 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:34:655 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:34:655 a/(10548:10548): Tipo de asignacion es FIJA
+[INFO] 13:54:45:262 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:45:262 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:45:263 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:45:263 a/(10548:10548): Tipo de asignacion es FIJA
+[INFO] 13:54:52:266 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:54:52:267 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:54:52:267 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:54:52:267 a/(10548:10548): Tipo de asignacion es FIJA
+[INFO] 13:55:04:231 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:55:04:231 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:55:04:231 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:55:04:232 a/(10548:10548): Tipo de asignacion es FIJA
+[INFO] 13:55:06:448 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:55:06:448 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:55:06:448 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:55:06:448 a/(10548:10548): Tipo de asignacion es FIJA
+[INFO] 13:55:30:587 a/(10548:10548): Recibimos la informacion de la RAM
+[INFO] 13:55:30:588 a/(10548:10548): El codigo de operacion es: 14
+[INFO] 13:55:30:588 a/(10548:10548): El tamaño del paquete es 4
+[INFO] 13:55:30:588 a/(10548:10548): Tipo de asignacion es DINAMICA
+[INFO] 13:59:02:268 a/(11188:11188): Recibimos la informacion de la RAM
+[INFO] 13:59:02:268 a/(11188:11188): El codigo de operacion es: 14
+[INFO] 13:59:02:269 a/(11188:11188): El tamaño del paquete es 4
+[INFO] 13:59:02:270 a/(11188:11188): Tipo de asignacion es DINAMICA
+[INFO] 13:59:15:931 a/(11188:11188): Recibimos la informacion de la RAM
+[INFO] 13:59:15:931 a/(11188:11188): El codigo de operacion es: 14
+[INFO] 13:59:15:931 a/(11188:11188): El tamaño del paquete es 4
+[INFO] 13:59:15:932 a/(11188:11188): Tipo de asignacion incorrecto wtf

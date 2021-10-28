@@ -5,8 +5,6 @@
 /* Inicializacion */
 void obtener_valores_config(t_config* config_actual, t_log* logger){
 
-   
-
     ip_swap = config_get_string_value(config_actual, "IP");
     puerto_swap = config_get_string_value(config_actual, "PUERTO");
     tamanio_swap = config_get_int_value(config_actual, "TAMANIO_SWAP");
@@ -216,13 +214,17 @@ void eliminarParticiones(t_list* listaParticiones){
     list_destroy(listaParticiones);
 }
 
-void escribirContenido(void* mensajeAEscribir, int pid, t_log* logger){
+void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger){
 
     /*aca vamos a verificar si hay un archivo donde se encuentre el pid, y sino vamos a buscar directamente el archivo con mas espacio */
     // Estaria bien utilizar list_get_maximum aca?
     //swap_files* archivo_swap = list_get_maximum(lista_swap_files, cantidad_frames_disponibles);
     
-    
+    swap_files* archivoAEscribir = primerSwapFileDisponible();
+
+    particion* particion_buscada = buscar_particion_libre_asignacion_dinamica(archivoAEscribir->path);
+
+    escribirContenidoSobreElArchivo(mensajeAEscribir, particion_buscada->num_particion, id_pagina, PID, archivoAEscribir->path, logger_swamp);
 
     //int tiene_paginas_en_swap_file = verificar_pid_en_swap_file(pid, archivo_swap->path);
 
@@ -268,7 +270,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagi
             return 0;
         }
 
-        printf("Sacar este printf");
+        printf("Sacar este printf\n");
 
         particion* particionAmodificar = list_find(archivoAEscribir->particiones_swap, buscarParticionDeseada);
 
@@ -309,7 +311,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagi
     
 }
 
-void leer_contenido(uint32_t PID, uint32_t id_pagina, t_log* logger) {
+void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logger) {
     
     swap_files* archivo_swap = encontrar_swap_file_en_base_a_pid(PID);
     if(archivo_swap == NULL) {
@@ -329,7 +331,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, t_log* logger) {
             return 0;
         }
 
-        printf("Sacar este printf");
+        printf("Sacar este printf\n");
 
         void* contenido_archivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
@@ -338,6 +340,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, t_log* logger) {
         if(particion_a_leer != NULL) {
             memcpy(contenido_a_leer, contenido_archivo + particion_a_leer->inicio_particion, tamanio_pagina);
             //log_info(logger, "El contenido leido es %s", contenido_a_leer);
+            enviar_pagina(contenido_a_leer, conexion);
             particion_a_leer->hay_contenido = 0;
             if(tipo_asignacion == 0) {
                 particion_a_leer->esta_libre = 1;
@@ -375,7 +378,7 @@ int pid_se_encuentra_en_particion(swap_files* archivo_swap, uint32_t PID) {
         return 0;
     }
 
-    printf("Sacar este printf");
+    printf("Sacar este printf\n");
 
     particion* particion_encontrada = list_find(archivo_swap->particiones_swap, se_encuentra_pid_en_particion);
 
