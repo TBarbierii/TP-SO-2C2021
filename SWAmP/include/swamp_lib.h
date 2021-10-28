@@ -8,6 +8,7 @@
 #include <commons/string.h>
 #include <stdbool.h>
 #include "shared_utils.h"
+#include "conexiones.h"
 #include <semaphore.h>
 #include <commons/collections/list.h>
 #include <fcntl.h>
@@ -42,9 +43,7 @@ t_log* logger_swamp;
 
 typedef struct {
     char* path;     
-
     t_list* particiones_swap;
-    
 }swap_files;
 
 typedef struct {
@@ -74,18 +73,21 @@ swap_files* encontrar_swap_file(char* path_swap);
 
 /*    Paginas    */
 int pagina_libre(particion*);
+void leer_contenido(uint32_t pid, uint32_t id_pagina, int conexion, t_log* logger);
 
 /*  Asignaciones  */
 void manejar_asignacion();
 
 /*   Auxiliares   */
 int verificar_pid_en_swap_file(uint32_t, char*);
+int pid_se_encuentra_en_particion(swap_files*, uint32_t);
+void* encontrar_swap_file_en_base_a_pid(uint32_t);
 
 /* Finalizacion */
 void eliminarParticiones(t_list* listaParticiones);
 void destruirArchivosSwapFiles();
 
-void escribirContenido();
+void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger);
 void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagina, int pid, char* nombreArchivo,t_log* logger);
 
 
