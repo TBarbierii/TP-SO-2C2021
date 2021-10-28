@@ -114,7 +114,7 @@ particion* buscar_particion_libre_asignacion_dinamica(char* path_swap) {
     swap_files* archivoBuscado = encontrar_swap_file(path_swap);
 
     if(archivoBuscado != NULL) {
-        log_info(logger_swamp, "Se encontro el archivo buscado");
+        //log_info(logger_swamp, "Se encontro el archivo buscado");
         particion* particion_nueva = list_find(archivoBuscado->particiones_swap, pagina_libre);
         if(particion_nueva != NULL) {
             return particion_nueva;
@@ -284,7 +284,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagi
             
             int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
             void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-            memcpy(contenidoArchivo + particionAmodificar->inicio_particion, mensajeAEscribir, size);
+            memcpy(contenidoArchivo /* + (particionAmodificar->inicio_particion)*/, contenido, tamanio_pagina);
             
 
             if(size < tamanio_pagina){

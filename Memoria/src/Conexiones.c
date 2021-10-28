@@ -98,7 +98,7 @@ uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del c
 	
 	uint32_t direccionLogica = administrar_allocs(alloc);
 
-
+	//devolver DL
 
 }
 
@@ -275,7 +275,7 @@ void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 	t_paquete *paquete = crear_paquete(ENVIAR_PAGINA);
 
-	paquete->buffer->size = sizeof(uint32_t) + tamanioPagina;
+	paquete->buffer->size = sizeof(uint32_t)*2 + tamanioPagina;
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	uint32_t desplazamiento=0;
 
