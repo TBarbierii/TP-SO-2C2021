@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "CarpinchOs"
+		},
+		{
+			"path": "Kernel"
+		},
+		{
+			"path": "MateLib"
+		},
+		{
+			"path": "Memoria"
+		},
+		{
+			"path": "shared"
+		},
+		{
+			"path": "SWAmP"
+		}
+	]
+}

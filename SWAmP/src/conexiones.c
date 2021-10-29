@@ -58,11 +58,11 @@ int atender_mensaje_ram(int conexion) {
 
 	switch(paquete->codigo_operacion){
 
-        case RECIBIR_PAGINA:
+        case LECTURA_PAGINA:
 			atender_solicitud_pedido_de_pagina(paquete->buffer, conexion);
 			break;
 
-        case ENVIAR_PAGINA:;
+        case ESCRITURA_PAGINA:;
 			
 			recibir_pagina(paquete->buffer, logger_servidor);
 			notificar_escritura_de_pagina(conexion);
@@ -128,7 +128,7 @@ void recibir_pagina(t_buffer* buffer, t_log *logger) {
     desplazamiento += sizeof(uint32_t);
 	log_info(logger, "id %i", id_pagina);
     memcpy(contenido, data + desplazamiento , tamanio_pagina);
-	log_info(logger, "contenido %s", (char*)contenido);
+	//log_info(logger, "contenido %s", (char*)contenido);
 
 	escribirContenido(contenido, id_pagina, PID, logger);
 
@@ -137,7 +137,7 @@ void recibir_pagina(t_buffer* buffer, t_log *logger) {
 
 void enviar_pagina(void* contenido, int conexion) {
 
-    t_paquete *paquete = crear_paquete(ENVIAR_PAGINA);
+    t_paquete *paquete = crear_paquete(LECTURA_PAGINA);
 
 	paquete->buffer->size = tamanio_pagina;
     paquete->buffer->stream = malloc(paquete->buffer->size);
@@ -166,7 +166,7 @@ void atender_solicitud_pedido_de_pagina(t_buffer* buffer, int conexion) {
 
 void notificar_escritura_de_pagina(int conexion) {
 
-	t_paquete *paquete = crear_paquete(RECIBIR_PAGINA);
+	t_paquete *paquete = crear_paquete(ESCRITURA_PAGINA);
 
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);

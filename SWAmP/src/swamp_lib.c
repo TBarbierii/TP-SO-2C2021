@@ -224,7 +224,7 @@ void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* lo
 
     particion* particion_buscada = buscar_particion_libre_asignacion_dinamica(archivoAEscribir->path);
 
-    escribirContenidoSobreElArchivo(mensajeAEscribir, particion_buscada->num_particion, id_pagina, PID, archivoAEscribir->path, logger_swamp);
+    escribirContenidoSobreElArchivo(mensajeAEscribir, particion_buscada->num_particion, id_pagina, PID, archivoAEscribir->path, logger);
 
     //int tiene_paginas_en_swap_file = verificar_pid_en_swap_file(pid, archivo_swap->path);
 
@@ -254,7 +254,7 @@ void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* lo
 
 
 
-void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagina, int pid, char* nombreArchivo,t_log* logger){
+void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagina, int pid, char* nombreArchivo, t_log* logger){
 
     swap_files* archivoAEscribir = encontrar_swap_file(nombreArchivo);
 
@@ -270,8 +270,6 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagi
             return 0;
         }
 
-        printf("Sacar este printf\n");
-
         particion* particionAmodificar = list_find(archivoAEscribir->particiones_swap, buscarParticionDeseada);
 
         if(particionAmodificar != NULL){
@@ -281,21 +279,24 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagi
             particionAmodificar->pid = pid;
             particionAmodificar->num_pagina = pagina;
 
+            log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
+            log_info(logger,"Se escribe sobre la particion: %i", particionAmodificar->num_particion);
             
             int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
+            truncate(archivoAEscribir->path, tamanio_swap);
             void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-            memcpy(contenidoArchivo /* + (particionAmodificar->inicio_particion)*/, contenido, tamanio_pagina);
-            
 
-            if(size < tamanio_pagina){
-                int cantidadRestante = tamanio_pagina - size;
-                for(int i=0; i < cantidadRestante-1; i++ ){
-                    char vacio = '-';
-                    memcpy(contenidoArchivo + particionAmodificar->inicio_particion + size + i, &(vacio), sizeof(char));
-                }
-                char separador = '\n';
-                memcpy(contenidoArchivo + particionAmodificar->inicio_particion + size + cantidadRestante-1, &(separador), sizeof(char));
-            }
+            if(size < tamanio_pagina){ //podria pasar que lo que nos manda memoria, ocupe menos tamaño que una pagina el contenido, por lo tanto vamos a guardar el tamaño solamente
+                
+                memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), contenido, size);
+            
+            }else{
+
+                memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), contenido, tamanio_pagina);
+                
+            }   
+
+
 
             munmap(contenidoArchivo, tamanio_swap);
             close(fd);

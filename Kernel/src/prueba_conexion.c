@@ -34,16 +34,41 @@ void enviar_tipo_asignacion(char* tipoAsignacion){//mandar al principio despues 
 	memcpy(paquete->buffer->stream + desplazamiento, &(tipo) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
-	uint32_t conexionSwamp = crear_conexion("127.0.0.1", "5001");
+	uint32_t conexionSwamp = crear_conexion("127.0.0.1", "4444");
 
 	enviarPaquete(paquete, conexionSwamp);
 
 
 }
 
+void enviadoPagina(uint32_t pid, uint32_t id_pagina, void* contenido){
+
+	t_paquete *paquete = crear_paquete(ESCRITURA_PAGINA);
+	int tamanioPagina =32;
+
+	paquete->buffer->size = sizeof(uint32_t)*2 + tamanioPagina;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+	memcpy(paquete->buffer->stream + desplazamiento, &(id_pagina) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+    memcpy(paquete->buffer->stream + desplazamiento, contenido , tamanioPagina);
+
+	uint32_t conexionSwamp = crear_conexion("127.0.0.1", "4444");
+
+	enviarPaquete(paquete, conexionSwamp);
+
+
+
+}
+
+
 int main() {
 
     enviar_tipo_asignacion("SANTIVERGAS");
+	enviadoPagina(1,1,"ASD");
     
     return 0;
 }

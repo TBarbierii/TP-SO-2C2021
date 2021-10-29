@@ -9,6 +9,11 @@ void inicializarListas(){
     marcos = list_create();
 }
 
+void finalizarListas(){
+    list_destroy(carpinchos);
+    list_destroy(marcos);
+}
+
 void obtenerValoresDelConfig(t_config* configActual){
 
     ip = config_get_string_value(configActual, "IP");
@@ -46,7 +51,23 @@ void inicializarTodo(){
     id_marco = 0;
 }
 
+void finalizarTodo(t_config* configActual){
+   
+    finalizarConfig(configActual);
+    finalizarMemoria();
+    finalizarListas();
+    pthread_mutex_destroy(listaCarpinchos);
+    free(listaCarpinchos);
+    
+}
+
 void finalizarMemoria() {
+    while(!list_is_empty(marcos)){
+        t_marco* marcoARemover = list_remove(marcos, 0);
+        free(marcoARemover);
+    }
+    free(memoriaPrincipal);
+
 }
 
 int main(){
@@ -56,11 +77,11 @@ int main(){
     inicializarTodo();
     inicializarMemoria();
 
-    //enviar_tipo_asignacion(tipoAsignacion);
-    //enviar_pagina(0, 0, "buenass--------------");
+    enviar_tipo_asignacion(tipoAsignacion);
+    enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
     //atender_solicitudes_multihilo();
-
+/* 
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     alloc->pid = 8;
     alloc->tamanio = 70;
@@ -145,8 +166,8 @@ list_add(carpinchos, carpincho);
     printf("\nSe leyo: %s", (char*)hola2);
     printf("\nSe leyo: %s\n", (char*)hola3);
 
-
-    finalizarConfig(configActual);
+*/
+    finalizarTodo(configActual);
     return 0;
 }
 

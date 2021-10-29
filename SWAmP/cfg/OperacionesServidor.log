@@ -305,3 +305,294 @@
 [INFO] 16:02:13:275 a/(15221:15221): El tamaño del paquete es 40
 [INFO] 16:02:13:275 a/(15221:15221): id 0
 [INFO] 16:02:13:275 a/(15221:15221): contenido buenass--------------
+[INFO] 14:54:54:167 a/(4837:4837): Recibimos la informacion de la RAM
+[INFO] 14:54:54:167 a/(4837:4837): El codigo de operacion es: 14
+[INFO] 14:54:54:168 a/(4837:4837): El tamaño del paquete es 4
+[INFO] 14:54:54:169 a/(4837:4837): Tipo de asignacion incorrecto wtf
+[INFO] 14:58:13:807 a/(4837:4837): Recibimos la informacion de la RAM
+[INFO] 14:58:13:808 a/(4837:4837): El codigo de operacion es: 14
+[INFO] 14:58:13:808 a/(4837:4837): El tamaño del paquete es 4
+[INFO] 14:58:13:808 a/(4837:4837): Tipo de asignacion incorrecto wtf
+[INFO] 14:58:13:822 a/(4837:4837): Recibimos la informacion de la RAM
+[INFO] 14:58:13:822 a/(4837:4837): El codigo de operacion es: 11
+[INFO] 14:58:13:822 a/(4837:4837): El tamaño del paquete es 40
+[INFO] 14:58:13:823 a/(4837:4837): id 1
+[INFO] 14:58:13:825 a/(4837:4837): contenido ASD
+[INFO] 15:02:45:456 a/(5661:5661): Recibimos la informacion de la RAM
+[INFO] 15:02:45:457 a/(5661:5661): El codigo de operacion es: 14
+[INFO] 15:02:45:457 a/(5661:5661): El tamaño del paquete es 4
+[INFO] 15:02:45:459 a/(5661:5661): Tipo de asignacion incorrecto wtf
+[INFO] 15:02:45:481 a/(5661:5661): Recibimos la informacion de la RAM
+[INFO] 15:02:45:482 a/(5661:5661): El codigo de operacion es: 11
+[INFO] 15:02:45:483 a/(5661:5661): El tamaño del paquete es 40
+[INFO] 15:02:45:485 a/(5661:5661): id 1
+[INFO] 15:02:45:494 a/(5661:5661): contenido ASD
+[INFO] 15:02:59:856 a/(5661:5661): Recibimos la informacion de la RAM
+[INFO] 15:02:59:857 a/(5661:5661): El codigo de operacion es: 14
+[INFO] 15:02:59:857 a/(5661:5661): El tamaño del paquete es 4
+[INFO] 15:02:59:857 a/(5661:5661): Tipo de asignacion incorrecto wtf
+[INFO] 15:02:59:873 a/(5661:5661): Recibimos la informacion de la RAM
+[INFO] 15:02:59:873 a/(5661:5661): El codigo de operacion es: 11
+[INFO] 15:02:59:875 a/(5661:5661): El tamaño del paquete es 40
+[INFO] 15:02:59:876 a/(5661:5661): id 1
+[INFO] 15:02:59:877 a/(5661:5661): contenido ASD
+[INFO] 15:04:13:883 a/(5854:5854): Recibimos la informacion de la RAM
+[INFO] 15:04:13:884 a/(5854:5854): El codigo de operacion es: 14
+[INFO] 15:04:13:884 a/(5854:5854): El tamaño del paquete es 4
+[INFO] 15:04:13:886 a/(5854:5854): Tipo de asignacion incorrecto wtf
+[INFO] 15:04:13:910 a/(5854:5854): Recibimos la informacion de la RAM
+[INFO] 15:04:13:910 a/(5854:5854): El codigo de operacion es: 11
+[INFO] 15:04:13:911 a/(5854:5854): El tamaño del paquete es 40
+[INFO] 15:04:13:912 a/(5854:5854): id 1
+[INFO] 15:04:13:914 a/(5854:5854): contenido ASD
+[INFO] 15:05:29:919 a/(5946:5946): Recibimos la informacion de la RAM
+[INFO] 15:05:29:920 a/(5946:5946): El codigo de operacion es: 14
+[INFO] 15:05:29:921 a/(5946:5946): El tamaño del paquete es 4
+[INFO] 15:05:29:922 a/(5946:5946): Tipo de asignacion incorrecto wtf
+[INFO] 15:05:29:944 a/(5946:5946): Recibimos la informacion de la RAM
+[INFO] 15:05:29:945 a/(5946:5946): El codigo de operacion es: 11
+[INFO] 15:05:29:947 a/(5946:5946): El tamaño del paquete es 40
+[INFO] 15:05:29:949 a/(5946:5946): id 1
+[INFO] 15:05:29:954 a/(5946:5946): contenido ASD
+[INFO] 15:11:03:952 a/(6198:6198): Recibimos la informacion de la RAM
+[INFO] 15:11:03:954 a/(6198:6198): El codigo de operacion es: 14
+[INFO] 15:11:03:959 a/(6198:6198): El tamaño del paquete es 4
+[INFO] 15:11:03:961 a/(6198:6198): Tipo de asignacion incorrecto wtf
+[INFO] 15:11:03:981 a/(6198:6198): Recibimos la informacion de la RAM
+[INFO] 15:11:03:982 a/(6198:6198): El codigo de operacion es: 11
+[INFO] 15:11:03:983 a/(6198:6198): El tamaño del paquete es 40
+[INFO] 15:11:03:985 a/(6198:6198): id 1
+[INFO] 15:11:03:992 a/(6198:6198): contenido ASD
+[INFO] 15:12:28:293 a/(6475:6475): Recibimos la informacion de la RAM
+[INFO] 15:12:28:294 a/(6475:6475): El codigo de operacion es: 14
+[INFO] 15:12:28:297 a/(6475:6475): El tamaño del paquete es 4
+[INFO] 15:12:28:299 a/(6475:6475): Tipo de asignacion incorrecto wtf
+[INFO] 15:12:28:332 a/(6475:6475): Recibimos la informacion de la RAM
+[INFO] 15:12:28:333 a/(6475:6475): El codigo de operacion es: 11
+[INFO] 15:12:28:333 a/(6475:6475): El tamaño del paquete es 40
+[INFO] 15:12:28:335 a/(6475:6475): id 1
+[INFO] 15:12:28:338 a/(6475:6475): contenido ASD
+[INFO] 15:14:11:249 a/(6620:6620): Recibimos la informacion de la RAM
+[INFO] 15:14:11:249 a/(6620:6620): El codigo de operacion es: 14
+[INFO] 15:14:11:250 a/(6620:6620): El tamaño del paquete es 4
+[INFO] 15:14:11:251 a/(6620:6620): Tipo de asignacion incorrecto wtf
+[INFO] 15:14:11:275 a/(6620:6620): Recibimos la informacion de la RAM
+[INFO] 15:14:11:276 a/(6620:6620): El codigo de operacion es: 11
+[INFO] 15:14:11:276 a/(6620:6620): El tamaño del paquete es 40
+[INFO] 15:14:11:277 a/(6620:6620): id 1
+[INFO] 15:15:57:201 a/(6723:6723): Recibimos la informacion de la RAM
+[INFO] 15:15:57:202 a/(6723:6723): El codigo de operacion es: 14
+[INFO] 15:15:57:203 a/(6723:6723): El tamaño del paquete es 4
+[INFO] 15:15:57:204 a/(6723:6723): Tipo de asignacion incorrecto wtf
+[INFO] 15:15:57:226 a/(6723:6723): Recibimos la informacion de la RAM
+[INFO] 15:15:57:226 a/(6723:6723): El codigo de operacion es: 11
+[INFO] 15:15:57:226 a/(6723:6723): El tamaño del paquete es 40
+[INFO] 15:15:57:227 a/(6723:6723): id 1
+[INFO] 15:17:33:973 a/(6936:6936): Recibimos la informacion de la RAM
+[INFO] 15:17:33:973 a/(6936:6936): El codigo de operacion es: 14
+[INFO] 15:17:33:974 a/(6936:6936): El tamaño del paquete es 4
+[INFO] 15:17:33:975 a/(6936:6936): Tipo de asignacion incorrecto wtf
+[INFO] 15:17:33:993 a/(6936:6936): Recibimos la informacion de la RAM
+[INFO] 15:17:33:993 a/(6936:6936): El codigo de operacion es: 11
+[INFO] 15:17:33:994 a/(6936:6936): El tamaño del paquete es 40
+[INFO] 15:17:33:996 a/(6936:6936): id 1
+[INFO] 15:17:36:784 a/(6936:6936): Recibimos la informacion de la RAM
+[INFO] 15:17:36:784 a/(6936:6936): El codigo de operacion es: 14
+[INFO] 15:17:36:784 a/(6936:6936): El tamaño del paquete es 4
+[INFO] 15:17:36:785 a/(6936:6936): Tipo de asignacion incorrecto wtf
+[INFO] 15:17:36:806 a/(6936:6936): Recibimos la informacion de la RAM
+[INFO] 15:17:36:806 a/(6936:6936): El codigo de operacion es: 11
+[INFO] 15:17:36:807 a/(6936:6936): El tamaño del paquete es 40
+[INFO] 15:17:36:807 a/(6936:6936): id 1
+[INFO] 15:17:51:262 a/(6936:6936): Recibimos la informacion de la RAM
+[INFO] 15:17:51:263 a/(6936:6936): El codigo de operacion es: 14
+[INFO] 15:17:51:263 a/(6936:6936): El tamaño del paquete es 4
+[INFO] 15:17:51:263 a/(6936:6936): Tipo de asignacion incorrecto wtf
+[INFO] 15:17:51:289 a/(6936:6936): Recibimos la informacion de la RAM
+[INFO] 15:17:51:290 a/(6936:6936): El codigo de operacion es: 11
+[INFO] 15:17:51:290 a/(6936:6936): El tamaño del paquete es 40
+[INFO] 15:17:51:290 a/(6936:6936): id 1
+[INFO] 15:17:53:895 a/(6936:6936): Recibimos la informacion de la RAM
+[INFO] 15:17:53:895 a/(6936:6936): El codigo de operacion es: 14
+[INFO] 15:17:53:896 a/(6936:6936): El tamaño del paquete es 4
+[INFO] 15:17:53:896 a/(6936:6936): Tipo de asignacion incorrecto wtf
+[INFO] 15:17:53:919 a/(6936:6936): Recibimos la informacion de la RAM
+[INFO] 15:17:53:919 a/(6936:6936): El codigo de operacion es: 11
+[INFO] 15:17:53:919 a/(6936:6936): El tamaño del paquete es 40
+[INFO] 15:17:53:920 a/(6936:6936): id 1
+[INFO] 15:22:31:484 a/(7235:7235): Recibimos la informacion de la RAM
+[INFO] 15:22:31:485 a/(7235:7235): El codigo de operacion es: 14
+[INFO] 15:22:31:486 a/(7235:7235): El tamaño del paquete es 4
+[INFO] 15:22:31:487 a/(7235:7235): Tipo de asignacion incorrecto wtf
+[INFO] 15:22:31:509 a/(7235:7235): Recibimos la informacion de la RAM
+[INFO] 15:22:31:509 a/(7235:7235): El codigo de operacion es: 11
+[INFO] 15:22:31:509 a/(7235:7235): El tamaño del paquete es 40
+[INFO] 15:22:31:511 a/(7235:7235): id 1
+[INFO] 15:22:31:548 a/(7235:7235): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:22:31:556 a/(7235:7235): Se escribe sobre la particion: 0
+[INFO] 15:22:31:585 a/(7235:7235): Se guardo el contenido correctamente
+[INFO] 15:22:35:548 a/(7235:7235): Recibimos la informacion de la RAM
+[INFO] 15:22:35:548 a/(7235:7235): El codigo de operacion es: 14
+[INFO] 15:22:35:549 a/(7235:7235): El tamaño del paquete es 4
+[INFO] 15:22:35:549 a/(7235:7235): Tipo de asignacion incorrecto wtf
+[INFO] 15:22:35:565 a/(7235:7235): Recibimos la informacion de la RAM
+[INFO] 15:22:35:565 a/(7235:7235): El codigo de operacion es: 11
+[INFO] 15:22:35:565 a/(7235:7235): El tamaño del paquete es 40
+[INFO] 15:22:35:566 a/(7235:7235): id 1
+[INFO] 15:22:35:567 a/(7235:7235): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:22:35:568 a/(7235:7235): Se escribe sobre la particion: 32
+[INFO] 15:22:35:575 a/(7235:7235): Se guardo el contenido correctamente
+[INFO] 15:23:02:244 a/(7235:7235): Recibimos la informacion de la RAM
+[INFO] 15:23:02:244 a/(7235:7235): El codigo de operacion es: 14
+[INFO] 15:23:02:244 a/(7235:7235): El tamaño del paquete es 4
+[INFO] 15:23:02:245 a/(7235:7235): Tipo de asignacion incorrecto wtf
+[INFO] 15:23:02:260 a/(7235:7235): Recibimos la informacion de la RAM
+[INFO] 15:23:02:260 a/(7235:7235): El codigo de operacion es: 11
+[INFO] 15:23:02:261 a/(7235:7235): El tamaño del paquete es 40
+[INFO] 15:23:02:261 a/(7235:7235): id 1
+[INFO] 15:23:02:262 a/(7235:7235): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:23:02:262 a/(7235:7235): Se escribe sobre la particion: 64
+[INFO] 15:23:02:263 a/(7235:7235): Se guardo el contenido correctamente
+[INFO] 15:24:45:097 a/(7458:7458): Recibimos la informacion de la RAM
+[INFO] 15:24:45:097 a/(7458:7458): El codigo de operacion es: 14
+[INFO] 15:24:45:098 a/(7458:7458): El tamaño del paquete es 4
+[INFO] 15:24:45:099 a/(7458:7458): Tipo de asignacion incorrecto wtf
+[INFO] 15:24:45:121 a/(7458:7458): Recibimos la informacion de la RAM
+[INFO] 15:24:45:121 a/(7458:7458): El codigo de operacion es: 11
+[INFO] 15:24:45:122 a/(7458:7458): El tamaño del paquete es 40
+[INFO] 15:24:45:123 a/(7458:7458): id 1
+[INFO] 15:24:45:156 a/(7458:7458): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:24:45:166 a/(7458:7458): Se escribe sobre la particion: 0
+[INFO] 15:24:45:192 a/(7458:7458): Se guardo el contenido correctamente
+[INFO] 15:24:51:298 a/(7458:7458): Recibimos la informacion de la RAM
+[INFO] 15:24:51:299 a/(7458:7458): El codigo de operacion es: 14
+[INFO] 15:24:51:299 a/(7458:7458): El tamaño del paquete es 4
+[INFO] 15:24:51:299 a/(7458:7458): Tipo de asignacion incorrecto wtf
+[INFO] 15:24:51:318 a/(7458:7458): Recibimos la informacion de la RAM
+[INFO] 15:24:51:318 a/(7458:7458): El codigo de operacion es: 11
+[INFO] 15:24:51:318 a/(7458:7458): El tamaño del paquete es 40
+[INFO] 15:24:51:319 a/(7458:7458): id 1
+[INFO] 15:24:51:320 a/(7458:7458): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:24:51:321 a/(7458:7458): Se escribe sobre la particion: 1
+[INFO] 15:24:51:328 a/(7458:7458): Se guardo el contenido correctamente
+[INFO] 15:24:53:579 a/(7458:7458): Recibimos la informacion de la RAM
+[INFO] 15:24:53:579 a/(7458:7458): El codigo de operacion es: 14
+[INFO] 15:24:53:580 a/(7458:7458): El tamaño del paquete es 4
+[INFO] 15:24:53:580 a/(7458:7458): Tipo de asignacion incorrecto wtf
+[INFO] 15:24:53:600 a/(7458:7458): Recibimos la informacion de la RAM
+[INFO] 15:24:53:600 a/(7458:7458): El codigo de operacion es: 11
+[INFO] 15:24:53:600 a/(7458:7458): El tamaño del paquete es 40
+[INFO] 15:24:53:601 a/(7458:7458): id 1
+[INFO] 15:24:53:602 a/(7458:7458): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:24:53:602 a/(7458:7458): Se escribe sobre la particion: 2
+[INFO] 15:24:53:609 a/(7458:7458): Se guardo el contenido correctamente
+[INFO] 15:27:13:469 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:27:13:469 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:27:13:470 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:27:13:471 a/(7693:7693): Tipo de asignacion incorrecto wtf
+[INFO] 15:27:13:492 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:27:13:493 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:27:13:493 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:27:13:495 a/(7693:7693): id 1
+[INFO] 15:27:13:539 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:27:13:542 a/(7693:7693): Se escribe sobre la particion: 0
+[INFO] 15:27:13:548 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:27:15:920 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:27:15:920 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:27:15:921 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:27:15:921 a/(7693:7693): Tipo de asignacion incorrecto wtf
+[INFO] 15:27:15:936 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:27:15:937 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:27:15:937 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:27:15:937 a/(7693:7693): id 1
+[INFO] 15:27:15:939 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:27:15:939 a/(7693:7693): Se escribe sobre la particion: 1
+[INFO] 15:27:15:940 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:27:30:445 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:27:30:445 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:27:30:446 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:27:30:446 a/(7693:7693): Tipo de asignacion incorrecto wtf
+[INFO] 15:27:30:462 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:27:30:462 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:27:30:462 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:27:30:462 a/(7693:7693): id 1
+[INFO] 15:27:30:465 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:27:30:465 a/(7693:7693): Se escribe sobre la particion: 2
+[INFO] 15:27:30:473 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:31:01:956 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:31:01:956 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:31:01:957 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:31:01:957 a/(7693:7693): Tipo de asignacion es FIJA
+[INFO] 15:31:01:970 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:31:01:971 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:31:01:971 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:31:01:971 a/(7693:7693): id 0
+[INFO] 15:31:01:973 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:31:01:973 a/(7693:7693): Se escribe sobre la particion: 3
+[INFO] 15:31:01:974 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:39:06:479 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:39:06:479 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:39:06:480 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:39:06:480 a/(7693:7693): Tipo de asignacion es FIJA
+[INFO] 15:39:06:495 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:39:06:496 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:39:06:496 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:39:06:496 a/(7693:7693): id 0
+[INFO] 15:39:06:498 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:39:06:498 a/(7693:7693): Se escribe sobre la particion: 4
+[INFO] 15:39:06:498 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:41:06:900 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:41:06:900 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:41:06:900 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:41:06:901 a/(7693:7693): Tipo de asignacion es FIJA
+[INFO] 15:41:06:914 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:41:06:914 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:41:06:915 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:41:06:915 a/(7693:7693): id 0
+[INFO] 15:41:06:916 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:41:06:917 a/(7693:7693): Se escribe sobre la particion: 5
+[INFO] 15:41:06:917 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:42:40:924 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:42:40:924 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:42:40:925 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:42:40:925 a/(7693:7693): Tipo de asignacion es FIJA
+[INFO] 15:42:40:945 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:42:40:945 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:42:40:946 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:42:40:946 a/(7693:7693): id 0
+[INFO] 15:42:40:947 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:42:40:948 a/(7693:7693): Se escribe sobre la particion: 6
+[INFO] 15:42:40:948 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:42:49:131 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:42:49:131 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:42:49:132 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:42:49:132 a/(7693:7693): Tipo de asignacion es FIJA
+[INFO] 15:42:49:155 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:42:49:156 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:42:49:156 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:42:49:156 a/(7693:7693): id 0
+[INFO] 15:42:49:158 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:42:49:158 a/(7693:7693): Se escribe sobre la particion: 7
+[INFO] 15:42:49:158 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:43:53:227 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:43:53:227 a/(7693:7693): El codigo de operacion es: 14
+[INFO] 15:43:53:227 a/(7693:7693): El tamaño del paquete es 4
+[INFO] 15:43:53:227 a/(7693:7693): Tipo de asignacion es FIJA
+[INFO] 15:43:53:240 a/(7693:7693): Recibimos la informacion de la RAM
+[INFO] 15:43:53:240 a/(7693:7693): El codigo de operacion es: 11
+[INFO] 15:43:53:241 a/(7693:7693): El tamaño del paquete es 40
+[INFO] 15:43:53:241 a/(7693:7693): id 0
+[INFO] 15:43:53:243 a/(7693:7693): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:43:53:243 a/(7693:7693): Se escribe sobre la particion: 8
+[INFO] 15:43:53:244 a/(7693:7693): Se guardo el contenido correctamente
+[INFO] 15:58:38:879 a/(10003:10003): Recibimos la informacion de la RAM
+[INFO] 15:58:38:879 a/(10003:10003): El codigo de operacion es: 13
+[INFO] 15:58:38:880 a/(10003:10003): El tamaño del paquete es 4
+[INFO] 15:58:38:882 a/(10003:10003): Tipo de asignacion es FIJA
+[INFO] 15:58:38:907 a/(10003:10003): Recibimos la informacion de la RAM
+[INFO] 15:58:38:907 a/(10003:10003): El codigo de operacion es: 11
+[INFO] 15:58:38:907 a/(10003:10003): El tamaño del paquete es 40
+[INFO] 15:58:38:909 a/(10003:10003): id 0
+[INFO] 15:58:38:994 a/(10003:10003): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 15:58:39:004 a/(10003:10003): Se escribe sobre la particion: 0
+[INFO] 15:58:39:015 a/(10003:10003): Se guardo el contenido correctamente

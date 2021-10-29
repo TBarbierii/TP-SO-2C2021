@@ -12,4 +12,4 @@ uint32_t recibir_memwrite(int, t_log*);
 uint32_t cerrar_carpincho(uint32_t,t_log*);
 void enviar_tipo_asignacion(char*);
 void enviar_pagina(uint32_t,uint32_t, void*);
-void pedir_pagina(uint32_t);
+void pedir_pagina(uint32_t id_pagina, uint32_t pid);

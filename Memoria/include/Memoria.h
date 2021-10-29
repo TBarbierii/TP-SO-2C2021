@@ -134,15 +134,23 @@ t_list* marcos;
 
 t_config* inicializarConfig();
 void inicializarListas();
+void finalizarListas();
+void obtenerValoresDelConfig(t_config* configActual);
+void finalizarConfig(t_config* configUsado);
+void inicializarMemoria();
+void inicializarTodo();
+void finalizarTodo(t_config* configActual);
+void finalizarMemoria();
+
 uint32_t administrar_allocs(t_memalloc*);
 uint32_t buscar_o_agregar_espacio(t_carpincho* , uint32_t );
 uint32_t administrar_paginas(t_carpincho* , uint32_t );
 void* generar_stream_allocs(t_carpincho* );
 void escribir_marcos(t_list* , t_carpincho* );
 uint32_t asignarPaginas(t_carpincho* );
-void finalizarConfig(t_config* configUsado);
-void obtenerValoresDelConfig(t_config* configActual);
-void inicializarMemoria();
+
+
+
 void crear_marcos();
 void liberarMemoria();
 void enviarInformacionAdministrativaDelProceso(t_carpincho* carpincho);
@@ -153,7 +161,7 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 
 void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido);
 
-void pedir_pagina(uint32_t id_pagina);
+void pedir_pagina(uint32_t id_pagina, uint32_t pid);
 
 uint32_t asignarPaginas(t_carpincho*);
 

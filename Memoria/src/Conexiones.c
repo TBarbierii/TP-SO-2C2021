@@ -273,7 +273,7 @@ void enviar_tipo_asignacion(char* tipoAsignacion){//mandar al principio despues 
 
 void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
-	t_paquete *paquete = crear_paquete(ENVIAR_PAGINA);
+	t_paquete *paquete = crear_paquete(ESCRITURA_PAGINA);
 
 	paquete->buffer->size = sizeof(uint32_t)*2 + tamanioPagina;
     paquete->buffer->stream = malloc(paquete->buffer->size);
@@ -293,18 +293,20 @@ void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 }
 
-void pedir_pagina(uint32_t id_pagina){
+void pedir_pagina(uint32_t id_pagina, uint32_t pid){
 
 	uint32_t size;
 
-	t_paquete *paquete = crear_paquete(ENVIAR_PAGINA);
+	t_paquete *paquete = crear_paquete(LECTURA_PAGINA);
 
-	paquete->buffer->size = sizeof(uint32_t);
+	paquete->buffer->size = sizeof(uint32_t)*2;
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	uint32_t desplazamiento=0;
-
+	
+	memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
 	memcpy(paquete->buffer->stream + desplazamiento, &(id_pagina) , sizeof(uint32_t));
-    desplazamiento += sizeof(uint32_t);
+    
 
 	uint32_t conexionSwamp = crear_conexion(ipSWAmP, puertoSWAmP);
 
