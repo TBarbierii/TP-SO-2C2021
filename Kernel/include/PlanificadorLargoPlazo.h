@@ -9,11 +9,12 @@
 #include <commons/config.h>
 #include "Kernel.h"
 #include <semaphore.h>
-
+#include "Servidor.h"
 
 
 /* funciones */
 
 void planificadorLargoPlazo();
+void liberarProceso(proceso_kernel* procesoActual);
 
 #endif

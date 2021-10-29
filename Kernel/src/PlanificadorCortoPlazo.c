@@ -11,19 +11,19 @@ void rutinaDeProceso(proceso_kernel* procesoEjecutando){
         log_info(logger, "Se ejecuto tarea de conexion");
         int codigoOperacion = atenderMensajeEnKernel(procesoEjecutando->conexion);
         log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
+
         if(rompoElHiloSegunElCodigo(codigoOperacion) == 1){
 
             log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo");
             clock_t finEjecucion = clock();
             procesoEjecutando->ultimaRafagaEjecutada = (double)(finEjecucion - arranqueEjecucion) / CLOCKS_PER_SEC;
             calcularEstimacion(procesoEjecutando); //aaca calculo la ultima estimacion nueva en base a la ultima rafaga ejecutada
+            sem_post(nivelMultiprocesamiento);
             break;
 
         }else if(rompoElHiloSegunElCodigo(codigoOperacion) == 2){
             
             log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho");
-            sem_post(nivelMultiProgramacionGeneral);
-            sem_post(nivelMultiprocesamiento);
             break;
 
         }

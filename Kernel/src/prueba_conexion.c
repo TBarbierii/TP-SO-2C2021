@@ -64,7 +64,7 @@ void enviadoPagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 }
 
-
+/*
 int main() {
 
     enviar_tipo_asignacion("FIJA");
@@ -72,3 +72,4 @@ int main() {
     
     return 0;
 }
+ */

@@ -10,7 +10,7 @@
 #include "Kernel.h"
 #include "Semaforos.h"
 #include "DispositivosIO.h"
-
+#include "PlanificadorLargoPlazo.h"
 
 void atenderSolicitudesKernel();
 int atenderMensajeEnKernel(int conexion);

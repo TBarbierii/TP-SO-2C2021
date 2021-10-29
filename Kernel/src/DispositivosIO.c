@@ -104,6 +104,7 @@ void agregarProcesoADispositivo(proceso_kernel* proceso, dispositivoIO* device){
 
     pthread_mutex_lock(modificarBlocked);
         list_add(procesosBlocked,proceso);
+        sem_post(signalSuspensionProceso);
     pthread_mutex_unlock(modificarBlocked);
 
     log_info(loggerDevicesIO,"Agregamos al proceso en bloqueo y en el dispositivo: %s", device->nombre);

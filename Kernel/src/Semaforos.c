@@ -198,6 +198,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             /* agregamos al proceso en la lista de bloqueados */
             pthread_mutex_lock(modificarBlocked);
             list_add(procesosBlocked,procesoLiberado);
+            sem_post(signalSuspensionProceso);
             pthread_mutex_unlock(modificarBlocked);
 
             

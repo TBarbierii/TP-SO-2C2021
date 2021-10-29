@@ -168,11 +168,8 @@ void cerrarProceso(t_buffer* bufferActual,t_log* logger){
 	sem_post(nivelMultiprocesamiento); //aumento el grado de multiprogramacion y multiprocesamiento
 	sem_post(nivelMultiProgramacionGeneral);
 
-	
-
-	log_info(logger,"Se nos va el carpincho: %d", procesoActual->pid);
-	free(procesoActual); //libero la estructura, nose si el clock que tiene se libera o que onda...
-
+	/* esta funcion de liberar al proceso lo hace el planificador de largo plazo digamos... */
+	liberarProceso(procesoActual);
 }
 
 

@@ -1,5 +1,14 @@
-[DEBUG] 21:59:15:799 PlanificadorMedianoPlazo/(7532:7541): Se inicializa la planificacion de mediano plazo
-[DEBUG] 21:59:15:802 PlanificadorMedianoPlazo/(7532:7542): Incializado el thread que permite suspender procesos para evitar IO bound
-[DEBUG] 21:59:15:803 PlanificadorMedianoPlazo/(7532:7543): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[INFO] 21:59:18:249 PlanificadorMedianoPlazo/(7532:7543): Se busca un proceso de new
-[INFO] 21:59:20:050 PlanificadorMedianoPlazo/(7532:7543): Se busca un proceso de new
+[DEBUG] 18:52:12:003 PlanificadorMedianoPlazo/(11838:11848): Se inicializa la planificacion de mediano plazo
+[DEBUG] 18:52:12:005 PlanificadorMedianoPlazo/(11838:11849): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 18:52:12:006 PlanificadorMedianoPlazo/(11838:11850): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[INFO] 18:52:19:874 PlanificadorMedianoPlazo/(11838:11850): Se busca un proceso de new
+[INFO] 18:53:11:339 PlanificadorMedianoPlazo/(11838:11850): Se busca un proceso de new
+[DEBUG] 18:56:31:124 PlanificadorMedianoPlazo/(12228:12244): Se inicializa la planificacion de mediano plazo
+[DEBUG] 18:56:31:127 PlanificadorMedianoPlazo/(12228:12246): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 18:56:31:128 PlanificadorMedianoPlazo/(12228:12245): Incializado el thread que permite suspender procesos para evitar IO bound
+[INFO] 18:56:57:512 PlanificadorMedianoPlazo/(12228:12246): Se busca un proceso de new
+[DEBUG] 18:58:29:518 PlanificadorMedianoPlazo/(12448:12459): Se inicializa la planificacion de mediano plazo
+[DEBUG] 18:58:29:520 PlanificadorMedianoPlazo/(12448:12460): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 18:58:29:520 PlanificadorMedianoPlazo/(12448:12461): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[INFO] 18:58:32:416 PlanificadorMedianoPlazo/(12448:12461): Se busca un proceso de new
+[INFO] 18:58:57:168 PlanificadorMedianoPlazo/(12448:12461): Se busca un proceso de new

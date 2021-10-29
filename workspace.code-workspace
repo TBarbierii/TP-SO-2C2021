@@ -18,5 +18,10 @@
 		{
 			"path": "SWAmP"
 		}
-	]
+	],
+	"settings": {
+		"files.associations": {
+			"planificadorlargoplazo.h": "c"
+		}
+	}
 }
