@@ -81,14 +81,24 @@ void manejar_asignacion();
 /*   Auxiliares   */
 int verificar_pid_en_swap_file(uint32_t, char*);
 int pid_se_encuentra_en_particion(swap_files*, uint32_t);
-void* encontrar_swap_file_en_base_a_pid(uint32_t);
+swap_files* encontrar_swap_file_en_base_a_pid(uint32_t);
 
 /* Finalizacion */
 void eliminarParticiones(t_list* listaParticiones);
 void destruirArchivosSwapFiles();
 
 void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger);
-void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagina, int pid, char* nombreArchivo,t_log* logger);
+void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid, char* nombreArchivo, t_log* logger);
+
+/* ESCRITURA DE PAGINAS */
+swap_files* buscar_archivo_con_mayor_espacio();
+swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid);
+int asignacion_dinamica(int pid, swap_files* archivo);
+int asignar_marcos_maximos(int pid, swap_files* archivo );
+void asignar_marcos_proceso(int pid,swap_files* archivo, int cantidad);
+particion* primer_particion_libre(swap_files* archivo);
+particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PID);
+
 
 
 

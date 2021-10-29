@@ -67,8 +67,8 @@ void enviadoPagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 int main() {
 
-    enviar_tipo_asignacion("SANTIVERGAS");
-	enviadoPagina(1,1,"ASD");
+    enviar_tipo_asignacion("FIJA");
+	enviadoPagina(3,1,"ASD");
     
     return 0;
 }

@@ -130,14 +130,14 @@ int cantidad_frames_disponibles(char* path_swap) {
     swap_files* archivoSwap = encontrar_swap_file(path_swap);
     t_list* particiones_libres;
 
-    //aca vamos a poner las particiones libres de un archivo
-    particiones_libres = list_filter(archivoSwap->particiones_swap, pagina_libre); 
-
-    int cantidad_frames =  list_size(particiones_libres);
-    
-    list_destroy(particiones_libres);
-
-    return cantidad_frames;
+    if(archivoSwap != NULL){
+        //aca vamos a poner las particiones libres de un archivo
+        particiones_libres = list_filter(archivoSwap->particiones_swap, pagina_libre); 
+        int cantidad_frames =  list_size(particiones_libres);
+        list_destroy(particiones_libres);
+        return cantidad_frames;
+    }
+    return 0;
 }
 
 
@@ -220,11 +220,9 @@ void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* lo
     // Estaria bien utilizar list_get_maximum aca?
     //swap_files* archivo_swap = list_get_maximum(lista_swap_files, cantidad_frames_disponibles);
     
-    swap_files* archivoAEscribir = primerSwapFileDisponible();
+    swap_files* archivoAEscribir = escritura_en_archivo_en_base_tipo_asignacion(PID);
 
-    particion* particion_buscada = buscar_particion_libre_asignacion_dinamica(archivoAEscribir->path);
-
-    escribirContenidoSobreElArchivo(mensajeAEscribir, particion_buscada->num_particion, id_pagina, PID, archivoAEscribir->path, logger);
+    escribirContenidoSobreElArchivo(mensajeAEscribir, id_pagina, PID, archivoAEscribir->path, logger);
 
     //int tiene_paginas_en_swap_file = verificar_pid_en_swap_file(pid, archivo_swap->path);
 
@@ -254,7 +252,7 @@ void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* lo
 
 
 
-void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagina, int pid, char* nombreArchivo, t_log* logger){
+void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid, char* nombreArchivo, t_log* logger){
 
     swap_files* archivoAEscribir = encontrar_swap_file(nombreArchivo);
 
@@ -263,20 +261,12 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int marco, int pagi
 
     if(archivoAEscribir != NULL){
 
-        int buscarParticionDeseada(particion* particionBuscada){
-            if(particionBuscada->num_particion == marco){
-                return 1;
-            }
-            return 0;
-        }
+        
 
-        particion* particionAmodificar = list_find(archivoAEscribir->particiones_swap, buscarParticionDeseada);
+        particion* particionAmodificar = primer_particion_disponible_para_escribir(archivoAEscribir,pid);
 
         if(particionAmodificar != NULL){
-            
-            particionAmodificar->esta_libre = 0;
             particionAmodificar->hay_contenido = 1;
-            particionAmodificar->pid = pid;
             particionAmodificar->num_pagina = pagina;
 
             log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
@@ -354,7 +344,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
     }
 }
 
-void* encontrar_swap_file_en_base_a_pid(uint32_t PID) {
+swap_files* encontrar_swap_file_en_base_a_pid(uint32_t PID) {
 
     bool se_encuentra_pid_en_archivo(swap_files* archivo_swap){
         if(pid_se_encuentra_en_particion(archivo_swap, PID)){
@@ -379,8 +369,6 @@ int pid_se_encuentra_en_particion(swap_files* archivo_swap, uint32_t PID) {
         return 0;
     }
 
-    printf("Sacar este printf\n");
-
     particion* particion_encontrada = list_find(archivo_swap->particiones_swap, se_encuentra_pid_en_particion);
 
     if(particion_encontrada == NULL) {
@@ -388,3 +376,107 @@ int pid_se_encuentra_en_particion(swap_files* archivo_swap, uint32_t PID) {
     }
     return 1;
 }
+
+
+
+
+
+swap_files* buscar_archivo_con_mayor_espacio(){
+
+    int tieneMasEspacio(swap_files* arch1, swap_files* arch2){
+        return cantidad_frames_disponibles(arch1->path) >= cantidad_frames_disponibles(arch2->path);
+            
+    }
+
+
+    list_sort(lista_swap_files, (void*)tieneMasEspacio);
+    //va a poner a los archivos mas grandes al comienzo de todo
+    
+    //tomamos el primero de la lista
+    return list_get(lista_swap_files,0);
+
+
+}
+
+swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid){
+
+    swap_files* archivo = encontrar_swap_file_en_base_a_pid(pid);
+
+    if(archivo == NULL){ //aca lo asignamos a los correspondientes marcos solamente
+        swap_files* archivoConMasEspacio = buscar_archivo_con_mayor_espacio();
+
+        if(tipo_asignacion == 1){
+
+            int retorno= asignar_marcos_maximos(pid, archivoConMasEspacio);
+            if(retorno == 1){
+                printf("Todo bien se realizo con la asignacion Fija");
+            }else{
+                printf("Fallo en la asignacion Fija");
+            }
+
+        }else{
+            int retorno = asignacion_dinamica(pid, archivoConMasEspacio);
+            if(retorno == 1){
+                printf("Todo bien se realizo con la asignacion Dinamica");
+            }else{
+                printf("Fallo en la asignacion Dinamica");
+            }
+        }
+        return archivoConMasEspacio;
+    }
+    return archivo;
+}
+
+int asignacion_dinamica(int pid, swap_files* archivo){
+
+    particion* particionActual =  primer_particion_libre(archivo);
+    if(particionActual != NULL){
+        particionActual->esta_libre = 0;
+        particionActual->pid = pid;
+        return 1;
+    }
+    return 0;
+}
+
+
+int asignar_marcos_maximos(int pid, swap_files* archivo ){
+
+    if(cantidad_frames_disponibles(archivo->path) < marcos_maximos){
+        return 0;
+    }else{
+        asignar_marcos_proceso(pid,archivo,marcos_maximos);
+        return 1;        
+    }
+}
+
+void asignar_marcos_proceso(int pid,swap_files* archivo, int cantidad){
+
+    
+    for(int i=0; i < cantidad; i++){ //busca las primeras n(cantidad) paginas que esten libres y se las asigna de una ya 
+        particion* particionActual =  primer_particion_libre(archivo);
+        particionActual->esta_libre = 0;
+        particionActual->hay_contenido = 0;
+        particionActual->pid = pid;
+    }
+}
+
+particion* primer_particion_libre(swap_files* archivo){
+    return list_find(archivo->particiones_swap, pagina_libre);
+}
+
+particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PID){
+
+    int particionDisponible(particion* particionActual){
+        if(particionActual->pid == PID && particionActual->hay_contenido == 0){
+            return 1;
+        }
+        return 0;
+    } 
+
+    return list_find(archivo->particiones_swap, particionDisponible);
+
+}
+
+
+
+
