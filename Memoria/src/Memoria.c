@@ -77,10 +77,10 @@ int main(){
     inicializarTodo();
     inicializarMemoria();
 
-    enviar_tipo_asignacion(tipoAsignacion);
-    enviar_pagina(0, 0, "buenass--------------buenass--------------");
+    //enviar_tipo_asignacion(tipoAsignacion);
+    //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
-    //atender_solicitudes_multihilo();
+    atender_solicitudes_multihilo();
 /* 
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     alloc->pid = 8;

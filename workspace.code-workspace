@@ -22,7 +22,8 @@
 	"settings": {
 		"files.associations": {
 			"planificadorlargoplazo.h": "c",
-			"swamp_lib.h": "c"
+			"swamp_lib.h": "c",
+			"conexiones.h": "c"
 		}
 	}
 }

@@ -2194,3 +2194,21 @@ Tamanio: -1228929400
 [INFO] 19:16:10:439 Servidor/(9304:9339): Sacamos al carpincho. Pid: 5
 [INFO] 19:16:10:439 Servidor/(9304:9339): Enviamos que queremos cerrar el carpincho
 [INFO] 19:16:10:439 Servidor/(9304:9339): Se nos va el carpincho: 5
+[INFO] 14:37:17:574 Servidor/(4599:4607): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 14:37:17:627 Servidor/(4599:4607): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 14:39:24:560 Servidor/(4769:4787): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 14:39:24:609 Servidor/(4769:4787): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 14:43:34:367 Servidor/(5132:5140): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 14:43:34:420 Servidor/(5132:5140): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 14:43:34:533 Servidor/(5132:5140): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 14:43:34:538 Servidor/(5132:5140): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 14:43:34:566 Servidor/(5132:5140): Sacamos al carpincho. Pid: 1
+[INFO] 14:43:34:567 Servidor/(5132:5140): Enviamos que queremos cerrar el carpincho
+[INFO] 14:43:34:568 Servidor/(5132:5140): Se nos va el carpincho: 1
+[INFO] 14:46:08:903 Servidor/(5132:5224): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 14:46:08:905 Servidor/(5132:5224): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 14:46:09:058 Servidor/(5132:5224): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 14:46:09:072 Servidor/(5132:5224): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 14:46:09:090 Servidor/(5132:5224): Sacamos al carpincho. Pid: 2
+[INFO] 14:46:09:091 Servidor/(5132:5224): Enviamos que queremos cerrar el carpincho
+[INFO] 14:46:09:091 Servidor/(5132:5224): Se nos va el carpincho: 2

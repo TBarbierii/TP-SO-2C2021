@@ -41,64 +41,44 @@ int mate_close(mate_instance *lib_ref){
 
 //-----------------Semaphore Functions---------------------/
 int mate_sem_init(mate_instance *lib_ref, mate_sem_name sem, unsigned int value){
-    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
+    
         
-        log_info(lib_ref->group_info->loggerProceso,"Solicitamos inicializar un semaforo de nombre: %s, con valor : %d", sem, value);
-        inicializarSemaforo(lib_ref->group_info->conexionConBackEnd, sem, value);
-        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return valorRetorno;
-        
-        
-    }else{
-        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
-        return -1;
-    }
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos inicializar un semaforo de nombre: %s, con valor : %d", sem, value);
+    inicializarSemaforo(lib_ref->group_info->conexionConBackEnd, sem, value);
+    int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    return valorRetorno;
 
 }
 
 int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
     
-    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        log_info(lib_ref->group_info->loggerProceso,"Solicitamos destruir un semaforo de nombre: %s", sem);
-        liberarSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
-        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return valorRetorno;
-    }else{
-        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
-        return -1;
-    }
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos destruir un semaforo de nombre: %s", sem);
+    liberarSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
+    int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    return valorRetorno;
+    
 }
 
 
 
 int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
     
-    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        
-        log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un wait sobre el semaforo: %s", sem);
-        realizarWaitSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
-        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return valorRetorno;
-        
-    }else{
-        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
-        return -1;
-    }
+    
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un wait sobre el semaforo: %s", sem);
+    realizarWaitSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
+    int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    return valorRetorno;
+      
 }
 
 int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
     
-    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        
-        log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un signal sobre el semaforo: %s", sem);
-        realizarPostSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
-        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return valorRetorno;
-        
-    }else{
-        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
-        return -1;
-    }
+    
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un signal sobre el semaforo: %s", sem);
+    realizarPostSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
+    int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    return valorRetorno;
+      
 }
 
 
@@ -108,15 +88,11 @@ int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
 
 int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void* msg){
     
-    if(validarConexionPosible(KERNEL, lib_ref->group_info->backEndConectado)==1){
-        log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar una operacion IO sobre el dispositivo: %s", io);
-        realizarLlamadoDispositivoIO(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, io);
-        int valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return valor;
-    }else{
-        perror("Se esta intentando realizar una operacion Kernel, al cual no estoy autorizado por mi Backend");
-        return -1;
-    }
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar una operacion IO sobre el dispositivo: %s", io);
+    realizarLlamadoDispositivoIO(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, io);
+    int valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    return valor;
+    
 }
 
 
@@ -129,26 +105,19 @@ int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void* msg){
 
 mate_pointer mate_memalloc(mate_instance *lib_ref, int size){
     
-    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
-        log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memalloc de size:%d", size);
-        realizarMemAlloc(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, size);
-        mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return valor;
-    }else{
-        perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
-        return -1;
-    } 
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memalloc de size:%d", size);
+    realizarMemAlloc(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, size);
+    mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    return valor;
+    
 }
 
 int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
     
-    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
-        return 0;
-    }else{
-        perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
-        return -1;
-    } 
+    
+    /* toda la logica de lo que tiene que hacer */
+    return 0;
+    
 }
 
 int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *dest, int size){
@@ -239,7 +208,6 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado cerrar un semaforo y obtenemos una respuesta en base a eso");
             valorRetorno = notificacionDeDestruccionDeSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
-        /* las que faltan */
         case SEM_WAIT:;
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso");
             valorRetorno = notificacionDeWaitSemaforo(paquete->buffer, lib_ref->group_info->loggerProceso);
@@ -302,7 +270,7 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
     string_append(&nombreLog, pidCarpincho);
     string_append(&nombreLog, ".log");
 
-    lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",0,LOG_LEVEL_DEBUG);
+    lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
     
     log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
 
@@ -659,11 +627,8 @@ void realizarMemWrite(int conexion, uint32_t pid, void *origin, mate_pointer des
 
 int validarConexionPosible(int tipoSolicitado, int tipoActual){
 
-    if(tipoSolicitado == KERNEL){ 
-        if(tipoActual == KERNEL){ //si deseo hacer una operacion de tipo General (Kernel), el backend entonces debe ser de tipo kernel
-            return 1;
-        }
-    }else if(tipoSolicitado == MEMORIA){ 
+    
+    if(tipoSolicitado == MEMORIA){ 
         if(tipoActual == KERNEL || tipoActual == MEMORIA){ //si deseo hacer una operacion de tipo Memoria, con que el backend no sea un error de conexion, se puede. EL kernel hara de pasamanos
             return 1;
         }

@@ -1081,3 +1081,16 @@
 [INFO] 00:38:01:289 a/(10003:10003): Recibimos la informacion de la RAM
 [INFO] 00:38:01:290 a/(10003:10003): El codigo de operacion es: 12
 [INFO] 00:38:01:293 a/(10003:10003): El proceso: 3, nos pide que quiere leer su pagina: 1
+[INFO] 10:17:52:412 a/(5320:5320): Recibimos la informacion de la RAM
+[INFO] 10:17:52:415 a/(5320:5320): El codigo de operacion es: 13
+[INFO] 10:17:52:416 a/(5320:5320): Tipo de asignacion es FIJA
+[INFO] 10:17:52:418 a/(5320:5320): Recibimos la informacion de la RAM
+[INFO] 10:17:52:419 a/(5320:5320): El codigo de operacion es: 11
+[INFO] 10:17:52:420 a/(5320:5320): Vamos a guardar la pagina: 1 del proceso: 3
+[INFO] 10:17:52:431 a/(5320:5320): Todo bien se realizo con la asignacion Fija
+[INFO] 10:17:52:433 a/(5320:5320): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 10:17:52:435 a/(5320:5320): Se escribe sobre la particion: 0
+[INFO] 10:17:52:436 a/(5320:5320): Se guardo el contenido correctamente
+[INFO] 10:17:52:439 a/(5320:5320): Recibimos la informacion de la RAM
+[INFO] 10:17:52:439 a/(5320:5320): El codigo de operacion es: 12
+[INFO] 10:17:52:440 a/(5320:5320): El proceso: 3, nos pide que quiere leer su pagina: 1

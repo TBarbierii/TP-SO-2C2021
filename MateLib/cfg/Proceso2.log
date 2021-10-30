@@ -1,0 +1,13 @@
+[INFO] 14:46:08:948 loggerContenidoProceso/(5223:5223): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:1 
+[INFO] 14:46:09:046 loggerContenidoProceso/(5223:5223): Solicitamos hacer un signal sobre el semaforo: SEM1
+[INFO] 14:46:09:064 loggerContenidoProceso/(5223:5223): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 14:46:09:066 loggerContenidoProceso/(5223:5223): No see pudo realizar el post del semaforo solicitado
+[INFO] 14:46:09:069 loggerContenidoProceso/(5223:5223): Solicitamos realizar una operacion IO sobre el dispositivo: laguna
+[INFO] 14:46:09:078 loggerContenidoProceso/(5223:5223): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[ERROR] 14:46:09:079 loggerContenidoProceso/(5223:5223): No see pudo realizar la operacion IO
+[INFO] 14:46:09:079 loggerContenidoProceso/(5223:5223): Habiamos solicitado hacer un memalloc
+[ERROR] 14:46:09:080 loggerContenidoProceso/(5223:5223): Se pudo realizar el memalloc
+[INFO] 14:46:09:087 loggerContenidoProceso/(5223:5223): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 14:46:09:092 loggerContenidoProceso/(5223:5223): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 14:46:09:093 loggerContenidoProceso/(5223:5223): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 14:46:09:094 loggerContenidoProceso/(5223:5223): Se liberan todas las estructuras del proceso

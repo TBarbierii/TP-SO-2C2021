@@ -1,14 +1,7 @@
-[DEBUG] 01:08:33:531 DispositivosIO/(12603:12603): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
-[DEBUG] 01:08:33:545 DispositivosIO/(12603:12603): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
-[DEBUG] 01:08:33:554 DispositivosIO/(12603:12603): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
-[DEBUG] 01:08:33:555 DispositivosIO/(12603:12603): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
-[INFO] 01:08:46:409 DispositivosIO/(12603:12673): Agregamos al proceso en bloqueo y en el dispositivo: laguna
-[INFO] 01:08:46:409 DispositivosIO/(12603:12605): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
-[INFO] 01:08:56:418 DispositivosIO/(12603:12605): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[DEBUG] 01:11:13:213 DispositivosIO/(12900:12900): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
-[DEBUG] 01:11:13:229 DispositivosIO/(12900:12900): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
-[DEBUG] 01:11:13:240 DispositivosIO/(12900:12900): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
-[DEBUG] 01:11:13:242 DispositivosIO/(12900:12900): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
-[INFO] 01:11:17:196 DispositivosIO/(12900:12933): Agregamos al proceso en bloqueo y en el dispositivo: laguna
-[INFO] 01:11:17:198 DispositivosIO/(12900:12911): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
-[INFO] 01:11:27:201 DispositivosIO/(12900:12911): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 10:14:04:609 DispositivosIO/(5100:5100): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 10:14:04:615 DispositivosIO/(5100:5100): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 10:14:04:620 DispositivosIO/(5100:5100): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 10:14:04:621 DispositivosIO/(5100:5100): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[INFO] 10:14:14:815 DispositivosIO/(5100:5137): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 10:14:14:815 DispositivosIO/(5100:5102): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 10:14:24:817 DispositivosIO/(5100:5102): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
