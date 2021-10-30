@@ -25,7 +25,7 @@ uint32_t recibir_tipo_asignacion(t_buffer*, t_log*);
 uint32_t recibir_operacion(uint32_t);
 void enviar_pagina(void*, int);
 void recibir_pagina(t_buffer*, t_log*);
-void atender_solicitud_pedido_de_pagina(t_buffer* buffer, int conexion);
+void atender_solicitud_pedido_de_pagina(t_buffer* buffer, int conexion, t_log* logger);
 void notificar_escritura_de_pagina(int conexion);
 
 #endif

@@ -18,3 +18,6 @@
 [DEBUG] 20:41:25:565 PlanificadorMedianoPlazo/(6434:6442): Se inicializa la planificacion de mediano plazo
 [DEBUG] 20:41:25:565 PlanificadorMedianoPlazo/(6434:6443): Incializado el thread que permite suspender procesos para evitar IO bound
 [DEBUG] 20:41:25:565 PlanificadorMedianoPlazo/(6434:6444): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 23:52:01:767 PlanificadorMedianoPlazo/(6721:6730): Se inicializa la planificacion de mediano plazo
+[DEBUG] 23:52:01:775 PlanificadorMedianoPlazo/(6721:6731): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 23:52:01:775 PlanificadorMedianoPlazo/(6721:6732): Incializado el thread que permite ingreso de un proceso suspendido/new a ready

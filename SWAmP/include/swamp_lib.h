@@ -73,7 +73,7 @@ swap_files* encontrar_swap_file(char* path_swap);
 
 /*    Paginas    */
 int pagina_libre(particion*);
-void leer_contenido(uint32_t pid, uint32_t id_pagina, int conexion, t_log* logger);
+void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logger);
 
 /*  Asignaciones  */
 void manejar_asignacion();
@@ -92,7 +92,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid
 
 /* ESCRITURA DE PAGINAS */
 swap_files* buscar_archivo_con_mayor_espacio();
-swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid);
+swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger);
 int asignacion_dinamica(int pid, swap_files* archivo);
 int asignar_marcos_maximos(int pid, swap_files* archivo );
 void asignar_marcos_proceso(int pid,swap_files* archivo, int cantidad);

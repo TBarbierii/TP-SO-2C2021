@@ -15,3 +15,4 @@
 [INFO] 18:59:17:266 PlanificadorLargoPlazo/(12448:12576): Se nos va el carpincho: 0
 [DEBUG] 20:41:11:858 PlanificadorLargoPlazo/(6353:6359): Se inicializa la planificacion de largo plazo con algoritmo FIFO
 [DEBUG] 20:41:25:565 PlanificadorLargoPlazo/(6434:6440): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 23:52:01:755 PlanificadorLargoPlazo/(6721:6728): Se inicializa la planificacion de largo plazo con algoritmo FIFO

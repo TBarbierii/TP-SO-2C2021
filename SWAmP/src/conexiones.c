@@ -47,7 +47,7 @@ int atender_mensaje_ram(int conexion) {
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
-	log_info(logger_servidor,"El tamaño del paquete es %d", paquete->buffer->size);
+	//log_info(logger_servidor,"El tamaño del paquete es %d", paquete->buffer->size);
 
 
 	if(paquete->buffer->size > 0){
@@ -59,7 +59,7 @@ int atender_mensaje_ram(int conexion) {
 	switch(paquete->codigo_operacion){
 
         case LECTURA_PAGINA:
-			atender_solicitud_pedido_de_pagina(paquete->buffer, conexion);
+			atender_solicitud_pedido_de_pagina(paquete->buffer, conexion, logger_servidor);
 			break;
 
         case ESCRITURA_PAGINA:;
@@ -123,13 +123,11 @@ void recibir_pagina(t_buffer* buffer, t_log *logger) {
 
 	memcpy(&(PID), data + desplazamiento, sizeof(uint32_t));
 	desplazamiento += sizeof(uint32_t);
-	
 	memcpy(&(id_pagina), data + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
-	log_info(logger, "id %i", id_pagina);
     memcpy(contenido, data + desplazamiento , tamanio_pagina);
-	//log_info(logger, "contenido %s", (char*)contenido);
-
+	log_info(logger, "Vamos a guardar la pagina: %d del proceso: %d",id_pagina, PID);
+	
 	escribirContenido(contenido, id_pagina, PID, logger);
 
 }
@@ -148,7 +146,7 @@ void enviar_pagina(void* contenido, int conexion) {
 	enviarPaquete(paquete, conexion);
 }
 
-void atender_solicitud_pedido_de_pagina(t_buffer* buffer, int conexion) {
+void atender_solicitud_pedido_de_pagina(t_buffer* buffer, int conexion, t_log* logger) {
 
 	void* data = buffer->stream;
 	int desplazamiento = 0;
@@ -159,6 +157,8 @@ void atender_solicitud_pedido_de_pagina(t_buffer* buffer, int conexion) {
 	desplazamiento += sizeof(uint32_t);
 	memcpy(&(id_pagina), data + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
+
+	log_info(logger,"El proceso: %d, nos pide que quiere leer su pagina: %d",PID,id_pagina);
 
 	leer_contenido(PID, id_pagina, conexion, logger_swamp);
 
@@ -178,3 +178,4 @@ void notificar_escritura_de_pagina(int conexion) {
 	enviarPaquete(paquete, conexion);
 
 }
+

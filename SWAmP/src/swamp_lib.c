@@ -216,39 +216,13 @@ void eliminarParticiones(t_list* listaParticiones){
 
 void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger){
 
-    /*aca vamos a verificar si hay un archivo donde se encuentre el pid, y sino vamos a buscar directamente el archivo con mas espacio */
-    // Estaria bien utilizar list_get_maximum aca?
-    //swap_files* archivo_swap = list_get_maximum(lista_swap_files, cantidad_frames_disponibles);
-    
-    swap_files* archivoAEscribir = escritura_en_archivo_en_base_tipo_asignacion(PID);
+
+    swap_files* archivoAEscribir = escritura_en_archivo_en_base_tipo_asignacion(PID, logger);
 
     escribirContenidoSobreElArchivo(mensajeAEscribir, id_pagina, PID, archivoAEscribir->path, logger);
 
-    //int tiene_paginas_en_swap_file = verificar_pid_en_swap_file(pid, archivo_swap->path);
-
-
-    /*if(tipo_asignacion) {
-        particion* marco = buscar_particion_libre_asignacion_dinamica(archivo_swap->path);
-    }else{
-
-    }
-    
-    if(tiene_paginas_en_swap_file == 1) {
-        log_info(logger, "El proceso tiene paginas en este archivo de swap");
-        escribirContenidoSobreElArchivo(mensajeAEscribir, marco, int pagina, int pid, char* nombreArchivo, logger);
-    }else{
-
-    }
-    */
-
-
-
-
 
 }
-
-/* una funcion el tema de asigancion */
-
 
 
 
@@ -260,8 +234,6 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid
     int size = string_length(contenido);
 
     if(archivoAEscribir != NULL){
-
-        
 
         particion* particionAmodificar = primer_particion_disponible_para_escribir(archivoAEscribir,pid);
 
@@ -302,14 +274,14 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid
     
 }
 
-void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logger) {
+void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logger){
     
     swap_files* archivo_swap = encontrar_swap_file_en_base_a_pid(PID);
     if(archivo_swap == NULL) {
-        //log_error(logger, "No se encontro el archivo");
+        log_error(logger, "No se encontro el archivo");
     }else{
 
-        char* contenido_a_leer = malloc(tamanio_pagina);
+        void* contenido_a_leer = malloc(tamanio_pagina);
 
         int fd = open(archivo_swap->path, O_RDWR, (mode_t) 0777);
         truncate(archivo_swap->path, tamanio_swap);
@@ -322,16 +294,22 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             return 0;
         }
 
-        printf("Sacar este printf\n");
-
         void* contenido_archivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
         particion* particion_a_leer = list_find(archivo_swap->particiones_swap, buscar_pagina_en_particion);
     
         if(particion_a_leer != NULL) {
             memcpy(contenido_a_leer, contenido_archivo + particion_a_leer->inicio_particion, tamanio_pagina);
+            
+            /*ya que sino no nos deja loggearlo */
+            char* contenidoParaLoggear= malloc(tamanio_pagina+1);
+            char valorsitoParaString = '\0';
+            memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
+            memcpy(contenidoParaLoggear + tamanio_pagina, &(valorsitoParaString),1);
             log_info(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
-            log_info(logger,"El contenido leido es %s", contenido_a_leer);
+            log_info(logger,"El contenido leido es %s", contenidoParaLoggear);
+            free(contenidoParaLoggear);
+
             enviar_pagina(contenido_a_leer, conexion);
             particion_a_leer->hay_contenido = 0;
             if(tipo_asignacion == 0) {
@@ -341,6 +319,8 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
 
         munmap(contenido_archivo, tamanio_swap);
         close(fd);
+        //este contenido deberia enviarse
+        enviar_pagina(contenido_a_leer,conexion);
         free(contenido_a_leer);
     }
 }
@@ -399,7 +379,7 @@ swap_files* buscar_archivo_con_mayor_espacio(){
 
 }
 
-swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid){
+swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger){
 
     swap_files* archivo = encontrar_swap_file_en_base_a_pid(pid);
 
@@ -410,17 +390,17 @@ swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid){
 
             int retorno= asignar_marcos_maximos(pid, archivoConMasEspacio);
             if(retorno == 1){
-                printf("Todo bien se realizo con la asignacion Fija");
+                log_info(logger,"Todo bien se realizo con la asignacion Fija");
             }else{
-                printf("Fallo en la asignacion Fija");
+                log_info(logger,"Fallo en la asignacion Fija");
             }
 
         }else{
             int retorno = asignacion_dinamica(pid, archivoConMasEspacio);
             if(retorno == 1){
-                printf("Todo bien se realizo con la asignacion Dinamica");
+                log_info(logger,"Todo bien se realizo con la asignacion Dinamica");
             }else{
-                printf("Fallo en la asignacion Dinamica");
+                log_info(logger,"Fallo en la asignacion Dinamica");
             }
         }
         return archivoConMasEspacio;

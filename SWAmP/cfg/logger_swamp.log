@@ -348,3 +348,45 @@
 [INFO] 21:23:41:958 SWAmP/(10547:10547): Se han creado todos los archivos
 [INFO] 21:23:43:448 SWAmP/(10547:10547): Se leyo el contenido del archivo: /home/utnso/swap1.bin
 [INFO] 21:23:43:455 SWAmP/(10547:10547): El contenido leido es santivergas
+[INFO] 23:51:56:075 SWAmP/(6709:6709): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 23:51:56:266 SWAmP/(6709:6709): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 23:51:56:290 SWAmP/(6709:6709): Se han creado todos los archivos
+[INFO] 23:53:34:137 SWAmP/(6891:6891): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 23:53:34:230 SWAmP/(6891:6891): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 23:53:34:246 SWAmP/(6891:6891): Se han creado todos los archivos
+[INFO] 23:53:36:904 SWAmP/(6891:6891): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 23:53:36:920 SWAmP/(6891:6891): El contenido leido es asdnass--------------buenass----
+[INFO] 00:12:35:616 SWAmP/(8091:8091): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 00:12:35:717 SWAmP/(8091:8091): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 00:12:35:730 SWAmP/(8091:8091): Se han creado todos los archivos
+[INFO] 00:12:41:476 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:12:41:482 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:13:28:838 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:13:28:843 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:14:53:118 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:14:53:126 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:15:50:050 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:15:50:058 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:16:11:888 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:16:11:891 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:18:55:766 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:18:55:768 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:19:42:949 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:19:42:955 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:21:02:258 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:21:02:265 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:21:40:560 SWAmP/(8091:8091): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:21:40:565 SWAmP/(8091:8091): El contenido leido es asdnass--------------buenass----
+[INFO] 00:28:23:823 SWAmP/(9353:9353): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 00:28:23:993 SWAmP/(9353:9353): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 00:28:24:014 SWAmP/(9353:9353): Se han creado todos los archivos
+[INFO] 00:34:46:621 SWAmP/(9716:9716): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 00:34:46:713 SWAmP/(9716:9716): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 00:34:46:717 SWAmP/(9716:9716): Se han creado todos los archivos
+[INFO] 00:34:50:707 SWAmP/(9716:9716): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:34:50:713 SWAmP/(9716:9716): El contenido leido es asdnass--------------buenass----
+[INFO] 00:37:54:423 SWAmP/(10003:10003): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin y de size: 4096
+[INFO] 00:37:54:555 SWAmP/(10003:10003): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin y de size: 4096
+[INFO] 00:37:54:578 SWAmP/(10003:10003): Se han creado todos los archivos
+[INFO] 00:38:01:314 SWAmP/(10003:10003): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 00:38:01:323 SWAmP/(10003:10003): El contenido leido es asdnass--------------buenass----

@@ -1,4 +1,4 @@
-#include "/home/utnso/tp-2021-2c-UCM-20-SO/SWAmP/include/swamp_lib.h"
+#include "../../SWAmP/include/swamp_lib.h"
 #include <stdio.h>
 #include <commons/log.h>
 #include <commons/config.h>
@@ -82,15 +82,52 @@ void pedirPagina(uint32_t id_pagina, uint32_t pid){
 
 	enviarPaquete(paquete, conexionSwamp);
 
+/*recibimos el contenido */
+
+	t_paquete* paqueteRecibido = malloc(sizeof(t_paquete));
+
+	if(recv(conexionSwamp, &(paqueteRecibido->codigo_operacion), sizeof(cod_operacion), 0) < 1){
+		free(paqueteRecibido);
+		printf("Fallo en recibir la info de la conexion");
+	}else{
+
+		paqueteRecibido->buffer = malloc(sizeof(t_buffer));
+		recv(conexionSwamp, &(paqueteRecibido->buffer->size), sizeof(uint32_t), 0);
+
+
+		if(paqueteRecibido->buffer->size > 0){
+			paqueteRecibido->buffer->stream = malloc(paqueteRecibido->buffer->size);
+			recv(conexionSwamp, paqueteRecibido->buffer->stream, paqueteRecibido->buffer->size, 0);
+		}
+		
+
+		int desplazamiento = 0;
+		int tamanioPagina =32;
+		void* contenido = malloc(tamanioPagina+1);
+		char valor = '\0';
+		
+		//esto es para que lo pueda mostrar como un char*, ya que si no le ponemos ese \0 al final no funca o el valgrind tira un leak
+		memcpy(contenido, paqueteRecibido->buffer->stream + desplazamiento, tamanioPagina);
+		memcpy(contenido + tamanioPagina ,&(valor), 1);
+
+		printf("El contenido leido desde SWAmP es: %s",(char*) contenido);
+		printf("\n");
+		
+		free(contenido);
+		free(paqueteRecibido->buffer->stream);
+		free(paqueteRecibido->buffer);
+		free(paqueteRecibido);
+	
+	}
+
 }
 
-/*
+
 int main() {
 
     enviar_tipo_asignacion("FIJA");
 	enviadoPagina(3,1,"asd");
 	pedirPagina(1, 3);
-
+	
     return 0;
 }
-*/
