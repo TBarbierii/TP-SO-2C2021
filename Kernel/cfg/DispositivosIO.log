@@ -16,3 +16,11 @@
 [INFO] 18:59:07:246 DispositivosIO/(12448:12452): Termino de ejecutar el proceso:1 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
 [INFO] 18:59:07:254 DispositivosIO/(12448:12452): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
 [INFO] 18:59:17:255 DispositivosIO/(12448:12452): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 20:41:11:857 DispositivosIO/(6353:6353): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 20:41:11:857 DispositivosIO/(6353:6353): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 20:41:11:857 DispositivosIO/(6353:6353): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 20:41:11:857 DispositivosIO/(6353:6353): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[DEBUG] 20:41:25:565 DispositivosIO/(6434:6434): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 20:41:25:565 DispositivosIO/(6434:6434): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 20:41:25:565 DispositivosIO/(6434:6434): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 20:41:25:565 DispositivosIO/(6434:6434): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020

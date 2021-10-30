@@ -1,7 +1,7 @@
 #include "swamp.h"
 
 int main(){
-    t_log* logger_swamp = log_create("./cfg/logger_swamp.log", "SWAmP", true, LOG_LEVEL_DEBUG);
+    logger_swamp = log_create("./cfg/logger_swamp.log", "SWAmP", true, LOG_LEVEL_DEBUG);
     t_config* config_swamp = config_create("./cfg/swamp.config");
     lista_swap_files = list_create();
 

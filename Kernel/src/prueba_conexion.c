@@ -64,12 +64,33 @@ void enviadoPagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 }
 
+void pedirPagina(uint32_t id_pagina, uint32_t pid){
+
+	uint32_t size;
+
+	t_paquete *paquete = crear_paquete(LECTURA_PAGINA);
+
+	paquete->buffer->size = sizeof(uint32_t)*2;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
+	
+	memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+	memcpy(paquete->buffer->stream + desplazamiento, &(id_pagina) , sizeof(uint32_t));
+    
+	uint32_t conexionSwamp = crear_conexion("127.0.0.1", "4444");
+
+	enviarPaquete(paquete, conexionSwamp);
+
+}
+
 /*
 int main() {
 
     enviar_tipo_asignacion("FIJA");
-	enviadoPagina(3,1,"ASD");
-    
+	enviadoPagina(3,1,"asd");
+	pedirPagina(1, 3);
+
     return 0;
 }
- */
+*/

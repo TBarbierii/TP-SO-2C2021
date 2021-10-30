@@ -306,13 +306,13 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
     
     swap_files* archivo_swap = encontrar_swap_file_en_base_a_pid(PID);
     if(archivo_swap == NULL) {
-        log_error(logger, "No se encontro el archivo");
+        //log_error(logger, "No se encontro el archivo");
     }else{
 
         char* contenido_a_leer = malloc(tamanio_pagina);
 
         int fd = open(archivo_swap->path, O_RDWR, (mode_t) 0777);
-
+        truncate(archivo_swap->path, tamanio_swap);
         int buscar_pagina_en_particion(particion* particion_buscada){
             if(particion_buscada->esta_libre == 0) {
                 if(particion_buscada->num_pagina == id_pagina && particion_buscada->pid == PID){
@@ -330,7 +330,8 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
     
         if(particion_a_leer != NULL) {
             memcpy(contenido_a_leer, contenido_archivo + particion_a_leer->inicio_particion, tamanio_pagina);
-            //log_info(logger, "El contenido leido es %s", contenido_a_leer);
+            log_info(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
+            log_info(logger,"El contenido leido es %s", contenido_a_leer);
             enviar_pagina(contenido_a_leer, conexion);
             particion_a_leer->hay_contenido = 0;
             if(tipo_asignacion == 0) {

@@ -13,3 +13,5 @@
 [INFO] 18:58:57:168 PlanificadorLargoPlazo/(12448:12457): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 1
 [INFO] 18:59:07:262 PlanificadorLargoPlazo/(12448:12565): Se nos va el carpincho: 1
 [INFO] 18:59:17:266 PlanificadorLargoPlazo/(12448:12576): Se nos va el carpincho: 0
+[DEBUG] 20:41:11:858 PlanificadorLargoPlazo/(6353:6359): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 20:41:25:565 PlanificadorLargoPlazo/(6434:6440): Se inicializa la planificacion de largo plazo con algoritmo FIFO
