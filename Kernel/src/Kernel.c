@@ -142,6 +142,7 @@ void obtenerValoresDelConfig(t_config* configActual){
 
     ipMemoria = config_get_string_value(configActual, "IP_MEMORIA");
     puertoMemoria = config_get_string_value(configActual, "PUERTO_MEMORIA");
+    puertoServer = config_get_string_value(configActual, "PUERTO_ESCUCHA");
     algoritmoPlanificacion = config_get_string_value(configActual, "ALGORITMO_PLANIFICACION");
     retardoCPU = config_get_int_value(configActual, "RETARDO_CPU");
     estimacion_inicial = config_get_double_value(configActual, "ESTIMACION_INICIAL");
@@ -229,7 +230,7 @@ void finalizarDispositivosIO(){
 
 
 
-/* 
+
 int main(){
 
     t_log* logger = log_create("cfg/KernelActual.log","KernelActual",0,LOG_LEVEL_INFO);
@@ -284,6 +285,6 @@ int main(){
 
     return 0;
 }
-*/
+
 
 

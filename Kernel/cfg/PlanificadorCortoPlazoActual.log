@@ -1,62 +1,30 @@
-[DEBUG] 18:52:11:994 PlanificadorCortoPlazo/(11838:11847): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 18:52:19:879 PlanificadorCortoPlazo/(11838:11847): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 18:52:19:879 PlanificadorCortoPlazo/(11838:11847): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 18:52:19:888 PlanificadorCortoPlazo/(11838:11847): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 18:52:19:893 PlanificadorCortoPlazo/(11838:11888): Se ejecuto tarea de conexion
-[INFO] 18:52:19:955 PlanificadorCortoPlazo/(11838:11888): La tarea realizada fue: 2
-[INFO] 18:52:19:956 PlanificadorCortoPlazo/(11838:11888): Se ejecuto tarea de conexion
-[INFO] 18:52:19:964 PlanificadorCortoPlazo/(11838:11888): La tarea realizada fue: 14
-[INFO] 18:52:19:964 PlanificadorCortoPlazo/(11838:11888): Se ejecuto tarea de conexion
-[INFO] 18:52:19:971 PlanificadorCortoPlazo/(11838:11888): La tarea realizada fue: 3
-[INFO] 18:52:19:971 PlanificadorCortoPlazo/(11838:11888): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 18:56:31:123 PlanificadorCortoPlazo/(12228:12243): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 18:56:57:522 PlanificadorCortoPlazo/(12228:12243): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 18:56:57:525 PlanificadorCortoPlazo/(12228:12243): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 18:56:57:534 PlanificadorCortoPlazo/(12228:12243): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 18:56:57:538 PlanificadorCortoPlazo/(12228:12321): Se ejecuto tarea de conexion
-[INFO] 18:56:57:605 PlanificadorCortoPlazo/(12228:12321): La tarea realizada fue: 2
-[INFO] 18:56:57:606 PlanificadorCortoPlazo/(12228:12321): Se ejecuto tarea de conexion
-[INFO] 18:56:57:614 PlanificadorCortoPlazo/(12228:12321): La tarea realizada fue: 14
-[INFO] 18:56:57:614 PlanificadorCortoPlazo/(12228:12321): Se ejecuto tarea de conexion
-[INFO] 18:56:57:625 PlanificadorCortoPlazo/(12228:12321): La tarea realizada fue: 3
-[INFO] 18:56:57:626 PlanificadorCortoPlazo/(12228:12321): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 18:58:29:519 PlanificadorCortoPlazo/(12448:12458): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 18:58:32:421 PlanificadorCortoPlazo/(12448:12458): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 18:58:32:421 PlanificadorCortoPlazo/(12448:12458): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 18:58:32:424 PlanificadorCortoPlazo/(12448:12458): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 18:58:32:429 PlanificadorCortoPlazo/(12448:12472): Se ejecuto tarea de conexion
-[INFO] 18:58:32:488 PlanificadorCortoPlazo/(12448:12472): La tarea realizada fue: 2
-[INFO] 18:58:32:488 PlanificadorCortoPlazo/(12448:12472): Se ejecuto tarea de conexion
-[INFO] 18:58:32:495 PlanificadorCortoPlazo/(12448:12472): La tarea realizada fue: 14
-[INFO] 18:58:32:495 PlanificadorCortoPlazo/(12448:12472): Se ejecuto tarea de conexion
-[INFO] 18:58:32:503 PlanificadorCortoPlazo/(12448:12472): La tarea realizada fue: 3
-[INFO] 18:58:32:503 PlanificadorCortoPlazo/(12448:12472): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 18:58:57:168 PlanificadorCortoPlazo/(12448:12458): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
-[DEBUG] 18:58:57:168 PlanificadorCortoPlazo/(12448:12458): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
-[DEBUG] 18:58:57:168 PlanificadorCortoPlazo/(12448:12458): Se crea un hilo para el carpincho. Carpincho: 1
-[INFO] 18:58:57:174 PlanificadorCortoPlazo/(12448:12550): Se ejecuto tarea de conexion
-[INFO] 18:58:57:239 PlanificadorCortoPlazo/(12448:12550): La tarea realizada fue: 4
-[INFO] 18:58:57:239 PlanificadorCortoPlazo/(12448:12550): Se ejecuto tarea de conexion
-[INFO] 18:58:57:248 PlanificadorCortoPlazo/(12448:12550): La tarea realizada fue: 6
-[INFO] 18:58:57:248 PlanificadorCortoPlazo/(12448:12550): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 18:58:57:248 PlanificadorCortoPlazo/(12448:12458): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 18:58:57:248 PlanificadorCortoPlazo/(12448:12458): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 18:58:57:249 PlanificadorCortoPlazo/(12448:12458): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 18:58:57:249 PlanificadorCortoPlazo/(12448:12553): Se ejecuto tarea de conexion
-[INFO] 18:58:57:252 PlanificadorCortoPlazo/(12448:12553): La tarea realizada fue: 6
-[INFO] 18:58:57:252 PlanificadorCortoPlazo/(12448:12553): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 18:59:07:251 PlanificadorCortoPlazo/(12448:12458): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
-[DEBUG] 18:59:07:251 PlanificadorCortoPlazo/(12448:12458): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
-[DEBUG] 18:59:07:251 PlanificadorCortoPlazo/(12448:12458): Se crea un hilo para el carpincho. Carpincho: 1
-[INFO] 18:59:07:255 PlanificadorCortoPlazo/(12448:12565): Se ejecuto tarea de conexion
-[INFO] 18:59:07:266 PlanificadorCortoPlazo/(12448:12565): La tarea realizada fue: 1
-[INFO] 18:59:07:269 PlanificadorCortoPlazo/(12448:12565): Se realizo una operacion que termina con la ejecucion del Carpincho
-[DEBUG] 18:59:17:255 PlanificadorCortoPlazo/(12448:12458): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 18:59:17:255 PlanificadorCortoPlazo/(12448:12458): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 18:59:17:256 PlanificadorCortoPlazo/(12448:12458): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 18:59:17:262 PlanificadorCortoPlazo/(12448:12576): Se ejecuto tarea de conexion
-[INFO] 18:59:17:273 PlanificadorCortoPlazo/(12448:12576): La tarea realizada fue: 1
-[INFO] 18:59:17:273 PlanificadorCortoPlazo/(12448:12576): Se realizo una operacion que termina con la ejecucion del Carpincho
-[DEBUG] 20:41:11:858 PlanificadorCortoPlazo/(6353:6360): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 20:41:25:565 PlanificadorCortoPlazo/(6434:6441): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 23:52:01:771 PlanificadorCortoPlazo/(6721:6729): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 01:08:33:579 PlanificadorCortoPlazo/(12603:12611): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 01:08:46:258 PlanificadorCortoPlazo/(12603:12611): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 01:08:46:261 PlanificadorCortoPlazo/(12603:12611): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[DEBUG] 01:08:46:266 PlanificadorCortoPlazo/(12603:12611): Se crea un hilo para el carpincho. Carpincho: 0
+[INFO] 01:08:46:292 PlanificadorCortoPlazo/(12603:12673): Se ejecuto tarea de conexion
+[INFO] 01:08:46:397 PlanificadorCortoPlazo/(12603:12673): La tarea realizada fue: 4
+[INFO] 01:08:46:400 PlanificadorCortoPlazo/(12603:12673): Se ejecuto tarea de conexion
+[INFO] 01:08:46:417 PlanificadorCortoPlazo/(12603:12673): La tarea realizada fue: 6
+[INFO] 01:08:46:418 PlanificadorCortoPlazo/(12603:12673): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 01:08:56:426 PlanificadorCortoPlazo/(12603:12611): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 01:08:56:427 PlanificadorCortoPlazo/(12603:12611): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[DEBUG] 01:08:56:428 PlanificadorCortoPlazo/(12603:12611): Se crea un hilo para el carpincho. Carpincho: 0
+[INFO] 01:08:56:431 PlanificadorCortoPlazo/(12603:12696): Se ejecuto tarea de conexion
+[INFO] 01:08:56:473 PlanificadorCortoPlazo/(12603:12696): La tarea realizada fue: 1
+[INFO] 01:08:56:473 PlanificadorCortoPlazo/(12603:12696): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 01:11:13:264 PlanificadorCortoPlazo/(12900:12917): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 01:11:16:942 PlanificadorCortoPlazo/(12900:12917): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 01:11:16:952 PlanificadorCortoPlazo/(12900:12917): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[DEBUG] 01:11:16:956 PlanificadorCortoPlazo/(12900:12917): Se crea un hilo para el carpincho. Carpincho: 0
+[INFO] 01:11:16:988 PlanificadorCortoPlazo/(12900:12933): Se ejecuto tarea de conexion
+[INFO] 01:11:17:160 PlanificadorCortoPlazo/(12900:12933): La tarea realizada fue: 4
+[INFO] 01:11:17:164 PlanificadorCortoPlazo/(12900:12933): Se ejecuto tarea de conexion
+[INFO] 01:11:17:210 PlanificadorCortoPlazo/(12900:12933): La tarea realizada fue: 6
+[INFO] 01:11:17:212 PlanificadorCortoPlazo/(12900:12933): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 01:11:27:219 PlanificadorCortoPlazo/(12900:12917): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 01:11:27:219 PlanificadorCortoPlazo/(12900:12917): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[DEBUG] 01:11:27:220 PlanificadorCortoPlazo/(12900:12917): Se crea un hilo para el carpincho. Carpincho: 0
+[INFO] 01:11:27:225 PlanificadorCortoPlazo/(12900:12955): Se ejecuto tarea de conexion
+[INFO] 01:11:27:287 PlanificadorCortoPlazo/(12900:12955): La tarea realizada fue: 1
+[INFO] 01:11:27:289 PlanificadorCortoPlazo/(12900:12955): Se realizo una operacion que termina con la ejecucion del Carpincho

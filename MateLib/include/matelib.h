@@ -95,6 +95,8 @@ int notificacionDeWaitSemaforo(t_buffer* buffer, t_log* logger);
 
 int notificacionIO(t_buffer* buffer, t_log* logger);
 
+int notificacionMemFree(t_buffer* buffer, t_log* logger);
+
 /* ------- Solicitudes  --------------------- */
 
 /* estructuracion */

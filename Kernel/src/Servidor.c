@@ -4,9 +4,9 @@
 void atenderSolicitudesKernel(){
 	//crea un hilo por cada cliente que se conecta y lo atiende. El servidor ya estaria levantado
 
-	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_DEBUG);
+	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",1,LOG_LEVEL_DEBUG);
 
-	int servidor = iniciar_servidor(ipMemoria, puertoMemoria); // devuelve el socket del servidor
+	int servidor = iniciar_servidor(ipMemoria, puertoServer); // devuelve el socket del servidor
 	
 	log_info(logger,"Inicializamos el servidor para que se nos unan los carpinchos");
 
@@ -29,13 +29,13 @@ void atenderSolicitudesKernel(){
 
 int atenderMensajeEnKernel(int conexion) {
 
-	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",0,LOG_LEVEL_ERROR);
+	t_log* logger =  log_create("cfg/OperacionesServer.log","Operaciones", 1, LOG_LEVEL_DEBUG);
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
 
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
-		log_error(logger,"Fallo en recibir la info de la conexion");
+		log_info(logger,"Fallo en recibir la info de la conexion");
 		return -1;
 	}
 

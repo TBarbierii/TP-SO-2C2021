@@ -35,6 +35,7 @@ pthread_mutex_t* contadorProcesos;
 
 char* ipMemoria;
 char* puertoMemoria;
+char* puertoServer;
 char* algoritmoPlanificacion;
 double estimacion_inicial;
 double alfa;

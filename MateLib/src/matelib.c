@@ -130,8 +130,10 @@ int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void* msg){
 mate_pointer mate_memalloc(mate_instance *lib_ref, int size){
     
     if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
-        return 0;
+        log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memalloc de size:%d", size);
+        realizarMemAlloc(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, size);
+        mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valor;
     }else{
         perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
         return -1;
@@ -246,6 +248,8 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso");
             valorRetorno = notificacionIO(paquete->buffer, lib_ref->group_info->loggerProceso);
         case MEMALLOC:;
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memalloc");
+            valorRetorno = notificacionMemFree(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case MEMFREE:;
             break;
@@ -332,8 +336,6 @@ int liberarEstructurasDeProceso(t_buffer* buffer, mate_instance* lib_ref){
     config_destroy(lib_ref->group_info->config);
     close(lib_ref->group_info->conexionConBackEnd);
     free(lib_ref->group_info);
-    
-    //free(lib_ref);
 
     return valor;
 
@@ -425,16 +427,28 @@ int notificacionIO(t_buffer* buffer, t_log* logger){
     }else{
         log_error(logger,"No see pudo realizar la operacion IO");
     }
-/* 
-    memcpy(&(espacioDeMensaje), stream+desplazamiento, sizeof(uint32_t));
-    desplazamiento += sizeof(uint32_t);
 
-    memcpy(mensajeRecibido, stream+desplazamiento, espacioDeMensaje);
 
-    return mensajeRecibido;
-    */
    return valor;
 }
+
+int notificacionMemFree(t_buffer* buffer, t_log* logger){
+    
+    void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+
+    if(valor < 0){
+        log_info(logger,"No se pudo hacer el memalloc del size solicitado");
+    }else{
+        log_error(logger,"Se pudo realizar el memalloc");
+    }
+
+    return valor;
+}
+
+
 
 /* ------- Solicitudes  --------------------- */
 
