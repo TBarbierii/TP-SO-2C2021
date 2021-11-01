@@ -10,12 +10,13 @@ int mate_init(mate_instance *lib_ref, char *config){
 
     if(conexion == -1){
         lib_ref->group_info->backEndConectado = ERROR;
+        return lib_ref->group_info->backEndConectado;
     }else{
 
         solicitarIniciarPatota(conexion, lib_ref);
-        recibir_mensaje(conexion, lib_ref);
+        return recibir_mensaje(conexion, lib_ref);
     }
-    return lib_ref->group_info->backEndConectado;
+    
 }
 
 
@@ -215,9 +216,10 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
         case CONECTAR_IO:;
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso");
             valorRetorno = notificacionIO(paquete->buffer, lib_ref->group_info->loggerProceso);
+            break;
         case MEMALLOC:;
             log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memalloc");
-            valorRetorno = notificacionMemFree(paquete->buffer, lib_ref->group_info->loggerProceso);
+            valorRetorno = notificacionMemAlloc(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case MEMFREE:;
             break;
@@ -400,7 +402,7 @@ int notificacionIO(t_buffer* buffer, t_log* logger){
    return valor;
 }
 
-int notificacionMemFree(t_buffer* buffer, t_log* logger){
+int notificacionMemAlloc(t_buffer* buffer, t_log* logger){
     
     void* stream = buffer->stream;
 	int desplazamiento = 0;

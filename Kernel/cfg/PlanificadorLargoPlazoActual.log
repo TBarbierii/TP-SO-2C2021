@@ -2,3 +2,33 @@
 [INFO] 10:14:14:730 PlanificadorLargoPlazo/(5100:5108): Se esta sacando un carpincho de la cola de new. Carpincho: 0
 [INFO] 10:14:14:731 PlanificadorLargoPlazo/(5100:5108): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
 [INFO] 10:14:24:831 PlanificadorLargoPlazo/(5100:5142): Se nos va el carpincho: 0
+[DEBUG] 22:46:34:492 PlanificadorLargoPlazo/(7942:7949): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 22:49:47:538 PlanificadorLargoPlazo/(8170:8177): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 22:51:37:642 PlanificadorLargoPlazo/(8292:8306): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 22:53:53:914 PlanificadorLargoPlazo/(8442:8456): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 22:57:33:740 PlanificadorLargoPlazo/(8645:8652): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 22:57:42:229 PlanificadorLargoPlazo/(8645:8652): Se esta sacando un carpincho de la cola de new. Carpincho: 0
+[INFO] 22:57:42:230 PlanificadorLargoPlazo/(8645:8652): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
+[INFO] 22:57:52:521 PlanificadorLargoPlazo/(8645:8713): Se nos va el carpincho: 0
+[DEBUG] 23:00:43:723 PlanificadorLargoPlazo/(8825:8832): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 23:00:49:481 PlanificadorLargoPlazo/(8825:8832): Se esta sacando un carpincho de la cola de new. Carpincho: 0
+[INFO] 23:00:49:482 PlanificadorLargoPlazo/(8825:8832): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
+[INFO] 23:00:59:677 PlanificadorLargoPlazo/(8825:8865): Se nos va el carpincho: 0
+[DEBUG] 23:14:24:424 PlanificadorLargoPlazo/(9737:9744): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 23:14:27:112 PlanificadorLargoPlazo/(9737:9744): Se esta sacando un carpincho de la cola de new. Carpincho: 0
+[INFO] 23:14:27:113 PlanificadorLargoPlazo/(9737:9744): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
+[INFO] 23:14:37:284 PlanificadorLargoPlazo/(9737:9776): Se nos va el carpincho: 0
+[DEBUG] 23:17:11:152 PlanificadorLargoPlazo/(9903:9909): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 23:17:14:143 PlanificadorLargoPlazo/(9903:9909): Se esta sacando un carpincho de la cola de new. Carpincho: 0
+[INFO] 23:17:14:144 PlanificadorLargoPlazo/(9903:9909): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
+[INFO] 23:17:24:312 PlanificadorLargoPlazo/(9903:9943): Se nos va el carpincho: 0
+[DEBUG] 23:24:25:770 PlanificadorLargoPlazo/(10183:10190): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 23:24:33:905 PlanificadorLargoPlazo/(10183:10190): Se esta sacando un carpincho de la cola de new. Carpincho: 0
+[INFO] 23:24:33:906 PlanificadorLargoPlazo/(10183:10190): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 0
+[INFO] 23:24:44:076 PlanificadorLargoPlazo/(10183:10252): Se nos va el carpincho: 0
+[INFO] 23:25:09:142 PlanificadorLargoPlazo/(10183:10190): Se esta sacando un carpincho de la cola de new. Carpincho: 1
+[INFO] 23:25:09:142 PlanificadorLargoPlazo/(10183:10190): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 1
+[INFO] 23:25:19:364 PlanificadorLargoPlazo/(10183:10284): Se nos va el carpincho: 1
+[INFO] 23:25:24:843 PlanificadorLargoPlazo/(10183:10190): Se esta sacando un carpincho de la cola de new. Carpincho: 2
+[INFO] 23:25:24:843 PlanificadorLargoPlazo/(10183:10190): Se pone en la cola de ready a un nuevo carpincho. Carpincho: 2
+[INFO] 23:25:35:079 PlanificadorLargoPlazo/(10183:10315): Se nos va el carpincho: 2

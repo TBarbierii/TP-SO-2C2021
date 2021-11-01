@@ -60,8 +60,11 @@ int crear_conexion(char *ip, char* puerto)
         return -1;
     }
 
-	connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen);
+	int conexion = connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen);
 	freeaddrinfo(server_info);
+	if(conexion == -1){
+		return conexion;
+	}
 	return socket_cliente;
 }
 

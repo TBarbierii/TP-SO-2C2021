@@ -17,7 +17,7 @@ typedef struct proceso{
     
     uint32_t pid ;
     int conexion; // es el socket del proceso
-
+	int conexionConMemoria; //socket para las tareas que necesitemos la memoria
     double tiempoDeEspera; // para HRRN
     double ultimaRafagaEjecutada ; // este es el real Anterior para SJF
     double rafagaEstimada; //para JFS
@@ -56,7 +56,8 @@ typedef enum{
 	ESCRITURA_PAGINA,
 	LECTURA_PAGINA,
 	TIPOASIGNACION,
-	SEM_WAIT_NOBLOQUEANTE
+	SEM_WAIT_NOBLOQUEANTE,
+	SUSPENSION_PROCESO //este codigo va a ser por el cual desde el kernel le vamos a avisar que un proceso se suspende y vamos a solicitar suspender todas sus paginas
 
 }cod_operacion;
 

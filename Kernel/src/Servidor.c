@@ -123,14 +123,16 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 	procesoNuevo->rafagaEstimada = estimacion_inicial;
 	procesoNuevo->tiempoDeEspera = 0;
 	procesoNuevo->ultimaRafagaEjecutada = 0;
+	establecerConexionConLaMemoria(procesoNuevo, logger);
+
 
 	pthread_mutex_lock(modificarNew);
 		list_add(procesosNew, procesoNuevo);
 		log_info(logger,"Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: %d",procesoNuevo->pid);
 	pthread_mutex_unlock(modificarNew);
 
+
 	enviarInformacionAdministrativaDelProceso(procesoNuevo);
-	
 	sem_post(hayProcesosNew);
 	sem_post(procesoNecesitaEntrarEnReady);
 
@@ -156,13 +158,19 @@ void cerrarProceso(t_buffer* bufferActual,t_log* logger){
 		return 0;
 	}
 
-	/* notificar a memoria */
-	log_info(logger,"Le notificamos a memoria para que libere la memoria del carpincho: %d", pidProcesoAEliminar);
+	
+	
 
 	pthread_mutex_lock(modificarExec); //busco al proceso y lo saco
 		proceso_kernel* procesoActual =list_remove_by_condition(procesosExec, buscarProcesoPorPid);
 		log_info(logger,"Sacamos al carpincho de ejecucion. Pid: %d", procesoActual->pid);
 	pthread_mutex_unlock(modificarExec);
+
+	/* le notificamos a memoria que haga todo el trabajo de sacar las cosas de memoria y swap */
+	finalizarEnMemoria(procesoActual, logger);
+	log_info(logger,"Le notificamos a memoria para que libere la memoria del carpincho: %d", pidProcesoAEliminar);
+
+
 
 	informarCierreDeProceso(procesoActual,logger);
 	sem_post(nivelMultiprocesamiento); //aumento el grado de multiprogramacion y multiprocesamiento
@@ -409,4 +417,199 @@ void avisarconexionConDispositivoIO(int conexion, int valor){
 
     enviarPaquete(paquete,conexion);
 
+}
+
+
+
+
+
+
+
+
+/* CONEXIONES Por parte del KERNEL con MEMORIA */
+
+void establecerConexionConLaMemoria(proceso_kernel* proceso,t_log* logger){
+	
+	int conexionNueva = crear_conexion(ipMemoria, puertoMemoria);
+	//log_info(logger,"La conexion con la memoria es: %d", conexionNueva);
+	proceso->conexionConMemoria = conexionNueva;
+	inicializarEnMemoria(proceso, logger);
+
+}
+
+
+void inicializarEnMemoria(proceso_kernel* proceso, t_log* logger){
+
+	int valor = 1;
+	int validacion = validacionConexionConMemoria(proceso,logger);
+
+	if(validacion == 1){
+		t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
+		paquete->buffer->size = sizeof(uint32_t)*2;
+		paquete->buffer->stream = malloc(paquete->buffer->size);
+		int desplazamiento = 0;
+
+		memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+		desplazamiento += sizeof(uint32_t);
+		memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
+		enviarPaquete(paquete,proceso->conexionConMemoria);
+		
+		int sePudoInicializar = atenderMensajeDeMemoria(proceso->conexionConMemoria); 
+	}
+
+}
+
+void finalizarEnMemoria(proceso_kernel* proceso, t_log* logger){
+
+	int valor = 1;
+	int validacion = validacionConexionConMemoria(proceso,logger);
+
+	if(validacion == 1){
+		t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
+		paquete->buffer->size = sizeof(uint32_t)*2;
+		paquete->buffer->stream = malloc(paquete->buffer->size);
+		int desplazamiento = 0;
+
+		memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
+		enviarPaquete(paquete,proceso->conexionConMemoria);
+		
+		int sePudoInicializar = atenderMensajeDeMemoria(proceso->conexionConMemoria); 
+	}
+
+}
+
+
+int atenderMensajeDeMemoria(int conexion) {
+
+	t_log* logger =  log_create("cfg/OperacionesServer.log","Memoria", 1, LOG_LEVEL_ERROR);
+
+	t_paquete* paquete = malloc(sizeof(t_paquete));
+
+	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
+		free(paquete);
+		log_error(logger,"Fallo en recibir la info de la conexion");
+		return -1;
+	}
+
+	log_info(logger,"Recibimos la informacion de Memoria");
+	log_info(logger,"El codigo de operacion es: %d",paquete->codigo_operacion);
+
+	paquete->buffer = malloc(sizeof(t_buffer));
+	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
+
+
+	if(paquete->buffer->size > 0){
+	paquete->buffer->stream = malloc(paquete->buffer->size);
+	recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
+    }
+	
+	int valorOperacion;
+
+	switch(paquete->codigo_operacion){
+        case INICIALIZAR_ESTRUCTURA:;
+			valorOperacion = notificacionInicializacionDeMemoria(paquete->buffer, logger);
+			break;
+        case CERRAR_INSTANCIA:;
+			valorOperacion = notificacionFinalizacionMemoria(paquete->buffer, logger);
+        	break;
+		case MEMALLOC:;
+			break;
+		case MEMFREE:;
+			break;
+		case MEMREAD:;
+			break;
+		case MEMWRITE:;
+			break;
+		case SUSPENSION_PROCESO:;
+			break;
+		default:;
+		log_info(logger,"No se metio por ningun lado wtf");
+		break;
+	}
+	
+	
+
+    if(paquete->buffer->size > 0){
+	    free(paquete->buffer->stream);
+    }
+
+	free(paquete->buffer);
+	free(paquete);
+	log_destroy(logger);
+
+	return valorOperacion;
+	
+}
+
+/* notificaciones de memoria */
+int notificacionInicializacionDeMemoria(t_buffer* buffer,t_log* logger){
+
+	void* data = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+
+
+	memcpy(&(valor), data + desplazamiento, sizeof(uint32_t));
+
+	if(valor == 0){
+		log_info(logger, "Se pudo realizar toda la incializacion en Memoria");
+	}else
+	{
+		log_error(logger,"No se pudo realizar la inicializacion en Memoria, no habia espacio");
+	}
+	
+	return valor;
+
+}
+
+
+int notificacionFinalizacionMemoria(t_buffer* buffer,t_log* logger){
+
+	void* data = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+
+
+	memcpy(&(valor), data + desplazamiento, sizeof(uint32_t));
+
+	if(valor == 0){
+		log_info(logger, "Se pudo realizar toda la finalizacion en Memoria y SWAmP");
+	}else
+	{
+		log_error(logger,"Algo fallo en la finalizacion en Memoria y SWAmP");
+	}
+	
+
+	return valor;
+
+}
+
+
+
+/*esto es algo general para avisar cuando no se pudo realizar algo de memoria a la matelib */
+
+int validacionConexionConMemoria(proceso_kernel* proceso, t_log* logger){
+	if(proceso->conexionConMemoria == -1){
+		log_error(logger,"La conexion con la Memoria fallo");
+		return 0;
+	}
+	return 1;
+}
+
+
+
+
+void notificarQueNoSePudoRealizarTareaConMemoria(cod_operacion operacionSolicitada, proceso_kernel* proceso){
+
+		t_paquete* paquete = crear_paquete(operacionSolicitada);
+		paquete->buffer->size = sizeof(uint32_t);
+		paquete->buffer->stream = malloc(paquete->buffer->size);
+		
+		int desplazamiento = 0;
+		int valor = 1;
+
+		memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+		desplazamiento += sizeof(uint32_t);
+		enviarPaquete(paquete,proceso->conexion);
+	
 }

@@ -5,3 +5,60 @@
 [INFO] 10:14:14:815 DispositivosIO/(5100:5137): Agregamos al proceso en bloqueo y en el dispositivo: laguna
 [INFO] 10:14:14:815 DispositivosIO/(5100:5102): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
 [INFO] 10:14:24:817 DispositivosIO/(5100:5102): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 22:46:34:463 DispositivosIO/(7942:7942): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 22:46:34:470 DispositivosIO/(7942:7942): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 22:46:34:475 DispositivosIO/(7942:7942): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 22:46:34:476 DispositivosIO/(7942:7942): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[DEBUG] 22:49:47:515 DispositivosIO/(8170:8170): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 22:49:47:523 DispositivosIO/(8170:8170): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 22:49:47:527 DispositivosIO/(8170:8170): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 22:49:47:529 DispositivosIO/(8170:8170): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[DEBUG] 22:51:37:609 DispositivosIO/(8292:8292): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 22:51:37:617 DispositivosIO/(8292:8292): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 22:51:37:620 DispositivosIO/(8292:8292): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 22:51:37:622 DispositivosIO/(8292:8292): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[DEBUG] 22:53:53:884 DispositivosIO/(8442:8442): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 22:53:53:890 DispositivosIO/(8442:8442): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 22:53:53:895 DispositivosIO/(8442:8442): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 22:53:53:895 DispositivosIO/(8442:8442): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[DEBUG] 22:57:33:717 DispositivosIO/(8645:8645): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 22:57:33:723 DispositivosIO/(8645:8645): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 22:57:33:727 DispositivosIO/(8645:8645): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 22:57:33:729 DispositivosIO/(8645:8645): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[INFO] 22:57:42:493 DispositivosIO/(8645:8697): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 22:57:42:493 DispositivosIO/(8645:8647): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 22:57:52:495 DispositivosIO/(8645:8647): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 23:00:43:692 DispositivosIO/(8825:8825): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 23:00:43:704 DispositivosIO/(8825:8825): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 23:00:43:709 DispositivosIO/(8825:8825): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 23:00:43:716 DispositivosIO/(8825:8825): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[INFO] 23:00:49:651 DispositivosIO/(8825:8854): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 23:00:49:652 DispositivosIO/(8825:8826): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 23:00:59:654 DispositivosIO/(8825:8826): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 23:14:24:395 DispositivosIO/(9737:9737): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 23:14:24:401 DispositivosIO/(9737:9737): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 23:14:24:406 DispositivosIO/(9737:9737): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 23:14:24:407 DispositivosIO/(9737:9737): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[INFO] 23:14:27:255 DispositivosIO/(9737:9758): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 23:14:27:256 DispositivosIO/(9737:9739): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 23:14:37:258 DispositivosIO/(9737:9739): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 23:17:11:125 DispositivosIO/(9903:9903): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 23:17:11:131 DispositivosIO/(9903:9903): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 23:17:11:135 DispositivosIO/(9903:9903): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 23:17:11:136 DispositivosIO/(9903:9903): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[INFO] 23:17:14:284 DispositivosIO/(9903:9932): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 23:17:14:286 DispositivosIO/(9903:9904): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 23:17:24:287 DispositivosIO/(9903:9904): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 23:24:25:740 DispositivosIO/(10183:10183): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10
+[DEBUG] 23:24:25:747 DispositivosIO/(10183:10183): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000
+[DEBUG] 23:24:25:754 DispositivosIO/(10183:10183): Se crea un hilo para ejecutar el Dispositivio IO: asdasd, con tiempo de espera: 1111
+[DEBUG] 23:24:25:754 DispositivosIO/(10183:10183): Se crea un hilo para ejecutar el Dispositivio IO: abcd, con tiempo de espera: 2020
+[INFO] 23:24:34:046 DispositivosIO/(10183:10236): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 23:24:34:047 DispositivosIO/(10183:10184): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 23:24:44:049 DispositivosIO/(10183:10184): Termino de ejecutar el proceso:0 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 23:25:09:345 DispositivosIO/(10183:10273): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 23:25:09:345 DispositivosIO/(10183:10184): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 23:25:19:346 DispositivosIO/(10183:10184): Termino de ejecutar el proceso:1 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 23:25:25:060 DispositivosIO/(10183:10302): Agregamos al proceso en bloqueo y en el dispositivo: laguna
+[INFO] 23:25:25:060 DispositivosIO/(10183:10184): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
+[INFO] 23:25:35:061 DispositivosIO/(10183:10184): Termino de ejecutar el proceso:2 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite

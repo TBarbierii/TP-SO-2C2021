@@ -122,7 +122,7 @@ void pedirPagina(uint32_t id_pagina, uint32_t pid){
 
 }
 
-
+/*
 int main() {
 
     enviar_tipo_asignacion("FIJA");
@@ -131,4 +131,4 @@ int main() {
 	
     return 0;
 }
- 
+ */
