@@ -29,9 +29,13 @@ void thread1_PMP(t_log* logger){
         pthread_mutex_lock(modificarBlocked);
             if(list_is_empty(procesosReady) && !list_is_empty(procesosNew) && list_is_empty(procesosBlocked)){
                 proceso_kernel* procesoASuspender = list_remove(procesosBlocked, list_size(procesosBlocked)-1);
+                
                 list_add(procesosSuspendedBlock, procesoASuspender);
+                //TODO: tendriamos que mandar para que suspendan al proceso en memoria
                 sem_post(nivelMultiProgramacionGeneral);
+            
             }
+
         pthread_mutex_unlock(modificarNew);
         pthread_mutex_unlock(modificarReady);
         pthread_mutex_unlock(modificarBlocked);

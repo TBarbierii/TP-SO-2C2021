@@ -23,16 +23,12 @@ int mate_init(mate_instance *lib_ref, char *config){
 
 int mate_close(mate_instance *lib_ref){
 
-    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
+    
         log_info(lib_ref->group_info->loggerProceso,"Se ha solicitado cerrar el carpincho, este es un hasta adios");
 
         solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
         int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
         return valorRetorno;
-    }else{
-        perror("Se esta intentando realizar una operacion general, pero como la conexion fue erronea no se pudo");
-        return -1;
-    }    
 }
 
 
@@ -117,31 +113,42 @@ int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
     
     
     /* toda la logica de lo que tiene que hacer */
-    return 0;
+    /*serializar, deserializar */
+    /* si lo que se recibio del backend es un 1--> tirar el MATE_FREE_FAULT, sino un 0*/
     
 }
 
 int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *dest, int size){
     
-    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
-        return 0;
-    }else{
-        perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
-        return -1;
-    } 
+    
+    /* toda la logica de lo que tiene que hacer */
+    /*serializar, deserializar */
+    /* si lo que se recibio del backend es un 1--> tirar el MATE_READ_FAULT, sino un 0 */
+
+  
 }
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
     
-    if(validarConexionPosible(MEMORIA, lib_ref->group_info->backEndConectado)==1){
-        /* toda la logica de lo que tiene que hacer */
+
+    
+    /* toda la logica de lo que tiene que hacer */
+    /*serializar, deserializar */
+    /* si lo que se recibio del backend es un 1--> tirar el MATE_WRITE_FAULT, sino un 0 */
+    /*con el tema del contenido al recibir mensaje -> si es 1 -> NULL / si es 0 -> el contenido */
+
+    origin = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+
+    if(origin != NULL){
         return 0;
     }else{
-        perror("Se esta intentando realizar una operacion en Memoria, pero hubo un fallo en la conexion");
-        return -1;
-    }   
+        return MATE_WRITE_FAULT;
+    }
+
+
+
 }
+
 
 
 
@@ -178,7 +185,7 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
         return -1;
 	}
     int valorRetorno;
-    //void* retornoMensaje;
+    void* retornoMensaje;
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
@@ -226,6 +233,7 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
         case MEMREAD:;
             break;
         case MEMWRITE:;
+        //aca vamos a tener que devolver el contenido
             break;
         default:;
             break;
@@ -650,7 +658,11 @@ int main(){
     //mate_sem_wait(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
     mate_call_io(referencia,"laguna","asd");
-   
+
+    //mate_pointer = mate_memalloc(....);
+    //mate_memfree(,....)
+
+
     mate_close(referencia);
     free(referencia);
 
