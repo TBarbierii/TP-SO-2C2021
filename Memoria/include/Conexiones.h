@@ -1,7 +1,7 @@
 #include "Memoria.h"
 
 
-void* recibir_buffer(uint32_t* , int );
+void* recibir_buffer(int);
 void atender_solicitudes_multihilo();
 void atender_solicitudes_memoria(uint32_t);
 uint32_t recibir_memalloc(int, t_log*);
