@@ -3,6 +3,8 @@
 
 uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpinchos en el init
 
+    t_list* marcos_a_asignar = list_create();//probar sacar el list_create
+
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc->pid;
 	};
@@ -14,183 +16,124 @@ uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpincho
      carpincho = malloc(sizeof(t_carpincho));
      carpincho->id_carpincho = alloc->pid;
      carpincho->tabla_de_paginas = list_create();
-     carpincho->allocs = list_create();
-     //tlb
+
+     marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
+    
+
      list_add(carpinchos, carpincho);
     }
 
-    uint32_t posicionAlloc = buscar_o_agregar_espacio(carpincho, alloc->tamanio); //aca se crearian las paginas en el carpincho. Solo sirven para calcular la DF creo
+    uint32_t direccionLogica = administrar_paginas(carpincho, alloc->tamanio, marcos_a_asignar);
 
-    uint32_t direccionLogica = administrar_paginas(carpincho, posicionAlloc);
-
-    asignarPaginas(carpincho); //aca se graba en memoria los allocs reservados.
 
     return direccionLogica;
 
 }
 
 
-uint32_t buscar_o_agregar_espacio(t_carpincho* carpincho, uint32_t tamanioPedido){ //devuelve desplazamiento (inicio del espacio) respecto a la pagina
 
-   if(list_size(carpincho->allocs) == 0){
-       heapMetadata* alloc = malloc(sizeof(heapMetadata));
-       alloc->prevAlloc = -1;
-       alloc->isFree = false;
-       alloc->nextAlloc = tamanioPedido + 9;
+uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* marcos_a_asignar){
 
-       list_add(carpincho->allocs, alloc);
+    if(list_size(carpincho->tabla_de_paginas)==0){ //primera vez
 
-       heapMetadata* next_alloc = malloc(sizeof(heapMetadata));
-       next_alloc->isFree = true;
-       next_alloc->prevAlloc = 0;
-       next_alloc->nextAlloc = -1;
+        heapMetadata* alloc = malloc(sizeof(heapMetadata));
+        alloc->prevAlloc = -1;
+        alloc->isFree = false;
+        alloc->nextAlloc = tamanio + TAMANIO_HEAP;
 
-       list_add(carpincho->allocs, next_alloc);
+        heapMetadata* next_alloc = malloc(sizeof(heapMetadata));
+        next_alloc->isFree = true;
+        next_alloc->prevAlloc = 0;
+        next_alloc->nextAlloc = -1;
 
-        return 0; 
+        uint32_t cantidadDePaginasACrear = ceil((float)(TAMANIO_HEAP*2 + tamanio)/tamanioPagina);
 
-   }else{//buscar espacio. se podria delegar todo esto porque tambien aca habria que hacer lo de dividir y consolidar allocs
+        for(int i=0; i<cantidadDePaginasACrear; i++){
 
-        uint32_t espacioEncontrado = 0, cantidadDeAllocs = list_size(carpincho->allocs), posicionUltimoAlloc ;
-        heapMetadata *allocActual, *allocSiguiente, *anteUltimoAlloc = list_get(carpincho->allocs, list_size(carpincho->allocs)-2);
-
-        for(uint32_t i = 0; i < cantidadDeAllocs; i++){
-
-            posicionUltimoAlloc = anteUltimoAlloc->nextAlloc;
-            allocActual = list_get(carpincho->allocs, i);
-            allocSiguiente = list_get(carpincho->allocs, i + 1);
-
-            if(allocActual->isFree && allocSiguiente != NULL){
-                espacioEncontrado = allocActual->nextAlloc - allocSiguiente->prevAlloc - 9;
-            }
-            if(allocSiguiente == NULL){//llego al ultimo alloc (allocActual) y no encontro espacio. hay que crear uno mas
-               
-                allocActual->nextAlloc = posicionUltimoAlloc + 9 + tamanioPedido;
-                espacioEncontrado = tamanioPedido;
-
-                heapMetadata* allocNuevo = malloc(sizeof(heapMetadata));
-                allocNuevo->prevAlloc = posicionUltimoAlloc;
-                allocNuevo->isFree = true;
-                allocNuevo->nextAlloc = -1;
-
-                list_add(carpincho->allocs, allocNuevo);
-                allocSiguiente = allocNuevo;
-            }
-
-            if (tamanioPedido == espacioEncontrado || tamanioPedido < espacioEncontrado + 9) // +9 porque si es mas chico en lo que sobra tiene que entrar el otro heap (aunque tambien habria que agregar +minimo_espacio_aceptable)
-            break; //sale del for
-        }
-        
-        //falta dividir en caso de que sobre lugar 
-
-        uint32_t posicionAllocActual = allocSiguiente->prevAlloc;
-        allocActual->isFree = false;
-
-        return posicionAllocActual;
-   }
-
-}
-
-uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t posicionAlloc){
-
-        heapMetadata *anteultimoAlloc = list_get(carpincho->allocs, list_size(carpincho->allocs)-2);
-
-        uint32_t posicionUltimoAlloc = anteultimoAlloc->nextAlloc;
-
-        uint32_t cantidadDePaginasNecesarias = ceil((float)posicionUltimoAlloc/tamanioPagina);
-
-        uint32_t cantidadDePaginasACrear =cantidadDePaginasNecesarias - list_size(carpincho->tabla_de_paginas);
-
-        for (uint32_t i=0; i < cantidadDePaginasACrear; i++){
-
-            t_pagina *pagina = malloc(sizeof(t_pagina));
-
-            pagina->esNueva=true;
+            t_pagina* pagina = malloc(sizeof(t_pagina));
             pagina->id_pagina = generadorIdsPaginas();
+            pagina->presente = true;
+            //ver esto que onda con el tema de swap.
+            pagina->ultimoUso = clock();
+            pagina->modificado = true;
 
-            list_add(carpincho->tabla_de_paginas, pagina);    
+            //enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
+
+            list_add(carpincho->tabla_de_paginas, pagina);
         }
 
-        //todo esto que sigue es para calcualr el desplazamiento de donde empieza el espacio libre
-        uint32_t i;
-        t_pagina *paginaDelAllocActual;
+        //for cada pagina creada. enviarlas a swap. Y si no hay espacio devolver null
 
-        for(i=1; i <= list_size(carpincho->tabla_de_paginas); i++){
+        void* buffer_allocs = generar_buffer_allocs(tamanio, next_alloc,cantidadDePaginasACrear, PRIMERA_VEZ, 0);
 
-            if(posicionAlloc < tamanioPagina * i){
-            paginaDelAllocActual = list_get(carpincho->tabla_de_paginas, i-1);
-            break; 
-            }    
+        escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar);
+
+
+        free (buffer_allocs);
+
+
+        void agregarATLB(t_pagina* pag){
+            list_add(TLB, pag);
+        };
+        list_iterate(carpincho->tabla_de_paginas, (void*)agregarATLB);
+
+        t_pagina* pag = list_get(carpincho->tabla_de_paginas, 0);
+        return generarDireccionLogica(pag->id_pagina, TAMANIO_HEAP);
+
+    }else{//busca un hueco
+        
+        t_pagina* primeraPag = list_get(carpincho->tabla_de_paginas, 0);
+
+        int32_t DF = buscar_TLB(primeraPag->id_pagina);
+
+        if(DF == -1){ //tlb miss
+            //buscar en tabla de paginas
+            //swapear
+            //actualizar tlb
         }
 
-        uint32_t desplazamiento =  tamanioPagina - (i * tamanioPagina - posicionAlloc) +9 ; //el desplazamiento relativo a la pagina
+        heapMetadata *heap = malloc(TAMANIO_HEAP); //liberar
+        int32_t posicionHeap = 0;
+        int32_t pagina, desplazamiento;
 
-    return generarDireccionLogica(paginaDelAllocActual->id_pagina, desplazamiento);
+        memcpy(heap, memoriaPrincipal + DF, TAMANIO_HEAP);
+
+
+        while(heap->nextAlloc != -1)
+        {
+            if(!(heap->isFree)){
+            pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho->tabla_de_paginas, &posicionHeap, &desplazamiento);
+            }
+            
+            if(heap->nextAlloc == -1) break;
+
+            uint32_t espacioEncontrado = heap->nextAlloc - posicionHeap - TAMANIO_HEAP;
+
+            if (tamanio == espacioEncontrado || tamanio < espacioEncontrado + TAMANIO_HEAP){ // +9 porque si es mas chico en lo que sobra tiene que entrar el otro heap (aunque tambien habria que agregar +minimo_espacio_aceptable)
+                break;
+            }else{
+
+            pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho->tabla_de_paginas, &posicionHeap, &desplazamiento);
+            }
+
+        }
+
+        //dividir
+
+        if(heap->nextAlloc == -1){
+
+            crearAllocNuevo(&pagina, tamanio, heap, posicionHeap, carpincho, &desplazamiento);//pasar pagina y despl por referencia y si esta cortado modificarlo
+        }
+
+        return generarDireccionLogica(pagina, desplazamiento + TAMANIO_HEAP);
+        
+
+    }     
+        
 
 }
 
-uint32_t asignarPaginas(t_carpincho* carpincho){
-    
-    t_list *marcos_a_asignar;
 
-    if(strcmp(tipoAsignacion, "FIJA") == 0){
-
-        bool noEstanAsignados(t_marco* marco){
-            return marco->proceso_asignado == -1;
-        };
-        
-        bool buscarMarcosDelProceso(t_marco* marco){
-            return marco->proceso_asignado == carpincho->id_carpincho;
-        };
-
-        marcos_a_asignar = list_filter(marcos, (void*)buscarMarcosDelProceso);
-
-        if(list_size(marcos_a_asignar)==0){
-
-        t_list *marcos_sin_asignar = list_filter(marcos, (void*)noEstanAsignados);
-
-        marcos_a_asignar = list_take(marcos_sin_asignar, marcosMaximos);
-        
-
-        void marcarOcupados(t_marco *marco){
-            //marco->estaLibre = false;
-            marco->proceso_asignado = carpincho->id_carpincho;
-        };
-
-        list_iterate(marcos_a_asignar, (void*)marcarOcupados);
-        }
-
-        escribir_marcos(marcos_a_asignar, carpincho); //aca escribir las paginas nuevas en los marcos_asignados. diferenciar los algoritmos en el caso de que haya que reemplazar. aca es la comunicacion con swap 
-
-    }
-    if(strcmp(tipoAsignacion, "DINAMICA") ==0 ){
-        
-        bool noEstanAsignados(t_marco* marco){
-        return marco->proceso_asignado == -1;
-        };
-
-        t_list *marcos_libres = list_filter(marcos, (void*)noEstanAsignados);
-    
-        bool contarPagsNuevas(t_pagina *pag){
-            return pag->esNueva;
-        };
-
-        uint32_t pagNuevas = list_count_satisfying(carpincho->tabla_de_paginas, (void*)contarPagsNuevas);
-
-        marcos_a_asignar = list_take(marcos_libres, pagNuevas);
-
-        void marcarOcupados(t_marco *marco){
-            //marco->estaLibre = false;
-            marco->proceso_asignado = carpincho->id_carpincho;
-        }
-
-        list_iterate(marcos_a_asignar, (void*)marcarOcupados);
-
-        escribir_marcos(marcos_a_asignar, carpincho);
-    }
-   
-   return 0;
-}
 
 void crear_marcos(){
 
@@ -213,56 +156,40 @@ void crear_marcos(){
 
 }
 
-void escribir_marcos(t_list* marcos_a_asignar, t_carpincho* carpincho){
-
-    void* stream_allocs = generar_stream_allocs(carpincho);
-    uint32_t contador =0;
-
-    if(strcmp(tipoAsignacion, "FIJA") == 0){
-
-        //los marcos a asignar son los reservados para el proceso. pueden estar todos libres, algunos libres o todos ocupados 
-        //para lru ver si sirve la funcion clock()
-    }
 
 
-    void escribir_paginas_en_marcos(t_marco* marco){
+void* generar_buffer_allocs(uint32_t tamanio, heapMetadata* heap, uint32_t cantPaginas, stream_alloc codigo, int32_t despl){// el tamanio en el segundp caso, es el tamanio del comienzo. El heap tengo que ver
 
-            t_pagina* pagina = list_get(carpincho->tabla_de_paginas, contador);
-            if(pagina != NULL  && pagina->esNueva && marco->estaLibre){
-            memcpy(memoriaPrincipal + marco->comienzo, stream_allocs + (contador*tamanioPagina), tamanioPagina);
-            pagina->esNueva = false;
-            pagina->marco = marco;
-            pagina->presente = true;
-            marco->estaLibre = false;
-            }
-            contador++;
-    }
-
-    list_iterate(marcos_a_asignar, (void*)escribir_paginas_en_marcos);
-    free(stream_allocs);
-}
-
-void* generar_stream_allocs(t_carpincho* carpincho){
-
-    uint32_t cantPaginas = list_size(carpincho->tabla_de_paginas);
-    uint32_t reserva = tamanioPagina * cantPaginas;
+    uint32_t reserva = tamanioPagina * cantPaginas, desplazamiento = 0;
     void* stream_allocs = malloc(reserva);
- 
-        uint32_t desplazamiento =0, cantidadDeAllocs = list_size(carpincho->allocs);
-        heapMetadata *allocActual;
 
-            for(uint32_t i = 0; i < cantidadDeAllocs; i++){
+    if(codigo == PRIMERA_VEZ){
 
-            allocActual = list_get(carpincho->allocs, i);
-            
+        heapMetadata* alloc = malloc(sizeof(heapMetadata));
+        alloc->prevAlloc = -1;
+        alloc->isFree = false;
+        alloc->nextAlloc = tamanio + TAMANIO_HEAP;
 
-            memcpy(stream_allocs + desplazamiento, allocActual, sizeof(heapMetadata));//llena con el primer alloc
+        memcpy(stream_allocs + desplazamiento, alloc, TAMANIO_HEAP);
 
-            desplazamiento = allocActual->nextAlloc;
+        desplazamiento = alloc->nextAlloc;
 
-        }
+        memcpy(stream_allocs + desplazamiento, heap, TAMANIO_HEAP);
 
-    return stream_allocs;
+        free(alloc);
+
+        return stream_allocs;
+    }
+        if(codigo == AGREGAR_ALLOC){
+
+        int bytesQueYaEstan = tamanioPagina - (despl + TAMANIO_HEAP);
+
+        memcpy(stream_allocs + (tamanio - bytesQueYaEstan), heap , TAMANIO_HEAP);
+
+        return stream_allocs;
+    }
+
+
 }
 
 void liberar_alloc(uint32_t carpincho, uint32_t DL){

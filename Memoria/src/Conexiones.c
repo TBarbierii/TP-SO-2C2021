@@ -13,14 +13,13 @@ uint32_t recibir_operacion(uint32_t socket_cliente)
 	}
 }
 
-void* recibir_buffer(int socket_cliente)
+void* recibir_buffer(uint32_t * size, int socket_cliente)
 {
 	void * buffer;
-	int size;
 
-	recv(socket_cliente, &(size), sizeof(uint32_t), MSG_WAITALL);
-	buffer = malloc(size);
-	recv(socket_cliente, buffer, size, MSG_WAITALL);
+	recv(socket_cliente, size, sizeof(uint32_t), MSG_WAITALL);
+	buffer = malloc(*size);
+	recv(socket_cliente, buffer, *size, MSG_WAITALL);
 
 	return buffer;
 }
@@ -53,41 +52,23 @@ void atender_solicitudes_memoria(uint32_t conexion){
 	
 	case INICIALIZAR_ESTRUCTURA: //cuando no hay kernel. Si hay nunca llega este mensaje
 		inicializar_carpincho(conexion, logger);
-		break;
+			break;
 	case MEMALLOC:
 		recibir_memalloc(conexion, logger);	
-		break;
+			break;
 	case MEMFREE:
 		recibir_memfree(conexion, logger);
-		break;
+			break;
 	case MEMREAD:
 		recibir_memread(conexion, logger);
-		break;
+			break;
 	case MEMWRITE:	
 		recibir_memwrite(conexion, logger);
-		break;
+			break;
 	case CERRAR_INSTANCIA:
 		cerrar_carpincho(conexion, logger);
+
 		break;
-		/*casos no validos de operacion kernel */
-	case INICIAR_SEMAFORO:;
-		responderOperacionNoValida(conexion, INICIAR_SEMAFORO, logger);
-		break;
-    case SEM_WAIT:;
-		responderOperacionNoValida(conexion, SEM_WAIT, logger);
-        break;
-    case SEM_SIGNAL:;
-		responderOperacionNoValida(conexion, SEM_SIGNAL, logger);
-        break;
-    case CERRAR_SEMAFORO:;
-		responderOperacionNoValida(conexion, CERRAR_SEMAFORO, logger);
-        break;
-    case CONECTAR_IO:;
-		responderOperacionNoValida(conexion, CONECTAR_IO, logger);
-        break;
-
-
-
 	case -1:
 		log_error(logger, "el cliente se desconecto. Terminando servidor");
 		break;
@@ -104,9 +85,9 @@ void atender_solicitudes_memoria(uint32_t conexion){
 
 uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del comienzo del bloque (no del heap)
 {
-	uint32_t offset;
+	uint32_t size, offset;
 	t_memalloc *alloc = malloc(sizeof(t_memalloc));
-	void* buffer = recibir_buffer(socket_cliente);
+	void* buffer = recibir_buffer(&size, socket_cliente);
 	
 	memcpy(alloc->pid, buffer, sizeof(uint32_t));
 	offset =+ sizeof(uint32_t);
@@ -164,8 +145,9 @@ void enviarInformacionAdministrativaDelProceso(t_carpincho* carpincho){
 uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 
 	uint32_t pidProcesoAEliminar;
+	uint32_t size;
 
-	void* buffer = recibir_buffer(conexion);
+	void* buffer = recibir_buffer(&size, conexion);
 
 	memcpy(&pidProcesoAEliminar, buffer, sizeof(uint32_t));
 
@@ -201,8 +183,8 @@ void informarCierreDeProceso(t_carpincho* carpincho,t_log* loggerActual){
 
 uint32_t recibir_memfree(int socket_cliente, t_log* logger) {
 
-	uint32_t offset=0, carpincho, direccionLogica;
-	void* buffer = recibir_buffer(socket_cliente);
+	uint32_t size, offset=0, carpincho, direccionLogica;
+	void* buffer = recibir_buffer(&size, socket_cliente);
 	
 	memcpy(&carpincho, buffer, sizeof(uint32_t));
 	offset += sizeof(uint32_t);
@@ -219,8 +201,8 @@ uint32_t recibir_memfree(int socket_cliente, t_log* logger) {
 
 uint32_t recibir_memread(int socket_cliente, t_log* logger) {
 
-	uint32_t offset, carpincho, direccion_logica, tamanio;
-	void* buffer = recibir_buffer(socket_cliente);
+	uint32_t size, offset, carpincho, direccion_logica, tamanio;
+	void* buffer = recibir_buffer(&size, socket_cliente);
 	
 	memcpy(&carpincho, buffer, sizeof(uint32_t));
 	offset =+ sizeof(uint32_t);
@@ -240,8 +222,8 @@ uint32_t recibir_memread(int socket_cliente, t_log* logger) {
 
 uint32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 
-	uint32_t offset, carpincho, direccion_logica, tamanio;
-	void* buffer = recibir_buffer(socket_cliente);
+	uint32_t size, offset, carpincho, direccion_logica, tamanio;
+	void* buffer = recibir_buffer(&size, socket_cliente);
 	
 	memcpy(&carpincho, buffer, sizeof(uint32_t));
 	offset =+ sizeof(uint32_t);
@@ -307,7 +289,7 @@ void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 	enviarPaquete(paquete, conexionSwamp);
 
-
+	//esperar cofirmacion de si hay lugar o no
 
 }
 
@@ -330,34 +312,11 @@ void pedir_pagina(uint32_t id_pagina, uint32_t pid){
 
 	enviarPaquete(paquete, conexionSwamp);
 
-	void* buffer = recibir_buffer(conexionSwamp);
+	void* buffer = recibir_buffer(&size, conexionSwamp);
 
 	//t_pagina *pagina = 
 
 	//desarmar buffer. armar pagina y ponerla de nuevo en memoria
 
 
-}
-
-
-
-void responderOperacionNoValida(int conexion, cod_operacion tareaRealizada, t_log* logger){
-
-	int valor = 1;
-
-	void* buffer= recibir_buffer(conexion);
-
-	t_paquete *paquete = crear_paquete(tareaRealizada);
-	
-	log_info(logger,"Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL");
-
-	paquete->buffer->size = sizeof(uint32_t);
-    paquete->buffer->stream = malloc(paquete->buffer->size);
-	uint32_t desplazamiento=0;
-
-	memcpy(paquete->buffer->stream + desplazamiento , &(valor), sizeof(uint32_t));
-
-	enviarPaquete(paquete, conexion);
-
-	free(buffer);
 }
