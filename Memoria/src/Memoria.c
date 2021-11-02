@@ -85,15 +85,15 @@ int main(){
 
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     alloc->pid = 8;
-    alloc->tamanio = 20;
+    alloc->tamanio = 70;
 
         t_memalloc *alloc1 = malloc(sizeof(t_memalloc));
     alloc1->pid = 8;
-    alloc1->tamanio =54 ;
+    alloc1->tamanio =20 ;
 
             t_memalloc *alloc2 = malloc(sizeof(t_memalloc));
     alloc2->pid = 8;
-    alloc2->tamanio =8 ;
+    alloc2->tamanio =50;
 
             t_memalloc *alloc3 = malloc(sizeof(t_memalloc));
     alloc3->pid = 8;
@@ -141,7 +141,16 @@ int main(){
 
     uint32_t direccionLogica2 = administrar_allocs(alloc2);
 
-    //uint32_t direccionLogica3 = administrar_allocs(alloc3);
+    uint32_t direccionLogica3 = administrar_allocs(alloc3);
+
+    liberar_alloc(8, direccionLogica1);
+    
+    t_memalloc *alloc4 = malloc(sizeof(t_memalloc));
+    alloc4->pid = 8;
+    alloc4->tamanio =15;
+
+    uint32_t direccionLogica4 = administrar_allocs(alloc4); 
+
    
 
     /*void* prueba = "Esta es una prueba de un texto de tre paginas osea como max 70 bytes\0";

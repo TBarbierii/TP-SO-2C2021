@@ -160,7 +160,7 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar );
 
 
 void crear_marcos();
-void liberarMemoria();
+void liberar_alloc(uint32_t, uint32_t);
 void enviarInformacionAdministrativaDelProceso(t_carpincho* carpincho);
 void inicializar_carpincho(int conexion ,t_log* logger);
 
