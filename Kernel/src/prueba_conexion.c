@@ -1,4 +1,4 @@
-#include "../../SWAmP/include/swamp_lib.h"
+#include "../../SWAmP/include/Swamp_lib.h"
 #include <stdio.h>
 #include <commons/log.h>
 #include <commons/config.h>
@@ -122,13 +122,60 @@ void pedirPagina(uint32_t id_pagina, uint32_t pid){
 
 }
 
+void finalizar_proceso(uint32_t PID){
+
+	t_paquete *paquete = crear_paquete(CERRAR_INSTANCIA);
+
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+
+	memcpy(paquete->buffer->stream, &(PID) , sizeof(uint32_t));
+
+	uint32_t conexionSwamp = crear_conexion("127.0.0.1", "4444");
+
+	enviarPaquete(paquete, conexionSwamp);
+
+	t_paquete* paqueteRecibido = malloc(sizeof(t_paquete));
+
+	if(recv(conexionSwamp, &(paqueteRecibido->codigo_operacion), sizeof(cod_operacion), 0) < 1){
+		free(paqueteRecibido);
+		printf("Fallo en recibir la info de la conexion");
+	}else{
+
+		paqueteRecibido->buffer = malloc(sizeof(t_buffer));
+		recv(conexionSwamp, &(paqueteRecibido->buffer->size), sizeof(uint32_t), 0);
+
+		if(paqueteRecibido->buffer->size > 0){
+			paqueteRecibido->buffer->stream = malloc(paqueteRecibido->buffer->size);
+			recv(conexionSwamp, paqueteRecibido->buffer->stream, paqueteRecibido->buffer->size, 0);
+		}
+
+		int valor;
+		
+		//esto es para que lo pueda mostrar como un char*, ya que si no le ponemos ese \0 al final no funca o el valgrind tira un leak
+		memcpy(&(valor), paqueteRecibido->buffer->stream, sizeof(uint32_t));
+
+		if(valor == 1) {
+			printf("Se borro el proceso: %i de SWAP", PID);
+			printf("\n");
+		}
+		
+		
+		free(paqueteRecibido->buffer->stream);
+		free(paqueteRecibido->buffer);
+		free(paqueteRecibido);
+	
+	}
+
+}
 /*
 int main() {
 
     enviar_tipo_asignacion("FIJA");
 	enviadoPagina(3,1,"asd");
 	pedirPagina(1, 3);
+	finalizar_proceso(3);
 	
     return 0;
 }
- */
+*/

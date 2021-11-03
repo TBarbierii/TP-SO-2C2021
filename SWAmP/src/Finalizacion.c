@@ -22,34 +22,22 @@ void eliminarParticiones(t_list* listaParticiones){
     list_destroy(listaParticiones);
 }
 
-void limpiar_marcos_de_proceso(int PID, char* path_swap) {
+void limpiar_marcos_de_proceso(int PID) {
 
-    swap_files* archivo_swap = encontrar_swap_file(path_swap);
-    path_swap = archivo_swap->path;
-    t_list* marcos_de_proceso = list_create();
+    swap_files* archivo_swap = encontrar_swap_file_en_base_a_pid(PID);
+    t_list* marcos_de_proceso;
 
-    int cantidad_marcos_asignados = list_size(marcos_de_proceso);
-    int offset_particion = 0;
-    char caracter_nulo = '\0';
+    if(archivo_swap != NULL) {
+        bool encontrar_marcos_proceso(particion* particion_proceso) {
+            return (particion_proceso->pid == PID);
+        }
 
-    int fd = open(path_swap, O_RDWR, (mode_t) 0777);
-    void* contenido_archivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-    truncate(path_swap, tamanio_swap);
+        marcos_de_proceso = list_filter(archivo_swap->particiones_swap, encontrar_marcos_proceso);
 
-    if(tipo_asignacion == 1) {
-        for(int i = 0; i < cantidad_marcos_asignados; i++) {
-            particion* particion_a_vaciar = list_get(marcos_de_proceso, i);
+        while(! (list_is_empty(marcos_de_proceso))) {
+            particion* particion_a_vaciar = list_remove(marcos_de_proceso, 0);
             particion_a_vaciar->esta_libre = 1;
             particion_a_vaciar->hay_contenido = 0;
-            particion_a_vaciar->num_pagina = 0; //Que deberia poner aca?
-            particion_a_vaciar->pid = 0;        //Que deberia poner aca?
-            memcpy(contenido_archivo + offset_particion, &caracter_nulo, sizeof(char));
-            offset_particion = particion_a_vaciar->inicio_particion + tamanio_pagina;
         }
-    }else{
-
     }
-    munmap(contenido_archivo, tamanio_swap);
-    close(fd);
-    list_destroy(marcos_de_proceso);
 }

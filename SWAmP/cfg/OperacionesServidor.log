@@ -1,0 +1,405 @@
+[INFO] 14:29:09:745 a/(6202:6202): Recibimos la informacion de la RAM
+[INFO] 14:29:09:745 a/(6202:6202): El codigo de operacion es: 13
+[INFO] 14:29:09:746 a/(6202:6202): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:29:09:752 a/(6202:6202): Recibimos la informacion de la RAM
+[INFO] 14:29:09:752 a/(6202:6202): El codigo de operacion es: 11
+[INFO] 14:29:09:755 a/(6202:6202): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:29:09:769 a/(6202:6202): Todo bien se realizo con la asignacion Fija
+[INFO] 14:29:09:783 a/(6202:6202): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:29:09:787 a/(6202:6202): Se escribe sobre la particion: 0
+[INFO] 14:29:09:788 a/(6202:6202): Se guardo el contenido correctamente
+[INFO] 14:29:09:795 a/(6202:6202): Recibimos la informacion de la RAM
+[INFO] 14:29:09:795 a/(6202:6202): El codigo de operacion es: 12
+[INFO] 14:29:09:797 a/(6202:6202): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:29:09:830 a/(6202:6202): Recibimos la informacion de la RAM
+[INFO] 14:29:09:830 a/(6202:6202): El codigo de operacion es: 1
+[INFO] 14:29:09:831 a/(6202:6202): El proceso: 3, pide finalizar
+[INFO] 14:30:58:142 a/(6454:6454): Recibimos la informacion de la RAM
+[INFO] 14:30:58:143 a/(6454:6454): El codigo de operacion es: 13
+[INFO] 14:30:58:143 a/(6454:6454): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:30:58:150 a/(6454:6454): Recibimos la informacion de la RAM
+[INFO] 14:30:58:150 a/(6454:6454): El codigo de operacion es: 11
+[INFO] 14:30:58:153 a/(6454:6454): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:30:58:167 a/(6454:6454): Todo bien se realizo con la asignacion Fija
+[INFO] 14:30:58:179 a/(6454:6454): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:30:58:181 a/(6454:6454): Se escribe sobre la particion: 0
+[INFO] 14:30:58:183 a/(6454:6454): Se guardo el contenido correctamente
+[INFO] 14:30:58:196 a/(6454:6454): Recibimos la informacion de la RAM
+[INFO] 14:30:58:196 a/(6454:6454): El codigo de operacion es: 12
+[INFO] 14:30:58:198 a/(6454:6454): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:30:58:222 a/(6454:6454): Recibimos la informacion de la RAM
+[INFO] 14:30:58:223 a/(6454:6454): El codigo de operacion es: 1
+[INFO] 14:30:58:224 a/(6454:6454): El proceso: 3, pide finalizar
+[INFO] 14:34:00:654 a/(6734:6734): Recibimos la informacion de la RAM
+[INFO] 14:34:00:654 a/(6734:6734): El codigo de operacion es: 13
+[INFO] 14:34:00:655 a/(6734:6734): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:34:00:664 a/(6734:6734): Recibimos la informacion de la RAM
+[INFO] 14:34:00:664 a/(6734:6734): El codigo de operacion es: 11
+[INFO] 14:34:00:668 a/(6734:6734): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:34:00:689 a/(6734:6734): Todo bien se realizo con la asignacion Fija
+[INFO] 14:34:00:709 a/(6734:6734): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:34:00:716 a/(6734:6734): Se escribe sobre la particion: 0
+[INFO] 14:34:00:717 a/(6734:6734): Se guardo el contenido correctamente
+[INFO] 14:34:00:748 a/(6734:6734): Recibimos la informacion de la RAM
+[INFO] 14:34:00:748 a/(6734:6734): El codigo de operacion es: 12
+[INFO] 14:34:00:750 a/(6734:6734): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:34:00:777 a/(6734:6734): Recibimos la informacion de la RAM
+[INFO] 14:34:00:777 a/(6734:6734): El codigo de operacion es: 1
+[INFO] 14:34:00:779 a/(6734:6734): El proceso: 3, pide finalizar
+[INFO] 14:41:17:846 a/(7003:7003): Recibimos la informacion de la RAM
+[INFO] 14:41:17:846 a/(7003:7003): El codigo de operacion es: 13
+[INFO] 14:41:17:847 a/(7003:7003): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:41:17:854 a/(7003:7003): Recibimos la informacion de la RAM
+[INFO] 14:41:17:854 a/(7003:7003): El codigo de operacion es: 11
+[INFO] 14:41:17:857 a/(7003:7003): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:41:17:880 a/(7003:7003): Todo bien se realizo con la asignacion Fija
+[INFO] 14:41:17:882 a/(7003:7003): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:41:17:886 a/(7003:7003): Se escribe sobre la particion: 0
+[INFO] 14:41:17:887 a/(7003:7003): Se guardo el contenido correctamente
+[INFO] 14:41:17:896 a/(7003:7003): Recibimos la informacion de la RAM
+[INFO] 14:41:17:897 a/(7003:7003): El codigo de operacion es: 12
+[INFO] 14:41:17:898 a/(7003:7003): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:41:17:929 a/(7003:7003): Recibimos la informacion de la RAM
+[INFO] 14:41:17:929 a/(7003:7003): El codigo de operacion es: 1
+[INFO] 14:41:17:931 a/(7003:7003): El proceso: 3, pide finalizar
+[INFO] 14:42:33:668 a/(7290:7290): Recibimos la informacion de la RAM
+[INFO] 14:42:33:668 a/(7290:7290): El codigo de operacion es: 13
+[INFO] 14:42:33:669 a/(7290:7290): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:42:33:673 a/(7290:7290): Recibimos la informacion de la RAM
+[INFO] 14:42:33:673 a/(7290:7290): El codigo de operacion es: 11
+[INFO] 14:42:33:676 a/(7290:7290): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:42:33:698 a/(7290:7290): Todo bien se realizo con la asignacion Fija
+[INFO] 14:42:33:704 a/(7290:7290): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:42:33:704 a/(7290:7290): Se escribe sobre la particion: 0
+[INFO] 14:42:33:706 a/(7290:7290): Se guardo el contenido correctamente
+[INFO] 14:42:33:716 a/(7290:7290): Recibimos la informacion de la RAM
+[INFO] 14:42:33:716 a/(7290:7290): El codigo de operacion es: 12
+[INFO] 14:42:33:719 a/(7290:7290): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:42:33:751 a/(7290:7290): Recibimos la informacion de la RAM
+[INFO] 14:42:33:751 a/(7290:7290): El codigo de operacion es: 1
+[INFO] 14:42:33:753 a/(7290:7290): El proceso: 3, pide finalizar
+[INFO] 14:43:53:848 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:43:53:848 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:43:53:849 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:43:53:861 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:43:53:861 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:43:53:864 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:43:53:873 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:43:53:880 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:43:53:881 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:43:53:882 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:43:53:894 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:43:53:894 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:43:53:896 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:43:53:931 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:43:53:931 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:43:53:933 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:43:58:396 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:43:58:396 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:43:58:396 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:43:58:407 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:43:58:408 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:43:58:409 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:43:58:410 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:43:58:411 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:43:58:411 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:43:58:411 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:43:58:413 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:43:58:414 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:43:58:415 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:43:58:437 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:43:58:438 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:43:58:441 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:01:225 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:01:225 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:01:226 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:01:235 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:01:235 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:01:237 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:01:238 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:01:238 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:01:238 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:01:239 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:01:241 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:01:241 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:01:242 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:01:265 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:01:265 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:01:269 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:02:436 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:02:437 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:02:437 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:02:448 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:02:448 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:02:449 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:02:450 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:02:451 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:02:451 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:02:451 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:02:452 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:02:453 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:02:454 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:02:482 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:02:483 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:02:485 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:03:390 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:03:391 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:03:391 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:03:400 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:03:400 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:03:401 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:03:402 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:03:403 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:03:403 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:03:404 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:03:405 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:03:405 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:03:406 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:03:434 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:03:434 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:03:436 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:04:331 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:04:331 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:04:331 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:04:339 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:04:339 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:04:341 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:04:342 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:04:343 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:04:343 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:04:343 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:04:348 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:04:348 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:04:350 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:04:371 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:04:371 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:04:373 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:05:206 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:05:206 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:05:206 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:05:214 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:05:214 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:05:216 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:05:217 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:05:218 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:05:218 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:05:218 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:05:219 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:05:220 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:05:221 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:05:250 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:05:251 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:05:252 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:06:219 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:06:219 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:06:219 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:06:227 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:06:227 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:06:229 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:06:230 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:06:230 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:06:231 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:06:231 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:06:233 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:06:233 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:06:234 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:06:263 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:06:263 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:06:265 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:07:111 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:07:112 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:07:112 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:07:122 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:07:122 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:07:123 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:07:124 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:07:125 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:07:125 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:07:125 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:07:130 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:07:130 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:07:131 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:07:151 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:07:152 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:07:153 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:07:946 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:07:946 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:07:947 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:07:954 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:07:955 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:07:956 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:07:957 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:07:958 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:07:958 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:07:958 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:07:961 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:07:962 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:07:963 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:07:984 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:07:984 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:07:985 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:10:174 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:10:174 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:10:174 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:10:183 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:10:184 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:10:186 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:10:187 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:10:187 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:10:187 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:10:188 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:10:189 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:10:193 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:10:194 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:10:220 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:10:220 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:10:222 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:10:594 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:10:595 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:10:595 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:10:604 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:10:604 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:10:605 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:10:606 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:10:607 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:10:608 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:10:608 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:10:608 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:10:609 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:10:610 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:10:634 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:10:634 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:10:635 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:11:008 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:009 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:11:010 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:11:017 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:017 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:11:018 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:11:019 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:11:020 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:11:020 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:11:021 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:11:023 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:023 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:11:024 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:11:048 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:048 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:11:049 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:11:412 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:412 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:11:413 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:11:420 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:421 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:11:422 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:11:423 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:11:423 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:11:424 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:11:424 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:11:426 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:426 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:11:427 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:11:453 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:454 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:11:460 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:11:834 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:835 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:11:835 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:11:842 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:843 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:11:845 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:11:846 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:11:846 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:11:846 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:11:847 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:11:848 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:848 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:11:849 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:11:873 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:11:874 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:11:875 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:12:249 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:12:250 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:12:250 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:12:258 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:12:258 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:12:259 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:12:261 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:12:261 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:12:261 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:12:262 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:12:263 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:12:264 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:12:265 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:12:288 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:12:289 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:12:294 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:12:683 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:12:684 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:12:684 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:12:696 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:12:696 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:12:698 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:12:699 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:12:700 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:12:701 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:12:701 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:12:702 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:12:703 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:12:704 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:12:729 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:12:730 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:12:731 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:13:094 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:13:095 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:13:095 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:13:103 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:13:104 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:13:105 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:13:107 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:13:107 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:13:107 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:13:108 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:13:109 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:13:110 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:13:113 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:13:136 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:13:136 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:13:137 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:44:13:498 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:13:498 a/(7664:7664): El codigo de operacion es: 13
+[INFO] 14:44:13:498 a/(7664:7664): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:44:13:506 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:13:507 a/(7664:7664): El codigo de operacion es: 11
+[INFO] 14:44:13:508 a/(7664:7664): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:44:13:509 a/(7664:7664): Todo bien se realizo con la asignacion Fija
+[INFO] 14:44:13:510 a/(7664:7664): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:44:13:510 a/(7664:7664): Se escribe sobre la particion: 0
+[INFO] 14:44:13:510 a/(7664:7664): Se guardo el contenido correctamente
+[INFO] 14:44:13:512 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:13:512 a/(7664:7664): El codigo de operacion es: 12
+[INFO] 14:44:13:513 a/(7664:7664): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:44:13:536 a/(7664:7664): Recibimos la informacion de la RAM
+[INFO] 14:44:13:536 a/(7664:7664): El codigo de operacion es: 1
+[INFO] 14:44:13:537 a/(7664:7664): El proceso: 3, pide finalizar
+[INFO] 14:47:20:023 a/(7972:7972): Recibimos la informacion de la RAM
+[INFO] 14:47:20:024 a/(7972:7972): El codigo de operacion es: 13
+[INFO] 14:47:20:024 a/(7972:7972): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:47:20:031 a/(7972:7972): Recibimos la informacion de la RAM
+[INFO] 14:47:20:031 a/(7972:7972): El codigo de operacion es: 11
+[INFO] 14:55:14:957 OperacionesServidor/(8492:8492): Recibimos la informacion de la RAM
+[INFO] 14:55:14:959 OperacionesServidor/(8492:8492): El codigo de operacion es: 13
+[INFO] 14:55:14:961 OperacionesServidor/(8492:8492): Tipo de asignacion a utilizar: FIJA.
+[INFO] 14:55:14:969 OperacionesServidor/(8492:8492): Recibimos la informacion de la RAM
+[INFO] 14:55:14:969 OperacionesServidor/(8492:8492): El codigo de operacion es: 11
+[INFO] 14:55:14:971 OperacionesServidor/(8492:8492): Se guarda la pagina: 1 del proceso: 3
+[INFO] 14:55:15:001 OperacionesServidor/(8492:8492): Todo bien se realizo con la asignacion Fija
+[INFO] 14:55:15:003 OperacionesServidor/(8492:8492): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 14:55:15:007 OperacionesServidor/(8492:8492): Se escribe sobre la particion: 0
+[INFO] 14:55:15:008 OperacionesServidor/(8492:8492): Se guardo el contenido correctamente
+[INFO] 14:55:15:015 OperacionesServidor/(8492:8492): Recibimos la informacion de la RAM
+[INFO] 14:55:15:017 OperacionesServidor/(8492:8492): El codigo de operacion es: 12
+[INFO] 14:55:15:021 OperacionesServidor/(8492:8492): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 14:55:15:063 OperacionesServidor/(8492:8492): Recibimos la informacion de la RAM
+[INFO] 14:55:15:063 OperacionesServidor/(8492:8492): El codigo de operacion es: 1
+[INFO] 14:55:15:065 OperacionesServidor/(8492:8492): El proceso: 3, pide finalizar

@@ -229,8 +229,6 @@ void finalizarDispositivosIO(){
 }
 
 
-
-
 int main(){
 
     t_log* logger = log_create("cfg/KernelActual.log","KernelActual",0,LOG_LEVEL_INFO);
@@ -285,7 +283,6 @@ int main(){
 
     return 0;
 }
-
 
  
 

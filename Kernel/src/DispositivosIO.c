@@ -36,7 +36,7 @@ void rutinaDispositivoIO(dispositivoIO* dispositivo){
 
         log_info(loggerDevicesIO,"Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:%d", dispositivo->duracionRafaga);   
         /*tiempo que pasa en el bloqueo */
-        sleep(dispositivo->duracionRafaga);
+        usleep(dispositivo->duracionRafaga);
 
     
         pthread_mutex_lock(dispositivo->mutex);

@@ -32,7 +32,7 @@ uint32_t recibir_operacion(uint32_t socket_cliente) {
 
 int atender_mensaje_ram(int conexion) {
 
-	t_log* logger_servidor =  log_create("cfg/OperacionesServidor.log","a",1,LOG_LEVEL_DEBUG);
+	t_log* logger_servidor =  log_create("cfg/OperacionesServidor.log","OperacionesServidor",1,LOG_LEVEL_DEBUG);
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
 
@@ -47,32 +47,30 @@ int atender_mensaje_ram(int conexion) {
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
-	//log_info(logger_servidor,"El tamaño del paquete es %d", paquete->buffer->size);
-
 
 	if(paquete->buffer->size > 0){
 		paquete->buffer->stream = malloc(paquete->buffer->size);
 		recv(conexion, paquete->buffer->stream, paquete->buffer->size, 0);
 	}
 	
+	usleep(retardo_swap);
 
 	switch(paquete->codigo_operacion){
 
         case LECTURA_PAGINA:
-			usleep(retardo_swap);
 			atender_solicitud_pedido_de_pagina(paquete->buffer, conexion, logger_servidor);
 			break;
 
         case ESCRITURA_PAGINA:;
-			usleep(retardo_swap);
 			recibir_pagina(paquete->buffer, logger_servidor);
 			notificar_escritura_de_pagina(conexion);
         	break;
 
-		/*case FINALIZACION_CARPINCHO:;
-			usleep(retardo_swap);
-			//Faltaria la funcion para finalizar
-		*/
+		case CERRAR_INSTANCIA:;
+			atender_solicitud_cierre_proceso(paquete->buffer, logger_servidor);
+			notificar_finalizacion_de_proceso(conexion);
+			break;
+
 		case TIPOASIGNACION:;
 			recibir_tipo_asignacion(paquete->buffer, logger_servidor);
 			close(conexion);
@@ -184,3 +182,31 @@ void notificar_escritura_de_pagina(int conexion) {
 
 }
 
+void atender_solicitud_cierre_proceso(t_buffer* buffer, t_log* logger) {
+
+	void* data = buffer->stream;
+	int desplazamiento = 0;
+	uint32_t PID;
+
+	memcpy(&(PID), data + desplazamiento, sizeof(uint32_t));
+
+	log_info(logger,"El proceso: %d, pide finalizar",PID);
+
+	limpiar_marcos_de_proceso(PID);
+
+}
+
+void notificar_finalizacion_de_proceso(int conexion) {
+
+	t_paquete *paquete = crear_paquete(CERRAR_INSTANCIA);
+
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
+	int valor = 1;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(valor), sizeof(uint32_t));
+
+	enviarPaquete(paquete, conexion);
+
+}

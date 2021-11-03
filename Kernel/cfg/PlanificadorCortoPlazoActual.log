@@ -120,3 +120,4 @@
 [INFO] 23:25:35:061 PlanificadorCortoPlazo/(10183:10315): Se ejecuto tarea de conexion
 [INFO] 23:25:35:080 PlanificadorCortoPlazo/(10183:10315): La tarea realizada fue: 1
 [INFO] 23:25:35:082 PlanificadorCortoPlazo/(10183:10315): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 14:54:45:739 PlanificadorCortoPlazo/(8516:8521): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF

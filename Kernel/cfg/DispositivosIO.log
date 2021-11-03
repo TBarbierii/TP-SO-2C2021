@@ -62,3 +62,5 @@
 [INFO] 23:25:25:060 DispositivosIO/(10183:10302): Agregamos al proceso en bloqueo y en el dispositivo: laguna
 [INFO] 23:25:25:060 DispositivosIO/(10183:10184): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10
 [INFO] 23:25:35:061 DispositivosIO/(10183:10184): Termino de ejecutar el proceso:2 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 14:54:45:721 DispositivosIO/(8516:8516): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 25000
+[DEBUG] 14:54:45:726 DispositivosIO/(8516:8516): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 1000

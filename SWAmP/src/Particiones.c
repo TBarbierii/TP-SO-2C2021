@@ -6,6 +6,7 @@ particion* particion_nueva(int numero){
     particion_nueva->esta_libre = 1;
     particion_nueva->num_particion = numero;
     particion_nueva->hay_contenido = 0;
+    particion_nueva->pid = -1;
     return particion_nueva;
 }
 
