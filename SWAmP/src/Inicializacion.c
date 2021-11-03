@@ -1,4 +1,4 @@
-#include "swamp_lib.h"
+#include "Swamp_lib.h"
 
 
 
@@ -47,10 +47,10 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log*
 
         int fd = open(path_swap, O_CREAT | O_RDWR, (mode_t) 0777);
         
-        if(access(path_swap, F_OK) == -1) {
-
-            truncate(path_swap, tamanio_swap);
-            void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+        truncate(path_swap, tamanio_swap);
+        void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+        
+        if(access(path_swap, F_OK) != -1) {
             memcpy(contenidoArchivo, &(caracter_llenado), sizeof(char));
             munmap(contenidoArchivo, tamanio_swap);
             close(fd);
@@ -82,8 +82,8 @@ t_list* crear_lista_particiones(int cantidad_particiones){
 }
 
 
-
-/* ---------------- Particiones ---------------- */
+/*
+// ---------------- Particiones ---------------- /
 particion* particion_nueva(int numero){
     particion* particion_nueva = malloc(sizeof(particion));
     particion_nueva->esta_libre = 1;
@@ -125,16 +125,16 @@ particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PI
 }
 
 
-/* ----------------   Paginas  ----------------  */
+// ----------------   Paginas  ----------------  /
 int pagina_libre(particion* particion_nueva) {
     if(particion_nueva->esta_libre == 1) {
         return 1;
     }
     return 0;
 }
-
-
-/* ---------------- Asignaciones ---------------- */
+*/
+/*
+/ ---------------- Asignaciones ---------------- /
 void manejar_asignacion() {
 
 	if(tipo_asignacion == 1) {
@@ -175,9 +175,10 @@ void asignar_marcos_proceso(int pid,swap_files* archivo){
         particionActual->pid = pid;
     }
 }
+*/
 
-
-/* ---------------- Escritura ---------------- */
+/*
+// ---------------- Escritura ---------------- /
 void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger){
 
 
@@ -266,7 +267,7 @@ swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger)
 }
 
 
-/* ---------------- Lectura ---------------- */
+/ ---------------- Lectura ---------------- /
 void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logger){
     
     swap_files* archivo_swap = encontrar_swap_file_en_base_a_pid(PID);
@@ -294,7 +295,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
         if(particion_a_leer != NULL) {
             memcpy(contenido_a_leer, contenido_archivo + particion_a_leer->inicio_particion, tamanio_pagina);
             
-            /*ya que sino no nos deja loggearlo */
+            //ya que sino no nos deja loggearlo 
             char* contenidoParaLoggear= malloc(tamanio_pagina+1);
             char valorsitoParaString = '\0';
             memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
@@ -317,8 +318,9 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
         free(contenido_a_leer);
     }
 }
-
-/* ---------------- Auxiliares ---------------- */
+*/
+/*
+/ ---------------- Auxiliares ---------------- /
 int verificar_pid_en_swap_file(uint32_t PID, char* path_swap) {
 
     swap_files* archivoSwap = encontrar_swap_file(path_swap);
@@ -350,7 +352,7 @@ swap_files* encontrar_swap_file(char* path_swap) {
 }
 
 swap_files* primerSwapFileDisponible(){
-/* vamos a probar si podemos escribir sobre el primer archivo swapFile */
+/ vamos a probar si podemos escribir sobre el primer archivo swapFile /
     return list_get(lista_swap_files,0);
 }
 
@@ -418,9 +420,10 @@ int cantidad_frames_disponibles(char* path_swap) {
     }
     return 0;
 }
+*/
 
-
-/* ---------------- Finalizacion ---------------- */
+/*
+/ ---------------- Finalizacion ---------------- /
 void destruirArchivosSwapFiles(){
 
     while(!list_is_empty(lista_swap_files)){
@@ -472,3 +475,4 @@ void limpiar_marcos_de_proceso(int PID, char* path_swap) {
     close(fd);
     list_destroy(marcos_de_proceso);
 }
+*/

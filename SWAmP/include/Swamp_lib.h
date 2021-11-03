@@ -7,8 +7,6 @@
 #include <commons/config.h>
 #include <commons/string.h>
 #include <stdbool.h>
-#include "shared_utils.h"
-#include "conexiones.h"
 #include <semaphore.h>
 #include <commons/collections/list.h>
 #include <fcntl.h>
@@ -17,6 +15,8 @@
 #include <sys/stat.h>
 #include <sys/mman.h>
 #include <string.h>
+#include "shared_utils.h"
+#include "Conexiones.h"
 
 
 /* ---------------- variables obtenidas del config ---------------- */
@@ -59,13 +59,13 @@ typedef struct {
 
 /* ---------------- Declaracion de funciones ---------------- */
 
-/* ---------------- Inicializacion ---------------- */
+/* ---------------- INICIALIZACION ---------------- */
 void obtener_valores_config(t_config* config_actual, t_log* logger);
 void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log* logger);
 t_list* crear_lista_particiones(int cantidad_particiones);
 
 
-/* ---------------- Particiones ---------------- */
+/* ---------------- PARTICIONES ---------------- */
 particion* buscar_particion_libre_asignacion_dinamica(char* path_swap);
 particion* particion_nueva(int numero);
 int cantidad_frames_disponibles(char* path_swap);
