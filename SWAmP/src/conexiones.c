@@ -7,11 +7,11 @@ int iniciar_servidor_swamp() {
 
 	int servidor = iniciar_servidor(ip_swap, puerto_swap); // devuelve el socket del servidor
 	
-	log_info(logger_nuevo,"Inicializamos el servidor para que se nos una la RAM");
+	log_info(logger_nuevo,"Inicializacion del servidor con exito, esperando conexion...");
 
 	while(1){
 		int conexion = esperar_cliente(servidor);
-		log_info(logger_nuevo,"Nos llega una solicitud de memoria para realizar algo");
+		log_info(logger_nuevo,"Solicitud de memoria entrante");
 		atender_mensaje_ram(conexion);
 	}
 
@@ -59,22 +59,27 @@ int atender_mensaje_ram(int conexion) {
 	switch(paquete->codigo_operacion){
 
         case LECTURA_PAGINA:
+			usleep(retardo_swap);
 			atender_solicitud_pedido_de_pagina(paquete->buffer, conexion, logger_servidor);
 			break;
 
         case ESCRITURA_PAGINA:;
-			
+			usleep(retardo_swap);
 			recibir_pagina(paquete->buffer, logger_servidor);
 			notificar_escritura_de_pagina(conexion);
         	break;
 
+		/*case FINALIZACION_CARPINCHO:;
+			usleep(retardo_swap);
+			//Faltaria la funcion para finalizar
+		*/
 		case TIPOASIGNACION:;
 			recibir_tipo_asignacion(paquete->buffer, logger_servidor);
 			close(conexion);
        		break;
 
 		default:;
-		log_info(logger_servidor,"No se metio por ningun lado wtf");
+		log_info(logger_servidor,"Codigo de operacion incorrecto.");
 		break;
 
 
@@ -95,7 +100,7 @@ int atender_mensaje_ram(int conexion) {
 	return valorOperacion;
 	
 }
-// Habria otra forma para mandarlo para manejar los tipos de asignacion?
+
 uint32_t recibir_tipo_asignacion(t_buffer* buffer, t_log* logger) {
 
 	void* data = buffer->stream;
@@ -103,11 +108,11 @@ uint32_t recibir_tipo_asignacion(t_buffer* buffer, t_log* logger) {
 	memcpy(&(tipo_asignacion), data, sizeof(uint32_t));
 	
 	if(tipo_asignacion == 0) {
-		log_info(logger, "Tipo de asignacion es DINAMICA");
+		log_info(logger, "Tipo de asignacion a utilizar: DINAMICA.");
 	}else if(tipo_asignacion == 1) {
-		log_info(logger, "Tipo de asignacion es FIJA");		
+		log_info(logger, "Tipo de asignacion a utilizar: FIJA.");		
 	}else{
-		log_info(logger, "Tipo de asignacion incorrecto wtf");
+		log_info(logger, "Tipo de asignacion incorrecto.");
 	}
 	
 	return tipo_asignacion;
@@ -126,7 +131,7 @@ void recibir_pagina(t_buffer* buffer, t_log *logger) {
 	memcpy(&(id_pagina), data + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
     memcpy(contenido, data + desplazamiento , tamanio_pagina);
-	log_info(logger, "Vamos a guardar la pagina: %d del proceso: %d",id_pagina, PID);
+	log_info(logger, "Se guarda la pagina: %d del proceso: %d",id_pagina, PID);
 	
 	escribirContenido(contenido, id_pagina, PID, logger);
 
@@ -158,7 +163,7 @@ void atender_solicitud_pedido_de_pagina(t_buffer* buffer, int conexion, t_log* l
 	memcpy(&(id_pagina), data + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
-	log_info(logger,"El proceso: %d, nos pide que quiere leer su pagina: %d",PID,id_pagina);
+	log_info(logger,"El proceso: %d, pide leer su pagina numero: %d",PID,id_pagina);
 
 	leer_contenido(PID, id_pagina, conexion, logger_swamp);
 
