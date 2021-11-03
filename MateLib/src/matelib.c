@@ -110,22 +110,30 @@ mate_pointer mate_memalloc(mate_instance *lib_ref, int size){
 }
 
 int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
-    
-    
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memfree de %d", addr);
+    realizarMemFree( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, addr);
+    mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    return valor; 
     /* toda la logica de lo que tiene que hacer */
     /*serializar, deserializar */
     /* si lo que se recibio del backend es un 1--> tirar el MATE_FREE_FAULT, sino un 0*/
     
 }
 
-int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *dest, int size){
+int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int size){
     
-    
-    /* toda la logica de lo que tiene que hacer */
-    /*serializar, deserializar */
-    /* si lo que se recibio del backend es un 1--> tirar el MATE_READ_FAULT, sino un 0 */
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memread %d", size);
+    realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, info, size);
+    origin = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
 
-  
+     if(origin != NULL)
+     {
+        return 0;
+    }
+    else
+    {
+        return MATE_READ_FAULT;
+    }
 }
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
@@ -156,7 +164,7 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 
 
-//--------- Funciones extras---------//
+//--------- Funci ones extras---------//
 
 int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
 
