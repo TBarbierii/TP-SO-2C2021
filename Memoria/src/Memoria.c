@@ -7,6 +7,7 @@ t_config* inicializarConfig(){
 void inicializarListas(){
     carpinchos = list_create();
     marcos = list_create();
+    TLB = list_create();
 }
 
 void finalizarListas(){
@@ -76,12 +77,12 @@ int main(){
     obtenerValoresDelConfig(configActual);
     inicializarTodo();
     inicializarMemoria();
-
+    
     //enviar_tipo_asignacion(tipoAsignacion);
     //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
-    atender_solicitudes_multihilo();
-/* 
+    //atender_solicitudes_multihilo();
+
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     alloc->pid = 8;
     alloc->tamanio = 70;
@@ -90,13 +91,22 @@ int main(){
     alloc1->pid = 8;
     alloc1->tamanio =20 ;
 
-     t_carpincho* carpincho = malloc(sizeof(t_carpincho));
-     carpincho->id_carpincho = alloc->pid;
-     carpincho->tabla_de_paginas = list_create();
-     carpincho->allocs = list_create();
-list_add(carpinchos, carpincho);
+            t_memalloc *alloc2 = malloc(sizeof(t_memalloc));
+    alloc2->pid = 8;
+    alloc2->tamanio =50;
 
-        t_memalloc *alloc2 = malloc(sizeof(t_memalloc));
+            t_memalloc *alloc3 = malloc(sizeof(t_memalloc));
+    alloc3->pid = 8;
+    alloc3->tamanio =35 ;
+
+     /* t_carpincho* carpincho = malloc(sizeof(t_carpincho));
+     carpincho->id_carpincho = alloc->pid;
+     carpincho->tabla_de_paginas = list_create();*/
+     
+
+    //list_add(carpinchos, carpincho);
+
+       /*  t_memalloc *alloc2 = malloc(sizeof(t_memalloc));
     alloc2->pid = 2;
     alloc2->tamanio = 50;
          t_carpincho* carpincho1 = malloc(sizeof(t_carpincho));
@@ -123,23 +133,27 @@ list_add(carpinchos, carpincho);
      carpincho4->tabla_de_paginas = list_create();
      carpincho4->allocs = list_create();
      list_add(carpinchos, carpincho4);
-
-
-
-
-    
+*/
 
     uint32_t direccionLogica = administrar_allocs(alloc);
+
+    uint32_t direccionLogica1 = administrar_allocs(alloc1);
 
     uint32_t direccionLogica2 = administrar_allocs(alloc2);
 
     uint32_t direccionLogica3 = administrar_allocs(alloc3);
+
+    liberar_alloc(8, direccionLogica1);
+    
+    t_memalloc *alloc4 = malloc(sizeof(t_memalloc));
+    alloc4->pid = 8;
+    alloc4->tamanio =15;
+
+    uint32_t direccionLogica4 = administrar_allocs(alloc4); 
+
    
-    uint32_t direccionLogica1 = administrar_allocs(alloc1);
 
-    uint32_t direcLogica4 = administrar_allocs(alloc4);
-
-    void* prueba = "Esta es una prueba de un texto de tre paginas osea como max 70 bytes\0";
+    /*void* prueba = "Esta es una prueba de un texto de tre paginas osea como max 70 bytes\0";
     void* prueba1 = "carpincho 8, de 20\0";
     void* prueba2 = "carpincho pid 2 dreservo alloc de 50 bytes\0";
     void* prueba3 = "carpin 7 pidio 19\0";
@@ -165,8 +179,8 @@ list_add(carpinchos, carpincho);
     printf("\nSe leyo: %s", (char*)hola1);
     printf("\nSe leyo: %s", (char*)hola2);
     printf("\nSe leyo: %s\n", (char*)hola3);
+   */
 
-*/
     finalizarTodo(configActual);
     return 0;
 }

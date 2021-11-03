@@ -1,8 +1,10 @@
 #ifndef PROCESO3_H
 #define PROCESO3_H
+#define TAMANIO_HEAP 9
 
 #include <stdio.h>
 #include <stdint.h>
+#include <time.h>
 #include <commons/log.h>
 #include <commons/config.h>
 #include <commons/string.h>
@@ -37,6 +39,10 @@ pthread_mutex_t * listaCarpinchos;
 
 /* Estructuras Administrativas */
 
+typedef enum{
+    PRIMERA_VEZ,
+    AGREGAR_ALLOC
+}stream_alloc;
 
 typedef struct {
 
@@ -99,6 +105,8 @@ typedef struct {
     uint8_t esNueva;
     t_marco* marco;
     uint8_t presente;
+    clock_t ultimoUso;
+    bool modificado;
 
 }t_pagina;
 
@@ -127,6 +135,7 @@ void* memoriaPrincipal;
 
 t_list* carpinchos;
 t_list* marcos;
+t_list* TLB;
 
 /* Semaforos */
 
@@ -144,15 +153,14 @@ void finalizarMemoria();
 
 uint32_t administrar_allocs(t_memalloc*);
 uint32_t buscar_o_agregar_espacio(t_carpincho* , uint32_t );
-uint32_t administrar_paginas(t_carpincho* , uint32_t );
-void* generar_stream_allocs(t_carpincho* );
-void escribir_marcos(t_list* , t_carpincho* );
-uint32_t asignarPaginas(t_carpincho* );
-
+uint32_t administrar_paginas(t_carpincho* , uint32_t, t_list* );
+void* generar_buffer_allocs(uint32_t, heapMetadata*,uint32_t, stream_alloc, int32_t);
+uint32_t asignarPaginas(t_carpincho*, t_list* );
+void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar );
 
 
 void crear_marcos();
-void liberarMemoria();
+void liberar_alloc(uint32_t, uint32_t);
 void enviarInformacionAdministrativaDelProceso(t_carpincho* carpincho);
 void inicializar_carpincho(int conexion ,t_log* logger);
 
@@ -163,7 +171,7 @@ void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido);
 
 void pedir_pagina(uint32_t id_pagina, uint32_t pid);
 
-uint32_t asignarPaginas(t_carpincho*);
+//uint32_t asignarPaginas(t_carpincho*);
 
 /* Auxiliares */
 uint32_t generadorIdsPaginas();
@@ -173,6 +181,14 @@ uint32_t generarDireccionLogica(uint32_t , uint32_t);
 uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica);
 uint32_t obtenerDesplazamiento(uint32_t);
 uint32_t obtenerId(uint32_t);
+t_list* reservarMarcos(uin32_t);
+int32_t buscar_TLB(uint32_t);
+int buscarSiguienteHeapLibre(heapMetadata* , int32_t* , t_list* , int32_t*, int32_t* );
+t_list* buscarMarcosLibres(t_carpincho* carpincho);
+void crearAllocNuevo(int* pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t*);
+void reemplazarPagina(t_carpincho* carpincho);
+t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar);
+
 
 
 #endif
