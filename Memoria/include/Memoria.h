@@ -169,7 +169,6 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 
 void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido);
 
-void pedir_pagina(uint32_t id_pagina, uint32_t pid);
 
 //uint32_t asignarPaginas(t_carpincho*);
 

@@ -48,16 +48,17 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         uint32_t cantidadDePaginasACrear = ceil((float)(TAMANIO_HEAP*2 + tamanio)/tamanioPagina);
 
+        //enviar las paginas que vamos a guardar y esperar respuesta
+
         for(int i=0; i<cantidadDePaginasACrear; i++){
 
             t_pagina* pagina = malloc(sizeof(t_pagina));
             pagina->id_pagina = generadorIdsPaginas();
             pagina->presente = true;
-            //ver esto que onda con el tema de swap.
             pagina->ultimoUso = clock();
             pagina->modificado = true;
 
-            //enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
+            enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
 
             list_add(carpincho->tabla_de_paginas, pagina);
         }
@@ -87,8 +88,13 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         int32_t DF = buscar_TLB(primeraPag->id_pagina);
 
         if(DF == -1){ //tlb miss
+
             //buscar en tabla de paginas
-            //swapear
+            reemplazarPagina(carpincho);
+            pedir_pagina(primeraPag->id_pagina, carpincho->id_carpincho);
+            void* contenido = atender_respuestas_swap(carpincho->conexion);
+            memcpy(memoriaPrincipal + primeraPag->marco->comienzo, contenido, tamanioPagina);
+            
             //actualizar tlb
         }
 

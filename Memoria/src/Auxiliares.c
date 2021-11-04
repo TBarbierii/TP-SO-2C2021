@@ -443,12 +443,14 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar){
 	if(strcmp(algoritmoReemplazoMMU, "LRU") == 0){
 		
 		bool comparator(t_pagina* p1, t_pagina* p2){
-			return p1->ultimoUso > p2->ultimoUso;
+			return p1->ultimoUso < p2->ultimoUso;
 		};
 		
 		t_list* paginasOrdenadas = list_sorted(paginas_a_reemplazar, (void*)comparator);
 
 		return list_get(paginasOrdenadas, 0);
+
+		//si no esta modificado no mandar a swap
 
 	}
 

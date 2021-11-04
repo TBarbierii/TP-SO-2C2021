@@ -78,7 +78,7 @@ int main(){
     inicializarTodo();
     inicializarMemoria();
     
-    //enviar_tipo_asignacion(tipoAsignacion);
+    enviar_tipo_asignacion(tipoAsignacion);
     //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
     //atender_solicitudes_multihilo();
@@ -150,8 +150,6 @@ int main(){
     alloc4->tamanio =5;
 
     //uint32_t direccionLogica4 = administrar_allocs(alloc4); 
-
-   
 
     void* prueba  = "--------------------------------------------------------------------70";
     void* prueba1 = "------------------20";

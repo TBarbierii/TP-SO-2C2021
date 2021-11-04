@@ -85,9 +85,6 @@ void atender_solicitudes_memoria(uint32_t conexion){
     case CONECTAR_IO:;
 		responderOperacionNoValida(conexion, CONECTAR_IO, logger);
         break;
-
-
-
 	case -1:
 		log_error(logger, "el cliente se desconecto. Terminando servidor");
 		break;
@@ -99,6 +96,32 @@ void atender_solicitudes_memoria(uint32_t conexion){
 			break;
 		}
 	}
+}
+
+void* atender_respuestas_swap(uint32_t conexion){
+	
+	uint32_t cod_op = recibir_operacion(conexion);
+
+	switch(cod_op)
+	{
+	
+	case LECTURA_PAGINA:
+		return recibirPagina(conexion);
+	break;
+	case ESCRITURA_PAGINA:
+
+	break;
+	case CONSULTAR_ESPACIO:
+	break;
+
+	case -1:
+		log_error(logger, "el cliente se desconecto. Terminando servidor");
+		break;
+	default:
+		log_warning(logger, "Entro al default");
+		break;
+	}
+
 }
 
 
@@ -330,12 +353,20 @@ void pedir_pagina(uint32_t id_pagina, uint32_t pid){
 
 	enviarPaquete(paquete, conexionSwamp);
 
-	void* buffer = recibir_buffer(conexionSwamp);
 
-	//t_pagina *pagina = 
+}
 
-	//desarmar buffer. armar pagina y ponerla de nuevo en memoria
+void* recibirPagina(int conexion){
 
+	uint32_t offset=0;
+	void* buffer = recibir_buffer(conexion);
+	void* contenido = malloc(tamanioPagina);
+	
+	memcpy(contenido, buffer, tamanioPagina);
+
+	free(buffer);
+
+	return contenido;
 
 }
 
