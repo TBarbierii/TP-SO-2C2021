@@ -143,43 +143,43 @@ int main(){
 
     uint32_t direccionLogica3 = administrar_allocs(alloc3);
 
-    liberar_alloc(8, direccionLogica1);
+    //liberar_alloc(8, direccionLogica2);
     
     t_memalloc *alloc4 = malloc(sizeof(t_memalloc));
     alloc4->pid = 8;
-    alloc4->tamanio =15;
+    alloc4->tamanio =5;
 
-    uint32_t direccionLogica4 = administrar_allocs(alloc4); 
+    //uint32_t direccionLogica4 = administrar_allocs(alloc4); 
 
    
 
-    /*void* prueba = "Esta es una prueba de un texto de tre paginas osea como max 70 bytes\0";
-    void* prueba1 = "carpincho 8, de 20\0";
-    void* prueba2 = "carpincho pid 2 dreservo alloc de 50 bytes\0";
-    void* prueba3 = "carpin 7 pidio 19\0";
+    void* prueba  = "--------------------------------------------------------------------70";
+    void* prueba1 = "------------------20";
+    void* prueba2 = "------------------------------------------------50";
+    void* prueba3 = "---------------------------------35";
 
     escribir_memoria(8, direccionLogica, prueba, 70);
 
     escribir_memoria(8, direccionLogica1, prueba1, 20);
-    escribir_memoria(2, direccionLogica2, prueba2, 44);
-    escribir_memoria(7, direccionLogica3, prueba3, 19);
+    escribir_memoria(8, direccionLogica2, prueba2, 50);
+    escribir_memoria(8, direccionLogica3, prueba3, 35);
     
     void* hola = leer_memoria(direccionLogica, 8, 70);
 
-    t_pagina *pagina = list_get(carpincho->tabla_de_paginas, 0);
+    //t_pagina *pagina = list_get(carpincho->tabla_de_paginas, 0);
 
-    enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, hola);
+    //enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, hola);
 
  
     void* hola1 = leer_memoria(direccionLogica1, 8, 20);
-    void* hola2 = leer_memoria(direccionLogica2, 2, 44);
-    void* hola3 = leer_memoria(direccionLogica3, 7, 19);
+    void* hola2 = leer_memoria(direccionLogica2, 8, 50);
+    void* hola3 = leer_memoria(direccionLogica3, 8, 35);
 
     printf("\nSe leyo: %s", (char*)hola);
     printf("\nSe leyo: %s", (char*)hola1);
     printf("\nSe leyo: %s", (char*)hola2);
     printf("\nSe leyo: %s\n", (char*)hola3);
-   */
+   
 
     finalizarTodo(configActual);
     return 0;

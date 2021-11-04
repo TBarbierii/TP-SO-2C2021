@@ -205,7 +205,7 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_list* paginas, i
 		}
 		
 		if(tamanioPagina - desplazamiento < TAMANIO_HEAP){ //esta cortado
-
+			
 			*despl = desplazamiento;
 			void* buff_heap = malloc(TAMANIO_HEAP);
 			memcpy(buff_heap, memoriaPrincipal + (*DF + desplazamiento), (tamanioPagina - desplazamiento));
@@ -321,7 +321,7 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 	uint32_t paginasNecesarias = ceil((float)(TAMANIO_HEAP*2 + tamanio + posicionUltimoHeap)/tamanioPagina);
 	uint32_t cantidadDePaginasACrear = paginasNecesarias - list_size(carpincho->tabla_de_paginas);
-	
+	//aca preguntar a swap
 	for(int i=0; i<cantidadDePaginasACrear; i++){
 
 		t_pagina* pagina = malloc(sizeof(t_pagina));
@@ -339,6 +339,13 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 	}
 
+	if(cantidadDePaginasACrear == 0){ //hay que crear el alloc en la misma pag. TODO verificar que este presente?
+
+			memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, TAMANIO_HEAP);
+
+		return;
+	}
+
 	t_list* marcos_a_asignar = buscarMarcosLibres(carpincho);
 
 	if(list_size(marcos_a_asignar)<cantidadDePaginasACrear){//faltan marcos. hay que liberar los que faltan (mandar a swap)
@@ -351,6 +358,20 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 		marcos_a_asignar = buscarMarcosLibres(carpincho);
 	}
 
+	if(cantidadDePaginasACrear == 1 && (*desplazamiento + TAMANIO_HEAP + tamanio) < tamanioPagina){ //actualiza el primer pedacito del heap cortado al final de la misma pagina
+
+		DF = buscar_TLB(*pagina);
+
+		if(DF == -1){ //tlb miss
+			//buscar en tabla de paginas
+			//swapearidsPaginas[0]
+			//actualiidsPaginas[0]
+		}
+
+		memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, tamanioPagina - (*desplazamiento + TAMANIO_HEAP + tamanio));
+
+	}
+
 	void* buffer_allocs = generar_buffer_allocs(tamanio, nuevoHeap, cantidadDePaginasACrear, AGREGAR_ALLOC, *desplazamiento);
 
 	bool paginas_nuevas(t_pagina* pag){
@@ -361,6 +382,10 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 
 	escribirMemoria(buffer_allocs, paginasNuevas, marcos_a_asignar);
+
+
+
+
 	free(buffer_allocs);
 
 	void agregarATLB(t_pagina* pag){

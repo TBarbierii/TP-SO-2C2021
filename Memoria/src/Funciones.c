@@ -125,6 +125,17 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
             crearAllocNuevo(&pagina, tamanio, heap, posicionHeap, carpincho, &desplazamiento);//pasar pagina y despl por referencia y si esta cortado modificarlo
         }
 
+        if(tamanioPagina - desplazamiento < TAMANIO_HEAP && desplazamiento > 0){ //esta cortado
+
+            desplazamiento = - (tamanioPagina - desplazamiento); 
+            bool buscarSigPag(t_pagina* pag){
+			return pag->id_pagina > pagina;
+		    };
+		
+		t_pagina* paginaSig = list_find(carpincho->tabla_de_paginas, (void*)buscarSigPag);
+        pagina = paginaSig->id_pagina;
+        }
+
         return generarDireccionLogica(pagina, desplazamiento + TAMANIO_HEAP);
         
 
@@ -180,13 +191,29 @@ void* generar_buffer_allocs(uint32_t tamanio, heapMetadata* heap, uint32_t cantP
 
         return stream_allocs;
     }
-        if(codigo == AGREGAR_ALLOC){
 
-        int bytesQueYaEstan = tamanioPagina - (despl + TAMANIO_HEAP);
+    if(codigo == AGREGAR_ALLOC){
 
-        memcpy(stream_allocs + (tamanio - bytesQueYaEstan), heap , TAMANIO_HEAP);
 
-        return stream_allocs;
+           if((despl + TAMANIO_HEAP) + tamanio < tamanioPagina){//se crea la nueva pagina con el pedacito del ultimo heap
+
+            void* buffer_heap = malloc(TAMANIO_HEAP);
+            memcpy(buffer_heap, heap, TAMANIO_HEAP);
+            
+            memcpy(stream_allocs, buffer_heap - despl, (despl + TAMANIO_HEAP));
+            free(buffer_heap);
+
+            return stream_allocs;
+
+           }else{ // nueva pagina iniciando con bytes reservados
+        
+            int bytesQueYaEstan = tamanioPagina - (despl + TAMANIO_HEAP); //bytes del tamaño solicitado que ya estan en la pagina anterior
+
+            memcpy(stream_allocs + (tamanio - bytesQueYaEstan), heap , TAMANIO_HEAP);
+
+            return stream_allocs;
+
+           }
     }
 
 
