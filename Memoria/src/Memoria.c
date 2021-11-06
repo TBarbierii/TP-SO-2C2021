@@ -85,74 +85,83 @@ int main(){
 		perror ("No se puede cambiar signal");
 	}
 
-    while(1){
-        puts("\n1");
-     sleep(10);
-    }
     enviar_tipo_asignacion(tipoAsignacion);
     //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
     //atender_solicitudes_multihilo();
 
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
-    alloc->pid = 8;
+    
+    alloc->pid = 1;
     alloc->tamanio = 45;
 
-    t_memalloc *alloc1 = malloc(sizeof(t_memalloc));
-    alloc1->pid = 8;
-    alloc1->tamanio =43 ;
-
-    t_memalloc *alloc2 = malloc(sizeof(t_memalloc));
-    alloc2->pid = 8;
-    alloc2->tamanio =35;
-
-    t_memalloc *alloc3 = malloc(sizeof(t_memalloc));
-    alloc3->pid = 8;
-    alloc3->tamanio =10 ;
-
-     /* t_carpincho* carpincho = malloc(sizeof(t_carpincho));
-     carpincho->id_carpincho = alloc->pid;
-     carpincho->tabla_de_paginas = list_create();*/
-     
-
-    //list_add(carpinchos, carpincho);
-
-       /*  t_memalloc *alloc2 = malloc(sizeof(t_memalloc));
-    alloc2->pid = 2;
-    alloc2->tamanio = 50;
-         t_carpincho* carpincho1 = malloc(sizeof(t_carpincho));
-     carpincho1->id_carpincho = alloc2->pid;
-     carpincho1->tabla_de_paginas = list_create();
-     carpincho1->allocs = list_create();
-     list_add(carpinchos, carpincho1);
-
-        t_memalloc *alloc3 = malloc(sizeof(t_memalloc));
-    alloc3->pid = 7;
-    alloc3->tamanio = 19;
-         t_carpincho* carpincho2 = malloc(sizeof(t_carpincho));
-     carpincho2->id_carpincho = alloc3->pid;
-     carpincho2->tabla_de_paginas = list_create();
-     carpincho2->allocs = list_create();
-     list_add(carpinchos, carpincho2);
-
-    t_memalloc *alloc4 = malloc(sizeof(t_memalloc));
-    alloc3->pid = 12;
-    alloc3->tamanio = 20;
-
-    t_carpincho* carpincho4 = malloc(sizeof(t_carpincho));
-     carpincho4->id_carpincho = alloc4->pid;
-     carpincho4->tabla_de_paginas = list_create();
-     carpincho4->allocs = list_create();
-     list_add(carpinchos, carpincho4);
-*/
 
     uint32_t direccionLogica = administrar_allocs(alloc);
 
-    uint32_t direccionLogica1 = administrar_allocs(alloc1);
+    alloc->pid = 2;
+    alloc->tamanio = 20;
 
-    uint32_t direccionLogica2 = administrar_allocs(alloc2);
+    uint32_t direccionLogica1 = administrar_allocs(alloc);
 
-    uint32_t direccionLogica3 = administrar_allocs(alloc3);
+    alloc->pid = 3;
+    alloc->tamanio = 30;
+
+    uint32_t direccionLogica2 = administrar_allocs(alloc);
+
+    alloc->pid = 2;
+    alloc->tamanio = 26;
+
+    uint32_t direccionLogica3 = administrar_allocs(alloc);
+
+    alloc->pid = 3;
+    alloc->tamanio = 15;
+
+    uint32_t direccionLogica4 = administrar_allocs(alloc);
+
+        alloc->pid = 1;
+    alloc->tamanio = 43;
+
+    uint32_t direccionLogica5 = administrar_allocs(alloc);
+
+        alloc->pid = 3;
+    alloc->tamanio = 30;
+
+    uint32_t direccionLogica6 = administrar_allocs(alloc);
+
+        alloc->pid = 2;
+    alloc->tamanio = 10;
+
+    uint32_t direccionLogica7 = administrar_allocs(alloc);
+
+        alloc->pid = 1;
+    alloc->tamanio = 35;
+
+    uint32_t direccionLogica8 = administrar_allocs(alloc);
+
+            alloc->pid = 2;
+    alloc->tamanio = 16;
+
+    uint32_t direccionLogica9 = administrar_allocs(alloc);
+
+            alloc->pid = 3;
+    alloc->tamanio = 15;
+
+    uint32_t direccionLogica10 = administrar_allocs(alloc);
+
+            alloc->pid = 2;
+    alloc->tamanio = 30;
+
+    uint32_t direccionLogica11 = administrar_allocs(alloc);
+
+            alloc->pid = 1;
+    alloc->tamanio = 10;
+
+    uint32_t direccionLogica12 = administrar_allocs(alloc);
+
+            alloc->pid = 3;
+    alloc->tamanio = 10;
+
+    uint32_t direccionLogica13 = administrar_allocs(alloc);
 
     //liberar_alloc(8, direccionLogica2);
     

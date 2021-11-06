@@ -2,6 +2,12 @@
 
 uint32_t generadorIdsPaginas(){
 
+	//id_pag++;
+
+	if(id_pag%10 == 0){ // no pueden ser multiplos de 10 porque al darlos vuelta lo toma como octal
+		id_pag++;
+	}
+
     return id_pag++;
 
 }
@@ -24,6 +30,8 @@ uint32_t dar_vuelta_id(uint32_t num){
 	return id_retornado = atoi(a);
 
 }
+
+
 
 uint32_t generarDireccionLogica(uint32_t id, uint32_t desplazamiento){
 
@@ -403,6 +411,7 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
         }
 
 		memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, tamanioPagina - (*desplazamiento + TAMANIO_HEAP + tamanio));
+		
 
 	}
 
