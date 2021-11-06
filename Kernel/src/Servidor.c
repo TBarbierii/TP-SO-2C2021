@@ -472,7 +472,7 @@ void inicializarEnMemoria(proceso_kernel* proceso, t_log* logger){
 
 void finalizarEnMemoria(proceso_kernel* proceso, t_log* logger){
 
-	int valor = 1;
+	
 	int validacion = validacionConexionConMemoria(proceso,logger);
 
 	if(validacion == 1){

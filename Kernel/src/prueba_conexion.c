@@ -66,7 +66,7 @@ void enviadoPagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 void pedirPagina(uint32_t id_pagina, uint32_t pid){
 
-	uint32_t size;
+	
 
 	t_paquete *paquete = crear_paquete(LECTURA_PAGINA);
 
@@ -168,17 +168,14 @@ void finalizar_proceso(uint32_t PID){
 	}
 
 }
-
+/*
 int main() {
 
     enviar_tipo_asignacion("FIJA");
 	enviadoPagina(3,1,"asd");
 	pedirPagina(1, 3);
-	enviadoPagina(4,2,"santivergas");
-	pedirPagina(2, 4);
-	enviadoPagina(5,2,"asdigol");
-	pedirPagina(2, 5);
 	finalizar_proceso(3);
 	
     return 0;
 }
+*/

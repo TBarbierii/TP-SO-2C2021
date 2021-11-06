@@ -1,63 +1,6 @@
 #include "PlanificadorCortoPlazo.h"
 
-/* 
-void rutinaDeProceso(proceso_kernel* procesoEjecutando){
-    
-    clock_t arranqueEjecucion = clock();
-    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 1, LOG_LEVEL_DEBUG);
-    
-    while(1){
-
-        //como son hilos creados al comienzo, aca deberiamos sacar al primer proceso que este en exec y agregarlo
-
-
-
-        
-        //si viene de un bloqueo debemos notificarle a la matelib que se pudo o no realizar
-
-        if(procesoEjecutando->vuelveDeBloqueo == BLOCK_IO){
-
-            //le avisamos que se pudo realizar la IO
-            log_info(logger, "Le avisamos al proceso que se pudo ejecutar el IO correctamente");
-            int valor = 0;
-            avisarconexionConDispositivoIO(procesoEjecutando->conexion, valor);
-
-        }else if (procesoEjecutando->vuelveDeBloqueo == BLOCK_SEM){
-            //le avisamos que se pudo realizar el WAIT
-            log_info(logger, "Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente");
-            int valor = 0;
-            avisarWaitDeSemaforo(procesoEjecutando->conexion, valor);
-        }
-        
-        
-        log_info(logger, "Se ejecuto tarea de conexion");
-        int codigoOperacion = atenderMensajeEnKernel(procesoEjecutando->conexion);
-        log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
-
-        if(rompoElHiloSegunElCodigo(codigoOperacion) == 1){
-
-            log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo");
-            clock_t finEjecucion = clock();
-            procesoEjecutando->ultimaRafagaEjecutada = (double)(finEjecucion - arranqueEjecucion) / CLOCKS_PER_SEC;
-            calcularEstimacion(procesoEjecutando); //aaca calculo la ultima estimacion nueva en base a la ultima rafaga ejecutada
-            sem_post(nivelMultiprocesamiento);
-            break;
-
-        }else if(rompoElHiloSegunElCodigo(codigoOperacion) == 2){
-            
-            log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho");
-            break;
-
-        }
-    }
-
-    log_destroy(logger);
-
-}
-*/
-
 void rutinaDeProceso(){
-    
     
     t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","Thread-CPU", 1, LOG_LEVEL_DEBUG);
     
@@ -82,6 +25,8 @@ void rutinaDeProceso(){
         //le ponemos el momento donde entro en EXEC en este THREAD:
         clock_t arranqueEjecucion = clock();
 
+
+        //lo que ejecuta el proceso que agregamos
         while(1){
 
             

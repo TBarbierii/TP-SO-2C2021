@@ -110,19 +110,16 @@ mate_pointer mate_memalloc(mate_instance *lib_ref, int size){
 }
 
 int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
+
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memfree de %d", addr);
     realizarMemFree( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, addr);
     mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valor; 
-    /* toda la logica de lo que tiene que hacer */
-    /*serializar, deserializar */
-    /* si lo que se recibio del backend es un 1--> tirar el MATE_FREE_FAULT, sino un 0*/
-    
+    return valor;
 }
 
 int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int size){
     
-    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memread %d", size);
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memRead %d", origin);
     realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, info, size);
     origin = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
 
@@ -138,22 +135,10 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
     
-
-    
-    /* toda la logica de lo que tiene que hacer */
-    /*serializar, deserializar */
-    /* si lo que se recibio del backend es un 1--> tirar el MATE_WRITE_FAULT, sino un 0 */
-    /*con el tema del contenido al recibir mensaje -> si es 1 -> NULL / si es 0 -> el contenido */
-
-    origin = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-
-    if(origin != NULL){
-        return 0;
-    }else{
-        return MATE_WRITE_FAULT;
-    }
-
-
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d", dest);
+    realizarMemWrite( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, dest, size);
+    mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    return valor;
 
 }
 
@@ -164,7 +149,7 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 
 
-//--------- Funci ones extras---------//
+//--------- Funciones extras---------//
 
 int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
 
@@ -237,11 +222,16 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
             valorRetorno = notificacionMemAlloc(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case MEMFREE:;
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memalloc");
+            valorRetorno = notificacionMemFree(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case MEMREAD:;
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memalloc");
+            retornoMensaje = notificacionMemRead(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case MEMWRITE:;
-        //aca vamos a tener que devolver el contenido
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memalloc");
+            valorRetorno = notificacionMemWrite(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         default:;
             break;
@@ -254,11 +244,11 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	free(paquete->buffer);
 	free(paquete);
-/* 
-    if(paquete->codigo_operacion == CONECTAR_IO || paquete->codigo_operacion == MEMREAD){
+
+    if(paquete->codigo_operacion == MEMREAD){
         return retornoMensaje;
     }
-*/
+
     return valorRetorno;
 }
 
@@ -400,11 +390,6 @@ int notificacionIO(t_buffer* buffer, t_log* logger){
 	int desplazamiento = 0;
 	int valor;
 
-    //habria que innicializarlo??
-    //void* mensajeRecibido;
-    //int espacioDeMensaje;
-
-
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
@@ -418,6 +403,10 @@ int notificacionIO(t_buffer* buffer, t_log* logger){
    return valor;
 }
 
+
+
+
+
 int notificacionMemAlloc(t_buffer* buffer, t_log* logger){
     
     void* stream = buffer->stream;
@@ -429,6 +418,63 @@ int notificacionMemAlloc(t_buffer* buffer, t_log* logger){
         log_info(logger,"No se pudo hacer el memalloc del size solicitado");
     }else{
         log_error(logger,"Se pudo realizar el memalloc");
+    }
+
+    return valor;
+}
+
+
+int notificacionMemFree(t_buffer* buffer, t_log* logger){
+    
+    void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+
+    if(valor < 0){
+        log_info(logger,"No se pudo hacer el memfree del size solicitado");
+        valor = MATE_FREE_FAULT;
+    }else{
+        log_error(logger,"Se pudo realizar el memfree");
+    }
+
+    return valor;
+}
+
+
+void* notificacionMemRead(t_buffer* buffer, t_log* logger){
+    
+    void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int size;
+
+	memcpy(&(size), stream+desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    //si no hay contenido en esa direccion, devolvemos nulo
+    if(size == 0){
+        return NULL;
+
+    }else{
+        void* contenido = malloc(size);
+        memcpy(contenido, stream+desplazamiento, size);
+        return contenido;
+    }
+}
+
+
+int notificacionMemWrite(t_buffer* buffer, t_log* logger){
+    
+    void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+
+    if(valor == 0){
+        log_info(logger,"Se pudo hacer el memwrite solicitado");
+        valor = MATE_WRITE_FAULT;
+    }else{
+        log_error(logger,"No se pudo realizar el memwrite");
     }
 
     return valor;

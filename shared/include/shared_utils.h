@@ -29,10 +29,9 @@ typedef struct proceso{
     double ultimaRafagaEjecutada ; // este es el real Anterior para SJF
     double rafagaEstimada; //para JFS
     double responseRatio; // HRRN
-	
 	int vuelveDeBloqueo; //esto lo vamos a utilizar para ver si lo utlimo que realizo fue un bloqueo o no
-
-
+	t_list* listaRecursosRetenidos;
+	t_list* listaRecursosSolicitados;
     clock_t tiempoDeArriboColaReady; //esto nos va a servir cuando queremos calcular el tiempo que estuvo esperando un proceso en la cola de Ready, donde esta variable va a ser el inicio de cuando entro a ready
 
 }proceso_kernel ;
