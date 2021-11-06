@@ -3,7 +3,7 @@
 
 uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpinchos en el init
 
-    t_list* marcos_a_asignar = list_create();//probar sacar el list_create
+    t_list* marcos_a_asignar;//probar sacar el list_create
 
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc->pid;
@@ -16,6 +16,8 @@ uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpincho
      carpincho = malloc(sizeof(t_carpincho));
      carpincho->id_carpincho = alloc->pid;
      carpincho->tabla_de_paginas = list_create();
+     carpincho->tlb_hit=0;
+     carpincho->tlb_miss=0;
 
      marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
     
@@ -63,7 +65,6 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
             list_add(carpincho->tabla_de_paginas, pagina);
         }
 
-        //for cada pagina creada. enviarlas a swap. Y si no hay espacio devolver null
 
         void* buffer_allocs = generar_buffer_allocs(tamanio, next_alloc,cantidadDePaginasACrear, PRIMERA_VEZ, 0);
 
@@ -90,12 +91,12 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         if(DF == -1){ //tlb miss
 
             //buscar en tabla de paginas
-            reemplazarPagina(carpincho);
-            pedir_pagina(primeraPag->id_pagina, carpincho->id_carpincho);
-            void* contenido = atender_respuestas_swap(carpincho->conexion);
-            memcpy(memoriaPrincipal + primeraPag->marco->comienzo, contenido, tamanioPagina);
-            
-            //actualizar tlb
+            DF = swapear(carpincho, primeraPag);
+            carpincho->tlb_miss++;
+            miss_totales++;
+        }else{//hit
+            carpincho->tlb_hit++;
+            hits_totales++;
         }
 
         heapMetadata *heap = malloc(TAMANIO_HEAP); //liberar
@@ -108,7 +109,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         while(heap->nextAlloc != -1)
         {
             if(!(heap->isFree)){
-            pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho->tabla_de_paginas, &posicionHeap, &desplazamiento);
+            pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho, &posicionHeap, &desplazamiento);
             }
             
             if(heap->nextAlloc == -1) break;
@@ -119,7 +120,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
                 break;
             }else{
 
-            pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho->tabla_de_paginas, &posicionHeap, &desplazamiento);
+            pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho, &posicionHeap, &desplazamiento);
             }
 
         }
@@ -138,8 +139,8 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 			return pag->id_pagina > pagina;
 		    };
 		
-		t_pagina* paginaSig = list_find(carpincho->tabla_de_paginas, (void*)buscarSigPag);
-        pagina = paginaSig->id_pagina;
+            t_pagina* paginaSig = list_find(carpincho->tabla_de_paginas, (void*)buscarSigPag);
+            pagina = paginaSig->id_pagina;
         }
 
         return generarDireccionLogica(pagina, desplazamiento + TAMANIO_HEAP);
@@ -164,8 +165,7 @@ void crear_marcos(){
             marco->id_marco = generadorIdsMarcos();
             marco->proceso_asignado = -1;
             marco->estaLibre = true;
-            marco->comienzo = i * tamanioPagina; //Aca deberia haber una funcion recursiva que le vaya cambiando donde empieza
-                  //El primero en 0, el segundo 0 + tamanioPagina y asi.
+            marco->comienzo = i * tamanioPagina;
 
             list_add(marcos, marco);
 
@@ -235,14 +235,24 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
     uint32_t id = obtenerId(DL);
 
+    bool buscarPag(t_pagina* pag){
+    return pag->id_pagina == id;
+    };
+
+    t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPag);
+
     uint32_t desplazamiento = obtenerDesplazamiento(DL);
 
-    int32_t DF = buscar_TLB(id);
+    int32_t DF = buscar_TLB(pagina->id_pagina);
 
     if(DF == -1){ //tlb miss
         //buscar en tabla de paginas
-        //swapear
-        //actualizar tlb
+        DF = swapear(capybara, pagina);
+        capybara->tlb_miss++;
+        miss_totales++;
+    }else{//hit
+        capybara->tlb_hit++;
+        hits_totales++;
     }
 
     heapMetadata *heap = malloc(TAMANIO_HEAP);
@@ -265,8 +275,12 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
         if(DF == -1){ //tlb miss
             //buscar en tabla de paginas
-            //swapear
-            //actualizar tlb
+            DF = swapear(capybara, paginaAnterior);
+            capybara->tlb_miss++;
+            miss_totales++;
+        }else{//hit
+            capybara->tlb_hit++;
+            hits_totales++;
         }
 
         memcpy(buffer_heap , memoriaPrincipal + DF + desplazamiento1, TAMANIO_HEAP - desplazamiento);
@@ -279,12 +293,16 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
         memcpy(memoriaPrincipal + DF + desplazamiento1, buffer_heap, TAMANIO_HEAP - desplazamiento);
 
-        DF = buscar_TLB(id);
+        DF = buscar_TLB(pagina->id_pagina);
 
         if(DF == -1){ //tlb miss
             //buscar en tabla de paginas
-            //swapear
-            //actualizar tlb
+            DF = swapear(capybara, pagina);
+            capybara->tlb_miss++;
+            miss_totales++;
+        }else{//hit
+            capybara->tlb_hit++;
+            hits_totales++;
         }
 
         memcpy(memoriaPrincipal + DF, buffer_heap + (TAMANIO_HEAP - desplazamiento), desplazamiento);

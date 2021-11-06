@@ -169,6 +169,10 @@ int32_t buscar_TLB(uint32_t idPag){
 	};
 
 	t_pagina* pagina = list_find(TLB, (void*)buscarPagina);
+
+	if(pagina == NULL){
+		return -1;
+	}
 	
 	return pagina->marco->comienzo;
 	
@@ -176,7 +180,7 @@ int32_t buscar_TLB(uint32_t idPag){
 
 
 
-int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_list* paginas, int32_t *posicionHeap, int32_t *despl){
+int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpincho, int32_t *posicionHeap, int32_t *despl){
 
 	int pagina;
 	t_pagina *paginaDeSiguienteHeap;
@@ -187,10 +191,10 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_list* paginas, i
 		int posicionSiguienteHeap = heap->nextAlloc;
 		*posicionHeap = posicionSiguienteHeap;
 
-        for(i=1; i <= list_size(paginas); i++){
+        for(i=1; i <= list_size(carpincho->tabla_de_paginas); i++){
 
             if(posicionSiguienteHeap < tamanioPagina * i){
-            paginaDeSiguienteHeap = list_get(paginas, i-1);
+            paginaDeSiguienteHeap = list_get(carpincho->tabla_de_paginas, i-1);
 			pagina = paginaDeSiguienteHeap->id_pagina;
             break; 
             }    
@@ -200,9 +204,14 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_list* paginas, i
 
 		*DF = buscar_TLB(paginaDeSiguienteHeap->id_pagina);
 		if(DF == -1){ //tlb miss
-		//buscar en tabla de paginas
-		//swapear
-		}
+			//buscar en tabla de paginas
+			DF = swapear(carpincho, paginaDeSiguienteHeap);
+		    carpincho->tlb_miss++;
+			miss_totales++;
+        }else{//hit
+            carpincho->tlb_hit++;
+			hits_totales++;
+        }
 		
 		if(tamanioPagina - desplazamiento < TAMANIO_HEAP){ //esta cortado
 			
@@ -210,12 +219,17 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_list* paginas, i
 			void* buff_heap = malloc(TAMANIO_HEAP);
 			memcpy(buff_heap, memoriaPrincipal + (*DF + desplazamiento), (tamanioPagina - desplazamiento));
 
-			paginaDeSiguienteHeap = list_get(paginas, i);
+			paginaDeSiguienteHeap = list_get(carpincho->tabla_de_paginas, i);
 
 			*DF = buscar_TLB(paginaDeSiguienteHeap->id_pagina);
 			if(DF == -1){ //tlb miss
-			//buscar en tabla de paginas
-			//swapear
+				//buscar en tabla de paginas
+				DF = swapear(carpincho, paginaDeSiguienteHeap);
+			    carpincho->tlb_miss++;
+				miss_totales++;
+			}else{//hit
+				carpincho->tlb_hit++;
+				hits_totales++;
 			}
 
 			memcpy(buff_heap + (tamanioPagina - desplazamiento), memoriaPrincipal + *DF , TAMANIO_HEAP - (tamanioPagina - desplazamiento));
@@ -271,13 +285,24 @@ t_list* buscarMarcosLibres(t_carpincho* carpincho){
 
 void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t *desplazamiento){
 
-	int DF = buscar_TLB(*pagina);
+	bool buscarPag(t_pagina* pag){
+    return pag->id_pagina == *pagina;
+    };
+
+    t_pagina* pag = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
+	
+	
+	int DF = buscar_TLB(pag->id_pagina);
 
 	if(DF == -1){ //tlb miss
 		//buscar en tabla de paginas
-		//swapearidsPaginas[0]
-		//actualiidsPaginas[0]
-	}
+		DF = swapear(carpincho, pag);
+	    carpincho->tlb_miss++;
+		miss_totales++;
+    }else{//hit
+        carpincho->tlb_hit++;
+		hits_totales++;
+    }
 
 	heap->isFree = false;
 	heap->nextAlloc = posicionUltimoHeap + TAMANIO_HEAP + tamanio;
@@ -298,9 +323,14 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 		DF = buscar_TLB(paginaDeSiguienteHeap->id_pagina);
 		if(DF == -1){ //tlb miss
-		//buscar en tabla de paginas
-		//swapear
-		}
+			//buscar en tabla de paginas
+			DF = swapear(carpincho, paginaDeSiguienteHeap);
+		    carpincho->tlb_miss++;
+			miss_totales++;
+        }else{//hit
+            carpincho->tlb_hit++;
+			hits_totales++;
+        }
 
 		memcpy(memoriaPrincipal + DF , buffer_heap + (tamanioPagina - *desplazamiento) , TAMANIO_HEAP - (tamanioPagina - *desplazamiento));
 		*desplazamiento = - (tamanioPagina - *desplazamiento); //esto esta re trambolico porque despues le suma 9
@@ -332,8 +362,8 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 		pagina->ultimoUso = clock();
         pagina->modificado = true;
 
-		//enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
-		//for cada pagina creada. enviarlas a swap. Y si no hay espacio devolver null y denegar el memalloc
+		enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
+
 		list_add(carpincho->tabla_de_paginas, pagina);
 
 
@@ -360,13 +390,17 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 	if(cantidadDePaginasACrear == 1 && (*desplazamiento + TAMANIO_HEAP + tamanio) < tamanioPagina){ //actualiza el primer pedacito del heap cortado al final de la misma pagina
 
-		DF = buscar_TLB(*pagina);
+		DF = buscar_TLB(pag->id_pagina);
 
 		if(DF == -1){ //tlb miss
 			//buscar en tabla de paginas
-			//swapearidsPaginas[0]
-			//actualiidsPaginas[0]
-		}
+			DF = swapear(carpincho, pag);
+		    carpincho->tlb_miss++;
+			miss_totales++;
+        }else{//hit
+            carpincho->tlb_hit++;
+			hits_totales++;
+        }
 
 		memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, tamanioPagina - (*desplazamiento + TAMANIO_HEAP + tamanio));
 
@@ -397,7 +431,7 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 }
 
-void reemplazarPagina(t_carpincho* carpincho){
+t_marco* reemplazarPagina(t_carpincho* carpincho){
 
 	if(strcmp(tipoAsignacion, "FIJA") == 0){
 
@@ -416,10 +450,16 @@ void reemplazarPagina(t_carpincho* carpincho){
 
 		victima->presente = false;
 		victima->marco->estaLibre = true;
-		//actualizar tlb
+		
+		bool quitarDeTLB(t_pagina* pag){
+			return victima->id_pagina == pag->id_pagina;
+		};
+
+		list_remove_by_condition(TLB, (void*)quitarDeTLB);//preguntar si esto esta bien.
 
 		free(contenido);
-			
+
+		return victima->marco;	
 	}
 
 	if(strcmp(tipoAsignacion, "DINAMICA") == 0){
@@ -456,6 +496,42 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar){
 
 	if(strcmp(algoritmoReemplazoMMU, "CLOCK") == 0){
 
+	}
+
+}
+
+uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida){
+	
+	t_marco* marcoLiberado = reemplazarPagina(carpincho);
+	uint32_t conexion = pedir_pagina(paginaPedida->id_pagina, carpincho->id_carpincho);
+	void* contenido = atender_respuestas_swap(conexion);
+	paginaPedida->marco = marcoLiberado;
+	paginaPedida->marco->estaLibre = false;
+
+	heapMetadata* heap = malloc(TAMANIO_HEAP);
+	memcpy(heap, contenido, TAMANIO_HEAP);
+
+	memcpy(memoriaPrincipal + paginaPedida->marco->comienzo, contenido, tamanioPagina);
+	
+	//actualizar tlb. poner la que se pidio. usar algoritmo si no hay mas lugar
+	list_add(TLB, paginaPedida);
+
+	return marcoLiberado->comienzo;
+}
+
+void manejador_de_seniales(int numeroSenial){
+	
+	if(numeroSenial == SIGINT){
+		//imprimir todo lo de la tlb hits and misses ahre
+		exit(EXIT_SUCCESS);
+	}
+
+	if(numeroSenial == SIGUSR1){
+		//dump de tlb
+	}
+
+	if(numeroSenial == SIGUSR2){
+		//vaciar tlb
 	}
 
 }

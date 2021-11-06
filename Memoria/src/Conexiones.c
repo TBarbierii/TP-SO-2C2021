@@ -334,7 +334,7 @@ void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 }
 
-void pedir_pagina(uint32_t id_pagina, uint32_t pid){
+uint32_t pedir_pagina(uint32_t id_pagina, uint32_t pid){
 
 	uint32_t size;
 
@@ -353,7 +353,7 @@ void pedir_pagina(uint32_t id_pagina, uint32_t pid){
 
 	enviarPaquete(paquete, conexionSwamp);
 
-
+	return conexionSwamp;
 }
 
 void* recibirPagina(int conexion){

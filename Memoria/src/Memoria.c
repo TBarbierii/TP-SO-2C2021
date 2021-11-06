@@ -50,6 +50,8 @@ void inicializarTodo(){
     id_pag = 1;
     id_carpincho = 1;
     id_marco = 0;
+    hits_totales=0;
+    miss_totales=0;
 }
 
 void finalizarTodo(t_config* configActual){
@@ -77,7 +79,16 @@ int main(){
     obtenerValoresDelConfig(configActual);
     inicializarTodo();
     inicializarMemoria();
-    
+
+    if (signal(SIGINT, manejador_de_seniales) == SIG_ERR)
+	{
+		perror ("No se puede cambiar signal");
+	}
+
+    while(1){
+        puts("\n1");
+     sleep(10);
+    }
     enviar_tipo_asignacion(tipoAsignacion);
     //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
@@ -85,19 +96,19 @@ int main(){
 
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     alloc->pid = 8;
-    alloc->tamanio = 70;
+    alloc->tamanio = 45;
 
-        t_memalloc *alloc1 = malloc(sizeof(t_memalloc));
+    t_memalloc *alloc1 = malloc(sizeof(t_memalloc));
     alloc1->pid = 8;
-    alloc1->tamanio =20 ;
+    alloc1->tamanio =43 ;
 
-            t_memalloc *alloc2 = malloc(sizeof(t_memalloc));
+    t_memalloc *alloc2 = malloc(sizeof(t_memalloc));
     alloc2->pid = 8;
-    alloc2->tamanio =50;
+    alloc2->tamanio =35;
 
-            t_memalloc *alloc3 = malloc(sizeof(t_memalloc));
+    t_memalloc *alloc3 = malloc(sizeof(t_memalloc));
     alloc3->pid = 8;
-    alloc3->tamanio =35 ;
+    alloc3->tamanio =10 ;
 
      /* t_carpincho* carpincho = malloc(sizeof(t_carpincho));
      carpincho->id_carpincho = alloc->pid;

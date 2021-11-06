@@ -11,6 +11,7 @@
 #include <commons/collections/list.h>
 #include <stdbool.h>
 #include <math.h>
+#include <signal.h>
 #include "shared_utils.h"
 
 /* Varibales obtenidas del config */
@@ -32,6 +33,9 @@ char* puertoSWAmP;
 uint32_t id_pag; //inicializar en algun lado 
 uint32_t id_carpincho; //inicializar
 uint32_t id_marco; //inicializar
+
+uint32_t hits_totales;
+uint32_t miss_totales;
 
 /* Semaforos */
 
@@ -82,7 +86,7 @@ typedef struct {
     int32_t nextAlloc;
     uint8_t isFree;
 
-} __attribute__((packed)) heapMetadata ;
+} __attribute__((packed)) heapMetadata;
 
 /*typedef struct{
     uint32_t pagina;
@@ -117,6 +121,8 @@ typedef struct {
     t_list* tabla_de_paginas;//esto seria una lista de paginas
     t_list* allocs;
     uint32_t conexion;
+    uint32_t tlb_hit;
+    uint32_t tlb_miss;
 
 }t_carpincho;
 
@@ -167,7 +173,6 @@ void inicializar_carpincho(int conexion ,t_log* logger);
 void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam);
 uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* contenido, uint32_t tam);
 
-void enviar_pagina(uint32_t pid, uint32_t id_pagina, void* contenido);
 
 
 //uint32_t asignarPaginas(t_carpincho*);
@@ -182,12 +187,13 @@ uint32_t obtenerDesplazamiento(uint32_t);
 uint32_t obtenerId(uint32_t);
 t_list* reservarMarcos(uin32_t);
 int32_t buscar_TLB(uint32_t);
-int buscarSiguienteHeapLibre(heapMetadata* , int32_t* , t_list* , int32_t*, int32_t* );
+int buscarSiguienteHeapLibre(heapMetadata* , int32_t* , t_carpincho* , int32_t*, int32_t* );
 t_list* buscarMarcosLibres(t_carpincho* carpincho);
 void crearAllocNuevo(int* pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t*);
-void reemplazarPagina(t_carpincho* carpincho);
+t_marco* reemplazarPagina(t_carpincho* carpincho);
 t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar);
-
+uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida);
+void manejador_de_seniales(int numeroSenial);
 
 
 #endif

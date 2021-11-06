@@ -130,7 +130,7 @@ void recibir_pagina(t_buffer* buffer, t_log *logger) {
     desplazamiento += sizeof(uint32_t);
     memcpy(contenido, data + desplazamiento , tamanio_pagina);
 	log_info(logger, "Se guarda la pagina: %d del proceso: %d",id_pagina, PID);
-	
+
 	escribirContenido(contenido, id_pagina, PID, logger);
 
 }
