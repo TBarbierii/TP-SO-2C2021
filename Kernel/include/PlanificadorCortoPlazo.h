@@ -22,8 +22,11 @@
 
 void planificadorCortoPlazo();
 void replanificarSegunAlgoritmo();
-void rutinaDeProceso(proceso_kernel* procesoEjecutando);
+void rutinaDeProceso();
 int rompoElHiloSegunElCodigo(int codigo);
+void inicializarHilosCPU();
+
+
 
 void replanificacion();
 

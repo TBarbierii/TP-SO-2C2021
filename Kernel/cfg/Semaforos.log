@@ -1,8 +1,0 @@
-[WARNING] 10:14:14:804 Semaforos/(5100:5137): Se esta intentando hacer un signal de un semaforo: SEM1, el cual no existe
-[WARNING] 22:57:42:456 Semaforos/(8645:8697): Se esta intentando hacer un signal de un semaforo: SEM1, el cual no existe
-[WARNING] 23:00:49:614 Semaforos/(8825:8854): Se esta intentando hacer un signal de un semaforo: SEM1, el cual no existe
-[WARNING] 23:14:27:240 Semaforos/(9737:9758): Se esta intentando hacer un signal de un semaforo: SEM1, el cual no existe
-[WARNING] 23:17:14:252 Semaforos/(9903:9932): Se esta intentando hacer un signal de un semaforo: SEM1, el cual no existe
-[WARNING] 23:24:34:013 Semaforos/(10183:10236): Se esta intentando hacer un signal de un semaforo: SEM1, el cual no existe
-[WARNING] 23:25:09:329 Semaforos/(10183:10273): Se esta intentando hacer un signal de un semaforo: SEM1, el cual no existe
-[WARNING] 23:25:25:046 Semaforos/(10183:10302): Se esta intentando hacer un signal de un semaforo: SEM1, el cual no existe

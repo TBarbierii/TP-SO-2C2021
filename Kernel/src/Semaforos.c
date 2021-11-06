@@ -185,10 +185,10 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
 
             //lo sacamos de la lista de ejecucion
             pthread_mutex_lock(modificarExec);
-            proceso_kernel* procesoLiberado = list_remove_by_condition(procesosExec,buscarProcesoConPid);
+            proceso_kernel* procesoAbloquear = list_remove_by_condition(procesosExec,buscarProcesoConPid);
             pthread_mutex_unlock(modificarExec);
 
-            list_add(semaforoActual->listaDeProcesosEnEspera, procesoLiberado); /* lo agregamos a la lista de bloqueados del semaforo */
+            list_add(semaforoActual->listaDeProcesosEnEspera, procesoAbloquear); /* lo agregamos a la lista de bloqueados del semaforo */
             pthread_mutex_unlock(semaforoActual->mutex);
 
 
@@ -197,7 +197,9 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
 
             /* agregamos al proceso en la lista de bloqueados */
             pthread_mutex_lock(modificarBlocked);
-            list_add(procesosBlocked,procesoLiberado);
+            list_add(procesosBlocked,procesoAbloquear);
+            //ponemos que lo ultimo que realizo fue un bloqueo a un semaforo
+            procesoAbloquear->vuelveDeBloqueo = BLOCK_SEM;
             sem_post(signalSuspensionProceso);
             pthread_mutex_unlock(modificarBlocked);
 

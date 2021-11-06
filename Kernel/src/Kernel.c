@@ -56,6 +56,9 @@ void inicializarSemaforosGlobales(){
 
     /* semaforos */
 
+    procesosDisponiblesParaEjecutar = malloc(sizeof(sem_t));
+    sem_init(procesosDisponiblesParaEjecutar,1,0);
+
     hayProcesosNew = malloc(sizeof(sem_t));
     sem_init(hayProcesosNew,1,0);
 
@@ -103,8 +106,8 @@ void finalizarSemaforosGlobales(){
     free(controladorIO);
     
 
-
-
+    sem_destroy(procesosDisponiblesParaEjecutar);
+    free(procesosDisponiblesParaEjecutar);
     sem_destroy(hayProcesosNew);
     free(hayProcesosNew);
     sem_destroy(hayProcesosReady);

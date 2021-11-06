@@ -86,7 +86,7 @@ int atenderMensajeEnKernel(int conexion) {
 
         case CONECTAR_IO:;
 			log_info(logger,"Vamos a realizar una peticion a un dispositivo IO");
-			conectarDispositivoIO(paquete->buffer, conexion);
+			valorOperacion = conectarDispositivoIO(paquete->buffer, conexion);
         break;
 
 		default:;
@@ -123,6 +123,7 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 	procesoNuevo->rafagaEstimada = estimacion_inicial;
 	procesoNuevo->tiempoDeEspera = 0;
 	procesoNuevo->ultimaRafagaEjecutada = 0;
+	procesoNuevo->vuelveDeBloqueo = NO_BLOQUEADO; //con esto vamos a decir que no realizo ningunn bloqueo todavia
 	establecerConexionConLaMemoria(procesoNuevo, logger);
 
 
@@ -297,8 +298,9 @@ int hacerWaitDeSemaforo(t_buffer * buffer, int conexion){
 	memcpy(nombre, stream+desplazamiento, tamanioNombre);
 	
 	int valorReturn = realizarWaitDeSemaforo(nombre, pid);
-	
-	avisarWaitDeSemaforo(conexion,valorReturn);
+	if(valorReturn != 0){
+		avisarWaitDeSemaforo(conexion,valorReturn);
+	}
 
 	free(nombre);
 
@@ -324,12 +326,21 @@ int conectarDispositivoIO(t_buffer* buffer, int conexion){
     desplazamiento += sizeof(uint32_t);
 
 	nombreDispositivo = malloc(tamanioNombre);
-
     memcpy(nombreDispositivo, buffer->stream + desplazamiento , tamanioNombre);
 
 	int valorRetorno = realizarOperacionIO(pid, nombreDispositivo);
+	//en caso de que no se realizo la operacion IO xq no se pudo, lo aviso ahora, en caso de que se realiza el bloqueo, lo realizo despues
+	if(valorRetorno == 1){
+		avisarconexionConDispositivoIO(conexion, valorRetorno);
+	}
 
-	avisarconexionConDispositivoIO(conexion, valorRetorno);
+	free(nombreDispositivo);
+
+	if(valorRetorno == 0){
+		return CONECTAR_IO;
+	}else {
+	return FALLO_IO; }
+	
 
 }
 

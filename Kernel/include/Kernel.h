@@ -88,6 +88,10 @@ sem_t* procesoNecesitaEntrarEnReady;
 
 /* otros mutex */
 
+/* semaforo para alertar a los threads CPU que hay procesos para ejecutar */
+sem_t* procesosDisponiblesParaEjecutar;
+
+
 
 //mutex de semaforos Y IO
 
