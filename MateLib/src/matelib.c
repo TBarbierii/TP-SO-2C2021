@@ -662,7 +662,7 @@ int main(){
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     
     //mate_sem_init(referencia,"SEM1",1);
-    mate_sem_post(referencia,"SEM1");
+    //mate_sem_post(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
     mate_call_io(referencia,"laguna","asd");

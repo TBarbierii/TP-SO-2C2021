@@ -36,7 +36,7 @@ void rutinaDispositivoIO(dispositivoIO* dispositivo){
 
         log_info(loggerDevicesIO,"Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:%d", dispositivo->duracionRafaga);   
         /*tiempo que pasa en el bloqueo */
-        usleep(dispositivo->duracionRafaga);
+        usleep(dispositivo->duracionRafaga*1000);
 
     
         pthread_mutex_lock(dispositivo->mutex);
@@ -74,13 +74,15 @@ int realizarOperacionIO(int pid, char* nombreDevice){
             }
             return 0;
         }
+
         //buscamos si se encuentra el dispositivo IO para usar 
         pthread_mutex_lock(controladorIO);
         dispositivoIO* dispositivoEncontrado = list_find(dispositivosIODisponibles, dispositivoBuscado);
         pthread_mutex_unlock(controladorIO);
 
         if(dispositivoEncontrado != NULL){
-            
+            //Si pudo realizar todo, lo vamos a bloquear entonces y vamos a asignar que la ultima operacion que relaizo fue un BLOCK_IO
+            procesoEncontrado->vuelveDeBloqueo = BLOCK_IO;
             agregarProcesoADispositivo(procesoEncontrado, dispositivoEncontrado);
             return 0;
 

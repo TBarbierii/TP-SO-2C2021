@@ -4,9 +4,31 @@
 void rutinaDeProceso(proceso_kernel* procesoEjecutando){
     
     clock_t arranqueEjecucion = clock();
-    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 1, LOG_LEVEL_DEBUG);
     
     while(1){
+
+        //como son hilos creados al comienzo, aca deberiamos sacar al primer proceso que este en exec y agregarlo
+
+
+
+        
+        //si viene de un bloqueo debemos notificarle a la matelib que se pudo o no realizar
+
+        if(procesoEjecutando->vuelveDeBloqueo == BLOCK_IO){
+
+            //le avisamos que se pudo realizar la IO
+            log_info(logger, "Le avisamos al proceso que se pudo ejecutar el IO correctamente");
+            int valor = 0;
+            avisarconexionConDispositivoIO(procesoEjecutando->conexion, valor);
+
+        }else if (procesoEjecutando->vuelveDeBloqueo == BLOCK_SEM){
+            //le avisamos que se pudo realizar el WAIT
+            log_info(logger, "Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente");
+            int valor = 0;
+            avisarWaitDeSemaforo(procesoEjecutando->conexion, valor);
+        }
+        
         
         log_info(logger, "Se ejecuto tarea de conexion");
         int codigoOperacion = atenderMensajeEnKernel(procesoEjecutando->conexion);

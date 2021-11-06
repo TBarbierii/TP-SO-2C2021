@@ -13,6 +13,13 @@
 #include <commons/collections/list.h>
 
 /* Procesos */
+typedef enum tipo_bloqueo{
+	NO_BLOQUEADO = -1,
+	BLOCK_SEM,
+	BLOCK_IO
+}tipo_bloqueo;
+
+
 typedef struct proceso{
     
     uint32_t pid ;
@@ -23,6 +30,9 @@ typedef struct proceso{
     double rafagaEstimada; //para JFS
     double responseRatio; // HRRN
 	
+	int vuelveDeBloqueo; //esto lo vamos a utilizar para ver si lo utlimo que realizo fue un bloqueo o no
+
+
     clock_t tiempoDeArriboColaReady; //esto nos va a servir cuando queremos calcular el tiempo que estuvo esperando un proceso en la cola de Ready, donde esta variable va a ser el inicio de cuando entro a ready
 
 }proceso_kernel ;
@@ -58,7 +68,8 @@ typedef enum{
 	TIPOASIGNACION,
 	SEM_WAIT_NOBLOQUEANTE,
 	SUSPENSION_PROCESO, //este codigo va a ser por el cual desde el kernel le vamos a avisar que un proceso se suspende y vamos a solicitar suspender todas sus paginas
-	CONSULTAR_ESPACIO
+	CONSULTAR_ESPACIO,
+	FALLO_IO
 }cod_operacion;
 
 typedef struct buffer
