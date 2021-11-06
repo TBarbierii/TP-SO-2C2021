@@ -81,7 +81,7 @@ swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger)
 
     if(archivo == NULL){ //aca lo asignamos a los correspondientes marcos solamente
         swap_files* archivoConMasEspacio = buscar_archivo_con_mayor_espacio();
-        log_info(logger, "El archivo que vamos a utilizar tiene %i cantidad de frames libres", cantidad_frames_disponibles(archivoConMasEspacio->path));
+        log_info(logger, "El archivo que vamos a utilizar tiene %i cantidad de frames libres", cantidad_frames_disponibles(archivoConMasEspacio));
 
         if(tipo_asignacion == 1){
 

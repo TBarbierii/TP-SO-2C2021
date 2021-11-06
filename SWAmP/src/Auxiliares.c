@@ -72,19 +72,14 @@ int pid_se_encuentra_en_particion(swap_files* archivo_swap, uint32_t PID) {
 
 swap_files* buscar_archivo_con_mayor_espacio(){
 
+
     int tieneMasEspacio(swap_files* arch1, swap_files* arch2){
-        return cantidad_frames_disponibles(arch1->path) >= cantidad_frames_disponibles(arch2->path);
+        if(cantidad_frames_disponibles(arch1) == cantidad_frames_disponibles(arch2)){
+            return arch1->id < arch2->id;
+        }
+        return cantidad_frames_disponibles(arch1) > cantidad_frames_disponibles(arch2);
     }
 
-    /*
-    int tieneMasEspacio(swap_files* arch1, swap_files* arch2){
-        if(cantidad_frames_disponibles(arch1->path) >= cantidad_frames_disponibles(arch2->path)) {
-            return 1;
-        }else if(cantidad_frames_disponibles(arch1->path) >= cantidad_frames_disponibles(arch2->path) && arch1->id <= arch2->id) {
-            return 1;
-        } 
-    */    
-    
     
     list_sort(lista_swap_files, tieneMasEspacio);
     //va a poner a los archivos mas grandes al comienzo de todo
@@ -93,9 +88,9 @@ swap_files* buscar_archivo_con_mayor_espacio(){
     return list_get(lista_swap_files,0);
 }
 
-int cantidad_frames_disponibles(char* path_swap) {
+int cantidad_frames_disponibles(swap_files* archivoSwap) {
     
-    swap_files* archivoSwap = encontrar_swap_file(path_swap);
+    
     t_list* particiones_libres;
 
     if(archivoSwap != NULL){
@@ -105,5 +100,6 @@ int cantidad_frames_disponibles(char* path_swap) {
         list_destroy(particiones_libres);
         return cantidad_frames;
     }
+    
     return 0;
 }

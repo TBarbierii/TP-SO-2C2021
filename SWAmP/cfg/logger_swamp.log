@@ -890,3 +890,56 @@ y tiene el heap: prev:0, sig:0, free:0
 [INFO] 16:32:41:103 SWAmP/(10478:10478): El contenido leido es santivergas
 [INFO] 16:32:41:118 SWAmP/(10478:10478): Se leyo el contenido del archivo: /home/utnso/swap1.bin
 [INFO] 16:32:41:119 SWAmP/(10478:10478): El contenido leido es asdigol
+[INFO] 17:36:48:110 SWAmP/(3577:3577): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:36:48:167 SWAmP/(3577:3577): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:36:48:169 SWAmP/(3577:3577): Se han creado todos los archivos
+[INFO] 17:36:54:003 SWAmP/(3577:3577): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 17:36:54:004 SWAmP/(3577:3577): El contenido leido es asdnass--------------buenass----
+[INFO] 17:36:54:058 SWAmP/(3577:3577): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 17:36:54:060 SWAmP/(3577:3577): El contenido leido es xdxd
+[INFO] 17:45:28:592 SWAmP/(3871:3871): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:45:28:661 SWAmP/(3871:3871): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:45:28:672 SWAmP/(3871:3871): Se han creado todos los archivos
+[INFO] 17:45:46:958 SWAmP/(3871:3871): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 17:45:46:963 SWAmP/(3871:3871): El contenido leido es asdnass--------------buenass----
+[INFO] 17:45:47:019 SWAmP/(3871:3871): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 17:45:47:021 SWAmP/(3871:3871): El contenido leido es xdxd
+[INFO] 17:47:31:527 SWAmP/(4117:4117): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:47:31:601 SWAmP/(4117:4117): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:47:31:616 SWAmP/(4117:4117): Se han creado todos los archivos
+[INFO] 17:47:36:783 SWAmP/(4117:4117): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 17:47:36:785 SWAmP/(4117:4117): El contenido leido es asdnass--------------buenass----
+[INFO] 17:47:36:837 SWAmP/(4117:4117): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 17:47:36:838 SWAmP/(4117:4117): El contenido leido es xdxd
+[INFO] 17:50:00:093 SWAmP/(4263:4263): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:50:00:156 SWAmP/(4263:4263): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:50:00:162 SWAmP/(4263:4263): Se han creado todos los archivos
+[INFO] 17:50:02:810 SWAmP/(4263:4263): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 17:50:02:812 SWAmP/(4263:4263): El contenido leido es asdnass--------------buenass----
+[INFO] 17:50:02:878 SWAmP/(4263:4263): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 17:50:02:878 SWAmP/(4263:4263): El contenido leido es xdxd
+[INFO] 17:56:18:725 SWAmP/(4659:4659): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:56:18:780 SWAmP/(4659:4659): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:56:18:788 SWAmP/(4659:4659): Se han creado todos los archivos
+[INFO] 17:59:22:011 SWAmP/(4911:4911): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:59:22:061 SWAmP/(4911:4911): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:59:22:072 SWAmP/(4911:4911): Se han creado todos los archivos
+[INFO] 18:00:17:167 SWAmP/(5005:5005): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:00:17:217 SWAmP/(5005:5005): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:00:17:220 SWAmP/(5005:5005): Se han creado todos los archivos
+[INFO] 18:00:33:648 SWAmP/(5066:5066): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:00:33:700 SWAmP/(5066:5066): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:00:33:705 SWAmP/(5066:5066): Se han creado todos los archivos
+[INFO] 18:00:35:706 SWAmP/(5066:5066): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:00:35:711 SWAmP/(5066:5066): El contenido leido es asdnass--------------buenass----
+[INFO] 18:00:35:752 SWAmP/(5066:5066): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 18:00:35:755 SWAmP/(5066:5066): El contenido leido es xdxd
+[INFO] 18:03:45:015 SWAmP/(5360:5360): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:03:45:063 SWAmP/(5360:5360): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:03:45:066 SWAmP/(5360:5360): Se han creado todos los archivos
+[INFO] 18:03:50:618 SWAmP/(5360:5360): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:03:50:620 SWAmP/(5360:5360): El contenido leido es asdnass--------------buenass----
+[INFO] 18:03:50:678 SWAmP/(5360:5360): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 18:03:50:679 SWAmP/(5360:5360): El contenido leido es xdxd
+[INFO] 18:03:50:705 SWAmP/(5360:5360): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:03:50:708 SWAmP/(5360:5360): El contenido leido es habemus_futbol

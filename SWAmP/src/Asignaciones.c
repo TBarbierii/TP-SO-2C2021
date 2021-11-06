@@ -23,7 +23,7 @@ int asignacion_dinamica(int pid, swap_files* archivo){
 
 int asignar_marcos_maximos(int pid, swap_files* archivo ){
 
-    if(cantidad_frames_disponibles(archivo->path) < marcos_maximos){
+    if(cantidad_frames_disponibles(archivo) < marcos_maximos){
         return 0;
     }else{
         asignar_marcos_proceso(pid,archivo);
