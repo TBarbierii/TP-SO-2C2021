@@ -42,6 +42,19 @@ particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PI
 
 }
 
+particion* particion_disponible_para_sobreescribir(swap_files* archivo, int PID, int id_pagina){
+
+    int particionDisponibleParaSobreescribir(particion* particionActual){
+        if(particionActual->esta_libre == 0) {
+            if(particionActual->pid == PID && particionActual->hay_contenido == 1){
+                return particionActual->num_pagina == id_pagina;
+            }
+        }
+        return 0;
+    } 
+
+    return list_find(archivo->particiones_swap, particionDisponibleParaSobreescribir);
+}
 
 /* ----------------   Paginas  ----------------  */
 int pagina_libre(particion* particion_nueva) {

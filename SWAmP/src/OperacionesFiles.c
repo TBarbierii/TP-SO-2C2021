@@ -12,7 +12,7 @@ void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* lo
 
 }
 
-void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid, char* nombreArchivo, t_log* logger){
+void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID, char* nombreArchivo, t_log* logger){
 
     swap_files* archivoAEscribir = encontrar_swap_file(nombreArchivo);
 
@@ -20,39 +20,54 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid
     int size = string_length(contenido);
 
     if(archivoAEscribir != NULL){
+        
+        particion* particion_para_sobreescribir = particion_disponible_para_sobreescribir(archivoAEscribir, PID, pagina);
 
-        particion* particionAmodificar = primer_particion_disponible_para_escribir(archivoAEscribir,pid);
-
-        if(particionAmodificar != NULL){
-            particionAmodificar->hay_contenido = 1;
-            particionAmodificar->num_pagina = pagina;
-
+        if(particion_para_sobreescribir != NULL) {
             log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
-            log_info(logger,"Se escribe sobre la particion: %i", particionAmodificar->num_particion);
-            
+            log_info(logger,"Se sobreescribe sobre la particion: %i", particion_para_sobreescribir->num_particion);
+
             int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
             truncate(archivoAEscribir->path, tamanio_swap);
             void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
             if(size < tamanio_pagina){ //podria pasar que lo que nos manda memoria, ocupe menos tamaño que una pagina el contenido, por lo tanto vamos a guardar el tamaño solamente
-                
-                memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), contenido, size);
-            
+                memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), contenido, size);
             }else{
-
-                memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), contenido, tamanio_pagina);
-                
+                memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), contenido, tamanio_pagina); 
             }   
-
-
-
             munmap(contenidoArchivo, tamanio_swap);
             close(fd);
 
             log_info(logger,"Se guardo el contenido correctamente");
-
         }else{
-            log_info(logger,"No se encontro la siguiente particion");
+
+            particion* particionAmodificar = primer_particion_disponible_para_escribir(archivoAEscribir, PID);
+
+            if(particionAmodificar != NULL){
+                particionAmodificar->hay_contenido = 1;
+                particionAmodificar->num_pagina = pagina;
+
+                log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
+                log_info(logger,"Se escribe sobre la particion: %i", particionAmodificar->num_particion);
+                
+                int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
+                truncate(archivoAEscribir->path, tamanio_swap);
+                void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+
+                if(size < tamanio_pagina){ //podria pasar que lo que nos manda memoria, ocupe menos tamaño que una pagina el contenido, por lo tanto vamos a guardar el tamaño solamente
+                    memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), contenido, size);
+                }else{
+                    memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), contenido, tamanio_pagina);                   
+                }   
+                munmap(contenidoArchivo, tamanio_swap);
+                close(fd);
+
+                log_info(logger,"Se guardo el contenido correctamente");
+
+            }else{
+                log_info(logger,"No se encontro la siguiente particion");
+            }
         }
     }else{
         log_info(logger,"No se encontro el archivo ");
@@ -66,6 +81,7 @@ swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger)
 
     if(archivo == NULL){ //aca lo asignamos a los correspondientes marcos solamente
         swap_files* archivoConMasEspacio = buscar_archivo_con_mayor_espacio();
+        log_info(logger, "El archivo que vamos a utilizar tiene %i cantidad de frames libres", cantidad_frames_disponibles(archivoConMasEspacio->path));
 
         if(tipo_asignacion == 1){
 
@@ -104,8 +120,8 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
         truncate(archivo_swap->path, tamanio_swap);
         int buscar_pagina_en_particion(particion* particion_buscada){
             if(particion_buscada->esta_libre == 0) {
-                if(particion_buscada->num_pagina == id_pagina && particion_buscada->pid == PID){
-                    return 1;
+                if(particion_buscada->pid == PID){
+                    return particion_buscada->num_pagina == id_pagina;
                 }
             }
             return 0;
@@ -128,10 +144,10 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             free(contenidoParaLoggear);
 
             enviar_pagina(contenido_a_leer, conexion);
-            particion_a_leer->hay_contenido = 0;
-            if(tipo_asignacion == 0) {
+            //particion_a_leer->hay_contenido = 0;
+            /*if(tipo_asignacion == 0) {
                 particion_a_leer->esta_libre = 1;
-            }
+            }*/
         }
 
         munmap(contenido_archivo, tamanio_swap);

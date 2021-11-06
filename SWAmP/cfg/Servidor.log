@@ -669,3 +669,204 @@
 [INFO] 22:40:35:355 Servidor/(17259:17259): Solicitud de memoria entrante
 [INFO] 22:40:35:593 Servidor/(17259:17259): Solicitud de memoria entrante
 [INFO] 22:41:12:304 Servidor/(17259:17259): Solicitud de memoria entrante
+[INFO] 15:11:52:158 Servidor/(4096:4096): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:12:34:886 Servidor/(4282:4282): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:14:52:418 Servidor/(4850:4850): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:15:08:704 Servidor/(4850:4850): Solicitud de memoria entrante
+[INFO] 15:15:08:708 Servidor/(4850:4850): Solicitud de memoria entrante
+[INFO] 15:15:08:710 Servidor/(4850:4850): Solicitud de memoria entrante
+[INFO] 15:17:16:904 Servidor/(4850:4850): Solicitud de memoria entrante
+[INFO] 15:37:20:589 Servidor/(6191:6191): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:37:23:887 Servidor/(6191:6191): Solicitud de memoria entrante
+[INFO] 15:37:23:905 Servidor/(6191:6191): Solicitud de memoria entrante
+[INFO] 15:37:23:946 Servidor/(6191:6191): Solicitud de memoria entrante
+[INFO] 15:37:23:987 Servidor/(6191:6191): Solicitud de memoria entrante
+[INFO] 15:37:23:991 Servidor/(6191:6191): Solicitud de memoria entrante
+[INFO] 15:37:23:995 Servidor/(6191:6191): Solicitud de memoria entrante
+[INFO] 15:39:53:904 Servidor/(6342:6342): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:39:55:790 Servidor/(6342:6342): Solicitud de memoria entrante
+[INFO] 15:39:55:795 Servidor/(6342:6342): Solicitud de memoria entrante
+[INFO] 15:41:09:246 Servidor/(6342:6342): Solicitud de memoria entrante
+[INFO] 15:41:48:687 Servidor/(6342:6342): Solicitud de memoria entrante
+[INFO] 15:47:06:028 Servidor/(6634:6634): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:47:11:495 Servidor/(6686:6686): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:47:14:701 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:47:14:716 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:47:14:756 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:47:14:791 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:47:14:795 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:47:14:800 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:32:826 Servidor/(6797:6797): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:48:34:871 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:34:879 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:34:887 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:34:903 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:34:909 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:34:915 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:43:172 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:43:180 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:43:189 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:43:204 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:43:209 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:43:215 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:50:395 Servidor/(6904:6904): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:48:52:405 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:52:413 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:52:420 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:52:435 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:52:440 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:52:446 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:55:207 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:55:215 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:55:223 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:55:238 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:55:243 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:55:248 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:56:059 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:56:067 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:56:073 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:56:090 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:56:095 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:56:100 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:122 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:130 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:137 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:153 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:158 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:161 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:895 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:904 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:912 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:927 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:932 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:48:59:937 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:49:00:553 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:49:00:561 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:49:00:568 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:49:00:601 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:49:00:606 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:49:00:611 Servidor/(6686:6686): Solicitud de memoria entrante
+[INFO] 15:49:28:394 Servidor/(7118:7118): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:49:39:648 Servidor/(7207:7207): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:49:53:885 Servidor/(7310:7310): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:50:25:536 Servidor/(7399:7399): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:50:27:764 Servidor/(7399:7399): Solicitud de memoria entrante
+[INFO] 15:50:27:779 Servidor/(7399:7399): Solicitud de memoria entrante
+[INFO] 15:50:27:819 Servidor/(7399:7399): Solicitud de memoria entrante
+[INFO] 15:50:27:847 Servidor/(7399:7399): Solicitud de memoria entrante
+[INFO] 15:50:27:856 Servidor/(7399:7399): Solicitud de memoria entrante
+[INFO] 15:50:27:860 Servidor/(7399:7399): Solicitud de memoria entrante
+[INFO] 15:50:34:855 Servidor/(7482:7482): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:50:48:850 Servidor/(7549:7549): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:51:02:627 Servidor/(7664:7664): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:52:55:261 Servidor/(8020:8020): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:52:58:959 Servidor/(8020:8020): Solicitud de memoria entrante
+[INFO] 15:52:58:963 Servidor/(8020:8020): Solicitud de memoria entrante
+[INFO] 15:53:57:404 Servidor/(8020:8020): Solicitud de memoria entrante
+[INFO] 15:54:18:489 Servidor/(8020:8020): Solicitud de memoria entrante
+[INFO] 15:56:34:670 Servidor/(8336:8336): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:56:36:387 Servidor/(8336:8336): Solicitud de memoria entrante
+[INFO] 15:56:36:392 Servidor/(8336:8336): Solicitud de memoria entrante
+[INFO] 15:56:40:110 Servidor/(8336:8336): Solicitud de memoria entrante
+[INFO] 15:56:41:767 Servidor/(8336:8336): Solicitud de memoria entrante
+[INFO] 16:00:00:678 Servidor/(8484:8484): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:00:02:243 Servidor/(8484:8484): Solicitud de memoria entrante
+[INFO] 16:00:02:259 Servidor/(8484:8484): Solicitud de memoria entrante
+[INFO] 16:00:02:301 Servidor/(8484:8484): Solicitud de memoria entrante
+[INFO] 16:00:02:331 Servidor/(8484:8484): Solicitud de memoria entrante
+[INFO] 16:00:02:343 Servidor/(8484:8484): Solicitud de memoria entrante
+[INFO] 16:00:02:348 Servidor/(8484:8484): Solicitud de memoria entrante
+[INFO] 16:01:06:179 Servidor/(8603:8603): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:01:07:978 Servidor/(8603:8603): Solicitud de memoria entrante
+[INFO] 16:01:08:011 Servidor/(8603:8603): Solicitud de memoria entrante
+[INFO] 16:01:08:071 Servidor/(8603:8603): Solicitud de memoria entrante
+[INFO] 16:01:08:115 Servidor/(8603:8603): Solicitud de memoria entrante
+[INFO] 16:01:08:120 Servidor/(8603:8603): Solicitud de memoria entrante
+[INFO] 16:01:08:126 Servidor/(8603:8603): Solicitud de memoria entrante
+[INFO] 16:02:20:116 Servidor/(8710:8710): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:02:22:154 Servidor/(8710:8710): Solicitud de memoria entrante
+[INFO] 16:02:22:170 Servidor/(8710:8710): Solicitud de memoria entrante
+[INFO] 16:02:22:218 Servidor/(8710:8710): Solicitud de memoria entrante
+[INFO] 16:02:22:261 Servidor/(8710:8710): Solicitud de memoria entrante
+[INFO] 16:02:22:267 Servidor/(8710:8710): Solicitud de memoria entrante
+[INFO] 16:02:22:274 Servidor/(8710:8710): Solicitud de memoria entrante
+[INFO] 16:02:22:280 Servidor/(8710:8710): Solicitud de memoria entrante
+[INFO] 16:02:22:289 Servidor/(8710:8710): Solicitud de memoria entrante
+[INFO] 16:09:59:751 Servidor/(8903:8903): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:10:02:111 Servidor/(8903:8903): Solicitud de memoria entrante
+[INFO] 16:10:02:128 Servidor/(8903:8903): Solicitud de memoria entrante
+[INFO] 16:10:02:170 Servidor/(8903:8903): Solicitud de memoria entrante
+[INFO] 16:10:02:217 Servidor/(8903:8903): Solicitud de memoria entrante
+[INFO] 16:10:02:223 Servidor/(8903:8903): Solicitud de memoria entrante
+[INFO] 16:10:02:228 Servidor/(8903:8903): Solicitud de memoria entrante
+[INFO] 16:10:02:235 Servidor/(8903:8903): Solicitud de memoria entrante
+[INFO] 16:10:02:243 Servidor/(8903:8903): Solicitud de memoria entrante
+[INFO] 16:14:55:223 Servidor/(9124:9124): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:14:56:953 Servidor/(9124:9124): Solicitud de memoria entrante
+[INFO] 16:14:56:969 Servidor/(9124:9124): Solicitud de memoria entrante
+[INFO] 16:14:57:015 Servidor/(9124:9124): Solicitud de memoria entrante
+[INFO] 16:14:57:045 Servidor/(9124:9124): Solicitud de memoria entrante
+[INFO] 16:14:57:058 Servidor/(9124:9124): Solicitud de memoria entrante
+[INFO] 16:14:57:073 Servidor/(9124:9124): Solicitud de memoria entrante
+[INFO] 16:14:57:089 Servidor/(9124:9124): Solicitud de memoria entrante
+[INFO] 16:14:57:096 Servidor/(9124:9124): Solicitud de memoria entrante
+[INFO] 16:16:29:983 Servidor/(9225:9225): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:19:50:645 Servidor/(9373:9373): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:19:54:064 Servidor/(9373:9373): Solicitud de memoria entrante
+[INFO] 16:19:54:077 Servidor/(9373:9373): Solicitud de memoria entrante
+[INFO] 16:19:54:114 Servidor/(9373:9373): Solicitud de memoria entrante
+[INFO] 16:19:54:147 Servidor/(9373:9373): Solicitud de memoria entrante
+[INFO] 16:19:54:159 Servidor/(9373:9373): Solicitud de memoria entrante
+[INFO] 16:19:54:164 Servidor/(9373:9373): Solicitud de memoria entrante
+[INFO] 16:19:54:179 Servidor/(9373:9373): Solicitud de memoria entrante
+[INFO] 16:19:54:186 Servidor/(9373:9373): Solicitud de memoria entrante
+[INFO] 16:23:55:811 Servidor/(9550:9550): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:24:19:040 Servidor/(9601:9601): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:24:32:558 Servidor/(9644:9644): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:24:34:213 Servidor/(9644:9644): Solicitud de memoria entrante
+[INFO] 16:24:34:226 Servidor/(9644:9644): Solicitud de memoria entrante
+[INFO] 16:24:34:271 Servidor/(9644:9644): Solicitud de memoria entrante
+[INFO] 16:24:34:306 Servidor/(9644:9644): Solicitud de memoria entrante
+[INFO] 16:24:34:311 Servidor/(9644:9644): Solicitud de memoria entrante
+[INFO] 16:24:34:318 Servidor/(9644:9644): Solicitud de memoria entrante
+[INFO] 16:24:34:342 Servidor/(9644:9644): Solicitud de memoria entrante
+[INFO] 16:24:34:355 Servidor/(9644:9644): Solicitud de memoria entrante
+[INFO] 16:26:50:381 Servidor/(9757:9757): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:26:52:473 Servidor/(9757:9757): Solicitud de memoria entrante
+[INFO] 16:26:52:491 Servidor/(9757:9757): Solicitud de memoria entrante
+[INFO] 16:26:52:527 Servidor/(9757:9757): Solicitud de memoria entrante
+[INFO] 16:26:52:559 Servidor/(9757:9757): Solicitud de memoria entrante
+[INFO] 16:26:52:569 Servidor/(9757:9757): Solicitud de memoria entrante
+[INFO] 16:26:52:577 Servidor/(9757:9757): Solicitud de memoria entrante
+[INFO] 16:26:52:582 Servidor/(9757:9757): Solicitud de memoria entrante
+[INFO] 16:26:52:588 Servidor/(9757:9757): Solicitud de memoria entrante
+[INFO] 16:27:27:753 Servidor/(9831:9831): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:27:58:258 Servidor/(9918:9918): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:28:01:000 Servidor/(9918:9918): Solicitud de memoria entrante
+[INFO] 16:28:01:017 Servidor/(9918:9918): Solicitud de memoria entrante
+[INFO] 16:28:01:061 Servidor/(9918:9918): Solicitud de memoria entrante
+[INFO] 16:28:01:091 Servidor/(9918:9918): Solicitud de memoria entrante
+[INFO] 16:28:01:105 Servidor/(9918:9918): Solicitud de memoria entrante
+[INFO] 16:28:01:109 Servidor/(9918:9918): Solicitud de memoria entrante
+[INFO] 16:28:01:123 Servidor/(9918:9918): Solicitud de memoria entrante
+[INFO] 16:28:01:127 Servidor/(9918:9918): Solicitud de memoria entrante
+[INFO] 16:31:16:495 Servidor/(10111:10111): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:31:18:752 Servidor/(10111:10111): Solicitud de memoria entrante
+[INFO] 16:31:18:771 Servidor/(10111:10111): Solicitud de memoria entrante
+[INFO] 16:31:18:854 Servidor/(10111:10111): Solicitud de memoria entrante
+[INFO] 16:31:18:892 Servidor/(10111:10111): Solicitud de memoria entrante
+[INFO] 16:31:18:906 Servidor/(10111:10111): Solicitud de memoria entrante
+[INFO] 16:31:18:921 Servidor/(10111:10111): Solicitud de memoria entrante
+[INFO] 16:31:18:931 Servidor/(10111:10111): Solicitud de memoria entrante
+[INFO] 16:31:18:937 Servidor/(10111:10111): Solicitud de memoria entrante
+[INFO] 16:31:34:870 Servidor/(10186:10186): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:32:14:810 Servidor/(10264:10264): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:32:37:651 Servidor/(10478:10478): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:32:41:006 Servidor/(10478:10478): Solicitud de memoria entrante
+[INFO] 16:32:41:025 Servidor/(10478:10478): Solicitud de memoria entrante
+[INFO] 16:32:41:061 Servidor/(10478:10478): Solicitud de memoria entrante
+[INFO] 16:32:41:091 Servidor/(10478:10478): Solicitud de memoria entrante
+[INFO] 16:32:41:098 Servidor/(10478:10478): Solicitud de memoria entrante
+[INFO] 16:32:41:104 Servidor/(10478:10478): Solicitud de memoria entrante
+[INFO] 16:32:41:110 Servidor/(10478:10478): Solicitud de memoria entrante
+[INFO] 16:32:41:120 Servidor/(10478:10478): Solicitud de memoria entrante

@@ -33,7 +33,7 @@ void obtener_valores_config(t_config* config_actual, t_log* logger){
 void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log* logger) {
 
     char caracter_llenado = '\0';
-    
+    int id_swap = 0;    
 
     while(!list_is_empty(archivos_swap)) {
 
@@ -41,6 +41,7 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log*
         int sizeNombre = string_length(path_swap)+1;
 
         swap_files* nuevoArchivo = malloc(sizeof(swap_files));
+        nuevoArchivo->id = id_swap;
         nuevoArchivo->path = (char*) malloc(sizeNombre * sizeof(char));
         strcpy(nuevoArchivo->path, path_swap);
 
@@ -58,10 +59,10 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log*
         nuevoArchivo->particiones_swap = crear_lista_particiones((tamanio_swap/tamanio_pagina));
         list_add(lista_swap_files, nuevoArchivo);
 
-        log_info(logger,"Se crea el archivo SWAP en el path: %s y de size: %d",nuevoArchivo->path, tamanio_swap);
+        log_info(logger,"Se crea el archivo SWAP en el path: %s, de size: %d cantidad de frames disponibles: %i y id: %i",nuevoArchivo->path, tamanio_swap, cantidad_frames_disponibles(nuevoArchivo->path), nuevoArchivo->id);
         
         free(path_swap);
-
+        id_swap++;
     }
     
 }

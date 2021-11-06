@@ -42,16 +42,17 @@ t_log* logger_swamp;
 /* ---------------- Estructuras ---------------- */
 
 typedef struct {
-    char* path;     
+    char* path;    
+    int id; 
     t_list* particiones_swap;
 }swap_files;
 
 typedef struct {
     int num_particion; 
-    int pid;
-    int esta_libre;
-    int inicio_particion;
     int num_pagina;
+    int pid;
+    int inicio_particion;
+    int esta_libre;
     int hay_contenido; //esto es para que el proceso, cuando busque una pagina de las que le pertenecen, 
                       //pueda buscar las que no estan siendo utilizadas actualemnte, en caso de utilizarla se pone en 1, en caso de que se libere, la ponemos en 0.
 }particion;
@@ -105,6 +106,7 @@ int asignar_marcos_maximos(int pid, swap_files* archivo );
 void asignar_marcos_proceso(int pid,swap_files* archivo);
 particion* primer_particion_libre(swap_files* archivo);
 particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PID);
+particion* particion_disponible_para_sobreescribir(swap_files* archivo, int PID, int id_pagina);
 
 
 

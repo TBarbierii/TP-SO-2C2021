@@ -74,17 +74,23 @@ swap_files* buscar_archivo_con_mayor_espacio(){
 
     int tieneMasEspacio(swap_files* arch1, swap_files* arch2){
         return cantidad_frames_disponibles(arch1->path) >= cantidad_frames_disponibles(arch2->path);
-            
     }
 
-
-    list_sort(lista_swap_files, (void*)tieneMasEspacio);
+    /*
+    int tieneMasEspacio(swap_files* arch1, swap_files* arch2){
+        if(cantidad_frames_disponibles(arch1->path) >= cantidad_frames_disponibles(arch2->path)) {
+            return 1;
+        }else if(cantidad_frames_disponibles(arch1->path) >= cantidad_frames_disponibles(arch2->path) && arch1->id <= arch2->id) {
+            return 1;
+        } 
+    */    
+    
+    
+    list_sort(lista_swap_files, tieneMasEspacio);
     //va a poner a los archivos mas grandes al comienzo de todo
     
     //tomamos el primero de la lista
     return list_get(lista_swap_files,0);
-
-
 }
 
 int cantidad_frames_disponibles(char* path_swap) {
