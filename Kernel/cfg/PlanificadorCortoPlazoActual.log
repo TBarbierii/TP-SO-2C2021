@@ -1,95 +1,46 @@
-[DEBUG] 23:16:23:038 PlanificadorCortoPlazo/(5988:5994): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 23:17:04:690 PlanificadorCortoPlazo/(5988:5994): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:17:04:690 PlanificadorCortoPlazo/(5988:5994): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:17:04:697 PlanificadorCortoPlazo/(5988:5994): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:17:04:703 PlanificadorCortoPlazo/(5988:6099): Se ejecuto tarea de conexion
-[INFO] 23:17:04:854 PlanificadorCortoPlazo/(5988:6099): La tarea realizada fue: 6
-[INFO] 23:17:04:857 PlanificadorCortoPlazo/(5988:6099): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 23:17:04:881 PlanificadorCortoPlazo/(5988:5994): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:17:04:881 PlanificadorCortoPlazo/(5988:5994): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:17:04:881 PlanificadorCortoPlazo/(5988:5994): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:17:04:889 PlanificadorCortoPlazo/(5988:6101): Se ejecuto tarea de conexion
-[INFO] 23:17:04:912 PlanificadorCortoPlazo/(5988:6101): La tarea realizada fue: 1
-[INFO] 23:17:04:913 PlanificadorCortoPlazo/(5988:6101): Se realizo una operacion que termina con la ejecucion del Carpincho
-[DEBUG] 23:23:35:223 PlanificadorCortoPlazo/(6438:6446): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 23:23:42:326 PlanificadorCortoPlazo/(6438:6446): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:23:42:327 PlanificadorCortoPlazo/(6438:6446): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:23:42:327 PlanificadorCortoPlazo/(6438:6446): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:23:42:347 PlanificadorCortoPlazo/(6438:6488): Se ejecuto tarea de conexion
-[INFO] 23:23:42:531 PlanificadorCortoPlazo/(6438:6488): La tarea realizada fue: 6
-[INFO] 23:23:42:533 PlanificadorCortoPlazo/(6438:6488): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 23:23:42:555 PlanificadorCortoPlazo/(6438:6446): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:23:42:555 PlanificadorCortoPlazo/(6438:6446): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:23:42:555 PlanificadorCortoPlazo/(6438:6446): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:23:42:559 PlanificadorCortoPlazo/(6438:6489): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
-[INFO] 23:23:42:564 PlanificadorCortoPlazo/(6438:6489): Se ejecuto tarea de conexion
-[INFO] 23:23:42:592 PlanificadorCortoPlazo/(6438:6489): La tarea realizada fue: 1
-[INFO] 23:23:42:593 PlanificadorCortoPlazo/(6438:6489): Se realizo una operacion que termina con la ejecucion del Carpincho
-[DEBUG] 23:24:54:101 PlanificadorCortoPlazo/(6617:6626): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 23:25:13:524 PlanificadorCortoPlazo/(6617:6626): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:25:13:524 PlanificadorCortoPlazo/(6617:6626): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:25:13:524 PlanificadorCortoPlazo/(6617:6626): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:25:13:528 PlanificadorCortoPlazo/(6617:6689): Se ejecuto tarea de conexion
-[INFO] 23:25:13:596 PlanificadorCortoPlazo/(6617:6689): La tarea realizada fue: 6
-[INFO] 23:25:13:596 PlanificadorCortoPlazo/(6617:6689): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 23:25:13:622 PlanificadorCortoPlazo/(6617:6626): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:25:13:622 PlanificadorCortoPlazo/(6617:6626): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:25:13:622 PlanificadorCortoPlazo/(6617:6626): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:25:13:629 PlanificadorCortoPlazo/(6617:6692): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
-[INFO] 23:25:13:632 PlanificadorCortoPlazo/(6617:6692): Se ejecuto tarea de conexion
-[INFO] 23:25:13:632 PlanificadorCortoPlazo/(6617:6692): La tarea realizada fue: 1
-[INFO] 23:25:13:632 PlanificadorCortoPlazo/(6617:6692): Se realizo una operacion que termina con la ejecucion del Carpincho
-[DEBUG] 23:26:03:681 PlanificadorCortoPlazo/(6792:6802): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 23:26:24:437 PlanificadorCortoPlazo/(6792:6802): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:26:24:437 PlanificadorCortoPlazo/(6792:6802): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:26:24:437 PlanificadorCortoPlazo/(6792:6802): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:26:27:234 PlanificadorCortoPlazo/(6792:6848): Se ejecuto tarea de conexion
-[INFO] 23:28:27:684 PlanificadorCortoPlazo/(6792:6848): La tarea realizada fue: 6
-[INFO] 23:28:27:684 PlanificadorCortoPlazo/(6792:6848): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 23:28:27:684 PlanificadorCortoPlazo/(6792:6802): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:28:27:684 PlanificadorCortoPlazo/(6792:6802): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:28:27:684 PlanificadorCortoPlazo/(6792:6802): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:28:37:550 PlanificadorCortoPlazo/(6792:6974): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
-[INFO] 23:28:37:550 PlanificadorCortoPlazo/(6792:6974): Se ejecuto tarea de conexion
-[DEBUG] 23:29:01:376 PlanificadorCortoPlazo/(7086:7095): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 23:29:07:092 PlanificadorCortoPlazo/(7086:7095): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:29:07:092 PlanificadorCortoPlazo/(7086:7095): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:29:07:092 PlanificadorCortoPlazo/(7086:7095): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:29:26:179 PlanificadorCortoPlazo/(7086:7112): Se ejecuto tarea de conexion
-[INFO] 23:29:53:734 PlanificadorCortoPlazo/(7086:7112): La tarea realizada fue: 6
-[INFO] 23:29:58:680 PlanificadorCortoPlazo/(7086:7112): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 23:30:01:577 PlanificadorCortoPlazo/(7086:7095): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:30:01:577 PlanificadorCortoPlazo/(7086:7095): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:30:01:577 PlanificadorCortoPlazo/(7086:7095): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:30:09:083 PlanificadorCortoPlazo/(7086:7172): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
-[INFO] 23:30:36:477 PlanificadorCortoPlazo/(7086:7172): Se ejecuto tarea de conexion
-[INFO] 23:30:38:755 PlanificadorCortoPlazo/(7086:7172): La tarea realizada fue: 1
-[INFO] 23:30:45:804 PlanificadorCortoPlazo/(7086:7172): Se realizo una operacion que termina con la ejecucion del Carpincho
-[DEBUG] 23:31:20:757 PlanificadorCortoPlazo/(7318:7324): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 23:31:24:582 PlanificadorCortoPlazo/(7318:7324): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:31:24:582 PlanificadorCortoPlazo/(7318:7324): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:31:24:582 PlanificadorCortoPlazo/(7318:7324): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:31:24:599 PlanificadorCortoPlazo/(7318:7340): Se ejecuto tarea de conexion
-[INFO] 23:31:24:788 PlanificadorCortoPlazo/(7318:7340): La tarea realizada fue: 6
-[INFO] 23:31:24:790 PlanificadorCortoPlazo/(7318:7340): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 23:31:27:287 PlanificadorCortoPlazo/(7318:7324): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:31:27:287 PlanificadorCortoPlazo/(7318:7324): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:31:27:287 PlanificadorCortoPlazo/(7318:7324): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:31:27:290 PlanificadorCortoPlazo/(7318:7349): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
-[INFO] 23:31:27:294 PlanificadorCortoPlazo/(7318:7349): Se ejecuto tarea de conexion
-[INFO] 23:31:27:330 PlanificadorCortoPlazo/(7318:7349): La tarea realizada fue: 1
-[INFO] 23:31:27:333 PlanificadorCortoPlazo/(7318:7349): Se realizo una operacion que termina con la ejecucion del Carpincho
-[DEBUG] 23:35:53:634 PlanificadorCortoPlazo/(7546:7552): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
-[DEBUG] 23:35:57:795 PlanificadorCortoPlazo/(7546:7552): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:35:57:795 PlanificadorCortoPlazo/(7546:7552): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:35:57:796 PlanificadorCortoPlazo/(7546:7552): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:35:57:810 PlanificadorCortoPlazo/(7546:7568): Se ejecuto tarea de conexion
-[INFO] 23:35:57:915 PlanificadorCortoPlazo/(7546:7568): La tarea realizada fue: 6
-[INFO] 23:35:57:916 PlanificadorCortoPlazo/(7546:7568): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
-[DEBUG] 23:36:22:915 PlanificadorCortoPlazo/(7546:7552): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
-[DEBUG] 23:36:22:915 PlanificadorCortoPlazo/(7546:7552): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
-[DEBUG] 23:36:22:915 PlanificadorCortoPlazo/(7546:7552): Se crea un hilo para el carpincho. Carpincho: 0
-[INFO] 23:36:22:918 PlanificadorCortoPlazo/(7546:7595): Le avisamos al proceso que se pudo ejecutar el IO correctamente
-[INFO] 23:36:22:926 PlanificadorCortoPlazo/(7546:7595): Se ejecuto tarea de conexion
-[INFO] 23:36:22:952 PlanificadorCortoPlazo/(7546:7595): La tarea realizada fue: 1
-[INFO] 23:36:22:957 PlanificadorCortoPlazo/(7546:7595): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 00:02:05:775 PlanificadorCortoPlazo/(9936:9944): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 00:03:11:809 PlanificadorCortoPlazo/(10087:10095): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 00:03:17:752 Thread-CPU/(10087:10096): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 00:03:17:753 Thread-CPU/(10087:10096): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 00:03:17:754 Thread-CPU/(10087:10096): Se ejecuto tarea de conexion
+[INFO] 00:03:17:972 Thread-CPU/(10087:10096): La tarea realizada fue: 6
+[INFO] 00:03:17:973 Thread-CPU/(10087:10096): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 00:03:18:973 Thread-CPU/(10087:10096): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 00:03:18:973 Thread-CPU/(10087:10096): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 00:03:18:973 Thread-CPU/(10087:10096): Le avisamos al proceso que se pudo ejecutar el IO correctamente
+[INFO] 00:03:18:975 Thread-CPU/(10087:10096): Se ejecuto tarea de conexion
+[INFO] 00:03:18:994 Thread-CPU/(10087:10096): La tarea realizada fue: 1
+[INFO] 00:03:18:995 Thread-CPU/(10087:10096): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 00:03:24:034 Thread-CPU/(10087:10096): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 00:03:24:034 Thread-CPU/(10087:10096): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[INFO] 00:03:24:034 Thread-CPU/(10087:10096): Se ejecuto tarea de conexion
+[INFO] 00:03:24:203 Thread-CPU/(10087:10096): La tarea realizada fue: 6
+[INFO] 00:03:24:204 Thread-CPU/(10087:10096): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 00:03:25:204 Thread-CPU/(10087:10096): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 00:03:25:205 Thread-CPU/(10087:10096): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[INFO] 00:03:25:205 Thread-CPU/(10087:10096): Le avisamos al proceso que se pudo ejecutar el IO correctamente
+[INFO] 00:03:25:208 Thread-CPU/(10087:10096): Se ejecuto tarea de conexion
+[INFO] 00:03:25:212 Thread-CPU/(10087:10096): La tarea realizada fue: 1
+[INFO] 00:03:25:213 Thread-CPU/(10087:10096): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 00:03:26:596 Thread-CPU/(10087:10096): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2
+[DEBUG] 00:03:26:596 Thread-CPU/(10087:10096): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[INFO] 00:03:26:596 Thread-CPU/(10087:10096): Se ejecuto tarea de conexion
+[INFO] 00:03:26:823 Thread-CPU/(10087:10096): La tarea realizada fue: 6
+[INFO] 00:03:26:824 Thread-CPU/(10087:10096): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 00:03:27:823 Thread-CPU/(10087:10096): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2
+[DEBUG] 00:03:27:823 Thread-CPU/(10087:10096): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[INFO] 00:03:27:825 Thread-CPU/(10087:10096): Le avisamos al proceso que se pudo ejecutar el IO correctamente
+[INFO] 00:03:27:825 Thread-CPU/(10087:10096): Se ejecuto tarea de conexion
+[INFO] 00:03:27:836 Thread-CPU/(10087:10096): La tarea realizada fue: 1
+[INFO] 00:03:27:838 Thread-CPU/(10087:10096): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 00:03:29:084 Thread-CPU/(10087:10096): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3
+[DEBUG] 00:03:29:084 Thread-CPU/(10087:10096): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[INFO] 00:03:29:084 Thread-CPU/(10087:10096): Se ejecuto tarea de conexion
+[INFO] 00:03:29:305 Thread-CPU/(10087:10096): La tarea realizada fue: 6
+[INFO] 00:03:29:306 Thread-CPU/(10087:10096): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 00:03:30:306 Thread-CPU/(10087:10096): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3
+[DEBUG] 00:03:30:307 Thread-CPU/(10087:10096): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[INFO] 00:03:30:309 Thread-CPU/(10087:10096): Le avisamos al proceso que se pudo ejecutar el IO correctamente
+[INFO] 00:03:30:311 Thread-CPU/(10087:10096): Se ejecuto tarea de conexion
+[INFO] 00:03:30:314 Thread-CPU/(10087:10096): La tarea realizada fue: 1
+[INFO] 00:03:30:315 Thread-CPU/(10087:10096): Se realizo una operacion que termina con la ejecucion del Carpincho

@@ -1,28 +1,11 @@
-[DEBUG] 23:16:23:032 PlanificadorMedianoPlazo/(5988:5995): Se inicializa la planificacion de mediano plazo
-[DEBUG] 23:16:23:048 PlanificadorMedianoPlazo/(5988:5997): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[DEBUG] 23:16:23:049 PlanificadorMedianoPlazo/(5988:5996): Incializado el thread que permite suspender procesos para evitar IO bound
-[INFO] 23:17:04:686 PlanificadorMedianoPlazo/(5988:5997): Se busca un proceso de new
-[DEBUG] 23:23:35:224 PlanificadorMedianoPlazo/(6438:6448): Se inicializa la planificacion de mediano plazo
-[DEBUG] 23:23:35:236 PlanificadorMedianoPlazo/(6438:6449): Incializado el thread que permite suspender procesos para evitar IO bound
-[DEBUG] 23:23:35:237 PlanificadorMedianoPlazo/(6438:6450): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[INFO] 23:23:42:321 PlanificadorMedianoPlazo/(6438:6450): Se busca un proceso de new
-[DEBUG] 23:24:54:102 PlanificadorMedianoPlazo/(6617:6627): Se inicializa la planificacion de mediano plazo
-[DEBUG] 23:24:54:104 PlanificadorMedianoPlazo/(6617:6628): Incializado el thread que permite suspender procesos para evitar IO bound
-[DEBUG] 23:24:54:105 PlanificadorMedianoPlazo/(6617:6629): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[INFO] 23:25:13:524 PlanificadorMedianoPlazo/(6617:6629): Se busca un proceso de new
-[DEBUG] 23:26:03:683 PlanificadorMedianoPlazo/(6792:6803): Se inicializa la planificacion de mediano plazo
-[DEBUG] 23:26:03:690 PlanificadorMedianoPlazo/(6792:6804): Incializado el thread que permite suspender procesos para evitar IO bound
-[DEBUG] 23:26:03:699 PlanificadorMedianoPlazo/(6792:6805): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[INFO] 23:26:24:437 PlanificadorMedianoPlazo/(6792:6805): Se busca un proceso de new
-[DEBUG] 23:29:01:381 PlanificadorMedianoPlazo/(7086:7096): Se inicializa la planificacion de mediano plazo
-[DEBUG] 23:29:01:390 PlanificadorMedianoPlazo/(7086:7097): Incializado el thread que permite suspender procesos para evitar IO bound
-[DEBUG] 23:29:01:392 PlanificadorMedianoPlazo/(7086:7098): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[INFO] 23:29:07:092 PlanificadorMedianoPlazo/(7086:7098): Se busca un proceso de new
-[DEBUG] 23:31:20:763 PlanificadorMedianoPlazo/(7318:7325): Se inicializa la planificacion de mediano plazo
-[DEBUG] 23:31:20:775 PlanificadorMedianoPlazo/(7318:7327): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[DEBUG] 23:31:20:775 PlanificadorMedianoPlazo/(7318:7326): Incializado el thread que permite suspender procesos para evitar IO bound
-[INFO] 23:31:24:577 PlanificadorMedianoPlazo/(7318:7327): Se busca un proceso de new
-[DEBUG] 23:35:53:633 PlanificadorMedianoPlazo/(7546:7553): Se inicializa la planificacion de mediano plazo
-[DEBUG] 23:35:53:645 PlanificadorMedianoPlazo/(7546:7554): Incializado el thread que permite suspender procesos para evitar IO bound
-[DEBUG] 23:35:53:646 PlanificadorMedianoPlazo/(7546:7555): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[INFO] 23:35:57:791 PlanificadorMedianoPlazo/(7546:7555): Se busca un proceso de new
+[DEBUG] 00:02:05:776 PlanificadorMedianoPlazo/(9936:9945): Se inicializa la planificacion de mediano plazo
+[DEBUG] 00:02:05:786 PlanificadorMedianoPlazo/(9936:9946): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 00:02:05:789 PlanificadorMedianoPlazo/(9936:9947): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[INFO] 00:02:09:037 PlanificadorMedianoPlazo/(9936:9947): Se busca un proceso de new
+[DEBUG] 00:03:11:814 PlanificadorMedianoPlazo/(10087:10097): Se inicializa la planificacion de mediano plazo
+[DEBUG] 00:03:11:820 PlanificadorMedianoPlazo/(10087:10098): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 00:03:11:832 PlanificadorMedianoPlazo/(10087:10099): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[INFO] 00:03:17:748 PlanificadorMedianoPlazo/(10087:10099): Se busca un proceso de new
+[INFO] 00:03:24:034 PlanificadorMedianoPlazo/(10087:10099): Se busca un proceso de new
+[INFO] 00:03:26:595 PlanificadorMedianoPlazo/(10087:10099): Se busca un proceso de new
+[INFO] 00:03:29:083 PlanificadorMedianoPlazo/(10087:10099): Se busca un proceso de new
