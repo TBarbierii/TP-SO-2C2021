@@ -64,7 +64,7 @@ void enviadoPagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 }
 
-void pedirPagina(uint32_t id_pagina, uint32_t pid){
+void pedirPagina(uint32_t pid, uint32_t id_pagina){
 
 	
 
@@ -172,8 +172,10 @@ void finalizar_proceso(uint32_t PID){
 int main() {
 
     enviar_tipo_asignacion("FIJA");
-	enviadoPagina(3,1,"asd");
-	pedirPagina(1, 3);
+	enviadoPagina(3, 1, "asdasdasdasd");
+	pedirPagina(3, 1);
+	enviadoPagina(3, 1, "gabigol");
+	pedirPagina(3, 1);
 	finalizar_proceso(3);
 	
     return 0;

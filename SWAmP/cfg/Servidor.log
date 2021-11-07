@@ -921,3 +921,13 @@
 [INFO] 18:03:50:681 Servidor/(5360:5360): Solicitud de memoria entrante
 [INFO] 18:03:50:699 Servidor/(5360:5360): Solicitud de memoria entrante
 [INFO] 18:03:50:710 Servidor/(5360:5360): Solicitud de memoria entrante
+[INFO] 15:41:36:974 Servidor/(6541:6541): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:41:54:800 Servidor/(6541:6541): Solicitud de memoria entrante
+[INFO] 15:41:54:816 Servidor/(6541:6541): Solicitud de memoria entrante
+[INFO] 15:43:07:279 Servidor/(6868:6868): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:43:09:814 Servidor/(6868:6868): Solicitud de memoria entrante
+[INFO] 15:43:09:832 Servidor/(6868:6868): Solicitud de memoria entrante
+[INFO] 15:44:00:449 Servidor/(7018:7018): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:45:12:010 Servidor/(7132:7132): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 15:45:20:174 Servidor/(7132:7132): Solicitud de memoria entrante
+[INFO] 15:45:20:179 Servidor/(7132:7132): Solicitud de memoria entrante

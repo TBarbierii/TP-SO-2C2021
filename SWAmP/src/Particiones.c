@@ -7,6 +7,7 @@ particion* particion_nueva(int numero){
     particion_nueva->num_particion = numero;
     particion_nueva->hay_contenido = 0;
     particion_nueva->pid = -1;
+    particion_nueva->num_pagina = -1;
     return particion_nueva;
 }
 
@@ -56,7 +57,7 @@ particion* particion_disponible_para_sobreescribir(swap_files* archivo, int PID,
     return list_find(archivo->particiones_swap, particionDisponibleParaSobreescribir);
 }
 
-void vaciar_particion(int numero_particion, char* path_swap) {
+void vaciar_particion(int numero_pagina, char* path_swap) {
 
     swap_files* archivo_swap = encontrar_swap_file(path_swap);
     char caracter_vacio = '\0';
@@ -65,7 +66,7 @@ void vaciar_particion(int numero_particion, char* path_swap) {
 
     void* contenido_archivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
-    particion* particion_a_vaciar = buscar_particion(numero_particion, archivo_swap);
+    particion* particion_a_vaciar = buscar_particion_en_base_a_pagina(numero_pagina, archivo_swap);
 
     for(int i = 0; i < tamanio_pagina; i++) {
         memcpy(contenido_archivo + particion_a_vaciar->inicio_particion, &caracter_vacio, sizeof(char));
@@ -81,16 +82,16 @@ void vaciar_particion(int numero_particion, char* path_swap) {
     close(fd);
 }
 
-particion* buscar_particion(int numero_particion, swap_files* archivo) {
+particion* buscar_particion_en_base_a_pagina(int numero_pagina, swap_files* archivo) {
     
-    int particionBuscada(particion* particionActual){
-        if(particionActual->num_particion == numero_particion) {
-            return 1
+    int paginaBuscadaEnParticion(particion* particionActual){
+        if(particionActual->num_pagina == numero_pagina) {
+            return 1;
         }
         return 0;
     } 
 
-    return list_find(archivo->particiones_swap, particionBuscada);
+    return list_find(archivo->particiones_swap, paginaBuscadaEnParticion);
 }
 
 

@@ -71,8 +71,8 @@ particion* buscar_particion_libre_asignacion_dinamica(char* path_swap);
 particion* particion_nueva(int numero);
 int cantidad_frames_disponibles(swap_files* path_swap);
 swap_files* encontrar_swap_file(char* path_swap);
-void vaciar_particion(int numero_particion, char* path_swap);
-particion* buscar_particion(int numero_particion, swap_files* archivo);
+void vaciar_particion(int numero_pagina, char* path_swap);
+particion* buscar_particion_en_base_a_pagina(int numero_pagina, swap_files* archivo);
 
 
 /* ---------------- PAGINAS ---------------- */

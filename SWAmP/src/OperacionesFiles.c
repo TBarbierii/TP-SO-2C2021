@@ -4,11 +4,14 @@
 // ---------------- Escritura ---------------- /
 void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger){
 
-
     swap_files* archivoAEscribir = escritura_en_archivo_en_base_tipo_asignacion(PID, logger);
+    particion* particion_a_vaciar_antes_de_escritura = buscar_particion_en_base_a_pagina(id_pagina, archivoAEscribir);
+    // No estaria recibiendo la particion wtf
+    if(particion_a_vaciar_antes_de_escritura->hay_contenido == 1) {
+        vaciar_particion(id_pagina, archivoAEscribir->path);
+    }
 
     escribirContenidoSobreElArchivo(mensajeAEscribir, id_pagina, PID, archivoAEscribir->path, logger);
-
 
 }
 
