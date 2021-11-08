@@ -955,3 +955,15 @@ y tiene el heap: prev:0, sig:0, free:0
 [INFO] 15:45:12:009 SWAmP/(7132:7132): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
 [INFO] 15:45:12:010 SWAmP/(7132:7132): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
 [INFO] 15:45:12:010 SWAmP/(7132:7132): Se han creado todos los archivos
+[INFO] 18:32:46:211 SWAmP/(5174:5174): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:32:46:212 SWAmP/(5174:5174): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:32:46:212 SWAmP/(5174:5174): Se han creado todos los archivos
+[INFO] 18:34:41:653 SWAmP/(5415:5415): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:34:41:656 SWAmP/(5415:5415): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:34:41:656 SWAmP/(5415:5415): Se han creado todos los archivos
+[INFO] 18:35:05:986 SWAmP/(5620:5620): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:35:05:986 SWAmP/(5620:5620): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:35:05:986 SWAmP/(5620:5620): Se han creado todos los archivos
+[INFO] 18:35:44:255 SWAmP/(5770:5770): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:35:44:255 SWAmP/(5770:5770): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:35:44:255 SWAmP/(5770:5770): Se han creado todos los archivos

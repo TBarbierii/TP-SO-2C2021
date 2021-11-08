@@ -2222,3 +2222,19 @@ y tiene el heap: prev:0, sig:0, free:0
 [INFO] 15:45:20:180 OperacionesServidor/(7132:7132): Se guarda la pagina: 1 del proceso: 3
 [INFO] 15:45:25:957 OperacionesServidor/(7132:7132): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
 [INFO] 15:45:25:957 OperacionesServidor/(7132:7132): Todo bien se realizo con la asignacion Fija
+[INFO] 18:33:57:860 OperacionesServidor/(5174:5174): Recibimos la informacion de la RAM
+[INFO] 18:33:57:860 OperacionesServidor/(5174:5174): El codigo de operacion es: 13
+[INFO] 18:33:57:861 OperacionesServidor/(5174:5174): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:34:09:415 OperacionesServidor/(5174:5174): Recibimos la informacion de la RAM
+[INFO] 18:34:09:415 OperacionesServidor/(5174:5174): El codigo de operacion es: 11
+[INFO] 18:34:09:415 OperacionesServidor/(5174:5174): Se guarda la pagina: 1 del proceso: 1
+[INFO] 18:34:09:416 OperacionesServidor/(5174:5174): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 18:34:09:416 OperacionesServidor/(5174:5174): Todo bien se realizo con la asignacion Fija
+[INFO] 18:35:53:798 OperacionesServidor/(5770:5770): Recibimos la informacion de la RAM
+[INFO] 18:35:53:798 OperacionesServidor/(5770:5770): El codigo de operacion es: 13
+[INFO] 18:35:53:799 OperacionesServidor/(5770:5770): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:36:02:172 OperacionesServidor/(5770:5770): Recibimos la informacion de la RAM
+[INFO] 18:36:02:172 OperacionesServidor/(5770:5770): El codigo de operacion es: 11
+[INFO] 18:36:02:173 OperacionesServidor/(5770:5770): Se guarda la pagina: 1 del proceso: 1
+[INFO] 18:36:02:173 OperacionesServidor/(5770:5770): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 18:36:02:173 OperacionesServidor/(5770:5770): Todo bien se realizo con la asignacion Fija

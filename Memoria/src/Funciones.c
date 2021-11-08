@@ -75,7 +75,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
 
         void agregarATLB(t_pagina* pag){
-            list_add(TLB, pag);
+            algoritmo_reemplazo_TLB(pag);
         };
         list_iterate(carpincho->tabla_de_paginas, (void*)agregarATLB);
 
@@ -290,10 +290,12 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
         memcpy(heap, buffer_heap, TAMANIO_HEAP);
 
         heap->isFree = true;
-
+        pagina->modificado = true;
         memcpy(buffer_heap, heap, TAMANIO_HEAP);
 
         memcpy(memoriaPrincipal + DF + desplazamiento1, buffer_heap, TAMANIO_HEAP - desplazamiento);
+
+        paginaAnterior->modificado = true;
 
         DF = buscar_TLB(pagina->id_pagina);
 
@@ -309,6 +311,8 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
         memcpy(memoriaPrincipal + DF, buffer_heap + (TAMANIO_HEAP - desplazamiento), desplazamiento);
 
+        pagina->modificado = true;
+
         free(buffer_heap);
         free(heap);
 
@@ -319,6 +323,8 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
         heap->isFree = true;
 
         memcpy(memoriaPrincipal + DF + (desplazamiento - TAMANIO_HEAP), heap, TAMANIO_HEAP);
+
+        pagina->modificado = true;
 
         free(heap);
     }
@@ -340,20 +346,32 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
 
 	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
 
-    uint32_t DF = calcular_direccion_fisica(carpincho, DL);
+    int32_t contador = 0;
+    bool buscarPagina(t_pagina* s){
+        contador++;
+    return s->id_pagina == id;
+    };
+
+    t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
+
+
+    int32_t presente = buscar_TLB(pagina->id_pagina);
+
+    if(presente == -1){ //tlb miss
+        //buscar en tabla de paginas
+        presente = swapear(capybara, pagina);
+        capybara->tlb_miss++;
+        miss_totales++;
+    }else{//hit
+        capybara->tlb_hit++;
+        hits_totales++;
+    }
 
     void* leido = malloc(tam);
 
     bool estaCortado = desplazamiento + tam > tamanioPagina;
 
     if(estaCortado){
-
-        int32_t contador = 0;
-       
-        bool buscar_pagina_inicio(t_pagina* pagina){
-            contador++;
-            return pagina->id_pagina == id; 
-        };
  
         uint32_t acumulador = (tamanioPagina - desplazamiento), cantPaginas = 0;
 
@@ -364,16 +382,26 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
 
         uint32_t resto = tamanioPagina - (acumulador - tam);
 
-        t_pagina* primeraPagina = list_find(capybara->tabla_de_paginas, (void*)buscar_pagina_inicio);
-
         uint32_t bytesPrimeraLectura =tamanioPagina - desplazamiento;
-        //ver si las paginas estan presentes
 
-        memcpy(leido, memoriaPrincipal + DF, bytesPrimeraLectura);
+        memcpy(leido, memoriaPrincipal + pagina->marco->comienzo + desplazamiento, bytesPrimeraLectura);
 
         if(cantPaginas > 1){
             for(int i=0; i<cantPaginas-1; i++){
                 t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
+
+                int32_t presente = buscar_TLB(paginaSiguiente->id_pagina);
+
+                if(presente == -1){ //tlb miss
+                    //buscar en tabla de paginas
+                    presente = swapear(capybara, paginaSiguiente);
+                    capybara->tlb_miss++;
+                    miss_totales++;
+                }else{//hit
+                    capybara->tlb_hit++;
+                    hits_totales++;
+                }
+
                 memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (paginaSiguiente->marco->comienzo), tamanioPagina);
                 contador++;
                 bytesPrimeraLectura += tamanioPagina;
@@ -381,11 +409,25 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
         }
 
         t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
+
+        int32_t presente = buscar_TLB(ultimaPagina->id_pagina);
+
+        if(presente == -1){ //tlb miss
+            //buscar en tabla de paginas
+            presente = swapear(capybara, ultimaPagina);
+            capybara->tlb_miss++;
+            miss_totales++;
+        }else{//hit
+            capybara->tlb_hit++;
+            hits_totales++;
+        }
+
          memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (ultimaPagina->marco->comienzo), resto);
 
 
     }else{
-        memcpy(leido, memoriaPrincipal + DF, tam);
+
+        memcpy(leido, memoriaPrincipal + pagina->marco->comienzo + desplazamiento, tam);
     }
      
  
@@ -405,21 +447,33 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 
 	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
 
-    uint32_t DF = calcular_direccion_fisica(carpincho, direccion_logica);
+        int32_t contador = 0;
+    bool buscarPagina(t_pagina* s){
+        contador++;
+    return s->id_pagina == id;
+    };
+
+    t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
+
+    int32_t presente = buscar_TLB(pagina->id_pagina);
+
+    if(presente == -1){ //tlb miss
+        //buscar en tabla de paginas
+        presente = swapear(capybara, pagina);
+        capybara->tlb_miss++;
+        miss_totales++;
+    }else{//hit
+        capybara->tlb_hit++;
+        hits_totales++;
+    }
 
     bool estaCortado = desplazamiento + tam > tamanioPagina;
 
 
     if(estaCortado){
 
-        int32_t contador = 0;
-       
-        bool buscar_pagina_inicio(t_pagina* pagina){
-            contador++;
-            return pagina->id_pagina == id; 
-        };
         
-        uint32_t acumulador = (tamanioPagina - desplazamiento), cantPaginas = 0;
+        int32_t acumulador = (tamanioPagina - desplazamiento), cantPaginas = 0;
 
         while(acumulador <= tam){
             acumulador += tamanioPagina;
@@ -428,27 +482,56 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 
         uint32_t resto = tamanioPagina - (acumulador - tam);
 
-        t_pagina* primeraPagina = list_find(capybara->tabla_de_paginas, (void*)buscar_pagina_inicio);
 
         uint32_t bytesPrimeraEscritura =tamanioPagina - desplazamiento;
         //ver si las paginas estan presentes
 
-       memcpy(memoriaPrincipal + DF, contenido , bytesPrimeraEscritura);
+       memcpy(memoriaPrincipal + pagina->marco->comienzo + desplazamiento, contenido , bytesPrimeraEscritura);
+       pagina->modificado = true;
 
         if(cantPaginas > 1){
             for(int i=0; i<cantPaginas-1; i++){
                 t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
+
+                int32_t presente = buscar_TLB(paginaSiguiente->id_pagina);
+
+                if(presente == -1){ //tlb miss
+                    //buscar en tabla de paginas
+                    presente = swapear(capybara, paginaSiguiente);
+                    capybara->tlb_miss++;
+                    miss_totales++;
+                }else{//hit
+                    capybara->tlb_hit++;
+                    hits_totales++;
+                }
                 memcpy(memoriaPrincipal + (paginaSiguiente->marco->comienzo), contenido + bytesPrimeraEscritura, tamanioPagina);
+                paginaSiguiente->modificado = true;
                 contador++;
                 bytesPrimeraEscritura += tamanioPagina;
             }
         }
 
         t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
+
+        int32_t presente = buscar_TLB(ultimaPagina->id_pagina);
+
+        if(presente == -1){ //tlb miss
+            //buscar en tabla de paginas
+            presente = swapear(capybara, ultimaPagina);
+            capybara->tlb_miss++;
+            miss_totales++;
+        }else{//hit
+            capybara->tlb_hit++;
+            hits_totales++;
+        }
+
         memcpy(memoriaPrincipal + (ultimaPagina->marco->comienzo), contenido + bytesPrimeraEscritura, resto);
 
+        ultimaPagina->modificado = true;
+        
     }else{
-        memcpy(memoriaPrincipal + DF, contenido , tam);
+        memcpy(memoriaPrincipal + pagina->marco->comienzo + desplazamiento, contenido , tam);
+        pagina->modificado = true;
         return 0;
     }
      

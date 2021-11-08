@@ -194,6 +194,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho);
 t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar);
 uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida);
 void manejador_de_seniales(int numeroSenial);
+void algoritmo_reemplazo_TLB(t_pagina* pagina);
 
 
 #endif
