@@ -44,11 +44,11 @@ void enviar_tipo_asignacion(char* tipoAsignacion){//mandar al principio despues 
 void enviadoPagina(uint32_t pid, uint32_t id_pagina, void* contenido){
 
 	t_paquete *paquete = crear_paquete(ESCRITURA_PAGINA);
-	int tamanioPagina =32;
+	int tamanioPagina = 32;
 
 	paquete->buffer->size = sizeof(uint32_t)*2 + tamanioPagina;
     paquete->buffer->stream = malloc(paquete->buffer->size);
-	uint32_t desplazamiento=0;
+	uint32_t desplazamiento = 0;
 
 	memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
@@ -172,7 +172,8 @@ void finalizar_proceso(uint32_t PID){
 int main() {
 
     enviar_tipo_asignacion("FIJA");
-	enviadoPagina(3, 1, "asdasdasdasd");
+	enviadoPagina(3, 1, "asdasdasdasdasdasdasdasdasdasdff");
+	//enviadoPagina(3, 1, "asdasdasdasdasdasdasdasdasdasdas");
 	pedirPagina(3, 1);
 	enviadoPagina(3, 1, "gabigol");
 	pedirPagina(3, 1);

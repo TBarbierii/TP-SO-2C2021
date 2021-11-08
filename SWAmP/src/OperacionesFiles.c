@@ -5,12 +5,7 @@
 void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger){
 
     swap_files* archivoAEscribir = escritura_en_archivo_en_base_tipo_asignacion(PID, logger);
-    particion* particion_a_vaciar_antes_de_escritura = buscar_particion_en_base_a_pagina(id_pagina, archivoAEscribir);
-    // No estaria recibiendo la particion wtf
-    if(particion_a_vaciar_antes_de_escritura->hay_contenido == 1) {
-        vaciar_particion(id_pagina, archivoAEscribir->path);
-    }
-
+    
     escribirContenidoSobreElArchivo(mensajeAEscribir, id_pagina, PID, archivoAEscribir->path, logger);
 
 }
@@ -27,6 +22,8 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
         particion* particion_para_sobreescribir = particion_disponible_para_sobreescribir(archivoAEscribir, PID, pagina);
 
         if(particion_para_sobreescribir != NULL) {
+            vaciar_particion(particion_para_sobreescribir, nombreArchivo);
+
             log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
             log_info(logger,"Se sobreescribe sobre la particion: %i", particion_para_sobreescribir->num_particion);
 
@@ -35,9 +32,9 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
             void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
             if(size < tamanio_pagina){ //podria pasar que lo que nos manda memoria, ocupe menos tamaño que una pagina el contenido, por lo tanto vamos a guardar el tamaño solamente
-                memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), contenido, size);
+                memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), mensajeAEscribir, size);
             }else{
-                memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), contenido, tamanio_pagina); 
+                memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), mensajeAEscribir, tamanio_pagina); 
             }   
             munmap(contenidoArchivo, tamanio_swap);
             close(fd);
@@ -53,15 +50,15 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
 
                 log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
                 log_info(logger,"Se escribe sobre la particion: %i", particionAmodificar->num_particion);
-                
+
                 int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
                 truncate(archivoAEscribir->path, tamanio_swap);
                 void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
                 if(size < tamanio_pagina){ //podria pasar que lo que nos manda memoria, ocupe menos tamaño que una pagina el contenido, por lo tanto vamos a guardar el tamaño solamente
-                    memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), contenido, size);
+                    memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), mensajeAEscribir, size);
                 }else{
-                    memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), contenido, tamanio_pagina);                   
+                    memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), mensajeAEscribir, tamanio_pagina);                   
                 }   
                 munmap(contenidoArchivo, tamanio_swap);
                 close(fd);

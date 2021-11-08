@@ -57,25 +57,16 @@ particion* particion_disponible_para_sobreescribir(swap_files* archivo, int PID,
     return list_find(archivo->particiones_swap, particionDisponibleParaSobreescribir);
 }
 
-void vaciar_particion(int numero_pagina, char* path_swap) {
+void vaciar_particion(particion* particion_a_vaciar, char* path_swap) {
 
-    swap_files* archivo_swap = encontrar_swap_file(path_swap);
     char caracter_vacio = '\0';
-    int fd = open(archivo_swap->path, O_RDWR, (mode_t) 0777);
-    truncate(archivo_swap->path, tamanio_swap);
+    int fd = open(path_swap, O_RDWR, (mode_t) 0777);
+    truncate(path_swap, tamanio_swap);
 
     void* contenido_archivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
-    particion* particion_a_vaciar = buscar_particion_en_base_a_pagina(numero_pagina, archivo_swap);
-
     for(int i = 0; i < tamanio_pagina; i++) {
-        memcpy(contenido_archivo + particion_a_vaciar->inicio_particion, &caracter_vacio, sizeof(char));
-    }
-    
-    particion_a_vaciar->hay_contenido = 0;
-    
-    if(tipo_asignacion == 0) {
-        particion_a_vaciar->esta_libre = 1;
+        memcpy(contenido_archivo + particion_a_vaciar->inicio_particion + i, &caracter_vacio, sizeof(char));
     }
 
     munmap(contenido_archivo, tamanio_swap);

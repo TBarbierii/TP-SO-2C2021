@@ -50,7 +50,9 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log*
         if(access(path_swap, F_OK) != -1) {
             truncate(path_swap, tamanio_swap);
             void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-            memcpy(contenidoArchivo, &(caracter_llenado), sizeof(char));
+            for(int i = 0; i < tamanio_swap; i++) {
+                memcpy(contenidoArchivo + i, &(caracter_llenado), sizeof(char));
+            }
             munmap(contenidoArchivo, tamanio_swap);
         }
 

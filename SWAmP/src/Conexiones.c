@@ -132,7 +132,7 @@ void recibir_pagina(t_buffer* buffer, t_log *logger) {
 	log_info(logger, "Se guarda la pagina: %d del proceso: %d",id_pagina, PID);
 
 	escribirContenido(contenido, id_pagina, PID, logger);
-
+	free(contenido);
 }
 
 
