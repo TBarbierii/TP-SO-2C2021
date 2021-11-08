@@ -1128,3 +1128,9 @@ y tiene el heap: prev:0, sig:0, free:0
 [INFO] 14:29:37:101 SWAmP/(9919:9919): El contenido leido es asdasdasdasdasdasdasdasdasdasdff
 [INFO] 14:29:37:143 SWAmP/(9919:9919): Se leyo el contenido del archivo: /home/utnso/swap1.bin
 [INFO] 14:29:37:143 SWAmP/(9919:9919): El contenido leido es gabigol
+[INFO] 18:29:20:043 SWAmP/(3573:3573): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:29:20:094 SWAmP/(3573:3573): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:29:20:095 SWAmP/(3573:3573): Se han creado todos los archivos
+[INFO] 18:35:21:111 SWAmP/(3901:3901): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:35:21:160 SWAmP/(3901:3901): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:35:21:162 SWAmP/(3901:3901): Se han creado todos los archivos
