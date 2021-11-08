@@ -10,7 +10,6 @@ void destruirArchivosSwapFiles(){
         eliminarParticiones(archivoSwap->particiones_swap);
         free(archivoSwap);
     }
-
 }
 
 void eliminarParticiones(t_list* listaParticiones){
@@ -28,7 +27,7 @@ void limpiar_marcos_de_proceso(int PID) {
     t_list* marcos_de_proceso;
 
     if(archivo_swap != NULL) {
-        bool encontrar_marcos_proceso(particion* particion_proceso) {
+        bool encontrar_marcos_proceso(particion* particion_proceso){
             return (particion_proceso->pid == PID);
         }
 
@@ -38,6 +37,9 @@ void limpiar_marcos_de_proceso(int PID) {
             particion* particion_a_vaciar = list_remove(marcos_de_proceso, 0);
             particion_a_vaciar->esta_libre = 1;
             particion_a_vaciar->hay_contenido = 0;
+            vaciar_particion(particion_a_vaciar, archivo_swap->path);
         }
+
+        log_info(logger_swamp, "Proceso %i finalizado con exito", PID);
     }
 }

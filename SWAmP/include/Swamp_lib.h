@@ -93,6 +93,7 @@ swap_files* encontrar_swap_file_en_base_a_pid(uint32_t PID);
 /* ---------------- FINALIZACION ---------------- */
 void eliminarParticiones(t_list* listaParticiones);
 void destruirArchivosSwapFiles();
+void limpiar_marcos_de_proceso(int PID);
 
 
 /* ---------------- ESCRITURA DE ARCHIVOS ---------------- */
@@ -104,7 +105,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid
 swap_files* buscar_archivo_con_mayor_espacio();
 swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger);
 int asignacion_dinamica(int pid, swap_files* archivo);
-int asignar_marcos_maximos(int pid, swap_files* archivo );
+int asignar_marcos_maximos(int pid, swap_files* archivo);
 void asignar_marcos_proceso(int pid,swap_files* archivo);
 particion* primer_particion_libre(swap_files* archivo);
 particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PID);
