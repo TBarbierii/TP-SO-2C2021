@@ -52,6 +52,7 @@ void inicializarTodo(){
     id_marco = 0;
     hits_totales=0;
     miss_totales=0;
+
 }
 
 void finalizarTodo(t_config* configActual){

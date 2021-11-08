@@ -37,6 +37,8 @@ uint32_t id_marco; //inicializar
 uint32_t hits_totales;
 uint32_t miss_totales;
 
+uint32_t punteroClock;
+
 /* Semaforos */
 
 pthread_mutex_t * listaCarpinchos;
@@ -110,6 +112,7 @@ typedef struct {
     t_marco* marco;
     uint8_t presente;
     clock_t ultimoUso;
+    bool uso;
     bool modificado;
 
 }t_pagina;
@@ -123,6 +126,7 @@ typedef struct {
     uint32_t conexion;
     uint32_t tlb_hit;
     uint32_t tlb_miss;
+    uint32_t punteroClock;
 
 }t_carpincho;
 
@@ -191,10 +195,11 @@ int buscarSiguienteHeapLibre(heapMetadata* , int32_t* , t_carpincho* , int32_t*,
 t_list* buscarMarcosLibres(t_carpincho* carpincho);
 void crearAllocNuevo(int* pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t*);
 t_marco* reemplazarPagina(t_carpincho* carpincho);
-t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar);
+t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* carpincho);
 uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida);
 void manejador_de_seniales(int numeroSenial);
 void algoritmo_reemplazo_TLB(t_pagina* pagina);
+int32_t buscarEnTablaDePaginas(t_carpincho* carpincho, int32_t idPag);
 
 
 #endif

@@ -15,3 +15,6 @@ void enviar_pagina(uint32_t,uint32_t, void*);
 uint32_t pedir_pagina(uint32_t id_pagina, uint32_t pid);
 void* atender_respuestas_swap(uint32_t conexion);
 void* recibirPagina(int conexion);
+void* recibir_respuesta_escritura(int conexion);
+void* recibir_respuesta_consulta(int conexion);
+void responderOperacionNoValida(int conexion, cod_operacion tareaRealizada, t_log* logger);

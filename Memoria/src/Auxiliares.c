@@ -212,8 +212,8 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 
 		*DF = buscar_TLB(paginaDeSiguienteHeap->id_pagina);
 		if(*DF == -1){ //tlb miss
-			//buscar en tabla de paginas
-			*DF = swapear(carpincho, paginaDeSiguienteHeap);
+            *DF = buscarEnTablaDePaginas(carpincho, paginaDeSiguienteHeap->id_pagina);
+            if(*DF == -1) *DF = swapear(carpincho, paginaDeSiguienteHeap);
 		    carpincho->tlb_miss++;
 			miss_totales++;
         }else{//hit
@@ -226,13 +226,16 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 			*despl = desplazamiento;
 			void* buff_heap = malloc(TAMANIO_HEAP);
 			memcpy(buff_heap, memoriaPrincipal + (*DF + desplazamiento), (tamanioPagina - desplazamiento));
+			paginaDeSiguienteHeap->ultimoUso = clock();
+			paginaDeSiguienteHeap->uso = true;
 
 			paginaDeSiguienteHeap = list_get(carpincho->tabla_de_paginas, i);
 
 			*DF = buscar_TLB(paginaDeSiguienteHeap->id_pagina);
+
 			if(*DF == -1){ //tlb miss
-				//buscar en tabla de paginas
-				*DF = swapear(carpincho, paginaDeSiguienteHeap);
+            	*DF = buscarEnTablaDePaginas(carpincho, paginaDeSiguienteHeap->id_pagina);
+            	if(*DF == -1) *DF = swapear(carpincho, paginaDeSiguienteHeap);
 			    carpincho->tlb_miss++;
 				miss_totales++;
 			}else{//hit
@@ -241,6 +244,8 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 			}
 
 			memcpy(buff_heap + (tamanioPagina - desplazamiento), memoriaPrincipal + *DF , TAMANIO_HEAP - (tamanioPagina - desplazamiento));
+			paginaDeSiguienteHeap->ultimoUso = clock();
+			paginaDeSiguienteHeap->uso = true;
 
 			memcpy(heap, buff_heap, TAMANIO_HEAP);
 			free(buff_heap);
@@ -249,6 +254,9 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 
 		*despl = desplazamiento;
 		memcpy(heap, memoriaPrincipal + *DF + desplazamiento, TAMANIO_HEAP);
+		paginaDeSiguienteHeap->ultimoUso = clock();
+		paginaDeSiguienteHeap->uso = true;
+
 		}
 
 	} while (!(heap->isFree));
@@ -303,8 +311,8 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 	int DF = buscar_TLB(pag->id_pagina);
 
 	if(DF == -1){ //tlb miss
-		//buscar en tabla de paginas
-		DF = swapear(carpincho, pag);
+        DF = buscarEnTablaDePaginas(carpincho, pag->id_pagina);
+        if(DF == -1) DF = swapear(carpincho, pag);
 	    carpincho->tlb_miss++;
 		miss_totales++;
     }else{//hit
@@ -323,6 +331,8 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 		memcpy(memoriaPrincipal + DF + *desplazamiento, buffer_heap, tamanioPagina - *desplazamiento);
 
 		pag->modificado = true;
+		pag->ultimoUso = clock();
+		pag->uso = true;
 
 		bool buscarSigPag(t_pagina* pag){
 			return pag->id_pagina > *pagina;
@@ -333,8 +343,8 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 		DF = buscar_TLB(paginaDeSiguienteHeap->id_pagina);
 		if(DF == -1){ //tlb miss
-			//buscar en tabla de paginas
-			DF = swapear(carpincho, paginaDeSiguienteHeap);
+            DF = buscarEnTablaDePaginas(carpincho, paginaDeSiguienteHeap->id_pagina);
+            if(DF == -1) DF = swapear(carpincho, paginaDeSiguienteHeap);
 		    carpincho->tlb_miss++;
 			miss_totales++;
         }else{//hit
@@ -344,6 +354,8 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 		memcpy(memoriaPrincipal + DF , buffer_heap + (tamanioPagina - *desplazamiento) , TAMANIO_HEAP - (tamanioPagina - *desplazamiento));
 		paginaDeSiguienteHeap->modificado = true;
+		paginaDeSiguienteHeap->ultimoUso = clock();
+		paginaDeSiguienteHeap->uso = true;
 
 		*desplazamiento = - (tamanioPagina - *desplazamiento); //esto esta re trambolico porque despues le suma 9
 
@@ -353,8 +365,13 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 		memcpy(memoriaPrincipal + DF + *desplazamiento, heap, TAMANIO_HEAP);
 		pag->modificado = true;
+		pag->ultimoUso = clock();
+		pag->uso = true;
 
 	}
+
+	//Hasta aca se actualiza el ultimo heap.
+	//Se crea el nuevo que seria el ultimo.
 
 	heapMetadata *nuevoHeap = malloc(TAMANIO_HEAP);
 
@@ -369,9 +386,8 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 		t_pagina* pagina = malloc(sizeof(t_pagina));
 		pagina->id_pagina = generadorIdsPaginas();
-		pagina->presente = true;
 		pagina->esNueva = true;
-
+		pagina->uso = true;
 		pagina->ultimoUso = clock();
         pagina->modificado = true;
 
@@ -385,7 +401,7 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 	if(cantidadDePaginasACrear == 0){ //hay que crear el alloc en la misma pag. TODO verificar que este presente?
 
 			memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, TAMANIO_HEAP);
-			//poner modificado a la pag correspondiente
+			//poner modificado a la pag correspondiente. una variable que diga si entro al caso cortado o no
 		return;
 	}
 
@@ -406,8 +422,8 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 		DF = buscar_TLB(pag->id_pagina);
 
 		if(DF == -1){ //tlb miss
-			//buscar en tabla de paginas
-			DF = swapear(carpincho, pag);
+            DF = buscarEnTablaDePaginas(carpincho, pag->id_pagina);
+            if(DF == -1) DF = swapear(carpincho, pag);
 		    carpincho->tlb_miss++;
 			miss_totales++;
         }else{//hit
@@ -417,6 +433,8 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 
 		memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, tamanioPagina - (*desplazamiento + TAMANIO_HEAP + tamanio));
 		pag->modificado = true;
+		pag->ultimoUso = clock();
+		pag->uso = true;
 
 	}
 
@@ -425,9 +443,13 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 	bool paginas_nuevas(t_pagina* pag){
 		return pag->esNueva;
 	};
-	
 	t_list* paginasNuevas = list_filter(carpincho->tabla_de_paginas, (void*)paginas_nuevas);
 
+
+	void ponerlasPresentes(t_pagina* pag){
+		pag->presente = true;
+	};
+	list_iterate(paginasNuevas, (void*)ponerlasPresentes);
 
 	escribirMemoria(buffer_allocs, paginasNuevas, marcos_a_asignar);
 
@@ -451,7 +473,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		
 		t_list* paginas_a_reemplazar = list_filter(carpincho->tabla_de_paginas, (void*)paginasPresentes);
 
-		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar);   
+		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho);   
 
 		void* contenido = malloc(tamanioPagina);
 		memcpy(contenido, memoriaPrincipal + victima->marco->comienzo, tamanioPagina);
@@ -490,7 +512,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 
 }
 
-t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar){
+t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* carpincho){
 	
 	if(strcmp(algoritmoReemplazoMMU, "LRU") == 0){
 		
@@ -502,11 +524,61 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar){
 
 		return list_get(paginasOrdenadas, 0);
 
-		//si no esta modificado no mandar a swap
-
 	}
 
 	if(strcmp(algoritmoReemplazoMMU, "CLOCK") == 0){
+
+		
+		bool comparator(t_pagina* p1, t_pagina* p2){
+			return p1->marco->id_marco < p2->marco->id_marco;
+		};
+		
+		t_list* paginasOrdenadas = list_sorted(paginas_a_reemplazar, (void*)comparator);
+
+		int puntero = carpincho->punteroClock;
+
+		segundoIntento:
+
+		for(int a = 0; a < list_size(paginasOrdenadas);a++){ //primera vuelta
+
+			t_pagina* candidata = list_get(paginasOrdenadas, puntero);
+			if(candidata->uso == 0 && candidata->modificado == 0){
+				carpincho->punteroClock++;
+				if(carpincho->punteroClock >= list_size(paginasOrdenadas)){
+					carpincho->punteroClock = 0;
+				}
+				return candidata;
+			}else{
+				puntero++;
+				if(puntero >= list_size(paginasOrdenadas)){
+					puntero = 0;
+				}
+			}
+
+		}
+
+		for(int a = 0; a < list_size(paginasOrdenadas);a++){ //segunda vuelta
+
+			t_pagina* candidata = list_get(paginasOrdenadas, puntero);
+			
+			if(candidata->uso == 0 && candidata->modificado == 1){
+				carpincho->punteroClock++;
+				if(carpincho->punteroClock >= list_size(paginasOrdenadas)){
+					carpincho->punteroClock = 0;
+				}
+				return candidata;
+			}else{
+				puntero++;
+				candidata->uso = false;
+				if(puntero >= list_size(paginasOrdenadas)){
+					puntero = 0;
+				}
+			}
+
+		}
+
+		goto segundoIntento; //si llegó hasta aca es porque hizo las dos vueltas y tiene que empezar de nuevo
+
 
 	}
 
@@ -550,6 +622,8 @@ uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida){
 	paginaPedida->marco = marcoLiberado;
 	paginaPedida->marco->estaLibre = false;
 	paginaPedida->presente = true;
+	paginaPedida->ultimoUso = clock();
+	paginaPedida->uso = true;
 	paginaPedida->modificado = false;
 
 	heapMetadata* heap = malloc(TAMANIO_HEAP);
@@ -576,5 +650,21 @@ void manejador_de_seniales(int numeroSenial){
 	if(numeroSenial == SIGUSR2){
 		//vaciar tlb
 	}
+
+}
+
+int32_t buscarEnTablaDePaginas(t_carpincho* carpincho, int32_t idPag){
+
+	bool buscarPaginaPresente(t_pagina* pag){
+		return pag->id_pagina == idPag && pag->presente;
+	};
+
+	t_pagina* pagina = list_find(carpincho->tabla_de_paginas, (void*)buscarPaginaPresente);
+
+	if(pagina == NULL){
+		return -1;
+	}
+
+	return pagina->marco->comienzo;
 
 }
