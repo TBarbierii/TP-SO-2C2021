@@ -124,7 +124,7 @@ void pedirPagina(uint32_t pid, uint32_t id_pagina){
 
 void finalizar_proceso(uint32_t PID){
 
-	t_paquete *paquete = crear_paquete(CERRAR_INSTANCIA);
+	t_paquete *paquete = crear_paquete(FINALIZAR_PROCESO);
 
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
@@ -172,10 +172,10 @@ void finalizar_proceso(uint32_t PID){
 int main() {
 
     enviar_tipo_asignacion("FIJA");
-	enviadoPagina(3, 1, "asdasdasdasdasdasdasdasdasdasdff");
+	enviadoPagina(3, 1, "asdasdasdasdasdasdasdasdasdasdf");
 	//enviadoPagina(3, 1, "asdasdasdasdasdasdasdasdasdasdas");
 	pedirPagina(3, 1);
-	enviadoPagina(3, 1, "gabigol");
+	enviadoPagina(4, 2, "gabigol");
 	pedirPagina(3, 1);
 	finalizar_proceso(3);
 	

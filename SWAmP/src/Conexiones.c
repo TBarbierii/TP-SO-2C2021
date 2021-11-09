@@ -66,7 +66,7 @@ int atender_mensaje_ram(int conexion) {
 			notificar_escritura_de_pagina(conexion);
         	break;
 
-		case CERRAR_INSTANCIA:;
+		case FINALIZAR_PROCESO:;
 			atender_solicitud_cierre_proceso(paquete->buffer, logger_servidor);
 			notificar_finalizacion_de_proceso(conexion);
 			break;
@@ -198,7 +198,7 @@ void atender_solicitud_cierre_proceso(t_buffer* buffer, t_log* logger) {
 
 void notificar_finalizacion_de_proceso(int conexion) {
 
-	t_paquete *paquete = crear_paquete(CERRAR_INSTANCIA);
+	t_paquete *paquete = crear_paquete(FINALIZAR_PROCESO);
 
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);

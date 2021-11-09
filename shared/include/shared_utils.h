@@ -68,7 +68,8 @@ typedef enum{
 	SEM_WAIT_NOBLOQUEANTE,
 	SUSPENSION_PROCESO, //este codigo va a ser por el cual desde el kernel le vamos a avisar que un proceso se suspende y vamos a solicitar suspender todas sus paginas
 	CONSULTAR_ESPACIO,
-	FALLO_IO
+	FALLO_IO,
+	FINALIZAR_PROCESO
 }cod_operacion;
 
 typedef struct buffer
