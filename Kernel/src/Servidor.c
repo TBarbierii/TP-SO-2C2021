@@ -113,18 +113,17 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 
 	proceso_kernel* procesoNuevo =(proceso_kernel*) malloc(sizeof(proceso_kernel));
 	
-	pthread_mutex_lock(contadorProcesos);
-		procesoNuevo->pid = cantidadDeProcesosActual;
-		log_info(logger,"Un nuevo carpincho se une a la manada del kernel, y su pid es: %d",procesoNuevo->pid);
-		cantidadDeProcesosActual++;
-	pthread_mutex_unlock(contadorProcesos);
+	establecerConexionConLaMemoria(procesoNuevo, logger);
+	
+	log_info(logger,"Un nuevo carpincho se une a la manada del kernel, y su pid es: %d",procesoNuevo->pid);
+		
 
 	procesoNuevo->conexion = conexion;
 	procesoNuevo->rafagaEstimada = estimacion_inicial;
 	procesoNuevo->tiempoDeEspera = 0;
 	procesoNuevo->ultimaRafagaEjecutada = 0;
 	procesoNuevo->vuelveDeBloqueo = NO_BLOQUEADO; //con esto vamos a decir que no realizo ningunn bloqueo todavia
-	establecerConexionConLaMemoria(procesoNuevo, logger);
+	
 
 
 	pthread_mutex_lock(modificarNew);
@@ -186,14 +185,11 @@ void enviarInformacionAdministrativaDelProceso(proceso_kernel* proceso){
 
 	t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
 
-    paquete->buffer->size = sizeof(uint32_t) *2;
+    paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
-	uint32_t valorBackEnd = KERNEL;
     int desplazamiento = 0;
 	
     memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
-    desplazamiento += sizeof(uint32_t);
-    memcpy(paquete->buffer->stream + desplazamiento, &(valorBackEnd) , sizeof(uint32_t));
     
 	enviarPaquete(paquete, proceso->conexion);
 
@@ -456,16 +452,12 @@ void inicializarEnMemoria(proceso_kernel* proceso, t_log* logger){
 
 	if(validacion == 1){
 		t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
-		paquete->buffer->size = sizeof(uint32_t)*2;
-		paquete->buffer->stream = malloc(paquete->buffer->size);
-		int desplazamiento = 0;
 
-		memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
-		desplazamiento += sizeof(uint32_t);
-		memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
-		enviarPaquete(paquete,proceso->conexionConMemoria);
+    	enviarPaquete(paquete,proceso->conexionConMemoria);
 		
-		int sePudoInicializar = atenderMensajeDeMemoria(proceso->conexionConMemoria); 
+		proceso->pid = atenderMensajeDeMemoria(proceso->conexionConMemoria); 
+	}else{
+		proceso->pid = -1;
 	}
 
 }
@@ -477,7 +469,7 @@ void finalizarEnMemoria(proceso_kernel* proceso, t_log* logger){
 
 	if(validacion == 1){
 		t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
-		paquete->buffer->size = sizeof(uint32_t)*2;
+		paquete->buffer->size = sizeof(uint32_t);
 		paquete->buffer->stream = malloc(paquete->buffer->size);
 		int desplazamiento = 0;
 
@@ -555,21 +547,13 @@ int atenderMensajeDeMemoria(int conexion) {
 /* notificaciones de memoria */
 int notificacionInicializacionDeMemoria(t_buffer* buffer,t_log* logger){
 
-	void* data = buffer->stream;
-	int desplazamiento = 0;
-	int valor;
+	void* stream = buffer->stream;
+	int offset = 0;
+	int pid;
 
+	memcpy(&(pid), stream+offset, sizeof(uint32_t));
 
-	memcpy(&(valor), data + desplazamiento, sizeof(uint32_t));
-
-	if(valor == 0){
-		log_info(logger, "Se pudo realizar toda la incializacion en Memoria");
-	}else
-	{
-		log_error(logger,"No se pudo realizar la inicializacion en Memoria, no habia espacio");
-	}
-	
-	return valor;
+	return pid;
 
 }
 

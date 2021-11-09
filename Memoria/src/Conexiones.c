@@ -30,7 +30,7 @@ void atender_solicitudes_multihilo(){
 	 uint32_t servidor = iniciar_servidor(ip, puerto);
 	 
 	 printf("\nSe inicio el servidor.\n");
-	 pthread_t* cliente;
+	 pthread_t cliente;
 	while(1){
 		uint32_t conexion_cliente = esperar_cliente(servidor);
 		pthread_create(&cliente,NULL,(void*)atender_solicitudes_memoria,conexion_cliente);
@@ -150,8 +150,12 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 	recv(conexion, &size, sizeof(uint32_t), MSG_WAITALL);
 	
 	t_carpincho* carpincho = malloc(sizeof(t_carpincho));
-	
-		carpincho->id_carpincho = generadorIdsCarpinchos();
+
+		pthread_mutex_lock(controladorIds);
+		carpincho->id_carpincho = id_carpincho;
+		id_carpincho++;
+		pthread_mutex_unlock(controladorIds);
+
 		carpincho->tabla_de_paginas = list_create();
 		carpincho->allocs = list_create();
 		carpincho->conexion = conexion;
@@ -172,14 +176,11 @@ void enviarInformacionAdministrativaDelProceso(t_carpincho* carpincho){
 
 	t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
 
-    paquete->buffer->size = sizeof(uint32_t) *2;
+    paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
-	uint32_t valorBackEnd = MEMORIA;
     int desplazamiento = 0;
 	
     memcpy(paquete->buffer->stream + desplazamiento, &(carpincho->id_carpincho) , sizeof(uint32_t));
-    desplazamiento += sizeof(uint32_t);
-    memcpy(paquete->buffer->stream + desplazamiento, &(valorBackEnd) , sizeof(uint32_t));
     
 	enviarPaquete(paquete, carpincho->conexion);
 

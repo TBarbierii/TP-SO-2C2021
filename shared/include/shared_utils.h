@@ -44,8 +44,7 @@ t_log* logger;
 typedef enum backend{
 
     ERROR = -1,
-    KERNEL = 0,
-    MEMORIA = 1 
+    OK = 0
 
 }backend;
 

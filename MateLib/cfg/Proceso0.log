@@ -1,11 +1,10 @@
-[INFO] 00:02:09:072 loggerContenidoProceso/(9956:9956): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 00:02:09:141 loggerContenidoProceso/(9956:9956): Solicitamos realizar una operacion IO sobre el dispositivo: laguna
-[INFO] 00:02:50:171 loggerContenidoProceso/(9956:9956): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 00:03:17:789 loggerContenidoProceso/(10107:10107): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 00:03:17:937 loggerContenidoProceso/(10107:10107): Solicitamos realizar una operacion IO sobre el dispositivo: laguna
-[INFO] 00:03:18:974 loggerContenidoProceso/(10107:10107): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
-[INFO] 00:03:18:974 loggerContenidoProceso/(10107:10107): Se pudo realizar con exito la operacion IO
-[INFO] 00:03:18:975 loggerContenidoProceso/(10107:10107): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 00:03:18:984 loggerContenidoProceso/(10107:10107): Estamos recibiendo todo para cerrar la conexion y terminar
-[INFO] 00:03:18:984 loggerContenidoProceso/(10107:10107): Se pudo cerrar el proceso correctamente en el BackEnd
-[INFO] 00:03:18:985 loggerContenidoProceso/(10107:10107): Se liberan todas las estructuras del proceso
+[INFO] 19:13:26:054 loggerContenidoProceso/(6778:6778): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 19:13:26:150 loggerContenidoProceso/(6778:6778): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 19:13:26:164 loggerContenidoProceso/(6778:6778): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 19:13:26:167 loggerContenidoProceso/(6778:6778): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 19:13:26:173 loggerContenidoProceso/(6778:6778): Se liberan todas las estructuras del proceso
+[INFO] 19:18:35:638 loggerContenidoProceso/(6976:6976): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 19:18:35:795 loggerContenidoProceso/(6976:6976): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 19:18:35:826 loggerContenidoProceso/(6976:6976): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 19:18:35:827 loggerContenidoProceso/(6976:6976): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 19:18:35:827 loggerContenidoProceso/(6976:6976): Se liberan todas las estructuras del proceso

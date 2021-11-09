@@ -12,7 +12,7 @@ int mate_init(mate_instance *lib_ref, char *config){
         lib_ref->group_info->backEndConectado = ERROR;
         return lib_ref->group_info->backEndConectado;
     }else{
-
+        lib_ref->group_info->backEndConectado = OK;
         solicitarIniciarPatota(conexion, lib_ref);
         return recibir_mensaje(conexion, lib_ref);
     }
@@ -243,12 +243,13 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
     }
 
 	free(paquete->buffer);
-	free(paquete);
+	
 
     if(paquete->codigo_operacion == MEMREAD){
+        free(paquete);
         return retornoMensaje;
     }
-
+    free(paquete);
     return valorRetorno;
 }
 
@@ -260,10 +261,7 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
 	int offset = 0;
 
 	memcpy(&(lib_ref->group_info->pid), stream+offset, sizeof(uint32_t));
-	offset += sizeof(uint32_t);
-
-	memcpy(&(lib_ref->group_info->backEndConectado), stream+offset, sizeof(uint32_t));
-
+	
     if(lib_ref->group_info->pid < 0 ){
             perror("No se pudo crear la instancia :(");
             return -1;
@@ -692,13 +690,8 @@ void realizarMemWrite(int conexion, uint32_t pid, void *origin, mate_pointer des
 int validarConexionPosible(int tipoSolicitado, int tipoActual){
 
     
-    if(tipoSolicitado == MEMORIA){ 
-        if(tipoActual == KERNEL || tipoActual == MEMORIA){ //si deseo hacer una operacion de tipo Memoria, con que el backend no sea un error de conexion, se puede. EL kernel hara de pasamanos
-            return 1;
-        }
-    }
+    return tipoSolicitado == OK;
 
-    return 0; //el otro caso seria que el tipoActual sea error o que no cumpla las condiciones prestablecidas, entonces retorna 0 en referencia que no se podra hacer
 }
 
 
@@ -711,7 +704,7 @@ int main(){
     //mate_sem_post(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
-    mate_call_io(referencia,"laguna","asd");
+    //mate_call_io(referencia,"laguna","asd");
 
     //mate_pointer = mate_memalloc(....);
     //mate_memfree(,....)

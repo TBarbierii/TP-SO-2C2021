@@ -2194,3 +2194,23 @@ Tamanio: -1228929400
 [INFO] 19:16:10:439 Servidor/(9304:9339): Sacamos al carpincho. Pid: 5
 [INFO] 19:16:10:439 Servidor/(9304:9339): Enviamos que queremos cerrar el carpincho
 [INFO] 19:16:10:439 Servidor/(9304:9339): Se nos va el carpincho: 5
+[INFO] 19:13:25:887 Servidor/(6727:6781): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 19:13:25:991 Servidor/(6727:6781): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 19:13:26:158 Servidor/(6727:6781): Sacamos al carpincho. Pid: 0
+[INFO] 19:13:26:160 Servidor/(6727:6781): Enviamos que queremos cerrar el carpincho
+[INFO] 19:13:26:166 Servidor/(6727:6781): Se nos va el carpincho: 0
+[INFO] 19:18:35:457 Servidor/(6969:6980): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 19:18:35:567 Servidor/(6969:6980): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 19:18:35:809 Servidor/(6969:6980): Sacamos al carpincho. Pid: 0
+[INFO] 19:18:35:810 Servidor/(6969:6980): Enviamos que queremos cerrar el carpincho
+[INFO] 19:18:35:811 Servidor/(6969:6980): Se nos va el carpincho: 0
+[INFO] 19:18:48:907 Servidor/(6969:7006): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 19:18:48:908 Servidor/(6969:7006): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 19:18:49:130 Servidor/(6969:7006): Sacamos al carpincho. Pid: 1
+[INFO] 19:18:49:130 Servidor/(6969:7006): Enviamos que queremos cerrar el carpincho
+[INFO] 19:18:49:130 Servidor/(6969:7006): Se nos va el carpincho: 1
+[INFO] 19:18:53:209 Servidor/(6969:7022): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 19:18:53:210 Servidor/(6969:7022): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 19:18:53:411 Servidor/(6969:7022): Sacamos al carpincho. Pid: 2
+[INFO] 19:18:53:411 Servidor/(6969:7022): Enviamos que queremos cerrar el carpincho
+[INFO] 19:18:53:411 Servidor/(6969:7022): Se nos va el carpincho: 2

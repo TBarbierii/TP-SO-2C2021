@@ -42,6 +42,7 @@ uint32_t punteroClock;
 /* Semaforos */
 
 pthread_mutex_t * listaCarpinchos;
+pthread_mutex_t * controladorIds;
 
 /* Estructuras Administrativas */
 
@@ -183,7 +184,7 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 
 /* Auxiliares */
 uint32_t generadorIdsPaginas();
-uint32_t generadorIdsCarpinchos();
+uint32_t aumentarIdCarpinchos();
 uint32_t generadorIdsMarcos();
 uint32_t generarDireccionLogica(uint32_t , uint32_t);
 uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica);

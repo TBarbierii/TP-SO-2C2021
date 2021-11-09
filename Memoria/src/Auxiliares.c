@@ -104,9 +104,10 @@ uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica)
 	return direccionFisica;
 }
 
-uint32_t generadorIdsCarpinchos(){
-
-    return id_carpincho++;
+uint32_t aumentarIdCarpinchos(){
+	pthread_mutex_lock(controladorIds);
+    id_carpincho++;
+	pthread_mutex_unlock(controladorIds);
 
 }
 

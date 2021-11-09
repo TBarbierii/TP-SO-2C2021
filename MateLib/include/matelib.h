@@ -104,7 +104,7 @@ int notificacionIO(t_buffer* buffer, t_log* logger);
 
 int notificacionMemAlloc(t_buffer* buffer, t_log* logger);
 
-
+void* notificacionMemRead(t_buffer* buffer, t_log* logger);
 
 
 

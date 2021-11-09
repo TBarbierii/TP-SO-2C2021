@@ -1,70 +1,86 @@
-[INFO] 00:02:09:015 Operaciones/(9936:9957): Recibimos la informacion de un carpincho
-[INFO] 00:02:09:018 Operaciones/(9936:9957): El codigo de operacion es: 0
-[INFO] 00:02:09:019 Operaciones/(9936:9957): Vamos a inicializar un carpincho
-[INFO] 00:02:09:020 Operaciones/(9936:9957): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
-[ERROR] 00:02:09:025 Operaciones/(9936:9957): La conexion con la Memoria fallo
-[INFO] 00:02:09:026 Operaciones/(9936:9957): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
-[INFO] 00:03:17:703 Operaciones/(10087:10110): Recibimos la informacion de un carpincho
-[INFO] 00:03:17:707 Operaciones/(10087:10110): El codigo de operacion es: 0
-[INFO] 00:03:17:707 Operaciones/(10087:10110): Vamos a inicializar un carpincho
-[INFO] 00:03:17:710 Operaciones/(10087:10110): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
-[ERROR] 00:03:17:715 Operaciones/(10087:10110): La conexion con la Memoria fallo
-[INFO] 00:03:17:722 Operaciones/(10087:10110): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
-[INFO] 00:03:17:946 Operaciones/(10087:10096): Recibimos la informacion de un carpincho
-[INFO] 00:03:17:947 Operaciones/(10087:10096): El codigo de operacion es: 6
-[INFO] 00:03:17:950 Operaciones/(10087:10096): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 00:03:18:976 Operaciones/(10087:10096): Recibimos la informacion de un carpincho
-[INFO] 00:03:18:977 Operaciones/(10087:10096): El codigo de operacion es: 1
-[INFO] 00:03:18:977 Operaciones/(10087:10096): Vamos a eliminar un carpincho
-[INFO] 00:03:18:979 Operaciones/(10087:10096): Sacamos al carpincho de ejecucion. Pid: 0
-[ERROR] 00:03:18:980 Operaciones/(10087:10096): La conexion con la Memoria fallo
-[INFO] 00:03:18:981 Operaciones/(10087:10096): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 00:03:18:982 Operaciones/(10087:10096): Enviamos que queremos cerrar el carpincho
-[INFO] 00:03:24:026 Operaciones/(10087:10130): Recibimos la informacion de un carpincho
-[INFO] 00:03:24:031 Operaciones/(10087:10130): El codigo de operacion es: 0
-[INFO] 00:03:24:031 Operaciones/(10087:10130): Vamos a inicializar un carpincho
-[INFO] 00:03:24:031 Operaciones/(10087:10130): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
-[ERROR] 00:03:24:033 Operaciones/(10087:10130): La conexion con la Memoria fallo
-[INFO] 00:03:24:033 Operaciones/(10087:10130): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
-[INFO] 00:03:24:194 Operaciones/(10087:10096): Recibimos la informacion de un carpincho
-[INFO] 00:03:24:196 Operaciones/(10087:10096): El codigo de operacion es: 6
-[INFO] 00:03:24:196 Operaciones/(10087:10096): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 00:03:25:210 Operaciones/(10087:10096): Recibimos la informacion de un carpincho
-[INFO] 00:03:25:210 Operaciones/(10087:10096): El codigo de operacion es: 1
-[INFO] 00:03:25:211 Operaciones/(10087:10096): Vamos a eliminar un carpincho
-[INFO] 00:03:25:211 Operaciones/(10087:10096): Sacamos al carpincho de ejecucion. Pid: 1
-[ERROR] 00:03:25:211 Operaciones/(10087:10096): La conexion con la Memoria fallo
-[INFO] 00:03:25:211 Operaciones/(10087:10096): Le notificamos a memoria para que libere la memoria del carpincho: 1
-[INFO] 00:03:25:211 Operaciones/(10087:10096): Enviamos que queremos cerrar el carpincho
-[INFO] 00:03:26:590 Operaciones/(10087:10143): Recibimos la informacion de un carpincho
-[INFO] 00:03:26:594 Operaciones/(10087:10143): El codigo de operacion es: 0
-[INFO] 00:03:26:594 Operaciones/(10087:10143): Vamos a inicializar un carpincho
-[INFO] 00:03:26:594 Operaciones/(10087:10143): Un nuevo carpincho se une a la manada del kernel, y su pid es: 2
-[ERROR] 00:03:26:594 Operaciones/(10087:10143): La conexion con la Memoria fallo
-[INFO] 00:03:26:594 Operaciones/(10087:10143): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 2
-[INFO] 00:03:26:816 Operaciones/(10087:10096): Recibimos la informacion de un carpincho
-[INFO] 00:03:26:818 Operaciones/(10087:10096): El codigo de operacion es: 6
-[INFO] 00:03:26:818 Operaciones/(10087:10096): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 00:03:27:832 Operaciones/(10087:10096): Recibimos la informacion de un carpincho
-[INFO] 00:03:27:832 Operaciones/(10087:10096): El codigo de operacion es: 1
-[INFO] 00:03:27:833 Operaciones/(10087:10096): Vamos a eliminar un carpincho
-[INFO] 00:03:27:833 Operaciones/(10087:10096): Sacamos al carpincho de ejecucion. Pid: 2
-[ERROR] 00:03:27:833 Operaciones/(10087:10096): La conexion con la Memoria fallo
-[INFO] 00:03:27:833 Operaciones/(10087:10096): Le notificamos a memoria para que libere la memoria del carpincho: 2
-[INFO] 00:03:27:834 Operaciones/(10087:10096): Enviamos que queremos cerrar el carpincho
-[INFO] 00:03:29:077 Operaciones/(10087:10155): Recibimos la informacion de un carpincho
-[INFO] 00:03:29:080 Operaciones/(10087:10155): El codigo de operacion es: 0
-[INFO] 00:03:29:080 Operaciones/(10087:10155): Vamos a inicializar un carpincho
-[INFO] 00:03:29:081 Operaciones/(10087:10155): Un nuevo carpincho se une a la manada del kernel, y su pid es: 3
-[ERROR] 00:03:29:082 Operaciones/(10087:10155): La conexion con la Memoria fallo
-[INFO] 00:03:29:082 Operaciones/(10087:10155): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 3
-[INFO] 00:03:29:299 Operaciones/(10087:10096): Recibimos la informacion de un carpincho
-[INFO] 00:03:29:300 Operaciones/(10087:10096): El codigo de operacion es: 6
-[INFO] 00:03:29:301 Operaciones/(10087:10096): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 00:03:30:312 Operaciones/(10087:10096): Recibimos la informacion de un carpincho
-[INFO] 00:03:30:312 Operaciones/(10087:10096): El codigo de operacion es: 1
-[INFO] 00:03:30:313 Operaciones/(10087:10096): Vamos a eliminar un carpincho
-[INFO] 00:03:30:313 Operaciones/(10087:10096): Sacamos al carpincho de ejecucion. Pid: 3
-[ERROR] 00:03:30:313 Operaciones/(10087:10096): La conexion con la Memoria fallo
-[INFO] 00:03:30:313 Operaciones/(10087:10096): Le notificamos a memoria para que libere la memoria del carpincho: 3
-[INFO] 00:03:30:313 Operaciones/(10087:10096): Enviamos que queremos cerrar el carpincho
+[INFO] 19:07:24:022 Operaciones/(6155:6375): Recibimos la informacion de un carpincho
+[INFO] 19:07:24:027 Operaciones/(6155:6375): El codigo de operacion es: 0
+[INFO] 19:07:24:027 Operaciones/(6155:6375): Vamos a inicializar un carpincho
+[ERROR] 19:07:24:030 Operaciones/(6155:6375): La conexion con la Memoria fallo
+[INFO] 19:07:24:031 Operaciones/(6155:6375): Un nuevo carpincho se une a la manada del kernel, y su pid es: -1
+[INFO] 19:07:24:035 Operaciones/(6155:6375): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: -1
+[INFO] 19:07:24:217 Operaciones/(6155:6162): Recibimos la informacion de un carpincho
+[INFO] 19:07:24:217 Operaciones/(6155:6162): El codigo de operacion es: 6
+[INFO] 19:07:24:217 Operaciones/(6155:6162): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 19:07:25:239 Operaciones/(6155:6162): Recibimos la informacion de un carpincho
+[INFO] 19:07:25:239 Operaciones/(6155:6162): El codigo de operacion es: 1
+[INFO] 19:07:25:239 Operaciones/(6155:6162): Vamos a eliminar un carpincho
+[INFO] 19:07:25:240 Operaciones/(6155:6162): Sacamos al carpincho de ejecucion. Pid: -1
+[ERROR] 19:07:25:242 Operaciones/(6155:6162): La conexion con la Memoria fallo
+[INFO] 19:07:25:243 Operaciones/(6155:6162): Le notificamos a memoria para que libere la memoria del carpincho: -1
+[INFO] 19:07:25:245 Operaciones/(6155:6162): Enviamos que queremos cerrar el carpincho
+[INFO] 19:09:06:286 Operaciones/(6430:6461): Recibimos la informacion de un carpincho
+[INFO] 19:09:06:287 Operaciones/(6430:6461): El codigo de operacion es: 0
+[INFO] 19:09:06:288 Operaciones/(6430:6461): Vamos a inicializar un carpincho
+[ERROR] 19:09:06:303 Operaciones/(6430:6461): La conexion con la Memoria fallo
+[INFO] 19:09:06:308 Operaciones/(6430:6461): Un nuevo carpincho se une a la manada del kernel, y su pid es: -1
+[INFO] 19:09:06:312 Operaciones/(6430:6461): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: -1
+[INFO] 19:09:06:546 Operaciones/(6430:6437): Recibimos la informacion de un carpincho
+[INFO] 19:09:06:546 Operaciones/(6430:6437): El codigo de operacion es: 1
+[INFO] 19:09:06:547 Operaciones/(6430:6437): Vamos a eliminar un carpincho
+[INFO] 19:09:06:549 Operaciones/(6430:6437): Sacamos al carpincho de ejecucion. Pid: -1
+[ERROR] 19:09:06:550 Operaciones/(6430:6437): La conexion con la Memoria fallo
+[INFO] 19:09:06:553 Operaciones/(6430:6437): Le notificamos a memoria para que libere la memoria del carpincho: -1
+[INFO] 19:09:06:555 Operaciones/(6430:6437): Enviamos que queremos cerrar el carpincho
+[INFO] 19:12:03:844 Operaciones/(6430:6580): Recibimos la informacion de un carpincho
+[INFO] 19:12:03:845 Operaciones/(6430:6580): El codigo de operacion es: 0
+[INFO] 19:12:03:846 Operaciones/(6430:6580): Vamos a inicializar un carpincho
+[ERROR] 19:12:03:847 Operaciones/(6430:6580): La conexion con la Memoria fallo
+[INFO] 19:12:03:847 Operaciones/(6430:6580): Un nuevo carpincho se une a la manada del kernel, y su pid es: -1
+[INFO] 19:12:03:848 Operaciones/(6430:6580): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: -1
+[INFO] 19:12:04:055 Operaciones/(6430:6437): Recibimos la informacion de un carpincho
+[INFO] 19:12:04:055 Operaciones/(6430:6437): El codigo de operacion es: 1
+[INFO] 19:12:04:056 Operaciones/(6430:6437): Vamos a eliminar un carpincho
+[INFO] 19:12:04:056 Operaciones/(6430:6437): Sacamos al carpincho de ejecucion. Pid: -1
+[ERROR] 19:12:04:056 Operaciones/(6430:6437): La conexion con la Memoria fallo
+[INFO] 19:12:04:056 Operaciones/(6430:6437): Le notificamos a memoria para que libere la memoria del carpincho: -1
+[INFO] 19:12:04:057 Operaciones/(6430:6437): Enviamos que queremos cerrar el carpincho
+[INFO] 19:13:25:812 Operaciones/(6430:6780): Recibimos la informacion de un carpincho
+[INFO] 19:13:25:813 Operaciones/(6430:6780): El codigo de operacion es: 0
+[INFO] 19:13:25:813 Operaciones/(6430:6780): Vamos a inicializar un carpincho
+[INFO] 19:13:25:996 Operaciones/(6430:6780): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 19:13:26:001 Operaciones/(6430:6780): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 19:13:26:153 Operaciones/(6430:6437): Recibimos la informacion de un carpincho
+[INFO] 19:13:26:153 Operaciones/(6430:6437): El codigo de operacion es: 1
+[INFO] 19:13:26:154 Operaciones/(6430:6437): Vamos a eliminar un carpincho
+[INFO] 19:13:26:154 Operaciones/(6430:6437): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 19:13:26:162 Operaciones/(6430:6437): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 19:13:26:162 Operaciones/(6430:6437): Enviamos que queremos cerrar el carpincho
+[INFO] 19:18:35:378 Operaciones/(6944:6978): Recibimos la informacion de un carpincho
+[INFO] 19:18:35:380 Operaciones/(6944:6978): El codigo de operacion es: 0
+[INFO] 19:18:35:382 Operaciones/(6944:6978): Vamos a inicializar un carpincho
+[INFO] 19:18:35:580 Operaciones/(6944:6978): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 19:18:35:581 Operaciones/(6944:6978): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 19:18:35:800 Operaciones/(6944:6954): Recibimos la informacion de un carpincho
+[INFO] 19:18:35:801 Operaciones/(6944:6954): El codigo de operacion es: 1
+[INFO] 19:18:35:802 Operaciones/(6944:6954): Vamos a eliminar un carpincho
+[INFO] 19:18:35:805 Operaciones/(6944:6954): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 19:18:35:812 Operaciones/(6944:6954): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 19:18:35:814 Operaciones/(6944:6954): Enviamos que queremos cerrar el carpincho
+[INFO] 19:18:48:898 Operaciones/(6944:7005): Recibimos la informacion de un carpincho
+[INFO] 19:18:48:899 Operaciones/(6944:7005): El codigo de operacion es: 0
+[INFO] 19:18:48:900 Operaciones/(6944:7005): Vamos a inicializar un carpincho
+[INFO] 19:18:48:910 Operaciones/(6944:7005): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 19:18:48:910 Operaciones/(6944:7005): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 19:18:49:128 Operaciones/(6944:6954): Recibimos la informacion de un carpincho
+[INFO] 19:18:49:129 Operaciones/(6944:6954): El codigo de operacion es: 1
+[INFO] 19:18:49:129 Operaciones/(6944:6954): Vamos a eliminar un carpincho
+[INFO] 19:18:49:129 Operaciones/(6944:6954): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 19:18:49:130 Operaciones/(6944:6954): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 19:18:49:131 Operaciones/(6944:6954): Enviamos que queremos cerrar el carpincho
+[INFO] 19:18:53:204 Operaciones/(6944:7020): Recibimos la informacion de un carpincho
+[INFO] 19:18:53:204 Operaciones/(6944:7020): El codigo de operacion es: 0
+[INFO] 19:18:53:205 Operaciones/(6944:7020): Vamos a inicializar un carpincho
+[INFO] 19:18:53:210 Operaciones/(6944:7020): Un nuevo carpincho se une a la manada del kernel, y su pid es: 2
+[INFO] 19:18:53:211 Operaciones/(6944:7020): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 2
+[INFO] 19:18:53:410 Operaciones/(6944:6954): Recibimos la informacion de un carpincho
+[INFO] 19:18:53:410 Operaciones/(6944:6954): El codigo de operacion es: 1
+[INFO] 19:18:53:410 Operaciones/(6944:6954): Vamos a eliminar un carpincho
+[INFO] 19:18:53:411 Operaciones/(6944:6954): Sacamos al carpincho de ejecucion. Pid: 2
+[INFO] 19:18:53:412 Operaciones/(6944:6954): Le notificamos a memoria para que libere la memoria del carpincho: 2
+[INFO] 19:18:53:412 Operaciones/(6944:6954): Enviamos que queremos cerrar el carpincho
