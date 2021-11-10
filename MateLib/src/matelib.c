@@ -704,7 +704,7 @@ int main(){
     //mate_sem_post(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
-    //mate_call_io(referencia,"laguna","asd");
+    mate_call_io(referencia,"laguna","asd");
 
     //mate_pointer = mate_memalloc(....);
     //mate_memfree(,....)

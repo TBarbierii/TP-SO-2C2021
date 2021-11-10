@@ -1,5 +1,0 @@
-[INFO] 19:18:48:968 loggerContenidoProceso/(7004:7004): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 19:18:49:113 loggerContenidoProceso/(7004:7004): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 19:18:49:133 loggerContenidoProceso/(7004:7004): Estamos recibiendo todo para cerrar la conexion y terminar
-[INFO] 19:18:49:138 loggerContenidoProceso/(7004:7004): Se pudo cerrar el proceso correctamente en el BackEnd
-[INFO] 19:18:49:138 loggerContenidoProceso/(7004:7004): Se liberan todas las estructuras del proceso
