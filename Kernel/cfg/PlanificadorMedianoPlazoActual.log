@@ -1,16 +1,62 @@
-[DEBUG] 19:03:55:581 PlanificadorMedianoPlazo/(6155:6163): Se inicializa la planificacion de mediano plazo
-[DEBUG] 19:03:55:586 PlanificadorMedianoPlazo/(6155:6164): Incializado el thread que permite suspender procesos para evitar IO bound
-[DEBUG] 19:03:55:592 PlanificadorMedianoPlazo/(6155:6165): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[INFO] 19:07:24:055 PlanificadorMedianoPlazo/(6155:6165): Se busca un proceso de new
-[DEBUG] 19:09:00:718 PlanificadorMedianoPlazo/(6430:6438): Se inicializa la planificacion de mediano plazo
-[DEBUG] 19:09:00:723 PlanificadorMedianoPlazo/(6430:6439): Incializado el thread que permite suspender procesos para evitar IO bound
-[DEBUG] 19:09:00:724 PlanificadorMedianoPlazo/(6430:6440): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[INFO] 19:09:06:337 PlanificadorMedianoPlazo/(6430:6440): Se busca un proceso de new
-[INFO] 19:12:03:849 PlanificadorMedianoPlazo/(6430:6440): Se busca un proceso de new
-[INFO] 19:13:26:005 PlanificadorMedianoPlazo/(6430:6440): Se busca un proceso de new
-[DEBUG] 19:18:27:229 PlanificadorMedianoPlazo/(6944:6952): Se inicializa la planificacion de mediano plazo
-[DEBUG] 19:18:27:243 PlanificadorMedianoPlazo/(6944:6955): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
-[DEBUG] 19:18:27:244 PlanificadorMedianoPlazo/(6944:6953): Incializado el thread que permite suspender procesos para evitar IO bound
-[INFO] 19:18:35:594 PlanificadorMedianoPlazo/(6944:6955): Se busca un proceso de new
-[INFO] 19:18:48:910 PlanificadorMedianoPlazo/(6944:6955): Se busca un proceso de new
-[INFO] 19:18:53:211 PlanificadorMedianoPlazo/(6944:6955): Se busca un proceso de new
+[DEBUG] 14:10:13:162 PlanificadorMedianoPlazo/(4983:4990): Se inicializa la planificacion de mediano plazo
+[DEBUG] 14:10:13:173 PlanificadorMedianoPlazo/(4983:4993): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 14:10:13:173 PlanificadorMedianoPlazo/(4983:4994): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[INFO] 14:10:27:006 PlanificadorMedianoPlazo/(4983:4994): Se busca un proceso de new
+[INFO] 14:10:27:089 PlanificadorMedianoPlazo/(4983:4993): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:10:31:091 PlanificadorMedianoPlazo/(4983:4993): No se encontro un proceso que sea IO bound
+[INFO] 14:10:31:093 PlanificadorMedianoPlazo/(4983:4994): Se busca un proceso de new
+[INFO] 14:10:31:242 PlanificadorMedianoPlazo/(4983:4993): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:10:35:243 PlanificadorMedianoPlazo/(4983:4993): No se encontro un proceso que sea IO bound
+[INFO] 14:10:37:116 PlanificadorMedianoPlazo/(4983:4994): Se busca un proceso de new
+[INFO] 14:10:37:119 PlanificadorMedianoPlazo/(4983:4993): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:10:41:120 PlanificadorMedianoPlazo/(4983:4993): No se encontro un proceso que sea IO bound
+[DEBUG] 14:13:27:994 PlanificadorMedianoPlazo/(5305:5313): Se inicializa la planificacion de mediano plazo
+[DEBUG] 14:13:27:998 PlanificadorMedianoPlazo/(5305:5315): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 14:13:27:998 PlanificadorMedianoPlazo/(5305:5316): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[INFO] 14:13:38:261 PlanificadorMedianoPlazo/(5305:5316): Se busca un proceso de new
+[INFO] 14:13:38:346 PlanificadorMedianoPlazo/(5305:5315): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:13:42:347 PlanificadorMedianoPlazo/(5305:5315): No se encontro un proceso que sea IO bound
+[INFO] 14:13:42:351 PlanificadorMedianoPlazo/(5305:5316): Se busca un proceso de new
+[INFO] 14:13:42:479 PlanificadorMedianoPlazo/(5305:5315): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:13:46:480 PlanificadorMedianoPlazo/(5305:5315): Se encontro un proceso que sea IO bound, y se lo agrega a la lista de suspendidos- bloqueados
+[INFO] 14:13:46:481 PlanificadorMedianoPlazo/(5305:5316): Se busca un proceso de new
+[INFO] 14:13:46:481 PlanificadorMedianoPlazo/(5305:5315): No se encontro un proceso que sea IO bound
+[INFO] 14:13:46:483 PlanificadorMedianoPlazo/(5305:5315): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:13:50:484 PlanificadorMedianoPlazo/(5305:5315): No se encontro un proceso que sea IO bound
+[INFO] 14:14:00:487 PlanificadorMedianoPlazo/(5305:5316): Se busca un proceso de suspended-ready
+
+[DEBUG] 14:19:36:302 PlanificadorMedianoPlazo/(5764:5771): Se inicializa la planificacion de mediano plazo
+[DEBUG] 14:19:36:320 PlanificadorMedianoPlazo/(5764:5773): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 14:19:36:321 PlanificadorMedianoPlazo/(5764:5775): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[INFO] 14:19:44:249 PlanificadorMedianoPlazo/(5764:5775): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 14:19:44:249 PlanificadorMedianoPlazo/(5764:5775): No hay procesos en Suspended Ready, agregamos uno de NEW
+[INFO] 14:19:44:327 PlanificadorMedianoPlazo/(5764:5773): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:19:48:330 PlanificadorMedianoPlazo/(5764:5773): No se encontro un proceso que sea IO bound
+[INFO] 14:19:48:331 PlanificadorMedianoPlazo/(5764:5775): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 14:19:48:332 PlanificadorMedianoPlazo/(5764:5775): No hay procesos en Suspended Ready, agregamos uno de NEW
+[INFO] 14:19:48:469 PlanificadorMedianoPlazo/(5764:5773): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:19:52:471 PlanificadorMedianoPlazo/(5764:5773): Se encontro que hay solo procesos IO Bound ocupando la Multiprogramacion, por lo tanto ponemos uno en Suspended-Ready
+[INFO] 14:19:52:471 PlanificadorMedianoPlazo/(5764:5775): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 14:19:52:472 PlanificadorMedianoPlazo/(5764:5775): No hay procesos en Suspended Ready, agregamos uno de NEW
+[INFO] 14:19:52:472 PlanificadorMedianoPlazo/(5764:5773): No se encontro un proceso que sea IO bound
+[INFO] 14:19:52:474 PlanificadorMedianoPlazo/(5764:5773): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:19:56:475 PlanificadorMedianoPlazo/(5764:5773): No se encontro un proceso que sea IO bound
+[INFO] 14:20:06:478 PlanificadorMedianoPlazo/(5764:5775): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 14:20:06:478 PlanificadorMedianoPlazo/(5764:5775): Se busca un proceso de Suspended Ready
+[DEBUG] 14:23:27:239 PlanificadorMedianoPlazo/(6138:6146): Se inicializa la planificacion de mediano plazo
+[DEBUG] 14:23:27:258 PlanificadorMedianoPlazo/(6138:6149): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 14:23:27:260 PlanificadorMedianoPlazo/(6138:6148): Incializado el thread que permite suspender procesos para evitar IO bound
+[INFO] 14:23:34:090 PlanificadorMedianoPlazo/(6138:6149): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 14:23:34:091 PlanificadorMedianoPlazo/(6138:6149): No hay procesos en Suspended Ready, agregamos uno de NEW en Ready
+[INFO] 14:23:34:398 PlanificadorMedianoPlazo/(6138:6148): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:23:38:411 PlanificadorMedianoPlazo/(6138:6148): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 14:23:38:413 PlanificadorMedianoPlazo/(6138:6149): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 14:23:38:413 PlanificadorMedianoPlazo/(6138:6149): No hay procesos en Suspended Ready, agregamos uno de NEW en Ready
+[INFO] 14:23:38:631 PlanificadorMedianoPlazo/(6138:6148): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:23:42:634 PlanificadorMedianoPlazo/(6138:6148): Se encontro que hay solo procesos IO Bound ocupando la Multiprogramacion, por lo tanto ponemos uno en Suspended-Ready
+[INFO] 14:23:42:634 PlanificadorMedianoPlazo/(6138:6149): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 14:23:42:634 PlanificadorMedianoPlazo/(6138:6149): No hay procesos en Suspended Ready, agregamos uno de NEW en Ready
+[INFO] 14:23:42:638 PlanificadorMedianoPlazo/(6138:6148): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 14:23:46:639 PlanificadorMedianoPlazo/(6138:6148): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 14:23:56:641 PlanificadorMedianoPlazo/(6138:6149): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 14:23:56:641 PlanificadorMedianoPlazo/(6138:6149): Se busca un proceso de Suspended Ready y se pasa a Ready
