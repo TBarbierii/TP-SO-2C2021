@@ -8,9 +8,11 @@ uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpincho
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc->pid;
 	};
-    //semaforo?
+    
+    pthread_mutex_lock(listaCarpinchos);
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
-    //semaforo?
+    pthread_mutex_unlock(listaCarpinchos);
+    
     //si no lo encuentra crearlo
     if (carpincho == NULL){
      carpincho = malloc(sizeof(t_carpincho));
