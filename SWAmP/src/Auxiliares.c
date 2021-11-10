@@ -90,7 +90,6 @@ swap_files* buscar_archivo_con_mayor_espacio(){
 
 int cantidad_frames_disponibles(swap_files* archivoSwap) {
     
-    
     t_list* particiones_libres;
 
     if(archivoSwap != NULL){

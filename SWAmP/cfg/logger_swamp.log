@@ -1170,3 +1170,7 @@ y tiene el heap: prev:0, sig:0, free:0
 [INFO] 10:30:11:653 SWAmP/(5181:5181): Se leyo el contenido del archivo: /home/utnso/swap1.bin
 [INFO] 10:30:11:656 SWAmP/(5181:5181): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
 [INFO] 10:30:11:664 SWAmP/(5181:5181): Proceso 3 finalizado con exito
+[INFO] 19:31:41:199 SWAmP/(4103:4103): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 19:31:41:243 SWAmP/(4103:4103): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 19:31:41:246 SWAmP/(4103:4103): Se han creado todos los archivos
+[INFO] 19:31:41:263 SWAmP/(4103:4103): Inicializacion del servidor con exito, esperando conexion...
