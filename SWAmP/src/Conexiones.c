@@ -208,3 +208,35 @@ void notificar_finalizacion_de_proceso(int conexion) {
 	enviarPaquete(paquete, conexion);
 
 }
+/*
+void notificar_insuficiencia_de_espacio_para_proceso(int conexion) {
+// Falta modificar esto
+	t_paquete *paquete = crear_paquete(FINALIZAR_PROCESO); // Tendria que usar otro cod_op?
+
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
+	int valor = 1;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(valor), sizeof(uint32_t));
+
+	enviarPaquete(paquete, conexion);
+}
+
+void atender_solicitud_consulta_espacio(t_buffer* buffer, t_log* logger) {
+// Falta modificar esto
+	void* data = buffer->stream;
+	int desplazamiento = 0;
+	uint32_t PID;
+	uint32_t marcos_pedidos;
+
+	memcpy(&(PID), data + desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+	memcpy(&(marcos_pedidos), data + desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+	log_info(logger,"El proceso: %d pide verificar si hay espacio para %i",PID, marcos_pedidos);
+
+
+}
+*/

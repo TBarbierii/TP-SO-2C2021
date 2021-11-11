@@ -22,7 +22,8 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
         particion* particion_para_sobreescribir = particion_disponible_para_sobreescribir(archivoAEscribir, PID, pagina);
 
         if(particion_para_sobreescribir != NULL) {
-            vaciar_particion(particion_para_sobreescribir, nombreArchivo);
+            
+            vaciar_particion(particion_para_sobreescribir, nombreArchivo);  // Habria que probar esto
 
             log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
             typedef struct {
@@ -98,7 +99,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
     }else{
         log_info(logger,"No se encontro el archivo ");
     }
-    
+
 }
 
 swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger){

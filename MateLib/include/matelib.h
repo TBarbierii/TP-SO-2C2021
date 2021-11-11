@@ -111,7 +111,7 @@ void* notificacionMemRead(t_buffer* buffer, t_log* logger);
 /* ------- Solicitudes  --------------------- */
 
 /* estructuracion */
-void solicitarIniciarPatota(int conexion, mate_instance* lib_ref);
+void solicitarIniciarCarpincho(int conexion, mate_instance* lib_ref);
 
 void solicitarCerrarPatota(int conexion, mate_instance* lib_ref);
 

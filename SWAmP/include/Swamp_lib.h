@@ -87,6 +87,7 @@ void manejar_asignacion();
 /* ---------------- AUXILIARES ---------------- */
 int verificar_pid_en_swap_file(uint32_t PID, char* path_swap);
 int pid_se_encuentra_en_particion(swap_files* archivo_swap, uint32_t PID);
+int cantidad_frames_disponibles_para_proceso(swap_files* archivo_swap, int PID);
 swap_files* encontrar_swap_file_en_base_a_pid(uint32_t PID);
 
 
