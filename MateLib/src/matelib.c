@@ -13,7 +13,7 @@ int mate_init(mate_instance *lib_ref, char *config){
         return lib_ref->group_info->backEndConectado;
     }else{
         lib_ref->group_info->backEndConectado = OK;
-        solicitarIniciarPatota(conexion, lib_ref);
+        solicitarIniciarCarpincho(conexion, lib_ref);
         return recibir_mensaje(conexion, lib_ref);
     }
     
@@ -26,7 +26,7 @@ int mate_close(mate_instance *lib_ref){
     
         log_info(lib_ref->group_info->loggerProceso,"Se ha solicitado cerrar el carpincho, este es un hasta adios");
 
-        solicitarCerrarPatota(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        solicitarCerrarCarpincho(lib_ref->group_info->conexionConBackEnd, lib_ref);
         int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
         return valorRetorno;
 }
@@ -484,7 +484,7 @@ int notificacionMemWrite(t_buffer* buffer, t_log* logger){
 
 
 /* estructuracion */
-void solicitarIniciarPatota(int conexion, mate_instance* lib_ref){
+void solicitarIniciarCarpincho(int conexion, mate_instance* lib_ref){
     
     t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
 
@@ -492,7 +492,7 @@ void solicitarIniciarPatota(int conexion, mate_instance* lib_ref){
 }
 
 
-void solicitarCerrarPatota(int conexion, mate_instance* lib_ref){
+void solicitarCerrarCarpincho(int conexion, mate_instance* lib_ref){
     
     t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
 
