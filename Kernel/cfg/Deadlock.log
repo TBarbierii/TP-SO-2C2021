@@ -22,3 +22,253 @@
 [INFO] 00:45:29:563 Deadlock/(13776:13786): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
 [INFO] 00:45:49:564 Deadlock/(13776:13786): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
 [INFO] 00:45:49:565 Deadlock/(13776:13786): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+[INFO] 08:47:20:290 Deadlock/(4668:4677): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 08:47:20:309 Deadlock/(4668:4677): La cantidad de procesos es: 2
+[INFO] 08:47:40:339 Deadlock/(4668:4677): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 08:47:40:341 Deadlock/(4668:4677): La cantidad de procesos es: 2
+[INFO] 08:49:24:561 Deadlock/(4897:4907): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 08:49:24:569 Deadlock/(4897:4907): La cantidad de procesos en posible deadlock son: 2
+[INFO] 08:49:24:654 Deadlock/(4897:4907): El proceso: 1, puede ser que genere un posible deadlock
+[INFO] 08:49:24:658 Deadlock/(4897:4907): El proceso: 0, puede ser que genere un posible deadlock
+[INFO] 08:49:44:666 Deadlock/(4897:4907): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 08:49:44:668 Deadlock/(4897:4907): La cantidad de procesos en posible deadlock son: 2
+[INFO] 08:49:44:691 Deadlock/(4897:4907): El proceso: 1, puede ser que genere un posible deadlock
+[INFO] 08:49:44:697 Deadlock/(4897:4907): El proceso: 0, puede ser que genere un posible deadlock
+[INFO] 08:50:04:702 Deadlock/(4897:4907): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 08:50:04:704 Deadlock/(4897:4907): La cantidad de procesos en posible deadlock son: 2
+[INFO] 08:50:04:736 Deadlock/(4897:4907): El proceso: 1, puede ser que genere un posible deadlock
+[INFO] 08:50:04:744 Deadlock/(4897:4907): El proceso: 0, puede ser que genere un posible deadlock
+[INFO] 09:43:03:057 Deadlock/(8119:8129): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:43:03:094 Deadlock/(8119:8129): La cantidad de procesos en posible deadlock son: 2
+[INFO] 09:43:03:171 Deadlock/(8119:8129): El proceso elegido para sacar del deadlock sera el proceso: 1
+[INFO] 09:43:03:181 Deadlock/(8119:8129): La cantidad de procesos en posible deadlock son: 1
+[INFO] 09:43:03:197 Deadlock/(8119:8129): El proceso elegido para sacar del deadlock sera el proceso: 0
+[INFO] 09:43:03:202 Deadlock/(8119:8129): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:43:03:206 Deadlock/(8119:8129): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:43:23:210 Deadlock/(8119:8129): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:43:23:211 Deadlock/(8119:8129): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:43:23:212 Deadlock/(8119:8129): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:46:07:724 Deadlock/(8561:8569): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:46:07:749 Deadlock/(8561:8569): La cantidad de procesos en posible deadlock son: 2
+[INFO] 09:46:07:754 Deadlock/(8561:8569): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:46:07:768 Deadlock/(8561:8569): 69407680
+[INFO] 09:46:07:770 Deadlock/(8561:8569): 134537036
+[INFO] 09:46:07:833 Deadlock/(8561:8569): El proceso elegido para sacar del deadlock sera el proceso: 1
+[INFO] 09:46:07:850 Deadlock/(8561:8569): La cantidad de procesos en posible deadlock son: 1
+[INFO] 09:46:07:857 Deadlock/(8561:8569): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:46:07:858 Deadlock/(8561:8569): 0
+[INFO] 09:46:07:859 Deadlock/(8561:8569): 1
+[INFO] 09:46:07:863 Deadlock/(8561:8569): El proceso elegido para sacar del deadlock sera el proceso: 0
+[INFO] 09:46:07:870 Deadlock/(8561:8569): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:46:07:874 Deadlock/(8561:8569): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:46:07:876 Deadlock/(8561:8569): 1
+[INFO] 09:46:07:877 Deadlock/(8561:8569): 0
+[INFO] 09:46:07:878 Deadlock/(8561:8569): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:46:27:884 Deadlock/(8561:8569): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:46:27:885 Deadlock/(8561:8569): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:46:27:885 Deadlock/(8561:8569): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:46:27:887 Deadlock/(8561:8569): 69407680
+[INFO] 09:46:27:888 Deadlock/(8561:8569): 134537036
+[INFO] 09:46:27:889 Deadlock/(8561:8569): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:46:47:893 Deadlock/(8561:8569): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:46:47:894 Deadlock/(8561:8569): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:46:47:895 Deadlock/(8561:8569): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:46:47:895 Deadlock/(8561:8569): 69407680
+[INFO] 09:46:47:896 Deadlock/(8561:8569): 134537036
+[INFO] 09:46:47:898 Deadlock/(8561:8569): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:47:07:903 Deadlock/(8561:8569): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:47:07:904 Deadlock/(8561:8569): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:47:07:906 Deadlock/(8561:8569): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:47:07:908 Deadlock/(8561:8569): 69407680
+[INFO] 09:47:07:911 Deadlock/(8561:8569): 134537036
+[INFO] 09:47:07:913 Deadlock/(8561:8569): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:48:10:750 Deadlock/(8763:8771): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:48:10:782 Deadlock/(8763:8771): La cantidad de procesos en posible deadlock son: 2
+[INFO] 09:48:10:786 Deadlock/(8763:8771): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:48:10:790 Deadlock/(8763:8771): 0
+[INFO] 09:48:10:793 Deadlock/(8763:8771): 0
+[INFO] 09:48:10:848 Deadlock/(8763:8771): El proceso elegido para sacar del deadlock sera el proceso: 1
+[INFO] 09:48:10:865 Deadlock/(8763:8771): La cantidad de procesos en posible deadlock son: 1
+[INFO] 09:48:10:877 Deadlock/(8763:8771): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:48:10:878 Deadlock/(8763:8771): 0
+[INFO] 09:48:10:879 Deadlock/(8763:8771): 1
+[INFO] 09:48:10:882 Deadlock/(8763:8771): El proceso elegido para sacar del deadlock sera el proceso: 0
+[INFO] 09:48:10:889 Deadlock/(8763:8771): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:48:10:893 Deadlock/(8763:8771): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:48:10:894 Deadlock/(8763:8771): 1
+[INFO] 09:48:10:895 Deadlock/(8763:8771): 1
+[INFO] 09:48:10:896 Deadlock/(8763:8771): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:48:30:901 Deadlock/(8763:8771): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:48:30:903 Deadlock/(8763:8771): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:48:30:903 Deadlock/(8763:8771): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:48:30:904 Deadlock/(8763:8771): 0
+[INFO] 09:48:30:905 Deadlock/(8763:8771): 0
+[INFO] 09:48:30:907 Deadlock/(8763:8771): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:52:11:707 Deadlock/(9076:9085): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:52:11:742 Deadlock/(9076:9085): La cantidad de procesos en posible deadlock son: 2
+[INFO] 09:52:11:744 Deadlock/(9076:9085): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:52:11:747 Deadlock/(9076:9085): 0
+[INFO] 09:52:11:750 Deadlock/(9076:9085): 0
+[INFO] 09:52:11:808 Deadlock/(9076:9085): El proceso elegido para sacar del deadlock sera el proceso: 1
+[INFO] 09:52:11:826 Deadlock/(9076:9085): La cantidad de procesos en posible deadlock son: 1
+[INFO] 09:52:11:836 Deadlock/(9076:9085): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:52:11:837 Deadlock/(9076:9085): 0
+[INFO] 09:52:11:838 Deadlock/(9076:9085): 1
+[INFO] 09:52:11:848 Deadlock/(9076:9085): El proceso elegido para sacar del deadlock sera el proceso: 0
+[INFO] 09:52:11:852 Deadlock/(9076:9085): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:52:11:856 Deadlock/(9076:9085): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:52:11:857 Deadlock/(9076:9085): 1
+[INFO] 09:52:11:858 Deadlock/(9076:9085): 1
+[INFO] 09:52:11:859 Deadlock/(9076:9085): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:52:31:870 Deadlock/(9076:9085): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:52:31:871 Deadlock/(9076:9085): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:52:31:872 Deadlock/(9076:9085): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:52:31:873 Deadlock/(9076:9085): 0
+[INFO] 09:52:31:874 Deadlock/(9076:9085): 0
+[INFO] 09:52:31:877 Deadlock/(9076:9085): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:52:51:881 Deadlock/(9076:9085): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:52:51:882 Deadlock/(9076:9085): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:52:51:883 Deadlock/(9076:9085): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:52:51:883 Deadlock/(9076:9085): 0
+[INFO] 09:52:51:885 Deadlock/(9076:9085): 0
+[INFO] 09:52:51:886 Deadlock/(9076:9085): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:55:03:276 Deadlock/(9345:9352): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:55:03:305 Deadlock/(9345:9352): La cantidad de procesos en posible deadlock son: 2
+[INFO] 09:55:03:311 Deadlock/(9345:9352): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:55:03:314 Deadlock/(9345:9352): 0
+[INFO] 09:55:03:318 Deadlock/(9345:9352): 0
+[INFO] 09:55:03:385 Deadlock/(9345:9352): El proceso elegido para sacar del deadlock sera el proceso: 1
+[INFO] 09:55:03:393 Deadlock/(9345:9352): La cantidad de procesos en posible deadlock son: 1
+[INFO] 09:55:03:402 Deadlock/(9345:9352): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:55:03:404 Deadlock/(9345:9352): 0
+[INFO] 09:55:03:405 Deadlock/(9345:9352): 1
+[INFO] 09:55:03:410 Deadlock/(9345:9352): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:55:23:418 Deadlock/(9345:9352): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:55:23:420 Deadlock/(9345:9352): La cantidad de procesos en posible deadlock son: 1
+[INFO] 09:55:23:422 Deadlock/(9345:9352): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:55:23:425 Deadlock/(9345:9352): 0
+[INFO] 09:55:23:426 Deadlock/(9345:9352): 0
+[INFO] 09:55:23:444 Deadlock/(9345:9352): El proceso elegido para sacar del deadlock sera el proceso: 0
+[INFO] 09:55:23:449 Deadlock/(9345:9352): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:55:23:455 Deadlock/(9345:9352): La matriz de disponibilidad va a tener los siguientes valores
+[INFO] 09:55:23:457 Deadlock/(9345:9352): 1
+[INFO] 09:55:23:458 Deadlock/(9345:9352): 0
+[INFO] 09:55:23:460 Deadlock/(9345:9352): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:56:52:794 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:56:52:817 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 2
+[INFO] 09:56:52:897 Deadlock/(9524:9531): El proceso elegido para sacar del deadlock sera el proceso: 1
+[INFO] 09:56:52:906 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 1
+[INFO] 09:56:52:927 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:57:12:937 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:57:12:941 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 1
+[INFO] 09:57:12:977 Deadlock/(9524:9531): El proceso elegido para sacar del deadlock sera el proceso: 0
+[INFO] 09:57:12:991 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:57:12:994 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:57:32:999 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:57:33:001 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:57:33:003 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:57:53:008 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:57:53:009 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:57:53:010 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:58:13:012 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:58:13:014 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:58:13:014 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:58:33:017 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:58:33:019 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:58:33:020 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:58:53:024 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:58:53:025 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:58:53:026 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:59:13:029 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:59:13:030 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:59:13:031 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:59:33:035 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:59:33:036 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:59:33:037 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 09:59:53:040 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 09:59:53:041 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 09:59:53:042 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:00:13:046 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:00:13:047 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:00:13:048 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:00:33:051 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:00:33:052 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:00:33:053 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:00:53:055 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:00:53:056 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:00:53:057 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:01:13:059 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:01:13:060 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:01:13:061 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:01:33:064 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:01:33:065 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:01:33:066 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:01:53:069 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:01:53:070 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:01:53:071 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:02:13:074 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:02:13:075 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:02:13:075 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:02:33:079 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:02:33:080 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:02:33:081 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:02:53:084 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:02:53:085 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:02:53:086 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:03:13:090 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:03:13:091 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:03:13:092 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:03:33:094 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:03:33:095 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:03:33:096 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:03:53:097 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:03:53:098 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:03:53:099 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:04:13:101 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:04:13:102 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:04:13:103 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:04:33:105 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:04:33:106 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:04:33:107 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:04:53:110 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:04:53:111 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:04:53:111 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:05:13:115 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:05:13:117 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:05:13:120 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:05:33:126 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:05:33:127 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:05:33:128 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:05:53:131 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:05:53:132 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:05:53:133 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:06:13:137 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:06:13:138 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:06:13:140 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:06:33:143 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:06:33:144 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:06:33:145 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:06:53:148 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:06:53:149 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:06:53:150 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:07:13:153 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:07:13:155 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:07:13:157 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:07:33:160 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:07:33:161 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:07:33:162 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:07:53:167 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:07:53:170 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:07:53:174 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:08:13:179 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:08:13:180 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:08:13:181 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:08:33:185 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:08:33:187 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:08:33:189 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:08:53:193 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:08:53:197 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:08:53:200 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal
+[INFO] 10:09:13:204 Deadlock/(9524:9531): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 10:09:13:205 Deadlock/(9524:9531): La cantidad de procesos en posible deadlock son: 0
+[INFO] 10:09:13:206 Deadlock/(9524:9531): No hay deadlock, dejamos que se ejecute todo normal

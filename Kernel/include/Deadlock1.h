@@ -16,7 +16,7 @@ void desbloquearTodosLosSemaforos();
 int procesoReteniendoProcesosYEsperando(proceso_kernel* proceso);
 t_list* procesosQueEstanReteniendoYEsperando();
 void rellenarVectorDisponibles(t_list* listaSemaforos, int vector[]);
-
+int procesoConMayorPID(proceso_kernel* p1, proceso_kernel* p2);
 
 
 

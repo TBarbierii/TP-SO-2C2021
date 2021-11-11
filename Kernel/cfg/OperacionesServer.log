@@ -216,3 +216,227 @@
 [INFO] 00:44:37:143 Operaciones/(13776:13783): Recibimos la informacion de un carpincho
 [INFO] 00:44:37:143 Operaciones/(13776:13783): El codigo de operacion es: 3
 [INFO] 00:44:37:143 Operaciones/(13776:13783): Vamos a hacer un wait de un semaforo
+[INFO] 08:47:04:480 Operaciones/(4668:4696): Recibimos la informacion de un carpincho
+[INFO] 08:47:04:482 Operaciones/(4668:4696): El codigo de operacion es: 0
+[INFO] 08:47:04:483 Operaciones/(4668:4696): Vamos a inicializar un carpincho
+[INFO] 08:47:04:485 Operaciones/(4668:4697): Recibimos la informacion de un carpincho
+[INFO] 08:47:04:495 Operaciones/(4668:4697): El codigo de operacion es: 0
+[INFO] 08:47:04:497 Operaciones/(4668:4697): Vamos a inicializar un carpincho
+[INFO] 08:47:04:885 Operaciones/(4668:4697): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 08:47:04:885 Operaciones/(4668:4696): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 08:47:04:887 Operaciones/(4668:4696): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 08:47:04:896 Operaciones/(4668:4697): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 08:47:05:228 Operaciones/(4668:4680): Recibimos la informacion de un carpincho
+[INFO] 08:47:05:228 Operaciones/(4668:4680): El codigo de operacion es: 2
+[INFO] 08:47:05:229 Operaciones/(4668:4680): Vamos a inicializar un semaforo
+[INFO] 08:47:05:252 Operaciones/(4668:4678): Recibimos la informacion de un carpincho
+[INFO] 08:47:05:253 Operaciones/(4668:4678): El codigo de operacion es: 2
+[INFO] 08:47:05:253 Operaciones/(4668:4678): Vamos a inicializar un semaforo
+[INFO] 08:47:05:287 Operaciones/(4668:4678): Recibimos la informacion de un carpincho
+[INFO] 08:47:05:289 Operaciones/(4668:4678): El codigo de operacion es: 3
+[INFO] 08:47:05:290 Operaciones/(4668:4680): Recibimos la informacion de un carpincho
+[INFO] 08:47:05:291 Operaciones/(4668:4680): El codigo de operacion es: 3
+[INFO] 08:47:05:292 Operaciones/(4668:4680): Vamos a hacer un wait de un semaforo
+[INFO] 08:47:05:320 Operaciones/(4668:4678): Vamos a hacer un wait de un semaforo
+[INFO] 08:47:08:340 Operaciones/(4668:4680): Recibimos la informacion de un carpincho
+[INFO] 08:47:08:342 Operaciones/(4668:4680): El codigo de operacion es: 3
+[INFO] 08:47:08:343 Operaciones/(4668:4678): Recibimos la informacion de un carpincho
+[INFO] 08:47:08:344 Operaciones/(4668:4678): El codigo de operacion es: 3
+[INFO] 08:47:08:345 Operaciones/(4668:4678): Vamos a hacer un wait de un semaforo
+[INFO] 08:47:08:345 Operaciones/(4668:4680): Vamos a hacer un wait de un semaforo
+[INFO] 08:49:06:544 Operaciones/(4897:4925): Recibimos la informacion de un carpincho
+[INFO] 08:49:06:546 Operaciones/(4897:4925): El codigo de operacion es: 0
+[INFO] 08:49:06:552 Operaciones/(4897:4925): Vamos a inicializar un carpincho
+[INFO] 08:49:06:562 Operaciones/(4897:4926): Recibimos la informacion de un carpincho
+[INFO] 08:49:06:563 Operaciones/(4897:4926): El codigo de operacion es: 0
+[INFO] 08:49:06:563 Operaciones/(4897:4926): Vamos a inicializar un carpincho
+[INFO] 08:49:06:999 Operaciones/(4897:4925): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 08:49:07:008 Operaciones/(4897:4925): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 08:49:07:021 Operaciones/(4897:4926): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 08:49:07:021 Operaciones/(4897:4926): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 08:49:07:392 Operaciones/(4897:4904): Recibimos la informacion de un carpincho
+[INFO] 08:49:07:393 Operaciones/(4897:4904): El codigo de operacion es: 2
+[INFO] 08:49:07:396 Operaciones/(4897:4904): Vamos a inicializar un semaforo
+[INFO] 08:49:07:403 Operaciones/(4897:4906): Recibimos la informacion de un carpincho
+[INFO] 08:49:07:404 Operaciones/(4897:4906): El codigo de operacion es: 2
+[INFO] 08:49:07:404 Operaciones/(4897:4906): Vamos a inicializar un semaforo
+[INFO] 08:49:07:425 Operaciones/(4897:4906): Recibimos la informacion de un carpincho
+[INFO] 08:49:07:433 Operaciones/(4897:4906): El codigo de operacion es: 3
+[INFO] 08:49:07:434 Operaciones/(4897:4904): Recibimos la informacion de un carpincho
+[INFO] 08:49:07:435 Operaciones/(4897:4904): El codigo de operacion es: 3
+[INFO] 08:49:07:436 Operaciones/(4897:4906): Vamos a hacer un wait de un semaforo
+[INFO] 08:49:07:436 Operaciones/(4897:4904): Vamos a hacer un wait de un semaforo
+[INFO] 08:49:10:473 Operaciones/(4897:4904): Recibimos la informacion de un carpincho
+[INFO] 08:49:10:475 Operaciones/(4897:4904): El codigo de operacion es: 3
+[INFO] 08:49:10:476 Operaciones/(4897:4904): Vamos a hacer un wait de un semaforo
+[INFO] 08:49:10:480 Operaciones/(4897:4906): Recibimos la informacion de un carpincho
+[INFO] 08:49:10:481 Operaciones/(4897:4906): El codigo de operacion es: 3
+[INFO] 08:49:10:482 Operaciones/(4897:4906): Vamos a hacer un wait de un semaforo
+[INFO] 09:42:45:460 Operaciones/(8119:8145): Recibimos la informacion de un carpincho
+[INFO] 09:42:45:462 Operaciones/(8119:8145): El codigo de operacion es: 0
+[INFO] 09:42:45:467 Operaciones/(8119:8145): Vamos a inicializar un carpincho
+[INFO] 09:42:45:480 Operaciones/(8119:8146): Recibimos la informacion de un carpincho
+[INFO] 09:42:45:482 Operaciones/(8119:8146): El codigo de operacion es: 0
+[INFO] 09:42:45:483 Operaciones/(8119:8146): Vamos a inicializar un carpincho
+[INFO] 09:42:45:708 Operaciones/(8119:8146): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 09:42:45:712 Operaciones/(8119:8145): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 09:42:45:712 Operaciones/(8119:8146): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 09:42:45:715 Operaciones/(8119:8145): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 09:42:46:058 Operaciones/(8119:8128): Recibimos la informacion de un carpincho
+[INFO] 09:42:46:059 Operaciones/(8119:8128): El codigo de operacion es: 2
+[INFO] 09:42:46:060 Operaciones/(8119:8128): Vamos a inicializar un semaforo
+[INFO] 09:42:46:086 Operaciones/(8119:8126): Recibimos la informacion de un carpincho
+[INFO] 09:42:46:086 Operaciones/(8119:8126): El codigo de operacion es: 2
+[INFO] 09:42:46:086 Operaciones/(8119:8126): Vamos a inicializar un semaforo
+[INFO] 09:42:46:109 Operaciones/(8119:8128): Recibimos la informacion de un carpincho
+[INFO] 09:42:46:113 Operaciones/(8119:8128): El codigo de operacion es: 3
+[INFO] 09:42:46:114 Operaciones/(8119:8126): Recibimos la informacion de un carpincho
+[INFO] 09:42:46:115 Operaciones/(8119:8128): Vamos a hacer un wait de un semaforo
+[INFO] 09:42:46:117 Operaciones/(8119:8126): El codigo de operacion es: 3
+[INFO] 09:42:46:142 Operaciones/(8119:8126): Vamos a hacer un wait de un semaforo
+[INFO] 09:42:49:157 Operaciones/(8119:8126): Recibimos la informacion de un carpincho
+[INFO] 09:42:49:159 Operaciones/(8119:8126): El codigo de operacion es: 3
+[INFO] 09:42:49:162 Operaciones/(8119:8126): Vamos a hacer un wait de un semaforo
+[INFO] 09:42:49:200 Operaciones/(8119:8128): Recibimos la informacion de un carpincho
+[INFO] 09:42:49:201 Operaciones/(8119:8128): El codigo de operacion es: 3
+[INFO] 09:42:49:201 Operaciones/(8119:8128): Vamos a hacer un wait de un semaforo
+[INFO] 09:45:50:009 Operaciones/(8561:8587): Recibimos la informacion de un carpincho
+[INFO] 09:45:50:010 Operaciones/(8561:8587): El codigo de operacion es: 0
+[INFO] 09:45:50:014 Operaciones/(8561:8587): Vamos a inicializar un carpincho
+[INFO] 09:45:50:019 Operaciones/(8561:8588): Recibimos la informacion de un carpincho
+[INFO] 09:45:50:027 Operaciones/(8561:8588): El codigo de operacion es: 0
+[INFO] 09:45:50:028 Operaciones/(8561:8588): Vamos a inicializar un carpincho
+[INFO] 09:45:50:422 Operaciones/(8561:8588): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 09:45:50:425 Operaciones/(8561:8588): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 09:45:50:436 Operaciones/(8561:8587): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 09:45:50:437 Operaciones/(8561:8587): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 09:45:50:803 Operaciones/(8561:8570): Recibimos la informacion de un carpincho
+[INFO] 09:45:50:804 Operaciones/(8561:8570): El codigo de operacion es: 2
+[INFO] 09:45:50:805 Operaciones/(8561:8570): Vamos a inicializar un semaforo
+[INFO] 09:45:50:814 Operaciones/(8561:8571): Recibimos la informacion de un carpincho
+[INFO] 09:45:50:814 Operaciones/(8561:8571): El codigo de operacion es: 2
+[INFO] 09:45:50:815 Operaciones/(8561:8571): Vamos a inicializar un semaforo
+[INFO] 09:45:50:831 Operaciones/(8561:8570): Recibimos la informacion de un carpincho
+[INFO] 09:45:50:832 Operaciones/(8561:8571): Recibimos la informacion de un carpincho
+[INFO] 09:45:50:832 Operaciones/(8561:8571): El codigo de operacion es: 3
+[INFO] 09:45:50:832 Operaciones/(8561:8570): El codigo de operacion es: 3
+[INFO] 09:45:50:833 Operaciones/(8561:8571): Vamos a hacer un wait de un semaforo
+[INFO] 09:45:50:833 Operaciones/(8561:8570): Vamos a hacer un wait de un semaforo
+[INFO] 09:45:53:858 Operaciones/(8561:8571): Recibimos la informacion de un carpincho
+[INFO] 09:45:53:862 Operaciones/(8561:8571): El codigo de operacion es: 3
+[INFO] 09:45:53:864 Operaciones/(8561:8571): Vamos a hacer un wait de un semaforo
+[INFO] 09:45:53:866 Operaciones/(8561:8570): Recibimos la informacion de un carpincho
+[INFO] 09:45:53:867 Operaciones/(8561:8570): El codigo de operacion es: 3
+[INFO] 09:45:53:868 Operaciones/(8561:8570): Vamos a hacer un wait de un semaforo
+[INFO] 09:47:57:128 Operaciones/(8763:8805): Recibimos la informacion de un carpincho
+[INFO] 09:47:57:129 Operaciones/(8763:8804): Recibimos la informacion de un carpincho
+[INFO] 09:47:57:130 Operaciones/(8763:8804): El codigo de operacion es: 0
+[INFO] 09:47:57:131 Operaciones/(8763:8805): El codigo de operacion es: 0
+[INFO] 09:47:57:133 Operaciones/(8763:8805): Vamos a inicializar un carpincho
+[INFO] 09:47:57:134 Operaciones/(8763:8804): Vamos a inicializar un carpincho
+[INFO] 09:47:57:349 Operaciones/(8763:8804): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 09:47:57:350 Operaciones/(8763:8804): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 09:47:57:351 Operaciones/(8763:8805): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 09:47:57:357 Operaciones/(8763:8805): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 09:47:57:716 Operaciones/(8763:8775): Recibimos la informacion de un carpincho
+[INFO] 09:47:57:716 Operaciones/(8763:8775): El codigo de operacion es: 2
+[INFO] 09:47:57:717 Operaciones/(8763:8775): Vamos a inicializar un semaforo
+[INFO] 09:47:57:727 Operaciones/(8763:8772): Recibimos la informacion de un carpincho
+[INFO] 09:47:57:727 Operaciones/(8763:8772): El codigo de operacion es: 2
+[INFO] 09:47:57:727 Operaciones/(8763:8772): Vamos a inicializar un semaforo
+[INFO] 09:47:57:749 Operaciones/(8763:8772): Recibimos la informacion de un carpincho
+[INFO] 09:47:57:749 Operaciones/(8763:8772): El codigo de operacion es: 3
+[INFO] 09:47:57:750 Operaciones/(8763:8772): Vamos a hacer un wait de un semaforo
+[INFO] 09:47:57:751 Operaciones/(8763:8775): Recibimos la informacion de un carpincho
+[INFO] 09:47:57:751 Operaciones/(8763:8775): El codigo de operacion es: 3
+[INFO] 09:47:57:753 Operaciones/(8763:8775): Vamos a hacer un wait de un semaforo
+[INFO] 09:48:00:789 Operaciones/(8763:8775): Recibimos la informacion de un carpincho
+[INFO] 09:48:00:791 Operaciones/(8763:8775): El codigo de operacion es: 3
+[INFO] 09:48:00:792 Operaciones/(8763:8775): Vamos a hacer un wait de un semaforo
+[INFO] 09:48:00:795 Operaciones/(8763:8772): Recibimos la informacion de un carpincho
+[INFO] 09:48:00:796 Operaciones/(8763:8772): El codigo de operacion es: 3
+[INFO] 09:48:00:800 Operaciones/(8763:8772): Vamos a hacer un wait de un semaforo
+[INFO] 09:51:53:792 Operaciones/(9076:9103): Recibimos la informacion de un carpincho
+[INFO] 09:51:53:793 Operaciones/(9076:9103): El codigo de operacion es: 0
+[INFO] 09:51:53:795 Operaciones/(9076:9103): Vamos a inicializar un carpincho
+[INFO] 09:51:53:796 Operaciones/(9076:9105): Recibimos la informacion de un carpincho
+[INFO] 09:51:53:798 Operaciones/(9076:9105): El codigo de operacion es: 0
+[INFO] 09:51:53:801 Operaciones/(9076:9105): Vamos a inicializar un carpincho
+[INFO] 09:51:54:293 Operaciones/(9076:9103): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 09:51:54:295 Operaciones/(9076:9103): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 09:51:54:298 Operaciones/(9076:9105): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 09:51:54:302 Operaciones/(9076:9105): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 09:51:54:707 Operaciones/(9076:9089): Recibimos la informacion de un carpincho
+[INFO] 09:51:54:710 Operaciones/(9076:9089): El codigo de operacion es: 2
+[INFO] 09:51:54:711 Operaciones/(9076:9089): Vamos a inicializar un semaforo
+[INFO] 09:51:54:740 Operaciones/(9076:9086): Recibimos la informacion de un carpincho
+[INFO] 09:51:54:741 Operaciones/(9076:9086): El codigo de operacion es: 2
+[INFO] 09:51:54:741 Operaciones/(9076:9086): Vamos a inicializar un semaforo
+[INFO] 09:51:54:770 Operaciones/(9076:9089): Recibimos la informacion de un carpincho
+[INFO] 09:51:54:770 Operaciones/(9076:9089): El codigo de operacion es: 3
+[INFO] 09:51:54:771 Operaciones/(9076:9089): Vamos a hacer un wait de un semaforo
+[INFO] 09:51:54:773 Operaciones/(9076:9086): Recibimos la informacion de un carpincho
+[INFO] 09:51:54:781 Operaciones/(9076:9086): El codigo de operacion es: 3
+[INFO] 09:51:54:781 Operaciones/(9076:9086): Vamos a hacer un wait de un semaforo
+[INFO] 09:51:57:813 Operaciones/(9076:9089): Recibimos la informacion de un carpincho
+[INFO] 09:51:57:814 Operaciones/(9076:9089): El codigo de operacion es: 3
+[INFO] 09:51:57:816 Operaciones/(9076:9089): Vamos a hacer un wait de un semaforo
+[INFO] 09:51:57:818 Operaciones/(9076:9086): Recibimos la informacion de un carpincho
+[INFO] 09:51:57:819 Operaciones/(9076:9086): El codigo de operacion es: 3
+[INFO] 09:51:57:819 Operaciones/(9076:9086): Vamos a hacer un wait de un semaforo
+[INFO] 09:54:44:235 Operaciones/(9345:9368): Recibimos la informacion de un carpincho
+[INFO] 09:54:44:236 Operaciones/(9345:9367): Recibimos la informacion de un carpincho
+[INFO] 09:54:44:237 Operaciones/(9345:9367): El codigo de operacion es: 0
+[INFO] 09:54:44:238 Operaciones/(9345:9367): Vamos a inicializar un carpincho
+[INFO] 09:54:44:247 Operaciones/(9345:9368): El codigo de operacion es: 0
+[INFO] 09:54:44:249 Operaciones/(9345:9368): Vamos a inicializar un carpincho
+[INFO] 09:54:44:599 Operaciones/(9345:9367): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 09:54:44:600 Operaciones/(9345:9367): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 09:54:44:602 Operaciones/(9345:9368): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 09:54:44:604 Operaciones/(9345:9368): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 09:54:44:962 Operaciones/(9345:9357): Recibimos la informacion de un carpincho
+[INFO] 09:54:44:962 Operaciones/(9345:9357): El codigo de operacion es: 2
+[INFO] 09:54:44:963 Operaciones/(9345:9357): Vamos a inicializar un semaforo
+[INFO] 09:54:44:974 Operaciones/(9345:9353): Recibimos la informacion de un carpincho
+[INFO] 09:54:44:974 Operaciones/(9345:9353): El codigo de operacion es: 2
+[INFO] 09:54:44:977 Operaciones/(9345:9353): Vamos a inicializar un semaforo
+[INFO] 09:54:44:995 Operaciones/(9345:9357): Recibimos la informacion de un carpincho
+[INFO] 09:54:44:997 Operaciones/(9345:9357): El codigo de operacion es: 3
+[INFO] 09:54:44:997 Operaciones/(9345:9353): Recibimos la informacion de un carpincho
+[INFO] 09:54:44:998 Operaciones/(9345:9357): Vamos a hacer un wait de un semaforo
+[INFO] 09:54:44:999 Operaciones/(9345:9353): El codigo de operacion es: 3
+[INFO] 09:54:45:000 Operaciones/(9345:9353): Vamos a hacer un wait de un semaforo
+[INFO] 09:54:48:036 Operaciones/(9345:9353): Recibimos la informacion de un carpincho
+[INFO] 09:54:48:038 Operaciones/(9345:9353): El codigo de operacion es: 3
+[INFO] 09:54:48:040 Operaciones/(9345:9357): Recibimos la informacion de un carpincho
+[INFO] 09:54:48:041 Operaciones/(9345:9357): El codigo de operacion es: 3
+[INFO] 09:54:48:042 Operaciones/(9345:9357): Vamos a hacer un wait de un semaforo
+[INFO] 09:54:48:044 Operaciones/(9345:9353): Vamos a hacer un wait de un semaforo
+[INFO] 09:56:34:678 Operaciones/(9524:9546): Recibimos la informacion de un carpincho
+[INFO] 09:56:34:679 Operaciones/(9524:9546): El codigo de operacion es: 0
+[INFO] 09:56:34:681 Operaciones/(9524:9546): Vamos a inicializar un carpincho
+[INFO] 09:56:34:684 Operaciones/(9524:9547): Recibimos la informacion de un carpincho
+[INFO] 09:56:34:685 Operaciones/(9524:9547): El codigo de operacion es: 0
+[INFO] 09:56:34:688 Operaciones/(9524:9547): Vamos a inicializar un carpincho
+[INFO] 09:56:35:093 Operaciones/(9524:9547): Un nuevo carpincho se une a la manada del kernel, y su pid es: 0
+[INFO] 09:56:35:094 Operaciones/(9524:9547): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 0
+[INFO] 09:56:35:090 Operaciones/(9524:9546): Un nuevo carpincho se une a la manada del kernel, y su pid es: 1
+[INFO] 09:56:35:103 Operaciones/(9524:9546): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: 1
+[INFO] 09:56:35:516 Operaciones/(9524:9532): Recibimos la informacion de un carpincho
+[INFO] 09:56:35:517 Operaciones/(9524:9532): El codigo de operacion es: 2
+[INFO] 09:56:35:522 Operaciones/(9524:9532): Vamos a inicializar un semaforo
+[INFO] 09:56:35:536 Operaciones/(9524:9534): Recibimos la informacion de un carpincho
+[INFO] 09:56:35:537 Operaciones/(9524:9534): El codigo de operacion es: 2
+[INFO] 09:56:35:537 Operaciones/(9524:9534): Vamos a inicializar un semaforo
+[INFO] 09:56:35:562 Operaciones/(9524:9532): Recibimos la informacion de un carpincho
+[INFO] 09:56:35:563 Operaciones/(9524:9534): Recibimos la informacion de un carpincho
+[INFO] 09:56:35:565 Operaciones/(9524:9532): El codigo de operacion es: 3
+[INFO] 09:56:35:567 Operaciones/(9524:9534): El codigo de operacion es: 3
+[INFO] 09:56:35:568 Operaciones/(9524:9532): Vamos a hacer un wait de un semaforo
+[INFO] 09:56:35:568 Operaciones/(9524:9534): Vamos a hacer un wait de un semaforo
+[INFO] 09:56:38:602 Operaciones/(9524:9534): Recibimos la informacion de un carpincho
+[INFO] 09:56:38:604 Operaciones/(9524:9534): El codigo de operacion es: 3
+[INFO] 09:56:38:605 Operaciones/(9524:9534): Vamos a hacer un wait de un semaforo
+[INFO] 09:56:38:611 Operaciones/(9524:9532): Recibimos la informacion de un carpincho
+[INFO] 09:56:38:612 Operaciones/(9524:9532): El codigo de operacion es: 3
+[INFO] 09:56:38:612 Operaciones/(9524:9532): Vamos a hacer un wait de un semaforo

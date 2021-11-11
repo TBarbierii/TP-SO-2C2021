@@ -24,9 +24,11 @@ int cantidadDeVecesQueProcesoPideASemaforo(proceso_kernel* procesoActual, semafo
 
 
 
+
 void ejecutarAlgoritmoDeadlock(){
     t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_INFO);
     while(1){
+
         sleep(20);
         pthread_mutex_lock(controladorSemaforos);
         bloquearTodosLosSemaforos();
@@ -38,23 +40,34 @@ void ejecutarAlgoritmoDeadlock(){
 
         log_info(logger,"Se ejecuta algoritmo de deteccion y recuperacion de deadlock");
 
+        int cantidadSemaforos = list_size(semaforosActuales);
+        int disponibilidad[cantidadSemaforos];
+        t_list* listaFinalADesalojar = list_create();
+        rellenarVectorDisponibles(semaforosActuales, disponibilidad);
 
         while(1){
-            int cantidadSemaforos = list_size(semaforosActuales);
+            
             t_list* procesosPosiblesEnDeadlock = procesosQueEstanReteniendoYEsperando();
             int cantidadProcesos = list_size(procesosPosiblesEnDeadlock);
-            if(cantidadDeProcesosActual <= 1){
+            log_info(logger,"La cantidad de procesos en posible deadlock son: %d",cantidadProcesos);
+            /* 
+            if(cantidadProcesos <= 1){
                 log_info(logger,"No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos");
                 break;
             }
+            */
+           
+           
+            
+
             //sacamos todas las matrices y vectores para realizar el algoritmo
-            int disponibilidad[cantidadSemaforos];
-            int matrizRecursosRetenidos[cantidadDeProcesosActual][cantidadSemaforos];
-            int matrizRecursosPeticiones[cantidadDeProcesosActual][cantidadSemaforos];
+            
+            int matrizRecursosRetenidos[cantidadProcesos][cantidadSemaforos];
+            int matrizRecursosPeticiones[cantidadProcesos][cantidadSemaforos];
 
             
 
-            rellenarVectorDisponibles(semaforosActuales, disponibilidad);
+            
             
             
             //rellenamos las dos matrices
@@ -71,31 +84,31 @@ void ejecutarAlgoritmoDeadlock(){
                 for(int j= 0; j < cantidadSemaforos; j++){
                     proceso_kernel* procesoActual = list_get(procesosPosiblesEnDeadlock, i);
                     semaforo* semaforoActual = list_get(semaforosActuales, j);
-                    matrizRecursosRetenidos[i][j] = cantidadDeVecesQueProcesoPideASemaforo(procesoActual,semaforoActual);
+                    matrizRecursosPeticiones[i][j] = cantidadDeVecesQueProcesoPideASemaforo(procesoActual,semaforoActual);
                 }
             }
 
             //ahora creamos los vectores de WORK y FINISH
-            int finish[cantidadDeProcesosActual];
+            int finish[cantidadProcesos];
             int work[cantidadSemaforos];
             
             for(int i= 0; i< cantidadSemaforos; i ++){
                 work[i]=disponibilidad[i];
             }
             //como todos los procesos que filtramos estan reteniendo algo, todos van a comenzar con Finish[i] == false
-            for(int i= 0; i< cantidadDeProcesosActual; i ++){
+            for(int i= 0; i< cantidadProcesos; i ++){
                 finish[i]=0;
             }
 
 
             //ahora ejecutamos la secuencia de comparacion
-            for(int i= 0 ; i< cantidadDeProcesosActual; i ++){
+            for(int i= 0 ; i< cantidadProcesos; i ++){
                 
                 int cumple = 1;
                 
                 for(int j=0; j< cantidadSemaforos; j ++){
                     
-                    if(matrizRecursosRetenidos[i][j] > disponibilidad[j]){
+                    if(matrizRecursosPeticiones[i][j] > disponibilidad[j]){
                     //con que se pida mas en alguno de los semaforos, ya no cumple
                     cumple = 0;
                     }
@@ -112,7 +125,7 @@ void ejecutarAlgoritmoDeadlock(){
             }
 
             t_list* procesosEnDeadlock = list_create();
-            for(int j=0; j< cantidadDeProcesosActual; j ++){
+            for(int j=0; j< cantidadProcesos; j ++){
                     
                 if(finish[j] == 0){
                     proceso_kernel* procesoEnElDeadlock = list_get(procesosPosiblesEnDeadlock, j);
@@ -124,14 +137,31 @@ void ejecutarAlgoritmoDeadlock(){
                 log_info(logger,"No hay deadlock, dejamos que se ejecute todo normal");
                 break;
             }
-            while(!list_is_empty(procesosEnDeadlock)){
-                proceso_kernel* proceso= list_remove(procesosEnDeadlock,0);
-                log_info(logger,"El proceso: %d, puede ser que genere un posible deadlock", proceso->pid);
+
+            
+            //ordenamos la lista para poner el de mayor id primero
+            list_sort(procesosEnDeadlock,procesoConMayorPID);
+            proceso_kernel* procesoASacarPorDeadlock = list_get(procesosEnDeadlock, 0);
+            log_info(logger,"El proceso elegido para sacar del deadlock sera el proceso: %d", procesoASacarPorDeadlock->pid);
+
+            //primero lo sacamos de bloqueado
+            sacarProcesoDeBloqueado(procesoASacarPorDeadlock->pid);
+            
+            //le sacamos todos los recursos, y despues de que no haya mas deadlock vamos a sacarle los recursos de manera real y hacer los signal correspondientes
+            int indice = indiceDondeProcesoEstaEnLaLista(procesoASacarPorDeadlock->pid, procesosPosiblesEnDeadlock);
+            for(int i=0; i< cantidadSemaforos; i++){
+                //los recursos que tenia retenidos, se los damos como disponible ahora al vector de disponibilidad
+                disponibilidad[i] += matrizRecursosRetenidos[indice][i];
             }
-            break;
+
+            list_add(listaFinalADesalojar, procesoASacarPorDeadlock);
+            list_destroy(procesosPosiblesEnDeadlock);
+            list_destroy(procesosEnDeadlock);
 
         }
-        
+
+        //luego de toda la simulacion y de agregar a todos a la lista de los considerados de deadlock, les eliminamos de en serio los recursos
+        list_destroy(listaFinalADesalojar);
 
         pthread_mutex_unlock(modificarSuspendedReady);
         pthread_mutex_unlock(modificarReady);
@@ -143,6 +173,47 @@ void ejecutarAlgoritmoDeadlock(){
     } 
 
     log_destroy(logger);
+
+}
+
+int procesoConMayorPID(proceso_kernel* p1, proceso_kernel* p2){
+    return p1->pid > p2->pid;
+}
+
+int indiceDondeProcesoEstaEnLaLista(int pid, t_list* lista){
+   int noEsta = -1;
+   int indice = 0;
+
+
+   int esElProcesoBuscado(proceso_kernel* procesoBuscado){
+       if(procesoBuscado->pid == pid){
+           return 1;
+       }else{
+           indice++;
+           return 0;
+       }
+   }
+
+    proceso_kernel* procesoBuscado = list_find(lista, esElProcesoBuscado);
+    if(procesoBuscado != NULL){
+        return indice;
+    }else{
+        return noEsta;
+    }
+}
+
+
+void sacarProcesoDeBloqueado(int PID){
+    
+    int procesoBloqueado(proceso_kernel * proceso){
+        return proceso->pid == PID;
+    }
+
+    proceso_kernel* procesoASacar = list_remove_by_condition(procesosBlocked, procesoBloqueado);
+    if(procesoASacar == NULL){
+        proceso_kernel* procesoASacarSiNoEstaEnBlock = list_remove_by_condition(procesosSuspendedBlock, procesoBloqueado);
+    }
+
 
 }
 
