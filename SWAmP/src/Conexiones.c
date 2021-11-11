@@ -3,19 +3,17 @@
 
 int iniciar_servidor_swamp() {
 
-	t_log* logger_nuevo =  log_create("cfg/Servidor.log","Servidor",1,LOG_LEVEL_DEBUG);
-
 	int servidor = iniciar_servidor(ip_swap, puerto_swap); // devuelve el socket del servidor
 	
-	log_info(logger_nuevo,"Inicializacion del servidor con exito, esperando conexion...");
+	log_info(logger_swamp,"Inicializacion del servidor con exito, esperando conexion...");
 
 	while(1){
 		int conexion = esperar_cliente(servidor);
-		log_info(logger_nuevo,"Solicitud de memoria entrante");
+		log_info(logger_swamp,"Solicitud de memoria entrante");
 		atender_mensaje_ram(conexion);
 	}
 
-	log_destroy(logger_nuevo);
+	log_destroy(logger_swamp);
 }
 
 uint32_t recibir_operacion(uint32_t socket_cliente) {

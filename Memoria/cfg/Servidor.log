@@ -2214,3 +2214,78 @@ Tamanio: -1228929400
 [INFO] 19:18:53:411 Servidor/(6969:7022): Sacamos al carpincho. Pid: 2
 [INFO] 19:18:53:411 Servidor/(6969:7022): Enviamos que queremos cerrar el carpincho
 [INFO] 19:18:53:411 Servidor/(6969:7022): Se nos va el carpincho: 2
+[INFO] 14:03:56:444 Servidor/(4467:4635): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 14:03:56:543 Servidor/(4467:4635): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 14:03:57:436 Servidor/(4467:4650): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 14:03:57:437 Servidor/(4467:4650): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 14:03:58:153 Servidor/(4467:4657): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 14:03:58:155 Servidor/(4467:4657): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 14:03:59:869 Servidor/(4467:4635): Sacamos al carpincho. Pid: 0
+[INFO] 14:03:59:869 Servidor/(4467:4635): Enviamos que queremos cerrar el carpincho
+[INFO] 14:03:59:871 Servidor/(4467:4635): Se nos va el carpincho: 0
+[INFO] 14:04:00:869 Servidor/(4467:4650): Sacamos al carpincho. Pid: 1
+[INFO] 14:04:00:870 Servidor/(4467:4650): Enviamos que queremos cerrar el carpincho
+[INFO] 14:04:00:870 Servidor/(4467:4650): Se nos va el carpincho: 1
+[INFO] 14:04:02:892 Servidor/(4467:4657): Sacamos al carpincho. Pid: 2
+[INFO] 14:04:02:892 Servidor/(4467:4657): Enviamos que queremos cerrar el carpincho
+[INFO] 14:04:02:892 Servidor/(4467:4657): Se nos va el carpincho: 2
+[INFO] 14:10:26:993 Servidor/(4467:5013): Agregamos nuevo carpincho a memoria, y su pid es: 3
+[INFO] 14:10:26:995 Servidor/(4467:5013): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 3
+[INFO] 14:10:27:948 Servidor/(4467:5025): Agregamos nuevo carpincho a memoria, y su pid es: 4
+[INFO] 14:10:27:949 Servidor/(4467:5025): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 4
+[INFO] 14:10:28:716 Servidor/(4467:5033): Agregamos nuevo carpincho a memoria, y su pid es: 5
+[INFO] 14:10:28:717 Servidor/(4467:5033): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 5
+[INFO] 14:10:37:103 Servidor/(4467:5013): Sacamos al carpincho. Pid: 3
+[INFO] 14:10:37:103 Servidor/(4467:5013): Enviamos que queremos cerrar el carpincho
+[INFO] 14:10:37:103 Servidor/(4467:5013): Se nos va el carpincho: 3
+[INFO] 14:10:47:107 Servidor/(4467:5025): Sacamos al carpincho. Pid: 4
+[INFO] 14:10:47:107 Servidor/(4467:5025): Enviamos que queremos cerrar el carpincho
+[INFO] 14:10:47:108 Servidor/(4467:5025): Se nos va el carpincho: 4
+[INFO] 14:10:57:108 Servidor/(4467:5033): Sacamos al carpincho. Pid: 5
+[INFO] 14:10:57:108 Servidor/(4467:5033): Enviamos que queremos cerrar el carpincho
+[INFO] 14:10:57:108 Servidor/(4467:5033): Se nos va el carpincho: 5
+[INFO] 14:13:38:247 Servidor/(4467:5343): Agregamos nuevo carpincho a memoria, y su pid es: 6
+[INFO] 14:13:38:248 Servidor/(4467:5343): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 6
+[INFO] 14:13:38:804 Servidor/(4467:5352): Agregamos nuevo carpincho a memoria, y su pid es: 7
+[INFO] 14:13:38:805 Servidor/(4467:5352): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 7
+[INFO] 14:13:39:474 Servidor/(4467:5359): Agregamos nuevo carpincho a memoria, y su pid es: 8
+[INFO] 14:13:39:475 Servidor/(4467:5359): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 8
+[INFO] 14:13:50:495 Servidor/(4467:5343): Sacamos al carpincho. Pid: 6
+[INFO] 14:13:50:496 Servidor/(4467:5343): Enviamos que queremos cerrar el carpincho
+[INFO] 14:13:50:496 Servidor/(4467:5343): Se nos va el carpincho: 6
+[INFO] 14:14:00:493 Servidor/(4467:5352): Sacamos al carpincho. Pid: 7
+[INFO] 14:14:00:494 Servidor/(4467:5352): Enviamos que queremos cerrar el carpincho
+[INFO] 14:14:00:495 Servidor/(4467:5352): Se nos va el carpincho: 7
+[INFO] 14:14:10:497 Servidor/(4467:5359): Sacamos al carpincho. Pid: 8
+[INFO] 14:14:10:497 Servidor/(4467:5359): Enviamos que queremos cerrar el carpincho
+[INFO] 14:14:10:497 Servidor/(4467:5359): Se nos va el carpincho: 8
+[INFO] 14:19:44:235 Servidor/(4467:5794): Agregamos nuevo carpincho a memoria, y su pid es: 9
+[INFO] 14:19:44:235 Servidor/(4467:5794): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 9
+[INFO] 14:19:45:333 Servidor/(4467:5804): Agregamos nuevo carpincho a memoria, y su pid es: 10
+[INFO] 14:19:45:334 Servidor/(4467:5804): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 10
+[INFO] 14:19:46:223 Servidor/(4467:5811): Agregamos nuevo carpincho a memoria, y su pid es: 11
+[INFO] 14:19:46:224 Servidor/(4467:5811): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 11
+[INFO] 14:19:56:485 Servidor/(4467:5794): Sacamos al carpincho. Pid: 9
+[INFO] 14:19:56:486 Servidor/(4467:5794): Enviamos que queremos cerrar el carpincho
+[INFO] 14:19:56:486 Servidor/(4467:5794): Se nos va el carpincho: 9
+[INFO] 14:20:06:486 Servidor/(4467:5804): Sacamos al carpincho. Pid: 10
+[INFO] 14:20:06:488 Servidor/(4467:5804): Enviamos que queremos cerrar el carpincho
+[INFO] 14:20:06:488 Servidor/(4467:5804): Se nos va el carpincho: 10
+[INFO] 14:20:16:488 Servidor/(4467:5811): Sacamos al carpincho. Pid: 11
+[INFO] 14:20:16:488 Servidor/(4467:5811): Enviamos que queremos cerrar el carpincho
+[INFO] 14:20:16:489 Servidor/(4467:5811): Se nos va el carpincho: 11
+[INFO] 14:23:34:060 Servidor/(4467:6159): Agregamos nuevo carpincho a memoria, y su pid es: 12
+[INFO] 14:23:34:061 Servidor/(4467:6159): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 12
+[INFO] 14:23:34:932 Servidor/(4467:6168): Agregamos nuevo carpincho a memoria, y su pid es: 13
+[INFO] 14:23:34:934 Servidor/(4467:6168): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 13
+[INFO] 14:23:35:590 Servidor/(4467:6175): Agregamos nuevo carpincho a memoria, y su pid es: 14
+[INFO] 14:23:35:591 Servidor/(4467:6175): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 14
+[INFO] 14:23:46:647 Servidor/(4467:6159): Sacamos al carpincho. Pid: 12
+[INFO] 14:23:46:647 Servidor/(4467:6159): Enviamos que queremos cerrar el carpincho
+[INFO] 14:23:46:647 Servidor/(4467:6159): Se nos va el carpincho: 12
+[INFO] 14:23:56:646 Servidor/(4467:6168): Sacamos al carpincho. Pid: 13
+[INFO] 14:23:56:646 Servidor/(4467:6168): Enviamos que queremos cerrar el carpincho
+[INFO] 14:23:56:647 Servidor/(4467:6168): Se nos va el carpincho: 13
+[INFO] 14:24:06:646 Servidor/(4467:6175): Sacamos al carpincho. Pid: 14
+[INFO] 14:24:06:647 Servidor/(4467:6175): Enviamos que queremos cerrar el carpincho
+[INFO] 14:24:06:647 Servidor/(4467:6175): Se nos va el carpincho: 14

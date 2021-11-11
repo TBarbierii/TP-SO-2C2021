@@ -42,18 +42,27 @@ void inicializarMemoria() {
 }
 
 void inicializarTodo(){
+    
     inicializarListas();
 
     listaCarpinchos = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(listaCarpinchos,NULL);
 
-
     controladorIds = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(controladorIds,NULL);
 
+    controladorIdsPaginas = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(controladorIdsPaginas,NULL);
+
+    TLB_mutex = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(TLB_mutex ,NULL);
+    
+    memoria = malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(memoria,NULL);
+
     id_pag = 1;
     id_carpincho = 0;
-    id_marco = 0;
+
     hits_totales=0;
     miss_totales=0;
 
@@ -101,7 +110,7 @@ int main(){
     
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     
-    alloc->pid = 1;
+    alloc->pid = 6;
     alloc->tamanio = 45;
 
     /* uint32_t direccionLogica = administrar_allocs(alloc);
@@ -145,7 +154,7 @@ int main(){
 
     uint32_t direccionLogica4 = administrar_allocs(alloc);
 
-        alloc->pid = 1;
+        alloc->pid = 6;
     alloc->tamanio = 43;
 
     uint32_t direccionLogica5 = administrar_allocs(alloc);
@@ -160,7 +169,7 @@ int main(){
 
     uint32_t direccionLogica7 = administrar_allocs(alloc);
 
-        alloc->pid = 1;
+        alloc->pid = 6;
     alloc->tamanio = 35;
 
     uint32_t direccionLogica8 = administrar_allocs(alloc);
@@ -180,7 +189,7 @@ int main(){
 
     uint32_t direccionLogica11 = administrar_allocs(alloc);
 
-            alloc->pid = 1;
+    alloc->pid = 6;
     alloc->tamanio = 10;
 
     uint32_t direccionLogica12 = administrar_allocs(alloc);

@@ -104,6 +104,7 @@ void agregarProcesoADispositivo(proceso_kernel* proceso, dispositivoIO* device){
         list_add(device->listaDeProcesosEnEspera,proceso);
     pthread_mutex_unlock(device->mutex);
 
+
     pthread_mutex_lock(modificarBlocked);
         list_add(procesosBlocked,proceso);
         sem_post(signalSuspensionProceso);

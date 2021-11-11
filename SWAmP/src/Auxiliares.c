@@ -96,10 +96,45 @@ int cantidad_frames_disponibles(swap_files* archivoSwap) {
     if(archivoSwap != NULL){
         //aca vamos a poner las particiones libres de un archivo
         particiones_libres = list_filter(archivoSwap->particiones_swap, pagina_libre); 
-        int cantidad_frames =  list_size(particiones_libres);
+        int cantidad_frames = list_size(particiones_libres);
         list_destroy(particiones_libres);
         return cantidad_frames;
     }
     
+    return 0;
+}
+
+int cantidad_frames_disponibles_para_proceso(swap_files* archivo_swap, int PID) {
+
+    int cantidad_frames = 0;
+
+    if(archivo_swap != NULL) {
+        if(tipo_asignacion == 1) {
+
+            t_list* particiones_libres_de_proceso;
+            
+            bool particionesDisponiblesParaProceso(particion* particion_para_proceso) {
+                if(particion_para_proceso->esta_libre == 0 && particion_para_proceso->hay_contenido == 0) {
+                    if(particion_para_proceso->pid == PID) {
+                        return 1;
+                    }
+                }
+                return 0;
+            }
+
+            particiones_libres_de_proceso = list_filter(archivo_swap->particiones_swap, particionesDisponiblesParaProceso);
+            cantidad_frames = list_size(particiones_libres_de_proceso);
+            list_destroy(particiones_libres_de_proceso);
+            log_info(logger_swamp, "Cantidad de frames disponibles para el proceso %i: %i", PID, cantidad_frames);
+            return cantidad_frames;
+
+        }else if(tipo_asignacion == 0) {
+            cantidad_frames = cantidad_frames_disponibles(archivo_swap);
+            log_info(logger_swamp, "Cantidad de frames disponibles para el proceso %i: %i", PID, cantidad_frames);
+            return cantidad_frames;
+        }
+    }
+    log_info(logger_swamp, "No hay espacio suficiente en el archivo %s para el proceso %i", archivo_swap->path, PID);
+
     return 0;
 }

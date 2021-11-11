@@ -32,17 +32,19 @@ char* puertoSWAmP;
 
 uint32_t id_pag; //inicializar en algun lado 
 uint32_t id_carpincho; //inicializar
-uint32_t id_marco; //inicializar
+
 
 uint32_t hits_totales;
 uint32_t miss_totales;
 
-uint32_t punteroClock;
 
 /* Semaforos */
 
-pthread_mutex_t * listaCarpinchos;
 pthread_mutex_t * controladorIds;
+pthread_mutex_t * controladorIdsPaginas;
+pthread_mutex_t * listaCarpinchos;
+pthread_mutex_t * TLB_mutex;
+pthread_mutex_t * memoria;
 
 /* Estructuras Administrativas */
 
@@ -185,7 +187,6 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 /* Auxiliares */
 uint32_t generadorIdsPaginas();
 uint32_t aumentarIdCarpinchos();
-uint32_t generadorIdsMarcos();
 uint32_t generarDireccionLogica(uint32_t , uint32_t);
 uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica);
 uint32_t obtenerDesplazamiento(uint32_t);
