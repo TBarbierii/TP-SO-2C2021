@@ -12,6 +12,7 @@
 #include <commons/string.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include <pthread.h>
 
 
 
@@ -120,7 +121,7 @@ void inicializarSemaforo(int conexion, mate_sem_name nombreSemaforo, unsigned in
 
 void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo, int pid);
 
-void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo);
+void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo, int pid);
 
 void liberarSemaforo(int conexion, mate_sem_name nombreSemaforo);
 

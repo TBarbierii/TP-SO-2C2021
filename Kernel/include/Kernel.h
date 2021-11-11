@@ -22,7 +22,7 @@
 #include "Semaforos.h"
 #include "Servidor.h"
 #include "DispositivosIO.h"
-
+#include "Deadlock1.h"
 
 
 

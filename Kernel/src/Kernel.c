@@ -236,7 +236,7 @@ int main(){
 
     t_log* logger = log_create("cfg/KernelActual.log","KernelActual",0,LOG_LEVEL_INFO);
 
-    
+    valorIdSemaforos = 0;
     cantidadDeProcesosActual = 0;
 
     inicializarListas();
@@ -258,17 +258,19 @@ int main(){
     
 // toda la logica de los planificadores y del servidor 
     
-    pthread_t servidor, pCortoPlazo, pLargoPlazo, pMedianoPlazo;
+    pthread_t servidor, pCortoPlazo, pLargoPlazo, pMedianoPlazo, algoritmoDeadlock;
 		
     pthread_create(&servidor,NULL,(void*)atenderSolicitudesKernel,NULL);
-      pthread_create(&pLargoPlazo,NULL,(void*)planificadorLargoPlazo,NULL);
-      pthread_create(&pCortoPlazo,NULL,(void*)planificadorCortoPlazo,NULL);
-      pthread_create(&pMedianoPlazo,NULL,(void*)planificadorMedianoPlazo,NULL);
-        
-      pthread_join(servidor,NULL);
-      pthread_join(pMedianoPlazo,NULL);
-      pthread_join(pLargoPlazo,NULL);
-      pthread_join(pCortoPlazo,NULL);
+    pthread_create(&pLargoPlazo,NULL,(void*)planificadorLargoPlazo,NULL);
+    pthread_create(&pCortoPlazo,NULL,(void*)planificadorCortoPlazo,NULL);
+    pthread_create(&pMedianoPlazo,NULL,(void*)planificadorMedianoPlazo,NULL);
+    pthread_create(&algoritmoDeadlock, NULL, (void*)ejecutarAlgoritmoDeadlock,NULL);    
+      
+    pthread_join(servidor,NULL);
+    pthread_join(pMedianoPlazo,NULL);
+    pthread_join(pLargoPlazo,NULL);
+    pthread_join(pCortoPlazo,NULL);
+    pthread_join(algoritmoDeadlock,NULL);
       
      
 // ------------------------------------------ 

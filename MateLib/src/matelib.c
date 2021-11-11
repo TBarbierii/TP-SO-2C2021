@@ -72,7 +72,7 @@ int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
     
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un signal sobre el semaforo: %s", sem);
-    realizarPostSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
+    realizarPostSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
     int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
     return valorRetorno;
       
@@ -567,14 +567,17 @@ void realizarWaitSemaforo(int conexion, mate_sem_name nombreSemaforo, int pid){
     enviarPaquete(paquete,conexion);
 }
 
-void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo){
+void realizarPostSemaforo(int conexion, mate_sem_name nombreSemaforo, int pid){
     t_paquete* paquete = crear_paquete(SEM_SIGNAL);
 
-    paquete->buffer->size = sizeof(uint32_t) + string_length(nombreSemaforo) +1;
+    paquete->buffer->size = sizeof(uint32_t)*2 + string_length(nombreSemaforo) +1;
     paquete->buffer->stream = malloc(paquete->buffer->size);
 
     int desplazamiento = 0;
     uint32_t tamanioNombre = string_length(nombreSemaforo)+1;
+
+    memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
 
     memcpy(paquete->buffer->stream + desplazamiento, &(tamanioNombre) , sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
@@ -695,24 +698,56 @@ int validarConexionPosible(int tipoSolicitado, int tipoActual){
 }
 
 
-int main(){
-    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
-
+void hilo1(){
+    mate_instance* referencia = malloc(sizeof(mate_instance));
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    mate_sem_init(referencia,"SEM1",1);
+    mate_sem_wait(referencia,"SEM1");
+    sleep(3);
+    mate_sem_wait(referencia,"SEM2");
+    mate_close(referencia);
+    free(referencia);
+}
+
+void hilo2(){
+    mate_instance* referencia = malloc(sizeof(mate_instance));
+    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    mate_sem_init(referencia,"SEM2",1);
+    mate_sem_wait(referencia,"SEM2");
+    sleep(3);
+    mate_sem_wait(referencia,"SEM1");
+    mate_close(referencia);
+    free(referencia);
+}
+
+int main(){
+    //mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
+
+    //mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     
     //mate_sem_init(referencia,"SEM1",1);
     //mate_sem_post(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
     //mate_sem_wait(referencia,"SEM1");
-    mate_call_io(referencia,"laguna","asd");
-
+    //mate_call_io(referencia,"laguna","asd");
     //mate_pointer = mate_memalloc(....);
     //mate_memfree(,....)
+    //mate_close(referencia);
+    //free(referencia);
+    
+    
+    pthread_t h1, h2;
 
+    pthread_create(&h1, NULL, (void*)hilo1,NULL);  
+    pthread_create(&h2, NULL, (void*)hilo2,NULL);  
 
-    mate_close(referencia);
-    free(referencia);
+    pthread_join(h1, NULL);
+    pthread_join(h1, NULL);
 
+    
     return 0;
 }
+
+
+
 

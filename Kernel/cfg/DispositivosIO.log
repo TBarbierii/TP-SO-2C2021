@@ -42,3 +42,11 @@
 [INFO] 14:23:56:640 DispositivosIO/(6138:6140): Termino de ejecutar el proceso:13 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
 [INFO] 14:23:56:641 DispositivosIO/(6138:6140): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:10000
 [INFO] 14:24:06:641 DispositivosIO/(6138:6140): Termino de ejecutar el proceso:14 sobre el dispositivo IO:laguna, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 22:43:04:363 DispositivosIO/(5140:5140): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10000
+[DEBUG] 22:43:04:368 DispositivosIO/(5140:5140): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 10000
+[DEBUG] 00:14:39:231 DispositivosIO/(10859:10859): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10000
+[DEBUG] 00:14:39:240 DispositivosIO/(10859:10859): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 10000
+[DEBUG] 00:40:28:325 DispositivosIO/(13412:13412): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10000
+[DEBUG] 00:40:28:335 DispositivosIO/(13412:13412): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 10000
+[DEBUG] 00:44:29:282 DispositivosIO/(13776:13776): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 10000
+[DEBUG] 00:44:29:288 DispositivosIO/(13776:13776): Se crea un hilo para ejecutar el Dispositivio IO: hierbitas, con tiempo de espera: 10000

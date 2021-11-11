@@ -123,8 +123,8 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 	procesoNuevo->tiempoDeEspera = 0;
 	procesoNuevo->ultimaRafagaEjecutada = 0;
 	procesoNuevo->vuelveDeBloqueo = NO_BLOQUEADO; //con esto vamos a decir que no realizo ningunn bloqueo todavia
-	
-
+	procesoNuevo->listaRecursosRetenidos = list_create();
+	procesoNuevo->listaRecursosSolicitados = list_create();
 
 	pthread_mutex_lock(modificarNew);
 		list_add(procesosNew, procesoNuevo);
@@ -263,6 +263,10 @@ void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
 	void* stream = buffer->stream;
 	int desplazamiento = 0;
 	int tamanioNombre;
+	int pid;
+
+	memcpy(&(pid), stream+desplazamiento, sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
 
 	memcpy(&(tamanioNombre), stream+desplazamiento, sizeof(uint32_t));
 	desplazamiento += sizeof(uint32_t);
@@ -270,7 +274,7 @@ void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
 	char* nombre = malloc(tamanioNombre);
 	memcpy(nombre, stream+desplazamiento, tamanioNombre);
 	
-	int valorReturn = realizarSignalDeSemaforo(nombre);
+	int valorReturn = realizarSignalDeSemaforo(nombre, pid);
 	
 	avisarPostDeSemaforo(conexion,valorReturn);
 

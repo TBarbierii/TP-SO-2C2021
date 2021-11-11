@@ -1,0 +1,16 @@
+[INFO] 00:40:31:044 loggerContenidoProceso/(13433:13434): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 00:40:31:164 loggerContenidoProceso/(13433:13434): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 00:40:31:178 loggerContenidoProceso/(13433:13434): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 00:40:31:178 loggerContenidoProceso/(13433:13434): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 00:40:31:179 loggerContenidoProceso/(13433:13434): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 00:40:34:702 loggerContenidoProceso/(13433:13434): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 00:40:34:702 loggerContenidoProceso/(13433:13434): Se ha solicitado cerrar el carpincho, este es un hasta adios
+[INFO] 00:44:33:991 loggerContenidoProceso/(13797:13799): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 00:44:34:093 loggerContenidoProceso/(13797:13799): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 00:44:34:111 loggerContenidoProceso/(13797:13799): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 00:44:34:113 loggerContenidoProceso/(13797:13799): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 00:44:34:122 loggerContenidoProceso/(13797:13799): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 00:44:34:138 loggerContenidoProceso/(13797:13799): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 00:44:34:138 loggerContenidoProceso/(13797:13799): Se pudo hacer el wait del semaforo
+[INFO] 00:44:37:139 loggerContenidoProceso/(13797:13799): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 00:46:07:638 loggerContenidoProceso/(13797:13799): Se ha solicitado cerrar el carpincho, este es un hasta adios

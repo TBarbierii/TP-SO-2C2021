@@ -1,0 +1,14 @@
+[INFO] 00:40:31:169 Semaforos/(13412:13423): Se ha creado un nuevo semaforo de nombre: SEM1 y valor: 1
+[INFO] 00:40:31:176 Semaforos/(13412:13421): Se ha creado un nuevo semaforo de nombre: SEM2 y valor: 1
+[INFO] 00:40:31:193 Semaforos/(13412:13423): Se realizo un wait del semaforo: SEM1 y el valor decrecio a: 0
+[INFO] 00:40:31:192 Semaforos/(13412:13421): Se realizo un wait del semaforo: SEM2 y el valor decrecio a: 0
+[INFO] 00:44:34:102 Semaforos/(13776:13783): Se ha creado un nuevo semaforo de nombre: SEM2 y valor: 1
+[INFO] 00:44:34:110 Semaforos/(13776:13785): Se ha creado un nuevo semaforo de nombre: SEM1 y valor: 1
+[INFO] 00:44:34:129 Semaforos/(13776:13785): Se realizo un wait del semaforo: SEM1 y el valor decrecio a: 0
+[INFO] 00:44:34:130 Semaforos/(13776:13783): Se realizo un wait del semaforo: SEM2 y el valor decrecio a: 0
+[INFO] 00:44:34:133 Semaforos/(13776:13785): Se ejecuto un wait sobre un semaforo:SEM1, pero como el valor no era menor a 1, entonces no se bloqueo
+[INFO] 00:44:34:133 Semaforos/(13776:13783): Se ejecuto un wait sobre un semaforo:SEM2, pero como el valor no era menor a 1, entonces no se bloqueo
+[INFO] 00:44:37:141 Semaforos/(13776:13785): Se realizo un wait del semaforo: SEM2 y el valor decrecio a: -1
+[INFO] 00:44:37:143 Semaforos/(13776:13783): Se realizo un wait del semaforo: SEM1 y el valor decrecio a: -1
+[INFO] 00:44:37:144 Semaforos/(13776:13783): Se agrega el proceso con Pid:0 en bloqueado, y se agrega en la lista de espera del semaforo: SEM1
+[INFO] 00:44:37:143 Semaforos/(13776:13785): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM2

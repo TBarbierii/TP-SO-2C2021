@@ -31,7 +31,9 @@ int crearSemaforo(char* nombreSem, unsigned int valorSem){
 
         /*esto se va a hacer con el uso de un mutex para controlar el uso de la lista de semaforos global */
         pthread_mutex_lock(controladorSemaforos);
+            semaforoNuevo->id = valorIdSemaforos;
             list_add(semaforosActuales, semaforoNuevo);
+            valorIdSemaforos++;
         pthread_mutex_unlock(controladorSemaforos);
 
         log_destroy(logger);
@@ -87,7 +89,7 @@ int destruirSemaforo(char* nombreSem){
 }
 
 
-int realizarSignalDeSemaforo(char* nombreSem){
+int realizarSignalDeSemaforo(char* nombreSem, int pid){
 
     t_log* logger = log_create("cfg/Semaforos.log","Semaforos",0,LOG_LEVEL_INFO);
 
@@ -114,9 +116,28 @@ int realizarSignalDeSemaforo(char* nombreSem){
 
         log_info(logger,"Se realizo un signal del semaforo: %s y el valor se incremento a: %d", nombreSem, semaforoActual->valor);
 
+        bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
+                if(procesoBuscado->pid == pid){
+                    return 1;
+                }else{
+                    return 0;
+                }
+            }
+
+            
+        pthread_mutex_lock(modificarExec);
+            proceso_kernel* procesoAbloquear = list_find(procesosExec,buscarProcesoConPid);
+        pthread_mutex_unlock(modificarExec);
+            //le sacamos el recurso que esta reteniendo ya que no lo retendria mas
+            list_remove_by_condition(procesoAbloquear->listaRecursosRetenidos, semaforoConNombreSolicitado);
+        pthread_mutex_unlock(semaforoActual->mutex);
+
+
         if(!list_is_empty(semaforoActual->listaDeProcesosEnEspera)){ // si tiene procesos esperando, liberamos 1
             
             proceso_kernel* procesoLiberado = list_remove(semaforoActual->listaDeProcesosEnEspera, 0);
+                //ahora el primero que estaba bloqueado en ese semaforo, pasara a retener al semaforo
+                list_add(procesoLiberado->listaRecursosRetenidos, semaforoActual);
             pthread_mutex_unlock(semaforoActual->mutex);
 
             log_info(logger,"Se libera un proceso de la lista de espera del semaforo: %s", nombreSem);
@@ -173,9 +194,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
 
         log_info(logger,"Se realizo un wait del semaforo: %s y el valor decrecio a: %d", nombreSem, semaforoActual->valor);
 
-        if(semaforoActual->valor < 0){ //si el valor es menor a 1, lo vamos a bloquear
-            
-            bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
+        bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
                 if(procesoBuscado->pid == pid){
                     return 1;
                 }else{
@@ -183,12 +202,17 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
                 }
             }
 
+        if(semaforoActual->valor < 0){ //si el valor es menor a 1, lo vamos a bloquear
+            
+            
+
             //lo sacamos de la lista de ejecucion
             pthread_mutex_lock(modificarExec);
             proceso_kernel* procesoAbloquear = list_remove_by_condition(procesosExec,buscarProcesoConPid);
             pthread_mutex_unlock(modificarExec);
-
-            list_add(semaforoActual->listaDeProcesosEnEspera, procesoAbloquear); /* lo agregamos a la lista de bloqueados del semaforo */
+                //le asignamos que va a solicitar el recurso, porque no lo va a poder retener
+                list_add(procesoAbloquear->listaRecursosSolicitados, semaforoActual);
+                list_add(semaforoActual->listaDeProcesosEnEspera, procesoAbloquear); /* lo agregamos a la lista de bloqueados del semaforo */
             pthread_mutex_unlock(semaforoActual->mutex);
 
 
@@ -207,6 +231,15 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             return 0;
 
         }else{ // si el valor no es <0, no se bloquearia el proceso
+
+
+            //lo sacamos de la lista de ejecucion
+            pthread_mutex_lock(modificarExec);
+            proceso_kernel* procesoAbloquear = list_find(procesosExec,buscarProcesoConPid);
+            pthread_mutex_unlock(modificarExec);
+                //le asignamos que tiene el recurso como retenido
+                list_add(procesoAbloquear->listaRecursosRetenidos, semaforoActual);
+            pthread_mutex_unlock(semaforoActual->mutex);
             
             log_info(logger,"Se ejecuto un wait sobre un semaforo:%s, pero como el valor no era menor a 1, entonces no se bloqueo", nombreSem);
             pthread_mutex_unlock(semaforoActual->mutex);

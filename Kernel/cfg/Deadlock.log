@@ -1,0 +1,24 @@
+[INFO] 22:43:05:392 Deadlock/(5140:5150): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 22:43:06:393 Deadlock/(5140:5150): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 22:43:07:394 Deadlock/(5140:5150): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 22:43:08:395 Deadlock/(5140:5150): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 22:43:09:396 Deadlock/(5140:5150): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 22:43:10:397 Deadlock/(5140:5150): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 22:43:11:397 Deadlock/(5140:5150): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 22:43:12:398 Deadlock/(5140:5150): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:14:40:260 Deadlock/(10859:10867): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:14:40:262 Deadlock/(10859:10867): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+[INFO] 00:14:41:264 Deadlock/(10859:10867): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:14:41:264 Deadlock/(10859:10867): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+[INFO] 00:14:42:265 Deadlock/(10859:10867): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:14:42:265 Deadlock/(10859:10867): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+[INFO] 00:14:43:265 Deadlock/(10859:10867): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:14:43:266 Deadlock/(10859:10867): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+[INFO] 00:44:49:310 Deadlock/(13776:13786): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:44:49:311 Deadlock/(13776:13786): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+[INFO] 00:45:09:561 Deadlock/(13776:13786): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:45:09:562 Deadlock/(13776:13786): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+[INFO] 00:45:29:563 Deadlock/(13776:13786): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:45:29:563 Deadlock/(13776:13786): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+[INFO] 00:45:49:564 Deadlock/(13776:13786): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:45:49:565 Deadlock/(13776:13786): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
