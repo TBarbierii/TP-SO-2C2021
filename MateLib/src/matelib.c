@@ -120,10 +120,10 @@ int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
 int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int size){
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memRead %d", origin);
-    realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, info, size);
-    origin = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+    realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
+    info = recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
 
-     if(origin != NULL)
+     if(info != NULL)
      {
         return 0;
     }
@@ -135,7 +135,7 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
     
-    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d", dest);
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d", size);
     realizarMemWrite( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, dest, size);
     mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
     return valor;
@@ -222,15 +222,15 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
             valorRetorno = notificacionMemAlloc(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case MEMFREE:;
-            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memalloc");
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memfree");
             valorRetorno = notificacionMemFree(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case MEMREAD:;
-            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memalloc");
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memread");
             retornoMensaje = notificacionMemRead(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         case MEMWRITE:;
-            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memalloc");
+            log_info(lib_ref->group_info->loggerProceso,"Habiamos solicitado hacer un memwrite");
             valorRetorno = notificacionMemWrite(paquete->buffer, lib_ref->group_info->loggerProceso);
             break;
         default:;
@@ -413,9 +413,9 @@ int notificacionMemAlloc(t_buffer* buffer, t_log* logger){
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
     if(valor < 0){
-        log_info(logger,"No se pudo hacer el memalloc del size solicitado");
+        log_error(logger,"No se pudo hacer el memalloc del size solicitado");
     }else{
-        log_error(logger,"Se pudo realizar el memalloc");
+        log_info(logger,"Se pudo realizar el memalloc");
     }
 
     return valor;
@@ -721,9 +721,10 @@ void hilo2(){
 }
 
 int main(){
-    //mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
 
-    //mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
+
+    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     
     //mate_sem_init(referencia,"SEM1",1);
     //mate_sem_post(referencia,"SEM1");
@@ -735,14 +736,25 @@ int main(){
     //mate_close(referencia);
     //free(referencia);
     
+
+    uint32_t direccion = mate_memalloc(referencia, 45);
+    void* lectura = malloc(45);
+    printf("\nDireccion %i\n", direccion);
+
+    mate_memwrite(referencia, "-----------------------------------------1-45", direccion, 45);
+    mate_memread(referencia, direccion, lectura,45);
+
+    printf("\nLeimos: %s", (char*)lectura);
+    mate_close(referencia);
+    free(referencia);
     
-    pthread_t h1, h2;
+    /* pthread_t h1, h2;
 
     pthread_create(&h1, NULL, (void*)hilo1,NULL);  
     pthread_create(&h2, NULL, (void*)hilo2,NULL);  
 
     pthread_join(h1, NULL);
-    pthread_join(h1, NULL);
+    pthread_join(h1, NULL);*/
 
     
     return 0;

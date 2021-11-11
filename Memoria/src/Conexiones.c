@@ -42,6 +42,7 @@ void atender_solicitudes_multihilo(){
 void atender_solicitudes_memoria(uint32_t conexion){
 	
 	t_log* logger =  log_create("cfg/Servidor.log","Servidor",1,LOG_LEVEL_DEBUG);
+	uint32_t DL;
 	
 	while (1){
 	
@@ -53,7 +54,17 @@ void atender_solicitudes_memoria(uint32_t conexion){
 				inicializar_carpincho(conexion, logger);
 				break;
 			case MEMALLOC:
-				recibir_memalloc(conexion, logger);	
+				DL = recibir_memalloc(conexion, logger);
+
+				t_paquete* paquete = crear_paquete(MEMALLOC);
+				paquete->buffer->size = sizeof(uint32_t);
+				paquete->buffer->stream = malloc(paquete->buffer->size);
+				int desplazamiento = 0;
+
+				memcpy(paquete->buffer->stream + desplazamiento, &(DL) , sizeof(uint32_t));
+
+				enviarPaquete(paquete, conexion);
+					
 				break;
 			case MEMFREE:
 				recibir_memfree(conexion, logger);
@@ -261,13 +272,13 @@ int32_t recibir_memfree(int socket_cliente, t_log* logger) {
 
 int32_t recibir_memread(int socket_cliente, t_log* logger) {
 
-	uint32_t offset, carpincho, direccion_logica, tamanio;
+	int32_t offset=0, carpincho, direccion_logica, tamanio;
 	void* buffer = recibir_buffer(socket_cliente);
 	
 	memcpy(&carpincho, buffer, sizeof(uint32_t));
-	offset =+ sizeof(uint32_t);
-	memcpy(&direccion_logica, buffer + offset,sizeof(uint32_t));
-	offset =+ sizeof(uint32_t);
+	offset += sizeof(uint32_t);
+	memcpy(&direccion_logica, buffer + offset,sizeof(int32_t));
+	offset += sizeof(uint32_t);
 	memcpy(&tamanio, buffer + offset, sizeof(uint32_t));
 
 	free(buffer);
@@ -293,14 +304,14 @@ int32_t recibir_memread(int socket_cliente, t_log* logger) {
 	log_info(logger, "\nRecibimos memread: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
 
 	void* leido = leer_memoria(direccion_logica, carpincho, tamanio);//si es invalida la direccion devolver contenido vacio
-	
+
 	t_paquete *paquete = crear_paquete(MEMREAD);
 
 	paquete->buffer->size = tamanio + sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	offset=0;
 
-	memcpy(paquete->buffer->stream, tamanio, sizeof(uint32_t));
+	memcpy(paquete->buffer->stream, &tamanio, sizeof(uint32_t));
 	offset += sizeof(uint32_t);
     memcpy(paquete->buffer->stream + offset, leido , tamanio);
 
@@ -311,15 +322,15 @@ int32_t recibir_memread(int socket_cliente, t_log* logger) {
 
 int32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 
-	uint32_t offset, carpincho, direccion_logica, tamanio;
+	int32_t offset=0, carpincho, direccion_logica, tamanio;
 	void* buffer = recibir_buffer(socket_cliente);
 	
 	memcpy(&carpincho, buffer, sizeof(uint32_t));
-	offset =+ sizeof(uint32_t);
-	memcpy(&direccion_logica, buffer + offset,sizeof(uint32_t));
-	offset =+ sizeof(uint32_t);
+	offset += sizeof(uint32_t);
+	memcpy(&direccion_logica, buffer + offset,sizeof(int32_t));
+	offset += sizeof(int32_t);
 	memcpy(&tamanio, buffer + offset, sizeof(uint32_t));
-	offset =+ sizeof(uint32_t);
+	offset += sizeof(uint32_t);
 
 	void* contenido = malloc(tamanio);
 
@@ -345,9 +356,20 @@ int32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 		return -7;
 	}
 
-	log_info(logger, "\nRecibimos memwrite: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
+	log_info(logger, "\nRecibimos memwrite: \n Pid: %i \nDirecLogica: %i \nTamanio: %i", carpincho, direccion_logica, tamanio);
 
-	//escribir_memoria(carpincho, direccion_logica, contenido, tamanio); Retorna un entero si se pudo escribir o no
+	escribir_memoria(carpincho, direccion_logica, contenido, tamanio);// Retorna un entero si se pudo escribir o no
+	
+	t_paquete *paquete = crear_paquete(MEMWRITE);
+
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	offset=0;
+	uint32_t confirmacion =0;
+
+    memcpy(paquete->buffer->stream + offset, &confirmacion, sizeof(uint32_t));
+
+	enviarPaquete(paquete, socket_cliente);
 
 	return 0;
 }

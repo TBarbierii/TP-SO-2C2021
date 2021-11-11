@@ -26,31 +26,14 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
             vaciar_particion(particion_para_sobreescribir, nombreArchivo);  // Habria que probar esto
 
             log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
-            typedef struct {
-
-                int32_t prevAlloc;
-                int32_t nextAlloc;
-                uint8_t isFree;
-
-            } __attribute__((packed)) heapMetadata;
-
-            heapMetadata* heap = malloc(9);
-
-            memcpy(heap, mensajeAEscribir + 23, 9);
-            log_info(logger,"El contenido del heap es: %i, %i, %i", heap->prevAlloc, heap->nextAlloc, heap->isFree);
-
-
             log_info(logger,"Se sobreescribe sobre la particion: %i", particion_para_sobreescribir->num_particion);
 
             int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
             truncate(archivoAEscribir->path, tamanio_swap);
             void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
-            if(size < tamanio_pagina){ //podria pasar que lo que nos manda memoria, ocupe menos tamaño que una pagina el contenido, por lo tanto vamos a guardar el tamaño solamente
-                memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), mensajeAEscribir, size);
-            }else{
-                memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), mensajeAEscribir, tamanio_pagina); 
-            }   
+            memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), mensajeAEscribir, tamanio_pagina); 
+  
             munmap(contenidoArchivo, tamanio_swap);
             close(fd);
 
@@ -64,29 +47,14 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
                 particionAmodificar->num_pagina = pagina;
 
                 log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
-                            typedef struct {
-
-                int32_t prevAlloc;
-                int32_t nextAlloc;
-                uint8_t isFree;
-
-            } __attribute__((packed)) heapMetadata;
-
-            heapMetadata* heap = malloc(9);
-
-            memcpy(heap, mensajeAEscribir + 23, 9);
-            log_info(logger,"El contenido del heap es: %i, %i, %i", heap->prevAlloc, heap->nextAlloc, heap->isFree);
                 log_info(logger,"Se escribe sobre la particion: %i", particionAmodificar->num_particion);
 
                 int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
                 truncate(archivoAEscribir->path, tamanio_swap);
                 void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
-                if(size < tamanio_pagina){ //podria pasar que lo que nos manda memoria, ocupe menos tamaño que una pagina el contenido, por lo tanto vamos a guardar el tamaño solamente
-                    memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), mensajeAEscribir, size);
-                }else{
-                    memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), mensajeAEscribir, tamanio_pagina);                   
-                }   
+                memcpy(contenidoArchivo  + (particionAmodificar->inicio_particion), mensajeAEscribir, tamanio_pagina);                   
+  
                 munmap(contenidoArchivo, tamanio_swap);
                 close(fd);
 
@@ -167,18 +135,6 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
             memcpy(contenidoParaLoggear + tamanio_pagina, &(valorsitoParaString),1);
             log_info(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
-                        typedef struct {
-
-                int32_t prevAlloc;
-                int32_t nextAlloc;
-                uint8_t isFree;
-
-            } __attribute__((packed)) heapMetadata;
-
-            heapMetadata* heap = malloc(9);
-
-            memcpy(heap, contenido_a_leer + 23, 9);
-            log_info(logger,"El contenido del heap leido es: %i, %i, %i", heap->prevAlloc, heap->nextAlloc, heap->isFree);
             log_info(logger,"El contenido leido es %s", contenidoParaLoggear);
             free(contenidoParaLoggear);
 

@@ -12,13 +12,13 @@ uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpincho
     pthread_mutex_lock(listaCarpinchos);
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
     pthread_mutex_unlock(listaCarpinchos);
-    
+    //marcos_a_asignar = reservarMarcos(carpincho->id_carpincho); //ver como poner esto cuando no hay kernel
     //si no lo encuentra crearlo
     if (carpincho == NULL){
      carpincho = malloc(sizeof(t_carpincho));
      carpincho->id_carpincho = alloc->pid;
      carpincho->tabla_de_paginas = list_create();
-     carpincho->tlb_hit=0;
+     carpincho->tlb_hit=0;                              //volar todo esto 
      carpincho->tlb_miss=0;
      carpincho->punteroClock=0;
 

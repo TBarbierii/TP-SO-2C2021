@@ -102,18 +102,26 @@ int main(){
 	{
 		perror ("No se puede cambiar signal");
 	}
+    if (signal(SIGUSR1, manejador_de_seniales) == SIG_ERR)
+	{
+		perror ("No se puede cambiar signal");
+	}
+    if (signal(SIGUSR2, manejador_de_seniales) == SIG_ERR)
+	{
+		perror ("No se puede cambiar signal");
+	}
 
-    //enviar_tipo_asignacion(tipoAsignacion);
+    enviar_tipo_asignacion(tipoAsignacion);
     //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
     atender_solicitudes_multihilo();
-    /*
+    
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     
     alloc->pid = 6;
     alloc->tamanio = 45;
 
-     uint32_t direccionLogica = administrar_allocs(alloc);
+     /*uint32_t direccionLogica = administrar_allocs(alloc);
 
     alloc->pid = 1;
     alloc->tamanio = 43;
@@ -129,7 +137,7 @@ int main(){
     alloc->tamanio = 10;
 
     uint32_t direccionLogica3 = administrar_allocs(alloc);
-
+*/
 
 
     uint32_t direccionLogica = administrar_allocs(alloc);
@@ -226,34 +234,34 @@ int main(){
     void* prueba13 = "------3-10";
 
 
-    escribir_memoria(1, direccionLogica, prueba, 45);
+    escribir_memoria(6, direccionLogica, prueba, 45);
     escribir_memoria(2, direccionLogica1, prueba1, 20);
     escribir_memoria(3, direccionLogica2, prueba2, 30);
     escribir_memoria(2, direccionLogica3, prueba3, 26);
     escribir_memoria(3, direccionLogica4, prueba4, 15);
-    escribir_memoria(1, direccionLogica5, prueba5, 43);
+    escribir_memoria(6, direccionLogica5, prueba5, 43);
     escribir_memoria(3, direccionLogica6, prueba6, 30);
     escribir_memoria(2, direccionLogica7, prueba7, 10);
-    escribir_memoria(1, direccionLogica8, prueba8, 35);
+    escribir_memoria(6, direccionLogica8, prueba8, 35);
     escribir_memoria(2, direccionLogica9, prueba9, 16);
     escribir_memoria(3, direccionLogica10, prueba10, 15);
     escribir_memoria(2, direccionLogica11, prueba11, 30);
-    escribir_memoria(1, direccionLogica12, prueba12, 10);
+    escribir_memoria(6, direccionLogica12, prueba12, 10);
     escribir_memoria(3, direccionLogica13, prueba13, 10);
 
-    void* hola = leer_memoria(direccionLogica, 1, 45);
+    void* hola = leer_memoria(direccionLogica, 6, 45);
     void* hola1 = leer_memoria(direccionLogica1, 2, 20);
     void* hola2 = leer_memoria(direccionLogica2, 3, 30);
     void* hola3 = leer_memoria(direccionLogica3, 2, 26);
     void* hola4 = leer_memoria(direccionLogica4, 3, 15);
-    void* hola5 = leer_memoria(direccionLogica5, 1, 43);
+    void* hola5 = leer_memoria(direccionLogica5, 6, 43);
     void* hola6 = leer_memoria(direccionLogica6, 3, 30);
     void* hola7 = leer_memoria(direccionLogica7, 2, 10);
-    void* hola8 = leer_memoria(direccionLogica8, 1, 35);
+    void* hola8 = leer_memoria(direccionLogica8, 6, 35);
     void* hola9 = leer_memoria(direccionLogica9, 2, 16);
     void* hola10 = leer_memoria(direccionLogica10, 3, 15);
     void* hola11 = leer_memoria(direccionLogica11, 2, 30);
-    void* hola12 = leer_memoria(direccionLogica12, 1, 10);
+    void* hola12 = leer_memoria(direccionLogica12, 6, 10);
     void* hola13 = leer_memoria(direccionLogica13, 3, 10);
 
     printf("\nSe leyo: %s", (char*)hola);
@@ -271,7 +279,7 @@ int main(){
     printf("\nSe leyo: %s", (char*)hola12);
     printf("\nSe leyo: %s\n", (char*)hola13);
 
-    */
+    
     finalizarTodo(configActual);
     return 0;
 }

@@ -685,7 +685,7 @@ void manejador_de_seniales(int numeroSenial){
 	}
 
 	if(numeroSenial == SIGUSR1){
-		//dump de tlb
+		printf("\nMATI KPO");
 	}
 
 	if(numeroSenial == SIGUSR2){

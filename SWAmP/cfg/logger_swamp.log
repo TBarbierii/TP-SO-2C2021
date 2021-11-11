@@ -2255,3 +2255,1181 @@ y tiene el heap: prev:0, sig:0, free:0
 [INFO] 23:50:19:226 SWAmP/(8094:8094): Solicitud de memoria entrante
 [INFO] 23:50:32:382 SWAmP/(8094:8094): Solicitud de memoria entrante
 [INFO] 23:50:32:383 SWAmP/(8094:8094): Solicitud de memoria entrante
+[INFO] 11:45:46:246 SWAmP/(5128:5128): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 11:45:46:247 SWAmP/(5128:5128): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 11:45:46:247 SWAmP/(5128:5128): Se han creado todos los archivos
+[INFO] 11:45:46:248 SWAmP/(5128:5128): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 11:47:18:197 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:200 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:201 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:202 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:204 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:205 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:206 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:207 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:208 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:209 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:209 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:211 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:212 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:213 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:214 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:215 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:18:216 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:35:6 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:47:35:7 SWAmP/(5128:5128): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 11:47:35:7 SWAmP/(5128:5128): El contenido del heap leido es: 10, 0, 0
+[INFO] 11:47:35:7 SWAmP/(5128:5128): El contenido leido es è4RITMO_REEMPLAZO_TLB
+
+[INFO] 11:48:02:470 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:48:02:471 SWAmP/(5128:5128): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 11:48:02:471 SWAmP/(5128:5128): El contenido del heap leido es: 11, 0, 0
+[INFO] 11:48:02:471 SWAmP/(5128:5128): El contenido leido es 05RITMO_REEMPLAZO_MMU
+[INFO] 11:48:07:694 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:48:07:695 SWAmP/(5128:5128): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 11:48:07:695 SWAmP/(5128:5128): El contenido del heap leido es: 0, 0, 0
+[INFO] 11:48:07:695 SWAmP/(5128:5128): El contenido leido es 
+[INFO] 11:48:09:440 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:48:09:442 SWAmP/(5128:5128): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 11:48:09:442 SWAmP/(5128:5128): El contenido del heap leido es: 0, 0, 0
+[INFO] 11:48:09:442 SWAmP/(5128:5128): El contenido leido es °÷ó·°÷ó·
+[INFO] 11:48:12:187 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:48:12:188 SWAmP/(5128:5128): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 11:48:12:188 SWAmP/(5128:5128): El contenido del heap leido es: 0, 0, 0
+[INFO] 11:48:12:189 SWAmP/(5128:5128): El contenido leido es °÷ó·°÷ó·
+[INFO] 11:48:14:134 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:48:14:135 SWAmP/(5128:5128): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 11:48:14:135 SWAmP/(5128:5128): El contenido del heap leido es: 0, 0, 0
+[INFO] 11:48:14:135 SWAmP/(5128:5128): El contenido leido es °÷ó·°÷ó·
+[INFO] 11:48:15:589 SWAmP/(5128:5128): Solicitud de memoria entrante
+[INFO] 11:48:15:591 SWAmP/(5128:5128): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 11:48:15:591 SWAmP/(5128:5128): El contenido del heap leido es: 0, 0, 0
+[INFO] 11:48:15:591 SWAmP/(5128:5128): El contenido leido es °÷ó·°÷ó·
+[INFO] 11:54:02:122 SWAmP/(5835:5835): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 11:54:02:124 SWAmP/(5835:5835): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 11:54:02:124 SWAmP/(5835:5835): Se han creado todos los archivos
+[INFO] 11:54:02:124 SWAmP/(5835:5835): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 11:54:12:526 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:527 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:528 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:530 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:531 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:532 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:534 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:535 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:536 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:539 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:540 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:542 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:543 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:544 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:545 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:546 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:54:12:547 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:56:25:7 SWAmP/(5835:5835): Solicitud de memoria entrante
+[INFO] 11:56:25:8 SWAmP/(5835:5835): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 11:56:25:8 SWAmP/(5835:5835): El contenido del heap leido es: 1179207178, 79, 0
+[INFO] 11:56:25:8 SWAmP/(5835:5835): El contenido leido es è4RITMO_REEMPLAZO_TLB
+FIFO
+[INFO] 12:00:50:544 SWAmP/(6111:6111): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:00:50:544 SWAmP/(6111:6111): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:00:50:544 SWAmP/(6111:6111): Se han creado todos los archivos
+[INFO] 12:00:50:545 SWAmP/(6111:6111): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:00:55:960 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:961 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:963 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:964 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:967 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:969 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:970 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:974 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:975 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:976 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:977 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:977 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:978 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:979 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:980 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:982 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:00:55:983 SWAmP/(6111:6111): Solicitud de memoria entrante
+[INFO] 12:03:32:349 SWAmP/(6283:6283): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:03:32:349 SWAmP/(6283:6283): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:03:32:349 SWAmP/(6283:6283): Se han creado todos los archivos
+[INFO] 12:03:32:349 SWAmP/(6283:6283): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:03:37:725 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:726 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:728 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:731 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:734 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:737 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:739 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:741 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:743 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:744 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:745 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:746 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:748 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:749 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:750 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:752 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:03:37:766 SWAmP/(6283:6283): Solicitud de memoria entrante
+[INFO] 12:11:46:869 SWAmP/(6704:6704): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:11:46:869 SWAmP/(6704:6704): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:11:46:869 SWAmP/(6704:6704): Se han creado todos los archivos
+[INFO] 12:11:46:869 SWAmP/(6704:6704): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:16:05:786 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:05:787 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:21:572 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:26:440 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:26:442 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:26:444 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:26:445 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:26:446 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:26:448 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:16:26:449 SWAmP/(6704:6704): Solicitud de memoria entrante
+[INFO] 12:20:28:374 SWAmP/(7300:7300): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:20:28:374 SWAmP/(7300:7300): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:20:28:374 SWAmP/(7300:7300): Se han creado todos los archivos
+[INFO] 12:20:28:375 SWAmP/(7300:7300): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:20:35:586 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:587 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:589 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:596 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:599 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:600 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:602 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:604 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:613 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:615 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:616 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:618 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:620 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:625 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:627 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:629 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:35:631 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:41:256 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:41:257 SWAmP/(7300:7300): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:20:41:258 SWAmP/(7300:7300): El contenido del heap leido es: 10, 0, 1
+[INFO] 12:20:41:258 SWAmP/(7300:7300): El contenido leido es è4RITMO_REEMPLAZO_TLB
+
+[INFO] 12:20:51:829 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:51:830 SWAmP/(7300:7300): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:20:51:831 SWAmP/(7300:7300): El contenido del heap leido es: 11, 1, 1
+[INFO] 12:20:51:831 SWAmP/(7300:7300): El contenido leido es 05RITMO_REEMPLAZO_MMU
+[INFO] 12:20:56:415 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:56:417 SWAmP/(7300:7300): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:20:56:420 SWAmP/(7300:7300): El contenido del heap leido es: 12, 2, 1
+[INFO] 12:20:56:420 SWAmP/(7300:7300): El contenido leido es 
+[INFO] 12:20:58:778 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:20:58:779 SWAmP/(7300:7300): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:20:58:779 SWAmP/(7300:7300): El contenido del heap leido es: 13, 3, 1
+[INFO] 12:20:58:780 SWAmP/(7300:7300): El contenido leido es °÷ó·°÷ó·
+[INFO] 12:21:00:191 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:21:00:192 SWAmP/(7300:7300): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:21:00:193 SWAmP/(7300:7300): El contenido del heap leido es: 14, 4, 1
+[INFO] 12:21:00:193 SWAmP/(7300:7300): El contenido leido es °÷ó·°÷ó·
+[INFO] 12:21:01:650 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:21:01:651 SWAmP/(7300:7300): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:21:01:655 SWAmP/(7300:7300): El contenido del heap leido es: 15, 5, 1
+[INFO] 12:21:01:655 SWAmP/(7300:7300): El contenido leido es °÷ó·°÷ó·
+[INFO] 12:21:15:142 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:21:15:143 SWAmP/(7300:7300): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:21:15:143 SWAmP/(7300:7300): El contenido del heap leido es: 16, 6, 1
+[INFO] 12:21:15:143 SWAmP/(7300:7300): El contenido leido es °÷ó·°÷ó·
+[INFO] 12:21:17:260 SWAmP/(7300:7300): Solicitud de memoria entrante
+[INFO] 12:21:17:260 SWAmP/(7300:7300): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:21:17:260 SWAmP/(7300:7300): El contenido del heap leido es: 17, 7, 1
+[INFO] 12:21:17:260 SWAmP/(7300:7300): El contenido leido es °÷ó·°÷ó·
+[INFO] 12:23:17:740 SWAmP/(7601:7601): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:23:17:740 SWAmP/(7601:7601): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:23:17:740 SWAmP/(7601:7601): Se han creado todos los archivos
+[INFO] 12:23:17:740 SWAmP/(7601:7601): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:23:25:817 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:23:31:147 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:23:31:149 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:23:38:568 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:23:38:571 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:23:55:62 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:23:55:65 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:23:56:470 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:23:56:472 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:11:199 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:11:200 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:12:174 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:12:175 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:12:177 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:12:184 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:13:497 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:13:504 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:13:505 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:24:13:505 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:24:13:505 SWAmP/(7601:7601): El contenido leido es ÿÿÿÿ'
+[INFO] 12:24:13:508 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:13:509 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:24:13:509 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:24:13:509 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:24:13:509 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:13:511 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:49:221 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:49:223 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:49:225 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:24:49:225 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:24:49:225 SWAmP/(7601:7601): El contenido leido es ÿÿÿÿ
+[INFO] 12:24:49:227 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:49:229 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:49:229 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:24:49:229 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:24:49:229 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:24:49:230 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:24:49:231 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:24:49:231 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:24:49:231 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:14:1 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:14:3 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:15:8 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:15:8 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:15:8 SWAmP/(7601:7601): El contenido leido es ÿÿÿÿ6
+[INFO] 12:25:15:8 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:15:10 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:15:11 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:15:11 SWAmP/(7601:7601): El contenido del heap leido es: 1778384896, 0, 0
+[INFO] 12:25:15:11 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:15:12 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:15:13 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:15:14 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:15:14 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:15:14 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:18:685 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:18:686 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:25:18:686 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:18:687 SWAmP/(7601:7601): El contenido leido es ÿÿÿÿ
+[INFO] 12:25:18:687 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:18:689 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:18:691 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:25:18:691 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:18:691 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:18:692 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:18:694 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:25:18:694 SWAmP/(7601:7601): El contenido del heap leido es: -1, 1, 0
+[INFO] 12:25:18:694 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:18:695 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:20:523 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:20:524 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:20:527 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:20:527 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:20:527 SWAmP/(7601:7601): El contenido leido es ÿÿÿÿ'
+[INFO] 12:25:20:527 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:20:528 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:20:529 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:20:529 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 39
+[INFO] 12:25:20:529 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:20:529 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:20:530 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:20:530 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:20:530 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:20:530 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:20:531 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:20:531 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 39
+[INFO] 12:25:20:531 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:20:531 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:24:102 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:24:103 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:24:104 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:25:24:104 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:24:104 SWAmP/(7601:7601): El contenido leido es ÿÿÿÿ
+[INFO] 12:25:24:105 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:24:106 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:24:108 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:25:24:108 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:24:108 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:24:108 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:24:109 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:25:24:109 SWAmP/(7601:7601): El contenido del heap leido es: 108, 0, 0
+[INFO] 12:25:24:109 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:24:111 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:24:112 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:25:24:112 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:24:112 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:24:114 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:32:770 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:32:772 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:32:776 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:32:776 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:32:776 SWAmP/(7601:7601): El contenido leido es ÿÿÿÿ6
+[INFO] 12:25:32:776 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:32:778 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:32:781 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:32:781 SWAmP/(7601:7601): El contenido del heap leido es: 1778384896, 0, 0
+[INFO] 12:25:32:781 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:32:782 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:32:783 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:32:783 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:32:783 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:32:784 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:32:786 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:32:786 SWAmP/(7601:7601): El contenido del heap leido es: -16777216, 33554431, 0
+[INFO] 12:25:32:786 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:32:788 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:53:732 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:53:733 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:53:735 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:53:735 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:53:735 SWAmP/(7601:7601): El contenido leido es ÿÿÿÿ'
+[INFO] 12:25:53:735 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:53:738 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:53:740 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:53:740 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 39
+[INFO] 12:25:53:740 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:53:740 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:53:741 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:53:741 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:53:741 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:53:742 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:53:743 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:53:743 SWAmP/(7601:7601): El contenido del heap leido es: 0, 1711276032, 0
+[INFO] 12:25:53:743 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:25:53:743 SWAmP/(7601:7601): Solicitud de memoria entrante
+[INFO] 12:25:53:745 SWAmP/(7601:7601): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:25:53:745 SWAmP/(7601:7601): El contenido del heap leido es: 0, 0, 0
+[INFO] 12:25:53:745 SWAmP/(7601:7601): El contenido leido es 
+[INFO] 12:31:09:762 SWAmP/(8093:8093): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:31:09:762 SWAmP/(8093:8093): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:31:09:762 SWAmP/(8093:8093): Se han creado todos los archivos
+[INFO] 12:31:09:762 SWAmP/(8093:8093): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:31:25:93 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:07:620 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:07:621 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:10:497 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:10:500 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:11:806 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:11:809 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:17:706 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:17:708 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:18:386 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:18:388 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:19:619 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:19:620 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:19:621 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:19:626 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:20:710 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:20:711 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:20:712 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:20:712 SWAmP/(8093:8093): El contenido leido es ÿÿÿÿ'
+[INFO] 12:32:20:712 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:20:713 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:20:713 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:20:713 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:20:715 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:21:351 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:21:353 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:21:355 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:21:355 SWAmP/(8093:8093): El contenido leido es ÿÿÿÿ
+[INFO] 12:32:21:355 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:21:356 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:21:357 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:21:357 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:21:357 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:21:358 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:21:358 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:22:551 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:22:552 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:22:553 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:22:553 SWAmP/(8093:8093): El contenido leido es ÿÿÿÿ6
+[INFO] 12:32:22:554 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:22:557 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:22:558 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:22:558 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:22:558 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:22:559 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:22:560 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:22:561 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:52 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:54 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:23:54 SWAmP/(8093:8093): El contenido leido es ÿÿÿÿ
+[INFO] 12:32:23:54 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:56 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:57 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:23:57 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:23:57 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:58 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:23:59 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:23:59 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:564 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:568 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:569 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:23:569 SWAmP/(8093:8093): El contenido leido es ÿÿÿÿ'
+[INFO] 12:32:23:576 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:577 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:579 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:23:579 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:23:583 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:584 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:23:584 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:23:584 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:23:585 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:23:585 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:23:586 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:56 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:57 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:58 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:24:58 SWAmP/(8093:8093): El contenido leido es ÿÿÿÿ
+[INFO] 12:32:24:58 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:60 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:61 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:24:61 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:24:61 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:62 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:24:62 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:24:62 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:63 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:32:24:63 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:24:63 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:592 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:596 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:600 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:24:600 SWAmP/(8093:8093): El contenido leido es ÿÿÿÿ6
+[INFO] 12:32:24:601 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:602 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:603 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:24:603 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:24:603 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:604 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:24:604 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:24:604 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:24:605 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:24:605 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:24:605 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:25:690 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:25:691 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:25:694 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:25:694 SWAmP/(8093:8093): El contenido leido es ÿÿÿÿ'
+[INFO] 12:32:25:694 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:25:696 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:25:697 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:25:697 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:25:697 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:25:699 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:25:699 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:25:700 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:25:701 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:25:701 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:32:25:701 SWAmP/(8093:8093): Solicitud de memoria entrante
+[INFO] 12:32:25:702 SWAmP/(8093:8093): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:32:25:702 SWAmP/(8093:8093): El contenido leido es 
+[INFO] 12:34:52:988 SWAmP/(8379:8379): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:34:52:988 SWAmP/(8379:8379): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:34:52:988 SWAmP/(8379:8379): Se han creado todos los archivos
+[INFO] 12:34:52:988 SWAmP/(8379:8379): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:34:57:734 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:52 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:54 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:55 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:56 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:60 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:62 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:63 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:66 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:67 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:68 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:69 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:70 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:71 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:73 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:76 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:77 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:78 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:78 SWAmP/(8379:8379): El contenido leido es ÿÿÿÿ'
+[INFO] 12:34:59:78 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:85 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:85 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:86 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:88 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:93 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:94 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:96 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:96 SWAmP/(8379:8379): El contenido leido es ÿÿÿÿ
+[INFO] 12:34:59:96 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:97 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:99 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:99 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:100 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:101 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:101 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:101 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:102 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:103 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:103 SWAmP/(8379:8379): El contenido leido es ÿÿÿÿ6
+[INFO] 12:34:59:104 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:105 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:106 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:106 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:107 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:109 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:109 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:109 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:111 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:113 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:113 SWAmP/(8379:8379): El contenido leido es ÿÿÿÿ
+[INFO] 12:34:59:113 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:114 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:127 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:127 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:127 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:131 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:131 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:137 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:138 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:139 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:142 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:142 SWAmP/(8379:8379): El contenido leido es ÿÿÿÿ'
+[INFO] 12:34:59:142 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:144 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:145 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:145 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:145 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:147 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:147 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:147 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:148 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:149 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:149 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:150 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:151 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:153 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:153 SWAmP/(8379:8379): El contenido leido es ÿÿÿÿ
+[INFO] 12:34:59:154 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:157 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:158 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:159 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:159 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:160 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:160 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:161 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:161 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:34:59:161 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:162 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:163 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:164 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:165 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:165 SWAmP/(8379:8379): El contenido leido es ÿÿÿÿ6
+[INFO] 12:34:59:166 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:169 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:170 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:170 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:170 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:171 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:171 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:172 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:173 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:173 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:173 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:174 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:176 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:178 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:179 SWAmP/(8379:8379): El contenido leido es ÿÿÿÿ'
+[INFO] 12:34:59:179 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:180 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:181 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:181 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:181 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:183 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:183 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:187 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:188 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:189 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:34:59:189 SWAmP/(8379:8379): Solicitud de memoria entrante
+[INFO] 12:34:59:189 SWAmP/(8379:8379): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:34:59:189 SWAmP/(8379:8379): El contenido leido es 
+[INFO] 12:36:36:336 SWAmP/(8572:8572): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:36:36:336 SWAmP/(8572:8572): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:36:36:336 SWAmP/(8572:8572): Se han creado todos los archivos
+[INFO] 12:36:36:336 SWAmP/(8572:8572): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:38:19:95 SWAmP/(8798:8798): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 12:38:19:95 SWAmP/(8798:8798): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 12:38:19:95 SWAmP/(8798:8798): Se han creado todos los archivos
+[INFO] 12:38:19:95 SWAmP/(8798:8798): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 12:38:25:450 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:954 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:959 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:960 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:962 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:963 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:964 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:969 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:973 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:976 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:977 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:985 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:987 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:992 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:994 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:995 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:996 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:997 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:27:997 SWAmP/(8798:8798): El contenido leido es ÿÿÿÿ'
+[INFO] 12:38:27:997 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:999 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:27:999 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:27:0 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:1 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:27:2 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:4 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:4 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:4 SWAmP/(8798:8798): El contenido leido es ÿÿÿÿ
+[INFO] 12:38:28:5 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:6 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:6 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:6 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:8 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:9 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:9 SWAmP/(8798:8798): El contenido leido es ÿÿÿÿ6
+[INFO] 12:38:28:10 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:12 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:13 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:13 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:17 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:18 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:18 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:18 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:21 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:22 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:23 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:23 SWAmP/(8798:8798): El contenido leido es ÿÿÿÿ
+[INFO] 12:38:28:24 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:26 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:27 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:27 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:28 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:29 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:29 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:31 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:32 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:33 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:34 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:34 SWAmP/(8798:8798): El contenido leido es ÿÿÿÿ'
+[INFO] 12:38:28:36 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:37 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:39 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:39 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:40 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:41 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:41 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:41 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:43 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:43 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:43 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:45 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:46 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:47 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:47 SWAmP/(8798:8798): El contenido leido es ÿÿÿÿ
+[INFO] 12:38:28:48 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:49 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:51 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:51 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:52 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:53 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:53 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:53 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:54 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 12:38:28:54 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:54 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:56 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:57 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:58 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:58 SWAmP/(8798:8798): El contenido leido es ÿÿÿÿ6
+[INFO] 12:38:28:59 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:61 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:62 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:62 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:62 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:63 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:63 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:63 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:64 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:64 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:64 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:65 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:66 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:67 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:67 SWAmP/(8798:8798): El contenido leido es ÿÿÿÿ'
+[INFO] 12:38:28:67 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:68 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:69 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:69 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:69 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:70 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:70 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:70 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:71 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:71 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 12:38:28:71 SWAmP/(8798:8798): Solicitud de memoria entrante
+[INFO] 12:38:28:72 SWAmP/(8798:8798): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 12:38:28:72 SWAmP/(8798:8798): El contenido leido es 
+[INFO] 16:02:06:508 SWAmP/(16942:16942): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 16:02:06:509 SWAmP/(16942:16942): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 16:02:06:509 SWAmP/(16942:16942): Se han creado todos los archivos
+[INFO] 16:02:06:509 SWAmP/(16942:16942): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:02:18:559 SWAmP/(16942:16942): Solicitud de memoria entrante
+[INFO] 16:02:36:369 SWAmP/(17078:17078): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 16:02:36:370 SWAmP/(17078:17078): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 16:02:36:370 SWAmP/(17078:17078): Se han creado todos los archivos
+[INFO] 16:02:36:370 SWAmP/(17078:17078): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:04:18:578 SWAmP/(17226:17226): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 16:04:18:579 SWAmP/(17226:17226): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 16:04:18:579 SWAmP/(17226:17226): Se han creado todos los archivos
+[INFO] 16:04:18:579 SWAmP/(17226:17226): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:04:24:141 SWAmP/(17226:17226): Solicitud de memoria entrante
+[INFO] 16:06:46:690 SWAmP/(17388:17388): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 16:06:46:690 SWAmP/(17388:17388): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 16:06:46:690 SWAmP/(17388:17388): Se han creado todos los archivos
+[INFO] 16:06:46:690 SWAmP/(17388:17388): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:06:51:102 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:52:286 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:52:288 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:53:333 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:53:335 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:53:946 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:53:948 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:54:517 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:54:518 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:55:48 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:55:49 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:55:690 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:55:691 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:55:693 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:55:694 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:56:985 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:56:986 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:56:987 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:56:987 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ'
+[INFO] 16:06:56:988 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:56:990 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:56:990 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:56:991 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:56:993 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:57:573 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:57:576 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:57:577 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:06:57:577 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ
+[INFO] 16:06:57:577 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:57:578 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:57:580 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:06:57:580 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:57:580 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:57:581 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:06:57:581 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:58:129 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:132 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:133 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:58:133 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ6
+[INFO] 16:06:58:133 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:136 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:137 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:58:137 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:58:137 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:139 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:58:139 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:58:142 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:676 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:677 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:06:58:680 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ
+[INFO] 16:06:58:683 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:684 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:685 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:06:58:685 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:58:686 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:58:687 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:06:58:687 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:58:688 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:59:251 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:59:255 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:59:258 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:59:258 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ'
+[INFO] 16:06:59:259 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:59:261 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:59:262 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:59:262 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:59:262 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:59:263 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:59:263 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:59:263 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:06:59:264 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:06:59:264 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:06:59:264 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:00:451 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:00:453 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:00:457 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:00:457 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ
+[INFO] 16:07:00:458 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:00:459 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:00:461 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:00:461 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:00:461 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:00:462 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:00:462 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:00:462 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:00:463 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:00:463 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:00:463 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:01:473 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:01:474 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:01:475 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:01:475 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ6
+[INFO] 16:07:01:475 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:01:476 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:01:478 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:01:478 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:01:478 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:01:479 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:01:479 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:01:479 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:01:480 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:01:480 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:01:480 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:02:501 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:02:502 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:02:506 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:02:506 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ'
+[INFO] 16:07:02:507 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:02:508 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:02:513 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:02:513 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:02:513 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:02:515 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:02:515 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:02:515 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:02:516 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:02:516 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:02:516 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:02:517 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:02:517 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:30:566 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:30:567 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:30:573 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:30:573 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ6
+[INFO] 16:07:48:216 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:48:218 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:48:219 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:48:219 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:52:581 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:52:583 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:52:589 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:52:589 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ
+[INFO] 16:07:53:189 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:53:191 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:53:192 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:53:192 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ'
+[INFO] 16:07:53:192 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:53:193 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:53:194 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:53:194 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:53:745 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:53:747 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:53:748 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:53:748 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:54:720 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:54:722 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:54:723 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:54:723 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:54:723 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:54:724 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:54:726 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:54:726 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:55:219 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:55:221 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:55:221 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:55:221 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:55:222 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:55:223 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:55:225 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:55:225 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:55:896 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:55:897 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:55:898 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:55:898 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:56:360 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:56:361 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:56:362 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:56:362 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:56:850 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:56:851 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:56:853 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:56:853 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:57:851 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:57:856 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:57:857 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:07:57:857 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:58:354 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:58:356 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:58:360 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:58:360 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:07:58:863 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:58:870 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:07:58:871 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:07:58:871 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:08:22:290 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:22:292 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:22:293 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:22:293 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ6
+[INFO] 16:08:22:293 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:22:295 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:22:296 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:22:296 SWAmP/(17388:17388): El contenido leido es ------------------1-45
+[INFO] 16:08:32:395 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:32:399 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:32:401 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:08:32:401 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ
+[INFO] 16:08:35:264 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:35:265 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:35:266 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:35:266 SWAmP/(17388:17388): El contenido leido es ÿÿÿÿ'
+[INFO] 16:08:35:267 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:35:269 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:35:271 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:35:271 SWAmP/(17388:17388): El contenido leido es ---3-30
+[INFO] 16:08:38:414 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:38:415 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:38:422 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:08:38:422 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:08:39:768 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:39:769 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:39:770 SWAmP/(17388:17388): El contenido leido es --------------------------------
+[INFO] 16:08:39:774 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:39:776 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:39:776 SWAmP/(17388:17388): El contenido leido es ------1-436
+[INFO] 16:08:40:265 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:40:267 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:40:267 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:08:40:268 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:40:269 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:40:270 SWAmP/(17388:17388): El contenido leido es --3-30?
+[INFO] 16:08:41:10 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:41:11 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:08:41:11 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:08:41:727 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:41:728 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:41:729 SWAmP/(17388:17388): El contenido leido es ------------------1-35j
+[INFO] 16:08:43:769 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:43:770 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:08:43:771 SWAmP/(17388:17388): El contenido leido es --------2-16S
+[INFO] 16:08:49:916 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:49:918 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:08:49:918 SWAmP/(17388:17388): El contenido leido es ---------------2-30l
+[INFO] 16:08:50:461 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:50:463 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:50:463 SWAmP/(17388:17388): El contenido leido es -----1-10–
+[INFO] 16:08:52:117 SWAmP/(17388:17388): Solicitud de memoria entrante
+[INFO] 16:08:52:118 SWAmP/(17388:17388): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:08:52:119 SWAmP/(17388:17388): El contenido leido es 
+[INFO] 16:14:51:888 SWAmP/(17745:17745): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 16:14:51:889 SWAmP/(17745:17745): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 16:14:51:889 SWAmP/(17745:17745): Se han creado todos los archivos
+[INFO] 16:14:51:889 SWAmP/(17745:17745): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:14:57:761 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:06:695 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:06:696 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:07:153 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:07:154 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:07:599 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:07:602 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:08:68 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:08:531 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:08:997 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:08:998 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:09:5 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:09:491 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:09:494 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:10:483 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:10:484 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:10:486 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:10:486 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ6
+[INFO] 16:15:10:487 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:10:488 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:10:496 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:10:496 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:10:497 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:10:996 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:10:998 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:480 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:483 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:484 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:11:484 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ'
+[INFO] 16:15:11:485 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:487 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:489 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:11:489 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:11:490 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:492 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:493 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:11:493 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:11:493 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:495 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:11:495 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:11:496 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:1 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:11:3 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:4 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:12:4 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ
+[INFO] 16:15:12:5 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:6 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:8 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:12:8 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:8 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:9 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:11 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:12:11 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:12 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:13 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:12:13 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:14 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:440 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:441 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:441 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ6
+[INFO] 16:15:12:442 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:443 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:444 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:444 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:444 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:446 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:447 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:447 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:447 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:448 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:448 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:449 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:918 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:919 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:919 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ'
+[INFO] 16:15:12:919 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:921 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:922 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:922 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:922 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:928 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:930 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:930 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:930 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:936 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:936 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:12:936 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:12:938 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:12:938 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:17:593 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:17:595 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:17:595 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ6
+[INFO] 16:15:17:595 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:17:596 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:17:597 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:17:597 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:17:727 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:17:728 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:17:728 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ
+[INFO] 16:15:17:901 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:17:904 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:17:904 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ'
+[INFO] 16:15:17:904 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:17:906 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:17:907 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:17:907 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:18:97 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:100 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:102 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:18:102 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:18:463 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:465 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:467 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:18:467 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:18:468 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:470 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:475 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:18:475 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:18:656 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:658 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:659 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:18:659 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:18:659 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:661 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:662 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:18:663 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:18:818 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:820 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:18:821 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:18:821 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:19:7 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:9 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:10 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:19:10 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:19:190 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:192 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:194 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:19:194 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:19:544 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:546 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:547 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:19:547 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:19:698 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:701 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:702 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:19:703 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:19:873 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:874 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:19:875 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:19:875 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:20:53 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:55 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:58 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:20:58 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ6
+[INFO] 16:15:20:58 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:59 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:60 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:20:60 SWAmP/(17745:17745): El contenido leido es ------------------1-45
+[INFO] 16:15:20:215 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:216 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:221 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:20:221 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ
+[INFO] 16:15:20:374 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:380 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:381 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:20:381 SWAmP/(17745:17745): El contenido leido es ÿÿÿÿ'
+[INFO] 16:15:20:381 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:383 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:384 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:20:384 SWAmP/(17745:17745): El contenido leido es ---3-30
+[INFO] 16:15:20:516 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:521 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:522 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:20:522 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:20:896 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:897 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:900 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:20:900 SWAmP/(17745:17745): El contenido leido es --------------------------------
+[INFO] 16:15:20:900 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:20:902 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:20:902 SWAmP/(17745:17745): El contenido leido es ------1-436
+[INFO] 16:15:21:63 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:21:67 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:21:68 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:21:68 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:21:69 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:21:70 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:21:70 SWAmP/(17745:17745): El contenido leido es --3-30?
+[INFO] 16:15:21:236 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:21:237 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:21:239 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:21:239 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 16:15:21:379 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:21:379 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:21:380 SWAmP/(17745:17745): El contenido leido es ------------------1-35j
+[INFO] 16:15:21:555 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:21:556 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:21:556 SWAmP/(17745:17745): El contenido leido es --------2-16S
+[INFO] 16:15:21:927 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:21:929 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap2.bin
+[INFO] 16:15:21:934 SWAmP/(17745:17745): El contenido leido es ---------------2-30l
+[INFO] 16:15:22:117 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:22:118 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:22:120 SWAmP/(17745:17745): El contenido leido es -----1-10–
+[INFO] 16:15:23:564 SWAmP/(17745:17745): Solicitud de memoria entrante
+[INFO] 16:15:23:566 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 16:15:23:566 SWAmP/(17745:17745): El contenido leido es 
