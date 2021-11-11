@@ -131,9 +131,9 @@ uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del c
 	t_memalloc *alloc = malloc(sizeof(t_memalloc));
 	void* buffer = recibir_buffer(socket_cliente);
 	
-	memcpy(alloc->pid, buffer, sizeof(uint32_t));
+	memcpy(&(alloc->pid), buffer, sizeof(uint32_t));
 	offset =+ sizeof(uint32_t);
-	memcpy(alloc->tamanio, buffer + offset,sizeof(uint32_t));
+	memcpy(&(alloc->tamanio), buffer + offset,sizeof(uint32_t));
 
 	free(buffer);
 	log_info(logger, "\nLLego el proceso para allocar: \n Pid: %i \nTamanio: %i", alloc->pid, alloc->tamanio);
@@ -157,7 +157,6 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 		pthread_mutex_unlock(controladorIds);
 
 		carpincho->tabla_de_paginas = list_create();
-		carpincho->allocs = list_create();
 		carpincho->conexion = conexion;
 		log_info(logger,"Agregamos nuevo carpincho a memoria, y su pid es: %d",carpincho->id_carpincho);
 
@@ -196,8 +195,9 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 	bool buscarProcesoPorPid(t_carpincho* carpincho){
 		return carpincho->id_carpincho == pidProcesoAEliminar;
 	};
-
+	pthread_mutex_lock(listaCarpinchos);
 	t_carpincho* carpincho =list_remove_by_condition(carpinchos, buscarProcesoPorPid);
+	pthread_mutex_unlock(listaCarpinchos);
 	log_info(logger,"Sacamos al carpincho. Pid: %d", carpincho->id_carpincho);
 
 	informarCierreDeProceso(carpincho,logger);
@@ -223,7 +223,7 @@ void informarCierreDeProceso(t_carpincho* carpincho,t_log* loggerActual){
 
 }
 
-uint32_t recibir_memfree(int socket_cliente, t_log* logger) {
+int32_t recibir_memfree(int socket_cliente, t_log* logger) {
 
 	uint32_t offset=0, carpincho, direccionLogica;
 	void* buffer = recibir_buffer(socket_cliente);
@@ -234,6 +234,24 @@ uint32_t recibir_memfree(int socket_cliente, t_log* logger) {
 
 	free(buffer);
 
+	int id = obtenerId(direccionLogica);
+
+	bool buscarCarpincho(t_carpincho* carp){
+		return carp->id_carpincho == carpincho;
+	};
+	pthread_mutex_lock(listaCarpinchos);
+	t_carpincho* capybara = list_find(carpinchos, (void*)buscarCarpincho);
+	pthread_mutex_unlock(listaCarpinchos);
+	
+	bool buscarPagina(t_pagina* pag){
+		return pag->id_pagina == id;
+	};
+	t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPagina);
+
+	if(pagina == NULL){
+		return -5;
+	}
+
 	log_info(logger, "\nRecibimos memfree: \n Pid: %i \nDirecLogica: %i", carpincho, direccionLogica);
 
 	liberar_alloc(carpincho, direccionLogica);
@@ -241,7 +259,7 @@ uint32_t recibir_memfree(int socket_cliente, t_log* logger) {
 	return 0;
 }
 
-uint32_t recibir_memread(int socket_cliente, t_log* logger) {
+int32_t recibir_memread(int socket_cliente, t_log* logger) {
 
 	uint32_t offset, carpincho, direccion_logica, tamanio;
 	void* buffer = recibir_buffer(socket_cliente);
@@ -253,6 +271,24 @@ uint32_t recibir_memread(int socket_cliente, t_log* logger) {
 	memcpy(&tamanio, buffer + offset, sizeof(uint32_t));
 
 	free(buffer);
+
+	int id = obtenerId(direccion_logica);
+
+	bool buscarCarpincho(t_carpincho* carp){
+		return carp->id_carpincho == carpincho;
+	};
+	pthread_mutex_lock(listaCarpinchos);
+	t_carpincho* capybara = list_find(carpinchos, (void*)buscarCarpincho);
+	pthread_mutex_unlock(listaCarpinchos);
+
+	bool buscarPagina(t_pagina* pag){
+		return pag->id_pagina == id;
+	};
+	t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPagina);
+
+	if(pagina == NULL){
+		return -6;
+	}
 
 	log_info(logger, "\nRecibimos memread: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
 
@@ -273,7 +309,7 @@ uint32_t recibir_memread(int socket_cliente, t_log* logger) {
 	return 0;
 }
 
-uint32_t recibir_memwrite(int socket_cliente, t_log* logger) {
+int32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 
 	uint32_t offset, carpincho, direccion_logica, tamanio;
 	void* buffer = recibir_buffer(socket_cliente);
@@ -290,6 +326,24 @@ uint32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 	memcpy(contenido, buffer + offset, tamanio);
 
 	free(buffer);
+
+	int id = obtenerId(direccion_logica);
+
+	bool buscarCarpincho(t_carpincho* carp){
+		return carp->id_carpincho == carpincho;
+	};
+	pthread_mutex_lock(listaCarpinchos);
+	t_carpincho* capybara = list_find(carpinchos, (void*)buscarCarpincho);
+	pthread_mutex_unlock(listaCarpinchos);
+
+	bool buscarPagina(t_pagina* pag){
+		return pag->id_pagina == id;
+	};
+	t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPagina);
+
+	if(pagina == NULL){
+		return -7;
+	}
 
 	log_info(logger, "\nRecibimos memwrite: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
 

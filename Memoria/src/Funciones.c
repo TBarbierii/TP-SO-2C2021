@@ -8,9 +8,11 @@ uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpincho
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc->pid;
 	};
-    //semaforo?
+    
+    pthread_mutex_lock(listaCarpinchos);
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
-    //semaforo?
+    pthread_mutex_unlock(listaCarpinchos);
+    
     //si no lo encuentra crearlo
     if (carpincho == NULL){
      carpincho = malloc(sizeof(t_carpincho));
@@ -22,8 +24,9 @@ uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpincho
 
      marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
     
-
+    pthread_mutex_lock(listaCarpinchos);
      list_add(carpinchos, carpincho);
+     pthread_mutex_unlock(listaCarpinchos);
     }
 
     uint32_t direccionLogica = administrar_paginas(carpincho, alloc->tamanio, marcos_a_asignar);
@@ -104,7 +107,10 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         int32_t posicionHeap = 0;
         int32_t pagina, desplazamiento;
 
+        pthread_mutex_lock(memoria);
         memcpy(heap, memoriaPrincipal + DF, TAMANIO_HEAP);
+        pthread_mutex_unlock(memoria);
+
         primeraPag->ultimoUso = clock();
         primeraPag->uso = true;
 
@@ -160,12 +166,11 @@ void crear_marcos(){
 
     uint32_t cantidad_marcos = tamanio/tamanioPagina;
 
-
         for(uint32_t i=0; i<cantidad_marcos; i++){
 
             t_marco* marco = malloc(sizeof(t_marco));
 
-            marco->id_marco = generadorIdsMarcos();
+            marco->id_marco = i;
             marco->proceso_asignado = -1;
             marco->estaLibre = true;
             marco->comienzo = i * tamanioPagina;
@@ -235,8 +240,9 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
     bool buscarCarpincho(t_carpincho* s){
 	return s->id_carpincho == carpincho;
 	};
-
+    pthread_mutex_lock(listaCarpinchos);
 	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
+    pthread_mutex_unlock(listaCarpinchos);
 
     uint32_t id = obtenerId(DL);
 
@@ -268,7 +274,10 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
         void* buffer_heap = malloc(desplazamiento);
 
+        pthread_mutex_lock(memoria);
         memcpy(buffer_heap + (TAMANIO_HEAP - desplazamiento), memoriaPrincipal + DF, desplazamiento);
+        pthread_mutex_unlock(memoria);
+        
         pagina->ultimoUso = clock();
         pagina->uso = true;
 
@@ -290,7 +299,10 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
             hits_totales++;
         }
 
+        pthread_mutex_lock(memoria);
         memcpy(buffer_heap , memoriaPrincipal + DF + desplazamiento1, TAMANIO_HEAP - desplazamiento);
+        pthread_mutex_unlock(memoria);
+        
         paginaAnterior->ultimoUso = clock();
         paginaAnterior->uso = true;
 
@@ -300,7 +312,9 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
         memcpy(buffer_heap, heap, TAMANIO_HEAP);
 
+        pthread_mutex_lock(memoria);
         memcpy(memoriaPrincipal + DF + desplazamiento1, buffer_heap, TAMANIO_HEAP - desplazamiento);
+        pthread_mutex_unlock(memoria);
 
         paginaAnterior->modificado = true;
         paginaAnterior->ultimoUso = clock();
@@ -318,7 +332,9 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
             hits_totales++;
         }
 
+        pthread_mutex_lock(memoria);
         memcpy(memoriaPrincipal + DF, buffer_heap + (TAMANIO_HEAP - desplazamiento), desplazamiento);
+        pthread_mutex_unlock(memoria);
 
         pagina->modificado = true;
         pagina->ultimoUso = clock();
@@ -328,12 +344,15 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
         free(heap);
 
     }else{
-    
+        pthread_mutex_lock(memoria);
         memcpy(heap, memoriaPrincipal + DF + (desplazamiento - TAMANIO_HEAP), TAMANIO_HEAP);
+        pthread_mutex_unlock(memoria);
 
         heap->isFree = true;
 
+        pthread_mutex_lock(memoria);
         memcpy(memoriaPrincipal + DF + (desplazamiento - TAMANIO_HEAP), heap, TAMANIO_HEAP);
+        pthread_mutex_unlock(memoria);
 
         pagina->modificado = true;
         pagina->ultimoUso = clock();
@@ -356,8 +375,9 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
     bool buscarCarpincho(t_carpincho* s){
 	return s->id_carpincho == carpincho;
 	};
-
+    pthread_mutex_lock(listaCarpinchos);
 	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
+    pthread_mutex_unlock(listaCarpinchos);
 
     int32_t contador = 0;
     bool buscarPagina(t_pagina* s){
@@ -397,7 +417,10 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
 
         uint32_t bytesPrimeraLectura =tamanioPagina - desplazamiento;
 
+        pthread_mutex_lock(memoria);
         memcpy(leido, memoriaPrincipal + pagina->marco->comienzo + desplazamiento, bytesPrimeraLectura);
+        pthread_mutex_unlock(memoria);
+        
         pagina->ultimoUso = clock();
         pagina->uso = true;
 
@@ -418,7 +441,10 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
                     hits_totales++;
                 }
 
+                pthread_mutex_lock(memoria);
                 memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (paginaSiguiente->marco->comienzo), tamanioPagina);
+                pthread_mutex_unlock(memoria);
+                
                 paginaSiguiente->ultimoUso = clock();
                 paginaSiguiente->uso = true;
                 contador++;
@@ -440,13 +466,19 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
             hits_totales++;
         }
 
+        pthread_mutex_lock(memoria);
         memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (ultimaPagina->marco->comienzo), resto);
+        pthread_mutex_unlock(memoria);
+        
         ultimaPagina->ultimoUso = clock();
         ultimaPagina->uso = true;
 
     }else{
-
+        
+        pthread_mutex_lock(memoria);
         memcpy(leido, memoriaPrincipal + pagina->marco->comienzo + desplazamiento, tam);
+        pthread_mutex_unlock(memoria);
+        
         pagina->ultimoUso = clock();
         pagina->uso = true;
     }
@@ -465,8 +497,9 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
     bool buscarCarpincho(t_carpincho* s){
 	return s->id_carpincho == carpincho;
 	};
-
+    pthread_mutex_lock(listaCarpinchos);
 	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
+    pthread_mutex_unlock(listaCarpinchos);
 
         int32_t contador = 0;
     bool buscarPagina(t_pagina* s){
@@ -507,7 +540,10 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
         uint32_t bytesPrimeraEscritura =tamanioPagina - desplazamiento;
         //ver si las paginas estan presentes
 
+        pthread_mutex_lock(memoria);
         memcpy(memoriaPrincipal + pagina->marco->comienzo + desplazamiento, contenido , bytesPrimeraEscritura);
+        pthread_mutex_unlock(memoria);
+        
         pagina->modificado = true;
         pagina->ultimoUso = clock();
         pagina->uso = true;
@@ -527,7 +563,11 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
                     capybara->tlb_hit++;
                     hits_totales++;
                 }
+
+                pthread_mutex_lock(memoria);
                 memcpy(memoriaPrincipal + (paginaSiguiente->marco->comienzo), contenido + bytesPrimeraEscritura, tamanioPagina);
+                pthread_mutex_unlock(memoria);
+                
                 paginaSiguiente->modificado = true;
                 paginaSiguiente->ultimoUso = clock();
                 paginaSiguiente->uso = true;
@@ -550,14 +590,20 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
             hits_totales++;
         }
 
+        pthread_mutex_lock(memoria);
         memcpy(memoriaPrincipal + (ultimaPagina->marco->comienzo), contenido + bytesPrimeraEscritura, resto);
+        pthread_mutex_unlock(memoria);
 
         ultimaPagina->modificado = true;
         ultimaPagina->ultimoUso = clock();
         ultimaPagina->uso = true;
 
     }else{
+
+        pthread_mutex_lock(memoria);
         memcpy(memoriaPrincipal + pagina->marco->comienzo + desplazamiento, contenido , tam);
+        pthread_mutex_unlock(memoria);
+        
         pagina->modificado = true;
         pagina->ultimoUso = clock();
         pagina->uso = true;
