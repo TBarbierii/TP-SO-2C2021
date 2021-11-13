@@ -29,7 +29,7 @@ void ejecutarAlgoritmoDeadlock(){
     t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_INFO);
     while(1){
 
-        sleep(20);
+        sleep(30);
         pthread_mutex_lock(controladorSemaforos);
         bloquearTodosLosSemaforos();
         pthread_mutex_lock(modificarBlocked);
@@ -50,25 +50,16 @@ void ejecutarAlgoritmoDeadlock(){
             t_list* procesosPosiblesEnDeadlock = procesosQueEstanReteniendoYEsperando();
             int cantidadProcesos = list_size(procesosPosiblesEnDeadlock);
             log_info(logger,"La cantidad de procesos en posible deadlock son: %d",cantidadProcesos);
-            /* 
+             
             if(cantidadProcesos <= 1){
                 log_info(logger,"No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos");
                 break;
             }
-            */
-           
-           
-            
 
             //sacamos todas las matrices y vectores para realizar el algoritmo
             
             int matrizRecursosRetenidos[cantidadProcesos][cantidadSemaforos];
             int matrizRecursosPeticiones[cantidadProcesos][cantidadSemaforos];
-
-            
-
-            
-            
             
             //rellenamos las dos matrices
             for(int i = 0; i < cantidadProcesos; i++){
@@ -79,6 +70,7 @@ void ejecutarAlgoritmoDeadlock(){
                     matrizRecursosRetenidos[i][j] = cantidadDeVecesQueProcesoRetieneASemaforo(procesoActual,semaforoActual);
                 }
             }
+
             for(int i = 0; i < cantidadProcesos; i++){
 
                 for(int j= 0; j < cantidadSemaforos; j++){
@@ -87,6 +79,7 @@ void ejecutarAlgoritmoDeadlock(){
                     matrizRecursosPeticiones[i][j] = cantidadDeVecesQueProcesoPideASemaforo(procesoActual,semaforoActual);
                 }
             }
+
 
             //ahora creamos los vectores de WORK y FINISH
             int finish[cantidadProcesos];
@@ -101,29 +94,46 @@ void ejecutarAlgoritmoDeadlock(){
             }
 
 
-            //ahora ejecutamos la secuencia de comparacion
-            for(int i= 0 ; i< cantidadProcesos; i ++){
+            //ahora ejecutamos la secuencia de comparacion, como podria pasar que los procesos vengan en distinto orden,
+            //vamos a ahcer un while(1), donde se va a terminar cuando haga el for completo y nadie entre en el if
+
+            while(1){
                 
-                int cumple = 1;
-                
-                for(int j=0; j< cantidadSemaforos; j ++){
+                int existeProcesoQueCumplaCondicion = 0;
+
+                //aca vemos si la cantidad de recursos solicitados es menor a la disponible
+                for(int i= 0 ; i< cantidadProcesos; i ++){
                     
-                    if(matrizRecursosPeticiones[i][j] > disponibilidad[j]){
-                    //con que se pida mas en alguno de los semaforos, ya no cumple
-                    cumple = 0;
-                    }
-
-                }
-
-                if(finish[i] == 0  && cumple){
-                    finish[i]=1;
+                    int cumple = 1;
+                    
                     for(int j=0; j< cantidadSemaforos; j ++){
-                       work[j] += matrizRecursosRetenidos[i][j];         
-                    }
+                        
+                        if(matrizRecursosPeticiones[i][j] > disponibilidad[j]){
+                        //con que se pida mas en alguno de los semaforos, ya no cumple
+                        cumple = 0;
+                        }
 
+                    }
+                    //se analiza si el proceso cumple ambas condiciones
+                    if(finish[i] == 0  && cumple){
+                        finish[i]=1;
+                        existeProcesoQueCumplaCondicion = 1;
+                        for(int j=0; j< cantidadSemaforos; j ++){
+                        work[j] += matrizRecursosRetenidos[i][j];         
+                        }
+
+                    }
                 }
+
+                //si no existe ninguno que entro al if, ninguno cumple las condiciones, entonces el work nunca aumento, entonces decido terminar el while
+                if(existeProcesoQueCumplaCondicion == 0){
+                    break;
+                }
+
             }
 
+
+            //creo la lista de lo que analize y estan en deadlock
             t_list* procesosEnDeadlock = list_create();
             for(int j=0; j< cantidadProcesos; j ++){
                     
@@ -133,7 +143,7 @@ void ejecutarAlgoritmoDeadlock(){
                 }
 
             }
-            if(list_is_empty(procesosEnDeadlock)){
+            if(list_size(procesosEnDeadlock)<=1){
                 log_info(logger,"No hay deadlock, dejamos que se ejecute todo normal");
                 break;
             }
@@ -242,24 +252,50 @@ void desbloquearTodosLosSemaforos(){
     }
 }
 
-int procesoReteniendoProcesosYEsperando(proceso_kernel* proceso){
+int procesoReteniendoYEsperando(proceso_kernel* proceso){
     return (!list_is_empty(proceso->listaRecursosRetenidos)) && (!list_is_empty(proceso->listaRecursosSolicitados));
+}
+
+int procesoReteniendo(proceso_kernel* proceso){
+    return (!list_is_empty(proceso->listaRecursosRetenidos));
 }
 
 t_list* procesosQueEstanReteniendoYEsperando(){
 
     t_list* listaFiltrada = list_create();
-    //primero filtramos los que estan bloqueados
+    t_list* procesosQuePuedenEstarOcupandoRecursos = list_create();
+    t_list* listaFiltradaFinal = list_create();
+
+    //siempre vamos a considerar los que estan reteniendo, xq si no esta reteniendo no es causante del deadlock
+
+    //primero filtramos los que estan bloqueados, los que tienen cosas asignadas y estan reteniendo
     list_add_all(listaFiltrada, procesosBlocked);
     list_add_all(listaFiltrada, procesosSuspendedBlock);
+    
+    
+    listaFiltradaFinal = list_filter(listaFiltrada, procesoReteniendoYEsperando);
+    
+    
 
-    t_list* listaFiltradaFinal = list_filter(listaFiltrada, procesoReteniendoProcesosYEsperando);
 
+    //ahora filtramos los que puede ser que esten reteniendo y no pidiendo nada, ya que estos me van a liberar recursos
+    
+    list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosExec);
+    list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosReady);
+    list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosSuspendedReady);
+
+    if(!list_is_empty(procesosQuePuedenEstarOcupandoRecursos)){
+        t_list* listaFiltradaFinal2 = list_filter(procesosQuePuedenEstarOcupandoRecursos, procesoReteniendo);
+        if(!list_is_empty(listaFiltradaFinal2)){
+            list_add_all(listaFiltradaFinal, listaFiltradaFinal2);
+        }
+        list_destroy(listaFiltradaFinal2);
+    }
+    
+    list_destroy(procesosQuePuedenEstarOcupandoRecursos);
     return listaFiltradaFinal;
 
 }
-
-
 
 
 

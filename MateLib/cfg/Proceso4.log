@@ -6,3 +6,9 @@
 [INFO] 14:10:47:109 loggerContenidoProceso/(5019:5019): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 14:10:47:111 loggerContenidoProceso/(5019:5019): Se pudo cerrar el proceso correctamente en el BackEnd
 [INFO] 14:10:47:112 loggerContenidoProceso/(5019:5019): Se liberan todas las estructuras del proceso
+[INFO] 18:41:09:972 loggerContenidoProceso/(9939:9942): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 18:41:09:975 loggerContenidoProceso/(9939:9942): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 18:41:09:977 loggerContenidoProceso/(9939:9942): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 18:41:09:978 loggerContenidoProceso/(9939:9942): Se pudo hacer el wait del semaforo
+[INFO] 18:41:12:980 loggerContenidoProceso/(9939:9942): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 18:43:05:259 loggerContenidoProceso/(9939:9942): Se ha solicitado cerrar el carpincho, este es un hasta adios

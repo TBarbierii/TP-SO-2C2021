@@ -31,8 +31,9 @@ void planificadorLargoPlazo(){
 void liberarProceso(proceso_kernel* procesoActual){
     t_log* logger = log_create("cfg/PlanificadorLargoPlazoActual.log","PlanificadorLargoPlazo", 0, LOG_LEVEL_DEBUG);
     log_info(logger,"Se nos va el carpincho: %d", procesoActual->pid);
-	free(procesoActual); //libero la estructura, nose si el clock que tiene se libera o que onda...
+	 //libero la estructura, nose si el clock que tiene se libera o que onda...
     log_destroy(logger);
     list_destroy(procesoActual->listaRecursosRetenidos);
 	list_destroy(procesoActual->listaRecursosSolicitados);
+    free(procesoActual);
 }

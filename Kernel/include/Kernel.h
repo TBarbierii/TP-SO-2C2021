@@ -55,6 +55,8 @@ t_list* procesosSuspendedBlock;
 t_list* procesosSuspendedReady;
 
 
+
+
 /* lista de semaforos actuales inicializados */
 t_list* semaforosActuales;
 

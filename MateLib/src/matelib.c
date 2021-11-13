@@ -10,6 +10,21 @@ int mate_init(mate_instance *lib_ref, char *config){
 
     if(conexion == -1){
         lib_ref->group_info->backEndConectado = ERROR;
+        lib_ref->group_info->conexionConBackEnd = conexion;
+
+        char* nombreLog = string_new();
+        lib_ref->group_info->pid= -1;
+        string_append(&nombreLog, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/Proceso");
+        char* pidCarpincho = string_itoa((int) lib_ref->group_info->pid);
+        string_append(&nombreLog, pidCarpincho);
+        string_append(&nombreLog, ".log");
+
+        lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
+    
+        log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
+        free(nombreLog);
+        free(pidCarpincho);
+
         return lib_ref->group_info->backEndConectado;
     }else{
         lib_ref->group_info->backEndConectado = OK;
@@ -23,12 +38,19 @@ int mate_init(mate_instance *lib_ref, char *config){
 
 int mate_close(mate_instance *lib_ref){
 
-    
-        log_info(lib_ref->group_info->loggerProceso,"Se ha solicitado cerrar el carpincho, este es un hasta adios");
+        log_info(lib_ref->group_info->loggerProceso,"Se ha solicitado cerrar el carpincho de pid:%d , este es un hasta adios", lib_ref->group_info->pid);
 
-        solicitarCerrarCarpincho(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        return valorRetorno;
+        if(lib_ref->group_info->conexionConBackEnd != -1){    
+            solicitarCerrarCarpincho(lib_ref->group_info->conexionConBackEnd, lib_ref);
+            int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+            return valorRetorno;
+        }else{
+            log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso");
+            log_destroy(lib_ref->group_info->loggerProceso);
+            config_destroy(lib_ref->group_info->config);
+            free(lib_ref->group_info);
+        }
+        
 }
 
 
@@ -39,20 +61,35 @@ int mate_close(mate_instance *lib_ref){
 //-----------------Semaphore Functions---------------------/
 int mate_sem_init(mate_instance *lib_ref, mate_sem_name sem, unsigned int value){
     
-        
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos inicializar un semaforo de nombre: %s, con valor : %d", sem, value);
-    inicializarSemaforo(lib_ref->group_info->conexionConBackEnd, sem, value);
-    int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valorRetorno;
+
+    if(lib_ref->group_info->conexionConBackEnd != -1){
+        inicializarSemaforo(lib_ref->group_info->conexionConBackEnd, sem, value);
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+    }
+        
+        
+    
 
 }
 
 int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos destruir un semaforo de nombre: %s", sem);
-    liberarSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
-    int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valorRetorno;
+
+    if(lib_ref->group_info->conexionConBackEnd != -1){
+        liberarSemaforo(lib_ref->group_info->conexionConBackEnd, sem);
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+    }
+
+
+
     
 }
 
@@ -60,21 +97,31 @@ int mate_sem_destroy(mate_instance *lib_ref, mate_sem_name sem){
 
 int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
     
-    
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un wait sobre el semaforo: %s", sem);
-    realizarWaitSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
-    int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valorRetorno;
+
+    if(lib_ref->group_info->conexionConBackEnd != -1){
+        realizarWaitSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+    }
+    
       
 }
 
 int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
     
-    
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos hacer un signal sobre el semaforo: %s", sem);
-    realizarPostSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
-    int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valorRetorno;
+    
+    if(lib_ref->group_info->conexionConBackEnd != -1){
+        realizarPostSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
+        int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valorRetorno;
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+    }
+    
       
 }
 
@@ -86,9 +133,14 @@ int mate_sem_post(mate_instance *lib_ref, mate_sem_name sem){
 int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void* msg){
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar una operacion IO sobre el dispositivo: %s", io);
-    realizarLlamadoDispositivoIO(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, io);
-    int valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valor;
+
+    if(lib_ref->group_info->conexionConBackEnd != -1){    
+        realizarLlamadoDispositivoIO(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, io);
+        int valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valor;
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+    }
     
 }
 
@@ -103,23 +155,53 @@ int mate_call_io(mate_instance *lib_ref, mate_io_resource io, void* msg){
 mate_pointer mate_memalloc(mate_instance *lib_ref, int size){
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memalloc de size:%d", size);
-    realizarMemAlloc(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, size);
-    mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valor;
+
+    if(lib_ref->group_info->conexionConBackEnd != -1){
+        realizarMemAlloc(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, size);
+        mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valor;
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+    }
+
+    
     
 }
 
 int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
 
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memfree de %d", addr);
-    realizarMemFree( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, addr);
-    mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valor;
+
+    if(lib_ref->group_info->conexionConBackEnd != -1){
+        realizarMemFree( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, addr);
+        mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valor;
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+    }
+
+    
 }
 
 int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int size){
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memRead %d", origin);
+<<<<<<< HEAD
+
+    if(lib_ref->group_info->conexionConBackEnd != -1){
+        realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, info, size);
+        origin = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+
+        if(origin != NULL){
+            return 0;
+        }
+        else{
+            return MATE_READ_FAULT;
+        }
+
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+=======
     realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
     info = recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
 
@@ -130,15 +212,30 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
     else
     {
         return MATE_READ_FAULT;
+>>>>>>> 8cec1148a1b2ee32be48fd2756e7ec73df43b59b
     }
+
+    
 }
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
     
+<<<<<<< HEAD
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d", dest);
+    
+    if(lib_ref->group_info->conexionConBackEnd != -1){
+        realizarMemWrite( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, dest, size);
+        mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        return valor;
+    }else{
+        log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
+    }
+=======
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d", size);
     realizarMemWrite( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, dest, size);
     mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
     return valor;
+>>>>>>> 8cec1148a1b2ee32be48fd2756e7ec73df43b59b
 
 }
 
@@ -701,7 +798,21 @@ int validarConexionPosible(int tipoSolicitado, int tipoActual){
 void hilo1(){
     mate_instance* referencia = malloc(sizeof(mate_instance));
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    mate_sem_init(referencia,"SEM1",1);
+    mate_sem_init(referencia,"SEM1",2);
+    mate_sem_init(referencia,"SEM2",2);
+    mate_sem_wait(referencia,"SEM1");
+    mate_sem_wait(referencia,"SEM2");
+    sleep(60);
+    mate_sem_post(referencia,"SEM1");
+    mate_sem_post(referencia,"SEM2");
+    mate_close(referencia);
+    free(referencia);
+}
+
+void hilo2(){
+    sleep(7);
+    mate_instance* referencia = malloc(sizeof(mate_instance));
+    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     mate_sem_wait(referencia,"SEM1");
     sleep(3);
     mate_sem_wait(referencia,"SEM2");
@@ -709,10 +820,10 @@ void hilo1(){
     free(referencia);
 }
 
-void hilo2(){
+void hilo3(){
+    sleep(7);
     mate_instance* referencia = malloc(sizeof(mate_instance));
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    mate_sem_init(referencia,"SEM2",1);
     mate_sem_wait(referencia,"SEM2");
     sleep(3);
     mate_sem_wait(referencia,"SEM1");
@@ -748,13 +859,23 @@ int main(){
     mate_close(referencia);
     free(referencia);
     
+<<<<<<< HEAD
+    pthread_t h1, h2, h3;
+=======
     /* pthread_t h1, h2;
+>>>>>>> 8cec1148a1b2ee32be48fd2756e7ec73df43b59b
 
     pthread_create(&h1, NULL, (void*)hilo1,NULL);  
-    pthread_create(&h2, NULL, (void*)hilo2,NULL);  
+    pthread_create(&h2, NULL, (void*)hilo2,NULL);
+    pthread_create(&h3, NULL, (void*)hilo3,NULL);  
 
     pthread_join(h1, NULL);
+<<<<<<< HEAD
+    pthread_join(h2, NULL);
+    pthread_join(h3, NULL);
+=======
     pthread_join(h1, NULL);*/
+>>>>>>> 8cec1148a1b2ee32be48fd2756e7ec73df43b59b
 
     
     return 0;

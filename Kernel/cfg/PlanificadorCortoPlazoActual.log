@@ -319,3 +319,243 @@
 [INFO] 09:56:38:665 Thread-CPU/(9524:9534): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
 [INFO] 09:56:42:665 Thread-CPU/(9524:9532): La tarea realizada fue: 3
 [INFO] 09:56:42:666 Thread-CPU/(9524:9532): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 18:03:37:096 PlanificadorCortoPlazo/(5986:5993): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:03:39:416 Thread-CPU/(5986:5996): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 18:03:39:420 Thread-CPU/(5986:5996): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 18:03:39:424 Thread-CPU/(5986:5996): Se ejecuto tarea de conexion
+[DEBUG] 18:03:39:425 Thread-CPU/(5986:5997): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 18:03:39:428 Thread-CPU/(5986:5997): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[INFO] 18:03:39:428 Thread-CPU/(5986:5997): Se ejecuto tarea de conexion
+[INFO] 18:03:39:583 Thread-CPU/(5986:5996): La tarea realizada fue: 2
+[INFO] 18:03:39:583 Thread-CPU/(5986:5996): Se ejecuto tarea de conexion
+[INFO] 18:03:39:587 Thread-CPU/(5986:5997): La tarea realizada fue: 2
+[INFO] 18:03:39:587 Thread-CPU/(5986:5997): Se ejecuto tarea de conexion
+[INFO] 18:03:39:598 Thread-CPU/(5986:5996): La tarea realizada fue: 14
+[INFO] 18:03:39:599 Thread-CPU/(5986:5997): La tarea realizada fue: 14
+[INFO] 18:03:39:599 Thread-CPU/(5986:5997): Se ejecuto tarea de conexion
+[INFO] 18:03:39:600 Thread-CPU/(5986:5996): Se ejecuto tarea de conexion
+[INFO] 18:03:42:604 Thread-CPU/(5986:5996): La tarea realizada fue: 3
+[INFO] 18:03:42:604 Thread-CPU/(5986:5996): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 18:03:46:605 Thread-CPU/(5986:5997): La tarea realizada fue: 3
+[INFO] 18:03:46:605 Thread-CPU/(5986:5997): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 18:12:16:843 PlanificadorCortoPlazo/(6735:6741): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:12:22:068 Thread-CPU/(6735:6745): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 18:12:22:068 Thread-CPU/(6735:6745): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 18:12:22:072 Thread-CPU/(6735:6747): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 18:12:22:074 Thread-CPU/(6735:6747): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 18:12:22:075 Thread-CPU/(6735:6747): Se ejecuto tarea de conexion
+[INFO] 18:12:22:075 Thread-CPU/(6735:6745): Se ejecuto tarea de conexion
+[INFO] 18:12:22:247 Thread-CPU/(6735:6745): La tarea realizada fue: 2
+[INFO] 18:12:22:248 Thread-CPU/(6735:6747): La tarea realizada fue: 2
+[INFO] 18:12:22:249 Thread-CPU/(6735:6745): Se ejecuto tarea de conexion
+[INFO] 18:12:22:249 Thread-CPU/(6735:6747): Se ejecuto tarea de conexion
+[INFO] 18:12:22:279 Thread-CPU/(6735:6747): La tarea realizada fue: 14
+[INFO] 18:12:22:281 Thread-CPU/(6735:6747): Se ejecuto tarea de conexion
+[INFO] 18:12:22:282 Thread-CPU/(6735:6745): La tarea realizada fue: 14
+[INFO] 18:12:22:283 Thread-CPU/(6735:6745): Se ejecuto tarea de conexion
+[INFO] 18:12:25:285 Thread-CPU/(6735:6745): La tarea realizada fue: 3
+[INFO] 18:12:25:286 Thread-CPU/(6735:6745): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 18:12:29:288 Thread-CPU/(6735:6747): La tarea realizada fue: 3
+[INFO] 18:12:29:288 Thread-CPU/(6735:6747): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 18:13:10:925 PlanificadorCortoPlazo/(6877:6886): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:17:08:762 PlanificadorCortoPlazo/(7483:7489): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:17:12:270 Thread-CPU/(7483:7490): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 18:17:12:277 Thread-CPU/(7483:7490): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 18:17:12:279 Thread-CPU/(7483:7492): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 18:17:12:282 Thread-CPU/(7483:7492): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 18:17:12:282 Thread-CPU/(7483:7492): Se ejecuto tarea de conexion
+[INFO] 18:17:12:283 Thread-CPU/(7483:7490): Se ejecuto tarea de conexion
+[INFO] 18:17:12:461 Thread-CPU/(7483:7492): La tarea realizada fue: 2
+[INFO] 18:17:12:462 Thread-CPU/(7483:7492): Se ejecuto tarea de conexion
+[INFO] 18:17:12:463 Thread-CPU/(7483:7490): La tarea realizada fue: 2
+[INFO] 18:17:12:463 Thread-CPU/(7483:7490): Se ejecuto tarea de conexion
+[INFO] 18:17:12:485 Thread-CPU/(7483:7490): La tarea realizada fue: 14
+[INFO] 18:17:12:486 Thread-CPU/(7483:7492): La tarea realizada fue: 14
+[INFO] 18:17:12:486 Thread-CPU/(7483:7492): Se ejecuto tarea de conexion
+[INFO] 18:17:12:488 Thread-CPU/(7483:7490): Se ejecuto tarea de conexion
+[INFO] 18:17:15:490 Thread-CPU/(7483:7492): La tarea realizada fue: 3
+[INFO] 18:17:15:491 Thread-CPU/(7483:7492): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 18:17:19:491 Thread-CPU/(7483:7490): La tarea realizada fue: 3
+[INFO] 18:17:19:491 Thread-CPU/(7483:7490): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 18:20:11:947 PlanificadorCortoPlazo/(7740:7746): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:20:26:141 PlanificadorCortoPlazo/(7828:7834): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:27:07:305 PlanificadorCortoPlazo/(8564:8571): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:27:11:258 Thread-CPU/(8564:8576): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 18:27:11:258 Thread-CPU/(8564:8576): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 18:27:11:261 Thread-CPU/(8564:8576): Se ejecuto tarea de conexion
+[INFO] 18:27:11:386 Thread-CPU/(8564:8576): La tarea realizada fue: 2
+[INFO] 18:27:11:388 Thread-CPU/(8564:8576): Se ejecuto tarea de conexion
+[INFO] 18:27:11:403 Thread-CPU/(8564:8576): La tarea realizada fue: 2
+[INFO] 18:27:11:404 Thread-CPU/(8564:8576): Se ejecuto tarea de conexion
+[INFO] 18:27:11:430 Thread-CPU/(8564:8576): La tarea realizada fue: 14
+[INFO] 18:27:11:432 Thread-CPU/(8564:8576): Se ejecuto tarea de conexion
+[INFO] 18:27:11:439 Thread-CPU/(8564:8576): La tarea realizada fue: 14
+[INFO] 18:27:11:440 Thread-CPU/(8564:8576): Se ejecuto tarea de conexion
+[DEBUG] 18:27:16:111 Thread-CPU/(8564:8577): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 18:27:16:111 Thread-CPU/(8564:8577): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[INFO] 18:27:16:112 Thread-CPU/(8564:8577): Se ejecuto tarea de conexion
+[INFO] 18:27:16:114 Thread-CPU/(8564:8577): La tarea realizada fue: 14
+[INFO] 18:27:16:114 Thread-CPU/(8564:8577): Se ejecuto tarea de conexion
+[INFO] 18:27:19:117 Thread-CPU/(8564:8577): La tarea realizada fue: 14
+[INFO] 18:27:19:119 Thread-CPU/(8564:8577): Se ejecuto tarea de conexion
+[INFO] 18:27:19:170 Thread-CPU/(8564:8577): La tarea realizada fue: 1
+[INFO] 18:27:19:173 Thread-CPU/(8564:8577): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 18:27:19:175 Thread-CPU/(8564:8577): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2
+[DEBUG] 18:27:19:180 Thread-CPU/(8564:8577): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[INFO] 18:27:19:181 Thread-CPU/(8564:8577): Se ejecuto tarea de conexion
+[INFO] 18:27:19:198 Thread-CPU/(8564:8577): La tarea realizada fue: 3
+[INFO] 18:27:19:199 Thread-CPU/(8564:8577): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 18:30:44:161 PlanificadorCortoPlazo/(8913:8919): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:30:50:458 Thread-CPU/(8913:8924): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 18:30:50:459 Thread-CPU/(8913:8924): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 18:30:50:472 Thread-CPU/(8913:8924): Se ejecuto tarea de conexion
+[INFO] 18:30:50:599 Thread-CPU/(8913:8924): La tarea realizada fue: 2
+[INFO] 18:30:50:605 Thread-CPU/(8913:8924): Se ejecuto tarea de conexion
+[INFO] 18:30:50:615 Thread-CPU/(8913:8924): La tarea realizada fue: 2
+[INFO] 18:30:50:616 Thread-CPU/(8913:8924): Se ejecuto tarea de conexion
+[INFO] 18:30:50:643 Thread-CPU/(8913:8924): La tarea realizada fue: 14
+[INFO] 18:30:50:645 Thread-CPU/(8913:8924): Se ejecuto tarea de conexion
+[INFO] 18:30:50:651 Thread-CPU/(8913:8924): La tarea realizada fue: 14
+[INFO] 18:30:50:652 Thread-CPU/(8913:8924): Se ejecuto tarea de conexion
+[DEBUG] 18:30:57:295 Thread-CPU/(8913:8922): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 18:30:57:295 Thread-CPU/(8913:8922): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[INFO] 18:30:57:295 Thread-CPU/(8913:8922): Se ejecuto tarea de conexion
+[INFO] 18:30:57:297 Thread-CPU/(8913:8922): La tarea realizada fue: 14
+[INFO] 18:30:57:298 Thread-CPU/(8913:8922): Se ejecuto tarea de conexion
+[INFO] 18:31:00:303 Thread-CPU/(8913:8922): La tarea realizada fue: 14
+[INFO] 18:31:00:305 Thread-CPU/(8913:8922): Se ejecuto tarea de conexion
+[INFO] 18:31:00:354 Thread-CPU/(8913:8922): La tarea realizada fue: 1
+[INFO] 18:31:00:359 Thread-CPU/(8913:8922): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 18:31:00:361 Thread-CPU/(8913:8922): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2
+[DEBUG] 18:31:00:362 Thread-CPU/(8913:8922): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[INFO] 18:31:00:365 Thread-CPU/(8913:8922): Se ejecuto tarea de conexion
+[INFO] 18:31:00:381 Thread-CPU/(8913:8922): La tarea realizada fue: 3
+[INFO] 18:31:00:382 Thread-CPU/(8913:8922): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 18:31:50:660 Thread-CPU/(8913:8924): La tarea realizada fue: 4
+[INFO] 18:31:50:662 Thread-CPU/(8913:8924): Se ejecuto tarea de conexion
+[DEBUG] 18:31:50:672 Thread-CPU/(8913:8922): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2
+[DEBUG] 18:31:50:672 Thread-CPU/(8913:8922): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[INFO] 18:31:50:672 Thread-CPU/(8913:8922): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 18:31:50:674 Thread-CPU/(8913:8922): Se ejecuto tarea de conexion
+[INFO] 18:31:50:678 Thread-CPU/(8913:8924): La tarea realizada fue: 4
+[INFO] 18:31:50:679 Thread-CPU/(8913:8924): Se ejecuto tarea de conexion
+[INFO] 18:31:50:696 Thread-CPU/(8913:8924): La tarea realizada fue: 1
+[INFO] 18:31:50:697 Thread-CPU/(8913:8924): Se realizo una operacion que termina con la ejecucion del Carpincho
+[INFO] 18:31:53:677 Thread-CPU/(8913:8922): La tarea realizada fue: 14
+[INFO] 18:31:53:677 Thread-CPU/(8913:8922): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 18:31:53:677 Thread-CPU/(8913:8922): Se ejecuto tarea de conexion
+[INFO] 18:31:53:688 Thread-CPU/(8913:8922): La tarea realizada fue: 1
+[INFO] 18:31:53:688 Thread-CPU/(8913:8922): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 18:37:11:271 PlanificadorCortoPlazo/(9460:9466): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:37:12:985 Thread-CPU/(9460:9470): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 18:37:12:986 Thread-CPU/(9460:9470): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 18:37:12:989 Thread-CPU/(9460:9470): Se ejecuto tarea de conexion
+[INFO] 18:37:13:202 Thread-CPU/(9460:9470): La tarea realizada fue: 2
+[INFO] 18:37:13:207 Thread-CPU/(9460:9470): Se ejecuto tarea de conexion
+[INFO] 18:37:13:217 Thread-CPU/(9460:9470): La tarea realizada fue: 2
+[INFO] 18:37:13:218 Thread-CPU/(9460:9470): Se ejecuto tarea de conexion
+[INFO] 18:37:13:250 Thread-CPU/(9460:9470): La tarea realizada fue: 14
+[INFO] 18:37:13:252 Thread-CPU/(9460:9470): Se ejecuto tarea de conexion
+[INFO] 18:37:13:258 Thread-CPU/(9460:9470): La tarea realizada fue: 14
+[INFO] 18:37:13:259 Thread-CPU/(9460:9470): Se ejecuto tarea de conexion
+[DEBUG] 18:37:19:684 Thread-CPU/(9460:9471): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 18:37:19:684 Thread-CPU/(9460:9471): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[INFO] 18:37:19:684 Thread-CPU/(9460:9471): Se ejecuto tarea de conexion
+[INFO] 18:37:19:687 Thread-CPU/(9460:9471): La tarea realizada fue: 14
+[INFO] 18:37:19:687 Thread-CPU/(9460:9471): Se ejecuto tarea de conexion
+[DEBUG] 18:37:19:691 Thread-CPU/(9460:9467): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2
+[DEBUG] 18:37:19:691 Thread-CPU/(9460:9467): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[INFO] 18:37:19:692 Thread-CPU/(9460:9467): Se ejecuto tarea de conexion
+[INFO] 18:37:19:695 Thread-CPU/(9460:9467): La tarea realizada fue: 14
+[INFO] 18:37:19:695 Thread-CPU/(9460:9467): Se ejecuto tarea de conexion
+[INFO] 18:37:22:692 Thread-CPU/(9460:9471): La tarea realizada fue: 3
+[INFO] 18:37:22:694 Thread-CPU/(9460:9471): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 18:37:26:693 Thread-CPU/(9460:9467): La tarea realizada fue: 3
+[INFO] 18:37:26:693 Thread-CPU/(9460:9467): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 18:38:13:266 Thread-CPU/(9460:9471): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1
+[DEBUG] 18:38:13:266 Thread-CPU/(9460:9471): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[INFO] 18:38:13:266 Thread-CPU/(9460:9471): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 18:38:13:269 Thread-CPU/(9460:9471): Se ejecuto tarea de conexion
+[INFO] 18:38:13:281 Thread-CPU/(9460:9470): La tarea realizada fue: 4
+[INFO] 18:38:13:282 Thread-CPU/(9460:9470): Se ejecuto tarea de conexion
+[DEBUG] 18:38:13:304 Thread-CPU/(9460:9467): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2
+[DEBUG] 18:38:13:304 Thread-CPU/(9460:9467): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[INFO] 18:38:13:304 Thread-CPU/(9460:9467): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 18:38:13:304 Thread-CPU/(9460:9467): Se ejecuto tarea de conexion
+[INFO] 18:38:13:305 Thread-CPU/(9460:9470): La tarea realizada fue: 4
+[INFO] 18:38:13:306 Thread-CPU/(9460:9470): Se ejecuto tarea de conexion
+[INFO] 18:38:13:309 Thread-CPU/(9460:9471): La tarea realizada fue: 1
+[INFO] 18:38:13:312 Thread-CPU/(9460:9471): Se realizo una operacion que termina con la ejecucion del Carpincho
+[INFO] 18:38:13:326 Thread-CPU/(9460:9467): La tarea realizada fue: 1
+[INFO] 18:38:13:329 Thread-CPU/(9460:9467): Se realizo una operacion que termina con la ejecucion del Carpincho
+[INFO] 18:38:13:332 Thread-CPU/(9460:9470): La tarea realizada fue: 1
+[INFO] 18:38:13:332 Thread-CPU/(9460:9470): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 18:40:59:182 PlanificadorCortoPlazo/(9918:9927): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:41:03:012 Thread-CPU/(9918:9929): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3
+[DEBUG] 18:41:03:012 Thread-CPU/(9918:9929): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[INFO] 18:41:03:012 Thread-CPU/(9918:9929): Se ejecuto tarea de conexion
+[INFO] 18:41:03:240 Thread-CPU/(9918:9929): La tarea realizada fue: 2
+[INFO] 18:41:03:240 Thread-CPU/(9918:9929): Se ejecuto tarea de conexion
+[INFO] 18:41:03:259 Thread-CPU/(9918:9929): La tarea realizada fue: 2
+[INFO] 18:41:03:259 Thread-CPU/(9918:9929): Se ejecuto tarea de conexion
+[INFO] 18:41:03:269 Thread-CPU/(9918:9929): La tarea realizada fue: 14
+[INFO] 18:41:03:269 Thread-CPU/(9918:9929): Se ejecuto tarea de conexion
+[INFO] 18:41:03:277 Thread-CPU/(9918:9929): La tarea realizada fue: 14
+[INFO] 18:41:03:277 Thread-CPU/(9918:9929): Se ejecuto tarea de conexion
+[DEBUG] 18:41:09:973 Thread-CPU/(9918:9931): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4
+[DEBUG] 18:41:09:973 Thread-CPU/(9918:9931): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[INFO] 18:41:09:973 Thread-CPU/(9918:9931): Se ejecuto tarea de conexion
+[DEBUG] 18:41:09:974 Thread-CPU/(9918:9934): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5
+[DEBUG] 18:41:09:974 Thread-CPU/(9918:9934): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[INFO] 18:41:09:974 Thread-CPU/(9918:9934): Se ejecuto tarea de conexion
+[INFO] 18:41:09:976 Thread-CPU/(9918:9931): La tarea realizada fue: 14
+[INFO] 18:41:09:976 Thread-CPU/(9918:9931): Se ejecuto tarea de conexion
+[INFO] 18:41:09:977 Thread-CPU/(9918:9934): La tarea realizada fue: 14
+[INFO] 18:41:09:977 Thread-CPU/(9918:9934): Se ejecuto tarea de conexion
+[INFO] 18:41:12:980 Thread-CPU/(9918:9934): La tarea realizada fue: 3
+[INFO] 18:41:12:980 Thread-CPU/(9918:9934): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 18:41:16:981 Thread-CPU/(9918:9931): La tarea realizada fue: 3
+[INFO] 18:41:16:982 Thread-CPU/(9918:9931): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 18:43:33:189 PlanificadorCortoPlazo/(10111:10120): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:48:02:376 PlanificadorCortoPlazo/(10550:10555): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 18:48:03:867 Thread-CPU/(10550:10560): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: -1
+[DEBUG] 18:48:03:868 Thread-CPU/(10550:10560): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: -1
+[INFO] 18:48:03:872 Thread-CPU/(10550:10560): Se ejecuto tarea de conexion
+[INFO] 18:48:04:052 Thread-CPU/(10550:10560): La tarea realizada fue: 2
+[INFO] 18:48:04:057 Thread-CPU/(10550:10560): Se ejecuto tarea de conexion
+[INFO] 18:48:04:065 Thread-CPU/(10550:10560): La tarea realizada fue: 2
+[INFO] 18:48:04:066 Thread-CPU/(10550:10560): Se ejecuto tarea de conexion
+[INFO] 18:48:04:092 Thread-CPU/(10550:10560): La tarea realizada fue: 14
+[INFO] 18:48:04:094 Thread-CPU/(10550:10560): Se ejecuto tarea de conexion
+[INFO] 18:48:04:097 Thread-CPU/(10550:10560): La tarea realizada fue: 14
+[INFO] 18:48:04:098 Thread-CPU/(10550:10560): Se ejecuto tarea de conexion
+[DEBUG] 18:48:10:792 Thread-CPU/(10550:10556): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: -1
+[DEBUG] 18:48:10:792 Thread-CPU/(10550:10556): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: -1
+[INFO] 18:48:10:792 Thread-CPU/(10550:10556): Se ejecuto tarea de conexion
+[INFO] 18:48:10:795 Thread-CPU/(10550:10556): La tarea realizada fue: 14
+[INFO] 18:48:10:795 Thread-CPU/(10550:10556): Se ejecuto tarea de conexion
+[DEBUG] 18:48:10:797 Thread-CPU/(10550:10558): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: -1
+[DEBUG] 18:48:10:797 Thread-CPU/(10550:10558): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: -1
+[INFO] 18:48:10:798 Thread-CPU/(10550:10558): Se ejecuto tarea de conexion
+[INFO] 18:48:10:800 Thread-CPU/(10550:10558): La tarea realizada fue: 14
+[INFO] 18:48:10:800 Thread-CPU/(10550:10558): Se ejecuto tarea de conexion
+[INFO] 18:48:13:800 Thread-CPU/(10550:10556): La tarea realizada fue: 3
+[INFO] 18:48:13:802 Thread-CPU/(10550:10556): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 18:48:17:801 Thread-CPU/(10550:10558): La tarea realizada fue: 3
+[INFO] 18:48:17:801 Thread-CPU/(10550:10558): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[DEBUG] 18:49:04:105 Thread-CPU/(10550:10556): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: -1
+[DEBUG] 18:49:04:106 Thread-CPU/(10550:10556): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: -1
+[INFO] 18:49:04:106 Thread-CPU/(10550:10556): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 18:49:04:108 Thread-CPU/(10550:10556): Se ejecuto tarea de conexion
+[DEBUG] 18:49:04:115 Thread-CPU/(10550:10558): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: -1
+[DEBUG] 18:49:04:115 Thread-CPU/(10550:10558): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: -1
+[INFO] 18:49:04:115 Thread-CPU/(10550:10558): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 18:49:04:115 Thread-CPU/(10550:10558): Se ejecuto tarea de conexion
+[INFO] 18:49:04:121 Thread-CPU/(10550:10556): La tarea realizada fue: 4
+[INFO] 18:49:04:124 Thread-CPU/(10550:10560): La tarea realizada fue: 4
+[INFO] 18:49:04:125 Thread-CPU/(10550:10560): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 18:49:04:129 Thread-CPU/(10550:10560): Se ejecuto tarea de conexion
+[INFO] 18:49:04:129 Thread-CPU/(10550:10556): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 18:49:04:131 Thread-CPU/(10550:10556): Se ejecuto tarea de conexion
+[INFO] 18:49:04:143 Thread-CPU/(10550:10558): La tarea realizada fue: 1
+[INFO] 18:49:04:144 Thread-CPU/(10550:10558): Se realizo una operacion que termina con la ejecucion del Carpincho
