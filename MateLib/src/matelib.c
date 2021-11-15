@@ -186,7 +186,6 @@ int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
 int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int size){
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memRead %d", origin);
-<<<<<<< HEAD
 
     if(lib_ref->group_info->conexionConBackEnd != -1){
         realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, info, size);
@@ -201,18 +200,6 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
 
     }else{
         log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
-=======
-    realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
-    info = recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-
-     if(info != NULL)
-     {
-        return 0;
-    }
-    else
-    {
-        return MATE_READ_FAULT;
->>>>>>> 8cec1148a1b2ee32be48fd2756e7ec73df43b59b
     }
 
     
@@ -220,7 +207,6 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
     
-<<<<<<< HEAD
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d", dest);
     
     if(lib_ref->group_info->conexionConBackEnd != -1){
@@ -230,12 +216,6 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
     }else{
         log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
     }
-=======
-    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d", size);
-    realizarMemWrite( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, dest, size);
-    mate_pointer valor = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-    return valor;
->>>>>>> 8cec1148a1b2ee32be48fd2756e7ec73df43b59b
 
 }
 
@@ -859,23 +839,15 @@ int main(){
     mate_close(referencia);
     free(referencia);
     
-<<<<<<< HEAD
     pthread_t h1, h2, h3;
-=======
-    /* pthread_t h1, h2;
->>>>>>> 8cec1148a1b2ee32be48fd2756e7ec73df43b59b
 
     pthread_create(&h1, NULL, (void*)hilo1,NULL);  
     pthread_create(&h2, NULL, (void*)hilo2,NULL);
     pthread_create(&h3, NULL, (void*)hilo3,NULL);  
 
     pthread_join(h1, NULL);
-<<<<<<< HEAD
     pthread_join(h2, NULL);
     pthread_join(h3, NULL);
-=======
-    pthread_join(h1, NULL);*/
->>>>>>> 8cec1148a1b2ee32be48fd2756e7ec73df43b59b
 
     
     return 0;
