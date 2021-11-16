@@ -1,0 +1,51 @@
+[INFO] 19:21:38:370 Servidor/(5325:5416): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 19:21:38:416 Servidor/(5325:5416): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 19:21:38:510 Servidor/(5325:5416): 
+LLego el proceso para allocar: 
+ Pid: 0 
+Tamanio: 45
+[INFO] 19:29:57:249 Servidor/(5807:5897): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 19:29:57:360 Servidor/(5807:5897): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 19:30:04:136 Servidor/(5807:5912): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 19:30:04:141 Servidor/(5807:5912): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 19:30:04:156 Servidor/(5807:5913): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 19:30:04:157 Servidor/(5807:5913): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 19:30:57:679 Servidor/(5807:5913): Sacamos al carpincho. Pid: 2
+[INFO] 19:30:57:680 Servidor/(5807:5913): Enviamos que queremos cerrar el carpincho
+[INFO] 19:30:57:683 Servidor/(5807:5913): Se nos va el carpincho: 2
+[INFO] 19:30:57:723 Servidor/(5807:5897): Sacamos al carpincho. Pid: 0
+[INFO] 19:30:57:723 Servidor/(5807:5912): Sacamos al carpincho. Pid: 1
+[INFO] 19:30:57:724 Servidor/(5807:5897): Enviamos que queremos cerrar el carpincho
+[INFO] 19:30:57:724 Servidor/(5807:5897): Se nos va el carpincho: 0
+[INFO] 19:30:57:724 Servidor/(5807:5912): Enviamos que queremos cerrar el carpincho
+[INFO] 19:30:57:725 Servidor/(5807:5912): Se nos va el carpincho: 1
+[INFO] 19:45:08:944 Servidor/(6273:6310): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 19:45:09:049 Servidor/(6273:6310): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 19:45:15:827 Servidor/(6273:6326): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 19:45:15:829 Servidor/(6273:6326): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 19:45:15:839 Servidor/(6273:6327): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 19:45:15:841 Servidor/(6273:6327): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 19:46:09:347 Servidor/(6273:6326): Sacamos al carpincho. Pid: 1
+[INFO] 19:46:09:349 Servidor/(6273:6326): Enviamos que queremos cerrar el carpincho
+[INFO] 19:46:09:351 Servidor/(6273:6326): Se nos va el carpincho: 1
+[INFO] 19:46:09:418 Servidor/(6273:6327): Sacamos al carpincho. Pid: 2
+[INFO] 19:46:09:419 Servidor/(6273:6327): Enviamos que queremos cerrar el carpincho
+[INFO] 19:46:09:419 Servidor/(6273:6327): Se nos va el carpincho: 2
+[INFO] 19:46:09:421 Servidor/(6273:6310): Sacamos al carpincho. Pid: 0
+[INFO] 19:46:09:421 Servidor/(6273:6310): Enviamos que queremos cerrar el carpincho
+[INFO] 19:46:09:421 Servidor/(6273:6310): Se nos va el carpincho: 0
+[INFO] 19:50:03:722 Servidor/(6623:6660): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 19:50:03:886 Servidor/(6623:6660): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 19:50:10:608 Servidor/(6623:6677): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 19:50:10:610 Servidor/(6623:6676): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 19:50:10:612 Servidor/(6623:6677): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 19:50:10:614 Servidor/(6623:6676): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 19:51:04:230 Servidor/(6623:6677): Sacamos al carpincho. Pid: 1
+[INFO] 19:51:04:231 Servidor/(6623:6677): Enviamos que queremos cerrar el carpincho
+[INFO] 19:51:04:236 Servidor/(6623:6677): Se nos va el carpincho: 1
+[INFO] 19:51:04:258 Servidor/(6623:6676): Sacamos al carpincho. Pid: 2
+[INFO] 19:51:04:258 Servidor/(6623:6676): Enviamos que queremos cerrar el carpincho
+[INFO] 19:51:04:259 Servidor/(6623:6676): Se nos va el carpincho: 2
+[INFO] 19:51:04:262 Servidor/(6623:6660): Sacamos al carpincho. Pid: 0
+[INFO] 19:51:04:263 Servidor/(6623:6660): Enviamos que queremos cerrar el carpincho
+[INFO] 19:51:04:263 Servidor/(6623:6660): Se nos va el carpincho: 0

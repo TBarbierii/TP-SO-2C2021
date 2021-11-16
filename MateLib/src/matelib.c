@@ -813,9 +813,9 @@ void hilo3(){
 
 int main(){
 
-    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
+    //mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
 
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    //mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     
     //mate_sem_init(referencia,"SEM1",1);
     //mate_sem_post(referencia,"SEM1");
@@ -828,16 +828,16 @@ int main(){
     //free(referencia);
     
 
-    uint32_t direccion = mate_memalloc(referencia, 45);
-    void* lectura = malloc(45);
-    printf("\nDireccion %i\n", direccion);
+    //uint32_t direccion = mate_memalloc(referencia, 45);
+    //void* lectura = malloc(45);
+    //printf("\nDireccion %i\n", direccion);
 
-    mate_memwrite(referencia, "-----------------------------------------1-45", direccion, 45);
-    mate_memread(referencia, direccion, lectura,45);
+    //mate_memwrite(referencia, "-----------------------------------------1-45", direccion, 45);
+    //mate_memread(referencia, direccion, lectura,45);
 
-    printf("\nLeimos: %s", (char*)lectura);
-    mate_close(referencia);
-    free(referencia);
+    //printf("\nLeimos: %s", (char*)lectura);
+    //mate_close(referencia);
+    //free(referencia);
     
     pthread_t h1, h2, h3;
 

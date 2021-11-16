@@ -144,3 +144,36 @@
 [INFO] 18:38:13:297 loggerContenidoProceso/(9482:9486): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 18:38:13:298 loggerContenidoProceso/(9482:9486): Se pudo cerrar el proceso correctamente en el BackEnd
 [INFO] 18:38:13:298 loggerContenidoProceso/(9482:9486): Se liberan todas las estructuras del proceso
+[INFO] 19:30:04:149 loggerContenidoProceso/(5892:5894): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 19:30:04:150 loggerContenidoProceso/(5892:5894): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 19:30:04:153 loggerContenidoProceso/(5892:5894): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:30:04:154 loggerContenidoProceso/(5892:5894): Se pudo hacer el wait del semaforo
+[INFO] 19:30:07:154 loggerContenidoProceso/(5892:5894): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 19:30:57:701 loggerContenidoProceso/(5892:5894): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:30:57:701 loggerContenidoProceso/(5892:5894): Se pudo hacer el wait del semaforo
+[INFO] 19:30:57:702 loggerContenidoProceso/(5892:5894): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 19:30:57:737 loggerContenidoProceso/(5892:5894): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 19:30:57:740 loggerContenidoProceso/(5892:5894): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 19:30:57:741 loggerContenidoProceso/(5892:5894): Se liberan todas las estructuras del proceso
+[INFO] 19:45:15:832 loggerContenidoProceso/(6304:6308): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 19:45:15:833 loggerContenidoProceso/(6304:6308): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 19:45:15:836 loggerContenidoProceso/(6304:6308): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:45:15:836 loggerContenidoProceso/(6304:6308): Se pudo hacer el wait del semaforo
+[INFO] 19:45:18:837 loggerContenidoProceso/(6304:6308): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 19:46:09:338 loggerContenidoProceso/(6304:6308): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:46:09:339 loggerContenidoProceso/(6304:6308): Se pudo hacer el wait del semaforo
+[INFO] 19:46:09:339 loggerContenidoProceso/(6304:6308): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 19:46:09:369 loggerContenidoProceso/(6304:6308): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 19:46:09:369 loggerContenidoProceso/(6304:6308): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 19:46:09:370 loggerContenidoProceso/(6304:6308): Se liberan todas las estructuras del proceso
+[INFO] 19:50:10:615 loggerContenidoProceso/(6653:6658): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 19:50:10:615 loggerContenidoProceso/(6653:6658): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 19:50:10:619 loggerContenidoProceso/(6653:6658): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:50:10:619 loggerContenidoProceso/(6653:6658): Se pudo hacer el wait del semaforo
+[INFO] 19:50:13:620 loggerContenidoProceso/(6653:6658): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 19:51:04:215 loggerContenidoProceso/(6653:6658): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:51:04:216 loggerContenidoProceso/(6653:6658): Se pudo hacer el wait del semaforo
+[INFO] 19:51:04:216 loggerContenidoProceso/(6653:6658): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 19:51:04:250 loggerContenidoProceso/(6653:6658): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 19:51:04:251 loggerContenidoProceso/(6653:6658): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 19:51:04:251 loggerContenidoProceso/(6653:6658): Se liberan todas las estructuras del proceso

@@ -111,17 +111,17 @@ int main(){
 		perror ("No se puede cambiar signal");
 	}
 
-    enviar_tipo_asignacion(tipoAsignacion);
+    //enviar_tipo_asignacion(tipoAsignacion);
     //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
     atender_solicitudes_multihilo();
-    
+    /*
     t_memalloc *alloc = malloc(sizeof(t_memalloc));
     
     alloc->pid = 6;
     alloc->tamanio = 45;
 
-     /*uint32_t direccionLogica = administrar_allocs(alloc);
+    uint32_t direccionLogica = administrar_allocs(alloc);
 
     alloc->pid = 1;
     alloc->tamanio = 43;
@@ -137,7 +137,7 @@ int main(){
     alloc->tamanio = 10;
 
     uint32_t direccionLogica3 = administrar_allocs(alloc);
-*/
+
 
 
     uint32_t direccionLogica = administrar_allocs(alloc);
@@ -279,7 +279,7 @@ int main(){
     printf("\nSe leyo: %s", (char*)hola12);
     printf("\nSe leyo: %s\n", (char*)hola13);
 
-    
+    */
     finalizarTodo(configActual);
     return 0;
 }

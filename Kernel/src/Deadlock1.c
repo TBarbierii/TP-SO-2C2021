@@ -47,12 +47,13 @@ void ejecutarAlgoritmoDeadlock(){
 
         while(1){
             
-            t_list* procesosPosiblesEnDeadlock = procesosQueEstanReteniendoYEsperando();
+            t_list* procesosPosiblesEnDeadlock = procesosQueEstanReteniendoYEsperando(logger);
             int cantidadProcesos = list_size(procesosPosiblesEnDeadlock);
             log_info(logger,"La cantidad de procesos en posible deadlock son: %d",cantidadProcesos);
              
             if(cantidadProcesos <= 1){
-                log_info(logger,"No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos");
+                log_info(logger,"No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos\n");
+                list_destroy(procesosPosiblesEnDeadlock);
                 break;
             }
 
@@ -108,18 +109,21 @@ void ejecutarAlgoritmoDeadlock(){
                     
                     for(int j=0; j< cantidadSemaforos; j ++){
                         
-                        if(matrizRecursosPeticiones[i][j] > disponibilidad[j]){
+                        if(matrizRecursosPeticiones[i][j] > work[j]){
                         //con que se pida mas en alguno de los semaforos, ya no cumple
+                        
                         cumple = 0;
                         }
 
                     }
                     //se analiza si el proceso cumple ambas condiciones
                     if(finish[i] == 0  && cumple){
+                        
                         finish[i]=1;
                         existeProcesoQueCumplaCondicion = 1;
-                        for(int j=0; j< cantidadSemaforos; j ++){
-                        work[j] += matrizRecursosRetenidos[i][j];         
+
+                        for(int h=0; h< cantidadSemaforos; h ++){
+                        work[h] += matrizRecursosRetenidos[i][h];         
                         }
 
                     }
@@ -144,7 +148,7 @@ void ejecutarAlgoritmoDeadlock(){
 
             }
             if(list_size(procesosEnDeadlock)<=1){
-                log_info(logger,"No hay deadlock, dejamos que se ejecute todo normal");
+                log_info(logger,"No hay deadlock, dejamos que se ejecute todo normal\n");
                 break;
             }
 
@@ -152,7 +156,7 @@ void ejecutarAlgoritmoDeadlock(){
             //ordenamos la lista para poner el de mayor id primero
             list_sort(procesosEnDeadlock,procesoConMayorPID);
             proceso_kernel* procesoASacarPorDeadlock = list_get(procesosEnDeadlock, 0);
-            log_info(logger,"El proceso elegido para sacar del deadlock sera el proceso: %d", procesoASacarPorDeadlock->pid);
+            log_info(logger,"El proceso elegido para sacar del deadlock sera el proceso: %d\n", procesoASacarPorDeadlock->pid);
 
             //primero lo sacamos de bloqueado
             sacarProcesoDeBloqueado(procesoASacarPorDeadlock->pid);
@@ -260,7 +264,7 @@ int procesoReteniendo(proceso_kernel* proceso){
     return (!list_is_empty(proceso->listaRecursosRetenidos));
 }
 
-t_list* procesosQueEstanReteniendoYEsperando(){
+t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
 
     t_list* listaFiltrada = list_create();
     t_list* procesosQuePuedenEstarOcupandoRecursos = list_create();
@@ -271,11 +275,15 @@ t_list* procesosQueEstanReteniendoYEsperando(){
     //primero filtramos los que estan bloqueados, los que tienen cosas asignadas y estan reteniendo
     list_add_all(listaFiltrada, procesosBlocked);
     list_add_all(listaFiltrada, procesosSuspendedBlock);
-    
-    
-    listaFiltradaFinal = list_filter(listaFiltrada, procesoReteniendoYEsperando);
-    
-    
+
+
+    if(!list_is_empty(listaFiltrada)){
+        listaFiltradaFinal = list_filter(listaFiltrada, procesoReteniendoYEsperando);
+    }
+
+    int sizeBloqueados = list_size(listaFiltradaFinal);
+    log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d", sizeBloqueados);
+
 
 
     //ahora filtramos los que puede ser que esten reteniendo y no pidiendo nada, ya que estos me van a liberar recursos
@@ -283,16 +291,24 @@ t_list* procesosQueEstanReteniendoYEsperando(){
     list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosExec);
     list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosReady);
     list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosSuspendedReady);
+    
+    //int sizeNoBloqueados = list_size(procesosQuePuedenEstarOcupandoRecursos);
+    //log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que no se encuentran bloqueados son: %d", sizeNoBloqueados);
 
     if(!list_is_empty(procesosQuePuedenEstarOcupandoRecursos)){
         t_list* listaFiltradaFinal2 = list_filter(procesosQuePuedenEstarOcupandoRecursos, procesoReteniendo);
+
+    int sizeReteniendo = list_size(procesosQuePuedenEstarOcupandoRecursos);
+    log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que no se encuentran bloqueados, pero estan reteniendo son: %d", sizeReteniendo);
+        
         if(!list_is_empty(listaFiltradaFinal2)){
             list_add_all(listaFiltradaFinal, listaFiltradaFinal2);
         }
         list_destroy(listaFiltradaFinal2);
     }
-    
+
     list_destroy(procesosQuePuedenEstarOcupandoRecursos);
+
     return listaFiltradaFinal;
 
 }

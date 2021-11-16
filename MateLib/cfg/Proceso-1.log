@@ -142,3 +142,41 @@
 [ERROR] 19:15:07:850 loggerContenidoProceso/(12521:12522): No se puede ejecutar esta accion porque no esta conectado al servidor
 [INFO] 19:15:07:851 loggerContenidoProceso/(12521:12522): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
 [INFO] 19:15:07:851 loggerContenidoProceso/(12521:12522): Se liberan todas las estructuras del proceso
+[INFO] 19:53:59:240 loggerContenidoProceso/(6994:6996): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 19:53:59:400 loggerContenidoProceso/(6994:6996): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 2
+[INFO] 19:53:59:421 loggerContenidoProceso/(6994:6996): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:53:59:429 loggerContenidoProceso/(6994:6996): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 19:53:59:432 loggerContenidoProceso/(6994:6996): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 2
+[INFO] 19:53:59:435 loggerContenidoProceso/(6994:6996): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:53:59:435 loggerContenidoProceso/(6994:6996): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 19:53:59:436 loggerContenidoProceso/(6994:6996): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 19:53:59:445 loggerContenidoProceso/(6994:6996): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:53:59:445 loggerContenidoProceso/(6994:6996): Se pudo hacer el wait del semaforo
+[INFO] 19:53:59:446 loggerContenidoProceso/(6994:6996): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 19:53:59:462 loggerContenidoProceso/(6994:6996): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:53:59:463 loggerContenidoProceso/(6994:6996): Se pudo hacer el wait del semaforo
+[INFO] 19:54:06:092 loggerContenidoProceso/(6994:6998): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 19:54:06:093 loggerContenidoProceso/(6994:6998): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 19:54:06:096 loggerContenidoProceso/(6994:6998): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:54:06:097 loggerContenidoProceso/(6994:6998): Se pudo hacer el wait del semaforo
+[INFO] 19:54:06:102 loggerContenidoProceso/(6994:6997): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 19:54:06:102 loggerContenidoProceso/(6994:6997): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 19:54:06:106 loggerContenidoProceso/(6994:6997): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:54:06:107 loggerContenidoProceso/(6994:6997): Se pudo hacer el wait del semaforo
+[INFO] 19:54:09:098 loggerContenidoProceso/(6994:6998): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 19:54:09:107 loggerContenidoProceso/(6994:6997): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 19:54:59:464 loggerContenidoProceso/(6994:6996): Solicitamos hacer un signal sobre el semaforo: SEM1
+[INFO] 19:54:59:472 loggerContenidoProceso/(6994:6996): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:54:59:473 loggerContenidoProceso/(6994:6996): Se pudo hacer el wait del semaforo
+[INFO] 19:54:59:473 loggerContenidoProceso/(6994:6996): Solicitamos hacer un signal sobre el semaforo: SEM2
+[INFO] 19:54:59:479 loggerContenidoProceso/(6994:6996): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:54:59:480 loggerContenidoProceso/(6994:6996): Se pudo hacer el post del semaforo
+[INFO] 19:54:59:480 loggerContenidoProceso/(6994:6996): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[INFO] 19:54:59:482 loggerContenidoProceso/(6994:6998): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:54:59:482 loggerContenidoProceso/(6994:6998): Se pudo hacer el wait del semaforo
+[INFO] 19:54:59:483 loggerContenidoProceso/(6994:6998): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[INFO] 19:54:59:487 loggerContenidoProceso/(6994:6996): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 19:54:59:488 loggerContenidoProceso/(6994:6997): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 19:54:59:489 loggerContenidoProceso/(6994:6997): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 19:54:59:489 loggerContenidoProceso/(6994:6997): Se liberan todas las estructuras del proceso
+[INFO] 19:54:59:692 loggerContenidoProceso/(6994:6996): Se pudo hacer el post del semaforo
