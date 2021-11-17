@@ -9915,3 +9915,395 @@ y tiene el heap: prev:0, sig:0, free:0
 [INFO] 16:15:23:564 OperacionesServidor/(17745:17745): Recibimos la informacion de la RAM
 [INFO] 16:15:23:565 OperacionesServidor/(17745:17745): El codigo de operacion es: 12
 [INFO] 16:15:23:565 OperacionesServidor/(17745:17745): El proceso: 3, pide leer su pagina numero: 15
+[INFO] 13:21:03:668 OperacionesServidor/(5430:5430): Recibimos la informacion de la RAM
+[INFO] 13:21:03:669 OperacionesServidor/(5430:5430): El codigo de operacion es: 13
+[INFO] 13:21:03:672 OperacionesServidor/(5430:5430): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:21:03:678 OperacionesServidor/(5430:5430): Recibimos la informacion de la RAM
+[INFO] 13:21:03:680 OperacionesServidor/(5430:5430): El codigo de operacion es: 16
+[INFO] 13:23:49:947 OperacionesServidor/(5841:5841): Recibimos la informacion de la RAM
+[INFO] 13:23:49:948 OperacionesServidor/(5841:5841): El codigo de operacion es: 13
+[INFO] 13:23:49:950 OperacionesServidor/(5841:5841): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:23:49:957 OperacionesServidor/(5841:5841): Recibimos la informacion de la RAM
+[INFO] 13:23:49:957 OperacionesServidor/(5841:5841): El codigo de operacion es: 16
+[INFO] 13:23:49:959 OperacionesServidor/(5841:5841): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:25:04:635 OperacionesServidor/(5956:5956): Recibimos la informacion de la RAM
+[INFO] 13:25:04:637 OperacionesServidor/(5956:5956): El codigo de operacion es: 13
+[INFO] 13:25:04:639 OperacionesServidor/(5956:5956): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:25:04:647 OperacionesServidor/(5956:5956): Recibimos la informacion de la RAM
+[INFO] 13:25:04:647 OperacionesServidor/(5956:5956): El codigo de operacion es: 16
+[INFO] 13:25:04:649 OperacionesServidor/(5956:5956): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:25:04:659 OperacionesServidor/(5956:5956): Recibimos la informacion de la RAM
+[INFO] 13:25:04:661 OperacionesServidor/(5956:5956): El codigo de operacion es: 11
+[INFO] 13:25:04:662 OperacionesServidor/(5956:5956): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:25:04:671 OperacionesServidor/(5956:5956): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:25:04:673 OperacionesServidor/(5956:5956): Todo bien se realizo con la asignacion Fija
+[INFO] 13:25:04:691 OperacionesServidor/(5956:5956): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:25:04:691 OperacionesServidor/(5956:5956): Se escribe sobre la particion: 0
+[INFO] 13:25:04:692 OperacionesServidor/(5956:5956): Se guardo el contenido correctamente
+[INFO] 13:25:04:699 OperacionesServidor/(5956:5956): Recibimos la informacion de la RAM
+[INFO] 13:25:04:699 OperacionesServidor/(5956:5956): El codigo de operacion es: 12
+[INFO] 13:25:04:701 OperacionesServidor/(5956:5956): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:25:04:724 OperacionesServidor/(5956:5956): Recibimos la informacion de la RAM
+[INFO] 13:25:04:724 OperacionesServidor/(5956:5956): El codigo de operacion es: 11
+[INFO] 13:25:04:725 OperacionesServidor/(5956:5956): Se guarda la pagina: 2 del proceso: 4
+[INFO] 13:25:04:727 OperacionesServidor/(5956:5956): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:25:04:728 OperacionesServidor/(5956:5956): Todo bien se realizo con la asignacion Fija
+[INFO] 13:25:04:728 OperacionesServidor/(5956:5956): Se guardo el contenido en el archivo: /home/utnso/swap2.bin
+[INFO] 13:25:04:729 OperacionesServidor/(5956:5956): Se escribe sobre la particion: 0
+[INFO] 13:25:04:729 OperacionesServidor/(5956:5956): Se guardo el contenido correctamente
+[INFO] 13:25:04:732 OperacionesServidor/(5956:5956): Recibimos la informacion de la RAM
+[INFO] 13:25:04:732 OperacionesServidor/(5956:5956): El codigo de operacion es: 12
+[INFO] 13:25:04:734 OperacionesServidor/(5956:5956): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:25:04:736 OperacionesServidor/(5956:5956): Recibimos la informacion de la RAM
+[INFO] 13:25:04:737 OperacionesServidor/(5956:5956): El codigo de operacion es: 18
+[INFO] 13:25:04:738 OperacionesServidor/(5956:5956): El proceso: 3, pide finalizar
+[INFO] 13:26:38:569 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:26:38:570 OperacionesServidor/(6108:6108): El codigo de operacion es: 13
+[INFO] 13:26:38:572 OperacionesServidor/(6108:6108): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:26:38:575 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:26:38:575 OperacionesServidor/(6108:6108): El codigo de operacion es: 16
+[INFO] 13:26:38:577 OperacionesServidor/(6108:6108): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:26:38:590 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:26:38:590 OperacionesServidor/(6108:6108): El codigo de operacion es: 11
+[INFO] 13:26:38:593 OperacionesServidor/(6108:6108): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:26:38:601 OperacionesServidor/(6108:6108): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:26:38:608 OperacionesServidor/(6108:6108): Todo bien se realizo con la asignacion Fija
+[INFO] 13:26:38:620 OperacionesServidor/(6108:6108): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:26:38:621 OperacionesServidor/(6108:6108): Se escribe sobre la particion: 0
+[INFO] 13:26:38:623 OperacionesServidor/(6108:6108): Se guardo el contenido correctamente
+[INFO] 13:26:38:625 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:26:38:625 OperacionesServidor/(6108:6108): El codigo de operacion es: 12
+[INFO] 13:26:38:627 OperacionesServidor/(6108:6108): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:26:38:654 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:26:38:654 OperacionesServidor/(6108:6108): El codigo de operacion es: 11
+[INFO] 13:26:38:656 OperacionesServidor/(6108:6108): Se guarda la pagina: 2 del proceso: 4
+[INFO] 13:26:38:658 OperacionesServidor/(6108:6108): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:26:38:658 OperacionesServidor/(6108:6108): Todo bien se realizo con la asignacion Fija
+[INFO] 13:26:38:659 OperacionesServidor/(6108:6108): Se guardo el contenido en el archivo: /home/utnso/swap2.bin
+[INFO] 13:26:38:659 OperacionesServidor/(6108:6108): Se escribe sobre la particion: 0
+[INFO] 13:26:38:663 OperacionesServidor/(6108:6108): Se guardo el contenido correctamente
+[INFO] 13:26:38:664 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:26:38:664 OperacionesServidor/(6108:6108): El codigo de operacion es: 12
+[INFO] 13:26:38:665 OperacionesServidor/(6108:6108): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:26:38:668 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:26:38:668 OperacionesServidor/(6108:6108): El codigo de operacion es: 18
+[INFO] 13:26:38:670 OperacionesServidor/(6108:6108): El proceso: 3, pide finalizar
+[INFO] 13:27:14:104 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:27:14:104 OperacionesServidor/(6108:6108): El codigo de operacion es: 13
+[INFO] 13:27:14:106 OperacionesServidor/(6108:6108): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:27:14:108 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:27:14:108 OperacionesServidor/(6108:6108): El codigo de operacion es: 16
+[INFO] 13:27:14:110 OperacionesServidor/(6108:6108): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:27:14:115 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:27:14:115 OperacionesServidor/(6108:6108): El codigo de operacion es: 11
+[INFO] 13:27:14:117 OperacionesServidor/(6108:6108): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:27:14:118 OperacionesServidor/(6108:6108): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:27:14:121 OperacionesServidor/(6108:6108): Todo bien se realizo con la asignacion Fija
+[INFO] 13:27:14:122 OperacionesServidor/(6108:6108): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:27:14:122 OperacionesServidor/(6108:6108): Se escribe sobre la particion: 0
+[INFO] 13:27:14:122 OperacionesServidor/(6108:6108): Se guardo el contenido correctamente
+[INFO] 13:27:14:124 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:27:14:125 OperacionesServidor/(6108:6108): El codigo de operacion es: 12
+[INFO] 13:27:14:126 OperacionesServidor/(6108:6108): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:27:14:141 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:27:14:142 OperacionesServidor/(6108:6108): El codigo de operacion es: 11
+[INFO] 13:27:14:143 OperacionesServidor/(6108:6108): Se guarda la pagina: 2 del proceso: 4
+[INFO] 13:27:14:144 OperacionesServidor/(6108:6108): Se guardo el contenido en el archivo: /home/utnso/swap2.bin
+[INFO] 13:27:14:145 OperacionesServidor/(6108:6108): Se sobreescribe sobre la particion: 0
+[INFO] 13:27:14:147 OperacionesServidor/(6108:6108): Se guardo el contenido correctamente
+[INFO] 13:27:14:149 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:27:14:150 OperacionesServidor/(6108:6108): El codigo de operacion es: 12
+[INFO] 13:27:14:151 OperacionesServidor/(6108:6108): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:27:14:154 OperacionesServidor/(6108:6108): Recibimos la informacion de la RAM
+[INFO] 13:27:14:155 OperacionesServidor/(6108:6108): El codigo de operacion es: 18
+[INFO] 13:27:14:156 OperacionesServidor/(6108:6108): El proceso: 3, pide finalizar
+[INFO] 13:41:15:804 OperacionesServidor/(6738:6738): Recibimos la informacion de la RAM
+[INFO] 13:41:15:804 OperacionesServidor/(6738:6738): El codigo de operacion es: 13
+[INFO] 13:41:15:807 OperacionesServidor/(6738:6738): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:41:15:812 OperacionesServidor/(6738:6738): Recibimos la informacion de la RAM
+[INFO] 13:41:15:812 OperacionesServidor/(6738:6738): El codigo de operacion es: 16
+[INFO] 13:41:15:814 OperacionesServidor/(6738:6738): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:41:15:825 OperacionesServidor/(6738:6738): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 13:41:15:837 OperacionesServidor/(6738:6738): Recibimos la informacion de la RAM
+[INFO] 13:41:15:840 OperacionesServidor/(6738:6738): El codigo de operacion es: 11
+[INFO] 13:41:15:845 OperacionesServidor/(6738:6738): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:41:15:851 OperacionesServidor/(6738:6738): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:41:15:855 OperacionesServidor/(6738:6738): Todo bien se realizo con la asignacion Fija
+[INFO] 13:41:15:857 OperacionesServidor/(6738:6738): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:41:15:863 OperacionesServidor/(6738:6738): Se escribe sobre la particion: 0
+[INFO] 13:41:15:863 OperacionesServidor/(6738:6738): Se guardo el contenido correctamente
+[INFO] 13:41:15:866 OperacionesServidor/(6738:6738): Recibimos la informacion de la RAM
+[INFO] 13:41:15:867 OperacionesServidor/(6738:6738): El codigo de operacion es: 12
+[INFO] 13:41:15:868 OperacionesServidor/(6738:6738): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:41:15:906 OperacionesServidor/(6738:6738): Recibimos la informacion de la RAM
+[INFO] 13:41:15:906 OperacionesServidor/(6738:6738): El codigo de operacion es: 11
+[INFO] 13:41:15:908 OperacionesServidor/(6738:6738): Se guarda la pagina: 2 del proceso: 4
+[INFO] 13:41:15:910 OperacionesServidor/(6738:6738): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:41:15:912 OperacionesServidor/(6738:6738): Todo bien se realizo con la asignacion Fija
+[INFO] 13:41:15:912 OperacionesServidor/(6738:6738): Se guardo el contenido en el archivo: /home/utnso/swap2.bin
+[INFO] 13:41:15:913 OperacionesServidor/(6738:6738): Se escribe sobre la particion: 0
+[INFO] 13:41:15:914 OperacionesServidor/(6738:6738): Se guardo el contenido correctamente
+[INFO] 13:41:15:917 OperacionesServidor/(6738:6738): Recibimos la informacion de la RAM
+[INFO] 13:41:15:918 OperacionesServidor/(6738:6738): El codigo de operacion es: 12
+[INFO] 13:41:15:919 OperacionesServidor/(6738:6738): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:41:15:923 OperacionesServidor/(6738:6738): Recibimos la informacion de la RAM
+[INFO] 13:41:15:923 OperacionesServidor/(6738:6738): El codigo de operacion es: 18
+[INFO] 13:41:15:924 OperacionesServidor/(6738:6738): El proceso: 3, pide finalizar
+[INFO] 13:43:37:473 OperacionesServidor/(6954:6954): Recibimos la informacion de la RAM
+[INFO] 13:43:37:474 OperacionesServidor/(6954:6954): El codigo de operacion es: 13
+[INFO] 13:43:37:476 OperacionesServidor/(6954:6954): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:43:37:485 OperacionesServidor/(6954:6954): Recibimos la informacion de la RAM
+[INFO] 13:43:37:485 OperacionesServidor/(6954:6954): El codigo de operacion es: 16
+[INFO] 13:43:37:487 OperacionesServidor/(6954:6954): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:43:37:500 OperacionesServidor/(6954:6954): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 13:43:37:509 OperacionesServidor/(6954:6954): Recibimos la informacion de la RAM
+[INFO] 13:43:37:511 OperacionesServidor/(6954:6954): El codigo de operacion es: 11
+[INFO] 13:43:37:518 OperacionesServidor/(6954:6954): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:43:37:532 OperacionesServidor/(6954:6954): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:43:37:535 OperacionesServidor/(6954:6954): Todo bien se realizo con la asignacion Fija
+[INFO] 13:43:37:542 OperacionesServidor/(6954:6954): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:43:37:544 OperacionesServidor/(6954:6954): Se escribe sobre la particion: 0
+[INFO] 13:43:37:545 OperacionesServidor/(6954:6954): Se guardo el contenido correctamente
+[INFO] 13:43:37:549 OperacionesServidor/(6954:6954): Recibimos la informacion de la RAM
+[INFO] 13:43:37:549 OperacionesServidor/(6954:6954): El codigo de operacion es: 12
+[INFO] 13:43:37:551 OperacionesServidor/(6954:6954): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:43:37:584 OperacionesServidor/(6954:6954): Recibimos la informacion de la RAM
+[INFO] 13:43:37:584 OperacionesServidor/(6954:6954): El codigo de operacion es: 16
+[INFO] 13:43:37:585 OperacionesServidor/(6954:6954): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 13:43:37:586 OperacionesServidor/(6954:6954): Cantidad de frames disponibles para el proceso 3: 9
+[INFO] 13:43:37:587 OperacionesServidor/(6954:6954): Recibimos la informacion de la RAM
+[INFO] 13:43:37:587 OperacionesServidor/(6954:6954): El codigo de operacion es: 11
+[INFO] 13:43:37:588 OperacionesServidor/(6954:6954): Se guarda la pagina: 2 del proceso: 3
+[INFO] 13:43:37:589 OperacionesServidor/(6954:6954): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:43:37:590 OperacionesServidor/(6954:6954): Se escribe sobre la particion: 1
+[INFO] 13:43:37:590 OperacionesServidor/(6954:6954): Se guardo el contenido correctamente
+[INFO] 13:43:37:591 OperacionesServidor/(6954:6954): Recibimos la informacion de la RAM
+[INFO] 13:43:37:591 OperacionesServidor/(6954:6954): El codigo de operacion es: 12
+[INFO] 13:43:37:595 OperacionesServidor/(6954:6954): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:43:37:598 OperacionesServidor/(6954:6954): Recibimos la informacion de la RAM
+[INFO] 13:43:37:604 OperacionesServidor/(6954:6954): El codigo de operacion es: 18
+[INFO] 13:43:37:608 OperacionesServidor/(6954:6954): El proceso: 3, pide finalizar
+[INFO] 13:44:46:844 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:44:46:844 OperacionesServidor/(7154:7154): El codigo de operacion es: 13
+[INFO] 13:44:46:847 OperacionesServidor/(7154:7154): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:44:46:850 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:44:46:850 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:44:46:852 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:44:46:863 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 13:44:46:870 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:44:46:871 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:44:46:873 OperacionesServidor/(7154:7154): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:44:46:875 OperacionesServidor/(7154:7154): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:44:46:883 OperacionesServidor/(7154:7154): Todo bien se realizo con la asignacion Fija
+[INFO] 13:44:46:895 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:44:46:900 OperacionesServidor/(7154:7154): Se escribe sobre la particion: 0
+[INFO] 13:44:46:904 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:44:46:906 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:44:46:906 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:44:46:908 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:44:46:931 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:44:46:931 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:44:46:933 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 13:44:46:934 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 9
+[INFO] 13:44:46:934 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:44:46:934 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:44:46:936 OperacionesServidor/(7154:7154): Se guarda la pagina: 2 del proceso: 3
+[INFO] 13:44:46:936 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:44:46:937 OperacionesServidor/(7154:7154): Se escribe sobre la particion: 1
+[INFO] 13:44:46:937 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:44:46:937 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:44:46:938 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:44:46:939 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 2
+[INFO] 13:44:46:943 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:44:46:943 OperacionesServidor/(7154:7154): El codigo de operacion es: 18
+[INFO] 13:44:46:945 OperacionesServidor/(7154:7154): El proceso: 3, pide finalizar
+[INFO] 13:46:19:272 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:272 OperacionesServidor/(7154:7154): El codigo de operacion es: 13
+[INFO] 13:46:19:273 OperacionesServidor/(7154:7154): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:46:19:277 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:278 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:46:19:279 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:46:19:280 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 13:46:19:281 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:281 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:46:19:283 OperacionesServidor/(7154:7154): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:46:19:284 OperacionesServidor/(7154:7154): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:46:19:285 OperacionesServidor/(7154:7154): Todo bien se realizo con la asignacion Fija
+[INFO] 13:46:19:286 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:46:19:288 OperacionesServidor/(7154:7154): Se escribe sobre la particion: 0
+[INFO] 13:46:19:289 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:46:19:289 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:290 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:46:19:294 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:46:19:331 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:331 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:46:19:332 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 13:46:19:333 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 9
+[INFO] 13:46:19:337 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:338 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:46:19:339 OperacionesServidor/(7154:7154): Se guarda la pagina: 2 del proceso: 3
+[INFO] 13:46:19:340 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:46:19:341 OperacionesServidor/(7154:7154): Se escribe sobre la particion: 1
+[INFO] 13:46:19:341 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:46:19:342 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:342 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:46:19:343 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 2
+[INFO] 13:46:19:347 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:349 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:46:19:350 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:46:19:351 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 8
+[INFO] 13:46:19:352 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:46:19:352 OperacionesServidor/(7154:7154): El codigo de operacion es: 18
+[INFO] 13:46:19:354 OperacionesServidor/(7154:7154): El proceso: 3, pide finalizar
+[INFO] 13:47:06:072 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:073 OperacionesServidor/(7154:7154): El codigo de operacion es: 13
+[INFO] 13:47:06:075 OperacionesServidor/(7154:7154): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:47:06:078 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:079 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:47:06:080 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:47:06:085 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 13:47:06:085 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:086 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:47:06:087 OperacionesServidor/(7154:7154): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:47:06:088 OperacionesServidor/(7154:7154): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:47:06:090 OperacionesServidor/(7154:7154): Todo bien se realizo con la asignacion Fija
+[INFO] 13:47:06:093 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:47:06:093 OperacionesServidor/(7154:7154): Se escribe sobre la particion: 0
+[INFO] 13:47:06:094 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:47:06:095 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:095 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:47:06:101 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:47:06:124 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:125 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:47:06:126 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 13:47:06:126 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 9
+[INFO] 13:47:06:127 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:128 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:47:06:129 OperacionesServidor/(7154:7154): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:47:06:130 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:47:06:131 OperacionesServidor/(7154:7154): Se sobreescribe sobre la particion: 0
+[INFO] 13:47:06:132 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:47:06:137 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:137 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:47:06:141 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:47:06:144 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:144 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:47:06:149 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:47:06:150 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 9
+[INFO] 13:47:06:151 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:06:151 OperacionesServidor/(7154:7154): El codigo de operacion es: 18
+[INFO] 13:47:06:153 OperacionesServidor/(7154:7154): El proceso: 3, pide finalizar
+[INFO] 13:47:27:556 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:556 OperacionesServidor/(7154:7154): El codigo de operacion es: 13
+[INFO] 13:47:27:558 OperacionesServidor/(7154:7154): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:47:27:560 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:561 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:47:27:562 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 11
+[INFO] 13:47:27:564 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 13:47:27:570 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:570 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:47:27:572 OperacionesServidor/(7154:7154): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:47:27:573 OperacionesServidor/(7154:7154): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:47:27:574 OperacionesServidor/(7154:7154): Todo bien se realizo con la asignacion Fija
+[INFO] 13:47:27:574 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:47:27:577 OperacionesServidor/(7154:7154): Se escribe sobre la particion: 0
+[INFO] 13:47:27:577 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:47:27:578 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:578 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:47:27:580 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:47:27:604 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:604 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:47:27:605 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 13:47:27:606 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 9
+[INFO] 13:47:27:611 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:611 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:47:27:612 OperacionesServidor/(7154:7154): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:47:27:613 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:47:27:613 OperacionesServidor/(7154:7154): Se sobreescribe sobre la particion: 0
+[INFO] 13:47:27:617 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:47:27:618 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:619 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:47:27:623 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:47:27:629 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:633 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:47:27:635 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:47:27:635 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 9
+[INFO] 13:47:27:636 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:47:27:636 OperacionesServidor/(7154:7154): El codigo de operacion es: 18
+[INFO] 13:47:27:640 OperacionesServidor/(7154:7154): El proceso: 3, pide finalizar
+[INFO] 13:48:36:804 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:805 OperacionesServidor/(7154:7154): El codigo de operacion es: 13
+[INFO] 13:48:36:807 OperacionesServidor/(7154:7154): Tipo de asignacion a utilizar: DINAMICA.
+[INFO] 13:48:36:808 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:809 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:48:36:810 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 11
+[INFO] 13:48:36:812 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 0
+[INFO] 13:48:36:818 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:818 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:48:36:820 OperacionesServidor/(7154:7154): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:48:36:821 OperacionesServidor/(7154:7154): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:48:36:822 OperacionesServidor/(7154:7154): Todo bien se realizo con la asignacion Dinamica
+[INFO] 13:48:36:822 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:48:36:823 OperacionesServidor/(7154:7154): Se escribe sobre la particion: 0
+[INFO] 13:48:36:823 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:48:36:825 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:825 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:48:36:828 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:48:36:861 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:861 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:48:36:863 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 13:48:36:864 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 127
+[INFO] 13:48:36:865 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:865 OperacionesServidor/(7154:7154): El codigo de operacion es: 11
+[INFO] 13:48:36:866 OperacionesServidor/(7154:7154): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:48:36:867 OperacionesServidor/(7154:7154): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:48:36:867 OperacionesServidor/(7154:7154): Se sobreescribe sobre la particion: 0
+[INFO] 13:48:36:869 OperacionesServidor/(7154:7154): Se guardo el contenido correctamente
+[INFO] 13:48:36:869 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:870 OperacionesServidor/(7154:7154): El codigo de operacion es: 12
+[INFO] 13:48:36:871 OperacionesServidor/(7154:7154): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:48:36:874 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:874 OperacionesServidor/(7154:7154): El codigo de operacion es: 16
+[INFO] 13:48:36:876 OperacionesServidor/(7154:7154): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:48:36:876 OperacionesServidor/(7154:7154): Cantidad de frames disponibles para el proceso 3: 127
+[INFO] 13:48:36:878 OperacionesServidor/(7154:7154): Recibimos la informacion de la RAM
+[INFO] 13:48:36:878 OperacionesServidor/(7154:7154): El codigo de operacion es: 18
+[INFO] 13:48:36:880 OperacionesServidor/(7154:7154): El proceso: 3, pide finalizar
+[INFO] 13:50:05:800 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:801 OperacionesServidor/(7551:7551): El codigo de operacion es: 13
+[INFO] 13:50:05:803 OperacionesServidor/(7551:7551): Tipo de asignacion a utilizar: DINAMICA.
+[INFO] 13:50:05:807 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:807 OperacionesServidor/(7551:7551): El codigo de operacion es: 16
+[INFO] 13:50:05:813 OperacionesServidor/(7551:7551): El proceso: 3 pide verificar si hay espacio para 11
+[INFO] 13:50:05:823 OperacionesServidor/(7551:7551): Cantidad de frames disponibles para el proceso 3: 128
+[INFO] 13:50:05:831 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:831 OperacionesServidor/(7551:7551): El codigo de operacion es: 11
+[INFO] 13:50:05:833 OperacionesServidor/(7551:7551): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:50:05:836 OperacionesServidor/(7551:7551): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 13:50:05:838 OperacionesServidor/(7551:7551): Todo bien se realizo con la asignacion Dinamica
+[INFO] 13:50:05:844 OperacionesServidor/(7551:7551): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:50:05:852 OperacionesServidor/(7551:7551): Se escribe sobre la particion: 0
+[INFO] 13:50:05:855 OperacionesServidor/(7551:7551): Se guardo el contenido correctamente
+[INFO] 13:50:05:865 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:866 OperacionesServidor/(7551:7551): El codigo de operacion es: 12
+[INFO] 13:50:05:867 OperacionesServidor/(7551:7551): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:50:05:889 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:889 OperacionesServidor/(7551:7551): El codigo de operacion es: 16
+[INFO] 13:50:05:890 OperacionesServidor/(7551:7551): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 13:50:05:891 OperacionesServidor/(7551:7551): Cantidad de frames disponibles para el proceso 3: 127
+[INFO] 13:50:05:894 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:894 OperacionesServidor/(7551:7551): El codigo de operacion es: 11
+[INFO] 13:50:05:895 OperacionesServidor/(7551:7551): Se guarda la pagina: 1 del proceso: 3
+[INFO] 13:50:05:896 OperacionesServidor/(7551:7551): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 13:50:05:901 OperacionesServidor/(7551:7551): Se sobreescribe sobre la particion: 0
+[INFO] 13:50:05:902 OperacionesServidor/(7551:7551): Se guardo el contenido correctamente
+[INFO] 13:50:05:903 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:903 OperacionesServidor/(7551:7551): El codigo de operacion es: 12
+[INFO] 13:50:05:905 OperacionesServidor/(7551:7551): El proceso: 3, pide leer su pagina numero: 1
+[INFO] 13:50:05:909 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:909 OperacionesServidor/(7551:7551): El codigo de operacion es: 16
+[INFO] 13:50:05:911 OperacionesServidor/(7551:7551): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 13:50:05:911 OperacionesServidor/(7551:7551): Cantidad de frames disponibles para el proceso 3: 127
+[INFO] 13:50:05:912 OperacionesServidor/(7551:7551): Recibimos la informacion de la RAM
+[INFO] 13:50:05:912 OperacionesServidor/(7551:7551): El codigo de operacion es: 18
+[INFO] 13:50:05:916 OperacionesServidor/(7551:7551): El proceso: 3, pide finalizar

@@ -23,7 +23,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
 
         if(particion_para_sobreescribir != NULL) {
             
-            vaciar_particion(particion_para_sobreescribir, nombreArchivo);  // Habria que probar esto
+            vaciar_particion(particion_para_sobreescribir, nombreArchivo);
 
             log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
             log_info(logger,"Se sobreescribe sobre la particion: %i", particion_para_sobreescribir->num_particion);
@@ -147,7 +147,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
 
         munmap(contenido_archivo, tamanio_swap);
         close(fd);
-        //este contenido deberia enviarse
+        
         enviar_pagina(contenido_a_leer,conexion);
         free(contenido_a_leer);
     }

@@ -168,15 +168,38 @@ void finalizar_proceso(uint32_t PID){
 	}
 
 }
+
+void consultar_espacio_swap(int PID, int marcos_a_guardar) {
+
+	t_paquete *paquete = crear_paquete(CONSULTAR_ESPACIO);
+	int tamanioPagina = 32;
+
+	paquete->buffer->size = sizeof(uint32_t)*2 + tamanioPagina;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento = 0;
+
+	memcpy(paquete->buffer->stream + desplazamiento, &(PID) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+	memcpy(paquete->buffer->stream + desplazamiento, &(marcos_a_guardar) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+	uint32_t conexionSwamp = crear_conexion("127.0.0.1", "4444");
+
+	enviarPaquete(paquete, conexionSwamp);
+
+}
 /*
 int main() {
 
-    enviar_tipo_asignacion("FIJA");
+    enviar_tipo_asignacion("DINAMICA");
+	consultar_espacio_swap(3, 11);
 	enviadoPagina(3, 1, "asdasdasdasdasdasdasdasdasdasdf");
 	//enviadoPagina(3, 1, "asdasdasdasdasdasdasdasdasdasdas");
 	pedirPagina(3, 1);
-	enviadoPagina(4, 2, "gabigol");
+	consultar_espacio_swap(3, 2);
+	enviadoPagina(3, 1, "gabigol");
 	pedirPagina(3, 1);
+	consultar_espacio_swap(3, 1);
 	finalizar_proceso(3);
 	
     return 0;

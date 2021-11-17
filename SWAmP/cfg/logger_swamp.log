@@ -3433,3 +3433,191 @@ FIFO
 [INFO] 16:15:23:564 SWAmP/(17745:17745): Solicitud de memoria entrante
 [INFO] 16:15:23:566 SWAmP/(17745:17745): Se leyo el contenido del archivo: /home/utnso/swap1.bin
 [INFO] 16:15:23:566 SWAmP/(17745:17745): El contenido leido es 
+[INFO] 13:20:52:514 SWAmP/(5430:5430): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:20:52:559 SWAmP/(5430:5430): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:20:52:562 SWAmP/(5430:5430): Se han creado todos los archivos
+[INFO] 13:20:52:574 SWAmP/(5430:5430): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:21:03:657 SWAmP/(5430:5430): Solicitud de memoria entrante
+[INFO] 13:21:03:673 SWAmP/(5430:5430): Solicitud de memoria entrante
+[INFO] 13:23:47:029 SWAmP/(5841:5841): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:23:47:071 SWAmP/(5841:5841): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:23:47:078 SWAmP/(5841:5841): Se han creado todos los archivos
+[INFO] 13:23:47:085 SWAmP/(5841:5841): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:23:49:942 SWAmP/(5841:5841): Solicitud de memoria entrante
+[INFO] 13:23:49:954 SWAmP/(5841:5841): Solicitud de memoria entrante
+[INFO] 13:25:02:754 SWAmP/(5956:5956): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:25:02:800 SWAmP/(5956:5956): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:25:02:801 SWAmP/(5956:5956): Se han creado todos los archivos
+[INFO] 13:25:02:820 SWAmP/(5956:5956): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:25:04:630 SWAmP/(5956:5956): Solicitud de memoria entrante
+[INFO] 13:25:04:646 SWAmP/(5956:5956): Solicitud de memoria entrante
+[INFO] 13:25:04:655 SWAmP/(5956:5956): Solicitud de memoria entrante
+[INFO] 13:25:04:697 SWAmP/(5956:5956): Solicitud de memoria entrante
+[INFO] 13:25:04:703 SWAmP/(5956:5956): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:25:04:703 SWAmP/(5956:5956): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:25:04:723 SWAmP/(5956:5956): Solicitud de memoria entrante
+[INFO] 13:25:04:730 SWAmP/(5956:5956): Solicitud de memoria entrante
+[INFO] 13:25:04:734 SWAmP/(5956:5956): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:25:04:734 SWAmP/(5956:5956): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:25:04:736 SWAmP/(5956:5956): Solicitud de memoria entrante
+[INFO] 13:25:04:748 SWAmP/(5956:5956): Proceso 3 finalizado con exito
+[INFO] 13:26:36:690 SWAmP/(6108:6108): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:26:36:733 SWAmP/(6108:6108): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:26:36:737 SWAmP/(6108:6108): Se han creado todos los archivos
+[INFO] 13:26:36:759 SWAmP/(6108:6108): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:26:38:560 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:26:38:573 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:26:38:590 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:26:38:624 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:26:38:630 SWAmP/(6108:6108): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:26:38:636 SWAmP/(6108:6108): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:26:38:654 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:26:38:664 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:26:38:666 SWAmP/(6108:6108): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:26:38:666 SWAmP/(6108:6108): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:26:38:668 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:26:38:686 SWAmP/(6108:6108): Proceso 3 finalizado con exito
+[INFO] 13:27:05:422 SWAmP/(6205:6205): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:27:05:422 SWAmP/(6205:6205): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:27:05:422 SWAmP/(6205:6205): Se han creado todos los archivos
+[INFO] 13:27:05:422 SWAmP/(6205:6205): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:27:14:093 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:27:14:106 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:27:14:114 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:27:14:123 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:27:14:127 SWAmP/(6108:6108): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:27:14:127 SWAmP/(6108:6108): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:27:14:141 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:27:14:148 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:27:14:152 SWAmP/(6108:6108): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:27:14:152 SWAmP/(6108:6108): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:27:14:154 SWAmP/(6108:6108): Solicitud de memoria entrante
+[INFO] 13:27:14:157 SWAmP/(6108:6108): Proceso 3 finalizado con exito
+[INFO] 13:41:11:723 SWAmP/(6738:6738): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:41:11:771 SWAmP/(6738:6738): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:41:11:773 SWAmP/(6738:6738): Se han creado todos los archivos
+[INFO] 13:41:11:787 SWAmP/(6738:6738): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:41:15:793 SWAmP/(6738:6738): Solicitud de memoria entrante
+[INFO] 13:41:15:809 SWAmP/(6738:6738): Solicitud de memoria entrante
+[INFO] 13:41:15:831 SWAmP/(6738:6738): Solicitud de memoria entrante
+[INFO] 13:41:15:866 SWAmP/(6738:6738): Solicitud de memoria entrante
+[INFO] 13:41:15:870 SWAmP/(6738:6738): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:41:15:873 SWAmP/(6738:6738): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:41:15:906 SWAmP/(6738:6738): Solicitud de memoria entrante
+[INFO] 13:41:15:917 SWAmP/(6738:6738): Solicitud de memoria entrante
+[INFO] 13:41:15:919 SWAmP/(6738:6738): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:41:15:920 SWAmP/(6738:6738): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:41:15:922 SWAmP/(6738:6738): Solicitud de memoria entrante
+[INFO] 13:41:15:929 SWAmP/(6738:6738): Proceso 3 finalizado con exito
+[INFO] 13:42:13:275 SWAmP/(6889:6889): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:42:13:319 SWAmP/(6889:6889): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:42:13:320 SWAmP/(6889:6889): Se han creado todos los archivos
+[INFO] 13:42:13:359 SWAmP/(6889:6889): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:43:28:076 SWAmP/(6954:6954): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:43:28:116 SWAmP/(6954:6954): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:43:28:120 SWAmP/(6954:6954): Se han creado todos los archivos
+[INFO] 13:43:28:135 SWAmP/(6954:6954): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:43:37:464 SWAmP/(6954:6954): Solicitud de memoria entrante
+[INFO] 13:43:37:484 SWAmP/(6954:6954): Solicitud de memoria entrante
+[INFO] 13:43:37:508 SWAmP/(6954:6954): Solicitud de memoria entrante
+[INFO] 13:43:37:546 SWAmP/(6954:6954): Solicitud de memoria entrante
+[INFO] 13:43:37:553 SWAmP/(6954:6954): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:43:37:554 SWAmP/(6954:6954): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:43:37:573 SWAmP/(6954:6954): Solicitud de memoria entrante
+[INFO] 13:43:37:586 SWAmP/(6954:6954): Solicitud de memoria entrante
+[INFO] 13:43:37:590 SWAmP/(6954:6954): Solicitud de memoria entrante
+[INFO] 13:43:37:595 SWAmP/(6954:6954): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:43:37:596 SWAmP/(6954:6954): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:43:37:598 SWAmP/(6954:6954): Solicitud de memoria entrante
+[INFO] 13:43:37:610 SWAmP/(6954:6954): Proceso 3 finalizado con exito
+[INFO] 13:44:45:164 SWAmP/(7154:7154): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:44:45:203 SWAmP/(7154:7154): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:44:45:204 SWAmP/(7154:7154): Se han creado todos los archivos
+[INFO] 13:44:45:219 SWAmP/(7154:7154): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:44:46:833 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:44:46:848 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:44:46:868 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:44:46:905 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:44:46:910 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:44:46:912 SWAmP/(7154:7154): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:44:46:930 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:44:46:934 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:44:46:937 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:44:46:940 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:44:46:940 SWAmP/(7154:7154): El contenido leido es gabigol
+[INFO] 13:44:46:943 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:44:46:947 SWAmP/(7154:7154): Proceso 3 finalizado con exito
+[INFO] 13:46:19:263 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:274 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:281 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:289 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:295 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:46:19:295 SWAmP/(7154:7154): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:46:19:324 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:334 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:341 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:344 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:46:19:345 SWAmP/(7154:7154): El contenido leido es gabigol
+[INFO] 13:46:19:347 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:351 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:46:19:355 SWAmP/(7154:7154): Proceso 3 finalizado con exito
+[INFO] 13:47:06:063 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:076 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:085 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:095 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:102 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:47:06:103 SWAmP/(7154:7154): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:47:06:123 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:127 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:137 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:141 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:47:06:142 SWAmP/(7154:7154): El contenido leido es gabigol
+[INFO] 13:47:06:143 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:150 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:06:154 SWAmP/(7154:7154): Proceso 3 finalizado con exito
+[INFO] 13:47:27:551 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:559 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:565 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:578 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:581 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:47:27:581 SWAmP/(7154:7154): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:47:27:601 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:610 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:618 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:624 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:47:27:626 SWAmP/(7154:7154): El contenido leido es gabigol
+[INFO] 13:47:27:628 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:635 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:47:27:640 SWAmP/(7154:7154): Proceso 3 finalizado con exito
+[INFO] 13:48:36:800 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:807 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:817 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:823 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:829 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:48:36:829 SWAmP/(7154:7154): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:48:36:847 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:864 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:869 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:871 SWAmP/(7154:7154): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:48:36:872 SWAmP/(7154:7154): El contenido leido es gabigol
+[INFO] 13:48:36:874 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:877 SWAmP/(7154:7154): Solicitud de memoria entrante
+[INFO] 13:48:36:881 SWAmP/(7154:7154): Proceso 3 finalizado con exito
+[INFO] 13:50:03:071 SWAmP/(7551:7551): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:50:03:115 SWAmP/(7551:7551): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:50:03:116 SWAmP/(7551:7551): Se han creado todos los archivos
+[INFO] 13:50:03:123 SWAmP/(7551:7551): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:50:05:795 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:805 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:830 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:863 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:870 SWAmP/(7551:7551): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:50:05:870 SWAmP/(7551:7551): El contenido leido es asdasdasdasdasdasdasdasdasdasdf
+[INFO] 13:50:05:888 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:893 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:903 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:905 SWAmP/(7551:7551): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 13:50:05:906 SWAmP/(7551:7551): El contenido leido es gabigol
+[INFO] 13:50:05:909 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:911 SWAmP/(7551:7551): Solicitud de memoria entrante
+[INFO] 13:50:05:918 SWAmP/(7551:7551): Proceso 3 finalizado con exito

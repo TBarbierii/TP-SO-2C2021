@@ -29,5 +29,7 @@ void atender_solicitud_pedido_de_pagina(t_buffer* buffer, int conexion, t_log* l
 void notificar_escritura_de_pagina(int conexion);
 void atender_solicitud_cierre_proceso(t_buffer* buffer, t_log* logger);
 void notificar_finalizacion_de_proceso(int conexion);
+void atender_solicitud_consulta_espacio(t_buffer* buffer, int conexion, t_log* logger);
+void notificar_insuficiencia_de_espacio_para_proceso(int conexion, int valor);
 
 #endif

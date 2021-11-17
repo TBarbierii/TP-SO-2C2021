@@ -68,6 +68,10 @@ int atender_mensaje_ram(int conexion) {
 			atender_solicitud_cierre_proceso(paquete->buffer, logger_servidor);
 			notificar_finalizacion_de_proceso(conexion);
 			break;
+		
+		case CONSULTAR_ESPACIO:;
+			atender_solicitud_consulta_espacio(paquete->buffer, conexion, logger_servidor);
+			break;
 
 		case TIPOASIGNACION:;
 			recibir_tipo_asignacion(paquete->buffer, logger_servidor);
@@ -208,25 +212,25 @@ void notificar_finalizacion_de_proceso(int conexion) {
 	enviarPaquete(paquete, conexion);
 
 }
-/*
-void notificar_insuficiencia_de_espacio_para_proceso(int conexion) {
-// Falta modificar esto
-	t_paquete *paquete = crear_paquete(FINALIZAR_PROCESO); // Tendria que usar otro cod_op?
+
+void notificar_insuficiencia_de_espacio_para_proceso(int conexion, int valor) {
+
+	t_paquete *paquete = crear_paquete(CONSULTAR_ESPACIO); 
 
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	uint32_t desplazamiento=0;
-	int valor = 1;
 
     memcpy(paquete->buffer->stream + desplazamiento, &(valor), sizeof(uint32_t));
 
 	enviarPaquete(paquete, conexion);
 }
 
-void atender_solicitud_consulta_espacio(t_buffer* buffer, t_log* logger) {
-// Falta modificar esto
+void atender_solicitud_consulta_espacio(t_buffer* buffer, int conexion, t_log* logger) {
+
 	void* data = buffer->stream;
 	int desplazamiento = 0;
+	int valor;
 	uint32_t PID;
 	uint32_t marcos_pedidos;
 
@@ -237,6 +241,12 @@ void atender_solicitud_consulta_espacio(t_buffer* buffer, t_log* logger) {
 
 	log_info(logger,"El proceso: %d pide verificar si hay espacio para %i",PID, marcos_pedidos);
 
+	valor = cantidad_frames_disponibles_para_proceso(PID, logger);
+
+	if(valor <= marcos_pedidos) {
+		notificar_insuficiencia_de_espacio_para_proceso(conexion, 0); // 0 NO HAY ESPACIO
+	}else{
+		notificar_insuficiencia_de_espacio_para_proceso(conexion, 1); // 1 SI HAY ESPACIO
+	}
 
 }
-*/
