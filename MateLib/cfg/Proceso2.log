@@ -56,3 +56,14 @@
 [INFO] 19:51:04:272 loggerContenidoProceso/(6653:6657): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 19:51:04:275 loggerContenidoProceso/(6653:6657): Se pudo cerrar el proceso correctamente en el BackEnd
 [INFO] 19:51:04:275 loggerContenidoProceso/(6653:6657): Se liberan todas las estructuras del proceso
+[INFO] 00:22:24:489 loggerContenidoProceso/(7200:7202): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 00:22:24:491 loggerContenidoProceso/(7200:7202): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 00:22:24:493 loggerContenidoProceso/(7200:7202): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 00:22:24:493 loggerContenidoProceso/(7200:7202): Se pudo hacer el wait del semaforo
+[INFO] 00:22:27:494 loggerContenidoProceso/(7200:7202): Solicitamos hacer un wait sobre el semaforo: SEM2
+[INFO] 00:23:17:951 loggerContenidoProceso/(7200:7202): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 00:23:17:953 loggerContenidoProceso/(7200:7202): Se pudo hacer el wait del semaforo
+[INFO] 00:23:17:954 loggerContenidoProceso/(7200:7202): Se ha solicitado cerrar el carpincho de pid:2 , este es un hasta adios
+[INFO] 00:23:17:957 loggerContenidoProceso/(7200:7202): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 00:23:17:957 loggerContenidoProceso/(7200:7202): Se pudo cerrar el proceso correctamente en el BackEnd
+[INFO] 00:23:17:958 loggerContenidoProceso/(7200:7202): Se liberan todas las estructuras del proceso

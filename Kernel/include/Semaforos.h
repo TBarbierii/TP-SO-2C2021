@@ -27,5 +27,7 @@ int destruirSemaforo(char* nombreSem);
 int realizarSignalDeSemaforo(char* nombreSem, int pid);
 void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado);
 int realizarWaitDeSemaforo(char* nombreSem, int pid);
+void desalojarSemaforosDeProceso(proceso_kernel* procesoASacarPorDeadlock);
+void sacarProcesoDeBloqueado(int PID);
 
 #endif

@@ -168,6 +168,7 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
 
 
 
+
 int realizarWaitDeSemaforo(char* nombreSem, int pid){
 
     t_log* logger = log_create("cfg/Semaforos.log","Semaforos",0,LOG_LEVEL_INFO);
@@ -195,11 +196,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
         log_info(logger,"Se realizo un wait del semaforo: %s y el valor decrecio a: %d", nombreSem, semaforoActual->valor);
 
         bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
-                if(procesoBuscado->pid == pid){
-                    return 1;
-                }else{
-                    return 0;
-                }
+            return procesoBuscado->pid == pid;
             }
 
         if(semaforoActual->valor < 0){ //si el valor es menor a 1, lo vamos a bloquear
@@ -262,6 +259,24 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
 /* esta es tanto para semaforos como para IO */
 
 
+
+
+void sacarProcesoDeBloqueado(int PID){
+    
+    int procesoBloqueado(proceso_kernel * proceso){
+        return proceso->pid == PID;
+    }
+
+    proceso_kernel* procesoASacar = list_remove_by_condition(procesosBlocked, procesoBloqueado);
+    if(procesoASacar == NULL){
+        
+        proceso_kernel* procesoASacarSiNoEstaEnBlock = list_remove_by_condition(procesosSuspendedBlock, procesoBloqueado);
+    }
+
+
+}
+
+
 void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado){
     
     bool seEncuentraProceso(proceso_kernel* procesoActual){ 
@@ -280,15 +295,20 @@ void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado){
         if(procesoActual != NULL){ //si esta, se agrega a esta lista, y se notifica que hay un procesoo que quiere entrar a READY
 
             pthread_mutex_lock(modificarSuspendedReady);
-            list_add(procesosSuspendedReady, procesoBuscado);
+                list_add(procesosSuspendedReady, procesoBuscado);
             pthread_mutex_unlock(modificarSuspendedReady);
 
             sem_post(procesoNecesitaEntrarEnReady); //alertamos que hay un proceso que solicita entrar en ready
 
-        }else{ //si esta solo bloqueado, se aagrega directo a ready
-            
+        }else{ //si esta solo bloqueado, se aagrega directo a ready y lo sacamos de blocked
+
+            pthread_mutex_lock(modificarBlocked);
+                list_remove_by_condition(procesosBlocked, seEncuentraProceso);
+            pthread_mutex_unlock(modificarBlocked);
+
+
             pthread_mutex_lock(modificarReady);
-            list_add(procesosReady, procesoBuscado);
+                list_add(procesosReady, procesoBuscado);
             pthread_mutex_unlock(modificarReady);
             
             sem_post(hayProcesosReady); //alertamos que hay un proceso nuevo en ready
@@ -296,3 +316,64 @@ void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado){
         }
 
 }
+
+
+
+void desalojarSemaforosDeProceso(proceso_kernel* procesoASacarPorDeadlock){
+
+    int procesoConPid(proceso_kernel* procesoBuscado){
+        return procesoBuscado->pid == procesoASacarPorDeadlock->pid;
+    }
+
+
+    //primero desalojamos los semaforos que tiene
+    while(!list_is_empty(procesoASacarPorDeadlock->listaRecursosSolicitados)){
+        
+        semaforo* semaforoLiberado = list_remove(procesoASacarPorDeadlock->listaRecursosSolicitados, 0);
+        
+        //por cada semaforo que esta esperando, aumentamos su valor y lo sacamos de la lista de espera del mismo
+        semaforoLiberado->valor++;
+        list_remove_by_condition(semaforoLiberado->listaDeProcesosEnEspera, procesoConPid);
+    }
+
+    while(!list_is_empty(procesoASacarPorDeadlock->listaRecursosRetenidos)){
+        
+        semaforo* semaforoRetenido = list_remove(procesoASacarPorDeadlock->listaRecursosRetenidos, 0);
+        
+        //por cada semaforo que esta reteniendo, aumentamos su valor 
+        semaforoRetenido->valor++;
+        
+        if(!list_is_empty(semaforoRetenido->listaDeProcesosEnEspera)){ //si tiene cola de espera, vamos a poner al primero que retenga el semaoforo y ponerlo en el ready indicado
+            
+            proceso_kernel* procesoQueTendraElsemaforo = list_remove(semaforoRetenido->listaDeProcesosEnEspera, 0);
+            list_add(procesoQueTendraElsemaforo->listaRecursosRetenidos, semaforoRetenido);
+            
+            proceso_kernel* procesoActual = list_remove_by_condition(procesosSuspendedBlock, procesoConPid);                                                    
+
+            if(procesoActual != NULL){ //si esta, se agrega a esta lista, y se notifica que hay un procesoo que quiere entrar a READY
+
+                
+                list_add(procesosSuspendedReady, procesoQueTendraElsemaforo);
+
+                sem_post(procesoNecesitaEntrarEnReady); //alertamos que hay un proceso que solicita entrar en ready
+
+
+            }else{ //si esta solo bloqueado, se aagrega directo a ready y se saca de blocked
+                
+                list_remove_by_condition(procesosBlocked, procesoConPid);
+
+                list_add(procesosReady, procesoQueTendraElsemaforo);
+                
+                sem_post(hayProcesosReady); //alertamos que hay un proceso nuevo en ready
+
+            }
+
+
+
+        }
+        
+
+    }
+
+}
+

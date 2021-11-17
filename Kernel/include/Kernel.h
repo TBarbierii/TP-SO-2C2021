@@ -43,6 +43,7 @@ double alfa;
 int retardoCPU;
 int gradoMultiProgramacion;
 int gradoMultiProcesamiento;
+int tiempoDeadlock;
 
 /* colas de planificacion */
 

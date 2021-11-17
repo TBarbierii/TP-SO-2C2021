@@ -45,7 +45,8 @@ int mate_close(mate_instance *lib_ref){
             int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
             return valorRetorno;
         }else{
-            log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso");
+            log_error(lib_ref->group_info->loggerProceso,"No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:%d",lib_ref->group_info->pid);
+            log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
             log_destroy(lib_ref->group_info->loggerProceso);
             config_destroy(lib_ref->group_info->config);
             free(lib_ref->group_info);
@@ -102,6 +103,16 @@ int mate_sem_wait(mate_instance *lib_ref, mate_sem_name sem){
     if(lib_ref->group_info->conexionConBackEnd != -1){
         realizarWaitSemaforo(lib_ref->group_info->conexionConBackEnd, sem, lib_ref->group_info->pid);
         int valorRetorno = (int) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        if(valorRetorno == 3){ //nos cierran la conexion por deadlock
+            
+            log_debug(lib_ref->group_info->loggerProceso, "Se liberan todas las estructuras del proceso con PID: %d, ya que nos avisaron de cerrarlo por DEADLOCK",lib_ref->group_info->pid);
+            
+            close(lib_ref->group_info->conexionConBackEnd);
+            lib_ref->group_info->conexionConBackEnd= -1;
+            
+        }
+
+
         return valorRetorno;
     }else{
         log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
@@ -375,14 +386,14 @@ int liberarEstructurasDeProceso(t_buffer* buffer, mate_instance* lib_ref){
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
     if(valor == 0){
-        log_info(lib_ref->group_info->loggerProceso,"Se pudo cerrar el proceso correctamente en el BackEnd");
+        log_info(lib_ref->group_info->loggerProceso,"Se pudo cerrar el proceso de PID:%d correctamente en el BackEnd", lib_ref->group_info->pid);
     }else{
-        log_error(lib_ref->group_info->loggerProceso,"No se pudo cerrar el proceso correctamente en el BackEnd");
+        log_error(lib_ref->group_info->loggerProceso,"No se pudo cerrar el proceso de PID:%d, correctamente en el BackEnd",lib_ref->group_info->pid);
     }
 
 
 
-    log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso");
+    log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
     log_destroy(lib_ref->group_info->loggerProceso);
     config_destroy(lib_ref->group_info->config);
     close(lib_ref->group_info->conexionConBackEnd);
@@ -790,11 +801,18 @@ void hilo1(){
 }
 
 void hilo2(){
-    sleep(7);
+    //sleep(7);
     mate_instance* referencia = malloc(sizeof(mate_instance));
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    
+    mate_sem_init(referencia,"SEM1",1);
+    mate_sem_init(referencia,"SEM2",1);
+    
     mate_sem_wait(referencia,"SEM1");
-    sleep(3);
+    
+    sleep(10);
+    //sleep(3);
+
     mate_sem_wait(referencia,"SEM2");
     mate_close(referencia);
     free(referencia);
@@ -805,7 +823,7 @@ void hilo3(){
     mate_instance* referencia = malloc(sizeof(mate_instance));
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     mate_sem_wait(referencia,"SEM2");
-    sleep(3);
+    //sleep(3);
     mate_sem_wait(referencia,"SEM1");
     mate_close(referencia);
     free(referencia);
@@ -841,11 +859,11 @@ int main(){
     
     pthread_t h1, h2, h3;
 
-    pthread_create(&h1, NULL, (void*)hilo1,NULL);  
+    //pthread_create(&h1, NULL, (void*)hilo1,NULL);  
     pthread_create(&h2, NULL, (void*)hilo2,NULL);
     pthread_create(&h3, NULL, (void*)hilo3,NULL);  
 
-    pthread_join(h1, NULL);
+    //pthread_join(h1, NULL);
     pthread_join(h2, NULL);
     pthread_join(h3, NULL);
 

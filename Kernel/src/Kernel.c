@@ -152,8 +152,10 @@ void obtenerValoresDelConfig(t_config* configActual){
     alfa = config_get_double_value(configActual, "ALFA");
     gradoMultiProgramacion = config_get_int_value(configActual, "GRADO_MULTIPROGRAMACION");
     gradoMultiProcesamiento = config_get_int_value(configActual, "GRADO_MULTIPROCESAMIENTO");
+    tiempoDeadlock = config_get_int_value(configActual, "TIEMPO_DEADLOCK");
     char** nombresDispositivosIO = config_get_array_value(configActual, "DISPOSITIVOS_IO");
     char** duracionesIO = config_get_array_value(configActual, "DURACIONES_IO");
+    
 
     inicializarDispositivosIO(nombresDispositivosIO,duracionesIO);
 }

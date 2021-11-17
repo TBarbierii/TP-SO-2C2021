@@ -29,7 +29,7 @@ void ejecutarAlgoritmoDeadlock(){
     t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_INFO);
     while(1){
 
-        sleep(30);
+        usleep(tiempoDeadlock*1000);
         pthread_mutex_lock(controladorSemaforos);
         bloquearTodosLosSemaforos();
         pthread_mutex_lock(modificarBlocked);
@@ -158,9 +158,9 @@ void ejecutarAlgoritmoDeadlock(){
             proceso_kernel* procesoASacarPorDeadlock = list_get(procesosEnDeadlock, 0);
             log_info(logger,"El proceso elegido para sacar del deadlock sera el proceso: %d\n", procesoASacarPorDeadlock->pid);
 
-            //primero lo sacamos de bloqueado
+            //primero lo sacamos de bloqueado, onda va a ser uno de los bloqueados si o si, ya que tendria que estar reteniendo y pidiendo(que es por lo cual quedo bloqueado)
             sacarProcesoDeBloqueado(procesoASacarPorDeadlock->pid);
-            
+
             //le sacamos todos los recursos, y despues de que no haya mas deadlock vamos a sacarle los recursos de manera real y hacer los signal correspondientes
             int indice = indiceDondeProcesoEstaEnLaLista(procesoASacarPorDeadlock->pid, procesosPosiblesEnDeadlock);
             for(int i=0; i< cantidadSemaforos; i++){
@@ -175,6 +175,12 @@ void ejecutarAlgoritmoDeadlock(){
         }
 
         //luego de toda la simulacion y de agregar a todos a la lista de los considerados de deadlock, les eliminamos de en serio los recursos
+        while(!list_is_empty(listaFinalADesalojar)){
+            proceso_kernel* procesoASacarPorDeadlock = list_remove(listaFinalADesalojar, 0);
+            desalojarSemaforosDeProceso(procesoASacarPorDeadlock);
+            finalizarProcesoPorDeadlock(procesoASacarPorDeadlock);
+        }
+        
         list_destroy(listaFinalADesalojar);
 
         pthread_mutex_unlock(modificarSuspendedReady);
@@ -214,21 +220,6 @@ int indiceDondeProcesoEstaEnLaLista(int pid, t_list* lista){
     }else{
         return noEsta;
     }
-}
-
-
-void sacarProcesoDeBloqueado(int PID){
-    
-    int procesoBloqueado(proceso_kernel * proceso){
-        return proceso->pid == PID;
-    }
-
-    proceso_kernel* procesoASacar = list_remove_by_condition(procesosBlocked, procesoBloqueado);
-    if(procesoASacar == NULL){
-        proceso_kernel* procesoASacarSiNoEstaEnBlock = list_remove_by_condition(procesosSuspendedBlock, procesoBloqueado);
-    }
-
-
 }
 
 
@@ -334,6 +325,16 @@ void rellenarVectorDisponibles(t_list* listaSemaforos, int vector[]){
 }
 
 
+void finalizarProcesoPorDeadlock(proceso_kernel* procesoASacarPorDeadlock){
+    //el 0 era que se realizo el wait
+    //el 1 que no se pudo realizar xq no existia el semaforo
+    //el 2 que se pudo realizar aunque no se bloqueo
+    //vamos a enviarle un codigo 3 de respuesta a la matelib, y la matelib va a cerrar todo debido a eso
+    avisarWaitDeSemaforo(procesoASacarPorDeadlock->conexion, 3);
+    //ya anteriormente lo liberamos de todos lados
 
+    //liberamos los recursos del proceso
+    liberarProceso(procesoASacarPorDeadlock);
+}
 
 

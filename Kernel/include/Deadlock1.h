@@ -15,14 +15,13 @@ void ejecutarAlgoritmoDeadlock();
 //int cantidadDeVecesQueProcesoPideASemaforo(proceso_kernel* procesoActual, semaforo* semaforoBuscado);
 int procesoConMayorPID(proceso_kernel* p1, proceso_kernel* p2);
 int indiceDondeProcesoEstaEnLaLista(int pid, t_list* lista);
-void sacarProcesoDeBloqueado(int PID);
 void bloquearTodosLosSemaforos();
 void desbloquearTodosLosSemaforos();
 int procesoReteniendoProcesosYEsperando(proceso_kernel* proceso);
 int procesoReteniendo(proceso_kernel* proceso);
 t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual);
 void rellenarVectorDisponibles(t_list* listaSemaforos, int vector[]);
-
+void finalizarProcesoPorDeadlock(proceso_kernel* procesoASacarPorDeadlock);
 
 
 

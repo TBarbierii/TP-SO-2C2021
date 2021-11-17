@@ -451,7 +451,6 @@ void establecerConexionConLaMemoria(proceso_kernel* proceso,t_log* logger){
 
 void inicializarEnMemoria(proceso_kernel* proceso, t_log* logger){
 
-	int valor = 1;
 	int validacion = validacionConexionConMemoria(proceso,logger);
 
 	if(validacion == 1){
@@ -480,7 +479,7 @@ void finalizarEnMemoria(proceso_kernel* proceso, t_log* logger){
 		memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
 		enviarPaquete(paquete,proceso->conexionConMemoria);
 		
-		int sePudoInicializar = atenderMensajeDeMemoria(proceso->conexionConMemoria); 
+		atenderMensajeDeMemoria(proceso->conexionConMemoria); 
 	}
 
 }
