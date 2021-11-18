@@ -60,6 +60,9 @@ void inicializarTodo(){
     memoria = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(memoria,NULL);
 
+    swap =  malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(swap,NULL);
+
     id_pag = 1;
     id_carpincho = 0;
 

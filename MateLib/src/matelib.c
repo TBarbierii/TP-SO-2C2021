@@ -187,15 +187,15 @@ int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
     
 }
 
-int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int size){
+int mate_memread(mate_instance *lib_ref, mate_pointer origin, void **info, int size){
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memRead %d", origin);
 
     if(lib_ref->group_info->conexionConBackEnd != -1){
         realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
-        info = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)info);
-        if(info != NULL){
+        *info = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)*info);
+        if(*info != NULL){
             return 0;
         }
         else{
@@ -492,7 +492,7 @@ int notificacionMemAlloc(t_buffer* buffer, t_log* logger){
 	int valor;
 	memcpy(&(valor), stream+desplazamiento, sizeof(int32_t));
 
-    if(valor < 0){
+    if(valor == 0){
         log_error(logger,"No se pudo hacer el memalloc del size solicitado");
     }else{
         log_info(logger,"Se pudo realizar el memalloc");
@@ -837,13 +837,17 @@ int main(){
     //mate_close(referencia);
     //free(referencia);
     
-    void* lectura = malloc(45);
+    void* lectura;// = malloc(45);
     printf("\nDireccion %i\n", mate);
 
-    mate_memwrite(referencia, "-----------------------------------------1-45", mate, 45);
-    mate_memread(referencia, mate, lectura,45);
+    if(mate != 0){
 
-    printf("\nLeimos: %s", (char*)lectura);
+    mate_memwrite(referencia, "----------------------------------------1-45", mate, 45);
+    mate_memread(referencia, mate, &lectura,45);
+    log_info(referencia->group_info->loggerProceso, "\n LLego: %s", (char*)lectura);
+    }
+
+    
     mate_close(referencia);
     free(referencia);
     

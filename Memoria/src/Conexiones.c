@@ -124,7 +124,8 @@ void* atender_respuestas_swap(uint32_t conexion){
 	case CONSULTAR_ESPACIO:
 		return recibir_respuesta_consulta(conexion);
 	break;
-
+	case FINALIZAR_PROCESO:
+		return recibir_respuesta_cierre(conexion);
 	case -1:
 		log_error(logger, "el cliente se desconecto. Terminando servidor");
 		break;
@@ -212,6 +213,9 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 	log_info(logger,"Sacamos al carpincho. Pid: %d", carpincho->id_carpincho);
 
 	informarCierreDeProceso(carpincho,logger);
+
+	finalizar_swap(pidProcesoAEliminar);
+	//loguear
 
 	log_info(logger,"Se nos va el carpincho: %d", carpincho->id_carpincho);
 	free(carpincho); 
@@ -478,6 +482,38 @@ uint32_t consultar_espacio(uint32_t pid, uint32_t cantPaginas){
 	return conexionSwamp;
 }
 
+uint32_t finalizar_swap(uint32_t pid){
+
+	uint32_t size;
+
+	t_paquete *paquete = crear_paquete(FINALIZAR_PROCESO);
+
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
+	
+	memcpy(paquete->buffer->stream + desplazamiento, &(pid) , sizeof(uint32_t));
+    
+	uint32_t conexionSwamp = crear_conexion(ipSWAmP, puertoSWAmP);
+
+	enviarPaquete(paquete, conexionSwamp);
+
+	return conexionSwamp;
+}
+
+uint32_t recibir_respuesta_cierre(conexion){
+	
+	uint32_t offset=0;
+	void* buffer = recibir_buffer(conexion);
+	uint32_t respuesta;
+	
+	memcpy(&respuesta, buffer, tamanioPagina);
+
+	free(buffer);
+
+	return respuesta;
+
+}
 
 void* recibirPagina(int conexion){
 
@@ -493,13 +529,12 @@ void* recibirPagina(int conexion){
 
 }
 
-void* recibir_respuesta_consulta(int conexion){
-	
-	uint32_t offset=0;
+uint32_t recibir_respuesta_consulta(int conexion){
+
 	void* buffer = recibir_buffer(conexion);
-	void* respuesta = malloc(sizeof(uint32_t));
-	
-	memcpy(respuesta, buffer, sizeof(uint32_t));
+	uint32_t respuesta;
+
+	memcpy(&respuesta, buffer, sizeof(uint32_t));
 
 	free(buffer);
 

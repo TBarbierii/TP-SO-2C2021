@@ -3621,3 +3621,825 @@ FIFO
 [INFO] 13:50:05:909 SWAmP/(7551:7551): Solicitud de memoria entrante
 [INFO] 13:50:05:911 SWAmP/(7551:7551): Solicitud de memoria entrante
 [INFO] 13:50:05:918 SWAmP/(7551:7551): Proceso 3 finalizado con exito
+[INFO] 16:54:29:186 SWAmP/(12358:12358): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 16:54:29:186 SWAmP/(12358:12358): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 16:54:29:186 SWAmP/(12358:12358): Se han creado todos los archivos
+[INFO] 16:54:29:186 SWAmP/(12358:12358): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 16:54:48:156 SWAmP/(12358:12358): Solicitud de memoria entrante
+[INFO] 16:54:56:737 SWAmP/(12358:12358): Solicitud de memoria entrante
+[INFO] 16:54:56:739 SWAmP/(12358:12358): Solicitud de memoria entrante
+[INFO] 16:54:56:741 SWAmP/(12358:12358): Solicitud de memoria entrante
+[INFO] 16:54:56:942 SWAmP/(12358:12358): Solicitud de memoria entrante
+[INFO] 16:54:57:49 SWAmP/(12358:12358): Solicitud de memoria entrante
+[INFO] 16:54:57:52 SWAmP/(12358:12358): Solicitud de memoria entrante
+[INFO] 16:57:25:435 SWAmP/(12488:12488): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 16:57:25:435 SWAmP/(12488:12488): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 16:57:25:435 SWAmP/(12488:12488): Se han creado todos los archivos
+[INFO] 16:57:25:435 SWAmP/(12488:12488): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 17:08:18:750 SWAmP/(12965:12965): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:08:18:750 SWAmP/(12965:12965): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:08:18:750 SWAmP/(12965:12965): Se han creado todos los archivos
+[INFO] 17:08:18:750 SWAmP/(12965:12965): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 17:08:24:879 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:08:28:767 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:08:28:769 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:08:28:770 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:10:08:714 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:10:08:715 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:10:08:718 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:12:44:502 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:12:44:503 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:12:44:505 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:16:33:930 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:16:33:931 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:16:33:933 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:18:01:645 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:18:01:648 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:18:01:649 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:20:33:112 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:20:33:113 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:20:33:114 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:20:58:345 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:20:58:348 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:20:58:349 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:07:203 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:07:204 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:07:206 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:13:259 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:13:260 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:13:263 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:15:621 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:15:623 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:15:624 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:17:176 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:17:179 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:17:182 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:18:702 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:18:707 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:18:708 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:20:103 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:20:105 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:20:107 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:21:189 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:21:190 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:21:192 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:22:165 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:22:167 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:22:168 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:23:77 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:23:78 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:23:79 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:23:969 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:23:970 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:23:971 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:24:731 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:24:733 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:24:734 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:25:458 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:25:460 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:25:462 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:26:123 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:26:125 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:26:126 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:26:814 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:26:817 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:26:821 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:27:541 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:27:542 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:27:546 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:28:250 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:28:253 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:28:254 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:29:6 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:29:7 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:29:10 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:29:736 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:29:738 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:29:740 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:30:527 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:30:528 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:30:530 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:31:336 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:31:339 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:31:343 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:32:194 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:32:196 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:32:198 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:33:164 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:33:165 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:33:166 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:33:2 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:33:4 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:33:5 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:34:788 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:34:789 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:34:790 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:35:656 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:35:658 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:35:659 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:36:471 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:36:472 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:36:473 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:37:878 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:37:881 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:37:883 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:38:835 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:38:837 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:38:838 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:39:725 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:39:726 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:39:731 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:40:517 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:40:519 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:40:520 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:41:289 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:41:292 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:41:294 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:41:976 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:41:977 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:41:978 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:42:658 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:42:660 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:42:661 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:43:361 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:43:362 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:43:363 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:46:373 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:46:375 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:21:46:376 SWAmP/(12965:12965): Solicitud de memoria entrante
+[INFO] 17:24:17:833 SWAmP/(13882:13882): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:24:17:834 SWAmP/(13882:13882): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:24:17:834 SWAmP/(13882:13882): Se han creado todos los archivos
+[INFO] 17:24:17:834 SWAmP/(13882:13882): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 17:24:22:989 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:27:505 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:27:507 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:27:508 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:30:229 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:30:231 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:30:234 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:31:444 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:31:447 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:31:449 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:32:540 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:32:543 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:32:545 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:33:596 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:33:598 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:33:601 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:34:638 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:34:639 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:34:640 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:35:602 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:35:604 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:35:605 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:36:602 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:36:605 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:36:607 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:37:572 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:37:574 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:37:575 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:38:502 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:38:504 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:38:504 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:39:444 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:39:446 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:39:447 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:40:440 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:40:442 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:40:443 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:41:444 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:41:446 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:41:447 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:43:70 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:43:72 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:43:73 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:44:275 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:44:277 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:44:278 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:45:370 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:45:371 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:45:373 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:46:641 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:46:643 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:46:644 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:47:751 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:47:753 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:47:755 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:48:811 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:48:812 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:48:813 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:49:753 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:49:755 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:49:756 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:50:575 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:50:576 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:50:578 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:51:370 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:51:372 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:51:373 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:52:152 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:52:154 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:52:154 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:52:924 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:52:925 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:52:926 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:54:29 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:54:30 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:54:32 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:55:58 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:55:59 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:55:60 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:55:924 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:55:925 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:55:927 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:56:825 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:56:826 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:56:827 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:57:777 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:57:778 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:57:779 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:58:871 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:58:872 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:58:873 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:59:717 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:59:719 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:24:59:720 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:00:505 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:00:506 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:00:508 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:01:307 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:01:308 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:01:309 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:02:113 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:02:115 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:02:116 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:02:906 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:02:908 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:02:909 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:03:686 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:03:688 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:03:690 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:04:531 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:04:532 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:04:533 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:05:710 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:05:710 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:05:711 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:06:754 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:06:756 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:06:758 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:25:747 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:25:749 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:25:750 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:38:537 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:38:538 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:25:38:541 SWAmP/(13882:13882): Solicitud de memoria entrante
+[INFO] 17:38:47:150 SWAmP/(14611:14611): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:38:47:151 SWAmP/(14611:14611): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:38:47:151 SWAmP/(14611:14611): Se han creado todos los archivos
+[INFO] 17:38:47:151 SWAmP/(14611:14611): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 17:39:14:238 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:17:488 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:17:490 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:17:492 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:22:364 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:22:368 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:22:369 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:24:346 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:24:351 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:24:354 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:26:150 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:26:152 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:26:154 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:27:724 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:27:726 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:27:727 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:35:265 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:35:267 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:35:268 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:36:535 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:36:536 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:36:537 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:38:548 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:38:550 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:38:552 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:39:474 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:39:475 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:39:476 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:40:420 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:40:423 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:40:424 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:41:411 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:41:413 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:41:415 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:44:294 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:44:295 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:44:296 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:47:906 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:47:908 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:47:910 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:50:496 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:50:498 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:50:500 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:53:80 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:53:82 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:53:83 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:54:601 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:54:602 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:39:54:603 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:40:06:669 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:40:06:670 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:40:06:672 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:17:520 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:17:522 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:17:525 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:21:833 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:21:834 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:21:835 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:23:73 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:23:74 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:23:75 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:24:80 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:24:82 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:24:84 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:25:182 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:25:183 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:25:184 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:26:218 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:26:221 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:41:26:222 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:07:572 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:07:575 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:07:576 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:09:145 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:09:147 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:09:149 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:10:388 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:10:390 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:43:10:391 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:36:785 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:36:786 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:36:787 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:43:204 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:43:205 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:43:207 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:44:409 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:44:410 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:44:412 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:45:604 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:45:606 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:45:45:607 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:04:948 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:04:949 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:04:951 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:05:955 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:05:957 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:05:958 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:06:787 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:06:789 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:06:790 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:07:502 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:07:504 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:07:507 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:08:243 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:08:245 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:08:246 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:09:27 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:09:28 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:09:30 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:09:753 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:09:755 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:09:756 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:10:479 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:10:481 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:10:483 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:11:216 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:11:217 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:11:218 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:11:940 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:11:942 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:11:945 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:16:352 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:16:353 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:16:355 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:17:162 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:17:163 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:46:17:164 SWAmP/(14611:14611): Solicitud de memoria entrante
+[INFO] 17:51:53:869 SWAmP/(15363:15363): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:51:53:869 SWAmP/(15363:15363): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:51:53:869 SWAmP/(15363:15363): Se han creado todos los archivos
+[INFO] 17:51:53:869 SWAmP/(15363:15363): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 17:51:56:857 SWAmP/(15363:15363): Solicitud de memoria entrante
+[INFO] 17:52:00:143 SWAmP/(15363:15363): Solicitud de memoria entrante
+[INFO] 17:52:00:144 SWAmP/(15363:15363): Solicitud de memoria entrante
+[INFO] 17:52:00:146 SWAmP/(15363:15363): Solicitud de memoria entrante
+[INFO] 17:53:26:192 SWAmP/(15439:15439): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:53:26:192 SWAmP/(15439:15439): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:53:26:192 SWAmP/(15439:15439): Se han creado todos los archivos
+[INFO] 17:53:26:192 SWAmP/(15439:15439): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 17:54:06:635 SWAmP/(15495:15495): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 17:54:06:636 SWAmP/(15495:15495): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 17:54:06:636 SWAmP/(15495:15495): Se han creado todos los archivos
+[INFO] 17:54:06:636 SWAmP/(15495:15495): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 17:54:18:129 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:23:892 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:23:895 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:23:898 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:46:631 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:46:632 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:46:633 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:49:743 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:49:745 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:49:746 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:51:12 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:51:14 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 17:54:51:16 SWAmP/(15495:15495): Solicitud de memoria entrante
+[INFO] 18:00:01:846 SWAmP/(15942:15942): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:00:01:847 SWAmP/(15942:15942): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:00:01:847 SWAmP/(15942:15942): Se han creado todos los archivos
+[INFO] 18:00:01:847 SWAmP/(15942:15942): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:00:05:357 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:08:247 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:08:249 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:08:250 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:11:171 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:11:172 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:11:173 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:12:766 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:12:771 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:12:773 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:13:898 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:13:900 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:13:906 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:14:679 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:14:681 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:14:682 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:15:329 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:15:331 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:15:332 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:15:958 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:15:960 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:15:964 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:16:670 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:16:672 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:16:674 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:17:485 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:17:487 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:17:489 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:18:253 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:18:255 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:18:256 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:18:922 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:18:923 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:18:927 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:19:597 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:19:599 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:19:601 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:20:360 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:20:361 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:20:363 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:21:25 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:21:27 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:21:29 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:21:899 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:21:902 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:21:911 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:22:917 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:22:921 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:22:922 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:23:936 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:23:937 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:23:939 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:24:831 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:24:832 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:24:834 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:25:648 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:25:649 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:25:651 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:26:515 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:26:517 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:26:518 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:27:386 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:27:387 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:27:389 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:28:103 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:28:104 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:28:106 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:28:794 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:28:796 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:28:797 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:29:679 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:29:681 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:29:682 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:00:30:610 SWAmP/(15942:15942): Solicitud de memoria entrante
+[INFO] 18:06:55:984 SWAmP/(16228:16228): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:06:55:984 SWAmP/(16228:16228): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:06:55:984 SWAmP/(16228:16228): Se han creado todos los archivos
+[INFO] 18:06:55:984 SWAmP/(16228:16228): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:06:58:437 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:02:217 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:02:219 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:02:220 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:06:688 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:06:689 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:06:692 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:07:670 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:07:676 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:07:677 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:08:519 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:08:521 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:08:523 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:09:233 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:09:234 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:09:237 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:09:979 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:09:981 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:09:983 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:10:746 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:10:747 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:10:748 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:11:463 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:11:465 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:11:467 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:12:163 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:12:164 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:12:166 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:12:838 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:12:840 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:12:841 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:13:575 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:13:578 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:13:581 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:14:267 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:14:269 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:14:271 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:14:962 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:14:963 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:14:965 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:15:636 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:15:638 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:15:643 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:16:262 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:16:264 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:16:265 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:16:865 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:16:867 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:16:869 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:17:468 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:17:470 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:17:472 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:18:52 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:18:54 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:18:59 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:18:658 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:18:659 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:18:660 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:19:252 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:19:254 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:19:255 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:19:912 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:19:914 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:19:916 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:20:548 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:20:551 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:20:553 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:21:243 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:21:245 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:21:258 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:22:162 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:22:164 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:22:165 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:23:412 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:37:128 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:38:532 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:39:312 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:39:947 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:40:506 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:41:53 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:41:577 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:42:86 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:42:608 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:43:99 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:43:598 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:44:86 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:44:589 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:45:110 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:45:687 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:46:226 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:07:46:764 SWAmP/(16228:16228): Solicitud de memoria entrante
+[INFO] 18:15:45:692 SWAmP/(17000:17000): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:15:45:692 SWAmP/(17000:17000): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:15:45:692 SWAmP/(17000:17000): Se han creado todos los archivos
+[INFO] 18:15:45:692 SWAmP/(17000:17000): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:15:48:257 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:50:957 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:50:959 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:50:961 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:51:367 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:51:369 SWAmP/(17000:17000): Proceso 0 finalizado con exito
+[INFO] 18:15:52:615 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:52:616 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:52:617 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:53:20 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:53:21 SWAmP/(17000:17000): Proceso 1 finalizado con exito
+[INFO] 18:15:53:510 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:53:511 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:53:512 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:53:931 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:53:932 SWAmP/(17000:17000): Proceso 2 finalizado con exito
+[INFO] 18:15:54:572 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:54:573 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:54:575 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:55:25 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:55:27 SWAmP/(17000:17000): Proceso 3 finalizado con exito
+[INFO] 18:15:56:519 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:56:521 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:56:523 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:56:927 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:15:56:929 SWAmP/(17000:17000): Proceso 4 finalizado con exito
+[INFO] 18:16:26:339 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:26:341 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:26:342 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:26:747 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:26:748 SWAmP/(17000:17000): Proceso 5 finalizado con exito
+[INFO] 18:16:27:761 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:27:763 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:27:764 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:28:171 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:28:173 SWAmP/(17000:17000): Proceso 6 finalizado con exito
+[INFO] 18:16:29:201 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:29:203 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:29:205 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:29:616 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:29:619 SWAmP/(17000:17000): Proceso 7 finalizado con exito
+[INFO] 18:16:30:345 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:30:347 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:30:349 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:30:754 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:30:755 SWAmP/(17000:17000): Proceso 8 finalizado con exito
+[INFO] 18:16:31:412 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:31:414 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:31:415 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:31:832 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:31:834 SWAmP/(17000:17000): Proceso 9 finalizado con exito
+[INFO] 18:16:32:477 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:32:479 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:32:487 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:32:893 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:32:896 SWAmP/(17000:17000): Proceso 10 finalizado con exito
+[INFO] 18:16:33:290 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:33:295 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:33:297 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:33:703 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:33:705 SWAmP/(17000:17000): Proceso 11 finalizado con exito
+[INFO] 18:16:34:60 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:34:62 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:34:64 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:34:470 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:34:472 SWAmP/(17000:17000): Proceso 12 finalizado con exito
+[INFO] 18:16:34:875 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:34:878 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:34:879 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:35:292 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:35:295 SWAmP/(17000:17000): Proceso 13 finalizado con exito
+[INFO] 18:16:35:590 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:35:592 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:35:595 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:35:4 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:35:6 SWAmP/(17000:17000): Proceso 14 finalizado con exito
+[INFO] 18:16:36:330 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:36:331 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:36:333 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:36:743 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:36:745 SWAmP/(17000:17000): Proceso 15 finalizado con exito
+[INFO] 18:16:37:83 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:37:85 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:37:86 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:37:489 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:37:490 SWAmP/(17000:17000): Proceso 16 finalizado con exito
+[INFO] 18:16:37:827 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:37:828 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:37:830 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:38:234 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:38:235 SWAmP/(17000:17000): Proceso 17 finalizado con exito
+[INFO] 18:16:38:512 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:38:513 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:38:515 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:38:923 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:38:924 SWAmP/(17000:17000): Proceso 18 finalizado con exito
+[INFO] 18:16:39:207 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:39:209 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:39:211 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:39:615 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:39:617 SWAmP/(17000:17000): Proceso 19 finalizado con exito
+[INFO] 18:16:39:909 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:39:911 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:39:912 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:40:318 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:40:319 SWAmP/(17000:17000): Proceso 20 finalizado con exito
+[INFO] 18:16:40:608 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:40:609 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:40:611 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:41:22 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:41:23 SWAmP/(17000:17000): Proceso 21 finalizado con exito
+[INFO] 18:16:41:168 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:41:169 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:41:181 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:41:575 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:41:578 SWAmP/(17000:17000): Proceso 22 finalizado con exito
+[INFO] 18:16:41:765 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:41:766 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:41:767 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:42:173 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:42:174 SWAmP/(17000:17000): Proceso 23 finalizado con exito
+[INFO] 18:16:42:322 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:42:324 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:42:325 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:42:736 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:42:737 SWAmP/(17000:17000): Proceso 24 finalizado con exito
+[INFO] 18:16:42:878 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:42:879 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:42:881 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:43:287 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:43:288 SWAmP/(17000:17000): Proceso 25 finalizado con exito
+[INFO] 18:16:43:435 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:43:439 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:43:441 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:43:856 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:43:858 SWAmP/(17000:17000): Proceso 26 finalizado con exito
+[INFO] 18:16:43:989 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:43:991 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:43:993 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:44:400 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:44:401 SWAmP/(17000:17000): Proceso 27 finalizado con exito
+[INFO] 18:16:44:529 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:44:531 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:44:534 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:44:937 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:44:939 SWAmP/(17000:17000): Proceso 28 finalizado con exito
+[INFO] 18:16:45:49 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:45:51 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:45:52 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:45:467 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:45:468 SWAmP/(17000:17000): Proceso 29 finalizado con exito
+[INFO] 18:16:45:613 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:45:614 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:45:619 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:46:28 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:46:29 SWAmP/(17000:17000): Proceso 30 finalizado con exito
+[INFO] 18:16:46:156 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:46:157 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:46:163 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:46:665 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:46:667 SWAmP/(17000:17000): Proceso 31 finalizado con exito
+[INFO] 18:16:46:693 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:46:695 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:46:698 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:47:109 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:47:110 SWAmP/(17000:17000): Proceso 32 finalizado con exito
+[INFO] 18:16:48:614 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:48:616 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:48:617 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:49:28 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:49:29 SWAmP/(17000:17000): Proceso 33 finalizado con exito
+[INFO] 18:16:50:855 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:50:857 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:50:859 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:51:262 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:51:264 SWAmP/(17000:17000): Proceso 34 finalizado con exito
+[INFO] 18:16:51:634 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:51:637 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:51:639 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:52:52 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:52:54 SWAmP/(17000:17000): Proceso 35 finalizado con exito
+[INFO] 18:16:52:349 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:52:352 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:52:353 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:52:756 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:52:758 SWAmP/(17000:17000): Proceso 36 finalizado con exito
+[INFO] 18:16:53:283 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:53:284 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:53:286 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:53:696 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:53:697 SWAmP/(17000:17000): Proceso 37 finalizado con exito
+[INFO] 18:16:54:427 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:54:429 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:54:430 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:54:837 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:16:54:838 SWAmP/(17000:17000): Proceso 38 finalizado con exito
+[INFO] 18:17:17:355 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:17:357 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:17:359 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:17:773 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:17:775 SWAmP/(17000:17000): Proceso 39 finalizado con exito
+[INFO] 18:17:19:659 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:19:660 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:19:662 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:20:64 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:20:66 SWAmP/(17000:17000): Proceso 40 finalizado con exito
+[INFO] 18:17:22:260 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:22:274 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:22:275 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:22:679 SWAmP/(17000:17000): Solicitud de memoria entrante
+[INFO] 18:17:22:682 SWAmP/(17000:17000): Proceso 41 finalizado con exito

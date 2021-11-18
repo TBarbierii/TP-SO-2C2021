@@ -1,8 +1,0 @@
-[INFO] 14:23:38:478 loggerContenidoProceso/(6172:6172): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
-[INFO] 14:23:38:627 loggerContenidoProceso/(6172:6172): Solicitamos realizar una operacion IO sobre el dispositivo: laguna
-[INFO] 14:24:06:643 loggerContenidoProceso/(6172:6172): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
-[INFO] 14:24:06:644 loggerContenidoProceso/(6172:6172): Se pudo realizar con exito la operacion IO
-[INFO] 14:24:06:645 loggerContenidoProceso/(6172:6172): Se ha solicitado cerrar el carpincho, este es un hasta adios
-[INFO] 14:24:06:649 loggerContenidoProceso/(6172:6172): Estamos recibiendo todo para cerrar la conexion y terminar
-[INFO] 14:24:06:650 loggerContenidoProceso/(6172:6172): Se pudo cerrar el proceso correctamente en el BackEnd
-[INFO] 14:24:06:650 loggerContenidoProceso/(6172:6172): Se liberan todas las estructuras del proceso

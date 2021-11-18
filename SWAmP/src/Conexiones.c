@@ -216,7 +216,7 @@ void notificar_finalizacion_de_proceso(int conexion) {
 void notificar_insuficiencia_de_espacio_para_proceso(int conexion, int valor) {
 
 	t_paquete *paquete = crear_paquete(CONSULTAR_ESPACIO); 
-
+	printf("\nVALOR:%i\n", valor);
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	uint32_t desplazamiento=0;
@@ -243,7 +243,7 @@ void atender_solicitud_consulta_espacio(t_buffer* buffer, int conexion, t_log* l
 
 	valor = cantidad_frames_disponibles_para_proceso(PID, logger);
 
-	if(valor <= marcos_pedidos) {
+	if(valor < marcos_pedidos) {
 		notificar_insuficiencia_de_espacio_para_proceso(conexion, 0); // 0 NO HAY ESPACIO
 	}else{
 		notificar_insuficiencia_de_espacio_para_proceso(conexion, 1); // 1 SI HAY ESPACIO

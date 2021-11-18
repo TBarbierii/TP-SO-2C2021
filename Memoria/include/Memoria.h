@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include <unistd.h>
 #include <time.h>
 #include <commons/log.h>
 #include <commons/config.h>
@@ -45,6 +46,7 @@ pthread_mutex_t * controladorIdsPaginas;
 pthread_mutex_t * listaCarpinchos;
 pthread_mutex_t * TLB_mutex;
 pthread_mutex_t * memoria;
+pthread_mutex_t * swap;
 
 /* Estructuras Administrativas */
 
@@ -202,6 +204,7 @@ uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida);
 void manejador_de_seniales(int numeroSenial);
 void algoritmo_reemplazo_TLB(t_pagina* pagina);
 int32_t buscarEnTablaDePaginas(t_carpincho* carpincho, int32_t idPag);
+void reemplazo(int32_t *DF, t_carpincho* carpincho, t_pagina* pagina);
 
 
 #endif

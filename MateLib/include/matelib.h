@@ -73,7 +73,7 @@ mate_pointer mate_memalloc(mate_instance *lib_ref, int size);
 
 int mate_memfree(mate_instance *lib_ref, mate_pointer addr);
 
-int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *dest, int size);
+int mate_memread(mate_instance *lib_ref, mate_pointer origin, void **dest, int size);
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size);
 
