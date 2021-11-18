@@ -195,7 +195,7 @@ t_list* reservarMarcos(uin32_t);
 int32_t buscar_TLB(uint32_t);
 int buscarSiguienteHeapLibre(heapMetadata* , int32_t* , t_carpincho* , int32_t*, int32_t* );
 t_list* buscarMarcosLibres(t_carpincho* carpincho);
-void crearAllocNuevo(int* pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t*);
+uint32_t crearAllocNuevo(int* pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t*);
 t_marco* reemplazarPagina(t_carpincho* carpincho);
 t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* carpincho);
 uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida);

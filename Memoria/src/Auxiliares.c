@@ -314,7 +314,18 @@ t_list* buscarMarcosLibres(t_carpincho* carpincho){
 }
 
 
-void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t *desplazamiento){
+uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t *desplazamiento){
+
+	uint32_t paginasNecesarias = ceil((float)(TAMANIO_HEAP*2 + tamanio + posicionUltimoHeap)/tamanioPagina);
+	uint32_t cantidadDePaginasACrear = paginasNecesarias - list_size(carpincho->tabla_de_paginas);
+
+	/* int conexion = consultar_espacio(carpincho->id_carpincho, cantidadDePaginasACrear);
+
+	uint32_t respuesta = (uint32_t)atender_respuestas_swap(conexion);
+
+	if(respuesta == 0) return 0;*/
+	
+	//primero pregunta si hay lugar en swap
 
 	bool buscarPag(t_pagina* pag){
     return pag->id_pagina == *pagina;
@@ -403,9 +414,7 @@ void crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionU
 	nuevoHeap->prevAlloc = posicionUltimoHeap;
 	nuevoHeap->nextAlloc = -1;
 
-	uint32_t paginasNecesarias = ceil((float)(TAMANIO_HEAP*2 + tamanio + posicionUltimoHeap)/tamanioPagina);
-	uint32_t cantidadDePaginasACrear = paginasNecesarias - list_size(carpincho->tabla_de_paginas);
-	//aca preguntar a swap
+	
 	for(int i=0; i<cantidadDePaginasACrear; i++){
 
 		t_pagina* pagina = malloc(sizeof(t_pagina));

@@ -111,7 +111,7 @@ int main(){
 		perror ("No se puede cambiar signal");
 	}
 
-    //enviar_tipo_asignacion(tipoAsignacion);
+    enviar_tipo_asignacion(tipoAsignacion);
     //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
     atender_solicitudes_multihilo();

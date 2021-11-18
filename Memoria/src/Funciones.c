@@ -1,9 +1,8 @@
-#include "Memoria.h"
+#include "Conexiones.h"
 
 
 uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpinchos en el init
 
-    t_list* marcos_a_asignar;//probar sacar el list_create
 
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc->pid;
@@ -12,21 +11,10 @@ uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpincho
     pthread_mutex_lock(listaCarpinchos);
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
     pthread_mutex_unlock(listaCarpinchos);
-    //marcos_a_asignar = reservarMarcos(carpincho->id_carpincho); //ver como poner esto cuando no hay kernel
-    //si no lo encuentra crearlo
-    if (carpincho == NULL){
-     carpincho = malloc(sizeof(t_carpincho));
-     carpincho->id_carpincho = alloc->pid;
-     carpincho->tabla_de_paginas = list_create();
-     carpincho->tlb_hit=0;                              //volar todo esto 
-     carpincho->tlb_miss=0;
-     carpincho->punteroClock=0;
+    t_list* marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
 
-     marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
-    
-    pthread_mutex_lock(listaCarpinchos);
-     list_add(carpinchos, carpincho);
-     pthread_mutex_unlock(listaCarpinchos);
+    if (carpincho == NULL){
+        
     }
 
     uint32_t direccionLogica = administrar_paginas(carpincho, alloc->tamanio, marcos_a_asignar);
@@ -54,7 +42,11 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         uint32_t cantidadDePaginasACrear = ceil((float)(TAMANIO_HEAP*2 + tamanio)/tamanioPagina);
 
-        //enviar las paginas que vamos a guardar y esperar respuesta
+       /* int conexion = consultar_espacio(carpincho->id_carpincho, cantidadDePaginasACrear);
+
+        uint32_t respuesta = (uint32_t)atender_respuestas_swap(conexion);
+
+        if(respuesta == 0) return 0;*/
 
         for(int i=0; i<cantidadDePaginasACrear; i++){
 
@@ -138,7 +130,8 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         if(heap->nextAlloc == -1){
 
-            crearAllocNuevo(&pagina, tamanio, heap, posicionHeap, carpincho, &desplazamiento);//pasar pagina y despl por referencia y si esta cortado modificarlo
+            int32_t ok = crearAllocNuevo(&pagina, tamanio, heap, posicionHeap, carpincho, &desplazamiento);//pasar pagina y despl por referencia y si esta cortado modificarlo
+            if(ok == 0) return 0;
         }
 
         if(tamanioPagina - desplazamiento < TAMANIO_HEAP && desplazamiento > 0){ //esta cortado

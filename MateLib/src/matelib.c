@@ -192,10 +192,10 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memRead %d", origin);
 
     if(lib_ref->group_info->conexionConBackEnd != -1){
-        realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, info, size);
-        origin = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-
-        if(origin != NULL){
+        realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
+        info = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)info);
+        if(info != NULL){
             return 0;
         }
         else{
@@ -206,7 +206,6 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
         log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
     }
 
-    
 }
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
@@ -829,26 +828,24 @@ int main(){
     mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     
     //mate_sem_init(referencia,"SEM1",1);
-    mate_sem_post(referencia,"SEM1");
-    mate_sem_wait(referencia,"SEM1");
-    mate_sem_wait(referencia,"SEM1");
-    mate_call_io(referencia,"laguna","asd");
+    //mate_sem_post(referencia,"SEM1");
+    //mate_sem_wait(referencia,"SEM1");
+    //mate_sem_wait(referencia,"SEM1");
+    //mate_call_io(referencia,"laguna","asd");
     mate_pointer mate = mate_memalloc(referencia, 45);
-    mate_memfree(referencia, mate);
-    mate_close(referencia);
-    free(referencia);
-    
-
-    //uint32_t direccion = mate_memalloc(referencia, 45);
-    //void* lectura = malloc(45);
-    //printf("\nDireccion %i\n", direccion);
-
-    //mate_memwrite(referencia, "-----------------------------------------1-45", direccion, 45);
-    //mate_memread(referencia, direccion, lectura,45);
-
-    //printf("\nLeimos: %s", (char*)lectura);
+    //mate_memfree(referencia, mate);
     //mate_close(referencia);
     //free(referencia);
+    
+    void* lectura = malloc(45);
+    printf("\nDireccion %i\n", mate);
+
+    mate_memwrite(referencia, "-----------------------------------------1-45", mate, 45);
+    mate_memread(referencia, mate, lectura,45);
+
+    printf("\nLeimos: %s", (char*)lectura);
+    mate_close(referencia);
+    free(referencia);
     
     //pthread_t h1, h2, h3;
 

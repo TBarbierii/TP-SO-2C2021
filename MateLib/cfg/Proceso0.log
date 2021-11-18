@@ -591,3 +591,105 @@
 [INFO] 10:23:37:628 loggerContenidoProceso/(6858:6858): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 10:23:37:630 loggerContenidoProceso/(6858:6858): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
 [INFO] 10:23:37:633 loggerContenidoProceso/(6858:6858): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 15:00:18:937 loggerContenidoProceso/(5206:5206): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:00:18:937 loggerContenidoProceso/(5206:5206): Solicitamos realizar un memalloc de size:45
+[INFO] 15:00:41:149 loggerContenidoProceso/(5206:5206): Solicitamos realizar un memfree de -1
+[INFO] 15:00:41:150 loggerContenidoProceso/(5206:5206): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:02:31:928 loggerContenidoProceso/(5424:5424): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:02:31:928 loggerContenidoProceso/(5424:5424): Solicitamos realizar un memalloc de size:45
+[INFO] 15:03:36:146 loggerContenidoProceso/(5424:5424): Solicitamos realizar un memfree de -1
+[INFO] 15:03:36:146 loggerContenidoProceso/(5424:5424): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:05:24:699 loggerContenidoProceso/(5829:5829): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:05:24:699 loggerContenidoProceso/(5829:5829): Solicitamos realizar un memalloc de size:45
+[INFO] 15:05:26:520 loggerContenidoProceso/(5829:5829): Habiamos solicitado hacer un memalloc
+[INFO] 15:05:26:520 loggerContenidoProceso/(5829:5829): Se pudo realizar el memalloc
+[INFO] 15:05:26:520 loggerContenidoProceso/(5829:5829): Solicitamos realizar un memfree de 1009
+[INFO] 15:06:12:330 loggerContenidoProceso/(5829:5829): Habiamos solicitado hacer un memfree
+[ERROR] 15:06:12:330 loggerContenidoProceso/(5829:5829): Se pudo realizar el memfree
+[INFO] 15:06:12:330 loggerContenidoProceso/(5829:5829): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:06:31:423 loggerContenidoProceso/(5829:5829): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:06:31:423 loggerContenidoProceso/(5829:5829): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 15:06:31:424 loggerContenidoProceso/(5829:5829): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 15:26:48:982 loggerContenidoProceso/(7277:7277): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:26:48:982 loggerContenidoProceso/(7277:7277): Solicitamos realizar un memalloc de size:45
+[INFO] 15:26:49:107 loggerContenidoProceso/(7277:7277): Solicitamos realizar un memfree de -1
+[INFO] 15:26:49:107 loggerContenidoProceso/(7277:7277): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:28:34:57 loggerContenidoProceso/(7438:7438): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:28:34:57 loggerContenidoProceso/(7438:7438): Solicitamos realizar un memalloc de size:45
+[INFO] 15:28:57:481 loggerContenidoProceso/(7438:7438): Solicitamos realizar un memWrite de -1
+[INFO] 15:28:57:481 loggerContenidoProceso/(7438:7438): Solicitamos realizar un memRead -1
+[INFO] 15:30:17:643 loggerContenidoProceso/(7615:7615): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:30:17:643 loggerContenidoProceso/(7615:7615): Solicitamos realizar un memalloc de size:45
+[INFO] 15:30:17:643 loggerContenidoProceso/(7615:7615): Habiamos solicitado hacer un memalloc
+[INFO] 15:30:17:643 loggerContenidoProceso/(7615:7615): Se pudo realizar el memalloc
+[INFO] 15:30:24:628 loggerContenidoProceso/(7615:7615): Solicitamos realizar un memWrite de 1009
+[INFO] 15:30:24:628 loggerContenidoProceso/(7615:7615): Habiamos solicitado hacer un memwrite
+[INFO] 15:30:24:628 loggerContenidoProceso/(7615:7615): Se pudo hacer el memwrite solicitado
+[INFO] 15:30:37:125 loggerContenidoProceso/(7615:7615): Solicitamos realizar un memRead 1009
+[INFO] 15:31:36:660 loggerContenidoProceso/(7615:7615): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:32:00:125 loggerContenidoProceso/(7787:7787): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:32:00:125 loggerContenidoProceso/(7787:7787): Solicitamos realizar un memalloc de size:45
+[INFO] 15:32:05:609 loggerContenidoProceso/(7787:7787): Habiamos solicitado hacer un memalloc
+[INFO] 15:32:05:609 loggerContenidoProceso/(7787:7787): Se pudo realizar el memalloc
+[INFO] 15:32:05:609 loggerContenidoProceso/(7787:7787): Solicitamos realizar un memWrite de 1009
+[INFO] 15:32:10:710 loggerContenidoProceso/(7787:7787): Habiamos solicitado hacer un memwrite
+[INFO] 15:32:10:710 loggerContenidoProceso/(7787:7787): Se pudo hacer el memwrite solicitado
+[INFO] 15:32:10:710 loggerContenidoProceso/(7787:7787): Solicitamos realizar un memRead 1009
+[INFO] 15:32:38:341 loggerContenidoProceso/(7787:7787): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:33:03:285 loggerContenidoProceso/(7876:7876): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:33:03:285 loggerContenidoProceso/(7876:7876): Solicitamos realizar un memalloc de size:45
+[INFO] 15:33:03:286 loggerContenidoProceso/(7876:7876): Habiamos solicitado hacer un memalloc
+[INFO] 15:33:03:286 loggerContenidoProceso/(7876:7876): Se pudo realizar el memalloc
+[INFO] 15:33:15:832 loggerContenidoProceso/(7876:7876): Solicitamos realizar un memWrite de 1009
+[INFO] 15:33:15:833 loggerContenidoProceso/(7876:7876): Habiamos solicitado hacer un memwrite
+[INFO] 15:33:15:833 loggerContenidoProceso/(7876:7876): Se pudo hacer el memwrite solicitado
+[INFO] 15:33:45:863 loggerContenidoProceso/(7876:7876): Solicitamos realizar un memRead 1009
+[INFO] 15:38:38:996 loggerContenidoProceso/(8071:8071): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:38:38:996 loggerContenidoProceso/(8071:8071): Solicitamos realizar un memalloc de size:45
+[INFO] 15:38:38:997 loggerContenidoProceso/(8071:8071): Habiamos solicitado hacer un memalloc
+[INFO] 15:38:38:997 loggerContenidoProceso/(8071:8071): Se pudo realizar el memalloc
+[INFO] 15:38:42:564 loggerContenidoProceso/(8071:8071): Solicitamos realizar un memWrite de 1009
+[INFO] 15:38:42:564 loggerContenidoProceso/(8071:8071): Habiamos solicitado hacer un memwrite
+[INFO] 15:38:42:564 loggerContenidoProceso/(8071:8071): Se pudo hacer el memwrite solicitado
+[INFO] 15:38:48:465 loggerContenidoProceso/(8071:8071): Solicitamos realizar un memRead 1009
+[INFO] 15:41:32:582 loggerContenidoProceso/(8368:8368): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:41:32:582 loggerContenidoProceso/(8368:8368): Solicitamos realizar un memalloc de size:45
+[INFO] 15:41:34:121 loggerContenidoProceso/(8368:8368): Habiamos solicitado hacer un memalloc
+[INFO] 15:41:34:121 loggerContenidoProceso/(8368:8368): Se pudo realizar el memalloc
+[INFO] 15:41:34:121 loggerContenidoProceso/(8368:8368): Solicitamos realizar un memWrite de 1009
+[INFO] 15:41:35:85 loggerContenidoProceso/(8368:8368): Habiamos solicitado hacer un memwrite
+[INFO] 15:41:35:85 loggerContenidoProceso/(8368:8368): Se pudo hacer el memwrite solicitado
+[INFO] 15:41:35:85 loggerContenidoProceso/(8368:8368): Solicitamos realizar un memRead 1009
+[INFO] 15:42:29:364 loggerContenidoProceso/(8368:8368): Habiamos solicitado hacer un memread
+[INFO] 15:42:29:364 loggerContenidoProceso/(8368:8368): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:42:48:743 loggerContenidoProceso/(8368:8368): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:42:48:743 loggerContenidoProceso/(8368:8368): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 15:42:48:743 loggerContenidoProceso/(8368:8368): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 15:44:24:181 loggerContenidoProceso/(8568:8568): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:44:24:181 loggerContenidoProceso/(8568:8568): Solicitamos realizar un memalloc de size:45
+[INFO] 15:44:24:182 loggerContenidoProceso/(8568:8568): Habiamos solicitado hacer un memalloc
+[INFO] 15:44:24:183 loggerContenidoProceso/(8568:8568): Se pudo realizar el memalloc
+[INFO] 15:44:24:183 loggerContenidoProceso/(8568:8568): Solicitamos realizar un memWrite de 1009
+[INFO] 15:44:24:183 loggerContenidoProceso/(8568:8568): Habiamos solicitado hacer un memwrite
+[INFO] 15:44:24:183 loggerContenidoProceso/(8568:8568): Se pudo hacer el memwrite solicitado
+[INFO] 15:44:24:183 loggerContenidoProceso/(8568:8568): Solicitamos realizar un memRead 1009
+[INFO] 15:44:24:184 loggerContenidoProceso/(8568:8568): Habiamos solicitado hacer un memread
+[INFO] 15:44:24:184 loggerContenidoProceso/(8568:8568): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:44:24:184 loggerContenidoProceso/(8568:8568): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:44:24:184 loggerContenidoProceso/(8568:8568): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 15:44:24:184 loggerContenidoProceso/(8568:8568): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 15:46:01:34 loggerContenidoProceso/(8661:8661): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 15:46:01:34 loggerContenidoProceso/(8661:8661): Solicitamos realizar un memalloc de size:45
+[INFO] 15:46:01:35 loggerContenidoProceso/(8661:8661): Habiamos solicitado hacer un memalloc
+[INFO] 15:46:01:35 loggerContenidoProceso/(8661:8661): Se pudo realizar el memalloc
+[INFO] 15:46:01:35 loggerContenidoProceso/(8661:8661): Solicitamos realizar un memWrite de 1009
+[INFO] 15:46:01:35 loggerContenidoProceso/(8661:8661): Habiamos solicitado hacer un memwrite
+[INFO] 15:46:01:35 loggerContenidoProceso/(8661:8661): Se pudo hacer el memwrite solicitado
+[INFO] 15:46:01:35 loggerContenidoProceso/(8661:8661): Solicitamos realizar un memRead 1009
+[INFO] 15:46:01:36 loggerContenidoProceso/(8661:8661): Habiamos solicitado hacer un memread
+[INFO] 15:46:01:36 loggerContenidoProceso/(8661:8661): 
+ LLego: -----------------------------------------1-4561:8661I
+[INFO] 15:46:01:36 loggerContenidoProceso/(8661:8661): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 15:46:01:36 loggerContenidoProceso/(8661:8661): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:46:01:36 loggerContenidoProceso/(8661:8661): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 15:46:01:36 loggerContenidoProceso/(8661:8661): Se liberan todas las estructuras del proceso de PID:0
