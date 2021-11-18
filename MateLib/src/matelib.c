@@ -491,7 +491,7 @@ int notificacionMemAlloc(t_buffer* buffer, t_log* logger){
     void* stream = buffer->stream;
 	int desplazamiento = 0;
 	int valor;
-	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+	memcpy(&(valor), stream+desplazamiento, sizeof(int32_t));
 
     if(valor < 0){
         log_error(logger,"No se pudo hacer el memalloc del size solicitado");
