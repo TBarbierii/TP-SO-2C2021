@@ -37,11 +37,11 @@ int crearSemaforo(char* nombreSem, unsigned int valorSem){
         pthread_mutex_unlock(controladorSemaforos);
 
         log_destroy(logger);
-        return 0;
+        return 1;
     }else{
         log_warning(logger,"Se esta intentando crear un semaforo: %s pero ya esta creado", nombreSem);
         log_destroy(logger);
-        return 1;
+        return 0;
     }
     
 
@@ -76,11 +76,11 @@ int destruirSemaforo(char* nombreSem){
         free(semaforoNuevo->nombre);
         free(semaforoNuevo);
         log_destroy(logger);
-        return 0;
+        return 1;
     }else{
         log_warning(logger,"Se esta intentando destruir un semaforo: %s, el cual no existe", nombreSem);
         log_destroy(logger);
-        return 1;
+        return 0;
     }
 
 
@@ -155,13 +155,13 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
         }
 
         
-        return 0;
+        return 1;
     
     }else{ //si no existe avisamos que se quiso hacer un acmbio sobre un semaforo que no existe
         
         log_warning(logger,"Se esta intentando hacer un signal de un semaforo: %s, el cual no existe", nombreSem);
         log_destroy(logger);
-        return 1;
+        return 0;
 
     }
 }
@@ -225,7 +225,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             pthread_mutex_unlock(modificarBlocked);
 
             
-            return 0;
+            return 1;
 
         }else{ // si el valor no es <0, no se bloquearia el proceso
 
@@ -249,7 +249,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
         
         log_warning(logger,"Se esta intentando hacer un wait de un semaforo: %s, el cual no existe", nombreSem);
         log_destroy(logger);
-        return 1;
+        return 0;
 
     }
 }

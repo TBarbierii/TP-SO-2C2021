@@ -49,3 +49,22 @@ Tamanio: 45
 [INFO] 19:51:04:262 Servidor/(6623:6660): Sacamos al carpincho. Pid: 0
 [INFO] 19:51:04:263 Servidor/(6623:6660): Enviamos que queremos cerrar el carpincho
 [INFO] 19:51:04:263 Servidor/(6623:6660): Se nos va el carpincho: 0
+[INFO] 10:23:37:118 Servidor/(6827:6859): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 10:23:37:191 Servidor/(6827:6859): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 10:23:37:531 Servidor/(6827:6859): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 10:23:37:561 Servidor/(6827:6859): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 10:23:37:581 Servidor/(6827:6859): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 10:23:37:594 Servidor/(6827:6859): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 10:23:37:617 Servidor/(6827:6859): Sacamos al carpincho. Pid: 0
+[INFO] 10:23:37:625 Servidor/(6827:6859): Enviamos que queremos cerrar el carpincho
+[INFO] 10:23:37:632 Servidor/(6827:6859): Se nos va el carpincho: 0
+[INFO] 10:25:30:886 Servidor/(6827:6971): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 10:25:30:887 Servidor/(6827:6971): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 10:25:31:221 Servidor/(6827:6971): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 10:25:31:242 Servidor/(6827:6971): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 10:25:31:262 Servidor/(6827:6971): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 10:25:31:274 Servidor/(6827:6971): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
+[INFO] 10:25:31:293 Servidor/(6827:6971): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 45

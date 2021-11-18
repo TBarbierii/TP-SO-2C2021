@@ -202,7 +202,7 @@ void informarCierreDeProceso(proceso_kernel* proceso,t_log* loggerActual){
 	t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
-	uint32_t valorReturn = 0;
+	uint32_t valorReturn = 1;
 	int desplazamiento = 0;
 
 	memcpy(paquete->buffer->stream + desplazamiento, &(valorReturn) , sizeof(uint32_t));
@@ -232,8 +232,6 @@ void iniciarSemaforo(t_buffer * buffer, int conexion){
 	int valorReturn = crearSemaforo(nombre,valor);
 	
 	avisarInicializacionDeSemaforo(conexion,valorReturn);
-
-	//free(nombre); ROMPE TODO CON ESTO
 
 }
 
@@ -298,13 +296,13 @@ int hacerWaitDeSemaforo(t_buffer * buffer, int conexion){
 	memcpy(nombre, stream+desplazamiento, tamanioNombre);
 	
 	int valorReturn = realizarWaitDeSemaforo(nombre, pid);
-	if(valorReturn != 0){
+	if(valorReturn != 1){
 		avisarWaitDeSemaforo(conexion,valorReturn);
 	}
 
 	free(nombre);
 
-	if(valorReturn == 0){
+	if(valorReturn == 1){
 		return SEM_WAIT;
 	}else {
 	return SEM_WAIT_NOBLOQUEANTE; }
@@ -329,14 +327,15 @@ int conectarDispositivoIO(t_buffer* buffer, int conexion){
     memcpy(nombreDispositivo, buffer->stream + desplazamiento , tamanioNombre);
 
 	int valorRetorno = realizarOperacionIO(pid, nombreDispositivo);
+
 	//en caso de que no se realizo la operacion IO xq no se pudo, lo aviso ahora, en caso de que se realiza el bloqueo, lo realizo despues
-	if(valorRetorno == 1){
+	if(valorRetorno == 0){
 		avisarconexionConDispositivoIO(conexion, valorRetorno);
 	}
 
 	free(nombreDispositivo);
 
-	if(valorRetorno == 0){
+	if(valorRetorno == 1){
 		return CONECTAR_IO;
 	}else {
 	return FALLO_IO; }
@@ -393,11 +392,12 @@ void avisarWaitDeSemaforo(int conexion, int valor){
 
 	if(valor == 2){
 		//esto lo vamos a usar como que funciono todo, pero a diferencia de que haga un wait y se bloquee, el 2 vamos a hacer que no se bloquee
+		//TODO: aca podriamos utilizad recursividad?
 		t_paquete* paquete = crear_paquete(SEM_WAIT);
 		paquete->buffer->size = sizeof(uint32_t);
 		paquete->buffer->stream = malloc(paquete->buffer->size);
 		int desplazamiento = 0;
-		int valorNuevo = 0;
+		int valorNuevo = 1;
 		memcpy(paquete->buffer->stream + desplazamiento, &(valorNuevo) , sizeof(uint32_t));
 
 		enviarPaquete(paquete,conexion);
@@ -570,7 +570,7 @@ int notificacionFinalizacionMemoria(t_buffer* buffer,t_log* logger){
 
 	memcpy(&(valor), data + desplazamiento, sizeof(uint32_t));
 
-	if(valor == 0){
+	if(valor == 1){
 		log_info(logger, "Se pudo realizar toda la finalizacion en Memoria y SWAmP");
 	}else
 	{
@@ -604,7 +604,7 @@ void notificarQueNoSePudoRealizarTareaConMemoria(cod_operacion operacionSolicita
 		paquete->buffer->stream = malloc(paquete->buffer->size);
 		
 		int desplazamiento = 0;
-		int valor = 1;
+		int valor = 0;
 
 		memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
 		desplazamiento += sizeof(uint32_t);

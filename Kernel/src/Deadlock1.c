@@ -326,8 +326,8 @@ void rellenarVectorDisponibles(t_list* listaSemaforos, int vector[]){
 
 
 void finalizarProcesoPorDeadlock(proceso_kernel* procesoASacarPorDeadlock){
-    //el 0 era que se realizo el wait
-    //el 1 que no se pudo realizar xq no existia el semaforo
+    //el 1 era que se realizo el wait
+    //el 0 que no se pudo realizar xq no existia el semaforo
     //el 2 que se pudo realizar aunque no se bloqueo
     //vamos a enviarle un codigo 3 de respuesta a la matelib, y la matelib va a cerrar todo debido a eso
     avisarWaitDeSemaforo(procesoASacarPorDeadlock->conexion, 3);

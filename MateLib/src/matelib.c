@@ -11,21 +11,14 @@ int mate_init(mate_instance *lib_ref, char *config){
     if(conexion == -1){
         lib_ref->group_info->backEndConectado = ERROR;
         lib_ref->group_info->conexionConBackEnd = conexion;
-
-        char* nombreLog = string_new();
         lib_ref->group_info->pid= -1;
-        string_append(&nombreLog, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/Proceso");
-        char* pidCarpincho = string_itoa((int) lib_ref->group_info->pid);
-        string_append(&nombreLog, pidCarpincho);
-        string_append(&nombreLog, ".log");
+        
 
-        lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
-    
+        lib_ref->group_info->loggerProceso = log_create("cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
         log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
-        free(nombreLog);
-        free(pidCarpincho);
-
+        
         return lib_ref->group_info->backEndConectado;
+
     }else{
         lib_ref->group_info->backEndConectado = OK;
         solicitarIniciarCarpincho(conexion, lib_ref);
@@ -359,7 +352,7 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
         
         
     char* nombreLog = string_new();
-    string_append(&nombreLog, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/Proceso");
+    string_append(&nombreLog, "cfg/Proceso");
     char* pidCarpincho = string_itoa((int) lib_ref->group_info->pid);
     string_append(&nombreLog, pidCarpincho);
     string_append(&nombreLog, ".log");
@@ -385,7 +378,7 @@ int liberarEstructurasDeProceso(t_buffer* buffer, mate_instance* lib_ref){
 	int valor;
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
-    if(valor == 0){
+    if(valor == 1){
         log_info(lib_ref->group_info->loggerProceso,"Se pudo cerrar el proceso de PID:%d correctamente en el BackEnd", lib_ref->group_info->pid);
     }else{
         log_error(lib_ref->group_info->loggerProceso,"No se pudo cerrar el proceso de PID:%d, correctamente en el BackEnd",lib_ref->group_info->pid);
@@ -411,7 +404,7 @@ int notificacionDeCreacionDeSemaforo(t_buffer* buffer, t_log* logger){
 	int valor;
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
-    if(valor == 0){
+    if(valor == 1){
         log_info(logger,"Se pudo inicializar el semaforo que se solicito inicializar");
     }else{
         log_error(logger,"No se pudo inicializar el semaforo que se solicito inicializar");
@@ -428,7 +421,7 @@ int notificacionDeDestruccionDeSemaforo(t_buffer* buffer, t_log* logger){
 	int valor;
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
-    if(valor == 0){
+    if(valor == 1){
         log_info(logger,"Se pudo destruir el semaforo que se solicito destruir");
     }else{
         log_error(logger,"No se pudo destruir el semaforo que se solicito destruir");
@@ -445,7 +438,7 @@ int notificacionDePostSemaforo(t_buffer* buffer, t_log* logger){
 	int valor;
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
-    if(valor == 0){
+    if(valor == 1){
         log_info(logger,"Se pudo hacer el post del semaforo");
     }else{
         log_error(logger,"No see pudo realizar el post del semaforo solicitado");
@@ -461,7 +454,7 @@ int notificacionDeWaitSemaforo(t_buffer* buffer, t_log* logger){
 	int valor;
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
-    if(valor == 0){
+    if(valor == 1){
         log_info(logger,"Se pudo hacer el wait del semaforo");
     }else{
         log_error(logger,"No see pudo realizar el wait al semaforo solicitado");
@@ -479,7 +472,7 @@ int notificacionIO(t_buffer* buffer, t_log* logger){
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
-    if(valor == 0){
+    if(valor == 1){
         log_info(logger,"Se pudo realizar con exito la operacion IO");
     }else{
         log_error(logger,"No see pudo realizar la operacion IO");
@@ -556,7 +549,7 @@ int notificacionMemWrite(t_buffer* buffer, t_log* logger){
 	int valor;
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
-    if(valor == 0){
+    if(valor == 1){
         log_info(logger,"Se pudo hacer el memwrite solicitado");
         valor = MATE_WRITE_FAULT;
     }else{
@@ -831,19 +824,19 @@ void hilo3(){
 
 int main(){
 
-    //mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
+    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
 
-    //mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
+    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
     
     //mate_sem_init(referencia,"SEM1",1);
-    //mate_sem_post(referencia,"SEM1");
-    //mate_sem_wait(referencia,"SEM1");
-    //mate_sem_wait(referencia,"SEM1");
-    //mate_call_io(referencia,"laguna","asd");
-    //mate_pointer = mate_memalloc(....);
-    //mate_memfree(,....)
-    //mate_close(referencia);
-    //free(referencia);
+    mate_sem_post(referencia,"SEM1");
+    mate_sem_wait(referencia,"SEM1");
+    mate_sem_wait(referencia,"SEM1");
+    mate_call_io(referencia,"laguna","asd");
+    mate_pointer mate = mate_memalloc(referencia, 45);
+    mate_memfree(referencia, mate);
+    mate_close(referencia);
+    free(referencia);
     
 
     //uint32_t direccion = mate_memalloc(referencia, 45);
@@ -857,15 +850,15 @@ int main(){
     //mate_close(referencia);
     //free(referencia);
     
-    pthread_t h1, h2, h3;
+    //pthread_t h1, h2, h3;
 
     //pthread_create(&h1, NULL, (void*)hilo1,NULL);  
-    pthread_create(&h2, NULL, (void*)hilo2,NULL);
-    pthread_create(&h3, NULL, (void*)hilo3,NULL);  
+    //pthread_create(&h2, NULL, (void*)hilo2,NULL);
+    //pthread_create(&h3, NULL, (void*)hilo3,NULL);  
 
     //pthread_join(h1, NULL);
-    pthread_join(h2, NULL);
-    pthread_join(h3, NULL);
+    //pthread_join(h2, NULL);
+    //pthread_join(h3, NULL);
 
     
     return 0;

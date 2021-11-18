@@ -574,3 +574,20 @@
 [INFO] 00:43:06:914 loggerContenidoProceso/(8124:8125): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 00:43:06:915 loggerContenidoProceso/(8124:8125): Se pudo cerrar el proceso correctamente en el BackEnd
 [INFO] 00:43:06:915 loggerContenidoProceso/(8124:8125): Se liberan todas las estructuras del proceso
+[INFO] 10:23:37:289 loggerContenidoProceso/(6858:6858): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 10:23:37:508 loggerContenidoProceso/(6858:6858): Solicitamos hacer un signal sobre el semaforo: SEM1
+[INFO] 10:23:37:545 loggerContenidoProceso/(6858:6858): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 10:23:37:547 loggerContenidoProceso/(6858:6858): No see pudo realizar el post del semaforo solicitado
+[INFO] 10:23:37:551 loggerContenidoProceso/(6858:6858): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 10:23:37:567 loggerContenidoProceso/(6858:6858): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 10:23:37:572 loggerContenidoProceso/(6858:6858): No see pudo realizar el wait al semaforo solicitado
+[INFO] 10:23:37:578 loggerContenidoProceso/(6858:6858): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 10:23:37:583 loggerContenidoProceso/(6858:6858): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 10:23:37:584 loggerContenidoProceso/(6858:6858): No see pudo realizar el wait al semaforo solicitado
+[INFO] 10:23:37:586 loggerContenidoProceso/(6858:6858): Solicitamos realizar una operacion IO sobre el dispositivo: laguna
+[INFO] 10:23:37:599 loggerContenidoProceso/(6858:6858): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[ERROR] 10:23:37:604 loggerContenidoProceso/(6858:6858): No see pudo realizar la operacion IO
+[INFO] 10:23:37:608 loggerContenidoProceso/(6858:6858): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 10:23:37:628 loggerContenidoProceso/(6858:6858): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 10:23:37:630 loggerContenidoProceso/(6858:6858): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 10:23:37:633 loggerContenidoProceso/(6858:6858): Se liberan todas las estructuras del proceso de PID:0

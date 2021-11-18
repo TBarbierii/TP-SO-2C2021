@@ -206,3 +206,19 @@
 [DEBUG] 00:43:06:876 loggerContenidoProceso/(8124:8126): Se liberan todas las estructuras del proceso con PID: 1, ya que nos avisaron de cerrarlo por DEADLOCK
 [INFO] 00:43:06:877 loggerContenidoProceso/(8124:8126): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
 [INFO] 00:43:06:877 loggerContenidoProceso/(8124:8126): Se liberan todas las estructuras del proceso
+[INFO] 10:25:31:001 loggerContenidoProceso/(6963:6963): Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:0 
+[INFO] 10:25:31:204 loggerContenidoProceso/(6963:6963): Solicitamos hacer un signal sobre el semaforo: SEM1
+[INFO] 10:25:31:227 loggerContenidoProceso/(6963:6963): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 10:25:31:231 loggerContenidoProceso/(6963:6963): No see pudo realizar el post del semaforo solicitado
+[INFO] 10:25:31:240 loggerContenidoProceso/(6963:6963): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 10:25:31:251 loggerContenidoProceso/(6963:6963): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 10:25:31:257 loggerContenidoProceso/(6963:6963): No see pudo realizar el wait al semaforo solicitado
+[INFO] 10:25:31:260 loggerContenidoProceso/(6963:6963): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 10:25:31:262 loggerContenidoProceso/(6963:6963): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 10:25:31:263 loggerContenidoProceso/(6963:6963): No see pudo realizar el wait al semaforo solicitado
+[INFO] 10:25:31:263 loggerContenidoProceso/(6963:6963): Solicitamos realizar una operacion IO sobre el dispositivo: laguna
+[INFO] 10:25:31:278 loggerContenidoProceso/(6963:6963): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[ERROR] 10:25:31:279 loggerContenidoProceso/(6963:6963): No see pudo realizar la operacion IO
+[INFO] 10:25:31:284 loggerContenidoProceso/(6963:6963): Solicitamos realizar un memalloc de size:45
+[INFO] 10:25:31:637 loggerContenidoProceso/(6963:6963): Solicitamos realizar un memfree de -1
+[INFO] 10:25:31:650 loggerContenidoProceso/(6963:6963): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios

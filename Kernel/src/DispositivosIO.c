@@ -63,7 +63,7 @@ int realizarOperacionIO(int pid, char* nombreDevice){
 
     //busco si el proceso esta en ejecucion
     pthread_mutex_lock(modificarExec);
-    proceso_kernel* procesoEncontrado = list_remove_by_condition(procesosExec, procesoBuscado);
+    proceso_kernel* procesoEncontrado = list_find(procesosExec, procesoBuscado);
     pthread_mutex_unlock(modificarExec);
 
     if(procesoEncontrado != NULL){
@@ -82,15 +82,23 @@ int realizarOperacionIO(int pid, char* nombreDevice){
 
         if(dispositivoEncontrado != NULL){
             //Si pudo realizar todo, lo vamos a bloquear entonces y vamos a asignar que la ultima operacion que relaizo fue un BLOCK_IO
+            
+            //entonces en ese caso si lo sacamos de exec ahora
+            pthread_mutex_lock(modificarExec);
+            list_remove_by_condition(procesosExec, procesoBuscado);
+            pthread_mutex_unlock(modificarExec);
+
             procesoEncontrado->vuelveDeBloqueo = BLOCK_IO;
             agregarProcesoADispositivo(procesoEncontrado, dispositivoEncontrado);
-            return 0;
+            return 1;
 
         }
 
+        return 0;
+
     }
 
-    return 1;
+    return 0;
 
 }
 
@@ -107,8 +115,9 @@ void agregarProcesoADispositivo(proceso_kernel* proceso, dispositivoIO* device){
 
     pthread_mutex_lock(modificarBlocked);
         list_add(procesosBlocked,proceso);
-        sem_post(signalSuspensionProceso);
     pthread_mutex_unlock(modificarBlocked);
+    //esto es un aviso para el planificador de mediano plazo
+    sem_post(signalSuspensionProceso);
 
     log_info(loggerDevicesIO,"Agregamos al proceso en bloqueo y en el dispositivo: %s", device->nombre);
 

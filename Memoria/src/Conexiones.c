@@ -223,7 +223,7 @@ void informarCierreDeProceso(t_carpincho* carpincho,t_log* loggerActual){
 	t_paquete* paquete = crear_paquete(CERRAR_INSTANCIA);
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
-	uint32_t valorReturn = 0;
+	uint32_t valorReturn = 1;
 
 
 	memcpy(paquete->buffer->stream, &(valorReturn) , sizeof(uint32_t));
@@ -250,6 +250,7 @@ int32_t recibir_memfree(int socket_cliente, t_log* logger) {
 	bool buscarCarpincho(t_carpincho* carp){
 		return carp->id_carpincho == carpincho;
 	};
+
 	pthread_mutex_lock(listaCarpinchos);
 	t_carpincho* capybara = list_find(carpinchos, (void*)buscarCarpincho);
 	pthread_mutex_unlock(listaCarpinchos);
@@ -266,6 +267,17 @@ int32_t recibir_memfree(int socket_cliente, t_log* logger) {
 	log_info(logger, "\nRecibimos memfree: \n Pid: %i \nDirecLogica: %i", carpincho, direccionLogica);
 
 	liberar_alloc(carpincho, direccionLogica);
+
+	t_paquete *paquete = crear_paquete(MEMFREE);
+
+	paquete->buffer->size = sizeof(uint32_t);
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	offset=0;
+	uint32_t confirmacion =1;
+
+    memcpy(paquete->buffer->stream + offset, &confirmacion, sizeof(uint32_t));
+
+	enviarPaquete(paquete, socket_cliente);
 
 	return 0;
 }
@@ -365,7 +377,7 @@ int32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	offset=0;
-	uint32_t confirmacion =0;
+	uint32_t confirmacion =1;
 
     memcpy(paquete->buffer->stream + offset, &confirmacion, sizeof(uint32_t));
 
@@ -510,7 +522,7 @@ void* recibir_respuesta_escritura(int conexion){
 
 void responderOperacionNoValida(int conexion, cod_operacion tareaRealizada, t_log* logger){
 
-	int valor = 1;
+	int valor = 0;
 
 	void* buffer= recibir_buffer(conexion);
 
