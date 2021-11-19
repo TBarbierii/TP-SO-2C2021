@@ -109,12 +109,8 @@ int atenderMensajeEnKernel(int conexion) {
 			memWrite(paquete->buffer, conexion);
 		break;
 
-		case SUSPENSION_PROCESO:;
-
-		break;
-
 		default:;
-		log_info(logger,"No se metio por ningun lado wtf");
+			log_info(logger,"No se metio por ningun lado wtf");
 		break;
 	}
 	
@@ -136,11 +132,6 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 
 
 	proceso_kernel* procesoNuevo =(proceso_kernel*) malloc(sizeof(proceso_kernel));
-	
-	establecerConexionConLaMemoria(procesoNuevo, logger);
-	
-	log_info(logger,"Un nuevo carpincho se une a la manada del kernel, y su pid es: %d",procesoNuevo->pid);
-		
 
 	procesoNuevo->conexion = conexion;
 	procesoNuevo->rafagaEstimada = estimacion_inicial;
@@ -156,7 +147,7 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 	pthread_mutex_unlock(modificarNew);
 
 
-	enviarInformacionAdministrativaDelProceso(procesoNuevo);
+	
 	sem_post(hayProcesosNew);
 	sem_post(procesoNecesitaEntrarEnReady);
 
@@ -555,6 +546,7 @@ int atenderMensajeDeMemoria(proceso_kernel* proceso) {
 			notificacionMemRead(proceso, paquete->buffer, logger);
 			break;
 		case SUSPENSION_PROCESO:;
+			notificacionSuspensionProceso(proceso, paquete->buffer, logger);
 			break;
 		default:;
 		log_info(logger,"No se metio por ningun lado wtf");
@@ -712,8 +704,8 @@ int memWrite(t_buffer* buffer, t_log* logger){
 	int validacion = validacionConexionConMemoria(proceso,logger);
 
 	if(validacion){
-	realizarMemWrite(proceso->conexionConMemoria,pid,contenidoAenviar,direccion,size);
-	atenderMensajeDeMemoria(proceso);
+		realizarMemWrite(proceso->conexionConMemoria,pid,contenidoAenviar,direccion,size);
+		atenderMensajeDeMemoria(proceso);
 	}
 }
 
@@ -902,6 +894,22 @@ void notificacionMemWrite(proceso_kernel* proceso, t_buffer* buffer, t_log* logg
 
 }
 
+void notificacionSuspensionProceso(proceso_kernel* proceso, t_buffer* buffer, t_log* logger) {
+	void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+	
+	if(valor){
+		log_info(logger,"Se pudo establecer la conexion con memoria y se suspendio el proceso");
+	}else{
+		log_info(logger,"Se pudo establecer la conexion con memoria y no se pudo suspender el proceso");
+	}
+	
+
+	
+}
+
 
 int notificacionInicializacionDeMemoria(t_buffer* buffer,t_log* logger){
 
@@ -938,7 +946,22 @@ int notificacionFinalizacionMemoria(t_buffer* buffer,t_log* logger){
 }
 
 
+void notificarSuspensionDeProceso(proceso_kernel* proceso){
+	
+	int validacion = validacionConexionConMemoria(proceso,logger);
 
+	if(validacion){
+		t_paquete* paquete = crear_paquete(SUSPENSION_PROCESO);
+		paquete->buffer->size = sizeof(uint32_t);
+		paquete->buffer->stream = malloc(paquete->buffer->size);
+		int desplazamiento = 0;
+
+		memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
+		enviarPaquete(paquete,proceso->conexionConMemoria);
+
+		atenderMensajeDeMemoria(proceso);
+	}
+}
 
 /*esto es algo general para avisar cuando no se pudo realizar algo de memoria a la matelib */
 
@@ -953,15 +976,18 @@ int validacionConexionConMemoria(proceso_kernel* proceso, t_log* logger){
 
 void notificarQueNoSePudoRealizarTareaConMemoria(cod_operacion operacionSolicitada, proceso_kernel* proceso){
 
-		t_paquete* paquete = crear_paquete(operacionSolicitada);
-		paquete->buffer->size = sizeof(uint32_t);
-		paquete->buffer->stream = malloc(paquete->buffer->size);
+	
+	t_paquete* paquete = crear_paquete(operacionSolicitada);
+	paquete->buffer->size = sizeof(uint32_t);
+	paquete->buffer->stream = malloc(paquete->buffer->size);
 		
-		int desplazamiento = 0;
-		int valor = 0;
+	int desplazamiento = 0;
+	int valor = 0;
 
-		memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
-		desplazamiento += sizeof(uint32_t);
-		enviarPaquete(paquete,proceso->conexion);
+	memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+	enviarPaquete(paquete,proceso->conexion);
 	
 }
+
+

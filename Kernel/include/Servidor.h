@@ -65,12 +65,12 @@ void notificacionMemRead(proceso_kernel* proceso, t_buffer* buffer, t_log* logge
 void notificacionMemWrite(proceso_kernel* proceso, t_buffer* buffer, t_log* logger);
 int notificacionInicializacionDeMemoria(t_buffer* buffer,t_log* logger);
 int notificacionFinalizacionMemoria(t_buffer* buffer,t_log* logger);
-
+void notificacionSuspensionProceso(proceso_kernel* proceso, t_buffer* buffer, t_log* logger);
 
 /*esto es algo general para avisar cuando no se pudo realizar algo de memoria a la matelib */
 int validacionConexionConMemoria(proceso_kernel* proceso, t_log* logger);
 void notificarQueNoSePudoRealizarTareaConMemoria(cod_operacion operacionSolicitada, proceso_kernel* proceso);
-
+void notificarSuspensionDeProceso(proceso_kernel* proceso);
 
 
 #endif

@@ -14,11 +14,23 @@ void planificadorLargoPlazo(){
             log_info(logger,"Se esta sacando un carpincho de la cola de new. Carpincho: %d", procesoNuevo->pid);   
         pthread_mutex_unlock(modificarNew);
 
+
         pthread_mutex_lock(modificarReady);
             list_add(procesosReady,procesoNuevo);
             procesoNuevo->tiempoDeArriboColaReady = clock(); //esto sirve para HRRN, para estimar cuando empezo un proceso a estar en ready y cuanto tiempo pasa ahi
             log_info(logger,"Se pone en la cola de ready a un nuevo carpincho. Carpincho: %d", procesoNuevo->pid);
         pthread_mutex_unlock(modificarReady);
+
+        //el proceso lo vamos a inicializar recien cuando el grado de multiprocesamiento lo permite, recien ahi lo inicializamos en memoria
+        //esta estrategia permite performance en la memoria ya que el nivel de multiprocesamiento limita la cantidad de procesos en memoria
+
+        establecerConexionConLaMemoria(procesoNuevo, logger);
+	
+	    log_info(logger,"Un nuevo carpincho se une a la cola de ready y se le asigna un pid el cual es: %d",procesoNuevo->pid);
+		
+
+        enviarInformacionAdministrativaDelProceso(procesoNuevo);
+
 
         sem_post(hayProcesosReady);
     }
