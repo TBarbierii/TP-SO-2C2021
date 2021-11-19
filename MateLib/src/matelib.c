@@ -39,6 +39,7 @@ int mate_close(mate_instance *lib_ref){
             return valorRetorno;
         }else{
             log_error(lib_ref->group_info->loggerProceso,"No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:%d",lib_ref->group_info->pid);
+            
             log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
             log_destroy(lib_ref->group_info->loggerProceso);
             config_destroy(lib_ref->group_info->config);
@@ -194,8 +195,8 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void **info, int s
     if(lib_ref->group_info->conexionConBackEnd != -1){
         realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
         *info = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)*info);
         if(*info != NULL){
+            log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)*info);
             return 0;
         }
         else{
@@ -530,14 +531,10 @@ void* notificacionMemRead(t_buffer* buffer, t_log* logger){
     desplazamiento += sizeof(uint32_t);
 
     //si no hay contenido en esa direccion, devolvemos nulo
-    if(size == 0){
-        return NULL;
-
-    }else{
-        void* contenido = malloc(size);
-        memcpy(contenido, stream+desplazamiento, size);
-        return contenido;
-    }
+    void* contenido = malloc(size);
+    memcpy(contenido, stream+desplazamiento, size);
+    return contenido;
+    
 }
 
 
@@ -731,7 +728,7 @@ void realizarMemRead(int conexion, uint32_t pid, mate_pointer origin, int size){
     
     t_paquete* paquete = crear_paquete(MEMREAD);
 
-    paquete->buffer->size = sizeof(uint32_t) *2 + sizeof(int32_t) + size;
+    paquete->buffer->size = sizeof(uint32_t) *2 + sizeof(int32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
     int desplazamiento = 0;
 
@@ -740,7 +737,6 @@ void realizarMemRead(int conexion, uint32_t pid, mate_pointer origin, int size){
     memcpy(paquete->buffer->stream + desplazamiento, &(origin) , sizeof(int32_t));
     desplazamiento += sizeof(int32_t);
     memcpy(paquete->buffer->stream + desplazamiento, &(size) , sizeof(uint32_t));
-    desplazamiento += sizeof(uint32_t);
 
     enviarPaquete(paquete,conexion);
 
@@ -840,14 +836,15 @@ int main(){
     void* lectura;// = malloc(45);
     printf("\nDireccion %i\n", mate);
 
-    if(mate != 0){
+    //if(mate != 0){
 
     mate_memwrite(referencia, "----------------------------------------1-45", mate, 45);
     mate_memread(referencia, mate, &lectura,45);
-    log_info(referencia->group_info->loggerProceso, "\n LLego: %s", (char*)lectura);
+    //log_info(referencia->group_info->loggerProceso, "\n LLego: %s", (char*)lectura);
+    //}
+    if(lectura != NULL){
+        free(lectura);
     }
-
-    
     mate_close(referencia);
     free(referencia);
     
