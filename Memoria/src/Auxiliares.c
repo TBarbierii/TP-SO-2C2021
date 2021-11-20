@@ -124,8 +124,9 @@ t_list* reservarMarcos(uint32_t pid){
 		bool noEstanAsignados(t_marco* marco){
 		return marco->proceso_asignado == -1;
         };
-
+		pthread_mutex_lock(marcos_sem);
 	 	t_list *marcos_sin_asignar = list_filter(marcos, (void*)noEstanAsignados);
+		pthread_mutex_unlock(marcos_sem);
 
 		if(strcmp(tipoAsignacion, "FIJA") == 0){
 			 

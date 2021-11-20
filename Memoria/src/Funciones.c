@@ -1,7 +1,7 @@
 #include "Conexiones.h"
 
 
-uint32_t administrar_allocs(t_memalloc* alloc){ //que kernel mande los carpinchos en el init
+uint32_t administrar_allocs(t_memalloc* alloc){ 
 
 
     bool buscarCarpincho(t_carpincho* c){

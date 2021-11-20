@@ -4443,3 +4443,391 @@ FIFO
 [INFO] 18:17:22:275 SWAmP/(17000:17000): Solicitud de memoria entrante
 [INFO] 18:17:22:679 SWAmP/(17000:17000): Solicitud de memoria entrante
 [INFO] 18:17:22:682 SWAmP/(17000:17000): Proceso 41 finalizado con exito
+[INFO] 18:31:38:318 SWAmP/(17938:17938): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:31:38:318 SWAmP/(17938:17938): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:31:38:318 SWAmP/(17938:17938): Se han creado todos los archivos
+[INFO] 18:31:38:318 SWAmP/(17938:17938): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:31:40:559 SWAmP/(17938:17938): Solicitud de memoria entrante
+[INFO] 18:31:59:809 SWAmP/(17938:17938): Solicitud de memoria entrante
+[INFO] 18:31:59:812 SWAmP/(17938:17938): Solicitud de memoria entrante
+[INFO] 18:31:59:814 SWAmP/(17938:17938): Solicitud de memoria entrante
+[INFO] 18:33:45:583 SWAmP/(18011:18011): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:33:45:583 SWAmP/(18011:18011): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:33:45:583 SWAmP/(18011:18011): Se han creado todos los archivos
+[INFO] 18:33:45:584 SWAmP/(18011:18011): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:33:55:507 SWAmP/(18011:18011): Solicitud de memoria entrante
+[INFO] 18:34:00:382 SWAmP/(18011:18011): Solicitud de memoria entrante
+[INFO] 18:34:00:383 SWAmP/(18011:18011): Solicitud de memoria entrante
+[INFO] 18:34:00:385 SWAmP/(18011:18011): Solicitud de memoria entrante
+[INFO] 18:43:27:529 SWAmP/(18291:18291): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:43:27:529 SWAmP/(18291:18291): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:43:27:529 SWAmP/(18291:18291): Se han creado todos los archivos
+[INFO] 18:43:27:529 SWAmP/(18291:18291): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:43:31:112 SWAmP/(18291:18291): Solicitud de memoria entrante
+[INFO] 18:43:34:419 SWAmP/(18291:18291): Solicitud de memoria entrante
+[INFO] 18:43:34:421 SWAmP/(18291:18291): Solicitud de memoria entrante
+[INFO] 18:43:34:423 SWAmP/(18291:18291): Solicitud de memoria entrante
+[INFO] 18:43:34:855 SWAmP/(18291:18291): Solicitud de memoria entrante
+[INFO] 18:43:34:858 SWAmP/(18291:18291): Proceso 0 finalizado con exito
+[INFO] 18:43:36:731 SWAmP/(18291:18291): Solicitud de memoria entrante
+[INFO] 18:43:36:733 SWAmP/(18291:18291): Solicitud de memoria entrante
+[INFO] 18:43:36:735 SWAmP/(18291:18291): Solicitud de memoria entrante
+[INFO] 18:48:11:377 SWAmP/(18618:18618): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:48:11:377 SWAmP/(18618:18618): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:48:11:377 SWAmP/(18618:18618): Se han creado todos los archivos
+[INFO] 18:48:11:378 SWAmP/(18618:18618): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:48:14:5 SWAmP/(18618:18618): Solicitud de memoria entrante
+[INFO] 18:48:16:675 SWAmP/(18618:18618): Solicitud de memoria entrante
+[INFO] 18:48:16:677 SWAmP/(18618:18618): Solicitud de memoria entrante
+[INFO] 18:48:16:680 SWAmP/(18618:18618): Solicitud de memoria entrante
+[INFO] 18:48:17:89 SWAmP/(18618:18618): Solicitud de memoria entrante
+[INFO] 18:48:17:92 SWAmP/(18618:18618): Proceso 0 finalizado con exito
+[INFO] 18:48:20:789 SWAmP/(18618:18618): Solicitud de memoria entrante
+[INFO] 18:48:20:792 SWAmP/(18618:18618): Solicitud de memoria entrante
+[INFO] 18:48:20:794 SWAmP/(18618:18618): Solicitud de memoria entrante
+[INFO] 18:48:42:411 SWAmP/(18666:18666): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:48:42:412 SWAmP/(18666:18666): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:48:42:412 SWAmP/(18666:18666): Se han creado todos los archivos
+[INFO] 18:48:42:412 SWAmP/(18666:18666): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:50:57:501 SWAmP/(18798:18798): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:50:57:501 SWAmP/(18798:18798): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:50:57:501 SWAmP/(18798:18798): Se han creado todos los archivos
+[INFO] 18:50:57:501 SWAmP/(18798:18798): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:51:02:394 SWAmP/(18798:18798): Solicitud de memoria entrante
+[INFO] 18:51:05:680 SWAmP/(18798:18798): Solicitud de memoria entrante
+[INFO] 18:51:05:682 SWAmP/(18798:18798): Solicitud de memoria entrante
+[INFO] 18:51:05:685 SWAmP/(18798:18798): Solicitud de memoria entrante
+[INFO] 18:52:09:660 SWAmP/(18798:18798): Solicitud de memoria entrante
+[INFO] 18:52:09:661 SWAmP/(18798:18798): Proceso 0 finalizado con exito
+[INFO] 18:52:13:304 SWAmP/(18798:18798): Solicitud de memoria entrante
+[INFO] 18:52:13:306 SWAmP/(18798:18798): Solicitud de memoria entrante
+[INFO] 18:52:13:308 SWAmP/(18798:18798): Solicitud de memoria entrante
+[INFO] 18:56:19:617 SWAmP/(19032:19032): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:56:19:618 SWAmP/(19032:19032): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:56:19:618 SWAmP/(19032:19032): Se han creado todos los archivos
+[INFO] 18:56:19:618 SWAmP/(19032:19032): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:56:25:2 SWAmP/(19032:19032): Solicitud de memoria entrante
+[INFO] 18:56:28:497 SWAmP/(19032:19032): Solicitud de memoria entrante
+[INFO] 18:56:28:499 SWAmP/(19032:19032): Solicitud de memoria entrante
+[INFO] 18:56:28:500 SWAmP/(19032:19032): Solicitud de memoria entrante
+[INFO] 18:58:00:108 SWAmP/(19210:19210): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 18:58:00:108 SWAmP/(19210:19210): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 18:58:00:108 SWAmP/(19210:19210): Se han creado todos los archivos
+[INFO] 18:58:00:109 SWAmP/(19210:19210): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 19:01:29:624 SWAmP/(19262:19262): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 19:01:29:624 SWAmP/(19262:19262): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 19:01:29:624 SWAmP/(19262:19262): Se han creado todos los archivos
+[INFO] 19:01:29:624 SWAmP/(19262:19262): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 19:01:33:860 SWAmP/(19262:19262): Solicitud de memoria entrante
+[INFO] 19:01:35:929 SWAmP/(19262:19262): Solicitud de memoria entrante
+[INFO] 19:01:35:931 SWAmP/(19262:19262): Solicitud de memoria entrante
+[INFO] 19:01:35:932 SWAmP/(19262:19262): Solicitud de memoria entrante
+[INFO] 19:01:36:362 SWAmP/(19262:19262): Solicitud de memoria entrante
+[INFO] 19:01:36:364 SWAmP/(19262:19262): Proceso 0 finalizado con exito
+[INFO] 19:01:37:443 SWAmP/(19262:19262): Solicitud de memoria entrante
+[INFO] 19:01:37:445 SWAmP/(19262:19262): Solicitud de memoria entrante
+[INFO] 19:01:37:451 SWAmP/(19262:19262): Solicitud de memoria entrante
+[INFO] 19:05:10:792 SWAmP/(19345:19345): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 19:05:10:792 SWAmP/(19345:19345): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 19:05:10:792 SWAmP/(19345:19345): Se han creado todos los archivos
+[INFO] 19:05:10:793 SWAmP/(19345:19345): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 19:05:15:705 SWAmP/(19345:19345): Solicitud de memoria entrante
+[INFO] 19:05:23:433 SWAmP/(19345:19345): Solicitud de memoria entrante
+[INFO] 19:05:23:435 SWAmP/(19345:19345): Solicitud de memoria entrante
+[INFO] 19:05:23:437 SWAmP/(19345:19345): Solicitud de memoria entrante
+[INFO] 19:06:05:387 SWAmP/(19345:19345): Solicitud de memoria entrante
+[INFO] 19:06:05:389 SWAmP/(19345:19345): Proceso 0 finalizado con exito
+[INFO] 19:06:16:407 SWAmP/(19345:19345): Solicitud de memoria entrante
+[INFO] 19:06:16:409 SWAmP/(19345:19345): Solicitud de memoria entrante
+[INFO] 19:06:16:410 SWAmP/(19345:19345): Solicitud de memoria entrante
+[INFO] 19:07:53:470 SWAmP/(19532:19532): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 19:07:53:470 SWAmP/(19532:19532): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 19:07:53:470 SWAmP/(19532:19532): Se han creado todos los archivos
+[INFO] 19:07:53:471 SWAmP/(19532:19532): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 19:07:57:636 SWAmP/(19532:19532): Solicitud de memoria entrante
+[INFO] 19:08:01:718 SWAmP/(19532:19532): Solicitud de memoria entrante
+[INFO] 19:08:01:719 SWAmP/(19532:19532): Solicitud de memoria entrante
+[INFO] 19:08:01:722 SWAmP/(19532:19532): Solicitud de memoria entrante
+[INFO] 19:09:01:952 SWAmP/(19532:19532): Solicitud de memoria entrante
+[INFO] 19:09:01:953 SWAmP/(19532:19532): Proceso 0 finalizado con exito
+[INFO] 19:09:05:414 SWAmP/(19532:19532): Solicitud de memoria entrante
+[INFO] 19:09:05:415 SWAmP/(19532:19532): Solicitud de memoria entrante
+[INFO] 19:09:05:417 SWAmP/(19532:19532): Solicitud de memoria entrante
+[INFO] 19:11:43:131 SWAmP/(19758:19758): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 19:11:43:131 SWAmP/(19758:19758): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 19:11:43:131 SWAmP/(19758:19758): Se han creado todos los archivos
+[INFO] 19:11:43:131 SWAmP/(19758:19758): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 19:11:47:529 SWAmP/(19758:19758): Solicitud de memoria entrante
+[INFO] 19:11:53:69 SWAmP/(19758:19758): Solicitud de memoria entrante
+[INFO] 19:11:53:71 SWAmP/(19758:19758): Solicitud de memoria entrante
+[INFO] 19:11:53:73 SWAmP/(19758:19758): Solicitud de memoria entrante
+[INFO] 19:11:55:461 SWAmP/(19758:19758): Solicitud de memoria entrante
+[INFO] 19:11:55:463 SWAmP/(19758:19758): Proceso 0 finalizado con exito
+[INFO] 19:13:01:974 SWAmP/(19758:19758): Solicitud de memoria entrante
+[INFO] 19:13:13:257 SWAmP/(19758:19758): Solicitud de memoria entrante
+[INFO] 19:13:16:180 SWAmP/(19758:19758): Solicitud de memoria entrante
+[INFO] 19:15:06:732 SWAmP/(20024:20024): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 19:15:06:732 SWAmP/(20024:20024): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 19:15:06:732 SWAmP/(20024:20024): Se han creado todos los archivos
+[INFO] 19:15:06:732 SWAmP/(20024:20024): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 19:15:09:650 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:13:179 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:13:182 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:13:183 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:13:604 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:13:607 SWAmP/(20024:20024): Proceso 0 finalizado con exito
+[INFO] 19:15:15:58 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:15:60 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:15:62 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:15:473 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:15:475 SWAmP/(20024:20024): Proceso 1 finalizado con exito
+[INFO] 19:15:16:694 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:16:696 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:16:697 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:17:105 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:17:107 SWAmP/(20024:20024): Proceso 2 finalizado con exito
+[INFO] 19:15:17:933 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:17:934 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:17:936 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:18:347 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:18:349 SWAmP/(20024:20024): Proceso 3 finalizado con exito
+[INFO] 19:15:18:965 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:18:968 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:18:969 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:19:373 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:19:374 SWAmP/(20024:20024): Proceso 4 finalizado con exito
+[INFO] 19:15:19:834 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:19:839 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:19:840 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:20:248 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:20:251 SWAmP/(20024:20024): Proceso 5 finalizado con exito
+[INFO] 19:15:20:608 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:20:610 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:20:612 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:21:17 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:21:18 SWAmP/(20024:20024): Proceso 6 finalizado con exito
+[INFO] 19:15:21:387 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:21:388 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:21:389 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:21:803 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:21:807 SWAmP/(20024:20024): Proceso 7 finalizado con exito
+[INFO] 19:15:22:176 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:22:179 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:22:183 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:22:597 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:22:599 SWAmP/(20024:20024): Proceso 8 finalizado con exito
+[INFO] 19:15:22:945 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:22:947 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:22:948 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:23:363 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:23:364 SWAmP/(20024:20024): Proceso 9 finalizado con exito
+[INFO] 19:15:23:730 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:23:732 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:23:733 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:24:139 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:24:141 SWAmP/(20024:20024): Proceso 10 finalizado con exito
+[INFO] 19:15:24:532 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:24:533 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:24:536 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:24:937 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:24:938 SWAmP/(20024:20024): Proceso 11 finalizado con exito
+[INFO] 19:15:25:417 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:25:421 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:25:423 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:25:835 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:25:837 SWAmP/(20024:20024): Proceso 12 finalizado con exito
+[INFO] 19:15:26:346 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:26:348 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:26:350 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:26:762 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:26:763 SWAmP/(20024:20024): Proceso 13 finalizado con exito
+[INFO] 19:15:27:230 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:27:232 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:27:233 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:27:637 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:27:640 SWAmP/(20024:20024): Proceso 14 finalizado con exito
+[INFO] 19:15:28:106 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:28:109 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:28:112 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:28:525 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:28:526 SWAmP/(20024:20024): Proceso 15 finalizado con exito
+[INFO] 19:15:28:956 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:28:958 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:28:960 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:29:364 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:29:367 SWAmP/(20024:20024): Proceso 16 finalizado con exito
+[INFO] 19:15:29:806 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:29:808 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:29:809 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:30:215 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:30:216 SWAmP/(20024:20024): Proceso 17 finalizado con exito
+[INFO] 19:15:31:588 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:31:589 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:31:590 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:31:995 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:31:997 SWAmP/(20024:20024): Proceso 18 finalizado con exito
+[INFO] 19:15:34:762 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:34:763 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:34:764 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:35:177 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:35:179 SWAmP/(20024:20024): Proceso 19 finalizado con exito
+[INFO] 19:15:35:840 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:35:842 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:35:843 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:36:255 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:36:257 SWAmP/(20024:20024): Proceso 20 finalizado con exito
+[INFO] 19:15:36:639 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:36:642 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:36:645 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:37:49 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:37:52 SWAmP/(20024:20024): Proceso 21 finalizado con exito
+[INFO] 19:15:37:366 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:37:368 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:37:370 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:37:779 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:37:781 SWAmP/(20024:20024): Proceso 22 finalizado con exito
+[INFO] 19:15:38:2 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:38:4 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:38:6 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:38:417 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:38:419 SWAmP/(20024:20024): Proceso 23 finalizado con exito
+[INFO] 19:15:38:694 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:38:695 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:38:697 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:39:101 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:39:102 SWAmP/(20024:20024): Proceso 24 finalizado con exito
+[INFO] 19:15:39:282 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:39:285 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:39:288 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:39:690 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:39:693 SWAmP/(20024:20024): Proceso 25 finalizado con exito
+[INFO] 19:15:39:949 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:39:952 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:39:955 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:40:364 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:40:366 SWAmP/(20024:20024): Proceso 26 finalizado con exito
+[INFO] 19:15:40:649 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:40:652 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:40:653 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:41:63 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:41:64 SWAmP/(20024:20024): Proceso 27 finalizado con exito
+[INFO] 19:15:41:377 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:41:379 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:41:380 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:41:796 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:41:799 SWAmP/(20024:20024): Proceso 28 finalizado con exito
+[INFO] 19:15:42:63 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:42:66 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:42:68 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:42:475 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:42:477 SWAmP/(20024:20024): Proceso 29 finalizado con exito
+[INFO] 19:15:42:731 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:42:732 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:42:735 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:43:141 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:43:143 SWAmP/(20024:20024): Proceso 30 finalizado con exito
+[INFO] 19:15:43:437 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:43:439 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:43:440 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:43:851 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:43:852 SWAmP/(20024:20024): Proceso 31 finalizado con exito
+[INFO] 19:15:44:117 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:44:119 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:44:120 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:44:527 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:44:529 SWAmP/(20024:20024): Proceso 32 finalizado con exito
+[INFO] 19:15:44:807 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:44:809 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:44:810 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:45:221 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:45:223 SWAmP/(20024:20024): Proceso 33 finalizado con exito
+[INFO] 19:15:45:519 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:45:521 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:45:522 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:45:927 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:45:929 SWAmP/(20024:20024): Proceso 34 finalizado con exito
+[INFO] 19:15:46:266 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:46:268 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:46:270 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:46:679 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:46:682 SWAmP/(20024:20024): Proceso 35 finalizado con exito
+[INFO] 19:15:46:947 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:46:949 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:46:950 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:47:354 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:47:356 SWAmP/(20024:20024): Proceso 36 finalizado con exito
+[INFO] 19:15:47:670 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:47:671 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:47:674 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:48:83 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:48:84 SWAmP/(20024:20024): Proceso 37 finalizado con exito
+[INFO] 19:15:48:372 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:48:375 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:48:380 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:48:783 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:48:787 SWAmP/(20024:20024): Proceso 38 finalizado con exito
+[INFO] 19:15:50:277 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:50:279 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:50:281 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:50:687 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:50:689 SWAmP/(20024:20024): Proceso 39 finalizado con exito
+[INFO] 19:15:50:996 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:50:999 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:50:0 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:51:403 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:51:407 SWAmP/(20024:20024): Proceso 40 finalizado con exito
+[INFO] 19:15:51:743 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:51:759 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:51:760 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:52:170 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:52:173 SWAmP/(20024:20024): Proceso 41 finalizado con exito
+[INFO] 19:15:52:483 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:52:485 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:52:486 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:52:891 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:52:893 SWAmP/(20024:20024): Proceso 42 finalizado con exito
+[INFO] 19:15:53:262 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:53:264 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:53:266 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:53:670 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:53:672 SWAmP/(20024:20024): Proceso 43 finalizado con exito
+[INFO] 19:15:54:20 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:54:22 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:54:24 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:54:428 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:54:431 SWAmP/(20024:20024): Proceso 44 finalizado con exito
+[INFO] 19:15:54:817 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:54:821 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:54:822 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:55:246 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:55:247 SWAmP/(20024:20024): Proceso 45 finalizado con exito
+[INFO] 19:15:55:522 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:55:524 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:55:525 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:55:945 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:55:949 SWAmP/(20024:20024): Proceso 46 finalizado con exito
+[INFO] 19:15:56:284 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:56:286 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:56:287 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:56:689 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:56:691 SWAmP/(20024:20024): Proceso 47 finalizado con exito
+[INFO] 19:15:56:983 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:56:984 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:56:986 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:57:405 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:57:406 SWAmP/(20024:20024): Proceso 48 finalizado con exito
+[INFO] 19:15:57:624 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:57:628 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:57:629 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:58:37 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:58:39 SWAmP/(20024:20024): Proceso 49 finalizado con exito
+[INFO] 19:15:58:294 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:58:297 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:58:298 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:58:708 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:58:709 SWAmP/(20024:20024): Proceso 50 finalizado con exito
+[INFO] 19:15:58:983 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:58:985 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:58:986 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:59:406 SWAmP/(20024:20024): Solicitud de memoria entrante
+[INFO] 19:15:59:408 SWAmP/(20024:20024): Proceso 51 finalizado con exito

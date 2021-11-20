@@ -47,6 +47,7 @@ pthread_mutex_t * listaCarpinchos;
 pthread_mutex_t * TLB_mutex;
 pthread_mutex_t * memoria;
 pthread_mutex_t * swap;
+pthread_mutex_t * marcos_sem;
 
 /* Estructuras Administrativas */
 

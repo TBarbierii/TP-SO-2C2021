@@ -204,6 +204,21 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 
 	memcpy(&pidProcesoAEliminar, buffer, sizeof(uint32_t));
 
+	bool buscarMarcos(t_marco* marco){
+		return marco->proceso_asignado == pidProcesoAEliminar;
+	};
+
+	pthread_mutex_lock(marcos_sem);
+	t_list* marcosALiberar = list_filter(marcos, (void*)buscarMarcos);
+	pthread_mutex_unlock(marcos_sem);
+
+	void liberar_marcos(t_marco* marco){
+		marco->proceso_asignado = -1;
+		marco->estaLibre = true;
+	};
+
+	list_iterate(marcosALiberar, (void*)liberar_marcos);
+
 	bool buscarProcesoPorPid(t_carpincho* carpincho){
 		return carpincho->id_carpincho == pidProcesoAEliminar;
 	};
