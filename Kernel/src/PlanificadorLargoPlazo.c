@@ -2,7 +2,7 @@
 
 void planificadorLargoPlazo(){
 
-    t_log* logger = log_create("cfg/PlanificadorLargoPlazoActual.log","PlanificadorLargoPlazo", 0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/PlanificadorLargoPlazoActual.log","PlanificadorLargoPlazo", 1, LOG_LEVEL_DEBUG);
     log_debug(logger,"Se inicializa la planificacion de largo plazo con algoritmo FIFO");
     while(1){
 
@@ -11,14 +11,26 @@ void planificadorLargoPlazo(){
 
         pthread_mutex_lock(modificarNew);
             proceso_kernel* procesoNuevo = (proceso_kernel*) list_remove(procesosNew,0);
-            log_info(logger,"Se esta sacando un carpincho de la cola de new. Carpincho: %d", procesoNuevo->pid);   
+            log_info(logger,"Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria");   
         pthread_mutex_unlock(modificarNew);
+
 
         pthread_mutex_lock(modificarReady);
             list_add(procesosReady,procesoNuevo);
             procesoNuevo->tiempoDeArriboColaReady = clock(); //esto sirve para HRRN, para estimar cuando empezo un proceso a estar en ready y cuanto tiempo pasa ahi
-            log_info(logger,"Se pone en la cola de ready a un nuevo carpincho. Carpincho: %d", procesoNuevo->pid);
+            log_info(logger,"Se pone en la cola de ready a un nuevo carpincho y lo inicializamos en memoria");
         pthread_mutex_unlock(modificarReady);
+
+        //el proceso lo vamos a inicializar recien cuando el grado de multiprocesamiento lo permite, recien ahi lo inicializamos en memoria
+        //esta estrategia permite performance en la memoria ya que el nivel de multiprocesamiento limita la cantidad de procesos en memoria
+
+        establecerConexionConLaMemoria(procesoNuevo, logger);
+	
+	    log_info(logger,"Un nuevo carpincho se une a la cola de ready y se le asigna un pid el cual es: %d",procesoNuevo->pid);
+		
+
+        enviarInformacionAdministrativaDelProceso(procesoNuevo);
+
 
         sem_post(hayProcesosReady);
     }

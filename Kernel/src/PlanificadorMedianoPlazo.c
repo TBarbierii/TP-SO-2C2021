@@ -36,7 +36,7 @@ void thread1_PMP(t_log* logger){
                 proceso_kernel* procesoASuspender = list_remove(procesosBlocked, list_size(procesosBlocked)-1);
                 log_info(logger,"Se encontro que hay solo procesos IO Bound ocupando la Multiprogramacion, por lo tanto ponemos uno en Suspended-Ready");
                 list_add(procesosSuspendedBlock, procesoASuspender);
-                //TODO: tendriamos que mandar para que suspendan al proceso en memoria
+                notificarSuspensionDeProceso(procesoASuspender);
                 sem_post(nivelMultiProgramacionGeneral);
             
             }else{

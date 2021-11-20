@@ -35,7 +35,7 @@ int atenderMensajeEnKernel(int conexion) {
 
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
-		log_info(logger,"Fallo en recibir la info de la conexion");
+		log_error(logger,"Fallo en recibir la info de la conexion");
 		return -1;
 	}
 
@@ -91,30 +91,22 @@ int atenderMensajeEnKernel(int conexion) {
 
 		case MEMALLOC:;
 			log_info(logger,"Vamos a realizar un Mem Alloc");
-			memAlloc(paquete->buffer, conexion);
+			memAlloc(paquete->buffer, logger);
 		break;
 
 		case MEMFREE:;
 			log_info(logger,"Vamos a realizar un Mem Free");
-			memFree(paquete->buffer, conexion);
+			memFree(paquete->buffer, logger);
 		break;
 
 		case MEMREAD:;
 			log_info(logger,"Vamos a realizar un Mem Read");
-			memRead(paquete->buffer, conexion);
+			memRead(paquete->buffer, logger);
 		break;
 
 		case MEMWRITE:;
 			log_info(logger,"Vamos a realizar un Mem Write");
-			memWrite(paquete->buffer, conexion);
-		break;
-
-		case SUSPENSION_PROCESO:;
-
-		break;
-
-		default:;
-		log_info(logger,"No se metio por ningun lado wtf");
+			memWrite(paquete->buffer, logger);
 		break;
 	}
 	
@@ -136,11 +128,6 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 
 
 	proceso_kernel* procesoNuevo =(proceso_kernel*) malloc(sizeof(proceso_kernel));
-	
-	establecerConexionConLaMemoria(procesoNuevo, logger);
-	
-	log_info(logger,"Un nuevo carpincho se une a la manada del kernel, y su pid es: %d",procesoNuevo->pid);
-		
 
 	procesoNuevo->conexion = conexion;
 	procesoNuevo->rafagaEstimada = estimacion_inicial;
@@ -152,11 +139,11 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 
 	pthread_mutex_lock(modificarNew);
 		list_add(procesosNew, procesoNuevo);
-		log_info(logger,"Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize, y su pid es: %d",procesoNuevo->pid);
+		log_info(logger,"Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize");
 	pthread_mutex_unlock(modificarNew);
 
 
-	enviarInformacionAdministrativaDelProceso(procesoNuevo);
+	
 	sem_post(hayProcesosNew);
 	sem_post(procesoNecesitaEntrarEnReady);
 
@@ -466,7 +453,6 @@ void avisarconexionConDispositivoIO(int conexion, int valor){
 void establecerConexionConLaMemoria(proceso_kernel* proceso,t_log* logger){
 	
 	int conexionNueva = crear_conexion(ipMemoria, puertoMemoria);
-	//log_info(logger,"La conexion con la memoria es: %d", conexionNueva);
 	proceso->conexionConMemoria = conexionNueva;
 	inicializarEnMemoria(proceso, logger);
 
@@ -482,7 +468,7 @@ void inicializarEnMemoria(proceso_kernel* proceso, t_log* logger){
 
     	enviarPaquete(paquete,proceso->conexionConMemoria);
 		
-		proceso->pid = atenderMensajeDeMemoria(proceso->conexionConMemoria); 
+		proceso->pid = atenderMensajeDeMemoria(proceso); 
 	}else{
 		proceso->pid = -1;
 	}
@@ -503,7 +489,7 @@ void finalizarEnMemoria(proceso_kernel* proceso, t_log* logger){
 		memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
 		enviarPaquete(paquete,proceso->conexionConMemoria);
 		
-		atenderMensajeDeMemoria(proceso->conexionConMemoria); 
+		atenderMensajeDeMemoria(proceso); 
 	}
 
 }
@@ -549,12 +535,13 @@ int atenderMensajeDeMemoria(proceso_kernel* proceso) {
 			notificacionMemFree(proceso, paquete->buffer, logger);
 			break;
 		case MEMREAD:;
-			notificacionMemWrite(proceso, paquete->buffer, logger);
-			break;
-		case MEMWRITE:;
 			notificacionMemRead(proceso, paquete->buffer, logger);
 			break;
+		case MEMWRITE:;
+			notificacionMemWrite(proceso, paquete->buffer, logger);
+			break;
 		case SUSPENSION_PROCESO:;
+			notificacionSuspensionProceso(proceso, paquete->buffer, logger);
 			break;
 		default:;
 		log_info(logger,"No se metio por ningun lado wtf");
@@ -607,6 +594,8 @@ void memAlloc(t_buffer* buffer, t_log* logger){
 	if(validacion){
 		realizarMemAlloc(proceso->conexionConMemoria,pid,size);
 		atenderMensajeDeMemoria(proceso);
+	}else{
+		notificarQueNoSePudoRealizarTareaConMemoria(MEMALLOC,proceso);
 	}
 
 }
@@ -639,6 +628,8 @@ void memFree(t_buffer* buffer, t_log* logger){
 	if(validacion){
 		realizarMemFree(proceso->conexionConMemoria,pid,direccion);
 		atenderMensajeDeMemoria(proceso);
+	}else{
+		notificarQueNoSePudoRealizarTareaConMemoria(MEMFREE,proceso);
 	}
 }
 
@@ -676,6 +667,8 @@ void memRead(t_buffer* buffer, t_log* logger){
 	if(validacion){
 		realizarMemRead(proceso->conexionConMemoria,pid,direccion,size);
 		atenderMensajeDeMemoria(proceso);
+	}else{
+		notificarQueNoSePudoRealizarTareaConMemoria(MEMREAD,proceso);
 	}
 
 }
@@ -712,9 +705,14 @@ int memWrite(t_buffer* buffer, t_log* logger){
 	int validacion = validacionConexionConMemoria(proceso,logger);
 
 	if(validacion){
-	realizarMemWrite(proceso->conexionConMemoria,pid,contenidoAenviar,direccion,size);
-	atenderMensajeDeMemoria(proceso);
+		realizarMemWrite(proceso->conexionConMemoria,pid,contenidoAenviar,direccion,size);
+		atenderMensajeDeMemoria(proceso);
+	}else{
+		notificarQueNoSePudoRealizarTareaConMemoria(MEMWRITE,proceso);
 	}
+
+	free(contenidoAenviar);
+
 }
 
 
@@ -756,7 +754,7 @@ void realizarMemRead(int conexion, uint32_t pid, int32_t origin, int size){
     
     t_paquete* paquete = crear_paquete(MEMREAD);
 
-    paquete->buffer->size = sizeof(uint32_t) *2 + sizeof(int32_t) + size;
+    paquete->buffer->size = sizeof(uint32_t) *2 + sizeof(int32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
     int desplazamiento = 0;
 
@@ -765,7 +763,6 @@ void realizarMemRead(int conexion, uint32_t pid, int32_t origin, int size){
     memcpy(paquete->buffer->stream + desplazamiento, &(origin) , sizeof(int32_t));
     desplazamiento += sizeof(int32_t);
     memcpy(paquete->buffer->stream + desplazamiento, &(size) , sizeof(uint32_t));
-    desplazamiento += sizeof(uint32_t);
 
     enviarPaquete(paquete,conexion);
 
@@ -840,36 +837,27 @@ void notificacionMemRead(proceso_kernel* proceso, t_buffer* buffer, t_log* logge
 	void* stream = buffer->stream;
 	int desplazamiento = 0;
 	int size;
-	void* contenido;
+	
 
 
 	memcpy(&(size), stream+desplazamiento, sizeof(uint32_t));
 	desplazamiento += sizeof(uint32_t);
 
-	if(size != 0){
-        contenido = malloc(size);
-        memcpy(contenido, stream+desplazamiento, size);
-    }
+    void* contenido = malloc(size);
+    memcpy(contenido, stream+desplazamiento, size);
+
+
+
 
 	t_paquete* paquete = crear_paquete(MEMREAD);
+	paquete->buffer->size = sizeof(uint32_t) + size;
+    paquete->buffer->stream = malloc(paquete->buffer->size);
+	int desplazamiento2 = 0;
 
+    memcpy(paquete->buffer->stream + desplazamiento2, &(size) , sizeof(uint32_t));
+	desplazamiento2 += sizeof(uint32_t);
 
-	if(size != 0){
-
-		paquete->buffer->size = sizeof(uint32_t) + size;
-    	paquete->buffer->stream = malloc(paquete->buffer->size);
-    	int desplazamiento2 = 0;
-    	memcpy(paquete->buffer->stream + desplazamiento2, &(size) , sizeof(uint32_t));
-		desplazamiento += sizeof(uint32_t);
-		memcpy(paquete->buffer->stream + desplazamiento2, contenido , size);
-
-	}else{
-
-		paquete->buffer->size = sizeof(uint32_t);
-    	paquete->buffer->stream = malloc(paquete->buffer->size);
-    	int desplazamiento2 = 0;
-    	memcpy(paquete->buffer->stream + desplazamiento2, &(size) , sizeof(uint32_t));
-	}
+	memcpy(paquete->buffer->stream + desplazamiento2, contenido , size);
 
     
     enviarPaquete(paquete, proceso->conexion);
@@ -900,6 +888,22 @@ void notificacionMemWrite(proceso_kernel* proceso, t_buffer* buffer, t_log* logg
 	log_info(logger,"Se pudo establecer la conexion con memoria y se realizo un Mem Write");
 
 
+}
+
+void notificacionSuspensionProceso(proceso_kernel* proceso, t_buffer* buffer, t_log* logger) {
+	void* stream = buffer->stream;
+	int desplazamiento = 0;
+	int valor;
+	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
+	
+	if(valor){
+		log_info(logger,"Se pudo establecer la conexion con memoria y se suspendio el proceso");
+	}else{
+		log_info(logger,"Se pudo establecer la conexion con memoria y no se pudo suspender el proceso");
+	}
+	
+
+	
 }
 
 
@@ -938,7 +942,22 @@ int notificacionFinalizacionMemoria(t_buffer* buffer,t_log* logger){
 }
 
 
+void notificarSuspensionDeProceso(proceso_kernel* proceso){
+	
+	int validacion = validacionConexionConMemoria(proceso,logger);
 
+	if(validacion){
+		t_paquete* paquete = crear_paquete(SUSPENSION_PROCESO);
+		paquete->buffer->size = sizeof(uint32_t);
+		paquete->buffer->stream = malloc(paquete->buffer->size);
+		int desplazamiento = 0;
+
+		memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
+		enviarPaquete(paquete,proceso->conexionConMemoria);
+
+		atenderMensajeDeMemoria(proceso);
+	}
+}
 
 /*esto es algo general para avisar cuando no se pudo realizar algo de memoria a la matelib */
 
@@ -953,15 +972,18 @@ int validacionConexionConMemoria(proceso_kernel* proceso, t_log* logger){
 
 void notificarQueNoSePudoRealizarTareaConMemoria(cod_operacion operacionSolicitada, proceso_kernel* proceso){
 
-		t_paquete* paquete = crear_paquete(operacionSolicitada);
-		paquete->buffer->size = sizeof(uint32_t);
-		paquete->buffer->stream = malloc(paquete->buffer->size);
+	
+	t_paquete* paquete = crear_paquete(operacionSolicitada);
+	paquete->buffer->size = sizeof(uint32_t);
+	paquete->buffer->stream = malloc(paquete->buffer->size);
 		
-		int desplazamiento = 0;
-		int valor = 0;
+	int desplazamiento = 0;
+	int valor = 0;
 
-		memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
-		desplazamiento += sizeof(uint32_t);
-		enviarPaquete(paquete,proceso->conexion);
+	memcpy(paquete->buffer->stream + desplazamiento, &(valor) , sizeof(uint32_t));
+	desplazamiento += sizeof(uint32_t);
+	enviarPaquete(paquete,proceso->conexion);
 	
 }
+
+
