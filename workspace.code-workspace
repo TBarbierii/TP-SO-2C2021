@@ -27,7 +27,9 @@
 			"matelib.h": "c",
 			"kernel.h": "c",
 			"semaforos.h": "c",
-			"carpincho.h": "c"
+			"stdlib.h": "c",
+			"carpincho.h": "c",
+			"shared_utils.h": "c"
 		}
 	}
 }
