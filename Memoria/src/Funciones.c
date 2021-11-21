@@ -16,8 +16,9 @@ uint32_t administrar_allocs(t_memalloc* alloc){
     if (carpincho == NULL){
         
     }
-
-    uint32_t direccionLogica = administrar_paginas(carpincho, alloc->tamanio, marcos_a_asignar);
+    uint32_t tamanioAreservar = alloc->tamanio;
+    free(alloc);
+    uint32_t direccionLogica = administrar_paginas(carpincho, tamanioAreservar, marcos_a_asignar);
 
 
     return direccionLogica;
@@ -29,11 +30,6 @@ uint32_t administrar_allocs(t_memalloc* alloc){
 uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* marcos_a_asignar){
 
     if(list_size(carpincho->tabla_de_paginas)==0){ //primera vez
-
-        heapMetadata* alloc = malloc(sizeof(heapMetadata));
-        alloc->prevAlloc = -1;
-        alloc->isFree = false;
-        alloc->nextAlloc = tamanio + TAMANIO_HEAP;
 
         heapMetadata* next_alloc = malloc(sizeof(heapMetadata));
         next_alloc->isFree = true;
@@ -200,6 +196,7 @@ void* generar_buffer_allocs(uint32_t tamanio, heapMetadata* heap, uint32_t cantP
         memcpy(stream_allocs + desplazamiento, heap, TAMANIO_HEAP);
 
         free(alloc);
+        free(heap);
 
         return stream_allocs;
     }

@@ -17,20 +17,25 @@ uint32_t generadorIdsPaginas(){
 
 uint32_t dar_vuelta_id(uint32_t num){
 
-	char* id = string_new();
-
 	uint32_t id_retornado;
-	id = string_itoa(num);
-	id = string_reverse(id);
-	uint32_t veces = 3 - string_length(id);
+	char* id = string_itoa(num);
+	char* dadoVuelta = string_reverse(id);
+	uint32_t veces = 3 - string_length(dadoVuelta);
+
 
 	char* ceros = string_repeat('0', veces);
 
 	char* a = string_new();
-	string_append(&a, id);
+	string_append(&a, dadoVuelta);
 	string_append(&a, ceros);
+	
+	id_retornado = atoi(a);
 
-	return id_retornado = atoi(a);
+	free(id);
+	free(a);
+	free(ceros);
+	free(dadoVuelta);
+	return id_retornado;
 
 }
 
@@ -49,36 +54,51 @@ uint32_t generarDireccionLogica(uint32_t id, uint32_t desplazamiento){
 		string_append(&a, DESPLAZAMIENTO);
 
 	uint32_t direccionLogica = atoi(a);
+
+	free(ID_STRING);
+	free(DESPLAZAMIENTO);
+	free(a);
+
 	return direccionLogica;
 }
 
 uint32_t obtenerId(uint32_t num){
 
 
-	char* id = string_new();
+	//char* id;// = string_new();
 
 	uint32_t id_retornado;
 
-	id = string_itoa(num);
-	id  = string_substring(id, 0, 3);
+	char* id = string_itoa(num);
+	char* substring  = string_substring(id, 0, 3);
 
-	id = string_reverse(id);
+	char* dadoVuelta = string_reverse(substring);
 
 
-	return id_retornado = atoi(id);
+	id_retornado = atoi(dadoVuelta);
+
+	free(id);
+	free(substring);
+	free(dadoVuelta);
+
+	return id_retornado;
 
 }
 
 uint32_t obtenerDesplazamiento(uint32_t num){
 
-		char* id = string_new();
-
+		
 		uint32_t id_retornado;
 
-		id = string_itoa(num);
-		id =  string_substring_from(id, 3);
+		char* id = string_itoa(num);
+		char* substring =  string_substring_from(id, 3);
 
-		return id_retornado = atoi(id);
+		 id_retornado = atoi(substring);
+
+		 free(id);
+		 free(substring);
+
+		 return id_retornado;
 
 }
 
@@ -177,6 +197,8 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar ){
 	};
 
 	list_iterate(paginas, (void*)escribir_paginas_en_marcos);
+
+	list_destroy(marcos_a_asignar);
 
 }
 

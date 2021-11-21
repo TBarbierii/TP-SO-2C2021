@@ -21,7 +21,7 @@ void* recibir_buffer(int socket_cliente)
 	recv(socket_cliente, &(size), sizeof(uint32_t), MSG_WAITALL);
 	buffer = malloc(size);
 	recv(socket_cliente, buffer, size, MSG_WAITALL);
-
+	
 	return buffer;
 }
 
@@ -106,6 +106,8 @@ void atender_solicitudes_memoria(uint32_t conexion){
 			break;
 		}
 	}
+
+	log_destroy(logger);
 }
 
 void* atender_respuestas_swap(uint32_t conexion){
@@ -204,6 +206,8 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 
 	memcpy(&pidProcesoAEliminar, buffer, sizeof(uint32_t));
 
+	free(buffer);
+
 	bool buscarMarcos(t_marco* marco){
 		return marco->proceso_asignado == pidProcesoAEliminar;
 	};
@@ -219,6 +223,8 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 
 	list_iterate(marcosALiberar, (void*)liberar_marcos);
 
+	list_destroy(marcosALiberar);
+
 	bool buscarProcesoPorPid(t_carpincho* carpincho){
 		return carpincho->id_carpincho == pidProcesoAEliminar;
 	};
@@ -233,6 +239,22 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 	//loguear
 
 	log_info(logger,"Se nos va el carpincho: %d", carpincho->id_carpincho);
+
+
+
+	void destructor(t_pagina* pagina){
+
+		bool buscarPag(t_pagina* p){
+			return p->id_pagina == pagina->id_pagina;
+		};
+		pthread_mutex_lock(TLB_mutex);
+		list_remove_by_condition(TLB, (void*)buscarPag);
+		pthread_mutex_unlock(TLB_mutex);
+
+		free(pagina);
+	};
+	list_destroy_and_destroy_elements(carpincho->tabla_de_paginas, (void*)destructor);
+
 	free(carpincho); 
 
 }
@@ -279,8 +301,12 @@ int32_t recibir_memfree(int socket_cliente, t_log* logger) {
 	};
 	t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPagina);
 
+	int32_t confirmacion;
+	
 	if(pagina == NULL){
-		return -5;
+		 confirmacion =-5;
+	}else{
+		 confirmacion =1;
 	}
 
 	log_info(logger, "\nRecibimos memfree: \n Pid: %i \nDirecLogica: %i", carpincho, direccionLogica);
@@ -292,9 +318,9 @@ int32_t recibir_memfree(int socket_cliente, t_log* logger) {
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	offset=0;
-	uint32_t confirmacion =1;
+	
 
-    memcpy(paquete->buffer->stream + offset, &confirmacion, sizeof(uint32_t));
+    memcpy(paquete->buffer->stream + offset, &confirmacion, sizeof(int32_t));
 
 	enviarPaquete(paquete, socket_cliente);
 
@@ -328,13 +354,19 @@ int32_t recibir_memread(int socket_cliente, t_log* logger) {
 	};
 	t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPagina);
 
-	if(pagina == NULL){
-		return -6;
+
+	void* leido ;
+
+		if(pagina == NULL){
+		 leido = malloc(tamanio);
+		 leido = "";
+	}else{
+		 leido = leer_memoria(direccion_logica, carpincho, tamanio);
 	}
 
 	log_info(logger, "\nRecibimos memread: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
 
-	void* leido = leer_memoria(direccion_logica, carpincho, tamanio);//si es invalida la direccion devolver contenido vacio
+	
 
 	t_paquete *paquete = crear_paquete(MEMREAD);
 
@@ -345,6 +377,8 @@ int32_t recibir_memread(int socket_cliente, t_log* logger) {
 	memcpy(paquete->buffer->stream, &tamanio, sizeof(uint32_t));
 	offset += sizeof(uint32_t);
     memcpy(paquete->buffer->stream + offset, leido , tamanio);
+
+	free(leido);
 
 	enviarPaquete(paquete, socket_cliente);
 
@@ -383,15 +417,17 @@ int32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 	};
 	t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPagina);
 
+	int32_t confirmacion;
 	if(pagina == NULL){
-		return -7;
+		 confirmacion = -7;
+	}else{
+		 confirmacion =1;
 	}
 
 	log_info(logger, "\nRecibimos memwrite: \n Pid: %i \nDirecLogica: %i \nTamanio: %i", carpincho, direccion_logica, tamanio);
 
 	escribir_memoria(carpincho, direccion_logica, contenido, tamanio);// Retorna un entero si se pudo escribir o no
 	
-	//deberia liberar el contenido
 	free(contenido);
 
 	t_paquete *paquete = crear_paquete(MEMWRITE);
@@ -399,7 +435,7 @@ int32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	offset=0;
-	uint32_t confirmacion =1;
+	
 
     memcpy(paquete->buffer->stream + offset, &confirmacion, sizeof(uint32_t));
 
