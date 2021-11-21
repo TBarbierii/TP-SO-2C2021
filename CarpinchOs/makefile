@@ -1,5 +1,6 @@
 CC=gcc
 
+
 matelib:
 	cd ../MateLib/src && \
 	$(CC) -c -Wall -I"../include/" -fpic matelib.c && \

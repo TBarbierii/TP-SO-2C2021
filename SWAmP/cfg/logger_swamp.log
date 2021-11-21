@@ -1,0 +1,13 @@
+[INFO] 13:22:18:279 SWAmP/(6850:6850): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:22:18:401 SWAmP/(6850:6850): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:22:18:405 SWAmP/(6850:6850): Se han creado todos los archivos
+[INFO] 13:22:18:431 SWAmP/(6850:6850): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:22:26:370 SWAmP/(6850:6850): Solicitud de memoria entrante
+[INFO] 13:22:52:345 SWAmP/(6850:6850): Solicitud de memoria entrante
+[INFO] 13:23:26:043 SWAmP/(6850:6850): Solicitud de memoria entrante
+[INFO] 13:26:28:411 SWAmP/(7010:7010): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 13:26:28:521 SWAmP/(7010:7010): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 13:26:28:525 SWAmP/(7010:7010): Se han creado todos los archivos
+[INFO] 13:26:28:544 SWAmP/(7010:7010): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:26:30:347 SWAmP/(7010:7010): Solicitud de memoria entrante
+[INFO] 13:26:35:451 SWAmP/(7010:7010): Solicitud de memoria entrante

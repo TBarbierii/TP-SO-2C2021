@@ -1,5 +1,0 @@
-[DEBUG] 00:24:30:741 PlanificadorLargoPlazo/(4488:4492): Se inicializa la planificacion de largo plazo con algoritmo FIFO
-[INFO] 00:24:35:086 PlanificadorLargoPlazo/(4488:4492): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
-[INFO] 00:24:35:088 PlanificadorLargoPlazo/(4488:4492): Se pone en la cola de ready a un nuevo carpincho y lo inicializamos en memoria
-[INFO] 00:24:35:235 PlanificadorLargoPlazo/(4488:4492): Un nuevo carpincho se une a la cola de ready y se le asigna un pid el cual es: 0
-[INFO] 00:24:36:047 PlanificadorLargoPlazo/(4488:4499): Se nos va el carpincho: 0

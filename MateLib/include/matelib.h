@@ -15,41 +15,6 @@
 #include <pthread.h>
 #include <netdb.h>
 
-typedef enum tipo_bloqueo{
-	NO_BLOQUEADO = -1,
-	BLOCK_SEM,
-	BLOCK_IO
-}tipo_bloqueo;
-
-
-typedef struct proceso{
-    
-    uint32_t pid ;
-    int conexion; // es el socket del proceso
-	int conexionConMemoria; //socket para las tareas que necesitemos la memoria
-    double tiempoDeEspera; // para HRRN
-    double ultimaRafagaEjecutada ; // este es el real Anterior para SJF
-    double rafagaEstimada; //para JFS
-    double responseRatio; // HRRN
-	int vuelveDeBloqueo; //esto lo vamos a utilizar para ver si lo utlimo que realizo fue un bloqueo o no
-	t_list* listaRecursosRetenidos;
-	t_list* listaRecursosSolicitados;
-    clock_t tiempoDeArriboColaReady; //esto nos va a servir cuando queremos calcular el tiempo que estuvo esperando un proceso en la cola de Ready, donde esta variable va a ser el inicio de cuando entro a ready
-
-}proceso_kernel ;
-
-
-
-
-t_log* logger;
-
-typedef enum backend{
-
-    ERROR = -1,
-    OK = 0
-
-}backend;
-
 
 typedef enum{
 	INICIALIZAR_ESTRUCTURA,
@@ -85,8 +50,6 @@ typedef struct paquete
 	t_buffer* buffer;
 } t_paquete;
 
-
-
 uint32_t iniciar_servidor(char* ip_servidor, char* puerto);
 int esperar_cliente(int socket_servidor);
 int crear_conexion(char *ip, char* puerto);
@@ -103,7 +66,6 @@ typedef struct
     uint32_t pid; // identificador de cada proceso que se vaya a instanciar.
     
     int conexionConBackEnd; // se obtiene informacion del backend (memoria o kernel) - guarda el socket al servidor que se esta conectando.
-    backend backEndConectado; // id de backend al que nos estamos conectando. En caso de que sea -1 error.
     t_log* loggerProceso; // el log nos va a dar la referencia a la hora de planificar al proceso.
     t_config* config;
 }mate_struct;
@@ -163,7 +125,7 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 /*------ Funciones extras --------*/
 
-int inicializarPrimerasCosas(mate_instance *lib_ref, char *config);
+int iniciarConexion(mate_instance *lib_ref, char *config);
 
 void* recibir_mensaje(int conexion, mate_instance* lib_ref);
 

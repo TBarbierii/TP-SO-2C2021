@@ -122,22 +122,20 @@ void enviarPaquete(t_paquete* paquete, int conexion){
 //------------------General Functions---------------------/
 int mate_init(mate_instance *lib_ref, char *config){
 
-    int conexion = inicializarPrimerasCosas(lib_ref,config);
+    int conexion = iniciarConexion(lib_ref,config);
     
 
     if(conexion == -1){
-        lib_ref->group_info->backEndConectado = ERROR;
         lib_ref->group_info->conexionConBackEnd = conexion;
         lib_ref->group_info->pid= -1;
         
 
-        lib_ref->group_info->loggerProceso = log_create("cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
-        log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
+        lib_ref->group_info->loggerProceso = log_create("../MateLib/cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
+        log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend");
         
-        return lib_ref->group_info->backEndConectado;
+        return -1;
 
     }else{
-        lib_ref->group_info->backEndConectado = OK;
         solicitarIniciarCarpincho(conexion, lib_ref);
         return recibir_mensaje(conexion, lib_ref);
     }
@@ -159,7 +157,6 @@ int mate_close(mate_instance *lib_ref){
             
             log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
             log_destroy(lib_ref->group_info->loggerProceso);
-            config_destroy(lib_ref->group_info->config);
             free(lib_ref->group_info);
         }
         
@@ -349,7 +346,7 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 //--------- Funciones extras---------//
 
-int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
+int iniciarConexion(mate_instance *lib_ref, char *config){
 
     lib_ref->group_info = malloc(sizeof(mate_struct));
 
@@ -357,9 +354,8 @@ int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
     char* ipBackEnd = config_get_string_value(datosBackEnd,"IP_BACKEND");
     char* puertoBackEnd = config_get_string_value(datosBackEnd,"PUERTO_BACKEND");
     int conexionConBackEnd = crear_conexion(ipBackEnd, puertoBackEnd);
-    
-    lib_ref->group_info->config = datosBackEnd;
-    
+
+    config_destroy(datosBackEnd);
 
     return conexionConBackEnd;
 }
@@ -461,28 +457,30 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
 	memcpy(&(lib_ref->group_info->pid), stream+offset, sizeof(uint32_t));
 	
     if(lib_ref->group_info->pid < 0 ){
-            perror("No se pudo crear la instancia :(");
-            return -1;
-    }else{
+        perror("No se pudo crear la instancia :(");
+            
+    }
 
     lib_ref->group_info->conexionConBackEnd = conexion;
         
         
     char* nombreLog = string_new();
-    string_append(&nombreLog, "cfg/Proceso");
+    string_append(&nombreLog, "../MateLib/cfg/Proceso");
     char* pidCarpincho = string_itoa((int) lib_ref->group_info->pid);
     string_append(&nombreLog, pidCarpincho);
     string_append(&nombreLog, ".log");
 
     lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
     
-    log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
+    log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend");
 
     free(pidCarpincho);
     free(nombreLog);
 
     return 0;
-    }
+    
+
+    
 
 }
 
@@ -505,7 +503,6 @@ int liberarEstructurasDeProceso(t_buffer* buffer, mate_instance* lib_ref){
 
     log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
     log_destroy(lib_ref->group_info->loggerProceso);
-    config_destroy(lib_ref->group_info->config);
     close(lib_ref->group_info->conexionConBackEnd);
     free(lib_ref->group_info);
 

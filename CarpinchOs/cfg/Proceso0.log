@@ -2,7 +2,7 @@
 [INFO] 12:31:58:862 loggerContenidoProceso/(6593:6593): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
 [INFO] 12:31:58:863 loggerContenidoProceso/(6593:6593): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
 [INFO] 12:31:58:863 loggerContenidoProceso/(6593:6593): Se pudo inicializar el semaforo que se solicito inicializar
-[INFO] 12:31:58:863 loggerContenidoProceso/(6593:6593): Solicitamos hacer un signal sobre el semaforo: SEM2
+[INFO] 12:31:58:863 loggerContenidoProceso/(6593:6593): Solicitamos hacer un signal sobre el sAemaforo: SEM2
 [INFO] 12:31:58:864 loggerContenidoProceso/(6593:6593): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
 [INFO] 12:31:58:864 loggerContenidoProceso/(6593:6593): Se pudo hacer el post del semaforo
 [INFO] 12:31:58:864 loggerContenidoProceso/(6593:6593): Solicitamos destruir un semaforo de nombre: SEM2
