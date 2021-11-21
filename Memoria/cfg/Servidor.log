@@ -1254,3 +1254,22 @@ Tamanio
 [INFO] 19:15:59:405 Servidor/(20037:20299): Sacamos al carpincho. Pid: 51
 [INFO] 19:15:59:406 Servidor/(20037:20299): Enviamos que queremos cerrar el carpincho
 [INFO] 19:15:59:406 Servidor/(20037:20299): Se nos va el carpincho: 51
+[INFO] 00:24:35:155 Servidor/(4480:4508): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 00:24:35:231 Servidor/(4480:4508): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 00:24:35:366 Servidor/(4480:4508): 
+LLego el proceso para allocar: 
+ Pid: 0 
+Tamanio: 45
+[INFO] 00:24:35:511 Servidor/(4480:4508): 
+Recibimos memwrite: 
+ Pid: 0 
+DirecLogica: 1009 
+Tamanio: 45
+[INFO] 00:24:35:755 Servidor/(4480:4508): 
+Recibimos memread: 
+ Pid: 0 
+DirecLogica: 1009 
+Tamanio
+[INFO] 00:24:36:021 Servidor/(4480:4508): Sacamos al carpincho. Pid: 0
+[INFO] 00:24:36:024 Servidor/(4480:4508): Enviamos que queremos cerrar el carpincho
+[INFO] 00:24:36:045 Servidor/(4480:4508): Se nos va el carpincho: 0

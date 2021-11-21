@@ -15876,3 +15876,27 @@ y tiene el heap: prev:0, sig:0, free:0
 [INFO] 19:15:59:406 OperacionesServidor/(20024:20024): Recibimos la informacion de la RAM
 [INFO] 19:15:59:406 OperacionesServidor/(20024:20024): El codigo de operacion es: 18
 [INFO] 19:15:59:407 OperacionesServidor/(20024:20024): El proceso: 51, pide finalizar
+[INFO] 00:24:22:288 OperacionesServidor/(4474:4474): Recibimos la informacion de la RAM
+[INFO] 00:24:22:289 OperacionesServidor/(4474:4474): El codigo de operacion es: 13
+[INFO] 00:24:22:293 OperacionesServidor/(4474:4474): Tipo de asignacion a utilizar: FIJA.
+[INFO] 00:24:35:387 OperacionesServidor/(4474:4474): Recibimos la informacion de la RAM
+[INFO] 00:24:35:387 OperacionesServidor/(4474:4474): El codigo de operacion es: 16
+[INFO] 00:24:35:389 OperacionesServidor/(4474:4474): El proceso: 0 pide verificar si hay espacio para 2
+[INFO] 00:24:35:401 OperacionesServidor/(4474:4474): Cantidad de frames disponibles para el proceso 0: 10
+[INFO] 00:24:35:421 OperacionesServidor/(4474:4474): Recibimos la informacion de la RAM
+[INFO] 00:24:35:421 OperacionesServidor/(4474:4474): El codigo de operacion es: 11
+[INFO] 00:24:35:424 OperacionesServidor/(4474:4474): Se guarda la pagina: 1 del proceso: 0
+[INFO] 00:24:35:432 OperacionesServidor/(4474:4474): El archivo que vamos a utilizar tiene 128 cantidad de frames libres
+[INFO] 00:24:35:435 OperacionesServidor/(4474:4474): Todo bien se realizo con la asignacion Fija
+[INFO] 00:24:35:454 OperacionesServidor/(4474:4474): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 00:24:35:455 OperacionesServidor/(4474:4474): Se escribe sobre la particion: 0
+[INFO] 00:24:35:456 OperacionesServidor/(4474:4474): Se guardo el contenido correctamente
+[INFO] 00:24:35:491 OperacionesServidor/(4474:4474): Recibimos la informacion de la RAM
+[INFO] 00:24:35:491 OperacionesServidor/(4474:4474): El codigo de operacion es: 11
+[INFO] 00:24:35:493 OperacionesServidor/(4474:4474): Se guarda la pagina: 2 del proceso: 0
+[INFO] 00:24:35:495 OperacionesServidor/(4474:4474): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 00:24:35:496 OperacionesServidor/(4474:4474): Se escribe sobre la particion: 1
+[INFO] 00:24:35:501 OperacionesServidor/(4474:4474): Se guardo el contenido correctamente
+[INFO] 00:24:36:037 OperacionesServidor/(4474:4474): Recibimos la informacion de la RAM
+[INFO] 00:24:36:038 OperacionesServidor/(4474:4474): El codigo de operacion es: 18
+[INFO] 00:24:36:040 OperacionesServidor/(4474:4474): El proceso: 0, pide finalizar

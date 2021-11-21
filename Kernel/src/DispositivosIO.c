@@ -18,10 +18,12 @@ void ejecutarDispositivosIO(){
         /* crear el hilo y bla bla bla */
         pthread_t hiloDeEjecucion;
         log_debug(loggerDevicesIO, "Se crea un hilo para ejecutar el Dispositivio IO: %s, con tiempo de espera: %d", dispositivoActual->nombre, dispositivoActual->duracionRafaga);
+        
         pthread_create(&hiloDeEjecucion, NULL, (void *) rutinaDispositivoIO, dispositivoActual);
         pthread_detach(hiloDeEjecucion);
     }
 
+    list_destroy(listaParaEjecutarHilosDeDispositivos);
     log_destroy(loggerDevicesIO);
 }
 

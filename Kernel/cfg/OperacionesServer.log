@@ -1,0 +1,19 @@
+[INFO] 00:24:35:073 Operaciones/(4488:4507): Recibimos la informacion de un carpincho
+[INFO] 00:24:35:074 Operaciones/(4488:4507): El codigo de operacion es: 0
+[INFO] 00:24:35:075 Operaciones/(4488:4507): Vamos a inicializar un carpincho
+[INFO] 00:24:35:080 Operaciones/(4488:4507): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:24:35:357 Operaciones/(4488:4499): Recibimos la informacion de un carpincho
+[INFO] 00:24:35:357 Operaciones/(4488:4499): El codigo de operacion es: 7
+[INFO] 00:24:35:358 Operaciones/(4488:4499): Vamos a realizar un Mem Alloc
+[INFO] 00:24:35:472 Operaciones/(4488:4499): Recibimos la informacion de un carpincho
+[INFO] 00:24:35:473 Operaciones/(4488:4499): El codigo de operacion es: 10
+[INFO] 00:24:35:474 Operaciones/(4488:4499): Vamos a realizar un Mem Write
+[INFO] 00:24:35:741 Operaciones/(4488:4499): Recibimos la informacion de un carpincho
+[INFO] 00:24:35:745 Operaciones/(4488:4499): El codigo de operacion es: 9
+[INFO] 00:24:35:746 Operaciones/(4488:4499): Vamos a realizar un Mem Read
+[INFO] 00:24:35:997 Operaciones/(4488:4499): Recibimos la informacion de un carpincho
+[INFO] 00:24:35:998 Operaciones/(4488:4499): El codigo de operacion es: 1
+[INFO] 00:24:35:999 Operaciones/(4488:4499): Vamos a eliminar un carpincho
+[INFO] 00:24:36:003 Operaciones/(4488:4499): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 00:24:36:027 Operaciones/(4488:4499): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 00:24:36:029 Operaciones/(4488:4499): Enviamos que queremos cerrar el carpincho

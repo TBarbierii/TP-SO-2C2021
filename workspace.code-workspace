@@ -26,7 +26,8 @@
 			"conexiones.h": "c",
 			"matelib.h": "c",
 			"kernel.h": "c",
-			"semaforos.h": "c"
+			"semaforos.h": "c",
+			"carpincho.h": "c"
 		}
 	}
 }

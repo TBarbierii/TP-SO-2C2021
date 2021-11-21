@@ -1,0 +1,5 @@
+[INFO] 00:25:00:779 Deadlock/(4488:4496): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 00:25:00:786 Deadlock/(4488:4496): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 00:25:00:789 Deadlock/(4488:4496): La cantidad de procesos en posible deadlock son: 0
+[INFO] 00:25:00:795 Deadlock/(4488:4496): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+

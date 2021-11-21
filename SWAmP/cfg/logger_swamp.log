@@ -4831,3 +4831,13 @@ FIFO
 [INFO] 19:15:58:986 SWAmP/(20024:20024): Solicitud de memoria entrante
 [INFO] 19:15:59:406 SWAmP/(20024:20024): Solicitud de memoria entrante
 [INFO] 19:15:59:408 SWAmP/(20024:20024): Proceso 51 finalizado con exito
+[INFO] 00:24:16:064 SWAmP/(4474:4474): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 00:24:16:145 SWAmP/(4474:4474): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 1
+[INFO] 00:24:16:147 SWAmP/(4474:4474): Se han creado todos los archivos
+[INFO] 00:24:16:161 SWAmP/(4474:4474): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 00:24:22:280 SWAmP/(4474:4474): Solicitud de memoria entrante
+[INFO] 00:24:35:386 SWAmP/(4474:4474): Solicitud de memoria entrante
+[INFO] 00:24:35:413 SWAmP/(4474:4474): Solicitud de memoria entrante
+[INFO] 00:24:35:470 SWAmP/(4474:4474): Solicitud de memoria entrante
+[INFO] 00:24:36:031 SWAmP/(4474:4474): Solicitud de memoria entrante
+[INFO] 00:24:36:086 SWAmP/(4474:4474): Proceso 0 finalizado con exito

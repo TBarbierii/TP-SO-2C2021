@@ -39,7 +39,7 @@ void limpiar_marcos_de_proceso(int PID) {
             particion_a_vaciar->hay_contenido = 0;
             vaciar_particion(particion_a_vaciar, archivo_swap->path);
         }
-
+        list_destroy(marcos_de_proceso);
         log_info(logger_swamp, "Proceso %i finalizado con exito", PID);
     }
 }

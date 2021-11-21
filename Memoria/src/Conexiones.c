@@ -391,6 +391,9 @@ int32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 
 	escribir_memoria(carpincho, direccion_logica, contenido, tamanio);// Retorna un entero si se pudo escribir o no
 	
+	//deberia liberar el contenido
+	free(contenido);
+
 	t_paquete *paquete = crear_paquete(MEMWRITE);
 
 	paquete->buffer->size = sizeof(uint32_t);

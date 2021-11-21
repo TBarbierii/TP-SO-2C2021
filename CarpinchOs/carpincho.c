@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <matelib.h>
+
 int main(){
     mate_instance* referencia = malloc(sizeof(mate_instance));
 

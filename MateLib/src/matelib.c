@@ -836,12 +836,12 @@ int main(){
     void* lectura;// = malloc(45);
     printf("\nDireccion %i\n", mate);
 
-    //if(mate != 0){
+    if(mate != 0){
 
     mate_memwrite(referencia, "----------------------------------------1-45", mate, 45);
     mate_memread(referencia, mate, &lectura,45);
-    //log_info(referencia->group_info->loggerProceso, "\n LLego: %s", (char*)lectura);
-    //}
+    log_info(referencia->group_info->loggerProceso, "\n LLego: %s", (char*)lectura);
+    }
     if(lectura != NULL){
         free(lectura);
     }

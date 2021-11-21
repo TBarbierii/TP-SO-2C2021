@@ -255,6 +255,7 @@ int procesoReteniendo(proceso_kernel* proceso){
     return (!list_is_empty(proceso->listaRecursosRetenidos));
 }
 
+
 t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
 
     t_list* listaFiltrada = list_create();
@@ -289,8 +290,8 @@ t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
     if(!list_is_empty(procesosQuePuedenEstarOcupandoRecursos)){
         t_list* listaFiltradaFinal2 = list_filter(procesosQuePuedenEstarOcupandoRecursos, procesoReteniendo);
 
-    int sizeReteniendo = list_size(procesosQuePuedenEstarOcupandoRecursos);
-    log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que no se encuentran bloqueados, pero estan reteniendo son: %d", sizeReteniendo);
+        int sizeReteniendo = list_size(procesosQuePuedenEstarOcupandoRecursos);
+        log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que no se encuentran bloqueados, pero estan reteniendo son: %d", sizeReteniendo);
         
         if(!list_is_empty(listaFiltradaFinal2)){
             list_add_all(listaFiltradaFinal, listaFiltradaFinal2);
@@ -298,6 +299,7 @@ t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
         list_destroy(listaFiltradaFinal2);
     }
 
+    list_destroy(listaFiltrada);
     list_destroy(procesosQuePuedenEstarOcupandoRecursos);
 
     return listaFiltradaFinal;
