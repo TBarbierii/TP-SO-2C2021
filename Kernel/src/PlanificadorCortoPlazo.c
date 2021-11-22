@@ -79,7 +79,7 @@ void rutinaDeProceso(){
 
 void planificadorCortoPlazo(){
 
-    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo",0, LOG_LEVEL_DEBUG);
     log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: %s",algoritmoPlanificacion);
     inicializarHilosCPU();
     while(1){
@@ -124,7 +124,7 @@ void replanificacion(){
     if(strcmp(algoritmoPlanificacion, "HRRN") == 0){
         aplicarHRRN();
     }else if(strcmp(algoritmoPlanificacion, "SJF") == 0){
-        aplicarHRRN();
+        aplicarSJF();
     }else{
         perror("No se puede replanificar porque no hay un algoritmo identificado");
     }

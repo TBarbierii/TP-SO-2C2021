@@ -258,7 +258,7 @@ int main(){
     ejecutarDispositivosIO();
   
     
-// toda la logica de los planificadores y del servidor 
+// Para planificar a los carpinchos se van a utilizar un hilo por cada planificador + el servidor que va a estar todo el tiempo activo y Deadlock
     
     pthread_t servidor, pCortoPlazo, pLargoPlazo, pMedianoPlazo, algoritmoDeadlock;
 		
@@ -276,7 +276,6 @@ int main(){
       
      
 // ------------------------------------------ 
-
 
 
     finalizarListas();
