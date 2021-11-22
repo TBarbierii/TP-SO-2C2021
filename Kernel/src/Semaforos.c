@@ -114,7 +114,7 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
 
         semaforoActual->valor++;
 
-        log_info(logger,"Se realizo un signal del semaforo: %s y el valor se incremento a: %d", nombreSem, semaforoActual->valor);
+        log_info(logger,"El proceso:%d realizo un signal del semaforo: %s y el valor se incremento a: %d",pid, nombreSem, semaforoActual->valor);
 
         bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
                 if(procesoBuscado->pid == pid){
@@ -140,7 +140,7 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
                 list_add(procesoLiberado->listaRecursosRetenidos, semaforoActual);
             pthread_mutex_unlock(semaforoActual->mutex);
 
-            log_info(logger,"Se libera un proceso de la lista de espera del semaforo: %s", nombreSem);
+            log_info(logger,"Se libera el proceso:%d, de la lista de espera del semaforo: %s", pid, nombreSem);
 
             /* sacamos al proceso de la lista de bloqueados */
             ponerEnElReadyIndicado(procesoLiberado);
@@ -154,12 +154,12 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
             
         }
 
-        
+        log_destroy(logger);
         return 1;
     
     }else{ //si no existe avisamos que se quiso hacer un acmbio sobre un semaforo que no existe
         
-        log_warning(logger,"Se esta intentando hacer un signal de un semaforo: %s, el cual no existe", nombreSem);
+        log_warning(logger,"El proceso:%d, esta intentando hacer un signal de un semaforo: %s, el cual no existe", pid, nombreSem);
         log_destroy(logger);
         return 0;
 
@@ -193,7 +193,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
 
         semaforoActual->valor--;
 
-        log_info(logger,"Se realizo un wait del semaforo: %s y el valor decrecio a: %d", nombreSem, semaforoActual->valor);
+        log_info(logger,"El proceso:%d realizo un wait del semaforo: %s y el valor decrecio a: %d",pid, nombreSem, semaforoActual->valor);
 
         bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
             return procesoBuscado->pid == pid;
@@ -224,7 +224,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             sem_post(signalSuspensionProceso);
             pthread_mutex_unlock(modificarBlocked);
 
-            
+            log_destroy(logger);
             return 1;
 
         }else{ // si el valor no es <0, no se bloquearia el proceso
@@ -238,10 +238,10 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
                 list_add(procesoAbloquear->listaRecursosRetenidos, semaforoActual);
             pthread_mutex_unlock(semaforoActual->mutex);
             
-            log_info(logger,"Se ejecuto un wait sobre un semaforo:%s, pero como el valor no era menor a 1, entonces no se bloqueo", nombreSem);
+            log_info(logger,"Se ejecuto un wait sobre un semaforo:%s, pero como el valor no era menor a 1, entonces el proceso:%d no se bloqueo", nombreSem, pid);
             pthread_mutex_unlock(semaforoActual->mutex);
 
-
+            log_destroy(logger);
             return 2;
         }
     
@@ -309,6 +309,7 @@ void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado){
 
             pthread_mutex_lock(modificarReady);
                 list_add(procesosReady, procesoBuscado);
+                clock_gettime(CLOCK_REALTIME, &procesoBuscado->tiempoDeArriboColaReady); //esto sirve para HRRN, para estimar cuando empezo un proceso a estar en ready y cuanto tiempo pasa ahi
             pthread_mutex_unlock(modificarReady);
             
             sem_post(hayProcesosReady); //alertamos que hay un proceso nuevo en ready

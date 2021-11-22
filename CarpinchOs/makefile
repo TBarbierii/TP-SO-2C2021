@@ -8,7 +8,7 @@ matelib:
 	rm matelib.o
 
 carpincho: matelib
-	$(CC) -g3 -Wall -L"../MateLib/src/" -I"../MateLib/include/" carpincho.c -lmate -lpthread -lrt -lcommons -lreadline -lcunit -o carpincho
+	$(CC) -g3 -Wall -L"../MateLib/src/" -I"../MateLib/src/" carpincho.c -lmate -lpthread -lrt -lcommons -lreadline -lcunit -o carpincho
 
 run: carpincho
 	LD_LIBRARY_PATH="../MateLib/src/" ./carpincho

@@ -147,7 +147,6 @@ void obtenerValoresDelConfig(t_config* configActual){
     puertoMemoria = config_get_string_value(configActual, "PUERTO_MEMORIA");
     puertoServer = config_get_string_value(configActual, "PUERTO_ESCUCHA");
     algoritmoPlanificacion = config_get_string_value(configActual, "ALGORITMO_PLANIFICACION");
-    retardoCPU = config_get_int_value(configActual, "RETARDO_CPU");
     estimacion_inicial = config_get_double_value(configActual, "ESTIMACION_INICIAL");
     alfa = config_get_double_value(configActual, "ALFA");
     gradoMultiProgramacion = config_get_int_value(configActual, "GRADO_MULTIPROGRAMACION");
@@ -258,7 +257,7 @@ int main(){
     ejecutarDispositivosIO();
   
     
-// Para planificar a los carpinchos se van a utilizar un hilo por cada planificador + el servidor que va a estar todo el tiempo activo y Deadlock
+// toda la logica de los planificadores y del servidor 
     
     pthread_t servidor, pCortoPlazo, pLargoPlazo, pMedianoPlazo, algoritmoDeadlock;
 		
@@ -276,6 +275,7 @@ int main(){
       
      
 // ------------------------------------------ 
+
 
 
     finalizarListas();

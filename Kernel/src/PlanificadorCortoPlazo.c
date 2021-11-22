@@ -11,9 +11,9 @@ void rutinaDeProceso(){
 
         //vamos a sacar al primero que esta en READY, replanificando por las dudas
         pthread_mutex_lock(modificarReady);
-            replanificacion(); //en este momento replanifico y ordeno la lista de readys segun el criterio seleccionado
+            replanificacion(logger); //en este momento replanifico y ordeno la lista de readys segun el criterio seleccionado
             proceso_kernel* procesoListoParaEjecutar = list_remove(procesosReady, 0);
-            log_debug(logger, "Se saca un carpincho de la lista de readys para ejecutar. Carpincho: %d",procesoListoParaEjecutar->pid);
+            log_debug(logger, "Se saca un carpincho de la lista de readys para ejecutar. Carpincho: %d, de estimacionActual:%f segundos, y de responseRatio:%f",procesoListoParaEjecutar->pid, procesoListoParaEjecutar->rafagaEstimada, procesoListoParaEjecutar->responseRatio);
         pthread_mutex_unlock(modificarReady);
     
         //lo ponemos en la lista de exec
@@ -22,16 +22,25 @@ void rutinaDeProceso(){
             log_debug(logger, "Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: %d", procesoListoParaEjecutar->pid);
         pthread_mutex_unlock(modificarExec);
         
-        //le ponemos el momento donde entro en EXEC en este THREAD:
-        clock_t arranqueEjecucion = clock();
 
+        
+
+
+        //le ponemos el momento donde entro en EXEC en este THREAD:
+        //clock_t start  = clock();
+        struct timespec begin, end; 
+        clock_gettime(CLOCK_REALTIME, &begin);
 
         //lo que ejecuta el proceso que agregamos
         while(1){
-
+            
+            //aca recien le vamos a notificar al proceso que se inicializa y su id, es decir cuando esta en ejecucion
+            if(procesoListoParaEjecutar->vuelveDeBloqueo == NO_BLOQUEADO){
+                log_debug(logger, "Se envia info del pid a Matelib");
+                enviarInformacionAdministrativaDelProceso(procesoListoParaEjecutar);
             
             //si viene de un bloqueo debemos notificarle a la matelib que se pudo o no realizar
-            if(procesoListoParaEjecutar->vuelveDeBloqueo == BLOCK_IO){
+            }else if(procesoListoParaEjecutar->vuelveDeBloqueo == BLOCK_IO){
 
                 //le avisamos que se pudo realizar la IO
                 log_info(logger, "Le avisamos al proceso que se pudo ejecutar el IO correctamente");
@@ -53,8 +62,16 @@ void rutinaDeProceso(){
             if(rompoElHiloSegunElCodigo(codigoOperacion) == 1){
 
                 log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo");
-                clock_t finEjecucion = clock();
-                procesoListoParaEjecutar->ultimaRafagaEjecutada = (double)(finEjecucion - arranqueEjecucion) / CLOCKS_PER_SEC;
+                //clock_t end = clock();
+                clock_gettime(CLOCK_REALTIME, &end);
+                long seconds = end.tv_sec - begin.tv_sec;
+                long nanoseconds = end.tv_nsec - begin.tv_nsec;
+                double elapsed = seconds + nanoseconds*1e-9;
+
+                //double tiempoPasado = (end - start) / CLOCKS_PER_SEC;
+                log_info(logger,"La ultima rafaga ejecutada del proceso es de: %f",elapsed);
+                procesoListoParaEjecutar->ultimaRafagaEjecutada = elapsed;
+
                 calcularEstimacion(procesoListoParaEjecutar); //aaca calculo la ultima estimacion nueva en base a la ultima rafaga ejecutada
                 sem_post(nivelMultiprocesamiento);
                 break;
@@ -62,6 +79,8 @@ void rutinaDeProceso(){
             }else if(rompoElHiloSegunElCodigo(codigoOperacion) == 2){
                 
                 log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho");
+                sem_post(nivelMultiprocesamiento); //aumento el grado de multiprogramacion y multiprocesamiento
+	            sem_post(nivelMultiProgramacionGeneral);
                 break;
 
             }
@@ -79,7 +98,7 @@ void rutinaDeProceso(){
 
 void planificadorCortoPlazo(){
 
-    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo",0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
     log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: %s",algoritmoPlanificacion);
     inicializarHilosCPU();
     while(1){
@@ -119,14 +138,16 @@ int rompoElHiloSegunElCodigo(int codigo){
 
 
 /* seleccionar Planificador */
-void replanificacion(){
+void replanificacion(t_log* logger){
 
     if(strcmp(algoritmoPlanificacion, "HRRN") == 0){
+        log_debug(logger,"Se replanifica con HRRN");
         aplicarHRRN();
     }else if(strcmp(algoritmoPlanificacion, "SJF") == 0){
+        log_debug(logger,"SE replanifica con SJF");
         aplicarSJF();
     }else{
-        perror("No se puede replanificar porque no hay un algoritmo identificado");
+        log_error(logger,"No se puede replanificar porque no hay un algoritmo identificado");
     }
 
 }
@@ -137,18 +158,25 @@ void replanificacion(){
 
 void calcularEstimacion(proceso_kernel* unCarpincho) {
 	
-    unCarpincho->rafagaEstimada = (alfa * unCarpincho->rafagaEstimada)+ ((unCarpincho->ultimaRafagaEjecutada) * (1 - alfa) );
-
+    double nuevaRafaga = (alfa * unCarpincho->rafagaEstimada)+ ((unCarpincho->ultimaRafagaEjecutada) *(1 - alfa));
+    unCarpincho->rafagaEstimada = nuevaRafaga;
 }
 
 bool comparadorDeRafagas(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho) {
 	
-    return unCarpincho->rafagaEstimada < otroCarpincho->rafagaEstimada;
+    return unCarpincho->rafagaEstimada <= otroCarpincho->rafagaEstimada;
 
 }
 
-void aplicarSJF() {
+void mostrarRafagaEstimada(proceso_kernel* unCarpincho){
+    t_log* logger =log_create("cfg/PlanificadorCortoPlazoActual.log","Replanificacion", 1, LOG_LEVEL_DEBUG);
+    log_info(logger,"El proceso:%d tiene una rafaga de:%f",unCarpincho->pid, unCarpincho->rafagaEstimada);
+    log_destroy(logger);  
+}
 
+void aplicarSJF() {
+    list_iterate(procesosReady, (void*) CalcularResponseRatio);
+    list_iterate(procesosReady, (void*) mostrarRafagaEstimada);
     list_sort(procesosReady, (void*) comparadorDeRafagas); //con list_sort se ordena la lista segun un criterio (en este caso va a ordenarlo por las rafagas)
 				
 }
@@ -164,24 +192,36 @@ void AumentarTiempoEspera(proceso_kernel* unCarpincho){ //con lo de las funcione
 }
 
 void CalcularResponseRatio(proceso_kernel* unCarpincho) {
+
+    struct timespec end;
+    clock_gettime(CLOCK_REALTIME, &end);
     
-    clock_t finTiempoEsperando = clock();
-    unCarpincho->tiempoDeEspera = (double)(finTiempoEsperando - unCarpincho->tiempoDeArriboColaReady) / CLOCKS_PER_SEC;
+    long seconds = end.tv_sec - unCarpincho->tiempoDeArriboColaReady.tv_sec;
+    long nanoseconds = end.tv_nsec - unCarpincho->tiempoDeArriboColaReady.tv_nsec;
+    double elapsed = seconds + nanoseconds*1e-9;
+
+    unCarpincho->tiempoDeEspera = elapsed;
 	unCarpincho->responseRatio = 1 + (unCarpincho->tiempoDeEspera / unCarpincho->rafagaEstimada);
 
 }
 
 bool comparadorResponseRatio(proceso_kernel* unCarpincho, proceso_kernel* otroCarpincho) {
 	
-    return unCarpincho->responseRatio > otroCarpincho->responseRatio;
+    return unCarpincho->responseRatio >= otroCarpincho->responseRatio;
 
 }
 
+void mostrarResponseRatio(proceso_kernel* unCarpincho){
+    t_log* logger=log_create("cfg/PlanificadorCortoPlazoActual.log","Replanificacion", 1, LOG_LEVEL_DEBUG);
+    log_info(logger,"El proceso:%d tiene un ratio de:%f",unCarpincho->pid, unCarpincho->responseRatio);
+    log_destroy(logger);  
+}
 
 void aplicarHRRN(){
 
 	list_iterate(procesosReady, (void*) CalcularResponseRatio); //calcula la estimación de todos los procesos para después ordenarla segun la priorirdad
-	list_sort(procesosReady, (void*) comparadorResponseRatio); // lo mismo que SJF, ordena segun un criterio (en este caso el de mayor responseRAtio)
-
+	list_iterate(procesosReady, (void*) mostrarResponseRatio);
+    list_sort(procesosReady, (void*) comparadorResponseRatio); // lo mismo que SJF, ordena segun un criterio (en este caso el de mayor responseRAtio)
+    
 } 
 

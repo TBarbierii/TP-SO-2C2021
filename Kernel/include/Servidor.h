@@ -70,7 +70,7 @@ void notificacionSuspensionProceso(proceso_kernel* proceso, t_buffer* buffer, t_
 /*esto es algo general para avisar cuando no se pudo realizar algo de memoria a la matelib */
 int validacionConexionConMemoria(proceso_kernel* proceso, t_log* logger);
 void notificarQueNoSePudoRealizarTareaConMemoria(cod_operacion operacionSolicitada, proceso_kernel* proceso);
-void notificarSuspensionDeProceso(proceso_kernel* proceso);
+void notificarSuspensionDeProceso(proceso_kernel* proceso, t_log* logger);
 
 
 #endif

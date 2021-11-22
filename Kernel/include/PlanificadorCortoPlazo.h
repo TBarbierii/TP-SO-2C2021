@@ -28,7 +28,7 @@ void inicializarHilosCPU();
 
 
 
-void replanificacion();
+void replanificacion(t_log* logger);
 
 /* SJF */
 void calcularEstimacion(proceso_kernel* unCarpincho);

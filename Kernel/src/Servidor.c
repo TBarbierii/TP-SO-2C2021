@@ -23,6 +23,10 @@ void atenderSolicitudesKernel(){
 
 }
 
+
+
+
+
 int atenderMensajeEnKernel(int conexion) {
 
 	t_log* logger =  log_create("cfg/OperacionesServer.log","Operaciones", 1, LOG_LEVEL_DEBUG);
@@ -126,12 +130,13 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 	proceso_kernel* procesoNuevo =(proceso_kernel*) malloc(sizeof(proceso_kernel));
 
 	procesoNuevo->conexion = conexion;
-	procesoNuevo->rafagaEstimada = estimacion_inicial;
+	procesoNuevo->rafagaEstimada = estimacion_inicial/1000; //lo pasamos a segundos
 	procesoNuevo->tiempoDeEspera = 0;
 	procesoNuevo->ultimaRafagaEjecutada = 0;
 	procesoNuevo->vuelveDeBloqueo = NO_BLOQUEADO; //con esto vamos a decir que no realizo ningunn bloqueo todavia
 	procesoNuevo->listaRecursosRetenidos = list_create();
 	procesoNuevo->listaRecursosSolicitados = list_create();
+	procesoNuevo->responseRatio = 0;
 
 	pthread_mutex_lock(modificarNew);
 		list_add(procesosNew, procesoNuevo);
@@ -180,9 +185,7 @@ void cerrarProceso(t_buffer* bufferActual,t_log* logger){
 
 
 	informarCierreDeProceso(procesoActual,logger);
-	sem_post(nivelMultiprocesamiento); //aumento el grado de multiprogramacion y multiprocesamiento
-	sem_post(nivelMultiProgramacionGeneral);
-
+	
 	/* esta funcion de liberar al proceso lo hace el planificador de largo plazo digamos... */
 	liberarProceso(procesoActual);
 }
@@ -259,8 +262,7 @@ void cerrarSemaforo(t_buffer * buffer, int conexion){
 	
 	avisarDestruccionDeSemaforo(conexion,valorReturn);
 
-	//free(nombre); ROMPE TODO CON ESTO, pero la duda era el porque?, sera xq se libera cuando se libera el buffer?
-
+	free(nombre);
 }
 
 void hacerPostDeSemaforo(t_buffer * buffer, int conexion){
@@ -938,7 +940,7 @@ int notificacionFinalizacionMemoria(t_buffer* buffer,t_log* logger){
 }
 
 
-void notificarSuspensionDeProceso(proceso_kernel* proceso){
+void notificarSuspensionDeProceso(proceso_kernel* proceso, t_log* logger){
 	
 	int validacion = validacionConexionConMemoria(proceso,logger);
 

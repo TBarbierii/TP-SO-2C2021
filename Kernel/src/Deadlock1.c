@@ -49,7 +49,7 @@ void ejecutarAlgoritmoDeadlock(){
             
             t_list* procesosPosiblesEnDeadlock = procesosQueEstanReteniendoYEsperando(logger);
             int cantidadProcesos = list_size(procesosPosiblesEnDeadlock);
-            log_info(logger,"La cantidad de procesos en posible deadlock son: %d",cantidadProcesos);
+            log_info(logger,"La cantidad de procesos en posible deadlock son: %d\n",cantidadProcesos);
              
             if(cantidadProcesos <= 1){
                 log_info(logger,"No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos\n");
@@ -144,19 +144,23 @@ void ejecutarAlgoritmoDeadlock(){
                 if(finish[j] == 0){
                     proceso_kernel* procesoEnElDeadlock = list_get(procesosPosiblesEnDeadlock, j);
                     list_add(procesosEnDeadlock, procesoEnElDeadlock);
+                    log_info(logger,"El proceso :%d es uno de los posibles causantes de deadlock", procesoEnElDeadlock->pid);
+                    
                 }
 
             }
             if(list_size(procesosEnDeadlock)<=1){
-                log_info(logger,"No hay deadlock, dejamos que se ejecute todo normal\n");
+                log_info(logger,"\nNo hay deadlock, dejamos que se ejecute todo normal\n");
+                list_destroy(procesosPosiblesEnDeadlock);
                 break;
+
             }
 
             
             //ordenamos la lista para poner el de mayor id primero
             list_sort(procesosEnDeadlock,procesoConMayorPID);
             proceso_kernel* procesoASacarPorDeadlock = list_get(procesosEnDeadlock, 0);
-            log_info(logger,"El proceso elegido para sacar del deadlock sera el proceso: %d\n", procesoASacarPorDeadlock->pid);
+            log_info(logger,"\nEl proceso elegido para sacar del deadlock sera el proceso: %d\n", procesoASacarPorDeadlock->pid);
 
             //primero lo sacamos de bloqueado, onda va a ser uno de los bloqueados si o si, ya que tendria que estar reteniendo y pidiendo(que es por lo cual quedo bloqueado)
             sacarProcesoDeBloqueado(procesoASacarPorDeadlock->pid);

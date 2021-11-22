@@ -121,7 +121,7 @@ void enviarPaquete(t_paquete* paquete, int conexion){
 
 //------------------General Functions---------------------/
 int mate_init(mate_instance *lib_ref, char *config){
-    // en conexion se guarda el socket del proceso
+
     int conexion = iniciarConexion(lib_ref,config);
     
 
@@ -131,7 +131,7 @@ int mate_init(mate_instance *lib_ref, char *config){
         
 
         lib_ref->group_info->loggerProceso = log_create("../MateLib/cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
-        log_warning(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, pero no se ha logrado conectar correctamente al backend");
+        log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend");
         
         return -1;
 
@@ -302,15 +302,16 @@ int mate_memfree(mate_instance *lib_ref, mate_pointer addr){
     
 }
 
-int mate_memread(mate_instance *lib_ref, mate_pointer origin, void **info, int size){
+int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int size){
     
     log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memRead %d", origin);
 
     if(lib_ref->group_info->conexionConBackEnd != -1){
         realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
-        *info = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        if(*info != NULL){
-            //log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)*info);
+        void *informacion = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
+        memcpy(info,informacion,size);
+        if(info != NULL){
+            log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)info);
             return 0;
         }
         else{
@@ -325,7 +326,7 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void **info, int s
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size){
     
-    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d", dest);
+    log_info(lib_ref->group_info->loggerProceso,"Solicitamos realizar un memWrite de %d y tamanio:%d", dest, size);
     
     if(lib_ref->group_info->conexionConBackEnd != -1){
         realizarMemWrite( lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, dest, size);
@@ -360,7 +361,7 @@ int iniciarConexion(mate_instance *lib_ref, char *config){
     return conexionConBackEnd;
 }
 
-/* Esta funcion obtiene todos los mensajes del Kernel/Memoria */
+
 void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
@@ -472,7 +473,7 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
 
     lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
     
-    log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend");
+    log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho:%d, y se ha logrado conectar correctamente al backend", lib_ref->group_info->pid);
 
     free(pidCarpincho);
     free(nombreLog);
@@ -674,7 +675,7 @@ int notificacionMemWrite(t_buffer* buffer, t_log* logger){
 /* ------- Solicitudes  --------------------- */
 
 
-/* Estructura del Carpincho */
+/* estructuracion */
 void solicitarIniciarCarpincho(int conexion, mate_instance* lib_ref){
     
     t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
