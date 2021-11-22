@@ -23,10 +23,6 @@ void atenderSolicitudesKernel(){
 
 }
 
-
-
-
-
 int atenderMensajeEnKernel(int conexion) {
 
 	t_log* logger =  log_create("cfg/OperacionesServer.log","Operaciones", 1, LOG_LEVEL_DEBUG);

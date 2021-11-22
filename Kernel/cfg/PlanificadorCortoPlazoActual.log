@@ -1,0 +1,28 @@
+[DEBUG] 12:48:32:565 PlanificadorCortoPlazo/(5546:5551): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 12:48:45:196 Thread-CPU/(5546:5556): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 12:48:45:196 Thread-CPU/(5546:5556): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 12:48:45:196 Thread-CPU/(5546:5556): Se ejecuto tarea de conexion
+[INFO] 12:48:45:197 Thread-CPU/(5546:5556): La tarea realizada fue: 2
+[INFO] 12:48:45:198 Thread-CPU/(5546:5556): Se ejecuto tarea de conexion
+[INFO] 12:48:45:198 Thread-CPU/(5546:5556): La tarea realizada fue: 14
+[INFO] 12:48:45:199 Thread-CPU/(5546:5556): Se ejecuto tarea de conexion
+[INFO] 12:48:45:199 Thread-CPU/(5546:5556): La tarea realizada fue: 4
+[INFO] 12:48:45:200 Thread-CPU/(5546:5556): Se ejecuto tarea de conexion
+[INFO] 12:48:45:201 Thread-CPU/(5546:5556): La tarea realizada fue: 5
+[INFO] 12:48:45:208 Thread-CPU/(5546:5556): Se ejecuto tarea de conexion
+[INFO] 12:48:45:230 Thread-CPU/(5546:5556): La tarea realizada fue: 1
+[INFO] 12:48:45:232 Thread-CPU/(5546:5556): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 13:22:14:541 PlanificadorCortoPlazo/(7002:7007): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 13:22:20:577 Thread-CPU/(7002:7012): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0
+[DEBUG] 13:22:20:578 Thread-CPU/(7002:7012): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 13:22:20:578 Thread-CPU/(7002:7012): Se ejecuto tarea de conexion
+[INFO] 13:22:20:578 Thread-CPU/(7002:7012): La tarea realizada fue: 2
+[INFO] 13:22:20:579 Thread-CPU/(7002:7012): Se ejecuto tarea de conexion
+[INFO] 13:22:20:579 Thread-CPU/(7002:7012): La tarea realizada fue: 14
+[INFO] 13:22:20:581 Thread-CPU/(7002:7012): Se ejecuto tarea de conexion
+[INFO] 13:22:20:582 Thread-CPU/(7002:7012): La tarea realizada fue: 4
+[INFO] 13:22:20:583 Thread-CPU/(7002:7012): Se ejecuto tarea de conexion
+[INFO] 13:22:20:584 Thread-CPU/(7002:7012): La tarea realizada fue: 5
+[INFO] 13:22:20:584 Thread-CPU/(7002:7012): Se ejecuto tarea de conexion
+[INFO] 13:22:20:586 Thread-CPU/(7002:7012): La tarea realizada fue: 1
+[INFO] 13:22:20:586 Thread-CPU/(7002:7012): Se realizo una operacion que termina con la ejecucion del Carpincho

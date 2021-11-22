@@ -1,0 +1,10 @@
+[DEBUG] 12:48:32:564 PlanificadorMedianoPlazo/(5546:5552): Se inicializa la planificacion de mediano plazo
+[DEBUG] 12:48:32:569 PlanificadorMedianoPlazo/(5546:5555): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 12:48:32:570 PlanificadorMedianoPlazo/(5546:5554): Incializado el thread que permite suspender procesos para evitar IO bound
+[INFO] 12:48:45:194 PlanificadorMedianoPlazo/(5546:5555): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 12:48:45:194 PlanificadorMedianoPlazo/(5546:5555): No hay procesos en Suspended Ready, agregamos uno de NEW en Ready
+[DEBUG] 13:22:14:541 PlanificadorMedianoPlazo/(7002:7008): Se inicializa la planificacion de mediano plazo
+[DEBUG] 13:22:14:541 PlanificadorMedianoPlazo/(7002:7011): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 13:22:14:541 PlanificadorMedianoPlazo/(7002:7010): Incializado el thread que permite suspender procesos para evitar IO bound
+[INFO] 13:22:20:572 PlanificadorMedianoPlazo/(7002:7011): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 13:22:20:572 PlanificadorMedianoPlazo/(7002:7011): No hay procesos en Suspended Ready, agregamos uno de NEW en Ready

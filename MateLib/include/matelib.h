@@ -58,9 +58,6 @@ void crear_buffer(t_paquete* paquete);
 t_paquete* crear_paquete(cod_operacion codigo);
 void enviarPaquete(t_paquete* paquete, int conexion);
 
-
-
-
 typedef struct
 {
     uint32_t pid; // identificador de cada proceso que se vaya a instanciar.
@@ -118,10 +115,6 @@ int mate_memfree(mate_instance *lib_ref, mate_pointer addr);
 int mate_memread(mate_instance *lib_ref, mate_pointer origin, void **dest, int size);
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size);
-
-
-
-
 
 /*------ Funciones extras --------*/
 

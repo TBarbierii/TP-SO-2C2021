@@ -121,7 +121,7 @@ void enviarPaquete(t_paquete* paquete, int conexion){
 
 //------------------General Functions---------------------/
 int mate_init(mate_instance *lib_ref, char *config){
-
+    // en conexion se guarda el socket del proceso
     int conexion = iniciarConexion(lib_ref,config);
     
 
@@ -131,7 +131,7 @@ int mate_init(mate_instance *lib_ref, char *config){
         
 
         lib_ref->group_info->loggerProceso = log_create("../MateLib/cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
-        log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend");
+        log_warning(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, pero no se ha logrado conectar correctamente al backend");
         
         return -1;
 
@@ -360,7 +360,7 @@ int iniciarConexion(mate_instance *lib_ref, char *config){
     return conexionConBackEnd;
 }
 
-
+/* Esta funcion obtiene todos los mensajes del Kernel/Memoria */
 void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
@@ -674,7 +674,7 @@ int notificacionMemWrite(t_buffer* buffer, t_log* logger){
 /* ------- Solicitudes  --------------------- */
 
 
-/* estructuracion */
+/* Estructura del Carpincho */
 void solicitarIniciarCarpincho(int conexion, mate_instance* lib_ref){
     
     t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
@@ -876,106 +876,3 @@ void realizarMemWrite(int conexion, uint32_t pid, void *origin, mate_pointer des
 
 
 }
-
-
-/*VALIDACIONES PARA REALIZAR TAREAS */
-
-int validarConexionPosible(int tipoSolicitado, int tipoActual){
-
-    
-    return tipoSolicitado == OK;
-
-}
-
-
-void hilo1(){
-    mate_instance* referencia = malloc(sizeof(mate_instance));
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    mate_sem_init(referencia,"SEM1",2);
-    mate_sem_init(referencia,"SEM2",2);
-    mate_sem_wait(referencia,"SEM1");
-    mate_sem_wait(referencia,"SEM2");
-    sleep(60);
-    mate_sem_post(referencia,"SEM1");
-    mate_sem_post(referencia,"SEM2");
-    mate_close(referencia);
-    free(referencia);
-}
-
-void hilo2(){
-    //sleep(7);
-    mate_instance* referencia = malloc(sizeof(mate_instance));
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    
-    mate_sem_init(referencia,"SEM1",1);
-    mate_sem_init(referencia,"SEM2",1);
-    
-    mate_sem_wait(referencia,"SEM1");
-    
-    sleep(10);
-    //sleep(3);
-
-    mate_sem_wait(referencia,"SEM2");
-    mate_close(referencia);
-    free(referencia);
-}
-
-void hilo3(){
-    sleep(7);
-    mate_instance* referencia = malloc(sizeof(mate_instance));
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    mate_sem_wait(referencia,"SEM2");
-    //sleep(3);
-    mate_sem_wait(referencia,"SEM1");
-    mate_close(referencia);
-    free(referencia);
-}
-
-int main(){
-
-    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
-
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    
-    //mate_sem_init(referencia,"SEM1",1);
-    //mate_sem_post(referencia,"SEM1");
-    //mate_sem_wait(referencia,"SEM1");
-    //mate_sem_wait(referencia,"SEM1");
-    //mate_call_io(referencia,"laguna","asd");
-    mate_pointer mate = mate_memalloc(referencia, 45);
-    //mate_memfree(referencia, mate);
-    //mate_close(referencia);
-    //free(referencia);
-    
-    void* lectura;// = malloc(45);
-    printf("\nDireccion %i\n", mate);
-
-    if(mate != 0){
-
-    mate_memwrite(referencia, "----------------------------------------1-45", mate, 45);
-    mate_memread(referencia, mate, &lectura,45);
-    log_info(referencia->group_info->loggerProceso, "\n LLego: %s", (char*)lectura);
-    }
-    if(lectura != NULL){
-        free(lectura);
-    }
-    mate_close(referencia);
-    free(referencia);
-    
-    //pthread_t h1, h2, h3;
-
-    //pthread_create(&h1, NULL, (void*)hilo1,NULL);  
-    //pthread_create(&h2, NULL, (void*)hilo2,NULL);
-    //pthread_create(&h3, NULL, (void*)hilo3,NULL);  
-
-    //pthread_join(h1, NULL);
-    //pthread_join(h2, NULL);
-    //pthread_join(h3, NULL);
-
-    
-    return 0;
-}
-
-
-
-

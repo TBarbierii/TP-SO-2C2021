@@ -1,35 +1,10 @@
-[INFO] 05:11:16:622 Servidor/(13066:13070): Agregamos nuevo carpincho a memoria, y su pid es: 0
-[INFO] 05:11:16:622 Servidor/(13066:13070): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
-[INFO] 05:11:16:623 Servidor/(13066:13070): 
-LLego el proceso para allocar: 
- Pid: 0 
-Tamanio: 45
-[INFO] 13:21:28:113 Servidor/(6686:6704): Agregamos nuevo carpincho a memoria, y su pid es: 0
-[INFO] 13:21:28:213 Servidor/(6686:6704): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
-[INFO] 13:21:28:220 Servidor/(6686:6704): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:21:28:223 Servidor/(6686:6704): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:21:28:225 Servidor/(6686:6704): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:21:28:242 Servidor/(6686:6704): Sacamos al carpincho. Pid: 0
-[INFO] 13:21:28:252 Servidor/(6686:6704): Enviamos que queremos cerrar el carpincho
-[INFO] 13:21:28:258 Servidor/(6686:6704): Se nos va el carpincho: 0
-[INFO] 13:22:52:197 Servidor/(6859:6886): Agregamos nuevo carpincho a memoria, y su pid es: 0
-[INFO] 13:22:52:306 Servidor/(6859:6886): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
-[INFO] 13:22:52:313 Servidor/(6859:6886): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:22:52:316 Servidor/(6859:6886): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:22:52:318 Servidor/(6859:6886): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:22:52:336 Servidor/(6859:6886): Sacamos al carpincho. Pid: 0
-[INFO] 13:22:52:341 Servidor/(6859:6886): Enviamos que queremos cerrar el carpincho
-[INFO] 13:22:52:347 Servidor/(6859:6886): Se nos va el carpincho: 0
-[INFO] 13:23:26:032 Servidor/(6859:6929): Agregamos nuevo carpincho a memoria, y su pid es: 1
-[INFO] 13:23:26:034 Servidor/(6859:6929): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
-[INFO] 13:23:26:036 Servidor/(6859:6929): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:23:26:038 Servidor/(6859:6929): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:23:26:039 Servidor/(6859:6929): Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL
-[INFO] 13:23:26:040 Servidor/(6859:6929): Sacamos al carpincho. Pid: 1
-[INFO] 13:23:26:041 Servidor/(6859:6929): Enviamos que queremos cerrar el carpincho
-[INFO] 13:23:26:047 Servidor/(6859:6929): Se nos va el carpincho: 1
-[INFO] 13:26:35:221 Servidor/(7013:7047): Agregamos nuevo carpincho a memoria, y su pid es: 0
-[INFO] 13:26:35:330 Servidor/(7013:7047): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
-[INFO] 13:26:35:442 Servidor/(7013:7047): Sacamos al carpincho. Pid: 0
-[INFO] 13:26:35:444 Servidor/(7013:7047): Enviamos que queremos cerrar el carpincho
-[INFO] 13:26:35:475 Servidor/(7013:7047): Se nos va el carpincho: 0
+[INFO] 12:48:45:195 Servidor/(5498:5599): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 12:48:45:195 Servidor/(5498:5599): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 12:48:45:227 Servidor/(5498:5599): Sacamos al carpincho. Pid: 0
+[INFO] 12:48:45:230 Servidor/(5498:5599): Enviamos que queremos cerrar el carpincho
+[INFO] 12:48:45:233 Servidor/(5498:5599): Se nos va el carpincho: 0
+[INFO] 13:22:20:577 Servidor/(6967:7037): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 13:22:20:577 Servidor/(6967:7037): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 13:22:20:584 Servidor/(6967:7037): Sacamos al carpincho. Pid: 0
+[INFO] 13:22:20:584 Servidor/(6967:7037): Enviamos que queremos cerrar el carpincho
+[INFO] 13:22:20:587 Servidor/(6967:7037): Se nos va el carpincho: 0

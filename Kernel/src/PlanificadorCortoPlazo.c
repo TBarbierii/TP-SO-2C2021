@@ -35,13 +35,13 @@ void rutinaDeProceso(){
 
                 //le avisamos que se pudo realizar la IO
                 log_info(logger, "Le avisamos al proceso que se pudo ejecutar el IO correctamente");
-                int valor = 0;
+                int valor = 1;
                 avisarconexionConDispositivoIO(procesoListoParaEjecutar->conexion, valor);
 
             }else if (procesoListoParaEjecutar->vuelveDeBloqueo == BLOCK_SEM){
                 //le avisamos que se pudo realizar el WAIT
                 log_info(logger, "Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente");
-                int valor = 0;
+                int valor = 1;
                 avisarWaitDeSemaforo(procesoListoParaEjecutar->conexion, valor);
             }
             

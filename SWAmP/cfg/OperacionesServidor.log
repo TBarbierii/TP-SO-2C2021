@@ -1,15 +1,12 @@
-[INFO] 13:22:26:380 OperacionesServidor/(6850:6850): Recibimos la informacion de la RAM
-[INFO] 13:22:26:382 OperacionesServidor/(6850:6850): El codigo de operacion es: 13
-[INFO] 13:22:26:388 OperacionesServidor/(6850:6850): Tipo de asignacion a utilizar: FIJA.
-[INFO] 13:22:52:346 OperacionesServidor/(6850:6850): Recibimos la informacion de la RAM
-[INFO] 13:22:52:346 OperacionesServidor/(6850:6850): El codigo de operacion es: 18
-[INFO] 13:22:52:349 OperacionesServidor/(6850:6850): El proceso: 0, pide finalizar
-[INFO] 13:23:26:047 OperacionesServidor/(6850:6850): Recibimos la informacion de la RAM
-[INFO] 13:23:26:048 OperacionesServidor/(6850:6850): El codigo de operacion es: 18
-[INFO] 13:23:26:049 OperacionesServidor/(6850:6850): El proceso: 1, pide finalizar
-[INFO] 13:26:30:357 OperacionesServidor/(7010:7010): Recibimos la informacion de la RAM
-[INFO] 13:26:30:358 OperacionesServidor/(7010:7010): El codigo de operacion es: 13
-[INFO] 13:26:30:369 OperacionesServidor/(7010:7010): Tipo de asignacion a utilizar: FIJA.
-[INFO] 13:26:35:455 OperacionesServidor/(7010:7010): Recibimos la informacion de la RAM
-[INFO] 13:26:35:455 OperacionesServidor/(7010:7010): El codigo de operacion es: 18
-[INFO] 13:26:35:457 OperacionesServidor/(7010:7010): El proceso: 0, pide finalizar
+[INFO] 12:47:20:350 OperacionesServidor/(5471:5471): Recibimos la informacion de la RAM
+[INFO] 12:47:20:350 OperacionesServidor/(5471:5471): El codigo de operacion es: 13
+[INFO] 12:47:20:351 OperacionesServidor/(5471:5471): Tipo de asignacion a utilizar: FIJA.
+[INFO] 12:48:45:233 OperacionesServidor/(5471:5471): Recibimos la informacion de la RAM
+[INFO] 12:48:45:233 OperacionesServidor/(5471:5471): El codigo de operacion es: 18
+[INFO] 12:48:45:234 OperacionesServidor/(5471:5471): El proceso: 0, pide finalizar
+[INFO] 13:22:10:413 OperacionesServidor/(6797:6797): Recibimos la informacion de la RAM
+[INFO] 13:22:10:413 OperacionesServidor/(6797:6797): El codigo de operacion es: 13
+[INFO] 13:22:10:413 OperacionesServidor/(6797:6797): Tipo de asignacion a utilizar: FIJA.
+[INFO] 13:22:20:587 OperacionesServidor/(6797:6797): Recibimos la informacion de la RAM
+[INFO] 13:22:20:587 OperacionesServidor/(6797:6797): El codigo de operacion es: 18
+[INFO] 13:22:20:588 OperacionesServidor/(6797:6797): El proceso: 0, pide finalizar

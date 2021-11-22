@@ -29,11 +29,8 @@ void thread1_PMP(t_log* logger){
         pthread_mutex_lock(modificarReady);
         pthread_mutex_lock(modificarBlocked);
 
-        //esto es para probar y dejarme ver si hay alguno, pero como va todo tan rapdio uso un sleep un tk 
-        sleep(4);
-
             if(list_is_empty(procesosReady) && !list_is_empty(procesosNew) && !list_is_empty(procesosBlocked)){
-                proceso_kernel* procesoASuspender = list_remove(procesosBlocked, list_size(procesosBlocked)-1);
+                proceso_kernel* procesoASuspender = list_remove(procesosBlocked, list_size(procesosBlocked)-1); // sacamos al último proceso bloqueado
                 log_info(logger,"Se encontro que hay solo procesos IO Bound ocupando la Multiprogramacion, por lo tanto ponemos uno en Suspended-Ready");
                 list_add(procesosSuspendedBlock, procesoASuspender);
                 notificarSuspensionDeProceso(procesoASuspender);
@@ -59,9 +56,9 @@ void thread2_PMP(t_log* logger){
         sem_wait(nivelMultiProgramacionGeneral);
         log_info(logger,"Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready");
         pthread_mutex_lock(modificarSuspendedReady);
-            int verdadero = list_is_empty(procesosSuspendedReady);
+            int ningunElementoEnSuspendidoReady = list_is_empty(procesosSuspendedReady);
         pthread_mutex_unlock(modificarSuspendedReady);
-            if(verdadero){
+            if(ningunElementoEnSuspendidoReady){
                 log_info(logger,"No hay procesos en Suspended Ready, agregamos uno de NEW en Ready");
                 pthread_mutex_unlock(nivelMultiProgramacionBajaPrioridad);
             }else{
