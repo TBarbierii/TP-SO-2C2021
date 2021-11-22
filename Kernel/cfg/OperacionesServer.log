@@ -1,336 +1,70 @@
-[INFO] 16:13:52:845 Operaciones/(27256:27308): Recibimos la informacion de un carpincho
-[INFO] 16:13:52:845 Operaciones/(27256:27309): Recibimos la informacion de un carpincho
-[INFO] 16:13:52:846 Operaciones/(27256:27308): El codigo de operacion es: 0
-[INFO] 16:13:52:846 Operaciones/(27256:27309): El codigo de operacion es: 0
-[INFO] 16:13:52:846 Operaciones/(27256:27309): Vamos a inicializar un carpincho
-[INFO] 16:13:52:847 Operaciones/(27256:27308): Vamos a inicializar un carpincho
-[INFO] 16:13:52:848 Operaciones/(27256:27308): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 16:13:52:850 Operaciones/(27256:27309): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 16:13:52:964 Operaciones/(27256:27314): Recibimos la informacion de un carpincho
-[INFO] 16:13:52:964 Operaciones/(27256:27314): El codigo de operacion es: 0
-[INFO] 16:13:52:965 Operaciones/(27256:27314): Vamos a inicializar un carpincho
-[INFO] 16:13:52:965 Operaciones/(27256:27314): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 16:13:55:957 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:13:55:957 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:13:55:958 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:14:14:971 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:14:14:971 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:14:14:972 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:14:21:976 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:14:21:976 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:14:21:977 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:14:40:989 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:14:40:989 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:14:40:990 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:14:47:993 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:14:47:994 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:14:47:994 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:15:07:002 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:15:07:003 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:15:07:003 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:15:14:007 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:15:14:007 Operaciones/(27256:27262): El codigo de operacion es: 1
-[INFO] 16:15:14:008 Operaciones/(27256:27262): Vamos a eliminar un carpincho
-[INFO] 16:15:14:009 Operaciones/(27256:27262): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 16:15:14:017 Operaciones/(27256:27262): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 16:15:14:019 Operaciones/(27256:27262): Enviamos que queremos cerrar el carpincho
-[INFO] 16:15:29:032 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:15:29:032 Operaciones/(27256:27262): El codigo de operacion es: 1
-[INFO] 16:15:29:033 Operaciones/(27256:27262): Vamos a eliminar un carpincho
-[INFO] 16:15:29:033 Operaciones/(27256:27262): Sacamos al carpincho de ejecucion. Pid: 2
-[INFO] 16:15:29:036 Operaciones/(27256:27262): Le notificamos a memoria para que libere la memoria del carpincho: 2
-[INFO] 16:15:29:036 Operaciones/(27256:27262): Enviamos que queremos cerrar el carpincho
-[INFO] 16:15:32:046 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:15:32:046 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:15:32:047 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:15:39:051 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:15:39:052 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:15:39:052 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:15:46:056 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:15:46:056 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:15:46:057 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:15:53:062 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:15:53:062 Operaciones/(27256:27262): El codigo de operacion es: 1
-[INFO] 16:15:53:062 Operaciones/(27256:27262): Vamos a eliminar un carpincho
-[INFO] 16:15:53:062 Operaciones/(27256:27262): Sacamos al carpincho de ejecucion. Pid: 1
-[INFO] 16:15:53:064 Operaciones/(27256:27262): Le notificamos a memoria para que libere la memoria del carpincho: 1
-[INFO] 16:15:53:065 Operaciones/(27256:27262): Enviamos que queremos cerrar el carpincho
-[INFO] 16:20:01:427 Operaciones/(27256:27889): Recibimos la informacion de un carpincho
-[INFO] 16:20:01:427 Operaciones/(27256:27889): El codigo de operacion es: 0
-[INFO] 16:20:01:427 Operaciones/(27256:27889): Vamos a inicializar un carpincho
-[INFO] 16:20:01:427 Operaciones/(27256:27889): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 16:20:16:437 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:20:16:437 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:20:16:438 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:20:35:444 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:20:35:444 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:20:35:445 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:20:54:452 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:20:54:452 Operaciones/(27256:27262): El codigo de operacion es: 6
-[INFO] 16:20:54:452 Operaciones/(27256:27262): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:21:13:458 Operaciones/(27256:27262): Recibimos la informacion de un carpincho
-[INFO] 16:21:13:458 Operaciones/(27256:27262): El codigo de operacion es: 1
-[INFO] 16:21:13:459 Operaciones/(27256:27262): Vamos a eliminar un carpincho
-[INFO] 16:21:13:459 Operaciones/(27256:27262): Sacamos al carpincho de ejecucion. Pid: 3
-[INFO] 16:21:13:461 Operaciones/(27256:27262): Le notificamos a memoria para que libere la memoria del carpincho: 3
-[INFO] 16:21:13:462 Operaciones/(27256:27262): Enviamos que queremos cerrar el carpincho
-[INFO] 16:40:38:843 Operaciones/(29156:29170): Recibimos la informacion de un carpincho
-[INFO] 16:40:38:844 Operaciones/(29156:29170): El codigo de operacion es: 0
-[INFO] 16:40:38:845 Operaciones/(29156:29170): Vamos a inicializar un carpincho
-[INFO] 16:40:38:846 Operaciones/(29156:29170): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 16:40:53:881 Operaciones/(29156:29163): Recibimos la informacion de un carpincho
-[INFO] 16:40:53:881 Operaciones/(29156:29163): El codigo de operacion es: 6
-[INFO] 16:40:53:882 Operaciones/(29156:29163): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:46:45:625 Operaciones/(29464:29526): Recibimos la informacion de un carpincho
-[INFO] 16:46:45:625 Operaciones/(29464:29526): El codigo de operacion es: 0
-[INFO] 16:46:45:626 Operaciones/(29464:29526): Vamos a inicializar un carpincho
-[INFO] 16:46:45:627 Operaciones/(29464:29526): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 16:47:00:725 Operaciones/(29464:29472): Recibimos la informacion de un carpincho
-[INFO] 16:47:00:726 Operaciones/(29464:29472): El codigo de operacion es: 6
-[INFO] 16:47:00:726 Operaciones/(29464:29472): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:47:19:739 Operaciones/(29464:29472): Recibimos la informacion de un carpincho
-[INFO] 16:47:19:739 Operaciones/(29464:29472): El codigo de operacion es: 6
-[INFO] 16:47:19:739 Operaciones/(29464:29472): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:47:38:745 Operaciones/(29464:29472): Recibimos la informacion de un carpincho
-[INFO] 16:47:38:745 Operaciones/(29464:29472): El codigo de operacion es: 6
-[INFO] 16:47:38:746 Operaciones/(29464:29472): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:47:57:751 Operaciones/(29464:29472): Recibimos la informacion de un carpincho
-[INFO] 16:47:57:751 Operaciones/(29464:29472): El codigo de operacion es: 1
-[INFO] 16:47:57:752 Operaciones/(29464:29472): Vamos a eliminar un carpincho
-[INFO] 16:47:57:753 Operaciones/(29464:29472): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 16:47:57:761 Operaciones/(29464:29472): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 16:47:57:761 Operaciones/(29464:29472): Enviamos que queremos cerrar el carpincho
-[INFO] 16:54:01:066 Operaciones/(29983:30004): Recibimos la informacion de un carpincho
-[INFO] 16:54:01:067 Operaciones/(29983:30004): El codigo de operacion es: 0
-[INFO] 16:54:01:067 Operaciones/(29983:30004): Vamos a inicializar un carpincho
-[INFO] 16:54:01:068 Operaciones/(29983:30004): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 16:54:16:113 Operaciones/(29983:29989): Recibimos la informacion de un carpincho
-[INFO] 16:54:16:114 Operaciones/(29983:29989): El codigo de operacion es: 6
-[INFO] 16:54:16:114 Operaciones/(29983:29989): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:54:35:127 Operaciones/(29983:29989): Recibimos la informacion de un carpincho
-[INFO] 16:54:35:128 Operaciones/(29983:29989): El codigo de operacion es: 6
-[INFO] 16:54:35:128 Operaciones/(29983:29989): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:54:54:134 Operaciones/(29983:29989): Recibimos la informacion de un carpincho
-[INFO] 16:54:54:134 Operaciones/(29983:29989): El codigo de operacion es: 6
-[INFO] 16:54:54:135 Operaciones/(29983:29989): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 16:55:13:141 Operaciones/(29983:29989): Recibimos la informacion de un carpincho
-[INFO] 16:55:13:141 Operaciones/(29983:29989): El codigo de operacion es: 1
-[INFO] 16:55:13:142 Operaciones/(29983:29989): Vamos a eliminar un carpincho
-[INFO] 16:55:13:143 Operaciones/(29983:29989): Sacamos al carpincho de ejecucion. Pid: 1
-[INFO] 16:55:13:147 Operaciones/(29983:29989): Le notificamos a memoria para que libere la memoria del carpincho: 1
-[INFO] 16:55:13:147 Operaciones/(29983:29989): Enviamos que queremos cerrar el carpincho
-[INFO] 16:59:14:189 Operaciones/(30349:30371): Recibimos la informacion de un carpincho
-[INFO] 16:59:14:190 Operaciones/(30349:30371): El codigo de operacion es: 0
-[INFO] 16:59:14:191 Operaciones/(30349:30371): Vamos a inicializar un carpincho
-[INFO] 16:59:14:191 Operaciones/(30349:30371): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 16:59:29:238 Operaciones/(30349:30359): Recibimos la informacion de un carpincho
-[INFO] 16:59:29:238 Operaciones/(30349:30359): El codigo de operacion es: 6
-[INFO] 16:59:29:239 Operaciones/(30349:30359): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:01:10:306 Operaciones/(30476:30513): Recibimos la informacion de un carpincho
-[INFO] 17:01:10:307 Operaciones/(30476:30513): El codigo de operacion es: 0
-[INFO] 17:01:10:307 Operaciones/(30476:30513): Vamos a inicializar un carpincho
-[INFO] 17:01:10:309 Operaciones/(30476:30513): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:01:25:417 Operaciones/(30476:30484): Recibimos la informacion de un carpincho
-[INFO] 17:01:25:417 Operaciones/(30476:30484): El codigo de operacion es: 6
-[INFO] 17:01:25:418 Operaciones/(30476:30484): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:01:44:429 Operaciones/(30476:30484): Recibimos la informacion de un carpincho
-[INFO] 17:01:44:430 Operaciones/(30476:30484): El codigo de operacion es: 6
-[INFO] 17:01:44:430 Operaciones/(30476:30484): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:02:03:435 Operaciones/(30476:30484): Recibimos la informacion de un carpincho
-[INFO] 17:02:03:435 Operaciones/(30476:30484): El codigo de operacion es: 6
-[INFO] 17:02:03:436 Operaciones/(30476:30484): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:02:22:442 Operaciones/(30476:30484): Recibimos la informacion de un carpincho
-[INFO] 17:02:22:442 Operaciones/(30476:30484): El codigo de operacion es: 1
-[INFO] 17:02:22:443 Operaciones/(30476:30484): Vamos a eliminar un carpincho
-[INFO] 17:02:22:444 Operaciones/(30476:30484): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 17:02:22:452 Operaciones/(30476:30484): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 17:02:22:455 Operaciones/(30476:30484): Enviamos que queremos cerrar el carpincho
-[INFO] 17:17:51:040 Operaciones/(31378:31390): Recibimos la informacion de un carpincho
-[INFO] 17:17:51:040 Operaciones/(31378:31390): El codigo de operacion es: 0
-[INFO] 17:17:51:041 Operaciones/(31378:31390): Vamos a inicializar un carpincho
-[INFO] 17:17:51:042 Operaciones/(31378:31390): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:18:06:079 Operaciones/(31378:31386): Recibimos la informacion de un carpincho
-[INFO] 17:18:06:080 Operaciones/(31378:31386): El codigo de operacion es: 6
-[INFO] 17:18:06:080 Operaciones/(31378:31386): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:18:25:098 Operaciones/(31378:31386): Recibimos la informacion de un carpincho
-[INFO] 17:18:25:098 Operaciones/(31378:31386): El codigo de operacion es: 6
-[INFO] 17:18:25:098 Operaciones/(31378:31386): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:18:44:107 Operaciones/(31378:31386): Recibimos la informacion de un carpincho
-[INFO] 17:18:44:107 Operaciones/(31378:31386): El codigo de operacion es: 6
-[INFO] 17:18:44:107 Operaciones/(31378:31386): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:20:38:215 Operaciones/(31844:31877): Recibimos la informacion de un carpincho
-[INFO] 17:20:38:216 Operaciones/(31844:31877): El codigo de operacion es: 0
-[INFO] 17:20:38:217 Operaciones/(31844:31877): Vamos a inicializar un carpincho
-[INFO] 17:20:38:218 Operaciones/(31844:31877): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:20:53:334 Operaciones/(31844:31851): Recibimos la informacion de un carpincho
-[INFO] 17:20:53:334 Operaciones/(31844:31851): El codigo de operacion es: 6
-[INFO] 17:20:53:335 Operaciones/(31844:31851): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:21:12:350 Operaciones/(31844:31851): Recibimos la informacion de un carpincho
-[INFO] 17:21:12:350 Operaciones/(31844:31851): El codigo de operacion es: 6
-[INFO] 17:21:12:350 Operaciones/(31844:31851): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:28:50:761 Operaciones/(32442:32544): Recibimos la informacion de un carpincho
-[INFO] 17:28:50:762 Operaciones/(32442:32544): El codigo de operacion es: 0
-[INFO] 17:28:50:763 Operaciones/(32442:32544): Vamos a inicializar un carpincho
-[INFO] 17:28:50:764 Operaciones/(32442:32544): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:29:05:869 Operaciones/(32442:32448): Recibimos la informacion de un carpincho
-[INFO] 17:29:05:869 Operaciones/(32442:32448): El codigo de operacion es: 6
-[INFO] 17:29:05:870 Operaciones/(32442:32448): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:29:24:883 Operaciones/(32442:32448): Recibimos la informacion de un carpincho
-[INFO] 17:29:24:884 Operaciones/(32442:32448): El codigo de operacion es: 6
-[INFO] 17:29:24:884 Operaciones/(32442:32448): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:29:43:890 Operaciones/(32442:32448): Recibimos la informacion de un carpincho
-[INFO] 17:29:43:891 Operaciones/(32442:32448): El codigo de operacion es: 6
-[INFO] 17:29:43:891 Operaciones/(32442:32448): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:33:29:956 Operaciones/(401:439): Recibimos la informacion de un carpincho
-[INFO] 17:33:29:957 Operaciones/(401:439): El codigo de operacion es: 0
-[INFO] 17:33:29:958 Operaciones/(401:439): Vamos a inicializar un carpincho
-[INFO] 17:33:29:958 Operaciones/(401:439): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:33:45:064 Operaciones/(401:407): Recibimos la informacion de un carpincho
-[INFO] 17:33:45:065 Operaciones/(401:407): El codigo de operacion es: 6
-[INFO] 17:33:45:065 Operaciones/(401:407): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:34:04:082 Operaciones/(401:407): Recibimos la informacion de un carpincho
-[INFO] 17:34:04:083 Operaciones/(401:407): El codigo de operacion es: 6
-[INFO] 17:34:04:083 Operaciones/(401:407): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:34:23:091 Operaciones/(401:407): Recibimos la informacion de un carpincho
-[INFO] 17:34:23:091 Operaciones/(401:407): El codigo de operacion es: 6
-[INFO] 17:34:23:091 Operaciones/(401:407): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:34:42:096 Operaciones/(401:407): Recibimos la informacion de un carpincho
-[INFO] 17:34:42:097 Operaciones/(401:407): El codigo de operacion es: 1
-[INFO] 17:34:42:097 Operaciones/(401:407): Vamos a eliminar un carpincho
-[INFO] 17:34:42:098 Operaciones/(401:407): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 17:34:42:106 Operaciones/(401:407): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 17:34:42:109 Operaciones/(401:407): Enviamos que queremos cerrar el carpincho
-[INFO] 17:35:32:970 Operaciones/(718:740): Recibimos la informacion de un carpincho
-[INFO] 17:35:32:971 Operaciones/(718:740): El codigo de operacion es: 0
-[INFO] 17:35:32:971 Operaciones/(718:740): Vamos a inicializar un carpincho
-[INFO] 17:35:32:972 Operaciones/(718:740): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:35:48:007 Operaciones/(718:728): Recibimos la informacion de un carpincho
-[INFO] 17:35:48:007 Operaciones/(718:728): El codigo de operacion es: 6
-[INFO] 17:35:48:008 Operaciones/(718:728): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:36:07:025 Operaciones/(718:728): Recibimos la informacion de un carpincho
-[INFO] 17:36:07:025 Operaciones/(718:728): El codigo de operacion es: 6
-[INFO] 17:36:07:026 Operaciones/(718:728): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:36:26:032 Operaciones/(718:728): Recibimos la informacion de un carpincho
-[INFO] 17:36:26:032 Operaciones/(718:728): El codigo de operacion es: 6
-[INFO] 17:36:26:033 Operaciones/(718:728): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:36:45:040 Operaciones/(718:728): Recibimos la informacion de un carpincho
-[INFO] 17:36:45:040 Operaciones/(718:728): El codigo de operacion es: 1
-[INFO] 17:36:45:040 Operaciones/(718:728): Vamos a eliminar un carpincho
-[INFO] 17:36:45:041 Operaciones/(718:728): Sacamos al carpincho de ejecucion. Pid: -1
-[ERROR] 17:36:45:042 Operaciones/(718:728): La conexion con la Memoria fallo
-[INFO] 17:36:45:042 Operaciones/(718:728): Le notificamos a memoria para que libere la memoria del carpincho: -1
-[INFO] 17:36:45:043 Operaciones/(718:728): Enviamos que queremos cerrar el carpincho
-[INFO] 17:45:34:068 Operaciones/(1865:1924): Recibimos la informacion de un carpincho
-[INFO] 17:45:34:068 Operaciones/(1865:1925): Recibimos la informacion de un carpincho
-[INFO] 17:45:34:069 Operaciones/(1865:1925): El codigo de operacion es: 0
-[INFO] 17:45:34:069 Operaciones/(1865:1924): El codigo de operacion es: 0
-[INFO] 17:45:34:070 Operaciones/(1865:1924): Vamos a inicializar un carpincho
-[INFO] 17:45:34:070 Operaciones/(1865:1925): Vamos a inicializar un carpincho
-[INFO] 17:45:34:071 Operaciones/(1865:1925): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:45:34:075 Operaciones/(1865:1924): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:45:37:182 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:45:37:182 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:45:37:183 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:45:41:197 Operaciones/(1865:1956): Recibimos la informacion de un carpincho
-[INFO] 17:45:41:197 Operaciones/(1865:1956): El codigo de operacion es: 0
-[INFO] 17:45:41:198 Operaciones/(1865:1956): Vamos a inicializar un carpincho
-[INFO] 17:45:41:198 Operaciones/(1865:1956): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:45:44:193 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:45:44:193 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:45:44:193 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:46:03:205 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:46:03:205 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:46:03:206 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:46:10:212 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:46:10:212 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:46:10:213 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:46:17:219 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:46:17:219 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:46:17:219 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:46:24:230 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:46:24:231 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:46:24:231 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:46:31:236 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:46:31:237 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:46:31:237 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:46:38:241 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:46:38:241 Operaciones/(1865:1871): El codigo de operacion es: 1
-[INFO] 17:46:38:242 Operaciones/(1865:1871): Vamos a eliminar un carpincho
-[INFO] 17:46:38:243 Operaciones/(1865:1871): Sacamos al carpincho de ejecucion. Pid: 1
-[INFO] 17:46:38:251 Operaciones/(1865:1871): Le notificamos a memoria para que libere la memoria del carpincho: 1
-[INFO] 17:46:38:254 Operaciones/(1865:1871): Enviamos que queremos cerrar el carpincho
-[INFO] 17:46:41:262 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:46:41:262 Operaciones/(1865:1871): El codigo de operacion es: 1
-[INFO] 17:46:41:262 Operaciones/(1865:1871): Vamos a eliminar un carpincho
-[INFO] 17:46:41:262 Operaciones/(1865:1871): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 17:46:41:264 Operaciones/(1865:1871): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 17:46:41:265 Operaciones/(1865:1871): Enviamos que queremos cerrar el carpincho
-[INFO] 17:46:56:272 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:46:56:272 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:46:56:272 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:47:15:282 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:47:15:282 Operaciones/(1865:1871): El codigo de operacion es: 6
-[INFO] 17:47:15:282 Operaciones/(1865:1871): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:47:34:291 Operaciones/(1865:1871): Recibimos la informacion de un carpincho
-[INFO] 17:47:34:291 Operaciones/(1865:1871): El codigo de operacion es: 1
-[INFO] 17:47:34:291 Operaciones/(1865:1871): Vamos a eliminar un carpincho
-[INFO] 17:47:34:292 Operaciones/(1865:1871): Sacamos al carpincho de ejecucion. Pid: 2
-[INFO] 17:47:34:294 Operaciones/(1865:1871): Le notificamos a memoria para que libere la memoria del carpincho: 2
-[INFO] 17:47:34:294 Operaciones/(1865:1871): Enviamos que queremos cerrar el carpincho
-[INFO] 17:58:06:163 Operaciones/(3454:3474): Recibimos la informacion de un carpincho
-[INFO] 17:58:06:163 Operaciones/(3454:3474): El codigo de operacion es: 0
-[INFO] 17:58:06:163 Operaciones/(3454:3475): Recibimos la informacion de un carpincho
-[INFO] 17:58:06:164 Operaciones/(3454:3475): El codigo de operacion es: 0
-[INFO] 17:58:06:164 Operaciones/(3454:3475): Vamos a inicializar un carpincho
-[INFO] 17:58:06:165 Operaciones/(3454:3474): Vamos a inicializar un carpincho
-[INFO] 17:58:06:166 Operaciones/(3454:3474): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:58:06:168 Operaciones/(3454:3475): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:58:06:284 Operaciones/(3454:3484): Recibimos la informacion de un carpincho
-[INFO] 17:58:06:284 Operaciones/(3454:3484): El codigo de operacion es: 0
-[INFO] 17:58:06:285 Operaciones/(3454:3484): Vamos a inicializar un carpincho
-[INFO] 17:58:06:285 Operaciones/(3454:3484): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
-[INFO] 17:58:09:281 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:58:09:282 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:58:09:282 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:58:16:294 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:58:16:294 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:58:16:295 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:58:35:302 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:58:35:303 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:58:35:303 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:58:42:309 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:58:42:309 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:58:42:309 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:58:49:313 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:58:49:314 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:58:49:314 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:58:56:318 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:58:56:318 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:58:56:318 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:59:03:323 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:59:03:323 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:59:03:323 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:59:22:329 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:59:22:329 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:59:22:330 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 17:59:29:334 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:59:29:335 Operaciones/(3454:3460): El codigo de operacion es: 1
-[INFO] 17:59:29:335 Operaciones/(3454:3460): Vamos a eliminar un carpincho
-[INFO] 17:59:29:336 Operaciones/(3454:3460): Sacamos al carpincho de ejecucion. Pid: 0
-[INFO] 17:59:29:343 Operaciones/(3454:3460): Le notificamos a memoria para que libere la memoria del carpincho: 0
-[INFO] 17:59:29:343 Operaciones/(3454:3460): Enviamos que queremos cerrar el carpincho
-[INFO] 17:59:32:373 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:59:32:373 Operaciones/(3454:3460): El codigo de operacion es: 1
-[INFO] 17:59:32:373 Operaciones/(3454:3460): Vamos a eliminar un carpincho
-[INFO] 17:59:32:373 Operaciones/(3454:3460): Sacamos al carpincho de ejecucion. Pid: 1
-[INFO] 17:59:32:375 Operaciones/(3454:3460): Le notificamos a memoria para que libere la memoria del carpincho: 1
-[INFO] 17:59:32:376 Operaciones/(3454:3460): Enviamos que queremos cerrar el carpincho
-[INFO] 17:59:47:386 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 17:59:47:387 Operaciones/(3454:3460): El codigo de operacion es: 6
-[INFO] 17:59:47:387 Operaciones/(3454:3460): Vamos a realizar una peticion a un dispositivo IO
-[INFO] 18:00:06:392 Operaciones/(3454:3460): Recibimos la informacion de un carpincho
-[INFO] 18:00:06:392 Operaciones/(3454:3460): El codigo de operacion es: 1
-[INFO] 18:00:06:393 Operaciones/(3454:3460): Vamos a eliminar un carpincho
-[INFO] 18:00:06:393 Operaciones/(3454:3460): Sacamos al carpincho de ejecucion. Pid: 2
-[INFO] 18:00:06:396 Operaciones/(3454:3460): Le notificamos a memoria para que libere la memoria del carpincho: 2
-[INFO] 18:00:06:397 Operaciones/(3454:3460): Enviamos que queremos cerrar el carpincho
+[INFO] 18:51:46:889 Operaciones/(7685:7698): Recibimos la informacion de un carpincho
+[INFO] 18:51:46:890 Operaciones/(7685:7698): El codigo de operacion es: 0
+[INFO] 18:51:46:891 Operaciones/(7685:7698): Vamos a inicializar un carpincho
+[INFO] 18:51:46:893 Operaciones/(7685:7698): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:51:47:002 Operaciones/(7685:7693): Recibimos la informacion de un carpincho
+[INFO] 18:51:47:003 Operaciones/(7685:7693): El codigo de operacion es: 6
+[INFO] 18:51:47:003 Operaciones/(7685:7693): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:51:47:890 Operaciones/(7685:7701): Recibimos la informacion de un carpincho
+[INFO] 18:51:47:890 Operaciones/(7685:7701): El codigo de operacion es: 0
+[INFO] 18:51:47:890 Operaciones/(7685:7701): Vamos a inicializar un carpincho
+[INFO] 18:51:47:890 Operaciones/(7685:7701): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:51:47:900 Operaciones/(7685:7694): Recibimos la informacion de un carpincho
+[INFO] 18:51:47:900 Operaciones/(7685:7694): El codigo de operacion es: 6
+[INFO] 18:51:47:901 Operaciones/(7685:7694): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:51:48:888 Operaciones/(7685:7704): Recibimos la informacion de un carpincho
+[INFO] 18:51:48:889 Operaciones/(7685:7704): El codigo de operacion es: 0
+[INFO] 18:51:48:889 Operaciones/(7685:7704): Vamos a inicializar un carpincho
+[INFO] 18:51:48:889 Operaciones/(7685:7704): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:51:48:896 Operaciones/(7685:7693): Recibimos la informacion de un carpincho
+[INFO] 18:51:48:897 Operaciones/(7685:7693): El codigo de operacion es: 6
+[INFO] 18:51:48:897 Operaciones/(7685:7693): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:51:49:889 Operaciones/(7685:7707): Recibimos la informacion de un carpincho
+[INFO] 18:51:49:889 Operaciones/(7685:7707): El codigo de operacion es: 0
+[INFO] 18:51:49:889 Operaciones/(7685:7707): Vamos a inicializar un carpincho
+[INFO] 18:51:49:889 Operaciones/(7685:7707): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:51:49:896 Operaciones/(7685:7694): Recibimos la informacion de un carpincho
+[INFO] 18:51:49:896 Operaciones/(7685:7694): El codigo de operacion es: 6
+[INFO] 18:51:49:896 Operaciones/(7685:7694): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:51:52:015 Operaciones/(7685:7693): Recibimos la informacion de un carpincho
+[INFO] 18:51:52:015 Operaciones/(7685:7693): El codigo de operacion es: 6
+[INFO] 18:51:52:015 Operaciones/(7685:7693): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:52:07:025 Operaciones/(7685:7694): Recibimos la informacion de un carpincho
+[INFO] 18:52:07:025 Operaciones/(7685:7694): El codigo de operacion es: 6
+[INFO] 18:52:07:025 Operaciones/(7685:7694): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:52:12:027 Operaciones/(7685:7693): Recibimos la informacion de un carpincho
+[INFO] 18:52:12:028 Operaciones/(7685:7693): El codigo de operacion es: 6
+[INFO] 18:52:12:028 Operaciones/(7685:7693): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:52:17:029 Operaciones/(7685:7694): Recibimos la informacion de un carpincho
+[INFO] 18:52:17:029 Operaciones/(7685:7694): El codigo de operacion es: 6
+[INFO] 18:52:17:029 Operaciones/(7685:7694): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:52:22:030 Operaciones/(7685:7693): Recibimos la informacion de un carpincho
+[INFO] 18:52:22:030 Operaciones/(7685:7693): El codigo de operacion es: 1
+[INFO] 18:52:22:031 Operaciones/(7685:7693): Vamos a eliminar un carpincho
+[INFO] 18:52:22:032 Operaciones/(7685:7693): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 18:52:22:039 Operaciones/(7685:7693): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 18:52:22:042 Operaciones/(7685:7693): Enviamos que queremos cerrar el carpincho
+[INFO] 18:52:22:070 Operaciones/(7685:7694): Recibimos la informacion de un carpincho
+[INFO] 18:52:22:071 Operaciones/(7685:7694): El codigo de operacion es: 6
+[INFO] 18:52:22:071 Operaciones/(7685:7694): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:52:27:033 Operaciones/(7685:7693): Recibimos la informacion de un carpincho
+[INFO] 18:52:27:033 Operaciones/(7685:7693): El codigo de operacion es: 1
+[INFO] 18:52:27:033 Operaciones/(7685:7693): Vamos a eliminar un carpincho
+[INFO] 18:52:27:033 Operaciones/(7685:7693): Sacamos al carpincho de ejecucion. Pid: 3
+[INFO] 18:52:27:037 Operaciones/(7685:7693): Le notificamos a memoria para que libere la memoria del carpincho: 3
+[INFO] 18:52:27:037 Operaciones/(7685:7693): Enviamos que queremos cerrar el carpincho
+[INFO] 18:52:27:041 Operaciones/(7685:7694): Recibimos la informacion de un carpincho
+[INFO] 18:52:27:043 Operaciones/(7685:7694): El codigo de operacion es: 6
+[INFO] 18:52:27:044 Operaciones/(7685:7694): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:52:32:036 Operaciones/(7685:7693): Recibimos la informacion de un carpincho
+[INFO] 18:52:32:036 Operaciones/(7685:7693): El codigo de operacion es: 6
+[INFO] 18:52:32:036 Operaciones/(7685:7693): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:52:37:038 Operaciones/(7685:7694): Recibimos la informacion de un carpincho
+[INFO] 18:52:37:038 Operaciones/(7685:7694): El codigo de operacion es: 6
+[INFO] 18:52:37:038 Operaciones/(7685:7694): Vamos a realizar una peticion a un dispositivo IO
+[INFO] 18:52:42:039 Operaciones/(7685:7693): Recibimos la informacion de un carpincho
+[INFO] 18:52:42:039 Operaciones/(7685:7693): El codigo de operacion es: 1
+[INFO] 18:52:42:039 Operaciones/(7685:7693): Vamos a eliminar un carpincho
+[INFO] 18:52:42:040 Operaciones/(7685:7693): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 18:52:42:043 Operaciones/(7685:7693): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 18:52:42:043 Operaciones/(7685:7693): Enviamos que queremos cerrar el carpincho

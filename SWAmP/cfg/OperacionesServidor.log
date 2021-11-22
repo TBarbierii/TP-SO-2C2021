@@ -10,3 +10,39 @@
 [INFO] 18:00:06:396 OperacionesServidor/(2914:2914): Recibimos la informacion de la RAM
 [INFO] 18:00:06:397 OperacionesServidor/(2914:2914): El codigo de operacion es: 18
 [INFO] 18:00:06:398 OperacionesServidor/(2914:2914): El proceso: 2, pide finalizar
+[INFO] 18:31:17:824 OperacionesServidor/(5929:5929): Recibimos la informacion de la RAM
+[INFO] 18:31:17:824 OperacionesServidor/(5929:5929): El codigo de operacion es: 13
+[INFO] 18:31:17:826 OperacionesServidor/(5929:5929): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:33:25:888 OperacionesServidor/(6098:6098): Recibimos la informacion de la RAM
+[INFO] 18:33:25:888 OperacionesServidor/(6098:6098): El codigo de operacion es: 13
+[INFO] 18:33:25:890 OperacionesServidor/(6098:6098): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:41:24:202 OperacionesServidor/(6730:6730): Recibimos la informacion de la RAM
+[INFO] 18:41:24:203 OperacionesServidor/(6730:6730): El codigo de operacion es: 13
+[INFO] 18:41:24:204 OperacionesServidor/(6730:6730): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:48:42:387 OperacionesServidor/(7552:7552): Recibimos la informacion de la RAM
+[INFO] 18:48:42:388 OperacionesServidor/(7552:7552): El codigo de operacion es: 13
+[INFO] 18:48:42:390 OperacionesServidor/(7552:7552): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:49:30:356 OperacionesServidor/(7552:7552): Recibimos la informacion de la RAM
+[INFO] 18:49:30:356 OperacionesServidor/(7552:7552): El codigo de operacion es: 18
+[INFO] 18:49:30:358 OperacionesServidor/(7552:7552): El proceso: 0, pide finalizar
+[INFO] 18:49:35:346 OperacionesServidor/(7552:7552): Recibimos la informacion de la RAM
+[INFO] 18:49:35:346 OperacionesServidor/(7552:7552): El codigo de operacion es: 18
+[INFO] 18:49:35:347 OperacionesServidor/(7552:7552): El proceso: 1, pide finalizar
+[INFO] 18:49:40:347 OperacionesServidor/(7552:7552): Recibimos la informacion de la RAM
+[INFO] 18:49:40:347 OperacionesServidor/(7552:7552): El codigo de operacion es: 18
+[INFO] 18:49:40:348 OperacionesServidor/(7552:7552): El proceso: 2, pide finalizar
+[INFO] 18:49:45:349 OperacionesServidor/(7552:7552): Recibimos la informacion de la RAM
+[INFO] 18:49:45:349 OperacionesServidor/(7552:7552): El codigo de operacion es: 18
+[INFO] 18:49:45:350 OperacionesServidor/(7552:7552): El proceso: 3, pide finalizar
+[INFO] 18:51:43:630 OperacionesServidor/(7674:7674): Recibimos la informacion de la RAM
+[INFO] 18:51:43:630 OperacionesServidor/(7674:7674): El codigo de operacion es: 13
+[INFO] 18:51:43:632 OperacionesServidor/(7674:7674): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:52:22:044 OperacionesServidor/(7674:7674): Recibimos la informacion de la RAM
+[INFO] 18:52:22:045 OperacionesServidor/(7674:7674): El codigo de operacion es: 18
+[INFO] 18:52:22:046 OperacionesServidor/(7674:7674): El proceso: 0, pide finalizar
+[INFO] 18:52:27:036 OperacionesServidor/(7674:7674): Recibimos la informacion de la RAM
+[INFO] 18:52:27:036 OperacionesServidor/(7674:7674): El codigo de operacion es: 18
+[INFO] 18:52:27:037 OperacionesServidor/(7674:7674): El proceso: 3, pide finalizar
+[INFO] 18:52:42:042 OperacionesServidor/(7674:7674): Recibimos la informacion de la RAM
+[INFO] 18:52:42:042 OperacionesServidor/(7674:7674): El codigo de operacion es: 18
+[INFO] 18:52:42:044 OperacionesServidor/(7674:7674): El proceso: 1, pide finalizar

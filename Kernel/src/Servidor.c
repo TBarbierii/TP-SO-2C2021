@@ -147,6 +147,8 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 	
 	sem_post(hayProcesosNew);
 	sem_post(procesoNecesitaEntrarEnReady);
+	//esto es un aviso para el planificador de mediano plazo de que hay un proceso nuevo y quiza deberia entrar si solo hay procesos de Bloqueados
+    sem_post(signalSuspensionProceso);
 
 	
 

@@ -221,7 +221,6 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             list_add(procesosBlocked,procesoAbloquear);
             //ponemos que lo ultimo que realizo fue un bloqueo a un semaforo
             procesoAbloquear->vuelveDeBloqueo = BLOCK_SEM;
-            sem_post(signalSuspensionProceso);
             pthread_mutex_unlock(modificarBlocked);
 
             log_destroy(logger);
@@ -299,6 +298,9 @@ void ponerEnElReadyIndicado(proceso_kernel* procesoBuscado){
             pthread_mutex_unlock(modificarSuspendedReady);
 
             sem_post(procesoNecesitaEntrarEnReady); //alertamos que hay un proceso que solicita entrar en ready
+            
+            //esto es un aviso para el planificador de mediano plazo de que hay un proceso nuevo y quiza deberia entrar si solo hay procesos de Bloqueados
+            sem_post(signalSuspensionProceso);
 
         }else{ //si esta solo bloqueado, se aagrega directo a ready y lo sacamos de blocked
 

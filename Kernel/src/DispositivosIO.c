@@ -118,8 +118,7 @@ void agregarProcesoADispositivo(proceso_kernel* proceso, dispositivoIO* device){
     pthread_mutex_lock(modificarBlocked);
         list_add(procesosBlocked,proceso);
     pthread_mutex_unlock(modificarBlocked);
-    //esto es un aviso para el planificador de mediano plazo
-    sem_post(signalSuspensionProceso);
+    
 
     log_info(loggerDevicesIO,"Agregamos al proceso en bloqueo y en el dispositivo: %s", device->nombre);
 
