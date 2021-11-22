@@ -48,3 +48,13 @@
 [INFO] 17:46:38:255 PlanificadorLargoPlazo/(1865:1871): Se nos va el carpincho: 1
 [INFO] 17:46:41:266 PlanificadorLargoPlazo/(1865:1871): Se nos va el carpincho: 0
 [INFO] 17:47:34:295 PlanificadorLargoPlazo/(1865:1871): Se nos va el carpincho: 2
+[DEBUG] 17:58:04:844 PlanificadorLargoPlazo/(3454:3458): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 17:58:06:170 PlanificadorLargoPlazo/(3454:3458): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 17:58:06:255 PlanificadorLargoPlazo/(3454:3458): Un nuevo carpincho se une a la cola de ready
+[INFO] 17:58:06:271 PlanificadorLargoPlazo/(3454:3458): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 17:58:06:284 PlanificadorLargoPlazo/(3454:3458): Un nuevo carpincho se une a la cola de ready
+[INFO] 17:58:06:286 PlanificadorLargoPlazo/(3454:3458): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 17:58:06:288 PlanificadorLargoPlazo/(3454:3458): Un nuevo carpincho se une a la cola de ready
+[INFO] 17:59:29:347 PlanificadorLargoPlazo/(3454:3460): Se nos va el carpincho: 0
+[INFO] 17:59:32:378 PlanificadorLargoPlazo/(3454:3460): Se nos va el carpincho: 1
+[INFO] 18:00:06:398 PlanificadorLargoPlazo/(3454:3460): Se nos va el carpincho: 2

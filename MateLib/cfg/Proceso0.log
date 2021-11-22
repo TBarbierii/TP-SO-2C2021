@@ -179,3 +179,17 @@
 [INFO] 17:46:41:265 loggerContenidoProceso/(1919:1921): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 17:46:41:265 loggerContenidoProceso/(1919:1921): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
 [INFO] 17:46:41:265 loggerContenidoProceso/(1919:1921): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 17:58:06:280 loggerContenidoProceso/(3468:3471): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 17:58:09:281 loggerContenidoProceso/(3468:3471): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 17:58:39:308 loggerContenidoProceso/(3468:3471): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 17:58:39:308 loggerContenidoProceso/(3468:3471): Se pudo realizar con exito la operacion IO
+[INFO] 17:58:42:308 loggerContenidoProceso/(3468:3471): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 17:58:53:317 loggerContenidoProceso/(3468:3471): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 17:58:53:317 loggerContenidoProceso/(3468:3471): Se pudo realizar con exito la operacion IO
+[INFO] 17:58:56:318 loggerContenidoProceso/(3468:3471): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 17:59:26:333 loggerContenidoProceso/(3468:3471): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 17:59:26:333 loggerContenidoProceso/(3468:3471): Se pudo realizar con exito la operacion IO
+[INFO] 17:59:29:334 loggerContenidoProceso/(3468:3471): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 17:59:29:344 loggerContenidoProceso/(3468:3471): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 17:59:29:344 loggerContenidoProceso/(3468:3471): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 17:59:29:344 loggerContenidoProceso/(3468:3471): Se liberan todas las estructuras del proceso de PID:0

@@ -1,0 +1,12 @@
+[INFO] 17:57:35:214 OperacionesServidor/(2914:2914): Recibimos la informacion de la RAM
+[INFO] 17:57:35:215 OperacionesServidor/(2914:2914): El codigo de operacion es: 13
+[INFO] 17:57:35:217 OperacionesServidor/(2914:2914): Tipo de asignacion a utilizar: FIJA.
+[INFO] 17:59:29:349 OperacionesServidor/(2914:2914): Recibimos la informacion de la RAM
+[INFO] 17:59:29:349 OperacionesServidor/(2914:2914): El codigo de operacion es: 18
+[INFO] 17:59:29:350 OperacionesServidor/(2914:2914): El proceso: 0, pide finalizar
+[INFO] 17:59:32:376 OperacionesServidor/(2914:2914): Recibimos la informacion de la RAM
+[INFO] 17:59:32:376 OperacionesServidor/(2914:2914): El codigo de operacion es: 18
+[INFO] 17:59:32:377 OperacionesServidor/(2914:2914): El proceso: 1, pide finalizar
+[INFO] 18:00:06:396 OperacionesServidor/(2914:2914): Recibimos la informacion de la RAM
+[INFO] 18:00:06:397 OperacionesServidor/(2914:2914): El codigo de operacion es: 18
+[INFO] 18:00:06:398 OperacionesServidor/(2914:2914): El proceso: 2, pide finalizar

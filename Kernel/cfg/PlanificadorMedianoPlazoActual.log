@@ -126,3 +126,30 @@
 [INFO] 17:47:00:273 PlanificadorMedianoPlazo/(1865:1874): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
 [INFO] 17:47:15:283 PlanificadorMedianoPlazo/(1865:1874): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
 [INFO] 17:47:19:284 PlanificadorMedianoPlazo/(1865:1874): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[DEBUG] 17:58:04:862 PlanificadorMedianoPlazo/(3454:3461): Se inicializa la planificacion de mediano plazo
+[DEBUG] 17:58:04:866 PlanificadorMedianoPlazo/(3454:3465): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 17:58:04:866 PlanificadorMedianoPlazo/(3454:3464): Incializado el thread que permite suspender procesos para evitar IO bound
+[INFO] 17:58:06:169 PlanificadorMedianoPlazo/(3454:3465): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 17:58:06:169 PlanificadorMedianoPlazo/(3454:3465): No hay procesos en Suspended Ready, agregamos uno de NEW en Ready
+[INFO] 17:58:06:184 PlanificadorMedianoPlazo/(3454:3465): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 17:58:06:184 PlanificadorMedianoPlazo/(3454:3465): No hay procesos en Suspended Ready, agregamos uno de NEW en Ready
+[INFO] 17:58:06:285 PlanificadorMedianoPlazo/(3454:3465): Hay un proceso que esta queriendo entrar en Ready, analizamos si es un proceso que quiere entrar desde NEW o Suspended Ready
+[INFO] 17:58:06:285 PlanificadorMedianoPlazo/(3454:3465): No hay procesos en Suspended Ready, agregamos uno de NEW en Ready
+[INFO] 17:58:09:287 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:58:13:289 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 17:58:16:295 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:58:20:296 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 17:58:35:304 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:58:39:305 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 17:58:42:310 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:58:46:310 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 17:58:49:315 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:58:53:315 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 17:58:56:319 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:59:00:319 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 17:59:03:324 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:59:07:324 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 17:59:22:330 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:59:26:331 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba
+[INFO] 17:59:47:387 PlanificadorMedianoPlazo/(3454:3464): Se bloqueo un proceso, analizamos si solo hay procesos IO bound
+[INFO] 17:59:51:388 PlanificadorMedianoPlazo/(3454:3464): No hay solo procesos IO bound, por lo tanto se sigue todo como estaba

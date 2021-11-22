@@ -111,7 +111,7 @@ void atender_solicitudes_memoria(uint32_t conexion){
 }
 
 void* atender_respuestas_swap(uint32_t conexion){
-	
+	t_log* logger =  log_create("cfg/Servidor.log","RespuestasDeSWAP",1,LOG_LEVEL_DEBUG);
 	uint32_t cod_op = recibir_operacion(conexion);
 
 	switch(cod_op)
@@ -135,6 +135,7 @@ void* atender_respuestas_swap(uint32_t conexion){
 		log_warning(logger, "Entro al default");
 		break;
 	}
+	log_destroy(logger);
 
 }
 

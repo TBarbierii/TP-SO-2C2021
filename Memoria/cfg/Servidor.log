@@ -1,0 +1,15 @@
+[INFO] 17:58:06:205 Servidor/(3388:3477): Agregamos nuevo carpincho a memoria, y su pid es: 0
+[INFO] 17:58:06:252 Servidor/(3388:3477): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 0
+[INFO] 17:58:06:279 Servidor/(3388:3481): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 17:58:06:283 Servidor/(3388:3481): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 17:58:06:287 Servidor/(3388:3485): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 17:58:06:288 Servidor/(3388:3485): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 17:59:29:340 Servidor/(3388:3477): Sacamos al carpincho. Pid: 0
+[INFO] 17:59:29:342 Servidor/(3388:3477): Enviamos que queremos cerrar el carpincho
+[INFO] 17:59:29:349 Servidor/(3388:3477): Se nos va el carpincho: 0
+[INFO] 17:59:32:374 Servidor/(3388:3481): Sacamos al carpincho. Pid: 1
+[INFO] 17:59:32:375 Servidor/(3388:3481): Enviamos que queremos cerrar el carpincho
+[INFO] 17:59:32:376 Servidor/(3388:3481): Se nos va el carpincho: 1
+[INFO] 18:00:06:394 Servidor/(3388:3485): Sacamos al carpincho. Pid: 2
+[INFO] 18:00:06:394 Servidor/(3388:3485): Enviamos que queremos cerrar el carpincho
+[INFO] 18:00:06:396 Servidor/(3388:3485): Se nos va el carpincho: 2

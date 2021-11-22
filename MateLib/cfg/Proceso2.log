@@ -56,3 +56,17 @@
 [INFO] 17:47:34:294 loggerContenidoProceso/(1919:1923): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 17:47:34:294 loggerContenidoProceso/(1919:1923): Se pudo cerrar el proceso de PID:2 correctamente en el BackEnd
 [INFO] 17:47:34:294 loggerContenidoProceso/(1919:1923): Se liberan todas las estructuras del proceso de PID:2
+[INFO] 17:58:20:299 loggerContenidoProceso/(3468:3472): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 17:58:35:302 loggerContenidoProceso/(3468:3472): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 17:59:07:326 loggerContenidoProceso/(3468:3472): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 17:59:07:326 loggerContenidoProceso/(3468:3472): Se pudo realizar con exito la operacion IO
+[INFO] 17:59:22:329 loggerContenidoProceso/(3468:3472): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 17:59:32:380 loggerContenidoProceso/(3468:3472): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 17:59:32:380 loggerContenidoProceso/(3468:3472): Se pudo realizar con exito la operacion IO
+[INFO] 17:59:47:386 loggerContenidoProceso/(3468:3472): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 17:59:51:390 loggerContenidoProceso/(3468:3472): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 17:59:51:390 loggerContenidoProceso/(3468:3472): Se pudo realizar con exito la operacion IO
+[INFO] 18:00:06:392 loggerContenidoProceso/(3468:3472): Se ha solicitado cerrar el carpincho de pid:2 , este es un hasta adios
+[INFO] 18:00:06:397 loggerContenidoProceso/(3468:3472): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 18:00:06:397 loggerContenidoProceso/(3468:3472): Se pudo cerrar el proceso de PID:2 correctamente en el BackEnd
+[INFO] 18:00:06:397 loggerContenidoProceso/(3468:3472): Se liberan todas las estructuras del proceso de PID:2
