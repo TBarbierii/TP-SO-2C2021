@@ -1,26 +1,141 @@
 #include "matelib.h"
 
+uint32_t iniciar_servidor(char* ip_servidor, char* puerto)
+{
+	int socket_servidor;
+
+	struct addrinfo hints, *servinfo;
+
+	memset(&hints, 0, sizeof(hints));
+	hints.ai_family = AF_INET;
+	hints.ai_socktype = SOCK_STREAM;
+	hints.ai_flags = AI_PASSIVE;
+
+
+    getaddrinfo(ip_servidor, puerto, &hints, &servinfo);
+
+    socket_servidor = socket(servinfo->ai_family, 
+                         servinfo->ai_socktype, 
+                         servinfo->ai_protocol);
+
+	bind(socket_servidor, servinfo->ai_addr, servinfo->ai_addrlen);
+	listen(socket_servidor, SOMAXCONN);
+
+    freeaddrinfo(servinfo);
+
+    return socket_servidor;
+}
+
+
+
+
+
+int esperar_cliente(int socket_servidor)
+{
+	
+	int socket_cliente = accept(socket_servidor, NULL, NULL);
+
+	return socket_cliente;
+}
+
+//atender solicitudes deberia estar en cada modulo
+
+int crear_conexion(char *ip, char* puerto)
+{
+	struct addrinfo hints;
+	struct addrinfo *server_info;
+
+	memset(&hints, 0, sizeof(hints));
+	hints.ai_family = AF_UNSPEC;
+	hints.ai_socktype = SOCK_STREAM;
+
+	getaddrinfo(ip, puerto, &hints, &server_info);
+
+	int socket_cliente = socket(server_info->ai_family,
+								server_info->ai_socktype,
+								server_info->ai_protocol);
+
+    if(socket_cliente==-1){
+        perror("No se pudo crear la conexion");
+        return -1;
+    }
+
+	int conexion = connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen);
+	freeaddrinfo(server_info);
+	if(conexion == -1){
+		return conexion;
+	}
+	return socket_cliente;
+}
+
+
+
+void* serializar_paquete(t_paquete* paquete, int bytes)
+{	
+	void * contenido_serializado = malloc(bytes);
+	
+	int desplazamiento = 0;
+	
+	memcpy(contenido_serializado + desplazamiento, &(paquete->codigo_operacion), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
+	
+	memcpy(contenido_serializado + desplazamiento, &(paquete->buffer->size), sizeof(uint32_t));
+	desplazamiento+= sizeof(uint32_t);
+	
+	memcpy(contenido_serializado + desplazamiento, paquete->buffer->stream, paquete->buffer->size);
+	desplazamiento+= paquete->buffer->size;
+
+	return contenido_serializado;
+}
+
+
+void crear_buffer(t_paquete* paquete)
+{
+	paquete->buffer = malloc(sizeof(t_buffer));
+	paquete->buffer->size = 0;
+	paquete->buffer->stream = NULL;
+}
+
+
+t_paquete* crear_paquete(cod_operacion codigo)
+{
+	t_paquete* paquete = malloc(sizeof(t_paquete));
+	paquete->codigo_operacion = codigo;
+	crear_buffer(paquete);
+	return paquete;
+}
+
+
+void enviarPaquete(t_paquete* paquete, int conexion){
+
+    int bytes = paquete->buffer->size + sizeof(cod_operacion) + sizeof(uint32_t);
+    void* contenido_a_enviar= serializar_paquete(paquete, bytes);
+    send(conexion, contenido_a_enviar,bytes,0);
+    free(contenido_a_enviar);
+	free(paquete->buffer->stream);
+	free(paquete->buffer);
+	free(paquete);
+
+}
 
 
 //------------------General Functions---------------------/
 int mate_init(mate_instance *lib_ref, char *config){
-
-    int conexion = inicializarPrimerasCosas(lib_ref,config);
+    // en conexion se guarda el socket del proceso
+    int conexion = iniciarConexion(lib_ref,config);
     
 
     if(conexion == -1){
-        lib_ref->group_info->backEndConectado = ERROR;
         lib_ref->group_info->conexionConBackEnd = conexion;
         lib_ref->group_info->pid= -1;
         
 
-        lib_ref->group_info->loggerProceso = log_create("cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
-        log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
+        lib_ref->group_info->loggerProceso = log_create("../MateLib/cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
+        log_warning(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, pero no se ha logrado conectar correctamente al backend");
         
-        return lib_ref->group_info->backEndConectado;
+        return -1;
 
     }else{
-        lib_ref->group_info->backEndConectado = OK;
         solicitarIniciarCarpincho(conexion, lib_ref);
         return recibir_mensaje(conexion, lib_ref);
     }
@@ -42,7 +157,6 @@ int mate_close(mate_instance *lib_ref){
             
             log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
             log_destroy(lib_ref->group_info->loggerProceso);
-            config_destroy(lib_ref->group_info->config);
             free(lib_ref->group_info);
         }
         
@@ -196,7 +310,7 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void **info, int s
         realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
         *info = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
         if(*info != NULL){
-            log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)*info);
+            //log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)*info);
             return 0;
         }
         else{
@@ -232,7 +346,7 @@ int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int s
 
 //--------- Funciones extras---------//
 
-int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
+int iniciarConexion(mate_instance *lib_ref, char *config){
 
     lib_ref->group_info = malloc(sizeof(mate_struct));
 
@@ -240,14 +354,13 @@ int inicializarPrimerasCosas(mate_instance *lib_ref, char *config){
     char* ipBackEnd = config_get_string_value(datosBackEnd,"IP_BACKEND");
     char* puertoBackEnd = config_get_string_value(datosBackEnd,"PUERTO_BACKEND");
     int conexionConBackEnd = crear_conexion(ipBackEnd, puertoBackEnd);
-    
-    lib_ref->group_info->config = datosBackEnd;
-    
+
+    config_destroy(datosBackEnd);
 
     return conexionConBackEnd;
 }
 
-
+/* Esta funcion obtiene todos los mensajes del Kernel/Memoria */
 void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
@@ -344,28 +457,30 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
 	memcpy(&(lib_ref->group_info->pid), stream+offset, sizeof(uint32_t));
 	
     if(lib_ref->group_info->pid < 0 ){
-            perror("No se pudo crear la instancia :(");
-            return -1;
-    }else{
+        perror("No se pudo crear la instancia :(");
+            
+    }
 
     lib_ref->group_info->conexionConBackEnd = conexion;
         
         
     char* nombreLog = string_new();
-    string_append(&nombreLog, "cfg/Proceso");
+    string_append(&nombreLog, "../MateLib/cfg/Proceso");
     char* pidCarpincho = string_itoa((int) lib_ref->group_info->pid);
     string_append(&nombreLog, pidCarpincho);
     string_append(&nombreLog, ".log");
 
     lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
     
-    log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend:%d ",lib_ref->group_info->backEndConectado);
+    log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho, y se ha logrado conectar correctamente al backend");
 
     free(pidCarpincho);
     free(nombreLog);
 
     return 0;
-    }
+    
+
+    
 
 }
 
@@ -388,7 +503,6 @@ int liberarEstructurasDeProceso(t_buffer* buffer, mate_instance* lib_ref){
 
     log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
     log_destroy(lib_ref->group_info->loggerProceso);
-    config_destroy(lib_ref->group_info->config);
     close(lib_ref->group_info->conexionConBackEnd);
     free(lib_ref->group_info);
 
@@ -560,7 +674,7 @@ int notificacionMemWrite(t_buffer* buffer, t_log* logger){
 /* ------- Solicitudes  --------------------- */
 
 
-/* estructuracion */
+/* Estructura del Carpincho */
 void solicitarIniciarCarpincho(int conexion, mate_instance* lib_ref){
     
     t_paquete* paquete = crear_paquete(INICIALIZAR_ESTRUCTURA);
@@ -762,106 +876,3 @@ void realizarMemWrite(int conexion, uint32_t pid, void *origin, mate_pointer des
 
 
 }
-
-
-/*VALIDACIONES PARA REALIZAR TAREAS */
-
-int validarConexionPosible(int tipoSolicitado, int tipoActual){
-
-    
-    return tipoSolicitado == OK;
-
-}
-
-
-void hilo1(){
-    mate_instance* referencia = malloc(sizeof(mate_instance));
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    mate_sem_init(referencia,"SEM1",2);
-    mate_sem_init(referencia,"SEM2",2);
-    mate_sem_wait(referencia,"SEM1");
-    mate_sem_wait(referencia,"SEM2");
-    sleep(60);
-    mate_sem_post(referencia,"SEM1");
-    mate_sem_post(referencia,"SEM2");
-    mate_close(referencia);
-    free(referencia);
-}
-
-void hilo2(){
-    //sleep(7);
-    mate_instance* referencia = malloc(sizeof(mate_instance));
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    
-    mate_sem_init(referencia,"SEM1",1);
-    mate_sem_init(referencia,"SEM2",1);
-    
-    mate_sem_wait(referencia,"SEM1");
-    
-    sleep(10);
-    //sleep(3);
-
-    mate_sem_wait(referencia,"SEM2");
-    mate_close(referencia);
-    free(referencia);
-}
-
-void hilo3(){
-    sleep(7);
-    mate_instance* referencia = malloc(sizeof(mate_instance));
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    mate_sem_wait(referencia,"SEM2");
-    //sleep(3);
-    mate_sem_wait(referencia,"SEM1");
-    mate_close(referencia);
-    free(referencia);
-}
-
-int main(){
-
-    mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
-
-    mate_init(referencia, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/configProcesos.config");
-    
-    //mate_sem_init(referencia,"SEM1",1);
-    //mate_sem_post(referencia,"SEM1");
-    //mate_sem_wait(referencia,"SEM1");
-    //mate_sem_wait(referencia,"SEM1");
-    //mate_call_io(referencia,"laguna","asd");
-    mate_pointer mate = mate_memalloc(referencia, 45);
-    //mate_memfree(referencia, mate);
-    //mate_close(referencia);
-    //free(referencia);
-    
-    void* lectura;// = malloc(45);
-    printf("\nDireccion %i\n", mate);
-
-    if(mate != 0){
-
-    mate_memwrite(referencia, "----------------------------------------1-45", mate, 45);
-    mate_memread(referencia, mate, &lectura,45);
-    log_info(referencia->group_info->loggerProceso, "\n LLego: %s", (char*)lectura);
-    }
-    if(lectura != NULL){
-        free(lectura);
-    }
-    mate_close(referencia);
-    free(referencia);
-    
-    //pthread_t h1, h2, h3;
-
-    //pthread_create(&h1, NULL, (void*)hilo1,NULL);  
-    //pthread_create(&h2, NULL, (void*)hilo2,NULL);
-    //pthread_create(&h3, NULL, (void*)hilo3,NULL);  
-
-    //pthread_join(h1, NULL);
-    //pthread_join(h2, NULL);
-    //pthread_join(h3, NULL);
-
-    
-    return 0;
-}
-
-
-
-

@@ -174,6 +174,8 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 		carpincho->conexion = conexion;
 		log_info(logger,"Agregamos nuevo carpincho a memoria, y su pid es: %d",carpincho->id_carpincho);
 
+		reservarMarcos(carpincho->id_carpincho);
+
 		pthread_mutex_lock(listaCarpinchos);
 		list_add(carpinchos, carpincho);
 		pthread_mutex_unlock(listaCarpinchos);

@@ -3,7 +3,6 @@
 
 uint32_t administrar_allocs(t_memalloc* alloc){ 
 
-
     bool buscarCarpincho(t_carpincho* c){
 		return c->id_carpincho == alloc->pid;
 	};
@@ -11,11 +10,15 @@ uint32_t administrar_allocs(t_memalloc* alloc){
     pthread_mutex_lock(listaCarpinchos);
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
     pthread_mutex_unlock(listaCarpinchos);
-    t_list* marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
+    
+    bool contarMarcos(t_marco* marco){
+        return marco->proceso_asignado == alloc->pid;
+    };
+  
+    pthread_mutex_lock(marcos_sem);
+    t_list* marcos_a_asignar = list_filter(marcos, (void*)contarMarcos);
+    pthread_mutex_unlock(marcos_sem); 
 
-    if (carpincho == NULL){
-        
-    }
     uint32_t tamanioAreservar = alloc->tamanio;
     free(alloc);
     uint32_t direccionLogica = administrar_paginas(carpincho, tamanioAreservar, marcos_a_asignar);

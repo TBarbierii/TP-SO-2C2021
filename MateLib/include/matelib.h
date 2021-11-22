@@ -7,23 +7,62 @@
 #include <string.h>
 #include <stdlib.h>
 #include <commons/log.h>
-#include "shared_utils.h"
 #include <commons/config.h>
 #include <commons/string.h>
+#include <commons/collections/list.h>
 #include <sys/socket.h>
 #include <unistd.h>
 #include <pthread.h>
+#include <netdb.h>
 
 
+typedef enum{
+	INICIALIZAR_ESTRUCTURA,
+	CERRAR_INSTANCIA,
+	INICIAR_SEMAFORO,
+	SEM_WAIT,
+	SEM_SIGNAL,
+	CERRAR_SEMAFORO,
+	CONECTAR_IO,
+	MEMALLOC,
+	MEMFREE,
+	MEMREAD,
+	MEMWRITE,
+	ESCRITURA_PAGINA,
+	LECTURA_PAGINA,
+	TIPOASIGNACION,
+	SEM_WAIT_NOBLOQUEANTE,
+	SUSPENSION_PROCESO, //este codigo va a ser por el cual desde el kernel le vamos a avisar que un proceso se suspende y vamos a solicitar suspender todas sus paginas
+	CONSULTAR_ESPACIO,
+	FALLO_IO,
+	FINALIZAR_PROCESO
+}cod_operacion;
 
+typedef struct buffer
+{
+	uint32_t size;
+	void* stream;
+} t_buffer;
 
+typedef struct paquete
+{
+	cod_operacion codigo_operacion;
+	t_buffer* buffer;
+} t_paquete;
+
+uint32_t iniciar_servidor(char* ip_servidor, char* puerto);
+int esperar_cliente(int socket_servidor);
+int crear_conexion(char *ip, char* puerto);
+void* serializar_paquete(t_paquete* paquete, int bytes);
+void crear_buffer(t_paquete* paquete);
+t_paquete* crear_paquete(cod_operacion codigo);
+void enviarPaquete(t_paquete* paquete, int conexion);
 
 typedef struct
 {
     uint32_t pid; // identificador de cada proceso que se vaya a instanciar.
     
     int conexionConBackEnd; // se obtiene informacion del backend (memoria o kernel) - guarda el socket al servidor que se esta conectando.
-    backend backEndConectado; // id de backend al que nos estamos conectando. En caso de que sea -1 error.
     t_log* loggerProceso; // el log nos va a dar la referencia a la hora de planificar al proceso.
     t_config* config;
 }mate_struct;
@@ -77,13 +116,9 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void **dest, int s
 
 int mate_memwrite(mate_instance *lib_ref, void *origin, mate_pointer dest, int size);
 
-
-
-
-
 /*------ Funciones extras --------*/
 
-int inicializarPrimerasCosas(mate_instance *lib_ref, char *config);
+int iniciarConexion(mate_instance *lib_ref, char *config);
 
 void* recibir_mensaje(int conexion, mate_instance* lib_ref);
 
