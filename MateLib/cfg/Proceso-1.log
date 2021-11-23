@@ -8,3 +8,26 @@
 [INFO] 12:07:47:088 loggerContenidoProceso/(8148:8148): Solicitamos realizar un memRead 0
 [INFO] 12:07:47:088 loggerContenidoProceso/(8148:8148): Aca llega del memRead
 [INFO] 12:07:47:094 loggerContenidoProceso/(8148:8148): Habiamos solicitado hacer un memread
+[INFO] 18:11:09:784 loggerContenidoProceso/(14206:14206): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 18:11:09:789 loggerContenidoProceso/(14206:14206): Solicitamos realizar un memalloc de size:14
+[ERROR] 18:11:09:791 loggerContenidoProceso/(14206:14206): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 18:11:09:791 loggerContenidoProceso/(14206:14206): Solicitamos realizar un memWrite de 0 y tamanio:14
+[ERROR] 18:11:09:792 loggerContenidoProceso/(14206:14206): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 18:11:09:792 loggerContenidoProceso/(14206:14206): Solicitamos realizar un memRead 0
+[ERROR] 18:11:09:793 loggerContenidoProceso/(14206:14206): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 18:11:09:794 loggerContenidoProceso/(14206:14206): Solicitamos hacer un signal sobre el semaforo: SEM_HELLO
+[ERROR] 18:11:09:796 loggerContenidoProceso/(14206:14206): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 18:11:09:796 loggerContenidoProceso/(14206:14206): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 18:11:09:796 loggerContenidoProceso/(14206:14206): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 18:11:09:796 loggerContenidoProceso/(14206:14206): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 18:13:03:184 loggerContenidoProceso/(14289:14289): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 18:13:03:187 loggerContenidoProceso/(14289:14289): Solicitamos realizar un memalloc de size:20
+[ERROR] 18:13:03:189 loggerContenidoProceso/(14289:14289): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 18:13:03:190 loggerContenidoProceso/(14289:14289): Solicitamos realizar un memWrite de 0 y tamanio:20
+[ERROR] 18:13:03:190 loggerContenidoProceso/(14289:14289): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 18:13:03:190 loggerContenidoProceso/(14289:14289): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
+[ERROR] 18:13:03:191 loggerContenidoProceso/(14289:14289): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 18:13:03:192 loggerContenidoProceso/(14289:14289): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
+[ERROR] 18:13:03:193 loggerContenidoProceso/(14289:14289): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 18:13:03:194 loggerContenidoProceso/(14289:14289): Solicitamos realizar un memRead 0
+[ERROR] 18:13:03:194 loggerContenidoProceso/(14289:14289): No se puede ejecutar esta accion porque no esta conectado al servidor
