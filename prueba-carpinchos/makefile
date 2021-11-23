@@ -31,7 +31,7 @@ build/%: %.c
 
 run: compile
 
-	LD_LIBRARY_PATH="../MateLib/src/" ./build/PruebaBase_Carpincho1 $(CONFIG)
+	LD_LIBRARY_PATH="../MateLib/src/" ./build/PruebaBase_Carpincho2 $(CONFIG)
 
 # clean --> Limpia todos los carpinchos
 clean:

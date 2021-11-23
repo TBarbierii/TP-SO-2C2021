@@ -131,3 +131,13 @@ J
 [INFO] 13:40:00:714 loggerContenidoProceso/(17356:17356): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 13:40:00:714 loggerContenidoProceso/(17356:17356): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
 [INFO] 13:40:00:714 loggerContenidoProceso/(17356:17356): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 18:26:04:311 loggerContenidoProceso/(15426:15426): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 18:26:04:318 loggerContenidoProceso/(15426:15426): Solicitamos realizar un memalloc de size:14
+[INFO] 18:26:04:357 loggerContenidoProceso/(15426:15426): Habiamos solicitado hacer un memalloc
+[INFO] 18:26:04:357 loggerContenidoProceso/(15426:15426): Se pudo realizar el memalloc
+[INFO] 18:26:04:357 loggerContenidoProceso/(15426:15426): Solicitamos realizar un memWrite de 3009 y tamanio:14
+[INFO] 18:26:04:491 loggerContenidoProceso/(15426:15426): Habiamos solicitado hacer un memwrite
+[INFO] 18:26:04:492 loggerContenidoProceso/(15426:15426): Se pudo hacer el memwrite solicitado
+[INFO] 18:26:04:492 loggerContenidoProceso/(15426:15426): Solicitamos realizar un memRead 3009
+[INFO] 18:26:04:595 loggerContenidoProceso/(15426:15426): Habiamos solicitado hacer un memread
+[INFO] 18:26:04:595 loggerContenidoProceso/(15426:15426): El tamanio de lo que vamos a leer es de:14 bytes
