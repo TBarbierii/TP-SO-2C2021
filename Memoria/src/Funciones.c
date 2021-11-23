@@ -10,14 +10,12 @@ uint32_t administrar_allocs(t_memalloc* alloc){
     pthread_mutex_lock(listaCarpinchos);
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
     pthread_mutex_unlock(listaCarpinchos);
+
+
+
+    t_list* marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
     
-    bool contarMarcos(t_marco* marco){
-        return marco->proceso_asignado == alloc->pid;
-    };
-  
-    pthread_mutex_lock(marcos_sem);
-    t_list* marcos_a_asignar = list_filter(marcos, (void*)contarMarcos);
-    pthread_mutex_unlock(marcos_sem); 
+
 
     uint32_t tamanioAreservar = alloc->tamanio;
     free(alloc);
@@ -67,7 +65,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         void* buffer_allocs = generar_buffer_allocs(tamanio, next_alloc,cantidadDePaginasACrear, PRIMERA_VEZ, 0);
 
-        escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar);// que pasa aca en el caso de que los marcos por proceso sea menor a las paginas creadas?
+        escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar, carpincho);// que pasa aca en el caso de que los marcos por proceso sea menor a las paginas creadas?
 
         free (buffer_allocs);
 
@@ -628,4 +626,39 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
     }
      
  
+}
+
+uint32_t suspender_proceso(uint32_t pid){
+
+    bool buscarCarp(t_carpincho* carp){
+        return carp->id_carpincho == pid;
+    };
+    pthread_mutex_lock(listaCarpinchos);
+    t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarp);
+    pthread_mutex_unlock(listaCarpinchos);
+
+    bool paginasPresentes(t_pagina* pag){
+	return pag->presente;
+	};
+		
+	t_list* paginas_que_se_van = list_filter(carpincho->tabla_de_paginas, (void*)paginasPresentes);
+
+    void volarPaginas(t_pagina* pagina){
+
+        void* contenido = malloc(tamanioPagina);
+        
+		pthread_mutex_lock(memoria);
+		memcpy(contenido, memoriaPrincipal + pagina->marco->comienzo, tamanioPagina);
+		pthread_mutex_unlock(memoria);
+
+		enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, contenido);
+
+        pagina->marco->estaLibre = true;
+        pagina->marco->proceso_asignado = -1;
+
+    }
+   
+   list_iterate(paginas_que_se_van, (void*)volarPaginas);
+
+   
 }

@@ -1,6 +1,0 @@
-[INFO] 18:52:35:571 Deadlock/(7685:7692): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
-[INFO] 18:52:35:573 Deadlock/(7685:7692): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
-[INFO] 18:52:35:574 Deadlock/(7685:7692): La cantidad de procesos en posible deadlock son: 0
-
-[INFO] 18:52:35:575 Deadlock/(7685:7692): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
-

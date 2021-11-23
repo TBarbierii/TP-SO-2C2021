@@ -75,6 +75,9 @@ void atender_solicitudes_memoria(uint32_t conexion){
 			case MEMWRITE:	
 				recibir_memwrite(conexion, logger);
 				break;
+			case SUSPENSION_PROCESO:
+				recibir_suspencion(conexion, logger);
+				break;
 			case CERRAR_INSTANCIA:
 				cerrar_carpincho(conexion, logger);
 				break;
@@ -275,6 +278,19 @@ void informarCierreDeProceso(t_carpincho* carpincho,t_log* loggerActual){
 	log_info(loggerActual,"Enviamos que queremos cerrar el carpincho", carpincho->id_carpincho);
     enviarPaquete(paquete, carpincho->conexion);
 	//cerrar hilo
+
+}
+
+uint32_t recibir_suspencion(conexion, logger){
+
+	uint32_t pid;
+	void* buffer = recibir_buffer(conexion);
+	
+	memcpy(&pid, buffer, sizeof(uint32_t));
+
+	free(buffer);
+
+	suspender_proceso(pid);
 
 }
 

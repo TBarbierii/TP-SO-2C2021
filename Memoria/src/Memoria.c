@@ -23,13 +23,14 @@ void obtenerValoresDelConfig(t_config* configActual){
     tamanioPagina = config_get_int_value(configActual, "TAMANIO_PAGINA");
     algoritmoReemplazoMMU = config_get_string_value(configActual, "ALGORITMO_REEMPLAZO_MMU");
     tipoAsignacion = config_get_string_value(configActual, "TIPO_ASIGNACION");
-    marcosMaximos = config_get_int_value(configActual, "MARCOS_POR_PROCESO");
+    marcosMaximos = config_get_int_value(configActual, "MARCOS_POR_CARPINCHO");
     cantidadEntradasTLB = config_get_int_value(configActual, "CANTIDAD_ENTRADAS_TLB");
     algoritmoReemplazoTLB = config_get_string_value(configActual, "ALGORITMO_REEMPLAZO_TLB");
     retardoAciertoTLB = config_get_int_value(configActual, "RETARDO_ACIERTO_TLB");
     retardoFAlloTLB = config_get_int_value(configActual, "RETARDO_FALLO_TLB");
     ipSWAmP = config_get_string_value(configActual, "IP_SWAMP");
     puertoSWAmP = config_get_string_value(configActual, "PUERTO_SWAMP");
+    pathDump = config_get_string_value(configActual, "PATH_DUMP_TLB");
 }
 
 void finalizarConfig(t_config* configUsado){
@@ -44,6 +45,8 @@ void inicializarMemoria() {
 void inicializarTodo(){
     
     inicializarListas();
+
+    logsObligatorios =  log_create("cfg/logsObligatorios.log","Log",1,LOG_LEVEL_INFO);
 
     listaCarpinchos = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(listaCarpinchos,NULL);

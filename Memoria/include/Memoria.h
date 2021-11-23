@@ -10,6 +10,7 @@
 #include <commons/config.h>
 #include <commons/string.h>
 #include <commons/collections/list.h>
+#include <commons/temporal.h>
 #include <stdbool.h>
 #include <math.h>
 #include <signal.h>
@@ -30,6 +31,7 @@ uint32_t retardoAciertoTLB;
 uint32_t retardoFAlloTLB;
 char* ipSWAmP;
 char* puertoSWAmP;
+char* pathDump;
 
 uint32_t id_pag; //inicializar en algun lado 
 uint32_t id_carpincho; //inicializar
@@ -48,6 +50,10 @@ pthread_mutex_t * TLB_mutex;
 pthread_mutex_t * memoria;
 pthread_mutex_t * swap;
 pthread_mutex_t * marcos_sem;
+
+t_log* logsObligatorios;
+t_log* dumpTLB;
+
 
 /* Estructuras Administrativas */
 
@@ -172,8 +178,8 @@ uint32_t buscar_o_agregar_espacio(t_carpincho* , uint32_t );
 uint32_t administrar_paginas(t_carpincho* , uint32_t, t_list* );
 void* generar_buffer_allocs(uint32_t, heapMetadata*,uint32_t, stream_alloc, int32_t);
 uint32_t asignarPaginas(t_carpincho*, t_list* );
-void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar );
-
+void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_carpincho* carpincho );
+uint32_t suspender_proceso(uint32_t pid);
 
 void crear_marcos();
 void liberar_alloc(uint32_t, uint32_t);
@@ -206,6 +212,7 @@ void manejador_de_seniales(int numeroSenial);
 void algoritmo_reemplazo_TLB(t_pagina* pagina);
 int32_t buscarEnTablaDePaginas(t_carpincho* carpincho, int32_t idPag);
 void reemplazo(int32_t *DF, t_carpincho* carpincho, t_pagina* pagina);
+void imprimir_dump(t_log* log_dump, char * time);
 
 
 #endif
