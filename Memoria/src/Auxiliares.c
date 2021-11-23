@@ -1,15 +1,15 @@
 #include "Memoria.h"
 
-uint32_t generadorIdsPaginas(){
+uint32_t generadorIdsPaginas(t_carpincho* carp){
 
 	int id;
-	pthread_mutex_lock(controladorIdsPaginas);
-	if(id_pag%10 == 0){ // no pueden ser multiplos de 10 porque al darlos vuelta lo toma como octal
-		id = id_pag++;
+	
+	if(id_pag != 0 && id_pag%10 == 0){ // no pueden ser multiplos de 10 porque al darlos vuelta lo toma como octal
+		id = carp->contadorPag++;
 	}
 	
-     id = id_pag++;
-	 pthread_mutex_unlock(controladorIdsPaginas);
+     id = carp->contadorPag++;
+
 	 
 	 return id;
 
@@ -472,11 +472,12 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	for(int i=0; i<cantidadDePaginasACrear; i++){
 
 		t_pagina* pagina = malloc(sizeof(t_pagina));
-		pagina->id_pagina = generadorIdsPaginas();
+		pagina->id_pagina = generadorIdsPaginas(carpincho);
 		pagina->esNueva = true;
 		pagina->uso = true;
 		pagina->ultimoUso = clock();
         pagina->modificado = true;
+		pagina->id_carpincho = carpincho->id_carpincho;
 
 		enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
 
@@ -862,7 +863,7 @@ void imprimir_dump(t_log* log_dump, char * time){
 		log_info(log_dump,"Entrada: %i\t Estado: Libre\t Carpincho: -\t Pagina: - \t Marco: %i",i);
 
 		}else{
-		log_info(log_dump,"Entrada: %i\t Estado: Ocupado\t 	Carpincho: %i\t Pagina: %i \t Marco: %i",i,pagina->id_pagina, pagina->marco->id_marco);
+		log_info(log_dump,"Entrada: %i\t Estado: Ocupado\t 	Carpincho: %i\t Pagina: %i \t Marco: %i",i,pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 		}
 	
 	}

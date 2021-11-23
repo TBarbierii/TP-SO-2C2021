@@ -126,6 +126,7 @@ typedef struct {
     clock_t ultimoUso;
     bool uso;
     bool modificado;
+    uint32_t id_carpincho;
 
 }t_pagina;
 
@@ -139,6 +140,7 @@ typedef struct {
     uint32_t tlb_hit;
     uint32_t tlb_miss;
     uint32_t punteroClock;
+    uint32_t contadorPag;
 
 }t_carpincho;
 
@@ -194,7 +196,7 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 //uint32_t asignarPaginas(t_carpincho*);
 
 /* Auxiliares */
-uint32_t generadorIdsPaginas();
+uint32_t generadorIdsPaginas(t_carpincho*);
 uint32_t aumentarIdCarpinchos();
 uint32_t generarDireccionLogica(uint32_t , uint32_t);
 uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica);

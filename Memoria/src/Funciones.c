@@ -51,11 +51,12 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         for(int i=0; i<cantidadDePaginasACrear; i++){
 
             t_pagina* pagina = malloc(sizeof(t_pagina));
-            pagina->id_pagina = generadorIdsPaginas();
+            pagina->id_pagina = generadorIdsPaginas(carpincho);
             pagina->presente = true;
             pagina->ultimoUso = clock();
             pagina->uso = true;
             pagina->modificado = true;
+            pagina->id_carpincho = carpincho->id_carpincho;
 
             enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
 
