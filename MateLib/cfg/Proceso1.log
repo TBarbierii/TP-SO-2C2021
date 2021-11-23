@@ -141,3 +141,13 @@ J
 [INFO] 18:26:04:492 loggerContenidoProceso/(15426:15426): Solicitamos realizar un memRead 3009
 [INFO] 18:26:04:595 loggerContenidoProceso/(15426:15426): Habiamos solicitado hacer un memread
 [INFO] 18:26:04:595 loggerContenidoProceso/(15426:15426): El tamanio de lo que vamos a leer es de:14 bytes
+[INFO] 18:34:35:477 loggerContenidoProceso/(15831:15831): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 18:34:35:477 loggerContenidoProceso/(15831:15831): Solicitamos realizar un memalloc de size:14
+[INFO] 18:34:35:519 loggerContenidoProceso/(15831:15831): Habiamos solicitado hacer un memalloc
+[INFO] 18:34:35:519 loggerContenidoProceso/(15831:15831): Se pudo realizar el memalloc
+[INFO] 18:34:35:519 loggerContenidoProceso/(15831:15831): Solicitamos realizar un memWrite de 3009 y tamanio:14
+[INFO] 18:34:35:628 loggerContenidoProceso/(15831:15831): Habiamos solicitado hacer un memwrite
+[INFO] 18:34:35:628 loggerContenidoProceso/(15831:15831): Se pudo hacer el memwrite solicitado
+[INFO] 18:34:35:628 loggerContenidoProceso/(15831:15831): Solicitamos realizar un memRead 3009
+[INFO] 18:34:35:733 loggerContenidoProceso/(15831:15831): Habiamos solicitado hacer un memread
+[INFO] 18:34:35:733 loggerContenidoProceso/(15831:15831): El tamanio de lo que vamos a leer es de:14 bytes

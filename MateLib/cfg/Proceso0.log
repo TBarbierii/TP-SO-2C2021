@@ -319,3 +319,15 @@
 [INFO] 18:24:02:198 loggerContenidoProceso/(15185:15185): Se pudo inicializar el semaforo que se solicito inicializar
 [INFO] 18:24:02:198 loggerContenidoProceso/(15185:15185): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
 [INFO] 18:26:06:916 loggerContenidoProceso/(15185:15185): Solicitamos realizar un memRead 1009
+[INFO] 18:34:24:301 loggerContenidoProceso/(15756:15756): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 18:34:24:302 loggerContenidoProceso/(15756:15756): Solicitamos realizar un memalloc de size:20
+[INFO] 18:34:24:326 loggerContenidoProceso/(15756:15756): Habiamos solicitado hacer un memalloc
+[INFO] 18:34:24:326 loggerContenidoProceso/(15756:15756): Se pudo realizar el memalloc
+[INFO] 18:34:24:326 loggerContenidoProceso/(15756:15756): Solicitamos realizar un memWrite de 1009 y tamanio:20
+[INFO] 18:34:24:434 loggerContenidoProceso/(15756:15756): Habiamos solicitado hacer un memwrite
+[INFO] 18:34:24:434 loggerContenidoProceso/(15756:15756): Se pudo hacer el memwrite solicitado
+[INFO] 18:34:24:435 loggerContenidoProceso/(15756:15756): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
+[INFO] 18:34:24:437 loggerContenidoProceso/(15756:15756): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 18:34:24:437 loggerContenidoProceso/(15756:15756): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 18:34:24:437 loggerContenidoProceso/(15756:15756): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
+[INFO] 18:34:38:337 loggerContenidoProceso/(15756:15756): Solicitamos realizar un memRead 1009

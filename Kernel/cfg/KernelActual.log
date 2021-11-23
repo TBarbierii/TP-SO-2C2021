@@ -28,3 +28,6 @@
 [INFO] 18:23:53:024 KernelActual/(15173:15173): Se inicializan el config y las listas de planificacion
 [INFO] 18:23:53:028 KernelActual/(15173:15173): Se inicializan los valores provenientes del config
 [INFO] 18:23:53:028 KernelActual/(15173:15173): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 18:34:05:691 KernelActual/(15654:15654): Se inicializan el config y las listas de planificacion
+[INFO] 18:34:05:695 KernelActual/(15654:15654): Se inicializan los valores provenientes del config
+[INFO] 18:34:05:695 KernelActual/(15654:15654): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores

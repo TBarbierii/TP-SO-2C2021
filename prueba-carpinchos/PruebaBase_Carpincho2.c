@@ -34,9 +34,12 @@ int main(int argc, char *argv[]) {
 
     mate_memwrite(&instance, saludo, saludoRef, strlen(saludo));
 
-    mate_memread(&instance, saludoRef, saludo, strlen(saludo));
+    char* contenidoAmostrar = malloc(strlen(saludo)+1);
 
-    printf(saludo);
+    mate_memread(&instance, saludoRef, saludo , strlen(saludo));
+
+    printf(contenidoAmostrar);
+    free(contenidoAmostrar);
 
     mate_sem_post(&instance, SEMAFORO_SALUDO);
 

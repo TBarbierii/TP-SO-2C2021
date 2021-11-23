@@ -7,3 +7,6 @@
 [INFO] 18:24:02:198 Semaforos/(15173:15182): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
 [INFO] 18:24:02:201 Semaforos/(15173:15182): El proceso:0 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
 [INFO] 18:24:02:201 Semaforos/(15173:15182): Se agrega el proceso con Pid:0 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
+[INFO] 18:34:24:436 Semaforos/(15654:15663): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
+[INFO] 18:34:24:438 Semaforos/(15654:15663): El proceso:0 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
+[INFO] 18:34:24:438 Semaforos/(15654:15663): Se agrega el proceso con Pid:0 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO

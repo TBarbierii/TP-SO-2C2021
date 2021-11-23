@@ -408,3 +408,34 @@
 [INFO] 18:26:04:351 OperacionesServidor/(15159:15159): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
 [INFO] 18:26:04:351 OperacionesServidor/(15159:15159): Se escribe sobre la particion: 1
 [INFO] 18:26:04:351 OperacionesServidor/(15159:15159): Se guardo el contenido correctamente
+[INFO] 18:34:04:268 OperacionesServidor/(15640:15640): Recibimos la informacion de la RAM
+[INFO] 18:34:04:268 OperacionesServidor/(15640:15640): El codigo de operacion es: 13
+[INFO] 18:34:04:269 OperacionesServidor/(15640:15640): Tipo de asignacion a utilizar: DINAMICA.
+[INFO] 18:34:24:309 OperacionesServidor/(15640:15640): Recibimos la informacion de la RAM
+[INFO] 18:34:24:309 OperacionesServidor/(15640:15640): El codigo de operacion es: 16
+[INFO] 18:34:24:311 OperacionesServidor/(15640:15640): El proceso: 0 pide verificar si hay espacio para 2
+[INFO] 18:34:24:311 OperacionesServidor/(15640:15640): Cantidad de frames disponibles para el proceso 0: 32
+[INFO] 18:34:24:316 OperacionesServidor/(15640:15640): Recibimos la informacion de la RAM
+[INFO] 18:34:24:316 OperacionesServidor/(15640:15640): El codigo de operacion es: 11
+[INFO] 18:34:24:318 OperacionesServidor/(15640:15640): Se guarda la pagina: 1 del proceso: 0
+[INFO] 18:34:24:318 OperacionesServidor/(15640:15640): El archivo que vamos a utilizar tiene 32 cantidad de frames libres
+[INFO] 18:34:24:318 OperacionesServidor/(15640:15640): Todo bien se realizo con la asignacion Dinamica
+[INFO] 18:34:24:319 OperacionesServidor/(15640:15640): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:34:24:319 OperacionesServidor/(15640:15640): Se escribe sobre la particion: 0
+[INFO] 18:34:24:323 OperacionesServidor/(15640:15640): Se guardo el contenido correctamente
+[INFO] 18:34:24:323 OperacionesServidor/(15640:15640): Recibimos la informacion de la RAM
+[INFO] 18:34:24:323 OperacionesServidor/(15640:15640): El codigo de operacion es: 11
+[INFO] 18:34:24:331 OperacionesServidor/(15640:15640): Se guarda la pagina: 2 del proceso: 0
+[INFO] 18:34:24:331 OperacionesServidor/(15640:15640): No se encontro la siguiente particion
+[INFO] 18:34:35:481 OperacionesServidor/(15640:15640): Recibimos la informacion de la RAM
+[INFO] 18:34:35:481 OperacionesServidor/(15640:15640): El codigo de operacion es: 16
+[INFO] 18:34:35:483 OperacionesServidor/(15640:15640): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:34:35:483 OperacionesServidor/(15640:15640): Cantidad de frames disponibles para el proceso 1: 31
+[INFO] 18:34:35:511 OperacionesServidor/(15640:15640): Recibimos la informacion de la RAM
+[INFO] 18:34:35:511 OperacionesServidor/(15640:15640): El codigo de operacion es: 11
+[INFO] 18:34:35:519 OperacionesServidor/(15640:15640): Se guarda la pagina: 3 del proceso: 1
+[INFO] 18:34:35:520 OperacionesServidor/(15640:15640): El archivo que vamos a utilizar tiene 31 cantidad de frames libres
+[INFO] 18:34:35:520 OperacionesServidor/(15640:15640): Todo bien se realizo con la asignacion Dinamica
+[INFO] 18:34:35:520 OperacionesServidor/(15640:15640): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:34:35:520 OperacionesServidor/(15640:15640): Se escribe sobre la particion: 1
+[INFO] 18:34:35:520 OperacionesServidor/(15640:15640): Se guardo el contenido correctamente

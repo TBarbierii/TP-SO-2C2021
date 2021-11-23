@@ -104,3 +104,12 @@
 [INFO] 18:24:02:080 SWAmP/(15159:15159): Solicitud de memoria entrante
 [INFO] 18:26:04:331 SWAmP/(15159:15159): Solicitud de memoria entrante
 [INFO] 18:26:04:339 SWAmP/(15159:15159): Solicitud de memoria entrante
+[INFO] 18:34:02:197 SWAmP/(15640:15640): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 1024 cantidad de frames disponibles: 32 y id: 0
+[INFO] 18:34:02:201 SWAmP/(15640:15640): Se han creado todos los archivos
+[INFO] 18:34:02:205 SWAmP/(15640:15640): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 18:34:04:253 SWAmP/(15640:15640): Solicitud de memoria entrante
+[INFO] 18:34:24:308 SWAmP/(15640:15640): Solicitud de memoria entrante
+[INFO] 18:34:24:315 SWAmP/(15640:15640): Solicitud de memoria entrante
+[INFO] 18:34:24:323 SWAmP/(15640:15640): Solicitud de memoria entrante
+[INFO] 18:34:35:479 SWAmP/(15640:15640): Solicitud de memoria entrante
+[INFO] 18:34:35:495 SWAmP/(15640:15640): Solicitud de memoria entrante
