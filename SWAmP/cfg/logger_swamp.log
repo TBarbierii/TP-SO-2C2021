@@ -1,0 +1,97 @@
+[INFO] 11:23:10:084 SWAmP/(4902:4902): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 1024 cantidad de frames disponibles: 32 y id: 0
+[INFO] 11:23:10:161 SWAmP/(4902:4902): Se han creado todos los archivos
+[INFO] 11:23:10:176 SWAmP/(4902:4902): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 11:23:13:379 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:23:17:659 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:23:17:699 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:23:17:745 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:23:52:345 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:23:57:485 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:23:57:498 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:23:57:516 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:24:17:180 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:24:22:863 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:24:27:033 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:24:27:043 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:24:27:051 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:44:26:738 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:44:55:839 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:44:55:851 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:44:55:862 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:44:56:452 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:44:56:465 SWAmP/(4902:4902): Proceso 0 finalizado con exito
+[INFO] 11:52:41:283 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:52:41:290 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:54:59:029 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:55:05:769 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:55:05:782 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:57:35:164 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:57:46:733 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:57:46:757 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:57:46:761 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:57:47:056 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 11:57:47:062 SWAmP/(4902:4902): Proceso 0 finalizado con exito
+[INFO] 12:05:05:806 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:05:05:818 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:05:50:158 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:11:37:020 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:11:40:230 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:11:40:252 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:14:03:004 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:14:17:227 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:14:17:248 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:16:08:404 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:16:26:343 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:16:26:361 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:18:50:969 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:18:53:307 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:18:53:327 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:22:36:486 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:22:38:179 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:22:38:189 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:28:53:805 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:29:09:468 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:29:09:487 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:32:36:913 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:32:40:142 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:32:40:160 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:35:05:511 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:35:16:761 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:35:16:783 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:35:17:193 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:35:17:198 SWAmP/(4902:4902): Proceso 0 finalizado con exito
+[INFO] 12:39:19:747 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:39:19:760 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:41:35:834 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:41:37:841 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:41:37:862 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:53:25:805 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:53:28:645 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:53:28:651 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:53:28:917 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:53:28:922 SWAmP/(4902:4902): Proceso 0 finalizado con exito
+[INFO] 12:55:06:951 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:55:06:955 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:56:44:903 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:56:53:813 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 12:56:53:819 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:11:24:643 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:11:30:558 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:11:30:563 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:11:30:829 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:11:30:834 SWAmP/(4902:4902): Proceso 0 finalizado con exito
+[INFO] 13:20:33:791 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:20:33:794 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:20:34:012 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:20:34:014 SWAmP/(4902:4902): Proceso 1 finalizado con exito
+[INFO] 13:36:44:101 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:36:44:106 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:37:43:672 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:37:51:204 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:37:51:210 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:37:51:493 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:37:51:497 SWAmP/(4902:4902): Proceso 0 finalizado con exito
+[INFO] 13:40:00:489 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:40:00:492 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:40:00:710 SWAmP/(4902:4902): Solicitud de memoria entrante
+[INFO] 13:40:00:712 SWAmP/(4902:4902): Proceso 1 finalizado con exito

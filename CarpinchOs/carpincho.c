@@ -10,7 +10,7 @@
 
 #define SEMAFORO_SALUDO "SEM_HELLO"
 
-/* int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
     if(argc < 2){
         printf("No se ingresó archivo de configuración");
@@ -31,18 +31,23 @@
 
     mate_memwrite(&instance, saludo, saludoRef, strlen(saludo));
 
-    //mate_memread(&instance, saludoRef, saludo, strlen(saludo));
+	char* contenidoAmostrar = malloc(strlen(saludo)+1);
 
-    printf(saludo);
+    mate_memread(&instance, saludoRef, saludo , strlen(saludo));
+
+	printf(contenidoAmostrar);
+	free(contenidoAmostrar);
+
+	printf("\n%s",saludo);
 
     mate_sem_post(&instance, SEMAFORO_SALUDO);
 
     mate_close(&instance);
 
 	return EXIT_SUCCESS;
-} */
+}
 
-
+//EJEMPLO NUESTRO
 /* int main(){
 
     mate_instance* referencia = malloc(sizeof(mate_instance)); //porque rompe si hacemos el malloc en el mate_init?
@@ -59,19 +64,19 @@
     //mate_close(referencia);
     //free(referencia);
     
-    void* lectura;// = malloc(45);
+    void* lectura = malloc(45);
     printf("\nDireccion %i\n", mate);
 
     if(mate != 0){
 
     mate_memwrite(referencia, "----------------------------------------1-45", mate, 45);
-    mate_memread(referencia, mate, &lectura,45);
+    mate_memread(referencia, mate, lectura,45);
     log_info(referencia->group_info->loggerProceso, "\n LLego: %s", (char*)lectura);
     }
-    if(lectura != NULL){
-        free(lectura);
-    }
-    mate_close(referencia);
+
+	free(lectura);
+	
+	mate_close(referencia);
     free(referencia);
     
     //pthread_t h1, h2, h3;
@@ -302,6 +307,10 @@ int main(int argc, char *argv[]) {
 	return EXIT_SUCCESS;
 } */
 
+
+
+
+
 //SJF Y HRRN
 
 /* 
@@ -405,6 +414,11 @@ int main(int argc, char *argv[])
     puts("Termine!");
 }
  */
+
+
+
+
+
 
 //SUSPENSION
 /*
@@ -737,7 +751,7 @@ int main(int argc, char *argv[]) {
 
 //PRUEBA ASIGNACION
 
-sem_t semCarpincho1;
+/* sem_t semCarpincho1;
 sem_t semCarpincho2;
 sem_t semCarpincho3;
 
@@ -971,7 +985,4 @@ int main(int argc, char *argv[]) {
 
 	return EXIT_SUCCESS;
 }
-
-
-
-
+ */

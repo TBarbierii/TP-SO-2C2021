@@ -1,0 +1,10 @@
+[INFO] 12:07:47:059 loggerContenidoProceso/(8148:8148): Se ha creado el carpincho:-1, y se ha logrado conectar correctamente al backend
+[INFO] 12:07:47:059 loggerContenidoProceso/(8148:8148): Solicitamos realizar un memalloc de size:14
+[INFO] 12:07:47:079 loggerContenidoProceso/(8148:8148): Habiamos solicitado hacer un memalloc
+[ERROR] 12:07:47:079 loggerContenidoProceso/(8148:8148): No se pudo hacer el memalloc del size solicitado
+[INFO] 12:07:47:079 loggerContenidoProceso/(8148:8148): Solicitamos realizar un memWrite de 0 y tamanio:14
+[INFO] 12:07:47:088 loggerContenidoProceso/(8148:8148): Habiamos solicitado hacer un memwrite
+[ERROR] 12:07:47:088 loggerContenidoProceso/(8148:8148): No se pudo realizar el memwrite
+[INFO] 12:07:47:088 loggerContenidoProceso/(8148:8148): Solicitamos realizar un memRead 0
+[INFO] 12:07:47:088 loggerContenidoProceso/(8148:8148): Aca llega del memRead
+[INFO] 12:07:47:094 loggerContenidoProceso/(8148:8148): Habiamos solicitado hacer un memread

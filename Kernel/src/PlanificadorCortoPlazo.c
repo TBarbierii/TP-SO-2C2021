@@ -31,16 +31,20 @@ void rutinaDeProceso(){
         struct timespec begin, end; 
         clock_gettime(CLOCK_REALTIME, &begin);
 
+        //aca recien le vamos a notificar al proceso que se inicializa y su id, es decir cuando esta en ejecucion
+        if(procesoListoParaEjecutar->vuelveDeBloqueo == NO_BLOQUEADO){
+                log_debug(logger, "Se envia info del pid a Matelib");
+                enviarInformacionAdministrativaDelProceso(procesoListoParaEjecutar);
+        }
+
+
+
         //lo que ejecuta el proceso que agregamos
         while(1){
             
-            //aca recien le vamos a notificar al proceso que se inicializa y su id, es decir cuando esta en ejecucion
-            if(procesoListoParaEjecutar->vuelveDeBloqueo == NO_BLOQUEADO){
-                log_debug(logger, "Se envia info del pid a Matelib");
-                enviarInformacionAdministrativaDelProceso(procesoListoParaEjecutar);
             
             //si viene de un bloqueo debemos notificarle a la matelib que se pudo o no realizar
-            }else if(procesoListoParaEjecutar->vuelveDeBloqueo == BLOCK_IO){
+            if(procesoListoParaEjecutar->vuelveDeBloqueo == BLOCK_IO){
 
                 //le avisamos que se pudo realizar la IO
                 log_info(logger, "Le avisamos al proceso que se pudo ejecutar el IO correctamente");

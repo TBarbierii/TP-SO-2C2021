@@ -30,3 +30,15 @@
 [INFO] 18:52:37:037 loggerContenidoProceso/(7696:7703): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
 [INFO] 18:52:37:037 loggerContenidoProceso/(7696:7703): Se pudo realizar con exito la operacion IO
 [INFO] 18:52:37:037 loggerContenidoProceso/(7696:7703): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 13:36:44:098 loggerContenidoProceso/(17038:17038): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 13:36:44:098 loggerContenidoProceso/(17038:17038): Solicitamos realizar un memalloc de size:14
+[INFO] 13:36:44:108 loggerContenidoProceso/(17038:17038): Habiamos solicitado hacer un memalloc
+[INFO] 13:36:44:108 loggerContenidoProceso/(17038:17038): Se pudo realizar el memalloc
+[INFO] 13:36:44:108 loggerContenidoProceso/(17038:17038): Solicitamos realizar un memWrite de 3009 y tamanio:14
+[INFO] 13:36:44:215 loggerContenidoProceso/(17038:17038): Habiamos solicitado hacer un memwrite
+[INFO] 13:36:44:215 loggerContenidoProceso/(17038:17038): Se pudo hacer el memwrite solicitado
+[INFO] 13:36:44:215 loggerContenidoProceso/(17038:17038): Solicitamos realizar un memRead 3009
+[INFO] 13:36:44:319 loggerContenidoProceso/(17038:17038): Habiamos solicitado hacer un memread
+[INFO] 13:36:44:319 loggerContenidoProceso/(17038:17038): El tamanio de lo que vamos a leer es de:14 bytes
+[INFO] 13:36:44:319 loggerContenidoProceso/(17038:17038): Contenido que llego: ¡Hola mundo!
+4:215 9

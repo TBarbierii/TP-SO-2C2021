@@ -1,0 +1,6 @@
+[WARNING] 12:35:17:145 Semaforos/(11192:11200): El proceso:0, esta intentando hacer un signal de un semaforo: SEM_HELLO, el cual no existe
+[WARNING] 12:53:28:903 Semaforos/(14407:14413): El proceso:0, esta intentando hacer un signal de un semaforo: SEM_HELLO, el cual no existe
+[WARNING] 13:11:30:816 Semaforos/(15370:15379): El proceso:0, esta intentando hacer un signal de un semaforo: SEM_HELLO, el cual no existe
+[WARNING] 13:20:34:009 Semaforos/(15370:15379): El proceso:1, esta intentando hacer un signal de un semaforo: SEM_HELLO, el cual no existe
+[WARNING] 13:37:51:478 Semaforos/(17131:17139): El proceso:0, esta intentando hacer un signal de un semaforo: SEM_HELLO, el cual no existe
+[WARNING] 13:40:00:707 Semaforos/(17131:17139): El proceso:1, esta intentando hacer un signal de un semaforo: SEM_HELLO, el cual no existe
