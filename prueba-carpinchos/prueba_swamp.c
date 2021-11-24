@@ -16,7 +16,7 @@ typedef struct thread_info
   sem_t* consumer_sem;
 } thread_info;
 
-char *LOG_PATH = "./probando_el_pantano.log";
+char *LOG_PATH = "/home/utnso/tp-2021-2c-UCM-20-SO/prueba-carpinchos/build/probando_el_pantano.log";
 char *PROGRAM_NAME = "probando_el_pantano";
 uint32_t seed;
 sem_t seed_sem_1;
@@ -148,6 +148,7 @@ int main(int argc, char *argv[])
   
   pthread_join(carpincho_th_1, NULL);
   pthread_join(carpincho_th_2, NULL);
-  
+  pthread_join(carpincho_th_3, NULL);
+
   return 0;
 }

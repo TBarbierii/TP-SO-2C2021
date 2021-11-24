@@ -43,3 +43,4 @@
 [INFO] 12:44:54:666 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
 [INFO] 12:44:54:717 Thread-CPU/(10449:10456): La tarea realizada fue: 1
 [INFO] 12:44:54:718 Thread-CPU/(10449:10456): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 15:03:38:017 PlanificadorCortoPlazo/(12993:13002): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
