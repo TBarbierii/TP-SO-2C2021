@@ -25,20 +25,16 @@ int main(int argc, char *argv[]) {
 
 	mate_init(&instance, (char*)config);
 
-    char* saludo = "¡Hola mundo!\n";
+    char saludo[] = "¡Hola mundo!\n";
 
     mate_pointer saludoRef = mate_memalloc(&instance, strlen(saludo));
 
     mate_memwrite(&instance, saludo, saludoRef, strlen(saludo));
 
-	char* contenidoAmostrar = malloc(strlen(saludo)+1);
-
     mate_memread(&instance, saludoRef, saludo , strlen(saludo));
 
-	printf(contenidoAmostrar);
-	free(contenidoAmostrar);
 
-	printf("\n%s",saludo);
+	printf(saludo);
 
     mate_sem_post(&instance, SEMAFORO_SALUDO);
 

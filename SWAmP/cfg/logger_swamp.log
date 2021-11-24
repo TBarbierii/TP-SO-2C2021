@@ -113,3 +113,60 @@
 [INFO] 18:34:24:323 SWAmP/(15640:15640): Solicitud de memoria entrante
 [INFO] 18:34:35:479 SWAmP/(15640:15640): Solicitud de memoria entrante
 [INFO] 18:34:35:495 SWAmP/(15640:15640): Solicitud de memoria entrante
+[INFO] 11:48:59:997 SWAmP/(4555:4555): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 1024 cantidad de frames disponibles: 32 y id: 0
+[INFO] 11:49:00:074 SWAmP/(4555:4555): Se han creado todos los archivos
+[INFO] 11:49:00:092 SWAmP/(4555:4555): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 11:49:03:463 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:49:26:846 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:49:26:894 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:49:27:258 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:49:27:271 SWAmP/(4555:4555): Proceso 0 finalizado con exito
+[INFO] 11:52:57:511 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:52:57:519 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:52:57:791 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:52:57:795 SWAmP/(4555:4555): Proceso 1 finalizado con exito
+[INFO] 11:59:32:452 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:59:32:456 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:59:32:722 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 11:59:32:739 SWAmP/(4555:4555): Proceso 2 finalizado con exito
+[INFO] 12:04:03:713 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:04:03:720 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:04:03:763 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:04:29:476 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:04:29:480 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:09:35:074 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:10:32:769 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:10:32:779 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:10:32:794 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:10:47:821 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:10:47:825 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:22:14:644 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:22:39:234 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:22:39:247 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:22:39:260 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:22:52:311 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:22:52:314 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:31:27:898 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:32:54:779 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:32:54:789 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:32:54:805 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:33:16:722 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:33:16:732 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:38:40:692 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:38:47:618 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:38:47:628 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:41:23:483 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:41:33:375 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:41:33:385 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:41:33:689 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:41:33:707 SWAmP/(4555:4555): Proceso 0 finalizado con exito
+[INFO] 12:44:39:298 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:44:41:787 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:44:41:797 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:44:41:806 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:44:54:141 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:44:54:147 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:44:54:500 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:44:54:514 SWAmP/(4555:4555): Proceso 1 finalizado con exito
+[INFO] 12:44:54:704 SWAmP/(4555:4555): Solicitud de memoria entrante
+[INFO] 12:44:54:710 SWAmP/(4555:4555): Proceso 0 finalizado con exito

@@ -42,3 +42,23 @@
 [INFO] 13:36:44:319 loggerContenidoProceso/(17038:17038): El tamanio de lo que vamos a leer es de:14 bytes
 [INFO] 13:36:44:319 loggerContenidoProceso/(17038:17038): Contenido que llego: ¡Hola mundo!
 4:215 9
+[INFO] 11:59:32:448 loggerContenidoProceso/(5659:5659): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 11:59:32:448 loggerContenidoProceso/(5659:5659): Solicitamos realizar un memalloc de size:14
+[INFO] 11:59:32:459 loggerContenidoProceso/(5659:5659): Habiamos solicitado hacer un memalloc
+[INFO] 11:59:32:459 loggerContenidoProceso/(5659:5659): Se pudo realizar el memalloc
+[INFO] 11:59:32:459 loggerContenidoProceso/(5659:5659): Solicitamos realizar un memWrite de 3009 y tamanio:14
+[INFO] 11:59:32:584 loggerContenidoProceso/(5659:5659): Habiamos solicitado hacer un memwrite
+[INFO] 11:59:32:584 loggerContenidoProceso/(5659:5659): Se pudo hacer el memwrite solicitado
+[INFO] 11:59:32:584 loggerContenidoProceso/(5659:5659): Solicitamos realizar un memRead 3009
+[INFO] 11:59:32:699 loggerContenidoProceso/(5659:5659): Habiamos solicitado hacer un memread
+[INFO] 11:59:32:699 loggerContenidoProceso/(5659:5659): El tamanio de lo que vamos a leer es de:14 bytes
+[INFO] 11:59:32:699 loggerContenidoProceso/(5659:5659): Contenido que llego del memread: ¡Hola mundo!
+ 
+
+[INFO] 11:59:32:699 loggerContenidoProceso/(5659:5659): Solicitamos hacer un signal sobre el semaforo: SEM_HELLO
+[INFO] 11:59:32:705 loggerContenidoProceso/(5659:5659): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 11:59:32:705 loggerContenidoProceso/(5659:5659): No see pudo realizar el post del semaforo solicitado
+[INFO] 11:59:32:705 loggerContenidoProceso/(5659:5659): Se ha solicitado cerrar el carpincho de pid:2 , este es un hasta adios
+[INFO] 11:59:32:744 loggerContenidoProceso/(5659:5659): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 11:59:32:744 loggerContenidoProceso/(5659:5659): Se pudo cerrar el proceso de PID:2 correctamente en el BackEnd
+[INFO] 11:59:32:744 loggerContenidoProceso/(5659:5659): Se liberan todas las estructuras del proceso de PID:2

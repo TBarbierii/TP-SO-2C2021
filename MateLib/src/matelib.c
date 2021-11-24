@@ -309,12 +309,19 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
     if(lib_ref->group_info->conexionConBackEnd != -1){
         realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
         void *informacion = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        
+
+        //esto solo lo usamos para mostrar que contenido nos llega y loggearlo
+        char* contenido = malloc(size+1);
+        char valorFinal = '\0';
+        memcpy(contenido,informacion,size);
+        memcpy(contenido+size, &(valorFinal), 1);
+
+        log_info(lib_ref->group_info->loggerProceso, "Contenido que llego del memread: %s \n",contenido);
+
+        free(contenido);
+
         if(informacion != NULL){
-            char valorFinal = '\0';
             memcpy(info,informacion,size);
-            memcpy(info+size, &(valorFinal), 1);
-            log_info(lib_ref->group_info->loggerProceso, "Contenido que llego: %s \n",(char *)info);
             free(informacion);
             return 0;
         }
@@ -375,7 +382,9 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
 		perror("Fallo en recibir la info de la conexion");
+        lib_ref->group_info->conexionConBackEnd = -1;
         return -1;
+        
 	}
     int valorRetorno;
     void* retornoMensaje;

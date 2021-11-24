@@ -1,33 +1,3 @@
-[INFO] 12:28:56:880 KernelActual/(10361:10361): Se inicializan el config y las listas de planificacion
-[INFO] 12:28:56:984 KernelActual/(10361:10361): Se inicializan los valores provenientes del config
-[INFO] 12:28:56:989 KernelActual/(10361:10361): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 12:29:07:562 KernelActual/(10435:10435): Se inicializan el config y las listas de planificacion
-[INFO] 12:29:07:685 KernelActual/(10435:10435): Se inicializan los valores provenientes del config
-[INFO] 12:29:07:690 KernelActual/(10435:10435): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 12:32:38:963 KernelActual/(10709:10709): Se inicializan el config y las listas de planificacion
-[INFO] 12:32:39:066 KernelActual/(10709:10709): Se inicializan los valores provenientes del config
-[INFO] 12:32:39:074 KernelActual/(10709:10709): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 12:35:08:957 KernelActual/(11192:11192): Se inicializan el config y las listas de planificacion
-[INFO] 12:35:09:122 KernelActual/(11192:11192): Se inicializan los valores provenientes del config
-[INFO] 12:35:09:133 KernelActual/(11192:11192): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 12:41:34:406 KernelActual/(11704:11704): Se inicializan el config y las listas de planificacion
-[INFO] 12:41:34:528 KernelActual/(11704:11704): Se inicializan los valores provenientes del config
-[INFO] 12:41:34:533 KernelActual/(11704:11704): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 12:53:24:015 KernelActual/(14407:14407): Se inicializan el config y las listas de planificacion
-[INFO] 12:53:24:084 KernelActual/(14407:14407): Se inicializan los valores provenientes del config
-[INFO] 12:53:24:088 KernelActual/(14407:14407): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 12:56:46:983 KernelActual/(14725:14725): Se inicializan el config y las listas de planificacion
-[INFO] 12:56:47:053 KernelActual/(14725:14725): Se inicializan los valores provenientes del config
-[INFO] 12:56:47:056 KernelActual/(14725:14725): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 13:11:26:308 KernelActual/(15370:15370): Se inicializan el config y las listas de planificacion
-[INFO] 13:11:26:368 KernelActual/(15370:15370): Se inicializan los valores provenientes del config
-[INFO] 13:11:26:372 KernelActual/(15370:15370): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 13:37:45:815 KernelActual/(17131:17131): Se inicializan el config y las listas de planificacion
-[INFO] 13:37:45:884 KernelActual/(17131:17131): Se inicializan los valores provenientes del config
-[INFO] 13:37:45:890 KernelActual/(17131:17131): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 18:23:53:024 KernelActual/(15173:15173): Se inicializan el config y las listas de planificacion
-[INFO] 18:23:53:028 KernelActual/(15173:15173): Se inicializan los valores provenientes del config
-[INFO] 18:23:53:028 KernelActual/(15173:15173): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
-[INFO] 18:34:05:691 KernelActual/(15654:15654): Se inicializan el config y las listas de planificacion
-[INFO] 18:34:05:695 KernelActual/(15654:15654): Se inicializan los valores provenientes del config
-[INFO] 18:34:05:695 KernelActual/(15654:15654): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 12:44:36:497 KernelActual/(10449:10449): Se inicializan el config y las listas de planificacion
+[INFO] 12:44:36:608 KernelActual/(10449:10449): Se inicializan los valores provenientes del config
+[INFO] 12:44:36:614 KernelActual/(10449:10449): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores

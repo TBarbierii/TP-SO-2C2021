@@ -31,3 +31,17 @@
 [ERROR] 18:13:03:193 loggerContenidoProceso/(14289:14289): No se puede ejecutar esta accion porque no esta conectado al servidor
 [INFO] 18:13:03:194 loggerContenidoProceso/(14289:14289): Solicitamos realizar un memRead 0
 [ERROR] 18:13:03:194 loggerContenidoProceso/(14289:14289): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 12:44:30:461 loggerContenidoProceso/(10435:10435): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 12:44:30:461 loggerContenidoProceso/(10435:10435): Solicitamos realizar un memalloc de size:20
+[ERROR] 12:44:30:462 loggerContenidoProceso/(10435:10435): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 12:44:30:462 loggerContenidoProceso/(10435:10435): Solicitamos realizar un memWrite de 0 y tamanio:20
+[ERROR] 12:44:30:462 loggerContenidoProceso/(10435:10435): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 12:44:30:462 loggerContenidoProceso/(10435:10435): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
+[ERROR] 12:44:30:463 loggerContenidoProceso/(10435:10435): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 12:44:30:463 loggerContenidoProceso/(10435:10435): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
+[ERROR] 12:44:30:463 loggerContenidoProceso/(10435:10435): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 12:44:30:463 loggerContenidoProceso/(10435:10435): Solicitamos realizar un memRead 0
+[ERROR] 12:44:30:463 loggerContenidoProceso/(10435:10435): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 12:44:30:463 loggerContenidoProceso/(10435:10435): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 12:44:30:464 loggerContenidoProceso/(10435:10435): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 12:44:30:464 loggerContenidoProceso/(10435:10435): Se liberan todas las estructuras del proceso de PID:-1

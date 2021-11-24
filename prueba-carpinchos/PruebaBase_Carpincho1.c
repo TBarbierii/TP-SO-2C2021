@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 
 	mate_init(&instance, (char*)config);
 
-    char* saludo = "No, ¡hola humedal!\n";
+    char saludo[] = "No, ¡hola humedal!\n";
 
     mate_pointer saludoRef = mate_memalloc(&instance, strlen(saludo));
 
@@ -37,13 +37,12 @@ int main(int argc, char *argv[]) {
     mate_sem_init(&instance, SEMAFORO_SALUDO, 0);
 
     mate_sem_wait(&instance, SEMAFORO_SALUDO);
- 
-    char* contenidoAmostrar = malloc(strlen(saludo)+1);
 
-    mate_memread(&instance, saludoRef, saludo , strlen(saludo));
+    mate_memread(&instance, saludoRef, saludo, strlen(saludo));
 
-    printf(contenidoAmostrar);
-    free(contenidoAmostrar);
+    printf(saludo);
+
+    mate_close(&instance);
 
 	return EXIT_SUCCESS;
 }
