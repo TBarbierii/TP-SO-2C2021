@@ -1,0 +1,46 @@
+[DEBUG] 12:44:36:654 PlanificadorCortoPlazo/(10449:10455): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 12:44:41:732 Thread-CPU/(10449:10456): SE replanifica con SJF
+[INFO] 12:44:41:752 Replanificacion/(10449:10456): El proceso:0 tiene una rafaga de:2.000000
+[DEBUG] 12:44:41:756 Thread-CPU/(10449:10456): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0, de estimacionActual:2.000000 segundos, y de responseRatio:1.091991
+[DEBUG] 12:44:41:757 Thread-CPU/(10449:10456): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[DEBUG] 12:44:41:758 Thread-CPU/(10449:10456): Se envia info del pid a Matelib
+[INFO] 12:44:41:761 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:41:846 Thread-CPU/(10449:10456): La tarea realizada fue: 7
+[INFO] 12:44:41:848 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:41:992 Thread-CPU/(10449:10456): La tarea realizada fue: 10
+[INFO] 12:44:41:993 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:42:020 Thread-CPU/(10449:10456): La tarea realizada fue: 2
+[INFO] 12:44:42:021 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:42:036 Thread-CPU/(10449:10456): La tarea realizada fue: 3
+[INFO] 12:44:42:037 Thread-CPU/(10449:10456): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 12:44:42:045 Thread-CPU/(10449:10456): La ultima rafaga ejecutada del proceso es de: 0.280590
+[DEBUG] 12:44:54:126 Thread-CPU/(10449:10456): SE replanifica con SJF
+[INFO] 12:44:54:129 Replanificacion/(10449:10456): El proceso:1 tiene una rafaga de:2.000000
+[DEBUG] 12:44:54:130 Thread-CPU/(10449:10456): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:2.000000 segundos, y de responseRatio:1.012793
+[DEBUG] 12:44:54:133 Thread-CPU/(10449:10456): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 12:44:54:134 Thread-CPU/(10449:10456): Se envia info del pid a Matelib
+[INFO] 12:44:54:135 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:54:164 Thread-CPU/(10449:10456): La tarea realizada fue: 7
+[INFO] 12:44:54:165 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:54:281 Thread-CPU/(10449:10456): La tarea realizada fue: 10
+[INFO] 12:44:54:282 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:54:425 Thread-CPU/(10449:10456): La tarea realizada fue: 9
+[INFO] 12:44:54:426 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:54:446 Thread-CPU/(10449:10456): La tarea realizada fue: 2
+[INFO] 12:44:54:447 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:54:466 Thread-CPU/(10449:10456): La tarea realizada fue: 4
+[INFO] 12:44:54:466 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:54:519 Thread-CPU/(10449:10456): La tarea realizada fue: 1
+[INFO] 12:44:54:522 Thread-CPU/(10449:10456): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 12:44:54:522 Thread-CPU/(10449:10456): SE replanifica con SJF
+[INFO] 12:44:54:523 Replanificacion/(10449:10456): El proceso:0 tiene una rafaga de:2.000000
+[DEBUG] 12:44:54:526 Thread-CPU/(10449:10456): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 0, de estimacionActual:2.000000 segundos, y de responseRatio:1.030314
+[DEBUG] 12:44:54:526 Thread-CPU/(10449:10456): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 0
+[INFO] 12:44:54:527 Thread-CPU/(10449:10456): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 12:44:54:530 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:54:662 Thread-CPU/(10449:10456): La tarea realizada fue: 9
+[INFO] 12:44:54:663 Thread-CPU/(10449:10456): Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente
+[INFO] 12:44:54:666 Thread-CPU/(10449:10456): Se ejecuto tarea de conexion
+[INFO] 12:44:54:717 Thread-CPU/(10449:10456): La tarea realizada fue: 1
+[INFO] 12:44:54:718 Thread-CPU/(10449:10456): Se realizo una operacion que termina con la ejecucion del Carpincho
+[DEBUG] 15:03:38:017 PlanificadorCortoPlazo/(12993:13002): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF

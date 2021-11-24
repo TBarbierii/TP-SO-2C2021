@@ -497,7 +497,7 @@ void finalizarEnMemoria(proceso_kernel* proceso, t_log* logger){
 
 int atenderMensajeDeMemoria(proceso_kernel* proceso) {
 
-	t_log* logger =  log_create("cfg/OperacionesServer.log","Memoria", 1, LOG_LEVEL_ERROR);
+	t_log* logger =  log_create("cfg/OperacionesServer.log","Memoria", 1, LOG_LEVEL_DEBUG);
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
 

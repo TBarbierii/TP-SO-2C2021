@@ -5,11 +5,11 @@ uint32_t generadorIdsPaginas(t_carpincho* carp){
 	int id;
 	
 	if(id_pag != 0 && id_pag%10 == 0){ // no pueden ser multiplos de 10 porque al darlos vuelta lo toma como octal
-		id = carp->contadorPag++;
+	 carp->contadorPag++;
 	}
 	
      id = carp->contadorPag++;
-
+	
 	 
 	 return id;
 
@@ -192,22 +192,21 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 
 	void escribir_paginas_en_marcos(t_pagina* pag){
 
-	t_marco* marco = list_get(marcos_a_asignar, contador);
+		t_marco* marco = list_get(marcos_a_asignar, contador);
 
-	if(marco->estaLibre){
-	
-	pthread_mutex_lock(memoria);
-	memcpy(memoriaPrincipal + marco->comienzo, buffer + (contador*tamanioPagina), tamanioPagina);
-	pthread_mutex_unlock(memoria);
+		if(marco->estaLibre){
+		
+			pthread_mutex_lock(memoria);
+			memcpy(memoriaPrincipal + marco->comienzo, buffer + (contador*tamanioPagina), tamanioPagina);
+			pthread_mutex_unlock(memoria);
 
-
-	pag->marco = marco;
-	pag->esNueva = false;
-	marco->estaLibre = false;
-	marco->proceso_asignado=carpincho->id_carpincho;
-	
-	}
-	contador++;
+			pag->marco = marco;
+			pag->esNueva = false;
+			marco->estaLibre = false;
+			marco->proceso_asignado=carpincho->id_carpincho;
+			
+		}
+		contador++;
 	};
 
 	list_iterate(paginas, (void*)escribir_paginas_en_marcos);
@@ -731,9 +730,11 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 			};
 			pthread_mutex_lock(TLB_mutex);
 			t_list* paginasOrdenadas = list_sorted(TLB, (void*)comparator);
+			if(! list_is_empty(paginasOrdenadas)) {
+				list_remove(paginasOrdenadas, 0);
+			}
 			pthread_mutex_unlock(TLB_mutex);
 
-			list_remove(paginasOrdenadas, 0);
 
 			pthread_mutex_lock(TLB_mutex);
 			list_add(TLB, pagina);

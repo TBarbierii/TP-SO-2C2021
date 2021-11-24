@@ -13,24 +13,13 @@
 			"path": "Memoria"
 		},
 		{
+			"path": "prueba-carpinchos"
+		},
+		{
 			"path": "shared"
 		},
 		{
 			"path": "SWAmP"
 		}
-	],
-	"settings": {
-		"files.associations": {
-			"planificadorlargoplazo.h": "c",
-			"swamp_lib.h": "c",
-			"conexiones.h": "c",
-			"matelib.h": "c",
-			"kernel.h": "c",
-			"semaforos.h": "c",
-			"stdlib.h": "c",
-			"carpincho.h": "c",
-			"shared_utils.h": "c",
-			"memoria.h": "c"
-		}
-	}
+	]
 }

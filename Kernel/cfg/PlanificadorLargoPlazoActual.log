@@ -1,0 +1,8 @@
+[DEBUG] 12:44:36:657 PlanificadorLargoPlazo/(10449:10454): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 12:44:41:539 PlanificadorLargoPlazo/(10449:10454): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 12:44:41:728 PlanificadorLargoPlazo/(10449:10454): Un nuevo carpincho se une a la cola de ready
+[INFO] 12:44:54:103 PlanificadorLargoPlazo/(10449:10454): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 12:44:54:126 PlanificadorLargoPlazo/(10449:10454): Un nuevo carpincho se une a la cola de ready
+[INFO] 12:44:54:517 PlanificadorLargoPlazo/(10449:10456): Se nos va el carpincho: 1
+[INFO] 12:44:54:717 PlanificadorLargoPlazo/(10449:10456): Se nos va el carpincho: 0
+[DEBUG] 15:03:38:015 PlanificadorLargoPlazo/(12993:13001): Se inicializa la planificacion de largo plazo con algoritmo FIFO

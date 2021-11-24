@@ -309,14 +309,26 @@ int mate_memread(mate_instance *lib_ref, mate_pointer origin, void *info, int si
     if(lib_ref->group_info->conexionConBackEnd != -1){
         realizarMemRead(lib_ref->group_info->conexionConBackEnd, lib_ref->group_info->pid, origin, size);
         void *informacion = (void*) recibir_mensaje(lib_ref->group_info->conexionConBackEnd, lib_ref);
-        memcpy(info,informacion,size);
-        if(info != NULL){
-            log_info(lib_ref->group_info->loggerProceso, "\n LLego: %s", (char*)info);
+
+        //esto solo lo usamos para mostrar que contenido nos llega y loggearlo
+        char* contenido = malloc(size+1);
+        char valorFinal = '\0';
+        memcpy(contenido,informacion,size);
+        memcpy(contenido+size, &(valorFinal), 1);
+
+        log_info(lib_ref->group_info->loggerProceso, "Contenido que llego del memread: %s \n",contenido);
+
+        free(contenido);
+
+        if(informacion != NULL){
+            memcpy(info,informacion,size);
+            free(informacion);
             return 0;
         }
         else{
             return MATE_READ_FAULT;
         }
+        
 
     }else{
         log_error(lib_ref->group_info->loggerProceso,"No se puede ejecutar esta accion porque no esta conectado al servidor");
@@ -370,7 +382,9 @@ void* recibir_mensaje(int conexion, mate_instance* lib_ref) {
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
 		perror("Fallo en recibir la info de la conexion");
+        lib_ref->group_info->conexionConBackEnd = -1;
         return -1;
+        
 	}
     int valorRetorno;
     void* retornoMensaje;
@@ -644,12 +658,16 @@ void* notificacionMemRead(t_buffer* buffer, t_log* logger){
 
 	memcpy(&(size), stream+desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
+    log_info(logger,"El tamanio de lo que vamos a leer es de:%d bytes",size);
 
     //si no hay contenido en esa direccion, devolvemos nulo
-    void* contenido = malloc(size);
-    memcpy(contenido, stream+desplazamiento, size);
-    return contenido;
-    
+    if(size != 0){
+        void* contenido = malloc(size);
+        memcpy(contenido, stream+desplazamiento, size);
+        return contenido;
+    }
+
+    return NULL;
 }
 
 

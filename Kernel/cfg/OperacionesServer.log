@@ -1,0 +1,78 @@
+[INFO] 12:44:41:521 Operaciones/(10449:10479): Recibimos la informacion de un carpincho
+[INFO] 12:44:41:522 Operaciones/(10449:10479): El codigo de operacion es: 0
+[INFO] 12:44:41:524 Operaciones/(10449:10479): Vamos a inicializar un carpincho
+[INFO] 12:44:41:526 Operaciones/(10449:10479): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 12:44:41:722 Memoria/(10449:10454): Recibimos la informacion de Memoria
+[INFO] 12:44:41:723 Memoria/(10449:10454): El codigo de operacion es: 0
+[INFO] 12:44:41:762 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:41:763 Operaciones/(10449:10456): El codigo de operacion es: 7
+[INFO] 12:44:41:764 Operaciones/(10449:10456): Vamos a realizar un Mem Alloc
+[INFO] 12:44:41:831 Memoria/(10449:10456): Recibimos la informacion de Memoria
+[INFO] 12:44:41:831 Memoria/(10449:10456): El codigo de operacion es: 7
+[INFO] 12:44:41:836 Memoria/(10449:10456): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 12:44:41:849 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:41:849 Operaciones/(10449:10456): El codigo de operacion es: 10
+[INFO] 12:44:41:850 Operaciones/(10449:10456): Vamos a realizar un Mem Write
+[INFO] 12:44:41:985 Memoria/(10449:10456): Recibimos la informacion de Memoria
+[INFO] 12:44:41:986 Memoria/(10449:10456): El codigo de operacion es: 10
+[INFO] 12:44:41:990 Memoria/(10449:10456): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 12:44:41:994 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:41:995 Operaciones/(10449:10456): El codigo de operacion es: 2
+[INFO] 12:44:42:000 Operaciones/(10449:10456): Vamos a inicializar un semaforo
+[INFO] 12:44:42:021 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:42:022 Operaciones/(10449:10456): El codigo de operacion es: 3
+[INFO] 12:44:42:023 Operaciones/(10449:10456): Vamos a hacer un wait de un semaforo
+[INFO] 12:44:54:096 Operaciones/(10449:10589): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:100 Operaciones/(10449:10589): El codigo de operacion es: 0
+[INFO] 12:44:54:101 Operaciones/(10449:10589): Vamos a inicializar un carpincho
+[INFO] 12:44:54:102 Operaciones/(10449:10589): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 12:44:54:124 Memoria/(10449:10454): Recibimos la informacion de Memoria
+[INFO] 12:44:54:125 Memoria/(10449:10454): El codigo de operacion es: 0
+[INFO] 12:44:54:136 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:138 Operaciones/(10449:10456): El codigo de operacion es: 7
+[INFO] 12:44:54:138 Operaciones/(10449:10456): Vamos a realizar un Mem Alloc
+[INFO] 12:44:54:163 Memoria/(10449:10456): Recibimos la informacion de Memoria
+[INFO] 12:44:54:163 Memoria/(10449:10456): El codigo de operacion es: 7
+[INFO] 12:44:54:164 Memoria/(10449:10456): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 12:44:54:169 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:170 Operaciones/(10449:10456): El codigo de operacion es: 10
+[INFO] 12:44:54:171 Operaciones/(10449:10456): Vamos a realizar un Mem Write
+[INFO] 12:44:54:277 Memoria/(10449:10456): Recibimos la informacion de Memoria
+[INFO] 12:44:54:279 Memoria/(10449:10456): El codigo de operacion es: 10
+[INFO] 12:44:54:280 Memoria/(10449:10456): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 12:44:54:282 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:283 Operaciones/(10449:10456): El codigo de operacion es: 9
+[INFO] 12:44:54:284 Operaciones/(10449:10456): Vamos a realizar un Mem Read
+[INFO] 12:44:54:410 Memoria/(10449:10456): Recibimos la informacion de Memoria
+[INFO] 12:44:54:412 Memoria/(10449:10456): El codigo de operacion es: 9
+[INFO] 12:44:54:422 Memoria/(10449:10456): Se pudo establecer la conexion con memoria y se realizo un Mem Read
+[INFO] 12:44:54:427 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:428 Operaciones/(10449:10456): El codigo de operacion es: 2
+[INFO] 12:44:54:429 Operaciones/(10449:10456): Vamos a inicializar un semaforo
+[INFO] 12:44:54:448 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:449 Operaciones/(10449:10456): El codigo de operacion es: 4
+[INFO] 12:44:54:450 Operaciones/(10449:10456): Vamos a hacer un post de un semaforo
+[INFO] 12:44:54:467 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:468 Operaciones/(10449:10456): El codigo de operacion es: 1
+[INFO] 12:44:54:469 Operaciones/(10449:10456): Vamos a eliminar un carpincho
+[INFO] 12:44:54:471 Operaciones/(10449:10456): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 12:44:54:495 Memoria/(10449:10456): Recibimos la informacion de Memoria
+[INFO] 12:44:54:496 Memoria/(10449:10456): El codigo de operacion es: 1
+[INFO] 12:44:54:497 Memoria/(10449:10456): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 12:44:54:499 Operaciones/(10449:10456): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 12:44:54:502 Operaciones/(10449:10456): Enviamos que queremos cerrar el carpincho
+[INFO] 12:44:54:545 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:547 Operaciones/(10449:10456): El codigo de operacion es: 9
+[INFO] 12:44:54:548 Operaciones/(10449:10456): Vamos a realizar un Mem Read
+[INFO] 12:44:54:658 Memoria/(10449:10456): Recibimos la informacion de Memoria
+[INFO] 12:44:54:659 Memoria/(10449:10456): El codigo de operacion es: 9
+[INFO] 12:44:54:660 Memoria/(10449:10456): Se pudo establecer la conexion con memoria y se realizo un Mem Read
+[INFO] 12:44:54:667 Operaciones/(10449:10456): Recibimos la informacion de un carpincho
+[INFO] 12:44:54:683 Operaciones/(10449:10456): El codigo de operacion es: 1
+[INFO] 12:44:54:689 Operaciones/(10449:10456): Vamos a eliminar un carpincho
+[INFO] 12:44:54:691 Operaciones/(10449:10456): Sacamos al carpincho de ejecucion. Pid: 0
+[INFO] 12:44:54:704 Memoria/(10449:10456): Recibimos la informacion de Memoria
+[INFO] 12:44:54:705 Memoria/(10449:10456): El codigo de operacion es: 1
+[INFO] 12:44:54:711 Memoria/(10449:10456): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 12:44:54:714 Operaciones/(10449:10456): Le notificamos a memoria para que libere la memoria del carpincho: 0
+[INFO] 12:44:54:715 Operaciones/(10449:10456): Enviamos que queremos cerrar el carpincho

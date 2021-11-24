@@ -1,0 +1,6 @@
+[INFO] 12:44:42:009 Semaforos/(10449:10456): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
+[INFO] 12:44:42:029 Semaforos/(10449:10456): El proceso:0 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
+[INFO] 12:44:42:034 Semaforos/(10449:10456): Se agrega el proceso con Pid:0 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
+[WARNING] 12:44:54:434 Semaforos/(10449:10456): Se esta intentando crear un semaforo: SEM_HELLO pero ya esta creado
+[INFO] 12:44:54:455 Semaforos/(10449:10456): El proceso:1 realizo un signal del semaforo: SEM_HELLO y el valor se incremento a: 0
+[INFO] 12:44:54:458 Semaforos/(10449:10456): Se libera el proceso:1, de la lista de espera del semaforo: SEM_HELLO
