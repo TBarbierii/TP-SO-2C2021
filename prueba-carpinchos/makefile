@@ -31,7 +31,7 @@ build/%: %.c
 
 run: compile
 
-	LD_LIBRARY_PATH="../MateLib/src/" ./build/prueba_swamp $(CONFIG)
+	LD_LIBRARY_PATH="../MateLib/src/" ./build/PruebaAsignacion $(CONFIG)
 
 # clean --> Limpia todos los carpinchos
 clean:

@@ -203,7 +203,7 @@ uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica)
 uint32_t obtenerDesplazamiento(uint32_t);
 uint32_t obtenerId(uint32_t);
 t_list* reservarMarcos(uin32_t);
-int32_t buscar_TLB(uint32_t);
+int32_t buscar_TLB(t_pagina*);
 int buscarSiguienteHeapLibre(heapMetadata* , int32_t* , t_carpincho* , int32_t*, int32_t* );
 t_list* buscarMarcosLibres(t_carpincho* carpincho);
 uint32_t crearAllocNuevo(int* pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t*);

@@ -83,7 +83,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         
         t_pagina* primeraPag = list_get(carpincho->tabla_de_paginas, 0);
 
-        int32_t DF = buscar_TLB(primeraPag->id_pagina);
+        int32_t DF = buscar_TLB(primeraPag);
 
         /* if(DF == -1){ //tlb miss
 
@@ -147,8 +147,8 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
             t_pagina* paginaSig = list_find(carpincho->tabla_de_paginas, (void*)buscarSigPag);
             pagina = paginaSig->id_pagina;
         }
-
-        return generarDireccionLogica(pagina, desplazamiento + TAMANIO_HEAP);
+        uint32_t DL = generarDireccionLogica(pagina, desplazamiento + TAMANIO_HEAP);
+        return DL;
         
 
     }     
@@ -251,7 +251,7 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
     uint32_t desplazamiento = obtenerDesplazamiento(DL);
 
-    int32_t DF = buscar_TLB(pagina->id_pagina);
+    int32_t DF = buscar_TLB(pagina);
 
     /* if(DF == -1){ //tlb miss
         DF = buscarEnTablaDePaginas(capybara, pagina->id_pagina);
@@ -287,7 +287,7 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
         t_pagina* paginaAnterior = list_find(capybara->tabla_de_paginas, (void*)buscarAntPag);
 
-        DF = buscar_TLB(paginaAnterior->id_pagina);
+        DF = buscar_TLB(paginaAnterior);
 
         /* if(DF == -1){ //tlb miss
             DF = buscarEnTablaDePaginas(capybara->id_carpincho, paginaAnterior->id_pagina);
@@ -322,7 +322,7 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
         paginaAnterior->ultimoUso = clock();
         paginaAnterior->uso = true;
 
-        DF = buscar_TLB(pagina->id_pagina);
+        DF = buscar_TLB(pagina);
 
        /*  if(DF == -1){ //tlb miss
             DF = buscarEnTablaDePaginas(capybara, pagina->id_pagina);
@@ -392,7 +392,7 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
     t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
 
 
-    int32_t presente = buscar_TLB(pagina->id_pagina);
+    int32_t presente = buscar_TLB(pagina);
 
     /* if(presente == -1){ //tlb miss
         presente = buscarEnTablaDePaginas(capybara, pagina->id_pagina);
@@ -435,7 +435,7 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
             for(int i=0; i<cantPaginas-1; i++){
                 t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
 
-                int32_t presente = buscar_TLB(paginaSiguiente->id_pagina);
+                int32_t presente = buscar_TLB(paginaSiguiente);
 
                 /*if(presente == -1){ //tlb miss
                     presente = buscarEnTablaDePaginas(capybara, paginaSiguiente->id_pagina);
@@ -462,7 +462,7 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
 
         t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
 
-        int32_t presente = buscar_TLB(ultimaPagina->id_pagina);
+        int32_t presente = buscar_TLB(ultimaPagina);
 
         /* if(presente == -1){ //tlb miss
             presente = buscarEnTablaDePaginas(capybara, ultimaPagina->id_pagina);
@@ -519,7 +519,7 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 
     t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
 
-    int32_t presente = buscar_TLB(pagina->id_pagina);
+    int32_t presente = buscar_TLB(pagina);
 
     /* if(presente == -1){ //tlb miss
         presente = buscarEnTablaDePaginas(capybara, pagina->id_pagina);
@@ -564,7 +564,7 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
             for(int i=0; i<cantPaginas-1; i++){
                 t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
 
-                int32_t presente = buscar_TLB(paginaSiguiente->id_pagina);
+                int32_t presente = buscar_TLB(paginaSiguiente);
 
                 /* if(presente == -1){ //tlb miss
                     presente = buscarEnTablaDePaginas(capybara, paginaSiguiente->id_pagina);
@@ -592,7 +592,7 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
 
         t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
 
-        int32_t presente = buscar_TLB(ultimaPagina->id_pagina);
+        int32_t presente = buscar_TLB(ultimaPagina);
 
        /*  if(presente == -1){ //tlb miss
             presente = buscarEnTablaDePaginas(capybara, ultimaPagina->id_pagina);

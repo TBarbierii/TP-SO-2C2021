@@ -2,17 +2,8 @@
 
 uint32_t generadorIdsPaginas(t_carpincho* carp){
 
-	int id;
+	return carp->contadorPag++;
 	
-	if(id_pag != 0 && id_pag%10 == 0){ // no pueden ser multiplos de 10 porque al darlos vuelta lo toma como octal
-	 carp->contadorPag++;
-	}
-	
-     id = carp->contadorPag++;
-	
-	 
-	 return id;
-
 }
 
 uint32_t dar_vuelta_id(uint32_t num){
@@ -43,21 +34,33 @@ uint32_t dar_vuelta_id(uint32_t num){
 
 uint32_t generarDireccionLogica(uint32_t id, uint32_t desplazamiento){
 
-	uint32_t ID;
-	ID = dar_vuelta_id(id);
 
-	char* ID_STRING = string_itoa(ID);
-	char* DESPLAZAMIENTO =  string_itoa(desplazamiento);
+	char* primerNumero = "1";
+
+	char* id_char = string_itoa(id);
+	uint32_t veces = 3 - string_length(id_char);
+
+
+	char* ceros = string_repeat('0', veces);
 
 	char* a = string_new();
-		string_append(&a, ID_STRING);
-		string_append(&a, DESPLAZAMIENTO);
+	string_append(&a, primerNumero);
+	string_append(&a, ceros);
+	string_append(&a, id_char);
 
-	uint32_t direccionLogica = atoi(a);
 
-	free(ID_STRING);
-	free(DESPLAZAMIENTO);
+	char* DESPLAZAMIENTO =  string_itoa(desplazamiento);
+
+	char* b = string_new();
+		string_append(&b,a );
+		string_append(&b, DESPLAZAMIENTO);
+
+	uint32_t direccionLogica = atoi(b);
+
 	free(a);
+	free(DESPLAZAMIENTO);
+	free(ceros);
+	free(b);
 
 	return direccionLogica;
 }
@@ -70,16 +73,13 @@ uint32_t obtenerId(uint32_t num){
 	uint32_t id_retornado;
 
 	char* id = string_itoa(num);
-	char* substring  = string_substring(id, 0, 3);
+	char* substring  = string_substring(id, 1, 3);
 
-	char* dadoVuelta = string_reverse(substring);
-
-
-	id_retornado = atoi(dadoVuelta);
+	id_retornado = atoi(substring);
 
 	free(id);
 	free(substring);
-	free(dadoVuelta);
+
 
 	return id_retornado;
 
@@ -91,7 +91,7 @@ uint32_t obtenerDesplazamiento(uint32_t num){
 		uint32_t id_retornado;
 
 		char* id = string_itoa(num);
-		char* substring =  string_substring_from(id, 3);
+		char* substring =  string_substring_from(id, 4);
 
 		 id_retornado = atoi(substring);
 
@@ -215,20 +215,27 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 
 }
 
-int32_t buscar_TLB(uint32_t idPag){
+int32_t buscar_TLB(t_pagina* pagina){
 
 	bool buscarPagina(t_pagina *pag){
-		return pag->id_pagina == idPag;
+		return pag->id_pagina == pagina->id_pagina && pag->id_carpincho == pagina->id_carpincho;
 	};
 	pthread_mutex_lock(TLB_mutex);
-	t_pagina* pagina = list_find(TLB, (void*)buscarPagina);
+	t_pagina* paginaEncontrada = list_find(TLB, (void*)buscarPagina);
 	pthread_mutex_unlock(TLB_mutex);
 
-	if(pagina == NULL){
+	if(paginaEncontrada == NULL){
 		return -1;
 	}
 	
-	return pagina->marco->comienzo;
+	//if (paginaEncontrada->presente)
+	//{
+		return paginaEncontrada->marco->comienzo;
+	//}else{
+	//	return -1;
+	//}
+	
+	
 	
 }
 
@@ -256,7 +263,7 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 
         uint32_t desplazamiento =  tamanioPagina - (i * tamanioPagina - posicionSiguienteHeap); //el desplazamiento relativo a la pagina
 
-		*DF = buscar_TLB(paginaDeSiguienteHeap->id_pagina);
+		*DF = buscar_TLB(paginaDeSiguienteHeap);
 		
 		/* if(*DF == -1){ //tlb miss
             *DF = buscarEnTablaDePaginas(carpincho, paginaDeSiguienteHeap->id_pagina);
@@ -283,7 +290,7 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 
 			paginaDeSiguienteHeap = list_get(carpincho->tabla_de_paginas, i);
 
-			*DF = buscar_TLB(paginaDeSiguienteHeap->id_pagina);
+			*DF = buscar_TLB(paginaDeSiguienteHeap);
 
 			/* if(*DF == -1){ //tlb miss
             	*DF = buscarEnTablaDePaginas(carpincho, paginaDeSiguienteHeap->id_pagina);
@@ -372,7 +379,9 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	
 	printf("\nRespuesta consulta: %i\n", respuesta);
 	pthread_mutex_unlock(listaCarpinchos);
-	if(respuesta == 0) return 0;
+	if(respuesta == 0){ 
+		return 0;
+	}
 	
 	//primero pregunta si hay lugar en swap
 
@@ -383,7 +392,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
     t_pagina* pag = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
 	
 	
-	int DF = buscar_TLB(pag->id_pagina);
+	int DF = buscar_TLB(pag);
 
 	/* if(DF == -1){ //tlb miss
         DF = buscarEnTablaDePaginas(carpincho, pag->id_pagina);
@@ -483,7 +492,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		list_add(carpincho->tabla_de_paginas, pagina);
 
 	}
-	pthread_mutex_lock(swap);
+	pthread_mutex_unlock(swap);
 
 	if(cantidadDePaginasACrear == 0){ //hay que crear el alloc en la misma pag. TODO verificar que este presente?
 
@@ -492,7 +501,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 			pthread_mutex_unlock(memoria);
 			
 			//poner modificado a la pag correspondiente. una variable que diga si entro al caso cortado o no
-		return;
+		return 1;
 	}
 
 	t_list* marcos_a_asignar = buscarMarcosLibres(carpincho);
@@ -509,7 +518,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 	if(cantidadDePaginasACrear == 1 && (*desplazamiento + TAMANIO_HEAP + tamanio) < tamanioPagina){ //actualiza el primer pedacito del heap cortado al final de la misma pagina
 
-		DF = buscar_TLB(pag->id_pagina);
+		DF = buscar_TLB(pag);
 
 		/*if(DF == -1){ //tlb miss
             DF = buscarEnTablaDePaginas(carpincho, pag->id_pagina);
@@ -555,7 +564,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	};
 	list_iterate(paginasNuevas, (void*)agregarATLB);
 
-
+	return 1;
 }
 
 t_marco* reemplazarPagina(t_carpincho* carpincho){
@@ -585,7 +594,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		victima->marco->estaLibre = true;
 		
 		bool quitarDeTLB(t_pagina* pag){
-			return victima->id_pagina == pag->id_pagina;
+			return victima->id_pagina == pag->id_pagina && victima->id_carpincho ==  pag->id_carpincho;
 		};
 		pthread_mutex_lock(TLB_mutex);
 		list_remove_by_condition(TLB, (void*)quitarDeTLB);// se quita directamente la pagina que se mando a swap.
@@ -612,8 +621,10 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		}
 		pthread_mutex_unlock(listaCarpinchos);
 	
-
+		
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho); 
+
+		log_info(logsObligatorios, "Pagina víctima: Pid: %i, Página: %i, Marco: %i", carpincho->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 
 		list_destroy(paginas_a_reemplazar);  
 
@@ -730,8 +741,18 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 			};
 			pthread_mutex_lock(TLB_mutex);
 			t_list* paginasOrdenadas = list_sorted(TLB, (void*)comparator);
+
 			if(! list_is_empty(paginasOrdenadas)) {
-				list_remove(paginasOrdenadas, 0);
+				t_pagina* pag = list_get(paginasOrdenadas,0);
+				pag->presente = false;
+
+				void buscarPag(t_pagina* p){
+					return p->id_pagina == pag->id_pagina;
+				};
+
+				list_remove_by_condition(TLB, (void*)buscarPag);
+				
+				
 			}
 			pthread_mutex_unlock(TLB_mutex);
 
@@ -744,6 +765,9 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
 		if(strcmp(algoritmoReemplazoMMU, "FIFO") == 0){
 			pthread_mutex_lock(TLB_mutex);
+			
+			t_pagina* pag = list_get(TLB,0);
+			pag->presente = false;			
 			list_remove(TLB, 0);
 
 			list_add(TLB, pagina);
@@ -790,7 +814,7 @@ uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida){
 void manejador_de_seniales(int numeroSenial){
 	
 	if(numeroSenial == SIGINT){
-		//imprimir todo lo de la tlb hits and misses ahre
+		//imprimir todo lo de la tlb hits and misses
 		exit(EXIT_SUCCESS);
 	}
 

@@ -55,6 +55,7 @@ void atender_solicitudes_memoria(uint32_t conexion){
 				break;
 			case MEMALLOC:
 				DL = recibir_memalloc(conexion, logger);
+				printf("\nSe envio la DL %i", DL);
 
 				t_paquete* paquete = crear_paquete(MEMALLOC);
 				paquete->buffer->size = sizeof(uint32_t);
@@ -178,7 +179,7 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 		carpincho->conexion = conexion;
 		log_info(logger,"Agregamos nuevo carpincho a memoria, y su pid es: %d",carpincho->id_carpincho);
 
-		reservarMarcos(carpincho->id_carpincho);
+		carpincho->contadorPag=0;
 
 		pthread_mutex_lock(listaCarpinchos);
 		list_add(carpinchos, carpincho);

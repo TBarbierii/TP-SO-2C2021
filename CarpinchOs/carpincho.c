@@ -970,7 +970,7 @@ int main(int argc, char *argv[]) {
 	printf("MAIN - Utilizando el archivo de config: %s\n", argv[1]);
 
 	pthread_create(&carpincho1, NULL, carpincho1_func, argv[1]);
-	pthread_create(&carpincho2, NULL, carpincho2_func, argv[1]);
+	contadorPpthread_create(&carpincho2, NULL, carpincho2_func, argv[1]);
 	pthread_create(&carpincho3, NULL, carpincho3_func, argv[1]);
 
 	pthread_join(carpincho3, NULL);
