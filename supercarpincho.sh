@@ -12,6 +12,8 @@ sudo make uninstall
 make all
 sudo make install
 ls -a
+
+cd ..
 PRUEBACARPINCHO="carpinchos-pruebas"
 echo -e "\n\n Instalando las pruebas de carpinchoide... \n\n"
 git clone "https://github.com/sisoputnfrba/carpinchos-pruebas.git" $PRUEBACARPINCHO
@@ -27,9 +29,9 @@ make -C ./MateLib
 
 echo -e "\n\n Copio la matelib a /usr/lib"
 sudo cp -u MateLib/src/libmate.so /usr/lib
-
+ls -a
 echo -e "\n\n Compilar los carpinchos de prueba\n\n"
 cd $PRUEBACARPINCHO
 make compile
-ls
+
 echo -e "\n\nDale boooooo, dale boooo!\n\n"

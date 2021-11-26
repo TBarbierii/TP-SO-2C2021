@@ -54,3 +54,45 @@
 [INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
 [ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
 [INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 11:10:00:666 loggerContenidoProceso/(6605:6605): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 11:10:00:669 loggerContenidoProceso/(6605:6605): Solicitamos realizar un memalloc de size:20
+[ERROR] 11:10:00:670 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:10:00:670 loggerContenidoProceso/(6605:6605): Solicitamos realizar un memWrite de 0 y tamanio:20
+[ERROR] 11:10:00:670 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:10:00:671 loggerContenidoProceso/(6605:6605): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
+[ERROR] 11:10:00:671 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:10:00:671 loggerContenidoProceso/(6605:6605): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
+[ERROR] 11:10:00:672 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:10:00:672 loggerContenidoProceso/(6605:6605): Solicitamos realizar un memRead 0
+[ERROR] 11:10:00:672 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:10:00:672 loggerContenidoProceso/(6605:6605): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 11:10:00:673 loggerContenidoProceso/(6605:6605): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 11:10:00:673 loggerContenidoProceso/(6605:6605): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 11:14:23:064 loggerContenidoProceso/(6781:6781): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 11:14:23:066 loggerContenidoProceso/(6781:6781): Solicitamos realizar un memalloc de size:20
+[ERROR] 11:14:23:067 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:23:069 loggerContenidoProceso/(6781:6781): Solicitamos realizar un memWrite de 0 y tamanio:20
+[ERROR] 11:14:23:069 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:23:069 loggerContenidoProceso/(6781:6781): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
+[ERROR] 11:14:23:070 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:23:070 loggerContenidoProceso/(6781:6781): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
+[ERROR] 11:14:23:070 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:23:070 loggerContenidoProceso/(6781:6781): Solicitamos realizar un memRead 0
+[ERROR] 11:14:23:071 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:23:072 loggerContenidoProceso/(6781:6781): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 11:14:23:073 loggerContenidoProceso/(6781:6781): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 11:14:23:073 loggerContenidoProceso/(6781:6781): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 11:14:29:159 loggerContenidoProceso/(6783:6783): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 11:14:29:161 loggerContenidoProceso/(6783:6783): Solicitamos realizar un memalloc de size:20
+[ERROR] 11:14:29:162 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:29:163 loggerContenidoProceso/(6783:6783): Solicitamos realizar un memWrite de 0 y tamanio:20
+[ERROR] 11:14:29:164 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:29:164 loggerContenidoProceso/(6783:6783): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
+[ERROR] 11:14:29:165 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:29:165 loggerContenidoProceso/(6783:6783): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
+[ERROR] 11:14:29:165 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:29:165 loggerContenidoProceso/(6783:6783): Solicitamos realizar un memRead 0
+[ERROR] 11:14:29:165 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 11:14:29:166 loggerContenidoProceso/(6783:6783): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 11:14:29:166 loggerContenidoProceso/(6783:6783): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 11:14:29:166 loggerContenidoProceso/(6783:6783): Se liberan todas las estructuras del proceso de PID:-1
