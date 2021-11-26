@@ -33,7 +33,7 @@ swap_files* encontrar_swap_file(char* path_swap) {
 }
 
 swap_files* primerSwapFileDisponible(){
-/* vamos a probar si podemos escribir sobre el primer archivo swapFile */
+
     return list_get(lista_swap_files,0);
 }
 
@@ -82,9 +82,7 @@ swap_files* buscar_archivo_con_mayor_espacio(){
 
     
     list_sort(lista_swap_files, tieneMasEspacio);
-    //va a poner a los archivos mas grandes al comienzo de todo
-    
-    //tomamos el primero de la lista
+
     return list_get(lista_swap_files,0);
 }
 
@@ -93,7 +91,6 @@ int cantidad_frames_disponibles(swap_files* archivoSwap) {
     t_list* particiones_libres;
 
     if(archivoSwap != NULL){
-        //aca vamos a poner las particiones libres de un archivo
         particiones_libres = list_filter(archivoSwap->particiones_swap, pagina_libre); 
         int cantidad_frames = list_size(particiones_libres);
         list_destroy(particiones_libres);

@@ -33,8 +33,7 @@ int asignar_marcos_maximos(int pid, swap_files* archivo ){
 
 void asignar_marcos_proceso(int pid,swap_files* archivo){
 
-    
-    for(int i=0; i < marcos_maximos; i++){ //busca las primeras n(cantidad) paginas que esten libres y se las asigna de una ya 
+    for(int i=0; i < marcos_maximos; i++){  
         particion* particionActual =  primer_particion_libre(archivo);
         particionActual->esta_libre = 0;
         particionActual->hay_contenido = 0;
