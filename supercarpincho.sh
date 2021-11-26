@@ -15,15 +15,12 @@ sudo make install
 echo -e "\n\n Instalando las pruebas de carpinchoide... \n\n"
 git clone "https://github.com/sisoputnfrba/carpinchos-pruebas.git"
 PRUEBACARPINCHO="carpinchos-pruebas"
-cd $PRUEBACARPINCHO
 
-export LIBRARY_PATH=$LIBRARY_PATH:/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/src
-export LD_LIBRARY_PATH=/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/src
-make compile
 
 cd $CWD
 echo -e "\n\nBuilding projects...\n\n"
 make -C ./SWAmP
 make -C ./Memoria
 make -C ./Kernel
+make -C ./MateLib
 echo -e "\n\nDale boooooo, dale boooo!\n\n"
