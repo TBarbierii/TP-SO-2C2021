@@ -1,0 +1,9 @@
+[DEBUG] 13:22:25:773 PlanificadorMedianoPlazo/(8220:8225): Se inicializa la planificacion de mediano plazo
+[DEBUG] 13:22:25:773 PlanificadorMedianoPlazo/(8220:8228): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 13:22:25:773 PlanificadorMedianoPlazo/(8220:8227): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 13:22:40:848 PlanificadorMedianoPlazo/(8267:8272): Se inicializa la planificacion de mediano plazo
+[DEBUG] 13:22:40:850 PlanificadorMedianoPlazo/(8267:8275): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 13:22:40:851 PlanificadorMedianoPlazo/(8267:8274): Incializado el thread que permite suspender procesos para evitar IO bound
+[DEBUG] 13:23:13:219 PlanificadorMedianoPlazo/(8441:8446): Se inicializa la planificacion de mediano plazo
+[DEBUG] 13:23:13:220 PlanificadorMedianoPlazo/(8441:8449): Incializado el thread que permite ingreso de un proceso suspendido/new a ready
+[DEBUG] 13:23:13:220 PlanificadorMedianoPlazo/(8441:8448): Incializado el thread que permite suspender procesos para evitar IO bound

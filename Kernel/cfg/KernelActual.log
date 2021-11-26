@@ -1,0 +1,9 @@
+[INFO] 13:22:25:770 KernelActual/(8220:8220): Se inicializan el config y las listas de planificacion
+[INFO] 13:22:25:771 KernelActual/(8220:8220): Se inicializan los valores provenientes del config
+[INFO] 13:22:25:771 KernelActual/(8220:8220): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 13:22:40:846 KernelActual/(8267:8267): Se inicializan el config y las listas de planificacion
+[INFO] 13:22:40:847 KernelActual/(8267:8267): Se inicializan los valores provenientes del config
+[INFO] 13:22:40:847 KernelActual/(8267:8267): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores
+[INFO] 13:23:13:217 KernelActual/(8441:8441): Se inicializan el config y las listas de planificacion
+[INFO] 13:23:13:218 KernelActual/(8441:8441): Se inicializan los valores provenientes del config
+[INFO] 13:23:13:218 KernelActual/(8441:8441): Se inicializan los semaforos utilizados para la sincronizacion de los planificadores

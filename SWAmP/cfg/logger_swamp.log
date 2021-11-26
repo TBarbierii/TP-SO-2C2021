@@ -1,0 +1,4 @@
+[INFO] 13:22:56:662 SWAmP/(8410:8410): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 3200 cantidad de frames disponibles: 100 y id: 0
+[INFO] 13:22:56:663 SWAmP/(8410:8410): Se han creado todos los archivos
+[INFO] 13:22:56:663 SWAmP/(8410:8410): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 13:23:02:955 SWAmP/(8410:8410): Solicitud de memoria entrante

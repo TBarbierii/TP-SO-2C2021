@@ -28,7 +28,7 @@ make -C ./Kernel
 make -C ./MateLib
 
 echo -e "\n\n Copio la matelib a /usr/lib"
-sudo cp -u MateLib/src/libmate.so /usr/lib
+sudo cp -u MateLib/src/libmatelib.so /usr/lib
 ls -a
 echo -e "\n\n Compilar los carpinchos de prueba\n\n"
 cd $PRUEBACARPINCHO
