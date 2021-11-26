@@ -30,8 +30,8 @@ build/%: %.c
 	$(CC) -L"../MateLib/src/" $(HEADERS)  -o "$@" $^ $(LIBS)
 
 run: compile
-
-	LD_LIBRARY_PATH="../MateLib/src/" ./build/PruebaAsignacion $(CONFIG)
+	cd build/ && \
+	LD_LIBRARY_PATH="../../MateLib/src/" ./PruebaAsignacion $(CONFIG)
 
 # clean --> Limpia todos los carpinchos
 clean:

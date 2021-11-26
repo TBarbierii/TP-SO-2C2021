@@ -1,0 +1,56 @@
+[INFO] 15:22:30:366 loggerContenidoProceso/(5840:5841): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 15:22:30:367 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:368 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5842): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5843): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:370 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:370 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:373 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:373 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:373 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:373 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:373 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:10
+[ERROR] 15:22:30:373 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:373 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memalloc de size:10
+[ERROR] 15:22:30:374 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:374 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memalloc de size:10
+[ERROR] 15:22:30:374 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:374 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memWrite de 0 y tamanio:5
+[ERROR] 15:22:30:374 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:374 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memWrite de 0 y tamanio:5
+[ERROR] 15:22:30:375 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:375 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memWrite de 0 y tamanio:5
+[ERROR] 15:22:30:375 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memWrite de 0 y tamanio:5
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memWrite de 0 y tamanio:5
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memWrite de 0 y tamanio:5
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5842): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5842): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5842): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5843): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5843): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5843): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Se liberan todas las estructuras del proceso de PID:-1
