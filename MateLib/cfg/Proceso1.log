@@ -1,0 +1,36 @@
+[INFO] 16:32:09:441 loggerContenidoProceso/(7938:7939): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:32:09:441 loggerContenidoProceso/(7938:7939): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:32:14:456 loggerContenidoProceso/(7938:7939): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 16:32:14:456 loggerContenidoProceso/(7938:7939): Se pudo realizar con exito la operacion IO
+[INFO] 16:32:14:456 loggerContenidoProceso/(7938:7939): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:32:19:463 loggerContenidoProceso/(7938:7939): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 16:32:19:463 loggerContenidoProceso/(7938:7939): Se pudo realizar con exito la operacion IO
+[INFO] 16:32:19:463 loggerContenidoProceso/(7938:7939): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:32:24:469 loggerContenidoProceso/(7938:7939): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 16:32:24:469 loggerContenidoProceso/(7938:7939): Se pudo realizar con exito la operacion IO
+[INFO] 16:32:24:469 loggerContenidoProceso/(7938:7939): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 16:32:24:511 loggerContenidoProceso/(7938:7939): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:32:24:511 loggerContenidoProceso/(7938:7939): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 16:32:24:512 loggerContenidoProceso/(7938:7939): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 16:35:57:807 loggerContenidoProceso/(8377:8378): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:35:57:807 loggerContenidoProceso/(8377:8378): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:36:02:833 loggerContenidoProceso/(8377:8378): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 16:36:02:833 loggerContenidoProceso/(8377:8378): Se pudo realizar con exito la operacion IO
+[INFO] 16:36:02:833 loggerContenidoProceso/(8377:8378): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:36:07:839 loggerContenidoProceso/(8377:8378): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 16:36:07:840 loggerContenidoProceso/(8377:8378): Se pudo realizar con exito la operacion IO
+[INFO] 16:36:07:840 loggerContenidoProceso/(8377:8378): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:36:31:423 loggerContenidoProceso/(8498:8499): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:36:31:423 loggerContenidoProceso/(8498:8499): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:36:36:436 loggerContenidoProceso/(8498:8499): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 16:36:36:437 loggerContenidoProceso/(8498:8499): Se pudo realizar con exito la operacion IO
+[INFO] 16:36:36:437 loggerContenidoProceso/(8498:8499): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:36:56:444 loggerContenidoProceso/(8498:8499): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 16:36:56:444 loggerContenidoProceso/(8498:8499): Se pudo realizar con exito la operacion IO
+[INFO] 16:36:56:444 loggerContenidoProceso/(8498:8499): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 16:37:06:450 loggerContenidoProceso/(8498:8499): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 16:37:06:450 loggerContenidoProceso/(8498:8499): Se pudo realizar con exito la operacion IO
+[INFO] 16:37:06:450 loggerContenidoProceso/(8498:8499): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 16:37:06:466 loggerContenidoProceso/(8498:8499): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:37:06:467 loggerContenidoProceso/(8498:8499): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 16:37:06:467 loggerContenidoProceso/(8498:8499): Se liberan todas las estructuras del proceso de PID:1

@@ -1,193 +1,47 @@
-[DEBUG] 13:22:25:771 DispositivosIO/(8220:8220): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 13:22:40:848 DispositivosIO/(8267:8267): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 13:23:13:219 DispositivosIO/(8441:8441): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 22:18:31:987 DispositivosIO/(4082:4082): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 22:24:02:355 DispositivosIO/(4808:4808): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 22:25:14:715 DispositivosIO/(4920:4920): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 22:25:53:119 DispositivosIO/(5066:5066): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 22:28:39:782 DispositivosIO/(5715:5715): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 22:30:18:744 DispositivosIO/(5939:5939): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 22:41:12:519 DispositivosIO/(9383:9383): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 22:41:12:526 DispositivosIO/(9383:9383): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 22:42:55:856 DispositivosIO/(9551:9551): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 22:42:55:862 DispositivosIO/(9551:9551): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 22:44:28:146 DispositivosIO/(9707:9707): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 22:44:28:151 DispositivosIO/(9707:9707): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 22:50:37:194 DispositivosIO/(10550:10550): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 22:50:37:199 DispositivosIO/(10550:10550): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 22:51:42:631 DispositivosIO/(10760:10760): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 22:51:42:637 DispositivosIO/(10760:10760): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 22:53:20:157 DispositivosIO/(11064:11064): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 22:53:20:162 DispositivosIO/(11064:11064): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 23:00:09:823 DispositivosIO/(12052:12052): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 23:00:09:828 DispositivosIO/(12052:12052): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 23:01:50:383 DispositivosIO/(12198:12198): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 23:01:50:389 DispositivosIO/(12198:12198): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[INFO] 23:01:58:215 DispositivosIO/(12198:12208): Agregamos al proceso en bloqueo y en el dispositivo: HUMEDAL
-[INFO] 23:01:58:215 DispositivosIO/(12198:12200): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:3500
-[DEBUG] 23:10:02:338 DispositivosIO/(13187:13187): Se crea un hilo para ejecutar el Dispositivio IO: pelopincho, con tiempo de espera: 2000
-[DEBUG] 23:13:21:221 DispositivosIO/(13621:13621): Se crea un hilo para ejecutar el Dispositivio IO: pelopincho, con tiempo de espera: 2000
-[INFO] 23:13:30:593 DispositivosIO/(13621:13629): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:13:30:594 DispositivosIO/(13621:13622): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:13:32:595 DispositivosIO/(13621:13622): Termino de ejecutar el proceso:-1 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:13:32:604 DispositivosIO/(13621:13629): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:13:32:608 DispositivosIO/(13621:13622): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:13:34:609 DispositivosIO/(13621:13622): Termino de ejecutar el proceso:-1 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[DEBUG] 23:14:32:453 DispositivosIO/(13892:13892): Se crea un hilo para ejecutar el Dispositivio IO: pelopincho, con tiempo de espera: 2000
-[INFO] 23:14:40:449 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:14:40:450 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:14:42:451 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:0 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:14:42:460 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:14:42:465 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:14:44:465 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:1 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:14:52:473 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:14:52:473 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:14:54:474 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:2 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:14:54:487 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:14:54:487 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:14:56:487 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:1 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:14:56:493 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:14:56:493 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:14:58:494 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:0 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:14:58:501 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:14:58:501 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:15:00:875 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:1 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:15:00:882 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:15:00:883 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:15:02:883 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:0 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:15:14:927 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:15:14:927 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:15:16:928 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:2 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:15:26:936 DispositivosIO/(13892:13898): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:15:26:936 DispositivosIO/(13892:13893): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:15:28:937 DispositivosIO/(13892:13893): Termino de ejecutar el proceso:2 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[DEBUG] 23:17:57:387 DispositivosIO/(14366:14366): Se crea un hilo para ejecutar el Dispositivio IO: pelopincho, con tiempo de espera: 2000
-[INFO] 23:18:01:260 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:01:261 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:03:262 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:0 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:18:03:273 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:03:276 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:05:277 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:1 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:18:13:289 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:13:290 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:15:290 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:2 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:18:15:308 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:15:309 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:17:310 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:1 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:18:17:329 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:17:331 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:19:332 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:0 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:18:19:339 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:19:339 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:21:339 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:1 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:18:21:349 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:21:350 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:23:351 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:0 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:18:35:425 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:35:425 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:37:426 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:2 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:18:47:436 DispositivosIO/(14366:14375): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:18:47:436 DispositivosIO/(14366:14369): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:18:49:437 DispositivosIO/(14366:14369): Termino de ejecutar el proceso:2 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[DEBUG] 23:19:50:732 DispositivosIO/(14632:14632): Se crea un hilo para ejecutar el Dispositivio IO: pelopincho, con tiempo de espera: 2000
-[INFO] 23:19:56:156 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:19:56:157 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:19:58:158 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:3 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:19:58:169 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:19:58:170 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:20:00:170 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:4 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:20:08:185 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:20:08:186 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:20:10:186 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:5 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:20:10:201 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:20:10:203 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:20:12:203 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:3 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:20:12:210 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:20:12:210 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:20:14:211 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:4 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:20:22:224 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:20:22:224 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:20:24:224 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:5 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:20:24:235 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:20:24:236 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:20:26:237 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:3 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:20:26:245 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:20:26:246 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:20:28:247 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:4 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 23:20:36:261 DispositivosIO/(14632:14639): Agregamos al proceso en bloqueo y en el dispositivo: pelopincho
-[INFO] 23:20:36:261 DispositivosIO/(14632:14634): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:2000
-[INFO] 23:20:38:262 DispositivosIO/(14632:14634): Termino de ejecutar el proceso:5 sobre el dispositivo IO:pelopincho, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[DEBUG] 23:24:07:617 DispositivosIO/(15283:15283): Se crea un hilo para ejecutar el Dispositivio IO: pelopincho, con tiempo de espera: 2000
-[DEBUG] 23:26:56:257 DispositivosIO/(15811:15811): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 23:29:14:605 DispositivosIO/(16193:16193): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 23:31:20:855 DispositivosIO/(16608:16608): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 23:36:38:620 DispositivosIO/(17395:17395): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 23:36:58:990 DispositivosIO/(17458:17458): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 23:39:31:546 DispositivosIO/(17879:17879): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 23:42:13:216 DispositivosIO/(18167:18167): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 23:46:53:916 DispositivosIO/(18846:18846): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 23:51:05:412 DispositivosIO/(19360:19360): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 00:46:02:590 DispositivosIO/(22479:22479): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 00:46:40:265 DispositivosIO/(22725:22725): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:16:22:562 DispositivosIO/(24751:24751): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:19:08:993 DispositivosIO/(25170:25170): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:19:55:791 DispositivosIO/(25422:25422): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:20:38:659 DispositivosIO/(25526:25526): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:24:56:311 DispositivosIO/(25860:25860): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:49:59:787 DispositivosIO/(28653:28653): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:53:43:521 DispositivosIO/(29129:29129): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:54:55:018 DispositivosIO/(29341:29341): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 01:56:23:932 DispositivosIO/(29572:29572): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:01:21:334 DispositivosIO/(30127:30127): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:03:46:887 DispositivosIO/(30236:30236): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:04:56:035 DispositivosIO/(30325:30325): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:05:17:158 DispositivosIO/(30362:30362): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:05:44:191 DispositivosIO/(30506:30506): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:06:54:511 DispositivosIO/(30671:30671): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:08:05:269 DispositivosIO/(30882:30882): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:10:23:169 DispositivosIO/(31260:31260): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:12:35:574 DispositivosIO/(31457:31457): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:17:36:278 DispositivosIO/(31937:31937): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:18:02:713 DispositivosIO/(32041:32041): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:18:23:732 DispositivosIO/(32188:32188): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:18:42:701 DispositivosIO/(32224:32224): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:19:31:382 DispositivosIO/(32459:32459): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:20:57:177 DispositivosIO/(32543:32543): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:27:10:092 DispositivosIO/(667:667): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:30:19:791 DispositivosIO/(917:917): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:35:25:203 DispositivosIO/(1549:1549): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:40:23:662 DispositivosIO/(1859:1859): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:45:14:788 DispositivosIO/(2271:2271): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:47:50:270 DispositivosIO/(2514:2514): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:48:31:139 DispositivosIO/(2723:2723): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:48:44:544 DispositivosIO/(2856:2856): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:49:35:147 DispositivosIO/(2956:2956): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:50:41:223 DispositivosIO/(3100:3100): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:53:10:392 DispositivosIO/(3521:3521): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:54:57:250 DispositivosIO/(3791:3791): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:55:58:784 DispositivosIO/(3984:3984): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 02:59:27:040 DispositivosIO/(4251:4251): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 03:00:45:788 DispositivosIO/(4663:4663): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 03:04:45:814 DispositivosIO/(4961:4961): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 03:21:05:770 DispositivosIO/(6211:6211): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 03:29:13:913 DispositivosIO/(6479:6479): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 03:37:18:680 DispositivosIO/(7315:7315): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 03:39:30:039 DispositivosIO/(7666:7666): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
-[DEBUG] 03:45:12:372 DispositivosIO/(8261:8261): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 03:45:12:378 DispositivosIO/(8261:8261): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 03:50:00:009 DispositivosIO/(8449:8449): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 03:50:00:017 DispositivosIO/(8449:8449): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 03:58:59:803 DispositivosIO/(8964:8964): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 03:58:59:808 DispositivosIO/(8964:8964): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 04:00:28:400 DispositivosIO/(9208:9208): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 04:00:28:405 DispositivosIO/(9208:9208): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 04:01:42:459 DispositivosIO/(9350:9350): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 04:01:42:464 DispositivosIO/(9350:9350): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[DEBUG] 04:05:50:187 DispositivosIO/(9613:9613): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
-[DEBUG] 04:05:50:192 DispositivosIO/(9613:9613): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
-[INFO] 04:05:58:761 DispositivosIO/(9613:9621): Agregamos al proceso en bloqueo y en el dispositivo: HUMEDAL
-[INFO] 04:05:58:762 DispositivosIO/(9613:9615): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:3500
-[INFO] 04:06:02:263 DispositivosIO/(9613:9615): Termino de ejecutar el proceso:1 sobre el dispositivo IO:HUMEDAL, lo ponemos en ready si el nivel de multiprogramacion lo permite
-[INFO] 04:06:02:545 DispositivosIO/(9613:9626): Agregamos al proceso en bloqueo y en el dispositivo: HUMEDAL
-[INFO] 04:06:02:545 DispositivosIO/(9613:9615): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:3500
-[INFO] 04:06:06:046 DispositivosIO/(9613:9615): Termino de ejecutar el proceso:1 sobre el dispositivo IO:HUMEDAL, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 16:33:54:781 DispositivosIO/(8174:8174): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 5000
+[INFO] 16:35:57:827 DispositivosIO/(8174:8183): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:35:57:827 DispositivosIO/(8174:8176): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:02:828 DispositivosIO/(8174:8176): Termino de ejecutar el proceso:1 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:36:02:836 DispositivosIO/(8174:8180): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:36:02:836 DispositivosIO/(8174:8176): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:07:837 DispositivosIO/(8174:8176): Termino de ejecutar el proceso:1 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:36:07:841 DispositivosIO/(8174:8183): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:36:07:841 DispositivosIO/(8174:8176): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:12:842 DispositivosIO/(8174:8176): Termino de ejecutar el proceso:1 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 16:36:21:643 DispositivosIO/(8442:8442): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 5000
+[INFO] 16:36:31:430 DispositivosIO/(8442:8450): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:36:31:431 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:32:372 DispositivosIO/(8442:8448): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:36:33:370 DispositivosIO/(8442:8450): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:36:34:369 DispositivosIO/(8442:8448): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:36:36:432 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:1 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:36:36:438 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:36:439 DispositivosIO/(8442:8450): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:36:41:438 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:2 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:36:41:439 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:46:440 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:3 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:36:46:440 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:51:440 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:4 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:36:51:441 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:51:444 DispositivosIO/(8442:8448): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:36:56:442 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:1 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:36:56:443 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:36:56:446 DispositivosIO/(8442:8450): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:37:01:443 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:4 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:37:01:447 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:37:01:449 DispositivosIO/(8442:8448): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:37:06:448 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:1 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:37:06:448 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:37:06:505 DispositivosIO/(8442:8448): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:37:11:450 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:4 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:37:11:450 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:37:11:470 DispositivosIO/(8442:8448): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:37:16:451 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:2 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:37:16:451 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:37:16:455 DispositivosIO/(8442:8450): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:37:21:452 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:3 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:37:21:452 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:37:21:456 DispositivosIO/(8442:8448): Agregamos al proceso en bloqueo y en el dispositivo: PILETA
+[INFO] 16:37:26:454 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:2 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 16:37:26:457 DispositivosIO/(8442:8444): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:5000
+[INFO] 16:37:31:457 DispositivosIO/(8442:8444): Termino de ejecutar el proceso:3 sobre el dispositivo IO:PILETA, lo ponemos en ready si el nivel de multiprogramacion lo permite

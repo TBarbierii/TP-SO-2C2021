@@ -221,6 +221,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             //ponemos que lo ultimo que realizo fue un bloqueo a un semaforo
             procesoAbloquear->vuelveDeBloqueo = BLOCK_SEM;
             pthread_mutex_unlock(modificarBlocked);
+            sem_post(signalSuspensionProceso);
 
             log_destroy(logger);
             return 1;
