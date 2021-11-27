@@ -1,0 +1,1580 @@
+[INFO] 22:53:23:114 loggerContenidoProceso/(11081:11088): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 22:53:23:115 loggerContenidoProceso/(11081:11088): Solicitamos inicializar un semaforo de nombre: SEMAFORO_NUEVO, con valor : 1
+[INFO] 22:53:23:125 loggerContenidoProceso/(11081:11088): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:125 loggerContenidoProceso/(11081:11088): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 22:53:23:125 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:157 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:157 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:163 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:174 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:174 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:174 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:187 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:187 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:192 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:196 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:196 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:196 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:211 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:211 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:217 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:219 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:219 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:219 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:231 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:231 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:237 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:243 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:243 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:243 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:250 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:251 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:256 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:258 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:258 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:258 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:267 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:267 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:272 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:275 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:275 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:275 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:279 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:279 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:284 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:286 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:286 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:286 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:292 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:293 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:298 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:303 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:303 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:303 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:307 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:307 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:313 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:315 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:315 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:315 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:319 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:319 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:324 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:327 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:327 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:327 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:336 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:336 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:342 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:344 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:344 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:344 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:363 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:363 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:368 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:370 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:370 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:370 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:373 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:373 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:379 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:382 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:384 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:384 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:388 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:388 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:394 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:397 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:397 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:397 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:403 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:403 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:408 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:410 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:410 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:410 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:417 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:417 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:424 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:426 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:426 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:426 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:431 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:431 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:437 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:439 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:439 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:439 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:449 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:449 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:455 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:457 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:457 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:457 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:461 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:461 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:466 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:472 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:472 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:472 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:482 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:482 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:487 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:489 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:489 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:489 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:493 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:493 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:499 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:501 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:501 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:501 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:505 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:506 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:511 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:512 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:512 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:512 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:519 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:519 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:707 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:709 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:709 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:709 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:714 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:714 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:719 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:721 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:721 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:721 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:725 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:725 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:731 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:733 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:733 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:733 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:737 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:737 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:742 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:744 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:744 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:744 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:751 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:751 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:756 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:766 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:766 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:766 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:769 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:769 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:774 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:776 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:777 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:777 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:782 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:782 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:788 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:792 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:792 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:792 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:796 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:796 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:801 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:803 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:803 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:803 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:808 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:808 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:813 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:815 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:815 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:815 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:822 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:822 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:827 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:829 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:829 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:829 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:833 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:834 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:839 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:844 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:844 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:844 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:847 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:847 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:852 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:854 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:854 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:854 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:859 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:859 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:864 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:866 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:866 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:866 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:871 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:872 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:880 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:883 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:883 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:883 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:887 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:887 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:892 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:894 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:894 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:894 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:900 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:900 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:905 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:907 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:907 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:907 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:914 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:914 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:919 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:921 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:921 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:921 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:925 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:925 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:931 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:936 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:936 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:936 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:943 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:943 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:949 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:951 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:951 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:951 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:956 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:956 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:961 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:964 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:966 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:966 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:972 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:972 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:978 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:981 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:981 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:981 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:984 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:984 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:23:989 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:991 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:991 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:23:991 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:23:998 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:23:998 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:003 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:005 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:005 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:005 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:009 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:009 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:014 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:016 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:017 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:017 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:021 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:021 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:027 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:029 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:029 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:029 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:035 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:035 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:041 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:042 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:042 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:042 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:046 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:046 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:051 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:052 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:053 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:053 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:059 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:060 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:065 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:066 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:066 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:066 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:070 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:071 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:076 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:078 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:078 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:078 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:084 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:084 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:090 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:096 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:096 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:096 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:100 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:101 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:107 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:109 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:109 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:109 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:114 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:114 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:120 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:125 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:125 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:125 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:129 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:129 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:134 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:137 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:137 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:137 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:141 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:141 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:146 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:147 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:148 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:148 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:156 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:157 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:162 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:163 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:163 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:163 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:168 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:168 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:173 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:176 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:176 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:176 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:186 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:186 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:191 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:195 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:195 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:195 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:198 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:198 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:204 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:205 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:205 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:205 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:210 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:212 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:217 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:219 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:219 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:219 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:223 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:223 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:228 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:230 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:230 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:230 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:233 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:233 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:238 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:241 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:243 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:243 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:250 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:250 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:255 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:257 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:257 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:257 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:262 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:262 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:268 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:269 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:269 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:269 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:280 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:281 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:286 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:287 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:287 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:287 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:292 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:292 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:297 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:299 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:299 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:299 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:310 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:310 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:315 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:317 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:317 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:317 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:323 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:323 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:328 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:330 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:330 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:330 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:333 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:333 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:339 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:342 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:342 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:342 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:346 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:346 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:351 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:353 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:353 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:353 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:358 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:358 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:363 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:365 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:367 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:367 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:374 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:374 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:379 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:381 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:381 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:381 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:385 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:385 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:391 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:393 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:393 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:393 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:402 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:402 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:407 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:409 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:409 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:409 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:412 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:413 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:418 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:420 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:420 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:420 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:424 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:424 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:431 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:433 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:433 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:433 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:437 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:437 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:443 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:445 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:445 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:445 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:448 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:448 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:454 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:456 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:456 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:456 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:465 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:465 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:470 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:473 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:473 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:473 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:476 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:476 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:482 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:483 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:483 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:483 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:487 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:487 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:493 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:496 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:497 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:497 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:501 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:501 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:506 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:509 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:509 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:509 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:513 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:513 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:518 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:525 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:525 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:525 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:529 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:529 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:534 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:536 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:536 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:536 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:540 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:540 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:546 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:547 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:547 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:547 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:556 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:556 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:562 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:565 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:565 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:565 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:569 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:569 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:574 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:576 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:576 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:576 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:591 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:591 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:596 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:598 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:598 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:598 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:600 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:600 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:605 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:607 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:607 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:607 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:611 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:611 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:618 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:625 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:625 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:625 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:629 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:629 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:634 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:636 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:636 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:636 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:641 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:641 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:647 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:653 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:653 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:653 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:657 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:657 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:663 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:665 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:665 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:665 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:668 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:668 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:673 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:676 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:676 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:676 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:684 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:684 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:690 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:692 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:692 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:692 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:697 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:697 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:702 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:704 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:704 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:704 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:710 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:710 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:715 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:717 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:717 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:718 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:721 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:722 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:727 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:728 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:728 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:728 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:733 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:733 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:738 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:745 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:745 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:745 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:749 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:749 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:754 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:756 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:756 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:756 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:760 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:760 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:765 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:767 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:767 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:767 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:777 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:777 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:783 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:784 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:784 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:784 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:790 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:790 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:795 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:796 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:796 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:796 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:801 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:803 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:808 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:810 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:810 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:810 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:814 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:814 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:819 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:821 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:821 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:821 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:825 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:825 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:830 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:840 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:840 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:840 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:843 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:843 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:849 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:851 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:851 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:851 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:855 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:855 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:860 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:861 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:861 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:861 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:871 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:871 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:876 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:878 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:878 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:878 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:882 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:882 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:887 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:890 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:890 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:890 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:899 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:899 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:904 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:907 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:907 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:907 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:910 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:911 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:916 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:918 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:918 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:918 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:923 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:923 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:929 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:932 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:932 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:932 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:936 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:936 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:941 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:944 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:944 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:944 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:950 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:950 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:955 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:962 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:962 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:962 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:966 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:966 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:971 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:974 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:974 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:974 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:979 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:979 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:24:984 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:993 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:993 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:24:993 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:24:997 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:24:997 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:003 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:005 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:005 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:006 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:010 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:010 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:015 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:017 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:019 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:019 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:026 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:026 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:031 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:033 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:033 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:033 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:037 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:037 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:042 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:044 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:044 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:044 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:048 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:050 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:055 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:059 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:059 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:059 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:063 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:063 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:068 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:070 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:070 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:070 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:073 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:074 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:079 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:086 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:086 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:086 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:090 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:090 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:095 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:097 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:097 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:097 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:101 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:101 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:106 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:109 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:111 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:111 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:119 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:119 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:124 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:126 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:126 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:126 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:130 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:130 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:135 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:137 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:137 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:137 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:146 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:146 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:151 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:153 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:153 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:153 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:158 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:158 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:164 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:166 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:166 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:166 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:171 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:173 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:178 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:180 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:181 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:181 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:186 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:186 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:191 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:193 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:193 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:193 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:197 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:197 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:204 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:209 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:209 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:209 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:213 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:213 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:219 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:222 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:222 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:222 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:226 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:226 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:231 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:233 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:235 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:235 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:242 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:242 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:247 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:249 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:249 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:249 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:253 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:253 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:259 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:260 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:260 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:260 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:275 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:275 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:280 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:281 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:282 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:282 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:287 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:287 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:292 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:293 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:293 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:293 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:302 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:302 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:307 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:309 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:309 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:309 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:313 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:313 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:318 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:320 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:320 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:320 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:325 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:325 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:331 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:333 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:333 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:333 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:337 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:337 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:342 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:344 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:344 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:344 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:347 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:348 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:353 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:355 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:355 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:355 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:365 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:365 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:370 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:373 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:373 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:373 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:378 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:378 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:384 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:385 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:385 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:385 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:394 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:394 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:399 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:401 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:401 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:401 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:406 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:406 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:412 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:413 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:413 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:414 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:417 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:417 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:424 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:426 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:426 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:426 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:430 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:430 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:435 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:437 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:437 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:437 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:440 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:440 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:445 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:448 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:448 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:448 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:457 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:457 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:462 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:465 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:465 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:465 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:468 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:468 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:474 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:477 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:477 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:477 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:481 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:483 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:489 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:492 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:492 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:492 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:496 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:496 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:501 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:503 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:503 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:503 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:508 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:508 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:513 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:518 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:518 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:518 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:523 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:523 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:528 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:531 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:531 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:531 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:534 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:534 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:540 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:541 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:543 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:543 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:550 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:551 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:556 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:557 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:557 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:557 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:561 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:562 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:567 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:569 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:569 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:569 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:578 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:578 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:583 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:585 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:585 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:585 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:592 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:592 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:597 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:603 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:605 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:605 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:612 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:612 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:618 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:620 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:620 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:620 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:626 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:626 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:631 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:633 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:633 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:633 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:645 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:645 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:650 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:651 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:651 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:651 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:657 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:657 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:662 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:668 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:668 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:668 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:676 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:676 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:682 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:684 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:684 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:685 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:689 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:689 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:694 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:699 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:699 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:700 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:711 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:711 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:716 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:717 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:717 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:717 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:723 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:723 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:728 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:735 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:735 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:735 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:739 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:739 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:744 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:747 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:747 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:747 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:751 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:751 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:756 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:764 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:764 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:764 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:768 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:768 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:773 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:776 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:776 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:776 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:781 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:781 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:786 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:800 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:800 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:800 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:810 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:811 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:817 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:826 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:826 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:826 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:831 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:831 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:836 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:837 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:837 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:837 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:844 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:844 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:849 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:856 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:856 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:856 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:860 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:861 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:866 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:868 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:869 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:869 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:873 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:873 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:878 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:886 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:886 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:886 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:890 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:890 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:895 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:897 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:897 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:897 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:901 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:901 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:907 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:909 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:909 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:909 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:921 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:921 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:926 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:928 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:928 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:928 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:933 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:933 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:938 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:940 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:940 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:940 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:950 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:950 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:955 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:958 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:958 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:958 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:962 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:962 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:967 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:969 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:969 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:969 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:980 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:980 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:985 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:989 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:989 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:25:989 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:25:993 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:25:993 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:25:998 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:001 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:001 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:001 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:010 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:010 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:015 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:017 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:018 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:018 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:023 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:023 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:029 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:031 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:031 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:032 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:041 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:041 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:047 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:049 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:049 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:049 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:054 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:054 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:059 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:061 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:061 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:061 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:070 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:070 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:076 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:079 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:079 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:079 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:083 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:083 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:088 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:090 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:090 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:090 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:101 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:101 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:106 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:112 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:112 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:112 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:117 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:117 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:122 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:124 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:124 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:124 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:137 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:137 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:142 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:145 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:145 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:145 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:150 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:150 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:156 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:165 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:165 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:165 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:170 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:170 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:175 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:178 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:178 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:178 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:182 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:182 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:188 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:194 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:194 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:194 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:199 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:199 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:204 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:206 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:206 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:206 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:211 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:211 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:217 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:225 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:225 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:225 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:229 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:229 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:235 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:238 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:238 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:238 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:246 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:247 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:253 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:257 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:257 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:257 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:265 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:265 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:271 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:273 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:273 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:273 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:285 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:285 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:291 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:294 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:294 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:294 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:299 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:299 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:304 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:306 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:306 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:306 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:318 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:318 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:323 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:324 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:324 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:324 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:329 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:329 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:335 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:337 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:337 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:337 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:350 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:350 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:355 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:357 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:357 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:357 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:361 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:361 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:366 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:372 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:372 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:372 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:379 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:379 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:384 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:386 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:386 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:386 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:390 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:390 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:395 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:397 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:397 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:397 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:408 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:408 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:413 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:415 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:415 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:415 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:419 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:419 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:424 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:427 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:427 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:427 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:431 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:431 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:437 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:440 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:440 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:440 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:444 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:444 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:450 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:451 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:452 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:452 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:458 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:458 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:464 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:468 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:468 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:468 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:472 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:472 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:477 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:480 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:480 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:480 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:484 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:484 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:489 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:491 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:491 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:491 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:500 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:500 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:505 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:508 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:508 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:509 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:512 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:512 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:517 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:520 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:520 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:520 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:524 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:526 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:531 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:533 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:533 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:533 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:537 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:538 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:543 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:545 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:545 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:545 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:549 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:549 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:554 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:564 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:564 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:564 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:567 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:567 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:573 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:575 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:575 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:575 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:579 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:579 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:584 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:591 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:591 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:591 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:595 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:595 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:600 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:602 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:602 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:602 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:606 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:606 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:611 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:613 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:613 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:613 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:622 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:622 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:627 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:629 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:629 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:629 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:633 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:633 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:638 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:641 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:641 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:641 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:644 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:644 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:651 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:653 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:653 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:653 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:657 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:657 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:662 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:665 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:665 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:665 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:672 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:672 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:680 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:685 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:685 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:685 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:691 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:691 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:696 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:698 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:698 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:698 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:703 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:703 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:708 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:715 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:715 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:715 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:719 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:719 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:724 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:727 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:727 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:727 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:731 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:731 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:736 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:738 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:738 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:738 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:754 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:754 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:759 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:761 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:761 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:761 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:764 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:764 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:770 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:778 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:778 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:778 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:782 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:782 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:787 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:789 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:789 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:789 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:793 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:793 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:798 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:804 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:804 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:804 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:812 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:812 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:817 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:818 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:819 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:819 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:824 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:824 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:829 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:833 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:833 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:833 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:841 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:841 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:846 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:848 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:848 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:848 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:853 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:853 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:858 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:864 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:864 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:864 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:873 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:873 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:878 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:881 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:881 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:881 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:893 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:893 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:899 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:901 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:901 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:901 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:907 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:907 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:912 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:915 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:915 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:915 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:919 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:919 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:924 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:930 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:930 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:930 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:934 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:934 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:939 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:943 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:943 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:943 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:946 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:947 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:954 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:960 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:960 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:960 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:964 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:964 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:970 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:972 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:972 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:972 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:976 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:976 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:26:981 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:994 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:994 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:26:994 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:26:997 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:26:997 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:27:003 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:27:006 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:27:006 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:27:006 loggerContenidoProceso/(11081:11088): Solicitamos hacer un signal sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:27:010 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:27:010 loggerContenidoProceso/(11081:11088): Se pudo hacer el post del semaforo
+[INFO] 22:53:27:016 loggerContenidoProceso/(11081:11088): Solicitamos hacer un wait sobre el semaforo: SEMAFORO_NUEVO
+[INFO] 22:53:27:021 loggerContenidoProceso/(11081:11088): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 22:53:27:021 loggerContenidoProceso/(11081:11088): Se pudo hacer el wait del semaforo
+[INFO] 22:53:27:021 loggerContenidoProceso/(11081:11088): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 22:53:27:044 loggerContenidoProceso/(11081:11088): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 22:53:27:044 loggerContenidoProceso/(11081:11088): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 22:53:27:044 loggerContenidoProceso/(11081:11088): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 23:01:53:105 loggerContenidoProceso/(12228:12231): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 23:01:58:106 loggerContenidoProceso/(12228:12231): Solicitamos hacer un signal sobre el semaforo: smirnoffc2
+[INFO] 23:01:58:124 loggerContenidoProceso/(12228:12231): Habiamos solicitado hacer un signal a un semaforo y obtenemos una respuesta en base a eso
+[INFO] 23:01:58:124 loggerContenidoProceso/(12228:12231): Se pudo hacer el post del semaforo
+[INFO] 23:01:58:124 loggerContenidoProceso/(12228:12231): Solicitamos realizar un memalloc de size:100
+[INFO] 23:01:58:210 loggerContenidoProceso/(12228:12231): Habiamos solicitado hacer un memalloc
+[INFO] 23:01:58:210 loggerContenidoProceso/(12228:12231): Se pudo realizar el memalloc
+[INFO] 23:01:58:210 loggerContenidoProceso/(12228:12231): Solicitamos realizar una operacion IO sobre el dispositivo: HUMEDAL
+[INFO] 23:14:40:458 loggerContenidoProceso/(13913:13915): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 23:14:42:459 loggerContenidoProceso/(13913:13915): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:14:52:485 loggerContenidoProceso/(13913:13915): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:14:52:485 loggerContenidoProceso/(13913:13915): Se pudo realizar con exito la operacion IO
+[INFO] 23:14:54:485 loggerContenidoProceso/(13913:13915): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:14:56:499 loggerContenidoProceso/(13913:13915): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:14:56:499 loggerContenidoProceso/(13913:13915): Se pudo realizar con exito la operacion IO
+[INFO] 23:14:58:499 loggerContenidoProceso/(13913:13915): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:15:00:887 loggerContenidoProceso/(13913:13915): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:15:00:887 loggerContenidoProceso/(13913:13915): Se pudo realizar con exito la operacion IO
+[INFO] 23:15:02:887 loggerContenidoProceso/(13913:13915): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 23:15:02:903 loggerContenidoProceso/(13913:13915): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 23:15:02:903 loggerContenidoProceso/(13913:13915): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 23:15:02:903 loggerContenidoProceso/(13913:13915): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 23:18:01:269 loggerContenidoProceso/(14389:14391): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 23:18:03:270 loggerContenidoProceso/(14389:14391): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:18:13:304 loggerContenidoProceso/(14389:14391): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:18:13:304 loggerContenidoProceso/(14389:14391): Se pudo realizar con exito la operacion IO
+[INFO] 23:18:15:305 loggerContenidoProceso/(14389:14391): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:18:17:336 loggerContenidoProceso/(14389:14391): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:18:17:336 loggerContenidoProceso/(14389:14391): Se pudo realizar con exito la operacion IO
+[INFO] 23:18:19:336 loggerContenidoProceso/(14389:14391): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:18:21:355 loggerContenidoProceso/(14389:14391): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:18:21:355 loggerContenidoProceso/(14389:14391): Se pudo realizar con exito la operacion IO
+[INFO] 23:18:23:356 loggerContenidoProceso/(14389:14391): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 23:18:23:379 loggerContenidoProceso/(14389:14391): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 23:18:23:379 loggerContenidoProceso/(14389:14391): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 23:18:23:379 loggerContenidoProceso/(14389:14391): Se liberan todas las estructuras del proceso de PID:1

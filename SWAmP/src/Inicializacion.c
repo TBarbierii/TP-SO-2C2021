@@ -7,11 +7,11 @@ void obtener_valores_config(t_config* config_actual, t_log* logger){
 
     ip_swap = config_get_string_value(config_actual, "IP");
     puerto_swap = config_get_string_value(config_actual, "PUERTO");
-    tamanio_swap = config_get_int_value(config_actual, "TAMANIO_SWAP");
+    tamanio_swap = config_get_int_value(config_actual, "TAMANIO_SWAMP");
     tamanio_pagina = config_get_int_value(config_actual, "TAMANIO_PAGINA");
-    char** file_swap = config_get_array_value(config_actual, "ARCHIVOS_SWAP");
+    char** file_swap = config_get_array_value(config_actual, "ARCHIVOS_SWAMP");
     marcos_maximos = config_get_int_value(config_actual, "MARCOS_POR_CARPINCHO");
-    retardo_swap = config_get_int_value(config_actual, "RETARDO_SWAP");
+    retardo_swap = config_get_int_value(config_actual, "RETARDO_SWAMP");
     
     t_list* archivos_swap = list_create();
     int contador = 0;

@@ -1,112 +1,307 @@
-[INFO] 15:22:30:366 loggerContenidoProceso/(5840:5841): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
-[INFO] 15:22:30:367 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:368 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5842): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
-[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5843): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
-[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:369 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:369 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:370 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:370 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:373 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:373 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:373 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:373 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:373 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:10
-[ERROR] 15:22:30:373 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:373 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memalloc de size:10
-[ERROR] 15:22:30:374 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:374 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memalloc de size:10
-[ERROR] 15:22:30:374 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:374 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memWrite de 0 y tamanio:5
-[ERROR] 15:22:30:374 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:374 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memWrite de 0 y tamanio:5
-[ERROR] 15:22:30:375 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:375 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memWrite de 0 y tamanio:5
-[ERROR] 15:22:30:375 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memWrite de 0 y tamanio:5
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5842): Solicitamos realizar un memWrite de 0 y tamanio:5
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5842): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5843): Solicitamos realizar un memWrite de 0 y tamanio:5
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5843): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Solicitamos realizar un memalloc de size:23
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5842): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5842): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5842): Se liberan todas las estructuras del proceso de PID:-1
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5843): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5843): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5843): Se liberan todas las estructuras del proceso de PID:-1
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
-[ERROR] 15:22:30:377 loggerContenidoProceso/(5840:5841): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
-[INFO] 15:22:30:377 loggerContenidoProceso/(5840:5841): Se liberan todas las estructuras del proceso de PID:-1
-[INFO] 11:10:00:666 loggerContenidoProceso/(6605:6605): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
-[INFO] 11:10:00:669 loggerContenidoProceso/(6605:6605): Solicitamos realizar un memalloc de size:20
-[ERROR] 11:10:00:670 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:10:00:670 loggerContenidoProceso/(6605:6605): Solicitamos realizar un memWrite de 0 y tamanio:20
-[ERROR] 11:10:00:670 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:10:00:671 loggerContenidoProceso/(6605:6605): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
-[ERROR] 11:10:00:671 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:10:00:671 loggerContenidoProceso/(6605:6605): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
-[ERROR] 11:10:00:672 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:10:00:672 loggerContenidoProceso/(6605:6605): Solicitamos realizar un memRead 0
-[ERROR] 11:10:00:672 loggerContenidoProceso/(6605:6605): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:10:00:672 loggerContenidoProceso/(6605:6605): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
-[ERROR] 11:10:00:673 loggerContenidoProceso/(6605:6605): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
-[INFO] 11:10:00:673 loggerContenidoProceso/(6605:6605): Se liberan todas las estructuras del proceso de PID:-1
-[INFO] 11:14:23:064 loggerContenidoProceso/(6781:6781): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
-[INFO] 11:14:23:066 loggerContenidoProceso/(6781:6781): Solicitamos realizar un memalloc de size:20
-[ERROR] 11:14:23:067 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:23:069 loggerContenidoProceso/(6781:6781): Solicitamos realizar un memWrite de 0 y tamanio:20
-[ERROR] 11:14:23:069 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:23:069 loggerContenidoProceso/(6781:6781): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
-[ERROR] 11:14:23:070 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:23:070 loggerContenidoProceso/(6781:6781): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
-[ERROR] 11:14:23:070 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:23:070 loggerContenidoProceso/(6781:6781): Solicitamos realizar un memRead 0
-[ERROR] 11:14:23:071 loggerContenidoProceso/(6781:6781): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:23:072 loggerContenidoProceso/(6781:6781): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
-[ERROR] 11:14:23:073 loggerContenidoProceso/(6781:6781): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
-[INFO] 11:14:23:073 loggerContenidoProceso/(6781:6781): Se liberan todas las estructuras del proceso de PID:-1
-[INFO] 11:14:29:159 loggerContenidoProceso/(6783:6783): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
-[INFO] 11:14:29:161 loggerContenidoProceso/(6783:6783): Solicitamos realizar un memalloc de size:20
-[ERROR] 11:14:29:162 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:29:163 loggerContenidoProceso/(6783:6783): Solicitamos realizar un memWrite de 0 y tamanio:20
-[ERROR] 11:14:29:164 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:29:164 loggerContenidoProceso/(6783:6783): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
-[ERROR] 11:14:29:165 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:29:165 loggerContenidoProceso/(6783:6783): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
-[ERROR] 11:14:29:165 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:29:165 loggerContenidoProceso/(6783:6783): Solicitamos realizar un memRead 0
-[ERROR] 11:14:29:165 loggerContenidoProceso/(6783:6783): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 11:14:29:166 loggerContenidoProceso/(6783:6783): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
-[ERROR] 11:14:29:166 loggerContenidoProceso/(6783:6783): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
-[INFO] 11:14:29:166 loggerContenidoProceso/(6783:6783): Se liberan todas las estructuras del proceso de PID:-1
-[INFO] 21:47:23:200 loggerContenidoProceso/(19597:19597): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
-[INFO] 21:47:23:203 loggerContenidoProceso/(19597:19597): Solicitamos realizar un memalloc de size:20
-[ERROR] 21:47:23:205 loggerContenidoProceso/(19597:19597): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 21:47:23:205 loggerContenidoProceso/(19597:19597): Solicitamos realizar un memWrite de 0 y tamanio:20
-[ERROR] 21:47:23:206 loggerContenidoProceso/(19597:19597): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 21:47:23:206 loggerContenidoProceso/(19597:19597): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
-[ERROR] 21:47:23:206 loggerContenidoProceso/(19597:19597): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 21:47:23:206 loggerContenidoProceso/(19597:19597): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
-[ERROR] 21:47:23:206 loggerContenidoProceso/(19597:19597): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 21:47:23:207 loggerContenidoProceso/(19597:19597): Solicitamos realizar un memRead 0
-[ERROR] 21:47:23:207 loggerContenidoProceso/(19597:19597): No se puede ejecutar esta accion porque no esta conectado al servidor
-[INFO] 21:47:23:207 loggerContenidoProceso/(19597:19597): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
-[ERROR] 21:47:23:207 loggerContenidoProceso/(19597:19597): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
-[INFO] 21:47:23:207 loggerContenidoProceso/(19597:19597): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 23:00:15:466 loggerContenidoProceso/(12077:12080): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:00:15:466 loggerContenidoProceso/(12077:12079): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:00:15:467 loggerContenidoProceso/(12077:12079): Solicitamos inicializar un semaforo de nombre: smirnoffc2, con valor : 1
+[ERROR] 23:00:15:467 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:468 loggerContenidoProceso/(12077:12079): Solicitamos inicializar un semaforo de nombre: smirnoffc3, con valor : 0
+[ERROR] 23:00:15:468 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:468 loggerContenidoProceso/(12077:12079): Solicitamos hacer un signal sobre el semaforo: smirnoffc3
+[ERROR] 23:00:15:469 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:469 loggerContenidoProceso/(12077:12079): Solicitamos hacer un wait sobre el semaforo: smirnoffc2
+[ERROR] 23:00:15:469 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:470 loggerContenidoProceso/(12077:12079): Solicitamos hacer un wait sobre el semaforo: smirnoffc2
+[ERROR] 23:00:15:470 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:471 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:471 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:471 loggerContenidoProceso/(12077:12078): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:00:15:471 loggerContenidoProceso/(12077:12078): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 23:00:15:471 loggerContenidoProceso/(12077:12078): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:476 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:476 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:476 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:477 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:482 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:482 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:482 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:482 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:487 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:487 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:487 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:487 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:494 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:494 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:494 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:494 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:499 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:499 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:499 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:499 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:505 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:505 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:505 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:505 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:511 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:511 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:511 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:511 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:516 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:516 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:516 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:516 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:521 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:521 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:521 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:522 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:527 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:527 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:527 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:527 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:532 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:532 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:532 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:532 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:537 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:537 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:537 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:537 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:543 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:543 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:543 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:543 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:549 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:549 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:549 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:549 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:555 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:556 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:556 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:556 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:561 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:561 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:561 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:561 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:567 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:567 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:567 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:567 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:572 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:572 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:572 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:572 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:577 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:577 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:577 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:577 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:583 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:583 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:583 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:583 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:588 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:588 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:588 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:588 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:593 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:593 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:593 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:593 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:598 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:598 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:598 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:598 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:604 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:604 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:604 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:604 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:609 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:609 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:609 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:609 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:614 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:614 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:614 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:614 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:619 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:619 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:620 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:620 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:625 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:625 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:625 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:625 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:631 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:631 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:631 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:631 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:636 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:636 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:636 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:636 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:641 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:641 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:641 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:642 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:647 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:647 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:647 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:647 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:652 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:652 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:652 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:653 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:658 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:658 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:658 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:658 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:663 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:663 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:663 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:663 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:668 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:668 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:668 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:668 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:674 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:674 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:674 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:674 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:680 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:680 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:680 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:680 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:685 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:685 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:685 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:685 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:690 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:690 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:690 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:690 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:695 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:695 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:695 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:695 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:701 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:701 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:701 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:701 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:707 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:707 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:707 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:707 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:713 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:713 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:713 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:713 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:718 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:718 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:718 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:718 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:723 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:723 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:723 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:723 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:729 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:729 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:729 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:729 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:734 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:734 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:734 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:734 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:739 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:739 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:739 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:739 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:745 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:745 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:745 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:745 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:751 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:751 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:751 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:751 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:756 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:756 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:756 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:756 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:761 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:762 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:762 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:762 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:767 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:767 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:767 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:767 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:772 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:772 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:772 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:772 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:777 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:777 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:777 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:777 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:782 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:782 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:782 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:782 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:788 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:788 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:788 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:788 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:794 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:794 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:794 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:794 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:800 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:802 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:802 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:802 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:807 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:807 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:807 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:807 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:813 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:813 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:813 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:813 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:819 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:819 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:819 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memalloc de size:100
+[ERROR] 23:00:15:819 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:824 loggerContenidoProceso/(12077:12079): Solicitamos realizar un memfree de 0
+[ERROR] 23:00:15:824 loggerContenidoProceso/(12077:12079): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:00:15:824 loggerContenidoProceso/(12077:12079): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 23:00:15:824 loggerContenidoProceso/(12077:12079): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 23:00:15:824 loggerContenidoProceso/(12077:12079): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 23:13:28:584 loggerContenidoProceso/(13659:13660): Se ha creado el carpincho:-1, y se ha logrado conectar correctamente al backend
+[INFO] 23:13:30:586 loggerContenidoProceso/(13659:13660): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:13:30:603 loggerContenidoProceso/(13659:13661): Se ha creado el carpincho:-1, y se ha logrado conectar correctamente al backend
+[INFO] 23:13:32:603 loggerContenidoProceso/(13659:13661): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:13:32:612 loggerContenidoProceso/(13659:13662): Se ha creado el carpincho:-1, y se ha logrado conectar correctamente al backend
+[INFO] 23:29:18:910 loggerContenidoProceso/(16218:16218): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:29:18:911 loggerContenidoProceso/(16218:16218): Solicitamos realizar un memalloc de size:20
+[ERROR] 23:29:18:911 loggerContenidoProceso/(16218:16218): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:18:912 loggerContenidoProceso/(16218:16218): Solicitamos realizar un memWrite de 0 y tamanio:20
+[ERROR] 23:29:18:912 loggerContenidoProceso/(16218:16218): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:18:913 loggerContenidoProceso/(16218:16218): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
+[ERROR] 23:29:18:913 loggerContenidoProceso/(16218:16218): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:18:913 loggerContenidoProceso/(16218:16218): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
+[ERROR] 23:29:18:914 loggerContenidoProceso/(16218:16218): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:18:914 loggerContenidoProceso/(16218:16218): Solicitamos realizar un memRead 0
+[ERROR] 23:29:18:915 loggerContenidoProceso/(16218:16218): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:18:915 loggerContenidoProceso/(16218:16218): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 23:29:18:915 loggerContenidoProceso/(16218:16218): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 23:29:18:915 loggerContenidoProceso/(16218:16218): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 23:29:27:023 loggerContenidoProceso/(16232:16232): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:29:27:024 loggerContenidoProceso/(16232:16232): Solicitamos realizar un memalloc de size:20
+[ERROR] 23:29:27:024 loggerContenidoProceso/(16232:16232): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:27:024 loggerContenidoProceso/(16232:16232): Solicitamos realizar un memWrite de 0 y tamanio:20
+[ERROR] 23:29:27:025 loggerContenidoProceso/(16232:16232): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:27:025 loggerContenidoProceso/(16232:16232): Solicitamos inicializar un semaforo de nombre: SEM_HELLO, con valor : 0
+[ERROR] 23:29:27:026 loggerContenidoProceso/(16232:16232): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:27:026 loggerContenidoProceso/(16232:16232): Solicitamos hacer un wait sobre el semaforo: SEM_HELLO
+[ERROR] 23:29:27:027 loggerContenidoProceso/(16232:16232): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:27:027 loggerContenidoProceso/(16232:16232): Solicitamos realizar un memRead 0
+[ERROR] 23:29:27:027 loggerContenidoProceso/(16232:16232): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:29:27:028 loggerContenidoProceso/(16232:16232): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 23:29:27:028 loggerContenidoProceso/(16232:16232): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 23:29:27:028 loggerContenidoProceso/(16232:16232): Se liberan todas las estructuras del proceso de PID:-1

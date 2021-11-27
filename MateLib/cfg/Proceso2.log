@@ -1,0 +1,28 @@
+[INFO] 23:14:42:468 loggerContenidoProceso/(13913:13916): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 23:14:52:471 loggerContenidoProceso/(13913:13916): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:15:04:922 loggerContenidoProceso/(13913:13916): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:15:04:922 loggerContenidoProceso/(13913:13916): Se pudo realizar con exito la operacion IO
+[INFO] 23:15:14:925 loggerContenidoProceso/(13913:13916): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:15:16:931 loggerContenidoProceso/(13913:13916): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:15:16:931 loggerContenidoProceso/(13913:13916): Se pudo realizar con exito la operacion IO
+[INFO] 23:15:26:934 loggerContenidoProceso/(13913:13916): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:15:28:940 loggerContenidoProceso/(13913:13916): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:15:28:940 loggerContenidoProceso/(13913:13916): Se pudo realizar con exito la operacion IO
+[INFO] 23:15:38:943 loggerContenidoProceso/(13913:13916): Se ha solicitado cerrar el carpincho de pid:2 , este es un hasta adios
+[INFO] 23:15:38:948 loggerContenidoProceso/(13913:13916): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 23:15:38:949 loggerContenidoProceso/(13913:13916): Se pudo cerrar el proceso de PID:2 correctamente en el BackEnd
+[INFO] 23:15:38:949 loggerContenidoProceso/(13913:13916): Se liberan todas las estructuras del proceso de PID:2
+[INFO] 23:18:03:284 loggerContenidoProceso/(14389:14392): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 23:18:13:286 loggerContenidoProceso/(14389:14392): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:18:25:418 loggerContenidoProceso/(14389:14392): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:18:25:418 loggerContenidoProceso/(14389:14392): Se pudo realizar con exito la operacion IO
+[INFO] 23:18:35:421 loggerContenidoProceso/(14389:14392): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:18:37:432 loggerContenidoProceso/(14389:14392): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:18:37:432 loggerContenidoProceso/(14389:14392): Se pudo realizar con exito la operacion IO
+[INFO] 23:18:47:435 loggerContenidoProceso/(14389:14392): Solicitamos realizar una operacion IO sobre el dispositivo: pelopincho
+[INFO] 23:18:49:440 loggerContenidoProceso/(14389:14392): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 23:18:49:440 loggerContenidoProceso/(14389:14392): Se pudo realizar con exito la operacion IO
+[INFO] 23:18:59:444 loggerContenidoProceso/(14389:14392): Se ha solicitado cerrar el carpincho de pid:2 , este es un hasta adios
+[INFO] 23:18:59:453 loggerContenidoProceso/(14389:14392): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 23:18:59:453 loggerContenidoProceso/(14389:14392): Se pudo cerrar el proceso de PID:2 correctamente en el BackEnd
+[INFO] 23:18:59:453 loggerContenidoProceso/(14389:14392): Se liberan todas las estructuras del proceso de PID:2
