@@ -292,7 +292,6 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 
 	do 
 	{
-		printf("bucle");
 		int posicionSiguienteHeap = heap->nextAlloc;
 		*posicionHeap = posicionSiguienteHeap;
 
