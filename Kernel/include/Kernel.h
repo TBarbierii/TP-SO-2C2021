@@ -33,6 +33,7 @@ pthread_mutex_t* contadorProcesos;
 
 /* variables obtenidas del config*/
 
+char* ipKernel;
 char* ipMemoria;
 char* puertoMemoria;
 char* puertoServer;

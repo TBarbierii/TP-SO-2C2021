@@ -6,7 +6,7 @@ void atenderSolicitudesKernel(){
 
 	t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",1,LOG_LEVEL_DEBUG);
 
-	int servidor = iniciar_servidor(ipMemoria, puertoServer); // devuelve el socket del servidor
+	int servidor = iniciar_servidor(ipKernel, puertoServer); // devuelve el socket del servidor
 	
 	log_info(logger,"Inicializamos el servidor para que se nos unan los carpinchos");
 

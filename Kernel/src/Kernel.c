@@ -142,7 +142,7 @@ t_config* inicializarConfig(){
 
 void obtenerValoresDelConfig(t_config* configActual){
 
-
+    ipKernel = config_get_string_value(configActual, "IP_KERNEL");
     ipMemoria = config_get_string_value(configActual, "IP_MEMORIA");
     puertoMemoria = config_get_string_value(configActual, "PUERTO_MEMORIA");
     puertoServer = config_get_string_value(configActual, "PUERTO_ESCUCHA");
