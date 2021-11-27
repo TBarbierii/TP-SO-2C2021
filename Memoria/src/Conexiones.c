@@ -482,10 +482,8 @@ void enviar_tipo_asignacion(char* tipoAsignacion){//mandar al principio despues 
 
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
-	uint32_t desplazamiento=0;
 
-	memcpy(paquete->buffer->stream + desplazamiento, &(tipo) , sizeof(uint32_t));
-    desplazamiento += sizeof(uint32_t);
+	memcpy(paquete->buffer->stream, &(tipo) , sizeof(uint32_t));
 
 	uint32_t conexionSwamp = crear_conexion(ipSWAmP, puertoSWAmP);
 

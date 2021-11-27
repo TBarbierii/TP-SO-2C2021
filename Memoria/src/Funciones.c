@@ -76,13 +76,6 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar, carpincho);// que pasa aca en el caso de que los marcos por proceso sea menor a las paginas creadas?
 
         free (buffer_allocs);
-        
-
-
-        void agregarATLB(t_pagina* pag){
-            algoritmo_reemplazo_TLB(pag);
-        };
-        list_iterate(carpincho->tabla_de_paginas, (void*)agregarATLB);
 
         t_pagina* pag = list_get(carpincho->tabla_de_paginas, 0);
         return generarDireccionLogica(pag->id_pagina, TAMANIO_HEAP);

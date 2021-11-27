@@ -14,9 +14,6 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
 
     swap_files* archivoAEscribir = encontrar_swap_file(nombreArchivo);
 
-    char* contenido = (char*) mensajeAEscribir; 
-    int size = string_length(contenido);
-
     if(archivoAEscribir != NULL){
         
         particion* particion_para_sobreescribir = particion_disponible_para_sobreescribir(archivoAEscribir, PID, pagina);

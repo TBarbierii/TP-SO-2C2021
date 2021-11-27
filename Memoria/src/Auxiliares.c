@@ -195,30 +195,72 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 	    
 	int contador = 0; 
 
-	void escribir_paginas_en_marcos(t_pagina* pag){
+	if(list_size(paginas) > list_size(marcos_a_asignar)) {
 
-		t_marco* marco = list_get(marcos_a_asignar, contador);
+		for(int i = 0; i < list_size(marcos_a_asignar); i++) {
+			t_pagina* nueva_pagina = list_get(paginas, i);
 
-		if(marco->estaLibre){
-		
-			pthread_mutex_lock(memoria);
-			memcpy(memoriaPrincipal + marco->comienzo, buffer + (contador*tamanioPagina), tamanioPagina);
-			pthread_mutex_unlock(memoria);
+			t_marco* marco = list_get(marcos_a_asignar, i);
 
-			pag->marco = marco;
-			pag->presente = true;
-			pag->esNueva = false;
-			marco->estaLibre = false;
-			marco->proceso_asignado=carpincho->id_carpincho;
-			
+			if(marco->estaLibre){
+				
+				pthread_mutex_lock(memoria);
+				memcpy(memoriaPrincipal + marco->comienzo, buffer + (contador*tamanioPagina), tamanioPagina);
+				pthread_mutex_unlock(memoria);
+
+				nueva_pagina->marco = marco;
+				nueva_pagina->presente = true;
+				nueva_pagina->esNueva = false;
+				marco->estaLibre = false;
+				marco->proceso_asignado=carpincho->id_carpincho;
+
+            	algoritmo_reemplazo_TLB(nueva_pagina);
+
+			}else{
+				t_marco* marco_victima = reemplazarPagina(carpincho);
+
+				pthread_mutex_lock(memoria);
+				memcpy(memoriaPrincipal + marco_victima->comienzo, buffer + (contador*tamanioPagina), tamanioPagina);
+				pthread_mutex_unlock(memoria);
+
+				nueva_pagina->marco = marco_victima;
+				nueva_pagina->presente = true;
+				nueva_pagina->esNueva = false;
+				marco_victima->estaLibre = false;
+				marco_victima->proceso_asignado=carpincho->id_carpincho;
+
+            	algoritmo_reemplazo_TLB(nueva_pagina);
+			}
 		}
-		contador++;
-	};
+	}else{
+		void escribir_paginas_en_marcos(t_pagina* pag){
 
-	list_iterate(paginas, (void*)escribir_paginas_en_marcos);
+			t_marco* marco = list_get(marcos_a_asignar, contador);
+
+			if(marco->estaLibre){
+			
+				pthread_mutex_lock(memoria);
+				memcpy(memoriaPrincipal + marco->comienzo, buffer + (contador*tamanioPagina), tamanioPagina);
+				pthread_mutex_unlock(memoria);
+
+				pag->marco = marco;
+				pag->presente = true;
+				pag->esNueva = false;
+				marco->estaLibre = false;
+				marco->proceso_asignado=carpincho->id_carpincho;
+
+				algoritmo_reemplazo_TLB(pag);
+
+			}
+			
+			contador++;
+		};
+		
+		list_iterate(paginas, (void*)escribir_paginas_en_marcos);
+
+	}
 
 	list_destroy(marcos_a_asignar);
-
 }
 
 int32_t buscar_TLB(t_pagina* pagina){
@@ -250,6 +292,7 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 
 	do 
 	{
+		printf("bucle");
 		int posicionSiguienteHeap = heap->nextAlloc;
 		*posicionHeap = posicionSiguienteHeap;
 
@@ -422,6 +465,8 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		paginaDeSiguienteHeap->uso = true;
 
 		*desplazamiento = - (tamanioPagina - *desplazamiento); //esto esta re trambolico porque despues le suma 9
+		
+		memcpy(heap, buffer_heap, 9);
 
 		free(buffer_heap);
 		free(heap);
@@ -516,7 +561,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		pag->ultimoUso = clock();
 		pag->uso = true;
 
-		free(nuevoHeap);
+//		free(nuevoHeap);
 
 	}
 
@@ -541,10 +586,11 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	free(nuevoHeap);
 	
 
-	void agregarATLB(t_pagina* pag){
+	/*void agregarATLB(t_pagina* pag){
 		algoritmo_reemplazo_TLB(pag);
 	};
-	list_iterate(paginasNuevas, (void*)agregarATLB);
+	list_iterate(paginasNuevas, (void*)agregarATLB);*/
+	list_destroy(paginasNuevas);
 
 	return 1;
 }
@@ -777,7 +823,7 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 
 void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
-	if(list_size(TLB) == cantidadEntradasTLB){
+	if(list_size(TLB) == cantidadEntradasTLB && cantidadEntradasTLB != 0){
 
 		if(strcmp(algoritmoReemplazoTLB, "LRU") == 0){
 			
@@ -829,7 +875,7 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
 		}
 
-	}else{
+	}else if(cantidadEntradasTLB != 0){
 		pthread_mutex_lock(TLB_mutex);
 		list_add(TLB, pagina);
 		pthread_mutex_unlock(TLB_mutex);

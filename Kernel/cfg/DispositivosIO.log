@@ -121,3 +121,73 @@
 [DEBUG] 23:26:56:257 DispositivosIO/(15811:15811): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
 [DEBUG] 23:29:14:605 DispositivosIO/(16193:16193): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
 [DEBUG] 23:31:20:855 DispositivosIO/(16608:16608): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 23:36:38:620 DispositivosIO/(17395:17395): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 23:36:58:990 DispositivosIO/(17458:17458): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 23:39:31:546 DispositivosIO/(17879:17879): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 23:42:13:216 DispositivosIO/(18167:18167): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 23:46:53:916 DispositivosIO/(18846:18846): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 23:51:05:412 DispositivosIO/(19360:19360): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 00:46:02:590 DispositivosIO/(22479:22479): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 00:46:40:265 DispositivosIO/(22725:22725): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:16:22:562 DispositivosIO/(24751:24751): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:19:08:993 DispositivosIO/(25170:25170): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:19:55:791 DispositivosIO/(25422:25422): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:20:38:659 DispositivosIO/(25526:25526): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:24:56:311 DispositivosIO/(25860:25860): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:49:59:787 DispositivosIO/(28653:28653): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:53:43:521 DispositivosIO/(29129:29129): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:54:55:018 DispositivosIO/(29341:29341): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 01:56:23:932 DispositivosIO/(29572:29572): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:01:21:334 DispositivosIO/(30127:30127): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:03:46:887 DispositivosIO/(30236:30236): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:04:56:035 DispositivosIO/(30325:30325): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:05:17:158 DispositivosIO/(30362:30362): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:05:44:191 DispositivosIO/(30506:30506): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:06:54:511 DispositivosIO/(30671:30671): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:08:05:269 DispositivosIO/(30882:30882): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:10:23:169 DispositivosIO/(31260:31260): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:12:35:574 DispositivosIO/(31457:31457): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:17:36:278 DispositivosIO/(31937:31937): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:18:02:713 DispositivosIO/(32041:32041): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:18:23:732 DispositivosIO/(32188:32188): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:18:42:701 DispositivosIO/(32224:32224): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:19:31:382 DispositivosIO/(32459:32459): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:20:57:177 DispositivosIO/(32543:32543): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:27:10:092 DispositivosIO/(667:667): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:30:19:791 DispositivosIO/(917:917): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:35:25:203 DispositivosIO/(1549:1549): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:40:23:662 DispositivosIO/(1859:1859): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:45:14:788 DispositivosIO/(2271:2271): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:47:50:270 DispositivosIO/(2514:2514): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:48:31:139 DispositivosIO/(2723:2723): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:48:44:544 DispositivosIO/(2856:2856): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:49:35:147 DispositivosIO/(2956:2956): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:50:41:223 DispositivosIO/(3100:3100): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:53:10:392 DispositivosIO/(3521:3521): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:54:57:250 DispositivosIO/(3791:3791): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:55:58:784 DispositivosIO/(3984:3984): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 02:59:27:040 DispositivosIO/(4251:4251): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 03:00:45:788 DispositivosIO/(4663:4663): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 03:04:45:814 DispositivosIO/(4961:4961): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 03:21:05:770 DispositivosIO/(6211:6211): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 03:29:13:913 DispositivosIO/(6479:6479): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 03:37:18:680 DispositivosIO/(7315:7315): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 03:39:30:039 DispositivosIO/(7666:7666): Se crea un hilo para ejecutar el Dispositivio IO: laguna, con tiempo de espera: 2500
+[DEBUG] 03:45:12:372 DispositivosIO/(8261:8261): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 03:45:12:378 DispositivosIO/(8261:8261): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
+[DEBUG] 03:50:00:009 DispositivosIO/(8449:8449): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 03:50:00:017 DispositivosIO/(8449:8449): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
+[DEBUG] 03:58:59:803 DispositivosIO/(8964:8964): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 03:58:59:808 DispositivosIO/(8964:8964): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
+[DEBUG] 04:00:28:400 DispositivosIO/(9208:9208): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 04:00:28:405 DispositivosIO/(9208:9208): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
+[DEBUG] 04:01:42:459 DispositivosIO/(9350:9350): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 04:01:42:464 DispositivosIO/(9350:9350): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
+[DEBUG] 04:05:50:187 DispositivosIO/(9613:9613): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 04:05:50:192 DispositivosIO/(9613:9613): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
+[INFO] 04:05:58:761 DispositivosIO/(9613:9621): Agregamos al proceso en bloqueo y en el dispositivo: HUMEDAL
+[INFO] 04:05:58:762 DispositivosIO/(9613:9615): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:3500
+[INFO] 04:06:02:263 DispositivosIO/(9613:9615): Termino de ejecutar el proceso:1 sobre el dispositivo IO:HUMEDAL, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[INFO] 04:06:02:545 DispositivosIO/(9613:9626): Agregamos al proceso en bloqueo y en el dispositivo: HUMEDAL
+[INFO] 04:06:02:545 DispositivosIO/(9613:9615): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:3500
+[INFO] 04:06:06:046 DispositivosIO/(9613:9615): Termino de ejecutar el proceso:1 sobre el dispositivo IO:HUMEDAL, lo ponemos en ready si el nivel de multiprogramacion lo permite

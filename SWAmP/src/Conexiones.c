@@ -9,7 +9,7 @@ int iniciar_servidor_swamp() {
 
 	while(1){
 		int conexion = esperar_cliente(servidor);
-		log_info(logger_swamp,"Solicitud de memoria entrante");
+		log_debug(logger_swamp,"Solicitud de memoria entrante");
 		atender_mensaje_ram(conexion);
 	}
 
