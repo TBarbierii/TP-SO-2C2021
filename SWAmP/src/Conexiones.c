@@ -3,7 +3,7 @@
 
 int iniciar_servidor_swamp() {
 
-	int servidor = iniciar_servidor(ip_swap, puerto_swap); // devuelve el socket del servidor
+	int servidor = iniciar_servidor(ip_swap, puerto_swap); 
 	
 	log_info(logger_swamp,"Inicializacion del servidor con exito, esperando conexion...");
 

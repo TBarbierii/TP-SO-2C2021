@@ -130,7 +130,7 @@ int mate_init(mate_instance *lib_ref, char *config){
         lib_ref->group_info->pid= -1;
         
 
-        lib_ref->group_info->loggerProceso = log_create("../MateLib/cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
+        lib_ref->group_info->loggerProceso = log_create("/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/Proceso-1.log","loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
         log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend");
         
         return -1;
@@ -480,7 +480,7 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
         
         
     char* nombreLog = string_new();
-    string_append(&nombreLog, "../MateLib/cfg/Proceso");
+    string_append(&nombreLog, "/home/utnso/tp-2021-2c-UCM-20-SO/MateLib/cfg/Proceso");
     char* pidCarpincho = string_itoa((int) lib_ref->group_info->pid);
     string_append(&nombreLog, pidCarpincho);
     string_append(&nombreLog, ".log");
