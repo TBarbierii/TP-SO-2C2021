@@ -29,7 +29,7 @@ void atender_solicitudes_multihilo(){
 
 	 uint32_t servidor = iniciar_servidor(ip, puerto);
 	 
-	 printf("\nSe inicio el servidor.\n");
+	 log_info(loggerServidor, "SE INICIO EL SERVIDOR");
 	 pthread_t cliente;
 	while(1){
 		uint32_t conexion_cliente = esperar_cliente(servidor);
@@ -41,7 +41,6 @@ void atender_solicitudes_multihilo(){
 
 void atender_solicitudes_memoria(uint32_t conexion){
 	
-	t_log* logger =  log_create("cfg/Servidor.log","Servidor",1,LOG_LEVEL_DEBUG);
 	uint32_t DL;
 	
 	while (1){
@@ -50,11 +49,11 @@ void atender_solicitudes_memoria(uint32_t conexion){
 
 		switch(cod_op){
 		
-			case INICIALIZAR_ESTRUCTURA: //cuando no hay kernel. Si hay nunca llega este mensaje
-				inicializar_carpincho(conexion, logger);
+			case INICIALIZAR_ESTRUCTURA: 
+				inicializar_carpincho(conexion, loggerServidor);
 				break;
 			case MEMALLOC:
-				DL = recibir_memalloc(conexion, logger);
+				DL = recibir_memalloc(conexion, loggerServidor);
 				printf("\nSe envio la DL %i", DL);
 
 				t_paquete* paquete = crear_paquete(MEMALLOC);
@@ -68,41 +67,42 @@ void atender_solicitudes_memoria(uint32_t conexion){
 					
 				break;
 			case MEMFREE:
-				recibir_memfree(conexion, logger);
+				recibir_memfree(conexion, loggerServidor);
 				break;
 			case MEMREAD:
-				recibir_memread(conexion, logger);
+				recibir_memread(conexion, loggerServidor);
 				break;
 			case MEMWRITE:	
-				recibir_memwrite(conexion, logger);
+				recibir_memwrite(conexion, loggerServidor);
 				break;
 			case SUSPENSION_PROCESO:
-				recibir_suspencion(conexion, logger);
+				recibir_suspencion(conexion, loggerServidor);
 				break;
 			case CERRAR_INSTANCIA:
-				cerrar_carpincho(conexion, logger);
+				cerrar_carpincho(conexion, loggerServidor);
 				break;
 				/*casos no validos de operacion kernel */
 			case INICIAR_SEMAFORO:;
-				responderOperacionNoValida(conexion, INICIAR_SEMAFORO, logger);
+				responderOperacionNoValida(conexion, INICIAR_SEMAFORO, loggerServidor);
 				break;
 			case SEM_WAIT:;
-				responderOperacionNoValida(conexion, SEM_WAIT, logger);
+				responderOperacionNoValida(conexion, SEM_WAIT, loggerServidor);
 				break;
 			case SEM_SIGNAL:;
-				responderOperacionNoValida(conexion, SEM_SIGNAL, logger);
+				responderOperacionNoValida(conexion, SEM_SIGNAL, loggerServidor);
 				break;
 			case CERRAR_SEMAFORO:;
-				responderOperacionNoValida(conexion, CERRAR_SEMAFORO, logger);
+				responderOperacionNoValida(conexion, CERRAR_SEMAFORO, loggerServidor);
 				break;
 			case CONECTAR_IO:;
-				responderOperacionNoValida(conexion, CONECTAR_IO, logger);
+				responderOperacionNoValida(conexion, CONECTAR_IO, loggerServidor);
 				break;
 			case -1:
-				log_error(logger, "el cliente se desconecto. Terminando servidor");
+				log_error(loggerServidor, "el cliente se desconecto. Terminando servidor");
+				close(conexion);
 				break;
 			default:
-				log_warning(logger, "Entro al default");
+				log_warning(loggerServidor, "Entro al default");
 				break;
 		}
 		
@@ -111,11 +111,10 @@ void atender_solicitudes_memoria(uint32_t conexion){
 		}
 	}
 
-	log_destroy(logger);
 }
 
 void* atender_respuestas_swap(uint32_t conexion){
-	t_log* logger =  log_create("cfg/Servidor.log","RespuestasDeSWAP",1,LOG_LEVEL_DEBUG);
+	
 	uint32_t cod_op = recibir_operacion(conexion);
 
 	switch(cod_op)
@@ -133,13 +132,13 @@ void* atender_respuestas_swap(uint32_t conexion){
 	case FINALIZAR_PROCESO:
 		return recibir_respuesta_cierre(conexion);
 	case -1:
-		log_error(logger, "el cliente se desconecto. Terminando servidor");
+		log_error(loggerServidor, "el cliente se desconecto. Terminando servidor");
 		break;
 	default:
-		log_warning(logger, "Entro al default");
+		log_warning(loggerServidor, "Se recibio un codigo de operacion incorrecto");
 		break;
 	}
-	log_destroy(logger);
+
 
 }
 
@@ -180,6 +179,9 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 		log_info(logger,"Agregamos nuevo carpincho a memoria, y su pid es: %d",carpincho->id_carpincho);
 
 		carpincho->contadorPag=0;
+		carpincho->tlb_hit=0;
+     	carpincho->tlb_miss=0;
+     	carpincho->punteroClock=0;
 
 		pthread_mutex_lock(listaCarpinchos);
 		list_add(carpinchos, carpincho);
@@ -251,10 +253,11 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 
 	void destructor(t_pagina* pagina){
 
-		bool buscarPag(t_pagina* p){
-			return p->id_pagina == pagina->id_pagina;
-		};
 		pthread_mutex_lock(TLB_mutex);
+		bool buscarPag(t_pagina* p){
+			return p->id_pagina == pagina->id_pagina && p->id_carpincho == pagina->id_carpincho;
+		};
+		
 		list_remove_by_condition(TLB, (void*)buscarPag);
 		pthread_mutex_unlock(TLB_mutex);
 

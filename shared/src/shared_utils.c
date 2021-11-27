@@ -18,6 +18,9 @@ uint32_t iniciar_servidor(char* ip_servidor, char* puerto)
                          servinfo->ai_socktype, 
                          servinfo->ai_protocol);
 
+	int activado = 1;
+    setsockopt(socket_servidor, SOL_SOCKET, SO_REUSEADDR,&activado, sizeof(activado));					 
+
 	bind(socket_servidor, servinfo->ai_addr, servinfo->ai_addrlen);
 	listen(socket_servidor, SOMAXCONN);
 

@@ -211,7 +211,7 @@ void* carpincho3_func(void* config){
 
 
 
-int main(int argc, char *argv[]) {
+ int main(int argc, char *argv[]) {
 
 	pthread_t carpincho1;
 	pthread_t carpincho2;
@@ -235,3 +235,5 @@ int main(int argc, char *argv[]) {
 
 	return EXIT_SUCCESS;
 }
+
+ 
