@@ -74,7 +74,7 @@ swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger)
 
     swap_files* archivo = encontrar_swap_file_en_base_a_pid(pid);
 
-    if(archivo == NULL){ //aca lo asignamos a los correspondientes marcos solamente
+    if(archivo == NULL){ 
         swap_files* archivoConMasEspacio = buscar_archivo_con_mayor_espacio();
         log_info(logger, "El archivo que vamos a utilizar tiene %i cantidad de frames libres", cantidad_frames_disponibles(archivoConMasEspacio));
 
@@ -129,7 +129,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
         if(particion_a_leer != NULL) {
             memcpy(contenido_a_leer, contenido_archivo + particion_a_leer->inicio_particion, tamanio_pagina);
             
-            /*ya que sino no nos deja loggearlo */
+            
             char* contenidoParaLoggear= malloc(tamanio_pagina+1);
             char valorsitoParaString = '\0';
             memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
@@ -139,10 +139,6 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             free(contenidoParaLoggear);
 
             enviar_pagina(contenido_a_leer, conexion);
-            //particion_a_leer->hay_contenido = 0;
-            /*if(tipo_asignacion == 0) {
-                particion_a_leer->esta_libre = 1;
-            }*/
         }
 
         munmap(contenido_archivo, tamanio_swap);

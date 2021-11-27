@@ -16,7 +16,6 @@ particion* buscar_particion_libre_asignacion_dinamica(char* path_swap) {
     swap_files* archivoBuscado = encontrar_swap_file(path_swap);
 
     if(archivoBuscado != NULL) {
-        //log_info(logger_swamp, "Se encontro el archivo buscado");
         particion* particion_nueva = list_find(archivoBuscado->particiones_swap, pagina_libre);
         if(particion_nueva != NULL) {
             return particion_nueva;
