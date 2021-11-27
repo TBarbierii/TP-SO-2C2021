@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [INFO] 22:53:23:106 loggerContenidoProceso/(11081:11087): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
 [INFO] 22:53:23:106 loggerContenidoProceso/(11081:11087): Solicitamos realizar un memalloc de size:4
 [INFO] 22:53:23:214 loggerContenidoProceso/(11081:11087): Habiamos solicitado hacer un memalloc
@@ -2150,3 +2151,526 @@
 [INFO] 23:32:41:073 loggerContenidoProceso/(16650:16650): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
 [ERROR] 23:32:41:073 loggerContenidoProceso/(16650:16650): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:0
 [INFO] 23:32:41:073 loggerContenidoProceso/(16650:16650): Se liberan todas las estructuras del proceso de PID:0
+=======
+[INFO] 20:14:45:48 loggerContenidoProceso/(4947:4948): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 20:14:45:48 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memalloc de size:23
+[INFO] 20:14:45:51 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memalloc
+[INFO] 20:14:45:51 loggerContenidoProceso/(4947:4948): Se pudo realizar el memalloc
+[INFO] 20:14:45:66 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memalloc de size:23
+[INFO] 20:14:45:373 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memalloc
+[INFO] 20:14:45:373 loggerContenidoProceso/(4947:4948): Se pudo realizar el memalloc
+[INFO] 20:14:45:990 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memalloc de size:23
+[INFO] 20:14:46:398 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memalloc
+[INFO] 20:14:46:398 loggerContenidoProceso/(4947:4948): Se pudo realizar el memalloc
+[INFO] 20:14:47:229 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memalloc de size:10
+[INFO] 20:14:47:741 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memalloc
+[INFO] 20:14:47:741 loggerContenidoProceso/(4947:4948): Se pudo realizar el memalloc
+[INFO] 20:14:48:770 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memWrite de 10039 y tamanio:5
+[INFO] 20:14:48:871 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memwrite
+[INFO] 20:14:48:871 loggerContenidoProceso/(4947:4948): Se pudo hacer el memwrite solicitado
+[INFO] 20:14:48:871 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memWrite de 10029 y tamanio:5
+[INFO] 20:14:48:974 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memwrite
+[INFO] 20:14:48:974 loggerContenidoProceso/(4947:4948): Se pudo hacer el memwrite solicitado
+[INFO] 20:14:48:974 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memWrite de 10019 y tamanio:5
+[INFO] 20:14:49:76 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memwrite
+[INFO] 20:14:49:76 loggerContenidoProceso/(4947:4948): Se pudo hacer el memwrite solicitado
+[INFO] 20:14:49:76 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memWrite de 10009 y tamanio:5
+[INFO] 20:14:49:179 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memwrite
+[INFO] 20:14:49:179 loggerContenidoProceso/(4947:4948): Se pudo hacer el memwrite solicitado
+[INFO] 20:14:49:389 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memalloc de size:23
+[INFO] 20:14:50:9 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memalloc
+[INFO] 20:14:50:9 loggerContenidoProceso/(4947:4948): Se pudo realizar el memalloc
+[INFO] 20:14:50:9 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memalloc de size:23
+[INFO] 20:14:51:123 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memalloc
+[INFO] 20:14:51:123 loggerContenidoProceso/(4947:4948): Se pudo realizar el memalloc
+[INFO] 20:14:51:123 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memalloc de size:23
+[INFO] 20:14:52:736 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memalloc
+[INFO] 20:14:52:736 loggerContenidoProceso/(4947:4948): Se pudo realizar el memalloc
+[INFO] 20:14:52:736 loggerContenidoProceso/(4947:4948): Solicitamos realizar un memalloc de size:23
+[INFO] 20:14:55:253 loggerContenidoProceso/(4947:4948): Habiamos solicitado hacer un memalloc
+[INFO] 20:14:55:254 loggerContenidoProceso/(4947:4948): Se pudo realizar el memalloc
+[INFO] 20:14:55:254 loggerContenidoProceso/(4947:4948): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 20:14:55:256 loggerContenidoProceso/(4947:4948): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 20:14:55:257 loggerContenidoProceso/(4947:4948): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 20:14:55:257 loggerContenidoProceso/(4947:4948): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 20:27:00:763 loggerContenidoProceso/(5684:5685): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 20:27:00:763 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memalloc de size:23
+[INFO] 20:27:00:799 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memalloc
+[INFO] 20:27:00:799 loggerContenidoProceso/(5684:5685): Se pudo realizar el memalloc
+[INFO] 20:27:00:826 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memalloc de size:23
+[INFO] 20:27:01:160 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memalloc
+[INFO] 20:27:01:160 loggerContenidoProceso/(5684:5685): Se pudo realizar el memalloc
+[INFO] 20:27:01:788 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memalloc de size:23
+[INFO] 20:27:02:204 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memalloc
+[INFO] 20:27:02:204 loggerContenidoProceso/(5684:5685): Se pudo realizar el memalloc
+[INFO] 20:27:03:43 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memalloc de size:10
+[INFO] 20:27:03:559 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memalloc
+[INFO] 20:27:03:559 loggerContenidoProceso/(5684:5685): Se pudo realizar el memalloc
+[INFO] 20:27:04:590 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memWrite de 10039 y tamanio:5
+[INFO] 20:27:04:702 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memwrite
+[INFO] 20:27:04:702 loggerContenidoProceso/(5684:5685): Se pudo hacer el memwrite solicitado
+[INFO] 20:27:04:702 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memWrite de 10029 y tamanio:5
+[INFO] 20:27:04:811 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memwrite
+[INFO] 20:27:04:812 loggerContenidoProceso/(5684:5685): Se pudo hacer el memwrite solicitado
+[INFO] 20:27:04:812 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memWrite de 10019 y tamanio:5
+[INFO] 20:27:04:919 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memwrite
+[INFO] 20:27:04:919 loggerContenidoProceso/(5684:5685): Se pudo hacer el memwrite solicitado
+[INFO] 20:27:04:919 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memWrite de 10009 y tamanio:5
+[INFO] 20:27:05:23 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memwrite
+[INFO] 20:27:05:23 loggerContenidoProceso/(5684:5685): Se pudo hacer el memwrite solicitado
+[INFO] 20:27:05:232 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memalloc de size:23
+[INFO] 20:27:05:861 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memalloc
+[INFO] 20:27:05:861 loggerContenidoProceso/(5684:5685): Se pudo realizar el memalloc
+[INFO] 20:27:05:861 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memalloc de size:23
+[INFO] 20:27:06:980 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memalloc
+[INFO] 20:27:06:980 loggerContenidoProceso/(5684:5685): Se pudo realizar el memalloc
+[INFO] 20:27:06:980 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memalloc de size:23
+[INFO] 20:27:08:595 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memalloc
+[INFO] 20:27:08:595 loggerContenidoProceso/(5684:5685): Se pudo realizar el memalloc
+[INFO] 20:27:08:595 loggerContenidoProceso/(5684:5685): Solicitamos realizar un memalloc de size:23
+[INFO] 20:27:11:117 loggerContenidoProceso/(5684:5685): Habiamos solicitado hacer un memalloc
+[INFO] 20:27:11:117 loggerContenidoProceso/(5684:5685): Se pudo realizar el memalloc
+[INFO] 20:27:11:117 loggerContenidoProceso/(5684:5685): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 20:27:11:141 loggerContenidoProceso/(5684:5685): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 20:27:11:141 loggerContenidoProceso/(5684:5685): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 20:27:11:141 loggerContenidoProceso/(5684:5685): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 21:15:29:797 loggerContenidoProceso/(8029:8030): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 21:15:29:797 loggerContenidoProceso/(8029:8030): Solicitamos realizar un memalloc de size:23
+[INFO] 21:15:29:826 loggerContenidoProceso/(8029:8030): Habiamos solicitado hacer un memalloc
+[INFO] 21:15:29:826 loggerContenidoProceso/(8029:8030): Se pudo realizar el memalloc
+[INFO] 21:15:29:853 loggerContenidoProceso/(8029:8030): Solicitamos realizar un memalloc de size:23
+[INFO] 21:16:37:675 loggerContenidoProceso/(8029:8030): Solicitamos realizar un memalloc de size:23
+[INFO] 23:11:03:681 loggerContenidoProceso/(3465:3466): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 23:11:03:682 loggerContenidoProceso/(3465:3466): Solicitamos realizar un memalloc de size:23
+[INFO] 23:11:03:758 loggerContenidoProceso/(3465:3466): Habiamos solicitado hacer un memalloc
+[INFO] 23:11:03:758 loggerContenidoProceso/(3465:3466): Se pudo realizar el memalloc
+[INFO] 23:11:03:813 loggerContenidoProceso/(3465:3466): Solicitamos realizar un memalloc de size:23
+[INFO] 23:11:10:865 loggerContenidoProceso/(3465:3466): Solicitamos realizar un memalloc de size:23
+[INFO] 23:14:41:180 loggerContenidoProceso/(3941:3942): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 23:14:41:180 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memalloc de size:23
+[INFO] 23:14:41:226 loggerContenidoProceso/(3941:3942): Habiamos solicitado hacer un memalloc
+[INFO] 23:14:41:226 loggerContenidoProceso/(3941:3942): Se pudo realizar el memalloc
+[INFO] 23:14:41:263 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memalloc de size:23
+[INFO] 23:14:41:628 loggerContenidoProceso/(3941:3942): Habiamos solicitado hacer un memalloc
+[INFO] 23:14:41:628 loggerContenidoProceso/(3941:3942): Se pudo realizar el memalloc
+[INFO] 23:14:42:266 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memalloc de size:23
+[INFO] 23:14:43:485 loggerContenidoProceso/(3941:3942): Habiamos solicitado hacer un memalloc
+[INFO] 23:14:43:485 loggerContenidoProceso/(3941:3942): Se pudo realizar el memalloc
+[INFO] 23:14:45:932 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memalloc de size:10
+[INFO] 23:14:47:652 loggerContenidoProceso/(3941:3942): Habiamos solicitado hacer un memalloc
+[INFO] 23:14:47:653 loggerContenidoProceso/(3941:3942): Se pudo realizar el memalloc
+[INFO] 23:14:51:113 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memWrite de 10039 y tamanio:5
+[INFO] 23:14:51:654 loggerContenidoProceso/(3941:3942): Habiamos solicitado hacer un memwrite
+[INFO] 23:14:51:654 loggerContenidoProceso/(3941:3942): Se pudo hacer el memwrite solicitado
+[INFO] 23:14:51:654 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memWrite de 10029 y tamanio:5
+[INFO] 23:14:52:158 loggerContenidoProceso/(3941:3942): Habiamos solicitado hacer un memwrite
+[INFO] 23:14:52:158 loggerContenidoProceso/(3941:3942): Se pudo hacer el memwrite solicitado
+[INFO] 23:14:52:158 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memWrite de 10019 y tamanio:5
+[INFO] 23:14:52:266 loggerContenidoProceso/(3941:3942): Habiamos solicitado hacer un memwrite
+[INFO] 23:14:52:266 loggerContenidoProceso/(3941:3942): Se pudo hacer el memwrite solicitado
+[INFO] 23:14:52:266 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memWrite de 10009 y tamanio:5
+[INFO] 23:14:52:372 loggerContenidoProceso/(3941:3942): Habiamos solicitado hacer un memwrite
+[INFO] 23:14:52:372 loggerContenidoProceso/(3941:3942): Se pudo hacer el memwrite solicitado
+[INFO] 23:14:52:589 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memalloc de size:23
+[INFO] 23:15:33:484 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memalloc de size:23
+[INFO] 23:15:33:485 loggerContenidoProceso/(3941:3942): Solicitamos realizar un memalloc de size:23
+[INFO] 00:58:42:937 loggerContenidoProceso/(5274:5275): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 00:58:42:937 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memalloc de size:23
+[INFO] 00:58:42:987 loggerContenidoProceso/(5274:5275): Habiamos solicitado hacer un memalloc
+[INFO] 00:58:42:987 loggerContenidoProceso/(5274:5275): Se pudo realizar el memalloc
+[INFO] 00:58:43:34 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memalloc de size:23
+[INFO] 00:58:43:384 loggerContenidoProceso/(5274:5275): Habiamos solicitado hacer un memalloc
+[INFO] 00:58:43:385 loggerContenidoProceso/(5274:5275): Se pudo realizar el memalloc
+[INFO] 00:58:44:22 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memalloc de size:23
+[INFO] 00:58:45:242 loggerContenidoProceso/(5274:5275): Habiamos solicitado hacer un memalloc
+[INFO] 00:58:45:242 loggerContenidoProceso/(5274:5275): Se pudo realizar el memalloc
+[INFO] 00:58:47:686 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memalloc de size:10
+[INFO] 00:58:49:407 loggerContenidoProceso/(5274:5275): Habiamos solicitado hacer un memalloc
+[INFO] 00:58:49:407 loggerContenidoProceso/(5274:5275): Se pudo realizar el memalloc
+[INFO] 00:58:52:852 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memWrite de 10039 y tamanio:5
+[INFO] 00:58:53:414 loggerContenidoProceso/(5274:5275): Habiamos solicitado hacer un memwrite
+[INFO] 00:58:53:414 loggerContenidoProceso/(5274:5275): Se pudo hacer el memwrite solicitado
+[INFO] 00:58:53:414 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memWrite de 10029 y tamanio:5
+[INFO] 00:58:53:919 loggerContenidoProceso/(5274:5275): Habiamos solicitado hacer un memwrite
+[INFO] 00:58:53:919 loggerContenidoProceso/(5274:5275): Se pudo hacer el memwrite solicitado
+[INFO] 00:58:53:919 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memWrite de 10019 y tamanio:5
+[INFO] 00:58:54:22 loggerContenidoProceso/(5274:5275): Habiamos solicitado hacer un memwrite
+[INFO] 00:58:54:22 loggerContenidoProceso/(5274:5275): Se pudo hacer el memwrite solicitado
+[INFO] 00:58:54:22 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memWrite de 10009 y tamanio:5
+[INFO] 00:58:54:129 loggerContenidoProceso/(5274:5275): Habiamos solicitado hacer un memwrite
+[INFO] 00:58:54:129 loggerContenidoProceso/(5274:5275): Se pudo hacer el memwrite solicitado
+[INFO] 00:58:54:347 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memalloc de size:23
+[INFO] 01:01:08:398 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memalloc de size:23
+[INFO] 01:01:08:399 loggerContenidoProceso/(5274:5275): Solicitamos realizar un memalloc de size:23
+[INFO] 01:08:26:193 loggerContenidoProceso/(5594:5595): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 01:08:26:194 loggerContenidoProceso/(5594:5595): Solicitamos realizar un memalloc de size:23
+[INFO] 01:10:04:776 loggerContenidoProceso/(5594:5595): Solicitamos realizar un memalloc de size:23
+[INFO] 01:10:04:778 loggerContenidoProceso/(5594:5595): Solicitamos realizar un memalloc de size:23
+[INFO] 01:12:56:879 loggerContenidoProceso/(5783:5784): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 01:12:56:879 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memalloc de size:23
+[INFO] 01:12:56:965 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memalloc
+[INFO] 01:12:56:965 loggerContenidoProceso/(5783:5784): Se pudo realizar el memalloc
+[INFO] 01:12:57:9 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memalloc de size:23
+[INFO] 01:12:57:368 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memalloc
+[INFO] 01:12:57:368 loggerContenidoProceso/(5783:5784): Se pudo realizar el memalloc
+[INFO] 01:12:57:4 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memalloc de size:23
+[INFO] 01:12:59:228 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memalloc
+[INFO] 01:12:59:228 loggerContenidoProceso/(5783:5784): Se pudo realizar el memalloc
+[INFO] 01:13:01:659 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memalloc de size:10
+[INFO] 01:13:03:378 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memalloc
+[INFO] 01:13:03:378 loggerContenidoProceso/(5783:5784): Se pudo realizar el memalloc
+[INFO] 01:13:06:819 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memWrite de 10039 y tamanio:5
+[INFO] 01:13:07:350 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memwrite
+[INFO] 01:13:07:350 loggerContenidoProceso/(5783:5784): Se pudo hacer el memwrite solicitado
+[INFO] 01:13:07:350 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memWrite de 10029 y tamanio:5
+[INFO] 01:13:07:867 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memwrite
+[INFO] 01:13:07:867 loggerContenidoProceso/(5783:5784): Se pudo hacer el memwrite solicitado
+[INFO] 01:13:07:867 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memWrite de 10019 y tamanio:5
+[INFO] 01:13:07:971 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memwrite
+[INFO] 01:13:07:971 loggerContenidoProceso/(5783:5784): Se pudo hacer el memwrite solicitado
+[INFO] 01:13:07:971 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memWrite de 10009 y tamanio:5
+[INFO] 01:13:08:84 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memwrite
+[INFO] 01:13:08:84 loggerContenidoProceso/(5783:5784): Se pudo hacer el memwrite solicitado
+[INFO] 01:13:08:302 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memalloc de size:23
+[INFO] 01:13:10:549 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memalloc
+[INFO] 01:13:10:549 loggerContenidoProceso/(5783:5784): Se pudo realizar el memalloc
+[INFO] 01:13:10:550 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memalloc de size:23
+[INFO] 01:13:13:681 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memalloc
+[INFO] 01:13:13:681 loggerContenidoProceso/(5783:5784): Se pudo realizar el memalloc
+[INFO] 01:13:13:682 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memalloc de size:23
+[INFO] 01:13:17:314 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memalloc
+[INFO] 01:13:17:315 loggerContenidoProceso/(5783:5784): Se pudo realizar el memalloc
+[INFO] 01:13:17:315 loggerContenidoProceso/(5783:5784): Solicitamos realizar un memalloc de size:23
+[INFO] 01:13:21:447 loggerContenidoProceso/(5783:5784): Habiamos solicitado hacer un memalloc
+[INFO] 01:13:21:447 loggerContenidoProceso/(5783:5784): Se pudo realizar el memalloc
+[INFO] 01:13:21:447 loggerContenidoProceso/(5783:5784): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 01:13:21:492 loggerContenidoProceso/(5783:5784): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 01:13:21:492 loggerContenidoProceso/(5783:5784): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 01:13:21:492 loggerContenidoProceso/(5783:5784): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 01:25:31:985 loggerContenidoProceso/(6848:6849): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 01:25:31:985 loggerContenidoProceso/(6848:6849): Solicitamos realizar un memalloc de size:23
+[INFO] 01:25:52:558 loggerContenidoProceso/(6848:6849): Solicitamos realizar un memalloc de size:23
+[INFO] 01:25:52:559 loggerContenidoProceso/(6848:6849): Solicitamos realizar un memalloc de size:23
+[INFO] 01:27:42:541 loggerContenidoProceso/(6942:6943): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 01:27:42:541 loggerContenidoProceso/(6942:6943): Solicitamos realizar un memalloc de size:23
+[INFO] 01:27:42:593 loggerContenidoProceso/(6942:6943): Habiamos solicitado hacer un memalloc
+[INFO] 01:27:42:594 loggerContenidoProceso/(6942:6943): Se pudo realizar el memalloc
+[INFO] 01:36:18:192 loggerContenidoProceso/(7085:7086): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 01:36:18:192 loggerContenidoProceso/(7085:7086): Solicitamos realizar un memalloc de size:23
+[INFO] 01:36:18:244 loggerContenidoProceso/(7085:7086): Habiamos solicitado hacer un memalloc
+[INFO] 01:36:18:244 loggerContenidoProceso/(7085:7086): Se pudo realizar el memalloc
+[INFO] 01:41:58:540 loggerContenidoProceso/(7452:7453): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 01:41:58:540 loggerContenidoProceso/(7452:7453): Solicitamos realizar un memalloc de size:23
+[INFO] 01:42:19:564 loggerContenidoProceso/(7452:7453): Habiamos solicitado hacer un memalloc
+[INFO] 01:42:19:564 loggerContenidoProceso/(7452:7453): Se pudo realizar el memalloc
+[INFO] 01:48:40:151 loggerContenidoProceso/(7695:7696): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 01:48:40:151 loggerContenidoProceso/(7695:7696): Solicitamos realizar un memalloc de size:23
+[INFO] 01:48:40:155 loggerContenidoProceso/(7695:7696): Habiamos solicitado hacer un memalloc
+[INFO] 01:48:40:155 loggerContenidoProceso/(7695:7696): Se pudo realizar el memalloc
+[INFO] 01:57:31:293 loggerContenidoProceso/(7995:7996): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 01:57:31:293 loggerContenidoProceso/(7995:7996): Solicitamos realizar un memalloc de size:23
+[INFO] 01:57:42:810 loggerContenidoProceso/(7995:7996): Habiamos solicitado hacer un memalloc
+[INFO] 01:57:42:810 loggerContenidoProceso/(7995:7996): Se pudo realizar el memalloc
+[INFO] 11:33:25:279 loggerContenidoProceso/(5171:5172): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 11:33:25:282 loggerContenidoProceso/(5171:5172): Solicitamos realizar un memalloc de size:23
+[INFO] 11:33:25:286 loggerContenidoProceso/(5171:5172): Habiamos solicitado hacer un memalloc
+[INFO] 11:33:25:286 loggerContenidoProceso/(5171:5172): Se pudo realizar el memalloc
+[INFO] 11:35:57:239 loggerContenidoProceso/(5269:5270): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 11:35:57:239 loggerContenidoProceso/(5269:5270): Solicitamos realizar un memalloc de size:23
+[INFO] 11:35:57:243 loggerContenidoProceso/(5269:5270): Habiamos solicitado hacer un memalloc
+[INFO] 11:35:57:243 loggerContenidoProceso/(5269:5270): Se pudo realizar el memalloc
+[INFO] 11:44:49:608 loggerContenidoProceso/(6090:6091): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 11:44:49:608 loggerContenidoProceso/(6090:6091): Solicitamos realizar un memalloc de size:23
+[INFO] 11:44:49:615 loggerContenidoProceso/(6090:6091): Habiamos solicitado hacer un memalloc
+[INFO] 11:44:49:615 loggerContenidoProceso/(6090:6091): Se pudo realizar el memalloc
+[INFO] 11:44:49:632 loggerContenidoProceso/(6090:6091): Solicitamos realizar un memalloc de size:23
+[INFO] 11:44:56:574 loggerContenidoProceso/(6090:6091): Solicitamos realizar un memalloc de size:23
+[INFO] 11:47:42:563 loggerContenidoProceso/(6288:6289): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 11:47:42:568 loggerContenidoProceso/(6288:6289): Solicitamos realizar un memalloc de size:23
+[INFO] 11:47:42:621 loggerContenidoProceso/(6288:6289): Habiamos solicitado hacer un memalloc
+[INFO] 11:47:42:621 loggerContenidoProceso/(6288:6289): Se pudo realizar el memalloc
+[INFO] 11:47:42:698 loggerContenidoProceso/(6288:6289): Solicitamos realizar un memalloc de size:23
+[INFO] 11:47:43:44 loggerContenidoProceso/(6288:6289): Habiamos solicitado hacer un memalloc
+[INFO] 11:47:43:44 loggerContenidoProceso/(6288:6289): Se pudo realizar el memalloc
+[INFO] 11:47:43:677 loggerContenidoProceso/(6288:6289): Solicitamos realizar un memalloc de size:23
+[INFO] 11:47:45:907 loggerContenidoProceso/(6288:6289): Habiamos solicitado hacer un memalloc
+[INFO] 11:47:45:907 loggerContenidoProceso/(6288:6289): Se pudo realizar el memalloc
+[INFO] 11:47:50:356 loggerContenidoProceso/(6288:6289): Solicitamos realizar un memalloc de size:23
+[INFO] 11:47:53:593 loggerContenidoProceso/(6288:6289): Habiamos solicitado hacer un memalloc
+[INFO] 11:47:53:593 loggerContenidoProceso/(6288:6289): Se pudo realizar el memalloc
+[INFO] 11:47:53:593 loggerContenidoProceso/(6288:6289): Solicitamos realizar un memalloc de size:23
+[INFO] 11:48:33:128 loggerContenidoProceso/(6288:6289): Solicitamos realizar un memalloc de size:23
+[INFO] 11:48:33:129 loggerContenidoProceso/(6288:6289): Solicitamos realizar un memalloc de size:23
+[INFO] 11:51:00:358 loggerContenidoProceso/(6532:6533): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 11:51:00:359 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memalloc de size:23
+[INFO] 11:51:00:549 loggerContenidoProceso/(6532:6533): Habiamos solicitado hacer un memalloc
+[ERROR] 11:51:00:549 loggerContenidoProceso/(6532:6533): No se pudo hacer el memalloc del size solicitado
+[INFO] 11:51:00:845 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memalloc de size:23
+[INFO] 11:51:00:966 loggerContenidoProceso/(6532:6533): Habiamos solicitado hacer un memalloc
+[ERROR] 11:51:00:966 loggerContenidoProceso/(6532:6533): No se pudo hacer el memalloc del size solicitado
+[INFO] 11:51:01:225 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memalloc de size:23
+[INFO] 11:51:01:316 loggerContenidoProceso/(6532:6533): Habiamos solicitado hacer un memalloc
+[ERROR] 11:51:01:316 loggerContenidoProceso/(6532:6533): No se pudo hacer el memalloc del size solicitado
+[INFO] 11:51:01:554 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memalloc de size:23
+[INFO] 11:51:01:660 loggerContenidoProceso/(6532:6533): Habiamos solicitado hacer un memalloc
+[ERROR] 11:51:01:660 loggerContenidoProceso/(6532:6533): No se pudo hacer el memalloc del size solicitado
+[INFO] 11:51:01:660 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memalloc de size:23
+[INFO] 11:51:01:757 loggerContenidoProceso/(6532:6533): Habiamos solicitado hacer un memalloc
+[ERROR] 11:51:01:757 loggerContenidoProceso/(6532:6533): No se pudo hacer el memalloc del size solicitado
+[INFO] 11:51:01:757 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memalloc de size:23
+[INFO] 11:51:01:874 loggerContenidoProceso/(6532:6533): Habiamos solicitado hacer un memalloc
+[ERROR] 11:51:01:875 loggerContenidoProceso/(6532:6533): No se pudo hacer el memalloc del size solicitado
+[INFO] 11:51:01:875 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memalloc de size:23
+[INFO] 11:51:01:977 loggerContenidoProceso/(6532:6533): Habiamos solicitado hacer un memalloc
+[ERROR] 11:51:01:977 loggerContenidoProceso/(6532:6533): No se pudo hacer el memalloc del size solicitado
+[INFO] 11:51:01:977 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memWrite de 0 y tamanio:5
+[INFO] 11:53:37:721 loggerContenidoProceso/(6532:6533): Solicitamos realizar un memWrite de 0 y tamanio:5
+[INFO] 11:55:47:752 loggerContenidoProceso/(6794:6795): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 11:55:47:753 loggerContenidoProceso/(6794:6795): Solicitamos realizar un memalloc de size:23
+[INFO] 11:55:47:806 loggerContenidoProceso/(6794:6795): Habiamos solicitado hacer un memalloc
+[INFO] 11:55:47:806 loggerContenidoProceso/(6794:6795): Se pudo realizar el memalloc
+[INFO] 11:55:47:896 loggerContenidoProceso/(6794:6795): Solicitamos realizar un memalloc de size:23
+[INFO] 11:55:48:238 loggerContenidoProceso/(6794:6795): Habiamos solicitado hacer un memalloc
+[INFO] 11:55:48:238 loggerContenidoProceso/(6794:6795): Se pudo realizar el memalloc
+[INFO] 11:55:48:872 loggerContenidoProceso/(6794:6795): Solicitamos realizar un memalloc de size:23
+[INFO] 11:55:51:95 loggerContenidoProceso/(6794:6795): Habiamos solicitado hacer un memalloc
+[INFO] 11:55:51:95 loggerContenidoProceso/(6794:6795): Se pudo realizar el memalloc
+[INFO] 11:55:55:528 loggerContenidoProceso/(6794:6795): Solicitamos realizar un memalloc de size:23
+[INFO] 11:55:58:757 loggerContenidoProceso/(6794:6795): Habiamos solicitado hacer un memalloc
+[INFO] 11:55:58:758 loggerContenidoProceso/(6794:6795): Se pudo realizar el memalloc
+[INFO] 11:55:58:758 loggerContenidoProceso/(6794:6795): Solicitamos realizar un memalloc de size:23
+[INFO] 12:04:56:627 loggerContenidoProceso/(7462:7463): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:04:56:627 loggerContenidoProceso/(7462:7463): Solicitamos realizar un memalloc de size:23
+[INFO] 12:04:56:695 loggerContenidoProceso/(7462:7463): Habiamos solicitado hacer un memalloc
+[INFO] 12:04:56:695 loggerContenidoProceso/(7462:7463): Se pudo realizar el memalloc
+[INFO] 12:04:56:785 loggerContenidoProceso/(7462:7463): Solicitamos realizar un memalloc de size:23
+[INFO] 12:04:57:125 loggerContenidoProceso/(7462:7463): Habiamos solicitado hacer un memalloc
+[INFO] 12:04:57:125 loggerContenidoProceso/(7462:7463): Se pudo realizar el memalloc
+[INFO] 12:04:57:771 loggerContenidoProceso/(7462:7463): Solicitamos realizar un memalloc de size:23
+[INFO] 12:04:59:989 loggerContenidoProceso/(7462:7463): Habiamos solicitado hacer un memalloc
+[INFO] 12:04:59:989 loggerContenidoProceso/(7462:7463): Se pudo realizar el memalloc
+[INFO] 12:05:04:431 loggerContenidoProceso/(7462:7463): Solicitamos realizar un memalloc de size:23
+[INFO] 12:05:07:667 loggerContenidoProceso/(7462:7463): Habiamos solicitado hacer un memalloc
+[INFO] 12:05:07:667 loggerContenidoProceso/(7462:7463): Se pudo realizar el memalloc
+[INFO] 12:05:07:667 loggerContenidoProceso/(7462:7463): Solicitamos realizar un memalloc de size:23
+[INFO] 12:14:54:820 loggerContenidoProceso/(7977:7977): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:14:54:820 loggerContenidoProceso/(7977:7977): Solicitamos realizar un memalloc de size:45
+[INFO] 12:14:54:874 loggerContenidoProceso/(7977:7977): Habiamos solicitado hacer un memalloc
+[INFO] 12:14:54:874 loggerContenidoProceso/(7977:7977): Se pudo realizar el memalloc
+[INFO] 12:14:54:874 loggerContenidoProceso/(7977:7977): Solicitamos realizar un memWrite de 10009 y tamanio:45
+[INFO] 12:14:55:107 loggerContenidoProceso/(7977:7977): Habiamos solicitado hacer un memwrite
+[INFO] 12:14:55:107 loggerContenidoProceso/(7977:7977): Se pudo hacer el memwrite solicitado
+[INFO] 12:14:55:107 loggerContenidoProceso/(7977:7977): Solicitamos realizar un memRead 10009
+[INFO] 12:14:55:340 loggerContenidoProceso/(7977:7977): Habiamos solicitado hacer un memread
+[INFO] 12:14:55:340 loggerContenidoProceso/(7977:7977): 
+ LLego: ----------------------------------------1-45
+[INFO] 12:14:55:340 loggerContenidoProceso/(7977:7977): 
+ LLego: ----------------------------------------1-45
+[INFO] 12:14:55:340 loggerContenidoProceso/(7977:7977): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 12:14:55:372 loggerContenidoProceso/(7977:7977): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 12:14:55:372 loggerContenidoProceso/(7977:7977): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 12:14:55:372 loggerContenidoProceso/(7977:7977): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 12:18:26:665 loggerContenidoProceso/(8331:8331): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:18:26:665 loggerContenidoProceso/(8331:8331): Solicitamos realizar un memalloc de size:45
+[INFO] 12:24:58:825 loggerContenidoProceso/(8331:8331): Solicitamos realizar un memWrite de -1 y tamanio:45
+[INFO] 12:24:58:825 loggerContenidoProceso/(8331:8331): Solicitamos realizar un memRead -1
+[INFO] 12:28:32:700 loggerContenidoProceso/(8975:8975): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:28:32:701 loggerContenidoProceso/(8975:8975): Solicitamos realizar un memalloc de size:45
+[INFO] 12:28:32:762 loggerContenidoProceso/(8975:8975): Habiamos solicitado hacer un memalloc
+[INFO] 12:28:32:762 loggerContenidoProceso/(8975:8975): Se pudo realizar el memalloc
+[INFO] 12:28:32:762 loggerContenidoProceso/(8975:8975): Solicitamos realizar un memWrite de 10009 y tamanio:45
+[INFO] 12:28:33:8 loggerContenidoProceso/(8975:8975): Habiamos solicitado hacer un memwrite
+[INFO] 12:28:33:8 loggerContenidoProceso/(8975:8975): Se pudo hacer el memwrite solicitado
+[INFO] 12:28:33:8 loggerContenidoProceso/(8975:8975): Solicitamos realizar un memRead 10009
+[INFO] 12:28:33:229 loggerContenidoProceso/(8975:8975): Habiamos solicitado hacer un memread
+[INFO] 12:28:33:229 loggerContenidoProceso/(8975:8975): 
+ LLego: ----------------------------------------1-45
+[INFO] 12:28:33:229 loggerContenidoProceso/(8975:8975): 
+ LLego: ----------------------------------------1-45
+[INFO] 12:28:33:229 loggerContenidoProceso/(8975:8975): Se ha solicitado cerrar el carpincho de pid:0 , este es un hasta adios
+[INFO] 12:28:33:246 loggerContenidoProceso/(8975:8975): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 12:28:33:246 loggerContenidoProceso/(8975:8975): Se pudo cerrar el proceso de PID:0 correctamente en el BackEnd
+[INFO] 12:28:33:246 loggerContenidoProceso/(8975:8975): Se liberan todas las estructuras del proceso de PID:0
+[INFO] 12:29:52:93 loggerContenidoProceso/(9090:9091): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:29:52:93 loggerContenidoProceso/(9090:9091): Solicitamos realizar un memalloc de size:23
+[INFO] 12:29:52:148 loggerContenidoProceso/(9090:9091): Habiamos solicitado hacer un memalloc
+[INFO] 12:29:52:148 loggerContenidoProceso/(9090:9091): Se pudo realizar el memalloc
+[INFO] 12:29:52:247 loggerContenidoProceso/(9090:9091): Solicitamos realizar un memalloc de size:23
+[INFO] 12:29:52:585 loggerContenidoProceso/(9090:9091): Habiamos solicitado hacer un memalloc
+[INFO] 12:29:52:585 loggerContenidoProceso/(9090:9091): Se pudo realizar el memalloc
+[INFO] 12:29:53:236 loggerContenidoProceso/(9090:9091): Solicitamos realizar un memalloc de size:23
+[INFO] 12:29:55:461 loggerContenidoProceso/(9090:9091): Habiamos solicitado hacer un memalloc
+[INFO] 12:29:55:461 loggerContenidoProceso/(9090:9091): Se pudo realizar el memalloc
+[INFO] 12:29:59:909 loggerContenidoProceso/(9090:9091): Solicitamos realizar un memalloc de size:23
+[INFO] 12:30:03:157 loggerContenidoProceso/(9090:9091): Habiamos solicitado hacer un memalloc
+[INFO] 12:30:03:157 loggerContenidoProceso/(9090:9091): Se pudo realizar el memalloc
+[INFO] 12:30:03:157 loggerContenidoProceso/(9090:9091): Solicitamos realizar un memalloc de size:23
+[INFO] 12:30:20:828 loggerContenidoProceso/(9090:9091): Solicitamos realizar un memalloc de size:23
+[INFO] 12:30:20:828 loggerContenidoProceso/(9090:9091): Solicitamos realizar un memalloc de size:23
+[INFO] 12:35:26:906 loggerContenidoProceso/(9384:9385): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:35:26:906 loggerContenidoProceso/(9384:9385): Solicitamos realizar un memalloc de size:23
+[INFO] 12:36:24:103 loggerContenidoProceso/(9384:9385): Solicitamos realizar un memalloc de size:23
+[INFO] 12:36:24:103 loggerContenidoProceso/(9384:9385): Solicitamos realizar un memalloc de size:23
+[INFO] 12:37:01:891 loggerContenidoProceso/(9632:9633): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:37:01:891 loggerContenidoProceso/(9632:9633): Solicitamos realizar un memalloc de size:23
+[INFO] 12:40:54:322 loggerContenidoProceso/(9632:9633): Solicitamos realizar un memalloc de size:23
+[INFO] 12:40:54:323 loggerContenidoProceso/(9632:9633): Solicitamos realizar un memalloc de size:23
+[INFO] 12:41:08:682 loggerContenidoProceso/(9899:9900): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:41:08:682 loggerContenidoProceso/(9899:9900): Solicitamos realizar un memalloc de size:23
+[INFO] 12:46:42:825 loggerContenidoProceso/(9899:9900): Solicitamos realizar un memalloc de size:23
+[INFO] 12:46:42:825 loggerContenidoProceso/(9899:9900): Solicitamos realizar un memalloc de size:23
+[INFO] 12:47:10:771 loggerContenidoProceso/(10141:10142): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 12:47:10:772 loggerContenidoProceso/(10141:10142): Solicitamos realizar un memalloc de size:23
+[INFO] 12:47:10:830 loggerContenidoProceso/(10141:10142): Habiamos solicitado hacer un memalloc
+[INFO] 12:47:10:831 loggerContenidoProceso/(10141:10142): Se pudo realizar el memalloc
+[INFO] 12:47:10:907 loggerContenidoProceso/(10141:10142): Solicitamos realizar un memalloc de size:23
+[INFO] 12:47:11:254 loggerContenidoProceso/(10141:10142): Habiamos solicitado hacer un memalloc
+[INFO] 12:47:11:254 loggerContenidoProceso/(10141:10142): Se pudo realizar el memalloc
+[INFO] 12:47:11:901 loggerContenidoProceso/(10141:10142): Solicitamos realizar un memalloc de size:23
+[INFO] 12:47:12:320 loggerContenidoProceso/(10141:10142): Habiamos solicitado hacer un memalloc
+[INFO] 12:47:12:320 loggerContenidoProceso/(10141:10142): Se pudo realizar el memalloc
+[INFO] 12:47:13:156 loggerContenidoProceso/(10141:10142): Solicitamos realizar un memalloc de size:23
+[INFO] 12:47:13:702 loggerContenidoProceso/(10141:10142): Habiamos solicitado hacer un memalloc
+[INFO] 12:47:13:702 loggerContenidoProceso/(10141:10142): Se pudo realizar el memalloc
+[INFO] 12:47:13:702 loggerContenidoProceso/(10141:10142): Solicitamos realizar un memalloc de size:23
+[INFO] 13:04:10:833 loggerContenidoProceso/(10141:10142): Solicitamos realizar un memalloc de size:23
+[INFO] 13:04:10:833 loggerContenidoProceso/(10141:10142): Solicitamos realizar un memalloc de size:23
+[INFO] 13:04:23:818 loggerContenidoProceso/(10671:10672): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 13:04:23:818 loggerContenidoProceso/(10671:10672): Solicitamos realizar un memalloc de size:23
+[INFO] 13:04:23:881 loggerContenidoProceso/(10671:10672): Habiamos solicitado hacer un memalloc
+[INFO] 13:04:23:881 loggerContenidoProceso/(10671:10672): Se pudo realizar el memalloc
+[INFO] 13:04:23:962 loggerContenidoProceso/(10671:10672): Solicitamos realizar un memalloc de size:23
+[INFO] 13:04:24:305 loggerContenidoProceso/(10671:10672): Habiamos solicitado hacer un memalloc
+[INFO] 13:04:24:305 loggerContenidoProceso/(10671:10672): Se pudo realizar el memalloc
+[INFO] 13:04:24:930 loggerContenidoProceso/(10671:10672): Solicitamos realizar un memalloc de size:23
+[INFO] 13:04:25:345 loggerContenidoProceso/(10671:10672): Habiamos solicitado hacer un memalloc
+[INFO] 13:04:25:345 loggerContenidoProceso/(10671:10672): Se pudo realizar el memalloc
+[INFO] 13:04:26:186 loggerContenidoProceso/(10671:10672): Solicitamos realizar un memalloc de size:23
+[INFO] 13:04:26:725 loggerContenidoProceso/(10671:10672): Habiamos solicitado hacer un memalloc
+[INFO] 13:04:26:725 loggerContenidoProceso/(10671:10672): Se pudo realizar el memalloc
+[INFO] 13:04:26:725 loggerContenidoProceso/(10671:10672): Solicitamos realizar un memalloc de size:23
+[INFO] 13:06:58:179 loggerContenidoProceso/(10671:10672): Solicitamos realizar un memalloc de size:23
+[INFO] 13:06:58:179 loggerContenidoProceso/(10671:10672): Solicitamos realizar un memalloc de size:23
+[INFO] 13:07:15:427 loggerContenidoProceso/(10911:10912): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 13:07:15:427 loggerContenidoProceso/(10911:10912): Solicitamos realizar un memalloc de size:23
+[INFO] 13:07:25:521 loggerContenidoProceso/(10911:10912): Habiamos solicitado hacer un memalloc
+[INFO] 13:07:25:521 loggerContenidoProceso/(10911:10912): Se pudo realizar el memalloc
+[INFO] 13:07:29:510 loggerContenidoProceso/(10911:10912): Solicitamos realizar un memalloc de size:23
+[INFO] 13:07:44:423 loggerContenidoProceso/(10911:10912): Habiamos solicitado hacer un memalloc
+[INFO] 13:07:44:423 loggerContenidoProceso/(10911:10912): Se pudo realizar el memalloc
+[INFO] 13:07:48:709 loggerContenidoProceso/(10911:10912): Solicitamos realizar un memalloc de size:23
+[INFO] 13:07:52:785 loggerContenidoProceso/(10911:10912): Habiamos solicitado hacer un memalloc
+[INFO] 13:07:52:785 loggerContenidoProceso/(10911:10912): Se pudo realizar el memalloc
+[INFO] 13:07:57:25 loggerContenidoProceso/(10911:10912): Solicitamos realizar un memalloc de size:23
+[INFO] 13:18:26:423 loggerContenidoProceso/(10911:10912): Solicitamos realizar un memalloc de size:23
+[INFO] 13:18:26:424 loggerContenidoProceso/(10911:10912): Solicitamos realizar un memalloc de size:23
+[INFO] 13:18:44:353 loggerContenidoProceso/(11532:11533): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 13:18:44:353 loggerContenidoProceso/(11532:11533): Solicitamos realizar un memalloc de size:23
+[INFO] 13:18:48:349 loggerContenidoProceso/(11532:11533): Habiamos solicitado hacer un memalloc
+[INFO] 13:18:48:349 loggerContenidoProceso/(11532:11533): Se pudo realizar el memalloc
+[INFO] 13:18:49:714 loggerContenidoProceso/(11532:11533): Solicitamos realizar un memalloc de size:23
+[INFO] 13:18:50:599 loggerContenidoProceso/(11532:11533): Habiamos solicitado hacer un memalloc
+[INFO] 13:18:50:599 loggerContenidoProceso/(11532:11533): Se pudo realizar el memalloc
+[INFO] 13:18:52:621 loggerContenidoProceso/(11532:11533): Solicitamos realizar un memalloc de size:23
+[INFO] 13:18:53:689 loggerContenidoProceso/(11532:11533): Habiamos solicitado hacer un memalloc
+[INFO] 13:18:53:689 loggerContenidoProceso/(11532:11533): Se pudo realizar el memalloc
+[INFO] 13:18:55:876 loggerContenidoProceso/(11532:11533): Solicitamos realizar un memalloc de size:23
+[INFO] 13:20:51:354 loggerContenidoProceso/(11532:11533): Solicitamos realizar un memalloc de size:23
+[INFO] 13:20:51:355 loggerContenidoProceso/(11532:11533): Solicitamos realizar un memalloc de size:23
+[INFO] 13:21:32:135 loggerContenidoProceso/(11701:11702): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 13:21:32:135 loggerContenidoProceso/(11701:11702): Solicitamos realizar un memalloc de size:23
+[INFO] 13:21:32:200 loggerContenidoProceso/(11701:11702): Habiamos solicitado hacer un memalloc
+[INFO] 13:21:32:200 loggerContenidoProceso/(11701:11702): Se pudo realizar el memalloc
+[INFO] 13:21:32:299 loggerContenidoProceso/(11701:11702): Solicitamos realizar un memalloc de size:23
+[INFO] 13:21:32:640 loggerContenidoProceso/(11701:11702): Habiamos solicitado hacer un memalloc
+[INFO] 13:21:32:640 loggerContenidoProceso/(11701:11702): Se pudo realizar el memalloc
+[INFO] 13:21:33:281 loggerContenidoProceso/(11701:11702): Solicitamos realizar un memalloc de size:23
+[INFO] 13:21:33:715 loggerContenidoProceso/(11701:11702): Habiamos solicitado hacer un memalloc
+[INFO] 13:21:33:715 loggerContenidoProceso/(11701:11702): Se pudo realizar el memalloc
+[INFO] 13:21:34:565 loggerContenidoProceso/(11701:11702): Solicitamos realizar un memalloc de size:23
+[INFO] 13:21:35:105 loggerContenidoProceso/(11701:11702): Habiamos solicitado hacer un memalloc
+[INFO] 13:21:35:105 loggerContenidoProceso/(11701:11702): Se pudo realizar el memalloc
+[INFO] 13:21:35:106 loggerContenidoProceso/(11701:11702): Solicitamos realizar un memalloc de size:23
+[INFO] 13:21:51:798 loggerContenidoProceso/(11701:11702): Solicitamos realizar un memalloc de size:23
+[INFO] 13:21:51:798 loggerContenidoProceso/(11701:11702): Solicitamos realizar un memalloc de size:23
+[INFO] 13:22:10:921 loggerContenidoProceso/(11869:11870): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 13:22:10:921 loggerContenidoProceso/(11869:11870): Solicitamos realizar un memalloc de size:23
+[INFO] 13:22:16:285 loggerContenidoProceso/(11869:11870): Habiamos solicitado hacer un memalloc
+[INFO] 13:22:16:285 loggerContenidoProceso/(11869:11870): Se pudo realizar el memalloc
+[INFO] 13:22:17:573 loggerContenidoProceso/(11869:11870): Solicitamos realizar un memalloc de size:23
+[INFO] 13:22:18:432 loggerContenidoProceso/(11869:11870): Habiamos solicitado hacer un memalloc
+[INFO] 13:22:18:433 loggerContenidoProceso/(11869:11870): Se pudo realizar el memalloc
+[INFO] 13:22:19:784 loggerContenidoProceso/(11869:11870): Solicitamos realizar un memalloc de size:23
+[INFO] 13:22:20:852 loggerContenidoProceso/(11869:11870): Habiamos solicitado hacer un memalloc
+[INFO] 13:22:20:852 loggerContenidoProceso/(11869:11870): Se pudo realizar el memalloc
+[INFO] 13:22:28:105 loggerContenidoProceso/(11869:11870): Solicitamos realizar un memalloc de size:23
+[INFO] 13:25:05:926 loggerContenidoProceso/(11869:11870): Habiamos solicitado hacer un memalloc
+[INFO] 13:25:05:926 loggerContenidoProceso/(11869:11870): Se pudo realizar el memalloc
+[INFO] 13:25:05:926 loggerContenidoProceso/(11869:11870): Solicitamos realizar un memalloc de size:23
+[INFO] 13:28:20:523 loggerContenidoProceso/(11869:11870): Solicitamos realizar un memalloc de size:23
+[INFO] 13:28:20:523 loggerContenidoProceso/(11869:11870): Solicitamos realizar un memalloc de size:23
+[INFO] 13:29:20:724 loggerContenidoProceso/(12227:12228): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 13:29:20:724 loggerContenidoProceso/(12227:12228): Solicitamos realizar un memalloc de size:23
+[INFO] 13:30:10:104 loggerContenidoProceso/(12227:12228): Habiamos solicitado hacer un memalloc
+[INFO] 13:30:10:104 loggerContenidoProceso/(12227:12228): Se pudo realizar el memalloc
+[INFO] 13:30:13:36 loggerContenidoProceso/(12227:12228): Solicitamos realizar un memalloc de size:23
+[INFO] 13:30:15:381 loggerContenidoProceso/(12227:12228): Habiamos solicitado hacer un memalloc
+[INFO] 13:30:15:381 loggerContenidoProceso/(12227:12228): Se pudo realizar el memalloc
+[INFO] 13:30:18:394 loggerContenidoProceso/(12227:12228): Solicitamos realizar un memalloc de size:23
+[INFO] 13:30:19:326 loggerContenidoProceso/(12227:12228): Habiamos solicitado hacer un memalloc
+[INFO] 13:30:19:326 loggerContenidoProceso/(12227:12228): Se pudo realizar el memalloc
+[INFO] 13:30:21:168 loggerContenidoProceso/(12227:12228): Solicitamos realizar un memalloc de size:23
+[INFO] 13:30:30:265 loggerContenidoProceso/(12227:12228): Habiamos solicitado hacer un memalloc
+[INFO] 13:30:30:265 loggerContenidoProceso/(12227:12228): Se pudo realizar el memalloc
+[INFO] 13:30:30:265 loggerContenidoProceso/(12227:12228): Solicitamos realizar un memalloc de size:23
+[INFO] 15:11:17:873 loggerContenidoProceso/(12227:12228): Solicitamos realizar un memalloc de size:23
+[INFO] 15:11:17:873 loggerContenidoProceso/(12227:12228): Solicitamos realizar un memalloc de size:23
+[INFO] 15:12:34:182 loggerContenidoProceso/(14605:14606): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 15:12:34:182 loggerContenidoProceso/(14605:14606): Solicitamos realizar un memalloc de size:23
+[INFO] 15:12:40:625 loggerContenidoProceso/(14605:14606): Habiamos solicitado hacer un memalloc
+[INFO] 15:12:40:625 loggerContenidoProceso/(14605:14606): Se pudo realizar el memalloc
+[INFO] 15:12:42:694 loggerContenidoProceso/(14605:14606): Solicitamos realizar un memalloc de size:23
+[INFO] 15:12:44:143 loggerContenidoProceso/(14605:14606): Habiamos solicitado hacer un memalloc
+[INFO] 15:12:44:143 loggerContenidoProceso/(14605:14606): Se pudo realizar el memalloc
+[INFO] 15:12:46:549 loggerContenidoProceso/(14605:14606): Solicitamos realizar un memalloc de size:23
+[INFO] 15:12:47:995 loggerContenidoProceso/(14605:14606): Habiamos solicitado hacer un memalloc
+[INFO] 15:12:47:995 loggerContenidoProceso/(14605:14606): Se pudo realizar el memalloc
+[INFO] 15:12:51:288 loggerContenidoProceso/(14605:14606): Solicitamos realizar un memalloc de size:23
+[INFO] 15:12:53:602 loggerContenidoProceso/(14605:14606): Habiamos solicitado hacer un memalloc
+[INFO] 15:12:53:602 loggerContenidoProceso/(14605:14606): Se pudo realizar el memalloc
+[INFO] 15:12:53:602 loggerContenidoProceso/(14605:14606): Solicitamos realizar un memalloc de size:23
+[INFO] 15:19:39:706 loggerContenidoProceso/(14605:14606): Solicitamos realizar un memalloc de size:23
+[INFO] 15:19:39:706 loggerContenidoProceso/(14605:14606): Solicitamos realizar un memalloc de size:23
+[INFO] 15:19:52:358 loggerContenidoProceso/(14968:14969): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 15:19:52:359 loggerContenidoProceso/(14968:14969): Solicitamos realizar un memalloc de size:23
+[INFO] 15:20:17:291 loggerContenidoProceso/(14968:14969): Habiamos solicitado hacer un memalloc
+[INFO] 15:20:17:291 loggerContenidoProceso/(14968:14969): Se pudo realizar el memalloc
+[INFO] 15:20:19:433 loggerContenidoProceso/(14968:14969): Solicitamos realizar un memalloc de size:23
+[INFO] 15:20:20:880 loggerContenidoProceso/(14968:14969): Habiamos solicitado hacer un memalloc
+[INFO] 15:20:20:880 loggerContenidoProceso/(14968:14969): Se pudo realizar el memalloc
+[INFO] 15:20:22:962 loggerContenidoProceso/(14968:14969): Solicitamos realizar un memalloc de size:23
+[INFO] 15:20:24:138 loggerContenidoProceso/(14968:14969): Habiamos solicitado hacer un memalloc
+[INFO] 15:20:24:138 loggerContenidoProceso/(14968:14969): Se pudo realizar el memalloc
+[INFO] 15:20:26:223 loggerContenidoProceso/(14968:14969): Solicitamos realizar un memalloc de size:23
+[INFO] 15:20:27:802 loggerContenidoProceso/(14968:14969): Habiamos solicitado hacer un memalloc
+[INFO] 15:20:27:802 loggerContenidoProceso/(14968:14969): Se pudo realizar el memalloc
+[INFO] 15:20:27:802 loggerContenidoProceso/(14968:14969): Solicitamos realizar un memalloc de size:23
+[INFO] 15:20:46:914 loggerContenidoProceso/(14968:14969): Solicitamos realizar un memalloc de size:23
+[INFO] 15:20:46:914 loggerContenidoProceso/(14968:14969): Solicitamos realizar un memalloc de size:23
+[INFO] 15:20:58:977 loggerContenidoProceso/(15177:15178): Se ha creado el carpincho:0, y se ha logrado conectar correctamente al backend
+[INFO] 15:20:58:977 loggerContenidoProceso/(15177:15178): Solicitamos realizar un memalloc de size:23
+[INFO] 15:21:01:742 loggerContenidoProceso/(15177:15178): Habiamos solicitado hacer un memalloc
+[INFO] 15:21:01:742 loggerContenidoProceso/(15177:15178): Se pudo realizar el memalloc
+[INFO] 15:21:03:36 loggerContenidoProceso/(15177:15178): Solicitamos realizar un memalloc de size:23
+[INFO] 15:21:03:865 loggerContenidoProceso/(15177:15178): Habiamos solicitado hacer un memalloc
+[INFO] 15:21:03:865 loggerContenidoProceso/(15177:15178): Se pudo realizar el memalloc
+[INFO] 15:21:05:505 loggerContenidoProceso/(15177:15178): Solicitamos realizar un memalloc de size:23
+[INFO] 15:21:06:417 loggerContenidoProceso/(15177:15178): Habiamos solicitado hacer un memalloc
+[INFO] 15:21:06:418 loggerContenidoProceso/(15177:15178): Se pudo realizar el memalloc
+[INFO] 15:21:08:205 loggerContenidoProceso/(15177:15178): Solicitamos realizar un memalloc de size:23
+[INFO] 15:21:09:597 loggerContenidoProceso/(15177:15178): Habiamos solicitado hacer un memalloc
+[INFO] 15:21:09:597 loggerContenidoProceso/(15177:15178): Se pudo realizar el memalloc
+[INFO] 15:21:09:597 loggerContenidoProceso/(15177:15178): Solicitamos realizar un memalloc de size:23
+[INFO] 15:57:43:775 loggerContenidoProceso/(15177:15178): Solicitamos realizar un memalloc de size:23
+[INFO] 15:57:43:775 loggerContenidoProceso/(15177:15178): Solicitamos realizar un memalloc de size:23
+>>>>>>> 738e171c2ae74f2ec75589cefc1719bb1bddef98

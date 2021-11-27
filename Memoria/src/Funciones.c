@@ -52,13 +52,20 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
             t_pagina* pagina = malloc(sizeof(t_pagina));
             pagina->id_pagina = generadorIdsPaginas(carpincho);
-            pagina->presente = true;
+            pagina->presente = false;
             pagina->ultimoUso = clock();
             pagina->uso = true;
             pagina->modificado = true;
             pagina->id_carpincho = carpincho->id_carpincho;
 
-            enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
+            void* paginaVacia = malloc(tamanioPagina);
+            for(int j=0; j<tamanioPagina;j++){
+                 char valor = "\0";
+                memcpy(paginaVacia +j, &valor, 1);
+            }
+           
+            enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, paginaVacia);
+            free(paginaVacia);
 
             list_add(carpincho->tabla_de_paginas, pagina);
         }
@@ -69,6 +76,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar, carpincho);// que pasa aca en el caso de que los marcos por proceso sea menor a las paginas creadas?
 
         free (buffer_allocs);
+        
 
 
         void agregarATLB(t_pagina* pag){
@@ -84,17 +92,6 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         t_pagina* primeraPag = list_get(carpincho->tabla_de_paginas, 0);
 
         int32_t DF = buscar_TLB(primeraPag);
-
-        /* if(DF == -1){ //tlb miss
-
-            DF = buscarEnTablaDePaginas(carpincho, primeraPag->id_pagina);
-            if(DF == -1) DF = swapear(carpincho, primeraPag);
-            carpincho->tlb_miss++;
-            miss_totales++;
-        }else{//hit
-            carpincho->tlb_hit++;
-            hits_totales++;
-        }*/
 
         reemplazo(&DF, carpincho, primeraPag);
 
@@ -129,7 +126,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         }
 
-        //dividir
+        //dividirAllocs(carpincho, posicionHeap, pagina, tamanio, desplazamiento);
 
         if(heap->nextAlloc == -1){
 
@@ -394,16 +391,6 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
 
     int32_t presente = buscar_TLB(pagina);
 
-    /* if(presente == -1){ //tlb miss
-        presente = buscarEnTablaDePaginas(capybara, pagina->id_pagina);
-        if(presente == -1) presente = swapear(capybara, pagina);
-        capybara->tlb_miss++;
-        miss_totales++;
-    }else{//hit
-        capybara->tlb_hit++;
-        hits_totales++;
-    }*/
-
     reemplazo(&presente, capybara, pagina);
 
     void* leido = malloc(tam);
@@ -520,16 +507,6 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
     t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
 
     int32_t presente = buscar_TLB(pagina);
-
-    /* if(presente == -1){ //tlb miss
-        presente = buscarEnTablaDePaginas(capybara, pagina->id_pagina);
-        if(presente == -1) presente = swapear(capybara, pagina);
-        capybara->tlb_miss++;
-        miss_totales++;
-    }else{//hit
-        capybara->tlb_hit++;
-        hits_totales++;
-    }*/
 
     reemplazo(&presente, capybara, pagina);
 
@@ -660,6 +637,8 @@ uint32_t suspender_proceso(uint32_t pid){
     }
    
    list_iterate(paginas_que_se_van, (void*)volarPaginas);
+
+
 
    
 }

@@ -33,12 +33,13 @@ char* ipSWAmP;
 char* puertoSWAmP;
 char* pathDump;
 
-uint32_t id_pag; //inicializar en algun lado 
-uint32_t id_carpincho; //inicializar
+uint32_t id_pag; 
+uint32_t id_carpincho;
 
 
 uint32_t hits_totales;
 uint32_t miss_totales;
+int punteroClock;
 
 
 /* Semaforos */
@@ -53,6 +54,7 @@ pthread_mutex_t * marcos_sem;
 
 t_log* logsObligatorios;
 t_log* dumpTLB;
+t_log* loggerServidor; 
 
 
 /* Estructuras Administrativas */
