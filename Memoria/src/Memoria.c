@@ -122,11 +122,11 @@ int main(){
 	}
 
     enviar_tipo_asignacion(tipoAsignacion);
-    //enviar_pagina(0, 0, "buenass--------------buenass--------------");
 
-    atender_solicitudes_multihilo();
+    atender_solicitudes_carpinchos();
     
     finalizarTodo(configActual);
+    
     return 0;
 }
 

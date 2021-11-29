@@ -25,7 +25,7 @@ void* recibir_buffer(int socket_cliente)
 	return buffer;
 }
 
-void atender_solicitudes_multihilo(){
+void atender_solicitudes_carpinchos(){
 
 	 uint32_t servidor = iniciar_servidor(ip, puerto);
 	 
@@ -146,17 +146,18 @@ void* atender_respuestas_swap(uint32_t conexion){
 uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del comienzo del bloque (no del heap)
 {
 	uint32_t offset;
-	t_memalloc *alloc = malloc(sizeof(t_memalloc));
+	uint32_t pid, tamanio;
 	void* buffer = recibir_buffer(socket_cliente);
 	
-	memcpy(&(alloc->pid), buffer, sizeof(uint32_t));
+	memcpy(&pid, buffer, sizeof(uint32_t));
 	offset =+ sizeof(uint32_t);
-	memcpy(&(alloc->tamanio), buffer + offset,sizeof(uint32_t));
+	memcpy(&tamanio, buffer + offset,sizeof(uint32_t));
 
 	free(buffer);
-	log_info(logger, "\nLLego el proceso para allocar: \n Pid: %i \nTamanio: %i", alloc->pid, alloc->tamanio);
 	
-	uint32_t direccionLogica = administrar_allocs(alloc);
+	log_info(logger, "\nLLego el proceso para allocar: \n Pid: %i \nTamanio: %i", pid, tamanio);
+	
+	uint32_t direccionLogica = administrar_allocs(pid, tamanio);
 
 	return direccionLogica;
 
@@ -482,8 +483,10 @@ void enviar_tipo_asignacion(char* tipoAsignacion){//mandar al principio despues 
 
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
+	uint32_t desplazamiento=0;
 
-	memcpy(paquete->buffer->stream, &(tipo) , sizeof(uint32_t));
+	memcpy(paquete->buffer->stream + desplazamiento, &(tipo) , sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
 
 	uint32_t conexionSwamp = crear_conexion(ipSWAmP, puertoSWAmP);
 

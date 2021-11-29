@@ -1,153 +1,6 @@
 #include "Conexiones.h"
 
 
-uint32_t administrar_allocs(t_memalloc* alloc){ 
-
-    bool buscarCarpincho(t_carpincho* c){
-		return c->id_carpincho == alloc->pid;
-	};
-    
-    pthread_mutex_lock(listaCarpinchos);
-    t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarpincho);
-    pthread_mutex_unlock(listaCarpinchos);
-
-
-
-    t_list* marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
-    
-
-
-    uint32_t tamanioAreservar = alloc->tamanio;
-    free(alloc);
-    uint32_t direccionLogica = administrar_paginas(carpincho, tamanioAreservar, marcos_a_asignar);
-
-
-    return direccionLogica;
-
-}
-
-
-
-uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* marcos_a_asignar){
-
-    if(list_size(carpincho->tabla_de_paginas)==0){ //primera vez
-
-        heapMetadata* next_alloc = malloc(sizeof(heapMetadata));
-        next_alloc->isFree = true;
-        next_alloc->prevAlloc = 0;
-        next_alloc->nextAlloc = -1;
-
-        uint32_t cantidadDePaginasACrear = ceil((float)(TAMANIO_HEAP*2 + tamanio)/tamanioPagina);
-
-        pthread_mutex_lock(listaCarpinchos);
-        int conexion = consultar_espacio(carpincho->id_carpincho, cantidadDePaginasACrear);
-
-        uint32_t respuesta = (uint32_t)atender_respuestas_swap(conexion);
-        printf("\nRespuesta consulta: %i\n", respuesta);
-        pthread_mutex_unlock(listaCarpinchos);
-        if(respuesta == 0) return 0;
-
-        pthread_mutex_lock(swap);
-        for(int i=0; i<cantidadDePaginasACrear; i++){
-
-            t_pagina* pagina = malloc(sizeof(t_pagina));
-            pagina->id_pagina = generadorIdsPaginas(carpincho);
-            pagina->presente = false;
-            pagina->ultimoUso = clock();
-            pagina->uso = true;
-            pagina->modificado = true;
-            pagina->id_carpincho = carpincho->id_carpincho;
-
-            void* paginaVacia = malloc(tamanioPagina);
-            for(int j=0; j<tamanioPagina;j++){
-                 char valor = "\0";
-                memcpy(paginaVacia +j, &valor, 1);
-            }
-           
-            enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, paginaVacia);
-            free(paginaVacia);
-
-            list_add(carpincho->tabla_de_paginas, pagina);
-        }
-        pthread_mutex_unlock(swap);
-
-        void* buffer_allocs = generar_buffer_allocs(tamanio, next_alloc,cantidadDePaginasACrear, PRIMERA_VEZ, 0);
-
-        escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar, carpincho);// que pasa aca en el caso de que los marcos por proceso sea menor a las paginas creadas?
-
-        free (buffer_allocs);
-
-        t_pagina* pag = list_get(carpincho->tabla_de_paginas, 0);
-        return generarDireccionLogica(pag->id_pagina, TAMANIO_HEAP);
-
-    }else{//busca un hueco
-        
-        t_pagina* primeraPag = list_get(carpincho->tabla_de_paginas, 0);
-
-        int32_t DF = buscar_TLB(primeraPag);
-
-        reemplazo(&DF, carpincho, primeraPag);
-
-        heapMetadata *heap = malloc(TAMANIO_HEAP); //liberar
-        int32_t posicionHeap = 0;
-        int32_t pagina, desplazamiento;
-
-        pthread_mutex_lock(memoria);
-        memcpy(heap, memoriaPrincipal + DF, TAMANIO_HEAP);
-        pthread_mutex_unlock(memoria);
-
-        primeraPag->ultimoUso = clock();
-        primeraPag->uso = true;
-
-
-        while(heap->nextAlloc != -1)
-        {
-            if(!(heap->isFree)){
-            pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho, &posicionHeap, &desplazamiento);
-            }
-            
-            if(heap->nextAlloc == -1) break;
-
-            uint32_t espacioEncontrado = heap->nextAlloc - posicionHeap - TAMANIO_HEAP;
-
-            if (tamanio == espacioEncontrado || tamanio + TAMANIO_HEAP < espacioEncontrado ){ // +9 porque si es mas chico en lo que sobra tiene que entrar el otro heap (aunque tambien habria que agregar +minimo_espacio_aceptable)
-                break;
-            }else{
-
-            pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho, &posicionHeap, &desplazamiento);
-            }
-
-        }
-
-        //dividirAllocs(carpincho, posicionHeap, pagina, tamanio, desplazamiento);
-
-        if(heap->nextAlloc == -1){
-
-            int32_t ok = crearAllocNuevo(&pagina, tamanio, heap, posicionHeap, carpincho, &desplazamiento);//pasar pagina y despl por referencia y si esta cortado modificarlo
-            if(ok == 0) return 0;
-        }
-
-        if(tamanioPagina - desplazamiento < TAMANIO_HEAP && desplazamiento > 0){ //esta cortado
-
-            desplazamiento = - (tamanioPagina - desplazamiento); 
-            bool buscarSigPag(t_pagina* pag){
-			return pag->id_pagina > pagina;
-		    };
-		
-            t_pagina* paginaSig = list_find(carpincho->tabla_de_paginas, (void*)buscarSigPag);
-            pagina = paginaSig->id_pagina;
-        }
-        uint32_t DL = generarDireccionLogica(pagina, desplazamiento + TAMANIO_HEAP);
-        return DL;
-        
-
-    }     
-        
-
-}
-
-
-
 void crear_marcos(){
 
     uint32_t cantidad_marcos = tamanio/tamanioPagina;
@@ -167,471 +20,114 @@ void crear_marcos(){
 
 }
 
+uint32_t generadorIdsPaginas(t_carpincho* carp){
+
+	return carp->contadorPag++;
+	
+}
+
+uint32_t generarDireccionLogica(uint32_t id, uint32_t desplazamiento){
 
 
-void* generar_buffer_allocs(uint32_t tamanio, heapMetadata* heap, uint32_t cantPaginas, stream_alloc codigo, int32_t despl){// el tamanio en el segundp caso, es el tamanio del comienzo. El heap tengo que ver
+	char* primerNumero = "1";
 
-    uint32_t reserva = tamanioPagina * cantPaginas, desplazamiento = 0;
-    void* stream_allocs = malloc(reserva);
-
-    if(codigo == PRIMERA_VEZ){
-
-        heapMetadata* alloc = malloc(sizeof(heapMetadata));
-        alloc->prevAlloc = -1;
-        alloc->isFree = false;
-        alloc->nextAlloc = tamanio + TAMANIO_HEAP;
-
-        memcpy(stream_allocs + desplazamiento, alloc, TAMANIO_HEAP);
-
-        desplazamiento = alloc->nextAlloc;
-
-        memcpy(stream_allocs + desplazamiento, heap, TAMANIO_HEAP);
-
-        free(alloc);
-        free(heap);
-
-        return stream_allocs;
-    }
-
-    if(codigo == AGREGAR_ALLOC){
+	char* id_char = string_itoa(id);
+	uint32_t veces = 3 - string_length(id_char);
 
 
-           if((despl + TAMANIO_HEAP) + tamanio < tamanioPagina){//se crea la nueva pagina con el pedacito del ultimo heap
+	char* ceros = string_repeat('0', veces);
 
-            void* buffer_heap = malloc(TAMANIO_HEAP);
-            memcpy(buffer_heap, heap, TAMANIO_HEAP);
-            int offset = (despl + TAMANIO_HEAP + tamanio) - tamanioPagina;
-        
-            memcpy(stream_allocs, buffer_heap - offset, (despl + TAMANIO_HEAP));
-               
-            free(buffer_heap);
+	char* a = string_new();
+	string_append(&a, primerNumero);
+	string_append(&a, ceros);
+	string_append(&a, id_char);
 
-            return stream_allocs;
 
-           }else{ // nueva pagina iniciando con bytes reservados
-        
-            int bytesQueYaEstan = tamanioPagina - (despl + TAMANIO_HEAP); //bytes del tamaño solicitado que ya estan en la pagina anterior
+	char* DESPLAZAMIENTO =  string_itoa(desplazamiento);
 
-            memcpy(stream_allocs + (tamanio - bytesQueYaEstan), heap , TAMANIO_HEAP);
+	char* b = string_new();
+		string_append(&b,a );
+		string_append(&b, DESPLAZAMIENTO);
 
-            return stream_allocs;
+	uint32_t direccionLogica = atoi(b);
 
-           }
-    }
+	free(a);
+	free(DESPLAZAMIENTO);
+	free(ceros);
+	free(b);
+	free(id_char);
 
+	return direccionLogica;
+}
+
+uint32_t obtenerId(uint32_t num){
+
+
+	uint32_t id_retornado;
+
+	char* DL = string_itoa(num);
+	char* substring  = string_substring(DL, 1, 3);
+
+	id_retornado = atoi(substring);
+
+	free(DL);
+	free(substring);
+
+
+	return id_retornado;
 
 }
 
-void liberar_alloc(uint32_t carpincho, uint32_t DL){
+uint32_t obtenerDesplazamiento(uint32_t num){
 
-    bool buscarCarpincho(t_carpincho* s){
-	return s->id_carpincho == carpincho;
-	};
-    pthread_mutex_lock(listaCarpinchos);
-	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
-    pthread_mutex_unlock(listaCarpinchos);
-
-    uint32_t id = obtenerId(DL);
-
-    bool buscarPag(t_pagina* pag){
-    return pag->id_pagina == id;
-    };
-
-    t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPag);
-
-    uint32_t desplazamiento = obtenerDesplazamiento(DL);
-
-    int32_t DF = buscar_TLB(pagina);
-
-    /* if(DF == -1){ //tlb miss
-        DF = buscarEnTablaDePaginas(capybara, pagina->id_pagina);
-        if(DF == -1) DF = swapear(capybara, pagina);
-        capybara->tlb_miss++;
-        miss_totales++;
-    }else{//hit
-        capybara->tlb_hit++;
-        hits_totales++;
-    }*/
-
-    reemplazo(&DF, capybara, pagina);
-
-
-    heapMetadata *heap = malloc(TAMANIO_HEAP);
-
-    if(desplazamiento < TAMANIO_HEAP){//esta cortado y empieza en la pagina anterior
-
-        int desplazamiento1 = tamanioPagina - (TAMANIO_HEAP - desplazamiento);
-
-        void* buffer_heap = malloc(desplazamiento);
-
-        pthread_mutex_lock(memoria);
-        memcpy(buffer_heap + (TAMANIO_HEAP - desplazamiento), memoriaPrincipal + DF, desplazamiento);
-        pthread_mutex_unlock(memoria);
-        
-        pagina->ultimoUso = clock();
-        pagina->uso = true;
-
-        bool buscarAntPag(t_pagina* pag){
-        return pag->id_pagina < id;
-        };
-
-        t_pagina* paginaAnterior = list_find(capybara->tabla_de_paginas, (void*)buscarAntPag);
-
-        DF = buscar_TLB(paginaAnterior);
-
-        /* if(DF == -1){ //tlb miss
-            DF = buscarEnTablaDePaginas(capybara->id_carpincho, paginaAnterior->id_pagina);
-            if(DF == -1) DF = swapear(capybara, paginaAnterior);
-            capybara->tlb_miss++;
-            miss_totales++;
-        }else{//hit
-            capybara->tlb_hit++;
-            hits_totales++;
-        }*/
-
-        reemplazo(&DF, capybara, paginaAnterior);
-
-        pthread_mutex_lock(memoria);
-        memcpy(buffer_heap , memoriaPrincipal + DF + desplazamiento1, TAMANIO_HEAP - desplazamiento);
-        pthread_mutex_unlock(memoria);
-        
-        paginaAnterior->ultimoUso = clock();
-        paginaAnterior->uso = true;
-
-        memcpy(heap, buffer_heap, TAMANIO_HEAP);
-
-        heap->isFree = true;
-
-        memcpy(buffer_heap, heap, TAMANIO_HEAP);
-
-        pthread_mutex_lock(memoria);
-        memcpy(memoriaPrincipal + DF + desplazamiento1, buffer_heap, TAMANIO_HEAP - desplazamiento);
-        pthread_mutex_unlock(memoria);
-
-        paginaAnterior->modificado = true;
-        paginaAnterior->ultimoUso = clock();
-        paginaAnterior->uso = true;
-
-        DF = buscar_TLB(pagina);
-
-       /*  if(DF == -1){ //tlb miss
-            DF = buscarEnTablaDePaginas(capybara, pagina->id_pagina);
-            if(DF == -1) DF = swapear(capybara, pagina);
-            capybara->tlb_miss++;
-            miss_totales++;
-        }else{//hit
-            capybara->tlb_hit++;
-            hits_totales++;
-        }*/
-
-        reemplazo(&DF, capybara, pagina);
-
-        pthread_mutex_lock(memoria);
-        memcpy(memoriaPrincipal + DF, buffer_heap + (TAMANIO_HEAP - desplazamiento), desplazamiento);
-        pthread_mutex_unlock(memoria);
-
-        pagina->modificado = true;
-        pagina->ultimoUso = clock();
-        pagina->uso = true;
-
-        free(buffer_heap);
-        free(heap);
-
-    }else{
-        pthread_mutex_lock(memoria);
-        memcpy(heap, memoriaPrincipal + DF + (desplazamiento - TAMANIO_HEAP), TAMANIO_HEAP);
-        pthread_mutex_unlock(memoria);
-
-        heap->isFree = true;
-
-        pthread_mutex_lock(memoria);
-        memcpy(memoriaPrincipal + DF + (desplazamiento - TAMANIO_HEAP), heap, TAMANIO_HEAP);
-        pthread_mutex_unlock(memoria);
-
-        pagina->modificado = true;
-        pagina->ultimoUso = clock();
-        pagina->uso = true;
-
-        free(heap);
-    }
-
-
-    //consolidar_allocs y liberar_paginas
-
-}
-
-void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
-
-    uint32_t id = obtenerId(DL);
-
-	uint32_t desplazamiento = obtenerDesplazamiento(DL);
-
-    bool buscarCarpincho(t_carpincho* s){
-	return s->id_carpincho == carpincho;
-	};
-    pthread_mutex_lock(listaCarpinchos);
-	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
-    pthread_mutex_unlock(listaCarpinchos);
-
-    int32_t contador = 0;
-    bool buscarPagina(t_pagina* s){
-        contador++;
-    return s->id_pagina == id;
-    };
-
-    t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
-
-
-    int32_t presente = buscar_TLB(pagina);
-
-    reemplazo(&presente, capybara, pagina);
-
-    void* leido = malloc(tam);
-
-    bool estaCortado = desplazamiento + tam > tamanioPagina;
-
-    if(estaCortado){
- 
-        uint32_t acumulador = (tamanioPagina - desplazamiento), cantPaginas = 0;
-
-        while(acumulador <= tam){
-            acumulador += tamanioPagina;
-            cantPaginas++;
-        }
-
-        uint32_t resto = tamanioPagina - (acumulador - tam);
-
-        uint32_t bytesPrimeraLectura =tamanioPagina - desplazamiento;
-
-        pthread_mutex_lock(memoria);
-        memcpy(leido, memoriaPrincipal + pagina->marco->comienzo + desplazamiento, bytesPrimeraLectura);
-        pthread_mutex_unlock(memoria);
-        
-        pagina->ultimoUso = clock();
-        pagina->uso = true;
-
-
-        if(cantPaginas > 1){
-            for(int i=0; i<cantPaginas-1; i++){
-                t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
-
-                int32_t presente = buscar_TLB(paginaSiguiente);
-
-                /*if(presente == -1){ //tlb miss
-                    presente = buscarEnTablaDePaginas(capybara, paginaSiguiente->id_pagina);
-                    if(presente == -1) presente = swapear(capybara, paginaSiguiente);
-                    capybara->tlb_miss++;
-                    miss_totales++;
-                }else{//hit
-                    capybara->tlb_hit++;
-                    hits_totales++;
-                }*/
-
-                reemplazo(&presente, capybara, paginaSiguiente);
-
-                pthread_mutex_lock(memoria);
-                memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (paginaSiguiente->marco->comienzo), tamanioPagina);
-                pthread_mutex_unlock(memoria);
-                
-                paginaSiguiente->ultimoUso = clock();
-                paginaSiguiente->uso = true;
-                contador++;
-                bytesPrimeraLectura += tamanioPagina;
-            }
-        }
-
-        t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
-
-        int32_t presente = buscar_TLB(ultimaPagina);
-
-        /* if(presente == -1){ //tlb miss
-            presente = buscarEnTablaDePaginas(capybara, ultimaPagina->id_pagina);
-            if(presente == -1) presente = swapear(capybara, ultimaPagina);
-            capybara->tlb_miss++;
-            miss_totales++;
-        }else{//hit
-            capybara->tlb_hit++;
-            hits_totales++;
-        }*/
-
-        reemplazo(&presente, capybara, ultimaPagina);
-
-        pthread_mutex_lock(memoria);
-        memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (ultimaPagina->marco->comienzo), resto);
-        pthread_mutex_unlock(memoria);
-        
-        ultimaPagina->ultimoUso = clock();
-        ultimaPagina->uso = true;
-
-    }else{
-        
-        pthread_mutex_lock(memoria);
-        memcpy(leido, memoriaPrincipal + pagina->marco->comienzo + desplazamiento, tam);
-        pthread_mutex_unlock(memoria);
-        
-        pagina->ultimoUso = clock();
-        pagina->uso = true;
-    }
-     
- 
-    return leido;
-
-}
-
-uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* contenido, uint32_t tam){
-
-    uint32_t id = obtenerId(direccion_logica);
-
-	uint32_t desplazamiento = obtenerDesplazamiento(direccion_logica);
-
-    bool buscarCarpincho(t_carpincho* s){
-	return s->id_carpincho == carpincho;
-	};
-    pthread_mutex_lock(listaCarpinchos);
-	t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
-    pthread_mutex_unlock(listaCarpinchos);
-
-        int32_t contador = 0;
-    bool buscarPagina(t_pagina* s){
-        contador++;
-    return s->id_pagina == id;
-    };
-
-    t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
-
-    int32_t presente = buscar_TLB(pagina);
-
-    reemplazo(&presente, capybara, pagina);
-
-    bool estaCortado = desplazamiento + tam > tamanioPagina;
-
-
-    if(estaCortado){
-
-        
-        int32_t acumulador = (tamanioPagina - desplazamiento), cantPaginas = 0;
-
-        while(acumulador <= tam){
-            acumulador += tamanioPagina;
-            cantPaginas++;
-        }
-
-        uint32_t resto = tamanioPagina - (acumulador - tam);
-
-
-        uint32_t bytesPrimeraEscritura =tamanioPagina - desplazamiento;
-        //ver si las paginas estan presentes
-
-        pthread_mutex_lock(memoria);
-        memcpy(memoriaPrincipal + pagina->marco->comienzo + desplazamiento, contenido , bytesPrimeraEscritura);
-        pthread_mutex_unlock(memoria);
-        
-        pagina->modificado = true;
-        pagina->ultimoUso = clock();
-        pagina->uso = true;
-
-        if(cantPaginas > 1){
-            for(int i=0; i<cantPaginas-1; i++){
-                t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
-
-                int32_t presente = buscar_TLB(paginaSiguiente);
-
-                /* if(presente == -1){ //tlb miss
-                    presente = buscarEnTablaDePaginas(capybara, paginaSiguiente->id_pagina);
-                    if(presente == -1) presente = swapear(capybara, paginaSiguiente);
-                    capybara->tlb_miss++;
-                    miss_totales++;
-                }else{//hit
-                    capybara->tlb_hit++;
-                    hits_totales++;
-                }*/
-
-                reemplazo(&presente, capybara, paginaSiguiente);
-
-                pthread_mutex_lock(memoria);
-                memcpy(memoriaPrincipal + (paginaSiguiente->marco->comienzo), contenido + bytesPrimeraEscritura, tamanioPagina);
-                pthread_mutex_unlock(memoria);
-                
-                paginaSiguiente->modificado = true;
-                paginaSiguiente->ultimoUso = clock();
-                paginaSiguiente->uso = true;
-                contador++;
-                bytesPrimeraEscritura += tamanioPagina;
-            }
-        }
-
-        t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
-
-        int32_t presente = buscar_TLB(ultimaPagina);
-
-       /*  if(presente == -1){ //tlb miss
-            presente = buscarEnTablaDePaginas(capybara, ultimaPagina->id_pagina);
-            if(presente == -1) presente = swapear(capybara, ultimaPagina);
-            capybara->tlb_miss++;
-            miss_totales++;
-        }else{//hit
-            capybara->tlb_hit++;
-            hits_totales++;
-        }*/
-
-        reemplazo(&presente, capybara, ultimaPagina);
-
-        pthread_mutex_lock(memoria);
-        memcpy(memoriaPrincipal + (ultimaPagina->marco->comienzo), contenido + bytesPrimeraEscritura, resto);
-        pthread_mutex_unlock(memoria);
-
-        ultimaPagina->modificado = true;
-        ultimaPagina->ultimoUso = clock();
-        ultimaPagina->uso = true;
-
-    }else{
-
-        pthread_mutex_lock(memoria);
-        memcpy(memoriaPrincipal + pagina->marco->comienzo + desplazamiento, contenido , tam);
-        pthread_mutex_unlock(memoria);
-        
-        pagina->modificado = true;
-        pagina->ultimoUso = clock();
-        pagina->uso = true;
-        return 0;
-    }
-     
- 
-}
-
-uint32_t suspender_proceso(uint32_t pid){
-
-    bool buscarCarp(t_carpincho* carp){
-        return carp->id_carpincho == pid;
-    };
-    pthread_mutex_lock(listaCarpinchos);
-    t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarp);
-    pthread_mutex_unlock(listaCarpinchos);
-
-    bool paginasPresentes(t_pagina* pag){
-	return pag->presente;
-	};
 		
-	t_list* paginas_que_se_van = list_filter(carpincho->tabla_de_paginas, (void*)paginasPresentes);
+		uint32_t id_retornado;
 
-    void volarPaginas(t_pagina* pagina){
+		char* DL = string_itoa(num);
+		char* substring =  string_substring_from(DL, 4);
 
-        void* contenido = malloc(tamanioPagina);
-        
-		pthread_mutex_lock(memoria);
-		memcpy(contenido, memoriaPrincipal + pagina->marco->comienzo, tamanioPagina);
-		pthread_mutex_unlock(memoria);
+		if(strlen(DL)==0){
+			return 0;
+		}
 
-		enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, contenido);
+		 id_retornado = atoi(substring);
 
-        pagina->marco->estaLibre = true;
-        pagina->marco->proceso_asignado = -1;
+		 free(DL);
+		 free(substring);
 
-    }
-   
-   list_iterate(paginas_que_se_van, (void*)volarPaginas);
+		 return id_retornado;
 
+}
 
+uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica){
 
-   
+	uint32_t direccionFisica;
+
+	uint32_t id = obtenerId(direccionLogica);
+
+	uint32_t desplazamiento = obtenerDesplazamiento(direccionLogica);
+
+		bool buscarCarpincho(t_carpincho* s){
+			return s->id_carpincho == carpincho;
+		};
+		pthread_mutex_lock(listaCarpinchos);
+		t_carpincho* capybara = list_find(carpinchos,(void*)buscarCarpincho);
+		pthread_mutex_unlock(listaCarpinchos);
+
+		bool buscarPagina(t_pagina* s){
+			return s->id_pagina == id;
+		};
+
+		t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
+
+		direccionFisica = pagina->marco->comienzo + desplazamiento; //ver si es . o ->
+
+	return direccionFisica;
+}
+
+uint32_t aumentarIdCarpinchos(){
+	pthread_mutex_lock(controladorIds);
+    id_carpincho++;
+	pthread_mutex_unlock(controladorIds);
+
 }
