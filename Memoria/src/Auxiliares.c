@@ -23,7 +23,9 @@ void manejador_de_seniales(int numeroSenial){
 	}
 
 	if(numeroSenial == SIGUSR2){
+		pthread_mutex_lock(TLB_mutex);
 		list_clean(TLB);
+		pthread_mutex_unlock(TLB_mutex);
 	}
 
 }

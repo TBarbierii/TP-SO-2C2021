@@ -37,6 +37,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         uint32_t respuesta = (uint32_t)atender_respuestas_swap(conexion);
         printf("\nRespuesta consulta: %i\n", respuesta);
         pthread_mutex_unlock(listaCarpinchos);
+
         if(respuesta == 0) return 0;
 
         pthread_mutex_lock(swap);
@@ -69,14 +70,17 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         free (buffer_allocs);
         
-
-
-        void agregarATLB(t_pagina* pag){
+		/*
+		void agregarATLB(t_pagina* pag){
             algoritmo_reemplazo_TLB(pag);
-        };
-        list_iterate(carpincho->tabla_de_paginas, (void*)agregarATLB);
+        }; esto no lo veo necesario ya que con poner el algoritmo_reemplazo_tlb es literal lo mismo xd
+		 */
+
+        
+        list_iterate(carpincho->tabla_de_paginas, (void*)algoritmo_reemplazo_TLB);
 
         t_pagina* pag = list_get(carpincho->tabla_de_paginas, 0);
+
         return generarDireccionLogica(pag->id_pagina, TAMANIO_HEAP);
 
     }else{//busca un hueco
@@ -220,23 +224,26 @@ t_list* reservarMarcos(uint32_t pid){
   
     		pthread_mutex_lock(marcos_sem);
     		t_list* marcos_a_asignar = list_filter(marcos, (void*)contarMarcos);
-    		pthread_mutex_unlock(marcos_sem); 
 
 			if(list_size(marcos_a_asignar) == marcosMaximos){
+				pthread_mutex_unlock(marcos_sem); 
 				return marcos_a_asignar; //Si no es la primera vez, manda los que ya tiene asignados. 
 			}
-			 
-			marcos_a_asignar = list_take(marcos_sin_asignar, marcosMaximos);
+
+			list_destroy(marcos_a_asignar);
+
+			//TODO: ver que pasa si por ejemplo, le queremos dar 10 marcos al proceso, pero solo quedan 4?
+			t_list* marcosFinales = list_take(marcos_sin_asignar, marcosMaximos);
 			
 			void marcarOcupados(t_marco *marco){
 			marco->proceso_asignado = pid;
        		};
 
-       		list_iterate(marcos_a_asignar, (void*)marcarOcupados);
-
+       		list_iterate(marcosFinales, (void*)marcarOcupados);
 			list_destroy(marcos_sin_asignar);
 
-			return marcos_a_asignar;   
+			pthread_mutex_unlock(marcos_sem); //puse el semaforo aca porque sino podria venir otro proceso y pisar los mismos marcos
+			return marcosFinales;   
 			
 		}
 		else if(strcmp(tipoAsignacion, "DINAMICA") == 0){
@@ -249,16 +256,17 @@ t_list* reservarMarcos(uint32_t pid){
 		}
 }
 
-void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_carpincho* carpincho ){
+void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_carpincho* carpincho){
 	    
 	t_marco* marco;
+
+	t_log* loggerMarcos = log_create("/cfg/Marcos.log","EscrituraDeMarcos",1, LOG_LEVEL_DEBUG);
 
 	int contador = 0; 
 
 	void escribir_paginas_en_marcos(t_pagina* pag){
 
 		if (contador >= list_size(marcos_a_asignar)) {
-
 			marco = reemplazarPagina(carpincho);
 
 		} else {
@@ -276,8 +284,13 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 			pag->marco = marco;
 			pag->presente = true;
 			pag->esNueva = false;
+			//aca como estamos tocando el marco que son variables globales, deberiamos poner entre los semaforos
+			pthread_mutex_lock(marcos_sem);
 			marco->estaLibre = false;
 			marco->proceso_asignado=carpincho->id_carpincho;
+			pthread_mutex_unlock(marcos_sem);
+
+			log_info(loggerMarcos, "Se escribe sobre el MARCO: %d, la PAGINA: %d, del proceso :%d", marco->id_marco, pag->id_pagina, carpincho->id_carpincho);
 			
 		}
 		contador++;
@@ -286,6 +299,8 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 	list_iterate(paginas, (void*)escribir_paginas_en_marcos);
 
 	list_destroy(marcos_a_asignar);
+
+	log_destroy(loggerMarcos);
 
 
 }
@@ -557,6 +572,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	void ponerlasPresentes(t_pagina* pag){
 		pag->presente = true;
 	};
+
 	list_iterate(paginasNuevas, (void*)ponerlasPresentes);
 
 	escribirMemoria(buffer_allocs, paginasNuevas, marcos_a_asignar, carpincho);

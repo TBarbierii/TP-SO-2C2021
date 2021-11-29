@@ -1,7 +1,23 @@
 #ifndef MEMALLOC_H
 #define MEMALLOC_H
+
+#include <stdio.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <time.h>
+#include <commons/log.h>
+#include <commons/config.h>
+#include <commons/string.h>
+#include <commons/collections/list.h>
+#include <commons/temporal.h>
+#include <stdbool.h>
+#include <math.h>
+#include <signal.h>
 #include "Memoria.h"
 #include "memoriaVirtual_suspencion.h"
+#include "Conexiones.h"
+#include <string.h>
+#include "Memoria.h"
 
 
 uint32_t administrar_allocs(uint32_t, uint32_t);

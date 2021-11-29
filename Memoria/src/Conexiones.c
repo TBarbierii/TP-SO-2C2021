@@ -150,7 +150,7 @@ uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del c
 	void* buffer = recibir_buffer(socket_cliente);
 	
 	memcpy(&pid, buffer, sizeof(uint32_t));
-	offset =+ sizeof(uint32_t);
+	offset += sizeof(uint32_t);
 	memcpy(&tamanio, buffer + offset,sizeof(uint32_t));
 
 	free(buffer);
@@ -166,6 +166,7 @@ uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del c
 void inicializar_carpincho(int conexion ,t_log* logger){
 
 	uint32_t size;
+	//este size es del tamaño del buffer, pero como no nos interesa lo guardamos pero no lo usamos
 	recv(conexion, &size, sizeof(uint32_t), MSG_WAITALL);
 	
 	t_carpincho* carpincho = malloc(sizeof(t_carpincho));

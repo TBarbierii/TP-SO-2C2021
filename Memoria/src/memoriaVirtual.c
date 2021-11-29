@@ -247,34 +247,38 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 
 void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
-	if(list_size(TLB) == cantidadEntradasTLB){
+	pthread_mutex_lock(TLB_mutex);
+	//recordar qus si la cantidad de entradas de TLB es igual a 0, no se deberia agregar nada
+	if(list_size(TLB) == cantidadEntradasTLB && cantidadEntradasTLB != 0){
 
 		if(strcmp(algoritmoReemplazoTLB, "LRU") == 0){
+					
 			
-			pthread_mutex_lock(TLB_mutex);
 			bool comparator(t_pagina* p1, t_pagina* p2){
 				return p1->ultimoUso < p2->ultimoUso;
 			};
 
 			t_list* paginasOrdenadas = list_sorted(TLB, (void*)comparator);
 
-			if(! list_is_empty(paginasOrdenadas)) {
-				t_pagina* pag = list_get(paginasOrdenadas,0);
+			if(!list_is_empty(paginasOrdenadas)) {
+				t_pagina* pag = list_remove(paginasOrdenadas,0);
 				pag->presente = false;
 
+				//SI le ponemos un list_remove, lo saca de la lista directamente y no es necesario hacer un remove_by_condition
+				/* 
 				void buscarPag(t_pagina* p){
 					return p->id_pagina == pag->id_pagina;
 				};
 
 				list_remove_by_condition(TLB, (void*)buscarPag);
-				
+				*/
+
+
+
 				log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
 
 			}
-			pthread_mutex_unlock(TLB_mutex);
 
-
-			pthread_mutex_lock(TLB_mutex);
 			list_add(TLB, pagina);
 			pthread_mutex_unlock(TLB_mutex);
 
@@ -283,14 +287,13 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 		}
 
 		if(strcmp(algoritmoReemplazoTLB, "FIFO") == 0){
+
 			
-			pthread_mutex_lock(TLB_mutex);
-			
-			t_pagina* pag = list_get(TLB,0);
+			t_pagina* pag = list_remove(TLB,0);
 			pag->presente = false;
 			log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
 			
-			list_remove(TLB, 0);
+			//list_remove(TLB, 0);
 
 			list_add(TLB, pagina);
 			pthread_mutex_unlock(TLB_mutex);
@@ -299,8 +302,7 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
 		}
 
-	}else{
-		pthread_mutex_lock(TLB_mutex);
+	}else if(cantidadEntradasTLB != 0){
 		list_add(TLB, pagina);
 		pthread_mutex_unlock(TLB_mutex);
 		

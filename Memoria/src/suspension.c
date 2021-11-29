@@ -5,6 +5,7 @@ uint32_t suspender_proceso(uint32_t pid){
     bool buscarCarp(t_carpincho* carp){
         return carp->id_carpincho == pid;
     };
+    
     pthread_mutex_lock(listaCarpinchos);
     t_carpincho* carpincho = list_find(carpinchos, (void*)buscarCarp);
     pthread_mutex_unlock(listaCarpinchos);

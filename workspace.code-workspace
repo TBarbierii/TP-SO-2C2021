@@ -15,5 +15,14 @@
 		{
 			"path": "SWAmP"
 		}
-	]
+	],
+	"settings": {
+		"files.associations": {
+			"memoria.h": "c",
+			"temporal.h": "c",
+			"memoriavirtual_suspencion.h": "c",
+			"config.h": "c",
+			"unistd.h": "c"
+		}
+	}
 }

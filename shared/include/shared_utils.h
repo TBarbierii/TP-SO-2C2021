@@ -12,7 +12,7 @@
 #include <commons/log.h>
 #include <commons/collections/list.h>
 
-/* Procesos */
+/* KERNEL */
 typedef enum tipo_bloqueo{
 	NO_BLOQUEADO = -1,
 	BLOCK_SEM,
@@ -39,8 +39,69 @@ typedef struct proceso{
 
 }proceso_kernel ;
 
+/* MEMORIA */
+
+typedef enum{
+    PRIMERA_VEZ,
+    AGREGAR_ALLOC
+}stream_alloc;
 
 
+typedef struct {
+
+    int32_t prevAlloc;
+    int32_t nextAlloc;
+    uint8_t isFree;
+
+} __attribute__((packed)) heapMetadata;
+
+
+typedef struct {
+
+    uint32_t id_marco;
+    uint32_t comienzo;
+    int32_t proceso_asignado;//al empezar inicializar todo en -1
+    bool estaLibre;
+
+}t_marco;
+
+typedef struct {
+
+    uint32_t id_pagina;
+    uint8_t esNueva;
+    t_marco* marco;
+    uint8_t presente;
+    clock_t ultimoUso;
+    bool uso;
+    bool modificado;
+    uint32_t id_carpincho;
+
+}t_pagina;
+
+
+typedef struct {
+
+    uint32_t id_carpincho;
+    t_list* tabla_de_paginas;
+    uint32_t conexion;
+    uint32_t tlb_hit;
+    uint32_t tlb_miss;
+    uint32_t punteroClock;
+    uint32_t contadorPag;
+
+}t_carpincho;
+
+
+typedef struct {
+
+    t_list* paginas;
+
+}tablaDePagina;
+
+
+
+
+/* ----------------------------- */
 typedef enum{
 	INICIALIZAR_ESTRUCTURA,
 	CERRAR_INSTANCIA,

@@ -1,5 +1,18 @@
 #ifndef MEMORIAVIRTUAL_SUSPENCION_H
 #define MEMORIAVIRTUAL_SUSPENCION_H
+
+#include <stdio.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <time.h>
+#include <commons/log.h>
+#include <commons/config.h>
+#include <commons/string.h>
+#include <commons/collections/list.h>
+#include <commons/temporal.h>
+#include <stdbool.h>
+#include <math.h>
+#include <signal.h>
 #include "Memoria.h"
 
 

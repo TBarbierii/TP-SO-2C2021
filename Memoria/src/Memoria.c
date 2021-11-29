@@ -89,15 +89,34 @@ void finalizarTodo(t_config* configActual){
     free(listaCarpinchos);
     pthread_mutex_destroy(controladorIds);
     free(controladorIds);
+    pthread_mutex_destroy(controladorIdsPaginas);
+    free(controladorIdsPaginas);
+    pthread_mutex_destroy(TLB_mutex);
+    free(TLB_mutex);
+    pthread_mutex_destroy(memoria);
+    free(memoria);
+    pthread_mutex_destroy(swap);
+    free(swap);
+    pthread_mutex_destroy(marcos_sem);
+    free(marcos_sem);
+
+
     
 }
 
 void finalizarMemoria() {
+
+    pthread_mutex_lock(marcos_sem);
     while(!list_is_empty(marcos)){
         t_marco* marcoARemover = list_remove(marcos, 0);
         free(marcoARemover);
     }
+    pthread_mutex_unlock(marcos_sem);
+
+
+    pthread_mutex_lock(memoria);
     free(memoriaPrincipal);
+    pthread_mutex_unlock(memoria);
 
 }
 
