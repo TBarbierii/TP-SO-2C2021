@@ -7,3 +7,21 @@
 [DEBUG] 16:37:11:456 SWAmP/(8223:8223): Solicitud de memoria entrante
 [DEBUG] 16:37:26:462 SWAmP/(8223:8223): Solicitud de memoria entrante
 [DEBUG] 16:37:31:463 SWAmP/(8223:8223): Solicitud de memoria entrante
+[INFO] 01:01:32:159 SWAmP/(8657:8657): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 01:01:32:180 SWAmP/(8657:8657): Se han creado todos los archivos
+[INFO] 01:01:32:180 SWAmP/(8657:8657): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 01:13:35:551 SWAmP/(9520:9520): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 01:13:35:551 SWAmP/(9520:9520): Se han creado todos los archivos
+[INFO] 01:13:35:551 SWAmP/(9520:9520): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 01:18:10:473 SWAmP/(9777:9777): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 01:18:10:474 SWAmP/(9777:9777): Se han creado todos los archivos
+[INFO] 01:18:10:474 SWAmP/(9777:9777): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 01:18:57:330 SWAmP/(9820:9820): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 01:18:57:330 SWAmP/(9820:9820): Se han creado todos los archivos
+[INFO] 01:18:57:330 SWAmP/(9820:9820): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 01:20:26:499 SWAmP/(9853:9853): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 01:20:26:499 SWAmP/(9853:9853): Se han creado todos los archivos
+[INFO] 01:20:26:499 SWAmP/(9853:9853): Inicializacion del servidor con exito, esperando conexion...
+[INFO] 01:21:19:051 SWAmP/(9881:9881): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 128 y id: 0
+[INFO] 01:21:19:051 SWAmP/(9881:9881): Se han creado todos los archivos
+[INFO] 01:21:19:051 SWAmP/(9881:9881): Inicializacion del servidor con exito, esperando conexion...

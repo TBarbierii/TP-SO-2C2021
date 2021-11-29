@@ -251,17 +251,21 @@ t_list* reservarMarcos(uint32_t pid){
 
 void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_carpincho* carpincho ){
 	    
+	t_marco* marco;
+
 	int contador = 0; 
 
 	void escribir_paginas_en_marcos(t_pagina* pag){
 
 		if (contador >= list_size(marcos_a_asignar)) {
 
-			reemplazarPagina(carpincho);
+			marco = reemplazarPagina(carpincho);
+
+		} else {
+
+			marco = list_get(marcos_a_asignar, contador);
 
 		}
-
-		t_marco* marco = list_get(marcos_a_asignar, contador);
 
 		if(marco->estaLibre){
 		
