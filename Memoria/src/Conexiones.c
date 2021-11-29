@@ -145,7 +145,7 @@ void* atender_respuestas_swap(uint32_t conexion){
 
 uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del comienzo del bloque (no del heap)
 {
-	uint32_t offset;
+	uint32_t offset = 0;
 	uint32_t pid, tamanio;
 	void* buffer = recibir_buffer(socket_cliente);
 	
