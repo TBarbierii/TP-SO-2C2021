@@ -265,13 +265,14 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 				pag->presente = false;
 
 				//SI le ponemos un list_remove, lo saca de la lista directamente y no es necesario hacer un remove_by_condition
-				/* 
+				//Si porque ahi lo esta sacando de la lista ordenada por el ultimo uso, y con ese id lo tiene que sacar de la TLB posta. list_sorted devuelve una nueva lista
+				 
 				void buscarPag(t_pagina* p){
 					return p->id_pagina == pag->id_pagina;
 				};
 
 				list_remove_by_condition(TLB, (void*)buscarPag);
-				*/
+				
 
 
 
@@ -292,8 +293,6 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 			t_pagina* pag = list_remove(TLB,0);
 			pag->presente = false;
 			log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
-			
-			//list_remove(TLB, 0);
 
 			list_add(TLB, pagina);
 			pthread_mutex_unlock(TLB_mutex);
@@ -303,7 +302,10 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 		}
 
 	}else if(cantidadEntradasTLB != 0){
-		list_add(TLB, pagina);
+		
+		if(pagina->presente){
+			list_add(TLB, pagina);
+		}
 		pthread_mutex_unlock(TLB_mutex);
 		
 		log_info(logsObligatorios, "Entrada TLB. NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);

@@ -70,13 +70,6 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         free (buffer_allocs);
         
-		/*
-		void agregarATLB(t_pagina* pag){
-            algoritmo_reemplazo_TLB(pag);
-        }; esto no lo veo necesario ya que con poner el algoritmo_reemplazo_tlb es literal lo mismo xd
-		 */
-
-        
         list_iterate(carpincho->tabla_de_paginas, (void*)algoritmo_reemplazo_TLB);
 
         t_pagina* pag = list_get(carpincho->tabla_de_paginas, 0);
@@ -232,7 +225,7 @@ t_list* reservarMarcos(uint32_t pid){
 
 			list_destroy(marcos_a_asignar);
 
-			//TODO: ver que pasa si por ejemplo, le queremos dar 10 marcos al proceso, pero solo quedan 4?
+			//TODO: ver que pasa si por ejemplo, le queremos dar 10 marcos al proceso, pero solo quedan 4? 
 			t_list* marcosFinales = list_take(marcos_sin_asignar, marcosMaximos);
 			
 			void marcarOcupados(t_marco *marco){
@@ -260,7 +253,7 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 	    
 	t_marco* marco;
 
-	t_log* loggerMarcos = log_create("/cfg/Marcos.log","EscrituraDeMarcos",1, LOG_LEVEL_DEBUG);
+	t_log* loggerMarcos = log_create("cfg/Marcos.log","EscrituraDeMarcos",1, LOG_LEVEL_INFO);
 
 	int contador = 0; 
 
@@ -290,7 +283,7 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 			marco->proceso_asignado=carpincho->id_carpincho;
 			pthread_mutex_unlock(marcos_sem);
 
-			log_info(loggerMarcos, "Se escribe sobre el MARCO: %d, la PAGINA: %d, del proceso :%d", marco->id_marco, pag->id_pagina, carpincho->id_carpincho);
+			//log_info(loggerMarcos, "Se escribe sobre el MARCO: %d, la PAGINA: %d, del proceso :%d", marco->id_marco, pag->id_pagina, carpincho->id_carpincho);
 			
 		}
 		contador++;
@@ -537,7 +530,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		int marcosFaltantes = cantidadDePaginasACrear - list_size(marcos_a_asignar);
 
 		for(int i=0; i< marcosFaltantes; i++){
-		reemplazarPagina(carpincho); //marcosFaltantes veces
+		reemplazarPagina(carpincho);
 		}//hace espacio para poner las paginas nuevas
 		list_destroy(marcos_a_asignar);
 		marcos_a_asignar = buscarMarcosLibres(carpincho);
@@ -580,11 +573,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	free(buffer_allocs);
 	free(nuevoHeap);
 	
-
-	void agregarATLB(t_pagina* pag){
-		algoritmo_reemplazo_TLB(pag);
-	};
-	list_iterate(paginasNuevas, (void*)agregarATLB);
+	list_iterate(paginasNuevas, (void*)algoritmo_reemplazo_TLB);
 
 	return 1;
 }

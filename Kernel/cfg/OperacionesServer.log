@@ -1,0 +1,1425 @@
+[INFO] 15:11:25:302 Operaciones/(7654:7720): Recibimos la informacion de un carpincho
+[INFO] 15:11:25:302 Operaciones/(7654:7720): El codigo de operacion es: 0
+[INFO] 15:11:25:302 Operaciones/(7654:7720): Vamos a inicializar un carpincho
+[INFO] 15:11:25:302 Operaciones/(7654:7720): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:11:25:303 Memoria/(7654:7657): Recibimos la informacion de Memoria
+[INFO] 15:11:25:303 Memoria/(7654:7657): El codigo de operacion es: 0
+[INFO] 15:11:25:304 Operaciones/(7654:7662): Recibimos la informacion de un carpincho
+[INFO] 15:11:25:304 Operaciones/(7654:7662): El codigo de operacion es: 7
+[INFO] 15:11:25:304 Operaciones/(7654:7662): Vamos a realizar un Mem Alloc
+[ERROR] 15:11:25:446 Memoria/(7654:7662): Fallo en recibir la info de la conexion
+[INFO] 15:13:25:671 Operaciones/(8073:8098): Recibimos la informacion de un carpincho
+[INFO] 15:13:25:671 Operaciones/(8073:8098): El codigo de operacion es: 0
+[INFO] 15:13:25:671 Operaciones/(8073:8098): Vamos a inicializar un carpincho
+[INFO] 15:13:25:671 Operaciones/(8073:8098): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:13:25:674 Memoria/(8073:8076): Recibimos la informacion de Memoria
+[INFO] 15:13:25:674 Memoria/(8073:8076): El codigo de operacion es: 0
+[INFO] 15:13:25:675 Operaciones/(8073:8080): Recibimos la informacion de un carpincho
+[INFO] 15:13:25:675 Operaciones/(8073:8080): El codigo de operacion es: 7
+[INFO] 15:13:25:675 Operaciones/(8073:8080): Vamos a realizar un Mem Alloc
+[ERROR] 15:20:07:910 Memoria/(8073:8080): Fallo en recibir la info de la conexion
+[INFO] 15:21:12:921 Operaciones/(8488:8507): Recibimos la informacion de un carpincho
+[INFO] 15:21:12:921 Operaciones/(8488:8507): El codigo de operacion es: 0
+[INFO] 15:21:12:921 Operaciones/(8488:8507): Vamos a inicializar un carpincho
+[INFO] 15:21:12:921 Operaciones/(8488:8507): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:21:19:354 Memoria/(8488:8491): Recibimos la informacion de Memoria
+[INFO] 15:21:19:354 Memoria/(8488:8491): El codigo de operacion es: 0
+[INFO] 15:21:19:354 Operaciones/(8488:8495): Recibimos la informacion de un carpincho
+[INFO] 15:21:19:355 Operaciones/(8488:8495): El codigo de operacion es: 7
+[INFO] 15:21:19:355 Operaciones/(8488:8495): Vamos a realizar un Mem Alloc
+[ERROR] 15:25:22:460 Memoria/(8488:8495): Fallo en recibir la info de la conexion
+[INFO] 15:26:24:177 Operaciones/(9166:9212): Recibimos la informacion de un carpincho
+[INFO] 15:26:24:177 Operaciones/(9166:9212): El codigo de operacion es: 0
+[INFO] 15:26:24:177 Operaciones/(9166:9212): Vamos a inicializar un carpincho
+[INFO] 15:26:24:177 Operaciones/(9166:9212): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[ERROR] 15:27:31:818 Memoria/(9166:9169): Fallo en recibir la info de la conexion
+[INFO] 15:27:31:819 Operaciones/(9166:9173): Recibimos la informacion de un carpincho
+[INFO] 15:27:31:819 Operaciones/(9166:9173): El codigo de operacion es: 7
+[INFO] 15:27:31:819 Operaciones/(9166:9173): Vamos a realizar un Mem Alloc
+[INFO] 15:29:29:892 Operaciones/(9718:9738): Recibimos la informacion de un carpincho
+[INFO] 15:29:29:892 Operaciones/(9718:9738): El codigo de operacion es: 0
+[INFO] 15:29:29:892 Operaciones/(9718:9738): Vamos a inicializar un carpincho
+[INFO] 15:29:29:892 Operaciones/(9718:9738): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:29:35:140 Memoria/(9718:9721): Recibimos la informacion de Memoria
+[INFO] 15:29:35:140 Memoria/(9718:9721): El codigo de operacion es: 0
+[INFO] 15:29:35:141 Operaciones/(9718:9726): Recibimos la informacion de un carpincho
+[INFO] 15:29:35:141 Operaciones/(9718:9726): El codigo de operacion es: 7
+[INFO] 15:29:35:141 Operaciones/(9718:9726): Vamos a realizar un Mem Alloc
+[INFO] 15:31:12:182 Memoria/(9718:9726): Recibimos la informacion de Memoria
+[INFO] 15:31:12:183 Memoria/(9718:9726): El codigo de operacion es: 7
+[INFO] 15:31:12:183 Memoria/(9718:9726): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 15:31:12:183 Operaciones/(9718:9726): Recibimos la informacion de un carpincho
+[INFO] 15:31:12:183 Operaciones/(9718:9726): El codigo de operacion es: 10
+[INFO] 15:31:12:183 Operaciones/(9718:9726): Vamos a realizar un Mem Write
+[ERROR] 15:35:25:111 Memoria/(9718:9726): Fallo en recibir la info de la conexion
+[INFO] 15:35:55:384 Operaciones/(10228:10240): Recibimos la informacion de un carpincho
+[INFO] 15:35:55:384 Operaciones/(10228:10240): El codigo de operacion es: 0
+[INFO] 15:35:55:384 Operaciones/(10228:10240): Vamos a inicializar un carpincho
+[INFO] 15:35:55:384 Operaciones/(10228:10240): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:35:59:671 Memoria/(10228:10231): Recibimos la informacion de Memoria
+[INFO] 15:35:59:672 Memoria/(10228:10231): El codigo de operacion es: 0
+[INFO] 15:35:59:673 Operaciones/(10228:10235): Recibimos la informacion de un carpincho
+[INFO] 15:35:59:673 Operaciones/(10228:10235): El codigo de operacion es: 7
+[INFO] 15:35:59:673 Operaciones/(10228:10235): Vamos a realizar un Mem Alloc
+[INFO] 15:36:05:477 Memoria/(10228:10235): Recibimos la informacion de Memoria
+[INFO] 15:36:05:477 Memoria/(10228:10235): El codigo de operacion es: 7
+[INFO] 15:36:05:477 Memoria/(10228:10235): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 15:36:05:478 Operaciones/(10228:10235): Recibimos la informacion de un carpincho
+[INFO] 15:36:05:478 Operaciones/(10228:10235): El codigo de operacion es: 10
+[INFO] 15:36:05:478 Operaciones/(10228:10235): Vamos a realizar un Mem Write
+[ERROR] 15:37:06:158 Memoria/(10228:10235): Fallo en recibir la info de la conexion
+[INFO] 15:43:46:250 Operaciones/(10822:10834): Recibimos la informacion de un carpincho
+[INFO] 15:43:46:250 Operaciones/(10822:10834): El codigo de operacion es: 0
+[INFO] 15:43:46:250 Operaciones/(10822:10834): Vamos a inicializar un carpincho
+[INFO] 15:43:46:250 Operaciones/(10822:10834): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:43:55:222 Memoria/(10822:10825): Recibimos la informacion de Memoria
+[INFO] 15:43:55:223 Memoria/(10822:10825): El codigo de operacion es: 0
+[INFO] 15:43:55:224 Operaciones/(10822:10830): Recibimos la informacion de un carpincho
+[INFO] 15:43:55:224 Operaciones/(10822:10830): El codigo de operacion es: 7
+[INFO] 15:43:55:224 Operaciones/(10822:10830): Vamos a realizar un Mem Alloc
+[INFO] 15:44:02:513 Memoria/(10822:10830): Recibimos la informacion de Memoria
+[INFO] 15:44:02:513 Memoria/(10822:10830): El codigo de operacion es: 7
+[INFO] 15:44:02:513 Memoria/(10822:10830): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 15:44:02:514 Operaciones/(10822:10830): Recibimos la informacion de un carpincho
+[INFO] 15:44:02:514 Operaciones/(10822:10830): El codigo de operacion es: 10
+[INFO] 15:44:02:514 Operaciones/(10822:10830): Vamos a realizar un Mem Write
+[INFO] 15:46:08:163 Memoria/(10822:10830): Recibimos la informacion de Memoria
+[INFO] 15:46:08:163 Memoria/(10822:10830): El codigo de operacion es: 10
+[INFO] 15:46:08:163 Memoria/(10822:10830): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 15:46:08:163 Operaciones/(10822:10830): Recibimos la informacion de un carpincho
+[INFO] 15:46:08:163 Operaciones/(10822:10830): El codigo de operacion es: 2
+[INFO] 15:46:08:163 Operaciones/(10822:10830): Vamos a inicializar un semaforo
+[INFO] 15:46:08:164 Operaciones/(10822:10830): Recibimos la informacion de un carpincho
+[INFO] 15:46:08:164 Operaciones/(10822:10830): El codigo de operacion es: 3
+[INFO] 15:46:08:164 Operaciones/(10822:10830): Vamos a hacer un wait de un semaforo
+[INFO] 15:46:21:18 Operaciones/(10822:11019): Recibimos la informacion de un carpincho
+[INFO] 15:46:21:18 Operaciones/(10822:11019): El codigo de operacion es: 0
+[INFO] 15:46:21:18 Operaciones/(10822:11019): Vamos a inicializar un carpincho
+[INFO] 15:46:21:18 Operaciones/(10822:11019): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:46:28:801 Memoria/(10822:10825): Recibimos la informacion de Memoria
+[INFO] 15:46:28:801 Memoria/(10822:10825): El codigo de operacion es: 0
+[INFO] 15:46:28:801 Operaciones/(10822:10830): Recibimos la informacion de un carpincho
+[INFO] 15:46:28:801 Operaciones/(10822:10830): El codigo de operacion es: 7
+[INFO] 15:46:28:801 Operaciones/(10822:10830): Vamos a realizar un Mem Alloc
+[ERROR] 15:47:50:926 Memoria/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:288 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:288 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:288 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:288 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:288 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:288 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:288 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:289 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:290 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:291 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:292 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:293 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:294 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:295 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:295 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:295 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:295 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:295 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:295 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:295 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:295 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:296 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:296 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:299 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:301 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:304 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:305 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:305 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:305 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:305 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:305 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:305 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:306 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:307 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:307 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:307 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:307 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:307 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:308 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:309 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:309 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:309 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:309 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:309 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:309 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:309 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:309 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:310 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:310 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:310 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:310 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:310 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:310 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:310 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:322 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:323 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:324 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:325 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:325 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:325 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:325 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:325 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:325 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:325 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:326 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:327 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:328 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:329 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:329 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:329 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:329 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:357 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:358 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:364 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:364 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:364 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:364 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:365 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:365 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:365 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:365 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:365 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:376 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:376 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:376 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:376 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:376 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:376 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:377 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:378 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:379 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:379 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:379 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:387 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:387 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:387 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:387 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:387 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:387 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:387 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:387 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:396 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:397 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:398 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:398 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:398 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:398 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:398 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:398 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:398 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:398 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:399 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:399 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:399 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:399 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:399 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:399 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:400 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:401 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:401 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:401 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:401 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:401 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:401 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:401 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:401 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:420 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:420 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:420 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:420 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:420 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:420 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:420 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:421 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:421 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:421 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:421 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:421 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:421 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:421 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:422 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:422 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:422 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:422 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:426 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:428 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:428 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:428 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:430 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:430 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:430 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:437 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:437 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:437 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:437 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:437 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:437 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:437 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:437 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:438 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:438 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:438 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:438 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:438 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:438 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:438 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:439 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:439 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:439 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:439 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:439 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:440 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:449 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:449 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:450 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:451 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:451 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:452 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:453 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:454 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:455 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:455 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:455 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:455 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:456 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:456 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:456 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:456 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:456 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:456 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:456 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:457 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:458 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:458 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:458 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:458 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:458 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:458 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:458 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:480 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:480 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:480 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:480 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:480 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:480 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:481 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:482 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:482 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:482 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:482 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:482 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:482 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:483 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:483 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:483 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:484 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:496 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:497 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:498 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:511 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:511 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:511 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:511 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:511 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:511 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:512 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:512 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:512 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:512 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:512 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:512 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:512 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:513 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:514 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:515 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:516 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:516 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:517 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:517 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:517 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:517 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:518 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:518 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:518 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:518 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:518 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:518 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:519 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:519 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:519 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:519 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:519 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:520 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:520 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:542 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:542 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:542 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:542 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:542 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:542 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:543 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:544 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:545 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:545 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:545 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:545 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:545 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:545 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:545 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:545 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:546 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:546 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:546 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:546 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:546 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:546 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:547 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:548 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:548 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:548 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:548 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:548 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:549 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:550 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:550 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:550 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:550 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:550 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:550 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:550 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:573 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:573 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:574 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:575 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:576 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:577 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:578 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:579 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:579 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:579 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:579 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:579 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:604 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:604 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:604 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:604 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:604 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:605 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:606 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:607 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:608 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:609 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:610 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:610 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:610 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:610 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:635 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:635 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:636 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:637 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:637 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:637 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:637 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:637 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:637 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:637 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:637 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:638 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:638 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:638 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:638 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:638 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:638 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:639 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:639 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:639 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:639 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:639 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:639 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:640 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:641 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:642 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:643 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:667 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:667 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:667 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:667 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:667 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:667 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:668 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:669 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:669 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:669 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:669 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:669 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:669 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:669 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:670 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:670 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:670 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:670 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:670 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:670 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:670 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:670 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:671 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:671 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:671 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:671 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:671 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:672 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:672 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:672 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:672 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:673 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:674 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:674 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:674 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:674 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:674 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:675 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:675 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:675 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:675 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:675 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:675 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:676 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:676 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:676 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:676 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:676 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:698 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:698 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:698 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:698 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:698 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:698 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:698 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:698 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:699 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:700 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:700 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:700 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:700 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:700 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:700 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:700 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:700 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:701 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:701 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:701 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:701 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:701 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:701 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:701 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:701 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:702 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:702 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:702 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:702 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:702 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:702 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:702 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:702 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:703 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:704 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:705 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:705 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:705 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:705 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:730 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:731 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:732 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:732 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:732 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[ERROR] 15:48:05:732 Operaciones/(10822:10830): Fallo en recibir la info de la conexion
+[INFO] 15:48:26:125 Operaciones/(11188:11200): Recibimos la informacion de un carpincho
+[INFO] 15:48:26:125 Operaciones/(11188:11200): El codigo de operacion es: 0
+[INFO] 15:48:26:125 Operaciones/(11188:11200): Vamos a inicializar un carpincho
+[INFO] 15:48:26:125 Operaciones/(11188:11200): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:48:26:127 Memoria/(11188:11191): Recibimos la informacion de Memoria
+[INFO] 15:48:26:127 Memoria/(11188:11191): El codigo de operacion es: 0
+[INFO] 15:48:26:128 Operaciones/(11188:11196): Recibimos la informacion de un carpincho
+[INFO] 15:48:26:128 Operaciones/(11188:11196): El codigo de operacion es: 7
+[INFO] 15:48:26:128 Operaciones/(11188:11196): Vamos a realizar un Mem Alloc
+[INFO] 15:48:26:133 Memoria/(11188:11196): Recibimos la informacion de Memoria
+[INFO] 15:48:26:133 Memoria/(11188:11196): El codigo de operacion es: 7
+[INFO] 15:48:26:133 Memoria/(11188:11196): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 15:48:26:133 Operaciones/(11188:11196): Recibimos la informacion de un carpincho
+[INFO] 15:48:26:133 Operaciones/(11188:11196): El codigo de operacion es: 10
+[INFO] 15:48:26:133 Operaciones/(11188:11196): Vamos a realizar un Mem Write
+[INFO] 15:48:27:138 Memoria/(11188:11196): Recibimos la informacion de Memoria
+[INFO] 15:48:27:138 Memoria/(11188:11196): El codigo de operacion es: 10
+[INFO] 15:48:27:138 Memoria/(11188:11196): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 15:48:27:139 Operaciones/(11188:11196): Recibimos la informacion de un carpincho
+[INFO] 15:48:27:139 Operaciones/(11188:11196): El codigo de operacion es: 2
+[INFO] 15:48:27:139 Operaciones/(11188:11196): Vamos a inicializar un semaforo
+[INFO] 15:48:27:139 Operaciones/(11188:11196): Recibimos la informacion de un carpincho
+[INFO] 15:48:27:140 Operaciones/(11188:11196): El codigo de operacion es: 3
+[INFO] 15:48:27:140 Operaciones/(11188:11196): Vamos a hacer un wait de un semaforo
+[INFO] 15:48:37:433 Operaciones/(11188:11235): Recibimos la informacion de un carpincho
+[INFO] 15:48:37:433 Operaciones/(11188:11235): El codigo de operacion es: 0
+[INFO] 15:48:37:433 Operaciones/(11188:11235): Vamos a inicializar un carpincho
+[INFO] 15:48:37:433 Operaciones/(11188:11235): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:48:37:434 Memoria/(11188:11191): Recibimos la informacion de Memoria
+[INFO] 15:48:37:434 Memoria/(11188:11191): El codigo de operacion es: 0
+[INFO] 15:48:37:435 Operaciones/(11188:11196): Recibimos la informacion de un carpincho
+[INFO] 15:48:37:435 Operaciones/(11188:11196): El codigo de operacion es: 7
+[INFO] 15:48:37:435 Operaciones/(11188:11196): Vamos a realizar un Mem Alloc
+[ERROR] 15:48:37:644 Memoria/(11188:11196): Fallo en recibir la info de la conexion
+[INFO] 15:49:13:970 Operaciones/(11574:11594): Recibimos la informacion de un carpincho
+[INFO] 15:49:13:970 Operaciones/(11574:11594): El codigo de operacion es: 0
+[INFO] 15:49:13:970 Operaciones/(11574:11594): Vamos a inicializar un carpincho
+[INFO] 15:49:13:970 Operaciones/(11574:11594): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:49:21:615 Memoria/(11574:11577): Recibimos la informacion de Memoria
+[INFO] 15:49:21:616 Memoria/(11574:11577): El codigo de operacion es: 0
+[INFO] 15:49:21:616 Operaciones/(11574:11581): Recibimos la informacion de un carpincho
+[INFO] 15:49:21:616 Operaciones/(11574:11581): El codigo de operacion es: 7
+[INFO] 15:49:21:616 Operaciones/(11574:11581): Vamos a realizar un Mem Alloc
+[INFO] 15:49:24:293 Memoria/(11574:11581): Recibimos la informacion de Memoria
+[INFO] 15:49:24:294 Memoria/(11574:11581): El codigo de operacion es: 7
+[INFO] 15:49:24:294 Memoria/(11574:11581): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 15:49:24:294 Operaciones/(11574:11581): Recibimos la informacion de un carpincho
+[INFO] 15:49:24:294 Operaciones/(11574:11581): El codigo de operacion es: 10
+[INFO] 15:49:24:294 Operaciones/(11574:11581): Vamos a realizar un Mem Write
+[INFO] 15:49:27:709 Memoria/(11574:11581): Recibimos la informacion de Memoria
+[INFO] 15:49:27:709 Memoria/(11574:11581): El codigo de operacion es: 10
+[INFO] 15:49:27:709 Memoria/(11574:11581): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 15:49:27:709 Operaciones/(11574:11581): Recibimos la informacion de un carpincho
+[INFO] 15:49:27:709 Operaciones/(11574:11581): El codigo de operacion es: 2
+[INFO] 15:49:27:709 Operaciones/(11574:11581): Vamos a inicializar un semaforo
+[INFO] 15:49:27:709 Operaciones/(11574:11581): Recibimos la informacion de un carpincho
+[INFO] 15:49:27:709 Operaciones/(11574:11581): El codigo de operacion es: 3
+[INFO] 15:49:27:709 Operaciones/(11574:11581): Vamos a hacer un wait de un semaforo
+[INFO] 15:49:30:844 Operaciones/(11574:11640): Recibimos la informacion de un carpincho
+[INFO] 15:49:30:844 Operaciones/(11574:11640): El codigo de operacion es: 0
+[INFO] 15:49:30:844 Operaciones/(11574:11640): Vamos a inicializar un carpincho
+[INFO] 15:49:30:844 Operaciones/(11574:11640): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:49:36:144 Memoria/(11574:11577): Recibimos la informacion de Memoria
+[INFO] 15:49:36:145 Memoria/(11574:11577): El codigo de operacion es: 0
+[INFO] 15:49:36:150 Operaciones/(11574:11581): Recibimos la informacion de un carpincho
+[INFO] 15:49:36:150 Operaciones/(11574:11581): El codigo de operacion es: 7
+[INFO] 15:49:36:152 Operaciones/(11574:11581): Vamos a realizar un Mem Alloc
+[ERROR] 15:52:07:174 Memoria/(11574:11581): Fallo en recibir la info de la conexion
+[INFO] 15:52:27:849 Operaciones/(11922:11941): Recibimos la informacion de un carpincho
+[INFO] 15:52:27:849 Operaciones/(11922:11941): El codigo de operacion es: 0
+[INFO] 15:52:27:849 Operaciones/(11922:11941): Vamos a inicializar un carpincho
+[INFO] 15:52:27:850 Operaciones/(11922:11941): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:52:31:928 Memoria/(11922:11925): Recibimos la informacion de Memoria
+[INFO] 15:52:31:928 Memoria/(11922:11925): El codigo de operacion es: 0
+[INFO] 15:52:31:930 Operaciones/(11922:11930): Recibimos la informacion de un carpincho
+[INFO] 15:52:31:930 Operaciones/(11922:11930): El codigo de operacion es: 7
+[INFO] 15:52:31:930 Operaciones/(11922:11930): Vamos a realizar un Mem Alloc
+[INFO] 15:52:40:892 Memoria/(11922:11930): Recibimos la informacion de Memoria
+[INFO] 15:52:40:892 Memoria/(11922:11930): El codigo de operacion es: 7
+[INFO] 15:52:40:892 Memoria/(11922:11930): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 15:52:40:892 Operaciones/(11922:11930): Recibimos la informacion de un carpincho
+[INFO] 15:52:40:892 Operaciones/(11922:11930): El codigo de operacion es: 10
+[INFO] 15:52:40:892 Operaciones/(11922:11930): Vamos a realizar un Mem Write
+[INFO] 15:52:44:129 Memoria/(11922:11930): Recibimos la informacion de Memoria
+[INFO] 15:52:44:129 Memoria/(11922:11930): El codigo de operacion es: 10
+[INFO] 15:52:44:129 Memoria/(11922:11930): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 15:52:44:129 Operaciones/(11922:11930): Recibimos la informacion de un carpincho
+[INFO] 15:52:44:129 Operaciones/(11922:11930): El codigo de operacion es: 2
+[INFO] 15:52:44:130 Operaciones/(11922:11930): Vamos a inicializar un semaforo
+[INFO] 15:52:44:130 Operaciones/(11922:11930): Recibimos la informacion de un carpincho
+[INFO] 15:52:44:130 Operaciones/(11922:11930): El codigo de operacion es: 3
+[INFO] 15:52:44:130 Operaciones/(11922:11930): Vamos a hacer un wait de un semaforo
+[INFO] 15:52:56:423 Operaciones/(11922:12006): Recibimos la informacion de un carpincho
+[INFO] 15:52:56:423 Operaciones/(11922:12006): El codigo de operacion es: 0
+[INFO] 15:52:56:423 Operaciones/(11922:12006): Vamos a inicializar un carpincho
+[INFO] 15:52:56:423 Operaciones/(11922:12006): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:53:00:46 Memoria/(11922:11925): Recibimos la informacion de Memoria
+[INFO] 15:53:00:46 Memoria/(11922:11925): El codigo de operacion es: 0
+[INFO] 15:53:00:47 Operaciones/(11922:11930): Recibimos la informacion de un carpincho
+[INFO] 15:53:00:47 Operaciones/(11922:11930): El codigo de operacion es: 7
+[INFO] 15:53:00:47 Operaciones/(11922:11930): Vamos a realizar un Mem Alloc
+[ERROR] 15:55:05:706 Memoria/(11922:11930): Fallo en recibir la info de la conexion
+[INFO] 15:55:55:979 Operaciones/(12211:12222): Recibimos la informacion de un carpincho
+[INFO] 15:55:55:980 Operaciones/(12211:12222): El codigo de operacion es: 0
+[INFO] 15:55:55:980 Operaciones/(12211:12222): Vamos a inicializar un carpincho
+[INFO] 15:55:55:980 Operaciones/(12211:12222): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:55:55:982 Memoria/(12211:12214): Recibimos la informacion de Memoria
+[INFO] 15:55:55:982 Memoria/(12211:12214): El codigo de operacion es: 0
+[INFO] 15:55:55:984 Operaciones/(12211:12220): Recibimos la informacion de un carpincho
+[INFO] 15:55:55:984 Operaciones/(12211:12220): El codigo de operacion es: 7
+[INFO] 15:55:55:984 Operaciones/(12211:12220): Vamos a realizar un Mem Alloc
+[INFO] 15:56:02:500 Memoria/(12211:12220): Recibimos la informacion de Memoria
+[INFO] 15:56:02:500 Memoria/(12211:12220): El codigo de operacion es: 7
+[INFO] 15:56:02:501 Memoria/(12211:12220): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 15:56:02:501 Operaciones/(12211:12220): Recibimos la informacion de un carpincho
+[INFO] 15:56:02:501 Operaciones/(12211:12220): El codigo de operacion es: 10
+[INFO] 15:56:02:501 Operaciones/(12211:12220): Vamos a realizar un Mem Write
+[INFO] 15:56:03:509 Memoria/(12211:12220): Recibimos la informacion de Memoria
+[INFO] 15:56:03:509 Memoria/(12211:12220): El codigo de operacion es: 10
+[INFO] 15:56:03:509 Memoria/(12211:12220): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 15:56:03:509 Operaciones/(12211:12220): Recibimos la informacion de un carpincho
+[INFO] 15:56:03:509 Operaciones/(12211:12220): El codigo de operacion es: 2
+[INFO] 15:56:03:509 Operaciones/(12211:12220): Vamos a inicializar un semaforo
+[INFO] 15:56:03:510 Operaciones/(12211:12220): Recibimos la informacion de un carpincho
+[INFO] 15:56:03:510 Operaciones/(12211:12220): El codigo de operacion es: 3
+[INFO] 15:56:03:510 Operaciones/(12211:12220): Vamos a hacer un wait de un semaforo
+[INFO] 15:56:18:128 Operaciones/(12211:12258): Recibimos la informacion de un carpincho
+[INFO] 15:56:18:128 Operaciones/(12211:12258): El codigo de operacion es: 0
+[INFO] 15:56:18:128 Operaciones/(12211:12258): Vamos a inicializar un carpincho
+[INFO] 15:56:18:128 Operaciones/(12211:12258): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:56:18:131 Memoria/(12211:12214): Recibimos la informacion de Memoria
+[INFO] 15:56:18:131 Memoria/(12211:12214): El codigo de operacion es: 0
+[INFO] 15:56:18:132 Operaciones/(12211:12220): Recibimos la informacion de un carpincho
+[INFO] 15:56:18:132 Operaciones/(12211:12220): El codigo de operacion es: 7
+[INFO] 15:56:18:132 Operaciones/(12211:12220): Vamos a realizar un Mem Alloc
+[ERROR] 15:57:40:349 Memoria/(12211:12220): Fallo en recibir la info de la conexion
+[INFO] 15:57:57:592 Operaciones/(12453:12464): Recibimos la informacion de un carpincho
+[INFO] 15:57:57:592 Operaciones/(12453:12464): El codigo de operacion es: 0
+[INFO] 15:57:57:592 Operaciones/(12453:12464): Vamos a inicializar un carpincho
+[INFO] 15:57:57:592 Operaciones/(12453:12464): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:57:57:593 Memoria/(12453:12456): Recibimos la informacion de Memoria
+[INFO] 15:57:57:593 Memoria/(12453:12456): El codigo de operacion es: 0
+[INFO] 15:57:57:594 Operaciones/(12453:12462): Recibimos la informacion de un carpincho
+[INFO] 15:57:57:594 Operaciones/(12453:12462): El codigo de operacion es: 7
+[INFO] 15:57:57:594 Operaciones/(12453:12462): Vamos a realizar un Mem Alloc
+[INFO] 15:58:22:272 Memoria/(12453:12462): Recibimos la informacion de Memoria
+[INFO] 15:58:22:272 Memoria/(12453:12462): El codigo de operacion es: 7
+[INFO] 15:58:22:272 Memoria/(12453:12462): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 15:58:22:273 Operaciones/(12453:12462): Recibimos la informacion de un carpincho
+[INFO] 15:58:22:273 Operaciones/(12453:12462): El codigo de operacion es: 10
+[INFO] 15:58:22:273 Operaciones/(12453:12462): Vamos a realizar un Mem Write
+[INFO] 15:58:23:277 Memoria/(12453:12462): Recibimos la informacion de Memoria
+[INFO] 15:58:23:277 Memoria/(12453:12462): El codigo de operacion es: 10
+[INFO] 15:58:23:277 Memoria/(12453:12462): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 15:58:23:277 Operaciones/(12453:12462): Recibimos la informacion de un carpincho
+[INFO] 15:58:23:277 Operaciones/(12453:12462): El codigo de operacion es: 2
+[INFO] 15:58:23:278 Operaciones/(12453:12462): Vamos a inicializar un semaforo
+[INFO] 15:58:23:278 Operaciones/(12453:12462): Recibimos la informacion de un carpincho
+[INFO] 15:58:23:278 Operaciones/(12453:12462): El codigo de operacion es: 3
+[INFO] 15:58:23:278 Operaciones/(12453:12462): Vamos a hacer un wait de un semaforo
+[INFO] 15:58:26:659 Operaciones/(12453:12526): Recibimos la informacion de un carpincho
+[INFO] 15:58:26:659 Operaciones/(12453:12526): El codigo de operacion es: 0
+[INFO] 15:58:26:659 Operaciones/(12453:12526): Vamos a inicializar un carpincho
+[INFO] 15:58:26:659 Operaciones/(12453:12526): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 15:58:26:661 Memoria/(12453:12456): Recibimos la informacion de Memoria
+[INFO] 15:58:26:661 Memoria/(12453:12456): El codigo de operacion es: 0
+[INFO] 15:58:26:662 Operaciones/(12453:12462): Recibimos la informacion de un carpincho
+[INFO] 15:58:26:662 Operaciones/(12453:12462): El codigo de operacion es: 7
+[INFO] 15:58:26:662 Operaciones/(12453:12462): Vamos a realizar un Mem Alloc
+[INFO] 16:00:23:209 Operaciones/(12850:12873): Recibimos la informacion de un carpincho
+[INFO] 16:00:23:209 Operaciones/(12850:12873): El codigo de operacion es: 0
+[INFO] 16:00:23:209 Operaciones/(12850:12873): Vamos a inicializar un carpincho
+[INFO] 16:00:23:209 Operaciones/(12850:12873): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 16:00:50:526 Operaciones/(12900:12911): Recibimos la informacion de un carpincho
+[INFO] 16:00:50:526 Operaciones/(12900:12911): El codigo de operacion es: 0
+[INFO] 16:00:50:526 Operaciones/(12900:12911): Vamos a inicializar un carpincho
+[INFO] 16:00:50:526 Operaciones/(12900:12911): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 16:00:50:527 Memoria/(12900:12903): Recibimos la informacion de Memoria
+[INFO] 16:00:50:527 Memoria/(12900:12903): El codigo de operacion es: 0
+[INFO] 16:00:50:527 Operaciones/(12900:12907): Recibimos la informacion de un carpincho
+[INFO] 16:00:50:527 Operaciones/(12900:12907): El codigo de operacion es: 7
+[INFO] 16:00:50:528 Operaciones/(12900:12907): Vamos a realizar un Mem Alloc
+[INFO] 16:00:50:529 Memoria/(12900:12907): Recibimos la informacion de Memoria
+[INFO] 16:00:50:529 Memoria/(12900:12907): El codigo de operacion es: 7
+[INFO] 16:00:50:529 Memoria/(12900:12907): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 16:00:50:530 Operaciones/(12900:12907): Recibimos la informacion de un carpincho
+[INFO] 16:00:50:530 Operaciones/(12900:12907): El codigo de operacion es: 10
+[INFO] 16:00:50:530 Operaciones/(12900:12907): Vamos a realizar un Mem Write
+[INFO] 16:00:51:534 Memoria/(12900:12907): Recibimos la informacion de Memoria
+[INFO] 16:00:51:534 Memoria/(12900:12907): El codigo de operacion es: 10
+[INFO] 16:00:51:534 Memoria/(12900:12907): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 16:00:51:534 Operaciones/(12900:12907): Recibimos la informacion de un carpincho
+[INFO] 16:00:51:534 Operaciones/(12900:12907): El codigo de operacion es: 2
+[INFO] 16:00:51:534 Operaciones/(12900:12907): Vamos a inicializar un semaforo
+[INFO] 16:00:51:535 Operaciones/(12900:12907): Recibimos la informacion de un carpincho
+[INFO] 16:00:51:535 Operaciones/(12900:12907): El codigo de operacion es: 3
+[INFO] 16:00:51:535 Operaciones/(12900:12907): Vamos a hacer un wait de un semaforo
+[INFO] 16:00:55:173 Operaciones/(12900:12926): Recibimos la informacion de un carpincho
+[INFO] 16:00:55:174 Operaciones/(12900:12926): El codigo de operacion es: 0
+[INFO] 16:00:55:174 Operaciones/(12900:12926): Vamos a inicializar un carpincho
+[INFO] 16:00:55:174 Operaciones/(12900:12926): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 16:00:55:175 Memoria/(12900:12903): Recibimos la informacion de Memoria
+[INFO] 16:00:55:175 Memoria/(12900:12903): El codigo de operacion es: 0
+[INFO] 16:00:55:177 Operaciones/(12900:12907): Recibimos la informacion de un carpincho
+[INFO] 16:00:55:177 Operaciones/(12900:12907): El codigo de operacion es: 7
+[INFO] 16:00:55:177 Operaciones/(12900:12907): Vamos a realizar un Mem Alloc
+[ERROR] 16:00:55:325 Memoria/(12900:12907): Fallo en recibir la info de la conexion
+[INFO] 16:01:10:240 Operaciones/(13044:13055): Recibimos la informacion de un carpincho
+[INFO] 16:01:10:240 Operaciones/(13044:13055): El codigo de operacion es: 0
+[INFO] 16:01:10:240 Operaciones/(13044:13055): Vamos a inicializar un carpincho
+[INFO] 16:01:10:240 Operaciones/(13044:13055): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 16:01:10:243 Memoria/(13044:13047): Recibimos la informacion de Memoria
+[INFO] 16:01:10:244 Memoria/(13044:13047): El codigo de operacion es: 0
+[INFO] 16:01:10:244 Operaciones/(13044:13051): Recibimos la informacion de un carpincho
+[INFO] 16:01:10:244 Operaciones/(13044:13051): El codigo de operacion es: 7
+[INFO] 16:01:10:244 Operaciones/(13044:13051): Vamos a realizar un Mem Alloc
+[INFO] 16:01:15:767 Memoria/(13044:13051): Recibimos la informacion de Memoria
+[INFO] 16:01:15:767 Memoria/(13044:13051): El codigo de operacion es: 7
+[INFO] 16:01:15:768 Memoria/(13044:13051): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 16:01:15:768 Operaciones/(13044:13051): Recibimos la informacion de un carpincho
+[INFO] 16:01:15:768 Operaciones/(13044:13051): El codigo de operacion es: 10
+[INFO] 16:01:15:768 Operaciones/(13044:13051): Vamos a realizar un Mem Write
+[INFO] 16:01:16:773 Memoria/(13044:13051): Recibimos la informacion de Memoria
+[INFO] 16:01:16:773 Memoria/(13044:13051): El codigo de operacion es: 10
+[INFO] 16:01:16:773 Memoria/(13044:13051): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 16:01:16:773 Operaciones/(13044:13051): Recibimos la informacion de un carpincho
+[INFO] 16:01:16:773 Operaciones/(13044:13051): El codigo de operacion es: 2
+[INFO] 16:01:16:773 Operaciones/(13044:13051): Vamos a inicializar un semaforo
+[INFO] 16:01:16:774 Operaciones/(13044:13051): Recibimos la informacion de un carpincho
+[INFO] 16:01:16:774 Operaciones/(13044:13051): El codigo de operacion es: 3
+[INFO] 16:01:16:774 Operaciones/(13044:13051): Vamos a hacer un wait de un semaforo
+[INFO] 16:01:20:572 Operaciones/(13044:13080): Recibimos la informacion de un carpincho
+[INFO] 16:01:20:572 Operaciones/(13044:13080): El codigo de operacion es: 0
+[INFO] 16:01:20:572 Operaciones/(13044:13080): Vamos a inicializar un carpincho
+[INFO] 16:01:20:572 Operaciones/(13044:13080): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 16:01:20:576 Memoria/(13044:13047): Recibimos la informacion de Memoria
+[INFO] 16:01:20:576 Memoria/(13044:13047): El codigo de operacion es: 0
+[INFO] 16:01:20:576 Operaciones/(13044:13051): Recibimos la informacion de un carpincho
+[INFO] 16:01:20:576 Operaciones/(13044:13051): El codigo de operacion es: 7
+[INFO] 16:01:20:577 Operaciones/(13044:13051): Vamos a realizar un Mem Alloc
+[ERROR] 16:01:46:678 Memoria/(13044:13051): Fallo en recibir la info de la conexion
+[INFO] 16:03:03:431 Operaciones/(13294:13313): Recibimos la informacion de un carpincho
+[INFO] 16:03:03:431 Operaciones/(13294:13313): El codigo de operacion es: 0
+[INFO] 16:03:03:431 Operaciones/(13294:13313): Vamos a inicializar un carpincho
+[INFO] 16:03:03:431 Operaciones/(13294:13313): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 16:03:03:433 Memoria/(13294:13297): Recibimos la informacion de Memoria
+[INFO] 16:03:03:433 Memoria/(13294:13297): El codigo de operacion es: 0
+[INFO] 16:03:03:433 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:03:434 Operaciones/(13294:13303): El codigo de operacion es: 7
+[INFO] 16:03:03:434 Operaciones/(13294:13303): Vamos a realizar un Mem Alloc
+[INFO] 16:03:03:437 Memoria/(13294:13303): Recibimos la informacion de Memoria
+[INFO] 16:03:03:437 Memoria/(13294:13303): El codigo de operacion es: 7
+[INFO] 16:03:03:437 Memoria/(13294:13303): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 16:03:03:438 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:03:438 Operaciones/(13294:13303): El codigo de operacion es: 10
+[INFO] 16:03:03:438 Operaciones/(13294:13303): Vamos a realizar un Mem Write
+[INFO] 16:03:04:445 Memoria/(13294:13303): Recibimos la informacion de Memoria
+[INFO] 16:03:04:445 Memoria/(13294:13303): El codigo de operacion es: 10
+[INFO] 16:03:04:445 Memoria/(13294:13303): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 16:03:04:446 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:04:446 Operaciones/(13294:13303): El codigo de operacion es: 2
+[INFO] 16:03:04:446 Operaciones/(13294:13303): Vamos a inicializar un semaforo
+[INFO] 16:03:04:447 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:04:447 Operaciones/(13294:13303): El codigo de operacion es: 3
+[INFO] 16:03:04:447 Operaciones/(13294:13303): Vamos a hacer un wait de un semaforo
+[INFO] 16:03:06:766 Operaciones/(13294:13316): Recibimos la informacion de un carpincho
+[INFO] 16:03:06:766 Operaciones/(13294:13316): El codigo de operacion es: 0
+[INFO] 16:03:06:766 Operaciones/(13294:13316): Vamos a inicializar un carpincho
+[INFO] 16:03:06:766 Operaciones/(13294:13316): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 16:03:06:767 Memoria/(13294:13297): Recibimos la informacion de Memoria
+[INFO] 16:03:06:767 Memoria/(13294:13297): El codigo de operacion es: 0
+[INFO] 16:03:06:768 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:06:768 Operaciones/(13294:13303): El codigo de operacion es: 7
+[INFO] 16:03:06:768 Operaciones/(13294:13303): Vamos a realizar un Mem Alloc
+[INFO] 16:03:06:771 Memoria/(13294:13303): Recibimos la informacion de Memoria
+[INFO] 16:03:06:771 Memoria/(13294:13303): El codigo de operacion es: 7
+[INFO] 16:03:06:771 Memoria/(13294:13303): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 16:03:06:771 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:06:771 Operaciones/(13294:13303): El codigo de operacion es: 10
+[INFO] 16:03:06:771 Operaciones/(13294:13303): Vamos a realizar un Mem Write
+[INFO] 16:03:06:878 Memoria/(13294:13303): Recibimos la informacion de Memoria
+[INFO] 16:03:06:878 Memoria/(13294:13303): El codigo de operacion es: 10
+[INFO] 16:03:06:878 Memoria/(13294:13303): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 16:03:06:878 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:06:879 Operaciones/(13294:13303): El codigo de operacion es: 9
+[INFO] 16:03:06:879 Operaciones/(13294:13303): Vamos a realizar un Mem Read
+[INFO] 16:03:06:983 Memoria/(13294:13303): Recibimos la informacion de Memoria
+[INFO] 16:03:06:983 Memoria/(13294:13303): El codigo de operacion es: 9
+[INFO] 16:03:06:983 Memoria/(13294:13303): Se pudo establecer la conexion con memoria y se realizo un Mem Read
+[INFO] 16:03:06:984 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:06:984 Operaciones/(13294:13303): El codigo de operacion es: 4
+[INFO] 16:03:06:984 Operaciones/(13294:13303): Vamos a hacer un post de un semaforo
+[INFO] 16:03:06:984 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:06:984 Operaciones/(13294:13303): El codigo de operacion es: 1
+[INFO] 16:03:06:984 Operaciones/(13294:13303): Vamos a eliminar un carpincho
+[INFO] 16:03:06:984 Operaciones/(13294:13303): Sacamos al carpincho de ejecucion. Pid: 2
+[INFO] 16:03:06:985 Memoria/(13294:13303): Recibimos la informacion de Memoria
+[INFO] 16:03:06:985 Memoria/(13294:13303): El codigo de operacion es: 1
+[INFO] 16:03:06:985 Memoria/(13294:13303): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 16:03:06:985 Operaciones/(13294:13303): Le notificamos a memoria para que libere la memoria del carpincho: 2
+[INFO] 16:03:06:985 Operaciones/(13294:13303): Enviamos que queremos cerrar el carpincho
+[INFO] 16:03:06:986 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:06:986 Operaciones/(13294:13303): El codigo de operacion es: 9
+[INFO] 16:03:06:986 Operaciones/(13294:13303): Vamos a realizar un Mem Read
+[INFO] 16:03:07:87 Memoria/(13294:13303): Recibimos la informacion de Memoria
+[INFO] 16:03:07:87 Memoria/(13294:13303): El codigo de operacion es: 9
+[INFO] 16:03:07:87 Memoria/(13294:13303): Se pudo establecer la conexion con memoria y se realizo un Mem Read
+[INFO] 16:03:07:88 Operaciones/(13294:13303): Recibimos la informacion de un carpincho
+[INFO] 16:03:07:88 Operaciones/(13294:13303): El codigo de operacion es: 1
+[INFO] 16:03:07:88 Operaciones/(13294:13303): Vamos a eliminar un carpincho
+[INFO] 16:03:07:88 Operaciones/(13294:13303): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 16:03:07:88 Memoria/(13294:13303): Recibimos la informacion de Memoria
+[INFO] 16:03:07:88 Memoria/(13294:13303): El codigo de operacion es: 1
+[INFO] 16:03:07:88 Memoria/(13294:13303): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 16:03:07:88 Operaciones/(13294:13303): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 16:03:07:88 Operaciones/(13294:13303): Enviamos que queremos cerrar el carpincho

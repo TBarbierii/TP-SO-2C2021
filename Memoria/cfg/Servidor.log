@@ -1,0 +1,210 @@
+[INFO] 15:27:38:142 ServidorYSwamp/(9402:9402): SE INICIO EL SERVIDOR
+[INFO] 15:28:12:51 ServidorYSwamp/(9536:9536): SE INICIO EL SERVIDOR
+[INFO] 15:29:23:507 ServidorYSwamp/(9709:9709): SE INICIO EL SERVIDOR
+[INFO] 15:29:35:139 ServidorYSwamp/(9709:9739): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 15:29:35:140 ServidorYSwamp/(9709:9739): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 15:29:40:734 ServidorYSwamp/(9709:9739): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 15:31:52:358 ServidorYSwamp/(9709:9739): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 15:35:51:154 ServidorYSwamp/(10211:10211): SE INICIO EL SERVIDOR
+[INFO] 15:35:59:671 ServidorYSwamp/(10211:10241): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 15:35:59:671 ServidorYSwamp/(10211:10241): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 15:36:00:922 ServidorYSwamp/(10211:10241): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 15:36:39:423 ServidorYSwamp/(10211:10241): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 15:43:40:955 ServidorYSwamp/(10800:10800): SE INICIO EL SERVIDOR
+[INFO] 15:43:55:222 ServidorYSwamp/(10800:10835): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 15:43:55:222 ServidorYSwamp/(10800:10835): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 15:44:02:511 ServidorYSwamp/(10800:10835): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 15:45:02:194 ServidorYSwamp/(10800:10835): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 15:46:28:801 ServidorYSwamp/(10800:11020): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 15:46:28:801 ServidorYSwamp/(10800:11020): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 15:46:37:529 ServidorYSwamp/(10800:11020): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 15:48:20:706 ServidorYSwamp/(11175:11175): SE INICIO EL SERVIDOR
+[INFO] 15:48:26:126 ServidorYSwamp/(11175:11201): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 15:48:26:126 ServidorYSwamp/(11175:11201): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 15:48:26:128 ServidorYSwamp/(11175:11201): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 15:48:26:133 ServidorYSwamp/(11175:11201): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 15:48:37:434 ServidorYSwamp/(11175:11236): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 15:48:37:434 ServidorYSwamp/(11175:11236): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 15:48:37:435 ServidorYSwamp/(11175:11236): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 15:49:10:504 ServidorYSwamp/(11565:11565): SE INICIO EL SERVIDOR
+[INFO] 15:49:21:615 ServidorYSwamp/(11565:11595): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 15:49:21:615 ServidorYSwamp/(11565:11595): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 15:49:24:287 ServidorYSwamp/(11565:11595): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 15:49:26:702 ServidorYSwamp/(11565:11595): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 15:49:36:144 ServidorYSwamp/(11565:11641): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 15:49:36:144 ServidorYSwamp/(11565:11641): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 15:49:43:986 ServidorYSwamp/(11565:11641): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 15:52:23:933 ServidorYSwamp/(11911:11911): SE INICIO EL SERVIDOR
+[INFO] 15:52:31:928 ServidorYSwamp/(11911:11942): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 15:52:31:928 ServidorYSwamp/(11911:11942): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 15:52:33:518 ServidorYSwamp/(11911:11942): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 15:52:43:123 ServidorYSwamp/(11911:11942): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 15:53:00:46 ServidorYSwamp/(11911:12007): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 15:53:00:46 ServidorYSwamp/(11911:12007): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 15:53:04:175 ServidorYSwamp/(11911:12007): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 15:55:51:733 ServidorYSwamp/(12196:12196): SE INICIO EL SERVIDOR
+[INFO] 15:55:55:981 ServidorYSwamp/(12196:12223): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 15:55:55:982 ServidorYSwamp/(12196:12223): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 15:55:55:984 ServidorYSwamp/(12196:12223): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 15:56:02:501 ServidorYSwamp/(12196:12223): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 15:56:18:130 ServidorYSwamp/(12196:12259): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 15:56:18:130 ServidorYSwamp/(12196:12259): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 15:56:18:132 ServidorYSwamp/(12196:12259): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 15:57:55:725 ServidorYSwamp/(12446:12446): SE INICIO EL SERVIDOR
+[INFO] 15:57:57:593 ServidorYSwamp/(12446:12465): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 15:57:57:593 ServidorYSwamp/(12446:12465): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 15:57:57:594 ServidorYSwamp/(12446:12465): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 15:58:22:273 ServidorYSwamp/(12446:12465): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 15:58:26:660 ServidorYSwamp/(12446:12527): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 15:58:26:660 ServidorYSwamp/(12446:12527): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 15:58:26:662 ServidorYSwamp/(12446:12527): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 16:00:19:915 ServidorYSwamp/(12847:12847): SE INICIO EL SERVIDOR
+[INFO] 16:00:47:148 ServidorYSwamp/(12897:12897): SE INICIO EL SERVIDOR
+[INFO] 16:00:50:526 ServidorYSwamp/(12897:12912): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 16:00:50:526 ServidorYSwamp/(12897:12912): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 16:00:50:528 ServidorYSwamp/(12897:12912): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 16:00:50:530 ServidorYSwamp/(12897:12912): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 16:00:55:175 ServidorYSwamp/(12897:12927): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 16:00:55:175 ServidorYSwamp/(12897:12927): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 16:00:55:177 ServidorYSwamp/(12897:12927): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 16:01:07:998 ServidorYSwamp/(13037:13037): SE INICIO EL SERVIDOR
+[INFO] 16:01:10:241 ServidorYSwamp/(13037:13056): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 16:01:10:243 ServidorYSwamp/(13037:13056): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 16:01:10:245 ServidorYSwamp/(13037:13056): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 16:01:15:768 ServidorYSwamp/(13037:13056): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 16:01:20:573 ServidorYSwamp/(13037:13081): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 16:01:20:575 ServidorYSwamp/(13037:13081): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 16:01:20:577 ServidorYSwamp/(13037:13081): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 16:02:59:627 ServidorYSwamp/(13291:13291): SE INICIO EL SERVIDOR
+[INFO] 16:03:03:432 ServidorYSwamp/(13291:13314): Agregamos nuevo carpincho a memoria, y su pid es: 1
+[INFO] 16:03:03:432 ServidorYSwamp/(13291:13314): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 1
+[INFO] 16:03:03:434 ServidorYSwamp/(13291:13314): 
+LLego el proceso para allocar: 
+ Pid: 1 
+Tamanio: 20
+[INFO] 16:03:03:438 ServidorYSwamp/(13291:13314): 
+Recibimos memwrite: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio: 20
+[INFO] 16:03:06:767 ServidorYSwamp/(13291:13317): Agregamos nuevo carpincho a memoria, y su pid es: 2
+[INFO] 16:03:06:767 ServidorYSwamp/(13291:13317): Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: 2
+[INFO] 16:03:06:768 ServidorYSwamp/(13291:13317): 
+LLego el proceso para allocar: 
+ Pid: 2 
+Tamanio: 14
+[INFO] 16:03:06:771 ServidorYSwamp/(13291:13317): 
+Recibimos memwrite: 
+ Pid: 2 
+DirecLogica: 10009 
+Tamanio: 14
+[INFO] 16:03:06:983 ServidorYSwamp/(13291:13317): 
+Recibimos memread: 
+ Pid: 2 
+DirecLogica: 10009 
+Tamanio
+[INFO] 16:03:06:984 ServidorYSwamp/(13291:13317): Sacamos al carpincho. Pid: 2
+[INFO] 16:03:06:985 ServidorYSwamp/(13291:13317): Enviamos que queremos cerrar el carpincho
+[INFO] 16:03:06:985 ServidorYSwamp/(13291:13317): Se nos va el carpincho: 2
+[INFO] 16:03:07:87 ServidorYSwamp/(13291:13314): 
+Recibimos memread: 
+ Pid: 1 
+DirecLogica: 10009 
+Tamanio
+[INFO] 16:03:07:88 ServidorYSwamp/(13291:13314): Sacamos al carpincho. Pid: 1
+[INFO] 16:03:07:88 ServidorYSwamp/(13291:13314): Enviamos que queremos cerrar el carpincho
+[INFO] 16:03:07:88 ServidorYSwamp/(13291:13314): Se nos va el carpincho: 1

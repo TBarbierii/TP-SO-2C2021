@@ -59,6 +59,7 @@ t_log* dumpTLB;
 t_log* loggerServidor; 
 
 
+
 /* Variable Global */
 
 void* memoriaPrincipal;

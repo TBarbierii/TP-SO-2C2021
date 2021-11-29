@@ -48,6 +48,7 @@ void inicializarTodo(){
 
     logsObligatorios =  log_create("cfg/logsObligatorios.log","Log",1,LOG_LEVEL_INFO);
     loggerServidor =  log_create("cfg/Servidor.log","ServidorYSwamp",1,LOG_LEVEL_DEBUG);
+    
 
     listaCarpinchos = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(listaCarpinchos,NULL);

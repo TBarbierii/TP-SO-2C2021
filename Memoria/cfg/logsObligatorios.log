@@ -1,0 +1,61 @@
+[INFO] 15:30:37:810 Log/(9709:9739): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:30:58:826 Log/(9709:9739): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:30:58:827 Log/(9709:9739): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 15:36:05:477 Log/(10211:10241): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:36:05:477 Log/(10211:10241): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:36:05:477 Log/(10211:10241): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 15:44:02:513 Log/(10800:10835): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:44:02:513 Log/(10800:10835): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:44:02:513 Log/(10800:10835): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 15:45:31:764 Log/(10800:10835): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 15:45:31:767 Log/(10800:10835): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:45:31:767 Log/(10800:10835): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:48:26:132 Log/(11175:11201): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:48:26:132 Log/(11175:11201): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:48:26:132 Log/(11175:11201): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 15:48:27:134 Log/(11175:11201): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 15:48:27:138 Log/(11175:11201): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:48:27:138 Log/(11175:11201): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:49:24:292 Log/(11565:11595): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:49:24:292 Log/(11565:11595): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:49:24:293 Log/(11565:11595): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 15:49:27:703 Log/(11565:11595): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 15:49:27:709 Log/(11565:11595): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:49:27:709 Log/(11565:11595): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:52:40:891 Log/(11911:11942): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:52:40:891 Log/(11911:11942): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:52:40:892 Log/(11911:11942): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 15:52:44:123 Log/(11911:11942): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 15:52:44:129 Log/(11911:11942): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:52:44:129 Log/(11911:11942): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:56:02:500 Log/(12196:12223): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:56:02:500 Log/(12196:12223): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:56:02:500 Log/(12196:12223): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 15:56:03:505 Log/(12196:12223): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 15:56:03:509 Log/(12196:12223): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:56:03:509 Log/(12196:12223): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:58:05:512 Log/(12446:12465): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:58:22:272 Log/(12446:12465): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 15:58:22:272 Log/(12446:12465): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 15:58:23:274 Log/(12446:12465): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 15:58:23:277 Log/(12446:12465): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 15:58:23:277 Log/(12446:12465): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 16:00:50:529 Log/(12897:12912): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 16:00:50:529 Log/(12897:12912): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 16:00:50:529 Log/(12897:12912): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 16:00:51:531 Log/(12897:12912): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 16:00:51:534 Log/(12897:12912): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 16:00:51:534 Log/(12897:12912): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 16:01:15:767 Log/(13037:13056): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 16:01:15:767 Log/(13037:13056): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 16:01:15:767 Log/(13037:13056): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 16:01:16:769 Log/(13037:13056): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 16:01:16:773 Log/(13037:13056): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 16:01:16:773 Log/(13037:13056): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 16:03:03:436 Log/(13291:13314): Pagina víctima: Pid: 1, Página: 0, Marco: 0
+[INFO] 16:03:03:436 Log/(13291:13314): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 16:03:03:436 Log/(13291:13314): Entrada TLB. NuevaEntrada: PID: 1	Página: 1	Marco: 0
+[INFO] 16:03:04:439 Log/(13291:13314): Pagina víctima: Pid: 1, Página: 1, Marco: 0
+[INFO] 16:03:04:444 Log/(13291:13314): Pagina entrante: Pid: 1, Página: 0, Marco: 0
+[INFO] 16:03:04:444 Log/(13291:13314): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
+[INFO] 16:03:06:770 Log/(13291:13317): Entrada TLB. NuevaEntrada: PID: 2	Página: 0	Marco: 1
