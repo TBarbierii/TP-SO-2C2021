@@ -127,9 +127,9 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
     return s->id_pagina == id;
     };
 
-    pthread_mutex_lock(swap);
+    pthread_mutex_lock(tabla_paginas);
     t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
-    pthread_mutex_unlock(swap);
+    pthread_mutex_unlock(tabla_paginas);
 
     int32_t presente = buscar_TLB(pagina);
 
@@ -158,16 +158,20 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
         memcpy(memoriaPrincipal + pagina->marco->comienzo + desplazamiento, contenido , bytesPrimeraEscritura);
         pthread_mutex_unlock(memoria);
         
+        pthread_mutex_lock(tabla_paginas);
         pagina->modificado = true;
         pagina->ultimoUso = clock();
         pagina->uso = true;
+        pthread_mutex_unlock(tabla_paginas);
 
         if(cantPaginas > 1){
             for(int i=0; i<cantPaginas-1; i++){
+
+                pthread_mutex_lock(tabla_paginas);
                 t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
+                pthread_mutex_unlock(tabla_paginas);
 
                 int32_t presente = buscar_TLB(paginaSiguiente);
-
 
                 reemplazo(&presente, capybara, paginaSiguiente);
 
@@ -175,17 +179,20 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
                 memcpy(memoriaPrincipal + (paginaSiguiente->marco->comienzo), contenido + bytesPrimeraEscritura, tamanioPagina);
                 pthread_mutex_unlock(memoria);
                 
+                pthread_mutex_lock(tabla_paginas);
                 paginaSiguiente->modificado = true;
                 paginaSiguiente->ultimoUso = clock();
                 paginaSiguiente->uso = true;
+                pthread_mutex_unlock(tabla_paginas);
+
                 contador++;
                 bytesPrimeraEscritura += tamanioPagina;
             }
         }
 
-        pthread_mutex_lock(swap);
+        pthread_mutex_lock(tabla_paginas);
         t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
-        pthread_mutex_unlock(swap);
+        pthread_mutex_unlock(tabla_paginas);
 
         int32_t presente = buscar_TLB(ultimaPagina);
 
@@ -207,9 +214,12 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
         memcpy(memoriaPrincipal + pagina->marco->comienzo + desplazamiento, contenido , tam);
         pthread_mutex_unlock(memoria);
         
+        pthread_mutex_lock(tabla_paginas);
         pagina->modificado = true;
         pagina->ultimoUso = clock();
         pagina->uso = true;
+        pthread_mutex_unlock(tabla_paginas);
+
         return 0;
     }
      
@@ -236,8 +246,9 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
     return s->id_pagina == id;
     };
 
+    pthread_mutex_lock(tabla_paginas);
     t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
-
+    pthread_mutex_unlock(tabla_paginas);
 
     int32_t presente = buscar_TLB(pagina);
 
@@ -264,13 +275,17 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
         memcpy(leido, memoriaPrincipal + pagina->marco->comienzo + desplazamiento, bytesPrimeraLectura);
         pthread_mutex_unlock(memoria);
         
+        pthread_mutex_lock(tabla_paginas);
         pagina->ultimoUso = clock();
         pagina->uso = true;
-
+        pthread_mutex_unlock(tabla_paginas);
 
         if(cantPaginas > 1){
             for(int i=0; i<cantPaginas-1; i++){
+
+                pthread_mutex_lock(tabla_paginas);
                 t_pagina* paginaSiguiente = list_get(capybara->tabla_de_paginas, contador);
+                pthread_mutex_unlock(tabla_paginas);
 
                 int32_t presente = buscar_TLB(paginaSiguiente);
 
@@ -280,14 +295,19 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
                 memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (paginaSiguiente->marco->comienzo), tamanioPagina);
                 pthread_mutex_unlock(memoria);
                 
+                pthread_mutex_lock(tabla_paginas);
                 paginaSiguiente->ultimoUso = clock();
                 paginaSiguiente->uso = true;
+                pthread_mutex_unlock(tabla_paginas);
+
                 contador++;
                 bytesPrimeraLectura += tamanioPagina;
             }
         }
 
+        pthread_mutex_lock(tabla_paginas);
         t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
+        pthread_mutex_unlock(tabla_paginas);
 
         int32_t presente = buscar_TLB(ultimaPagina);
 
@@ -297,8 +317,10 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
         memcpy(leido + bytesPrimeraLectura, memoriaPrincipal + (ultimaPagina->marco->comienzo), resto);
         pthread_mutex_unlock(memoria);
         
+        pthread_mutex_lock(tabla_paginas);
         ultimaPagina->ultimoUso = clock();
         ultimaPagina->uso = true;
+        pthread_mutex_unlock(tabla_paginas);
 
     }else{
         
@@ -306,8 +328,10 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
         memcpy(leido, memoriaPrincipal + pagina->marco->comienzo + desplazamiento, tam);
         pthread_mutex_unlock(memoria);
         
+        pthread_mutex_lock(tabla_paginas);
         pagina->ultimoUso = clock();
         pagina->uso = true;
+        pthread_mutex_unlock(tabla_paginas);
     }
      
  

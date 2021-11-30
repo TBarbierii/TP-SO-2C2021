@@ -2,11 +2,11 @@
 
 int32_t buscar_TLB(t_pagina* pagina){
 
-	pthread_mutex_lock(TLB_mutex);
+	
 	bool buscarPagina(t_pagina *pag){
 		return pag->id_pagina == pagina->id_pagina && pag->id_carpincho == pagina->id_carpincho;
 	};
-
+	pthread_mutex_lock(TLB_mutex);
 	t_pagina* paginaEncontrada = list_find(TLB, (void*)buscarPagina);
 	pthread_mutex_unlock(TLB_mutex);
 
@@ -26,7 +26,9 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 			return pag->presente;
 		};
 		
+		pthread_mutex_lock(tabla_paginas);
 		t_list* paginas_a_reemplazar = list_filter(carpincho->tabla_de_paginas, (void*)paginasPresentes);
+		pthread_mutex_unlock(tabla_paginas);
 
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho);   
 
@@ -62,7 +64,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		};
 
 		t_list* paginas_a_reemplazar = list_create();
-
+		t_list* paginas;
 		pthread_mutex_lock(listaCarpinchos);
 		int cantidad = list_size(carpinchos);
 		pthread_mutex_unlock(listaCarpinchos);
@@ -71,12 +73,13 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 			pthread_mutex_lock(listaCarpinchos);
 			t_carpincho* carp = list_get(carpinchos, i);
 			pthread_mutex_unlock(listaCarpinchos);
-			pthread_mutex_lock(swap);
-			t_list* paginas = list_filter(carp->tabla_de_paginas, (void*)paginasPresentes);
-			pthread_mutex_unlock(swap);
-			list_add_all(paginas_a_reemplazar, paginas);
-			list_destroy(paginas);
+			pthread_mutex_lock(tabla_paginas);
+			paginas = list_filter(carp->tabla_de_paginas, (void*)paginasPresentes);
+			pthread_mutex_unlock(tabla_paginas);
+			list_add_all(paginas_a_reemplazar, paginas);	
 		}
+
+		list_destroy(paginas);
 		
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho); 
 
@@ -98,9 +101,11 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		if(victima->modificado)
 		enviar_pagina(victima->id_carpincho, victima->id_pagina, contenido);
 		
+		pthread_mutex_lock(tabla_paginas);
 		victima->presente = false;
 		victima->marco->estaLibre = true;
 		victima->marco->proceso_asignado = -1;
+		pthread_mutex_unlock(tabla_paginas);
 		
 		pthread_mutex_lock(TLB_mutex);
 		bool quitarDeTLB(t_pagina* pag){
@@ -327,12 +332,14 @@ uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida){
 	uint32_t conexion = pedir_pagina(paginaPedida->id_pagina, carpincho->id_carpincho);
 	void* contenido = atender_respuestas_swap(conexion);
 	pthread_mutex_unlock(swap);
+	pthread_mutex_lock(tabla_paginas);
 	paginaPedida->marco = marcoLiberado;
 	paginaPedida->marco->estaLibre = false;
 	paginaPedida->presente = true;
 	paginaPedida->ultimoUso = clock();
 	paginaPedida->uso = true;
 	paginaPedida->modificado = false;
+	pthread_mutex_unlock(tabla_paginas);
 
 	log_info(logsObligatorios, "Pagina entrante: Pid: %i, Página: %i, Marco: %i", carpincho->id_carpincho, paginaPedida->id_pagina, paginaPedida->marco->id_marco);
 
@@ -355,8 +362,9 @@ int32_t buscarEnTablaDePaginas(t_carpincho* carpincho, int32_t idPag){
 	bool buscarPaginaPresente(t_pagina* pag){
 		return pag->id_pagina == idPag && pag->presente;
 	};
-
+	pthread_mutex_lock(tabla_paginas);
 	t_pagina* pagina = list_find(carpincho->tabla_de_paginas, (void*)buscarPaginaPresente);
+	pthread_mutex_unlock(tabla_paginas);
 
 	if(pagina == NULL){
 		return -1;

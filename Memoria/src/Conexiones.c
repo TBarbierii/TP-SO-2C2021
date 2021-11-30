@@ -53,8 +53,10 @@ void atender_solicitudes_memoria(uint32_t conexion){
 				inicializar_carpincho(conexion, loggerServidor);
 				break;
 			case MEMALLOC:
+				//pthread_mutex_lock(solicitud_mutex);
 				DL = recibir_memalloc(conexion, loggerServidor);
-				printf("\nSe envio la DL %i", DL);
+				//pthread_mutex_unlock(solicitud_mutex);
+				printf("\nSe envio la DL %i\n", DL);
 
 				t_paquete* paquete = crear_paquete(MEMALLOC);
 				paquete->buffer->size = sizeof(uint32_t);
@@ -67,13 +69,19 @@ void atender_solicitudes_memoria(uint32_t conexion){
 					
 				break;
 			case MEMFREE:
+				//pthread_mutex_lock(solicitud_mutex);
 				recibir_memfree(conexion, loggerServidor);
+				//pthread_mutex_unlock(solicitud_mutex);
 				break;
 			case MEMREAD:
+				//pthread_mutex_lock(solicitud_mutex);
 				recibir_memread(conexion, loggerServidor);
+				//pthread_mutex_unlock(solicitud_mutex);
 				break;
 			case MEMWRITE:	
+				//pthread_mutex_lock(solicitud_mutex);
 				recibir_memwrite(conexion, loggerServidor);
+				//pthread_mutex_unlock(solicitud_mutex);
 				break;
 			case SUSPENSION_PROCESO:
 				recibir_suspencion(conexion, loggerServidor);
@@ -152,7 +160,12 @@ uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del c
 	memcpy(&pid, buffer, sizeof(uint32_t));
 	offset += sizeof(uint32_t);
 	memcpy(&tamanio, buffer + offset,sizeof(uint32_t));
-
+	
+	if(tamanio == 20000){
+		int procesoAcaparador=0;
+	}else if(tamanio == 10){
+		int otroaProcesos=0;
+	}
 	free(buffer);
 	
 	log_info(logger, "\nLLego el proceso para allocar: \n Pid: %i \nTamanio: %i", pid, tamanio);

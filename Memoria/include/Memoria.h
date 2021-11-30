@@ -53,6 +53,8 @@ pthread_mutex_t * TLB_mutex;
 pthread_mutex_t * memoria;
 pthread_mutex_t * swap;
 pthread_mutex_t * marcos_sem;
+pthread_mutex_t * solicitud_mutex;
+pthread_mutex_t * tabla_paginas;
 
 t_log* logsObligatorios;
 t_log* dumpTLB;

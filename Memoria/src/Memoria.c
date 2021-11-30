@@ -71,6 +71,12 @@ void inicializarTodo(){
     marcos_sem =  malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(marcos_sem,NULL);
 
+    solicitud_mutex =  malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(solicitud_mutex,NULL);
+
+    tabla_paginas =  malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(tabla_paginas,NULL);
+
     id_carpincho = 1;
 
     hits_totales=0;

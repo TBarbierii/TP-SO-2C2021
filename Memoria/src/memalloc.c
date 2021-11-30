@@ -11,10 +11,10 @@ uint32_t administrar_allocs(uint32_t pid, uint32_t tamanio){
     pthread_mutex_unlock(listaCarpinchos);
 
 
-
     t_list* marcos_a_asignar = reservarMarcos(carpincho->id_carpincho);
   
     uint32_t direccionLogica = administrar_paginas(carpincho, tamanio, marcos_a_asignar);
+	
 
     return direccionLogica;
 
@@ -31,12 +31,12 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         uint32_t cantidadDePaginasACrear = ceil((float)(TAMANIO_HEAP*2 + tamanio)/tamanioPagina);
 
-        pthread_mutex_lock(listaCarpinchos);
+        pthread_mutex_lock(swap);
         int conexion = consultar_espacio(carpincho->id_carpincho, cantidadDePaginasACrear);
 
         uint32_t respuesta = (uint32_t)atender_respuestas_swap(conexion);
         printf("\nRespuesta consulta: %i\n", respuesta);
-        pthread_mutex_unlock(listaCarpinchos);
+        pthread_mutex_unlock(swap);
 
         if(respuesta == 0) return 0;
 
@@ -67,19 +67,22 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         void* buffer_allocs = generar_buffer_allocs(tamanio, next_alloc,cantidadDePaginasACrear, PRIMERA_VEZ, 0);
 
-        escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar, carpincho);// que pasa aca en el caso de que los marcos por proceso sea menor a las paginas creadas?
+        escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar, carpincho);
 
         free (buffer_allocs);
         
+		pthread_mutex_lock(tabla_paginas);
         list_iterate(carpincho->tabla_de_paginas, (void*)algoritmo_reemplazo_TLB);
-
         t_pagina* pag = list_get(carpincho->tabla_de_paginas, 0);
+		pthread_mutex_unlock(tabla_paginas);
 
         return generarDireccionLogica(pag->id_pagina, TAMANIO_HEAP);
 
     }else{//busca un hueco
         
+		pthread_mutex_lock(tabla_paginas);
         t_pagina* primeraPag = list_get(carpincho->tabla_de_paginas, 0);
+		pthread_mutex_unlock(tabla_paginas);
 
         int32_t DF = buscar_TLB(primeraPag);
 
@@ -93,9 +96,10 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         memcpy(heap, memoriaPrincipal + DF, TAMANIO_HEAP);
         pthread_mutex_unlock(memoria);
 
+		pthread_mutex_lock(tabla_paginas);
         primeraPag->ultimoUso = clock();
         primeraPag->uso = true;
-
+		pthread_mutex_unlock(tabla_paginas);
 
         while(heap->nextAlloc != -1)
         {
@@ -277,11 +281,11 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 			memcpy(memoriaPrincipal + marco->comienzo, buffer + (contador*tamanioPagina), tamanioPagina);
 			pthread_mutex_unlock(memoria);
 
-			pthread_mutex_lock(swap);
+			pthread_mutex_lock(tabla_paginas);
 			pag->marco = marco;
 			pag->presente = true;
 			pag->esNueva = false;
-			pthread_mutex_unlock(swap);
+			pthread_mutex_unlock(tabla_paginas);
 			//aca como estamos tocando el marco que son variables globales, deberiamos poner entre los semaforos
 			pthread_mutex_lock(marcos_sem);
 			marco->estaLibre = false;
@@ -317,7 +321,9 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
         for(i=1; i <= list_size(carpincho->tabla_de_paginas); i++){
 
             if(posicionSiguienteHeap < tamanioPagina * i){
+			pthread_mutex_lock(tabla_paginas);	
             paginaDeSiguienteHeap = list_get(carpincho->tabla_de_paginas, i-1);
+			pthread_mutex_unlock(tabla_paginas);
 			pagina = paginaDeSiguienteHeap->id_pagina;
             break; 
             }    
@@ -337,10 +343,12 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 			memcpy(buff_heap, memoriaPrincipal + (*DF + desplazamiento), (tamanioPagina - desplazamiento));
 			pthread_mutex_unlock(memoria);
 			
+			pthread_mutex_lock(tabla_paginas);
 			paginaDeSiguienteHeap->ultimoUso = clock();
 			paginaDeSiguienteHeap->uso = true;
 
 			paginaDeSiguienteHeap = list_get(carpincho->tabla_de_paginas, i);
+			pthread_mutex_unlock(tabla_paginas);
 
 			*DF = buscar_TLB(paginaDeSiguienteHeap);
 
@@ -350,8 +358,10 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 			memcpy(buff_heap + (tamanioPagina - desplazamiento), memoriaPrincipal + *DF , TAMANIO_HEAP - (tamanioPagina - desplazamiento));
 			pthread_mutex_unlock(memoria);
 			
+			pthread_mutex_lock(tabla_paginas);
 			paginaDeSiguienteHeap->ultimoUso = clock();
 			paginaDeSiguienteHeap->uso = true;
+			pthread_mutex_unlock(tabla_paginas);
 
 			memcpy(heap, buff_heap, TAMANIO_HEAP);
 			free(buff_heap);
@@ -364,8 +374,10 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 		memcpy(heap, memoriaPrincipal + *DF + desplazamiento, TAMANIO_HEAP);
 		pthread_mutex_unlock(memoria);
 
+		pthread_mutex_lock(tabla_paginas);
 		paginaDeSiguienteHeap->ultimoUso = clock();
 		paginaDeSiguienteHeap->uso = true;
+		pthread_mutex_lock(tabla_paginas);
 
 		}
 
@@ -415,6 +427,7 @@ t_list* buscarMarcosLibres(t_carpincho* carpincho){
 
 uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posicionUltimoHeap, t_carpincho *carpincho, int32_t *desplazamiento){
 
+
 	uint32_t paginasNecesarias = ceil((float)(TAMANIO_HEAP*2 + tamanio + posicionUltimoHeap)/tamanioPagina);
 	uint32_t cantidadDePaginasACrear = paginasNecesarias - list_size(carpincho->tabla_de_paginas);
 	
@@ -436,9 +449,9 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
     };
 	
 
-	pthread_mutex_lock(swap);
+	pthread_mutex_lock(tabla_paginas);
     t_pagina* pag = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
-	pthread_mutex_unlock(swap);
+	pthread_mutex_unlock(tabla_paginas);
 	
 	log_info(loggerServidor, "\nXDDDDDDDDDDDD");
 	
@@ -458,27 +471,33 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		memcpy(memoriaPrincipal + DF + *desplazamiento, buffer_heap, tamanioPagina - *desplazamiento);
 		pthread_mutex_unlock(memoria);
 
-
+		pthread_mutex_lock(tabla_paginas);
 		pag->modificado = true;
 		pag->ultimoUso = clock();
 		pag->uso = true;
+		pthread_mutex_unlock(tabla_paginas);
 
 		bool buscarSigPag(t_pagina* pag){
 			return pag->id_pagina > *pagina;
 		};
 		
+		pthread_mutex_lock(tabla_paginas);
 		t_pagina* paginaDeSiguienteHeap = list_find(carpincho->tabla_de_paginas, (void*)buscarSigPag);
+		pthread_mutex_unlock(tabla_paginas);
 		*pagina = paginaDeSiguienteHeap->id_pagina;
 
+		int DF = buscar_TLB(paginaDeSiguienteHeap);
 		reemplazo(&DF, carpincho, paginaDeSiguienteHeap);
 
 		pthread_mutex_lock(memoria);
 		memcpy(memoriaPrincipal + DF , buffer_heap + (tamanioPagina - *desplazamiento) , TAMANIO_HEAP - (tamanioPagina - *desplazamiento));
 		pthread_mutex_unlock(memoria);
 		
+		pthread_mutex_lock(tabla_paginas);
 		paginaDeSiguienteHeap->modificado = true;
 		paginaDeSiguienteHeap->ultimoUso = clock();
 		paginaDeSiguienteHeap->uso = true;
+		pthread_mutex_unlock(tabla_paginas);
 
 		*desplazamiento = - (tamanioPagina - *desplazamiento); //esto esta re trambolico porque despues le suma 9
 
@@ -491,9 +510,11 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		memcpy(memoriaPrincipal + DF + *desplazamiento, heap, TAMANIO_HEAP);
 		pthread_mutex_unlock(memoria);
 
+		pthread_mutex_lock(tabla_paginas);
 		pag->modificado = true;
 		pag->ultimoUso = clock();
 		pag->uso = true;
+		pthread_mutex_unlock(tabla_paginas);
 		free(heap);
 
 	}
@@ -572,9 +593,11 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, tamanioPagina - (*desplazamiento + TAMANIO_HEAP + tamanio));
 		pthread_mutex_unlock(memoria);
 		
+		pthread_mutex_lock(tabla_paginas);
 		pag->modificado = true;
 		pag->ultimoUso = clock();
 		pag->uso = true;
+		pthread_mutex_unlock(tabla_paginas);
 
 		free(nuevoHeap);
 
@@ -585,6 +608,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	bool paginas_nuevas(t_pagina* pag){
 		return pag->esNueva;
 	};
+	pthread_mutex_lock(tabla_paginas);
 	t_list* paginasNuevas = list_filter(carpincho->tabla_de_paginas, (void*)paginas_nuevas);
 
 
@@ -593,6 +617,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	};
 
 	list_iterate(paginasNuevas, (void*)ponerlasPresentes);
+	pthread_mutex_unlock(tabla_paginas);
 
 	escribirMemoria(buffer_allocs, paginasNuevas, marcos_a_asignar, carpincho);
 
