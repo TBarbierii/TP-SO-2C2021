@@ -48,7 +48,7 @@ void inicializarTodo(){
 
     logsObligatorios =  log_create("cfg/logsObligatorios.log","Log",1,LOG_LEVEL_INFO);
     loggerServidor =  log_create("cfg/Servidor.log","ServidorYSwamp",1,LOG_LEVEL_DEBUG);
-    
+    loggerMemalloc =  log_create("cfg/Memalloc.log","Memalloc",1,LOG_LEVEL_INFO);
 
     listaCarpinchos = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(listaCarpinchos,NULL);
@@ -76,6 +76,10 @@ void inicializarTodo(){
 
     tabla_paginas =  malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(tabla_paginas,NULL);
+    
+    recorrer_marcos_mutex =  malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(recorrer_marcos_mutex,NULL);
+
 
     id_carpincho = 1;
 

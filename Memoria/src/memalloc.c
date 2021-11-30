@@ -67,7 +67,9 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         void* buffer_allocs = generar_buffer_allocs(tamanio, next_alloc,cantidadDePaginasACrear, PRIMERA_VEZ, 0);
 
+		pthread_mutex_lock(marcos_sem);
         escribirMemoria(buffer_allocs, carpincho->tabla_de_paginas, marcos_a_asignar, carpincho);
+		pthread_mutex_unlock(marcos_sem);
 
         free (buffer_allocs);
         
@@ -104,7 +106,9 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         while(heap->nextAlloc != -1)
         {
             if(!(heap->isFree)){
+			pthread_mutex_lock(recorrer_marcos_mutex);
             pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho, &posicionHeap, &desplazamiento);
+			pthread_mutex_unlock(recorrer_marcos_mutex);
             }
             
             if(heap->nextAlloc == -1) break;
@@ -114,8 +118,10 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
             if (tamanio == espacioEncontrado || tamanio + TAMANIO_HEAP < espacioEncontrado ){ // +9 porque si es mas chico en lo que sobra tiene que entrar el otro heap (aunque tambien habria que agregar +minimo_espacio_aceptable)
                 break;
             }else{
-
+			
+			pthread_mutex_lock(recorrer_marcos_mutex);
             pagina = buscarSiguienteHeapLibre(heap, &DF, carpincho, &posicionHeap, &desplazamiento);
+			pthread_mutex_unlock(recorrer_marcos_mutex);
             }
 
         }
@@ -260,19 +266,30 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 
 	t_log* loggerMarcos = log_create("cfg/Marcos.log","EscrituraDeMarcos",1, LOG_LEVEL_INFO);
 
-	int contador = 0; 
+	bool marcoSinAsignar(t_marco* marco){
+		
+		 return marco->proceso_asignado == -1;
+		
+	}
+
+	int contador = 0;
 
 	void escribir_paginas_en_marcos(t_pagina* pag){
 
 		if (contador >= list_size(marcos_a_asignar)) {
 			pthread_mutex_lock(swap);
 			marco = reemplazarPagina(carpincho);
+			log_warning(loggerMarcos, "El proceso %i va a reemplazo el marco para escribirlo %i ", carpincho->id_carpincho, marco->id_marco);
 			pthread_mutex_unlock(swap);
 
 		} else {
-			pthread_mutex_lock(marcos_sem);
-			marco = list_get(marcos_a_asignar, contador);
-			pthread_mutex_unlock(marcos_sem);
+			
+			if(strcmp(tipoAsignacion, "DINAMICA") == 0){
+				marco = list_find(marcos_a_asignar, (void*)marcoSinAsignar);
+			}else if (strcmp(tipoAsignacion, "FIJA") == 0){
+				marco = list_get(marcos_a_asignar, contador);
+			}
+			log_warning(loggerMarcos, "El proceso %i va a escribir el marco %i ", carpincho->id_carpincho, marco->id_marco);
 		}
 
 		if(marco->estaLibre){
@@ -287,12 +304,12 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 			pag->esNueva = false;
 			pthread_mutex_unlock(tabla_paginas);
 			//aca como estamos tocando el marco que son variables globales, deberiamos poner entre los semaforos
-			pthread_mutex_lock(marcos_sem);
+			
 			marco->estaLibre = false;
 			marco->proceso_asignado=carpincho->id_carpincho;
-			pthread_mutex_unlock(marcos_sem);
+			
 
-			//log_info(loggerMarcos, "Se escribe sobre el MARCO: %d, la PAGINA: %d, del proceso :%d", marco->id_marco, pag->id_pagina, carpincho->id_carpincho);
+			log_info(loggerMarcos, "Se escribe sobre el MARCO: %d, la PAGINA: %d, del proceso :%d", marco->id_marco, pag->id_pagina, carpincho->id_carpincho);
 			
 		}
 		contador++;
@@ -377,9 +394,11 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 		pthread_mutex_lock(tabla_paginas);
 		paginaDeSiguienteHeap->ultimoUso = clock();
 		paginaDeSiguienteHeap->uso = true;
-		pthread_mutex_lock(tabla_paginas);
+		pthread_mutex_unlock(tabla_paginas);
 
 		}
+
+		log_error(loggerMemalloc, "BUSCANDO HUEQUITO");
 
 	} while (!(heap->isFree));
 
@@ -452,8 +471,6 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	pthread_mutex_lock(tabla_paginas);
     t_pagina* pag = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
 	pthread_mutex_unlock(tabla_paginas);
-	
-	log_info(loggerServidor, "\nXDDDDDDDDDDDD");
 	
 	int DF = buscar_TLB(pag);
 
@@ -570,10 +587,10 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 	t_list* marcos_a_asignar = buscarMarcosLibres(carpincho);
 
-	if(list_size(marcos_a_asignar)<cantidadDePaginasACrear){//faltan marcos. hay que liberar los que faltan (mandar a swap)
+	/* if(list_size(marcos_a_asignar)<cantidadDePaginasACrear){//faltan marcos. hay que liberar los que faltan (mandar a swap)
 
 		int marcosFaltantes = cantidadDePaginasACrear - list_size(marcos_a_asignar);
-
+		pthread_mutex_lock(marcos_sem)
 		for(int i=0; i< marcosFaltantes; i++){
 			pthread_mutex_lock(swap);
 			reemplazarPagina(carpincho);
@@ -581,7 +598,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		}//hace espacio para poner las paginas nuevas
 		list_destroy(marcos_a_asignar);
 		marcos_a_asignar = buscarMarcosLibres(carpincho);
-	}
+	}*/
 
 	if(cantidadDePaginasACrear == 1 && (*desplazamiento + TAMANIO_HEAP + tamanio) < tamanioPagina){ //actualiza el primer pedacito del heap cortado al final de la misma pagina
 
@@ -619,7 +636,9 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	list_iterate(paginasNuevas, (void*)ponerlasPresentes);
 	pthread_mutex_unlock(tabla_paginas);
 
+	pthread_mutex_lock(marcos_sem);
 	escribirMemoria(buffer_allocs, paginasNuevas, marcos_a_asignar, carpincho);
+	pthread_mutex_unlock(marcos_sem);
 
 	free(buffer_allocs);
 	free(nuevoHeap);
