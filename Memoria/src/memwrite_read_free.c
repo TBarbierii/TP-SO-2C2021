@@ -127,7 +127,9 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
     return s->id_pagina == id;
     };
 
+    pthread_mutex_lock(swap);
     t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
+    pthread_mutex_unlock(swap);
 
     int32_t presente = buscar_TLB(pagina);
 
@@ -181,7 +183,9 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
             }
         }
 
+        pthread_mutex_lock(swap);
         t_pagina* ultimaPagina = list_get(capybara->tabla_de_paginas, contador);
+        pthread_mutex_unlock(swap);
 
         int32_t presente = buscar_TLB(ultimaPagina);
 
@@ -191,9 +195,11 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
         memcpy(memoriaPrincipal + (ultimaPagina->marco->comienzo), contenido + bytesPrimeraEscritura, resto);
         pthread_mutex_unlock(memoria);
 
+        pthread_mutex_lock(swap);
         ultimaPagina->modificado = true;
         ultimaPagina->ultimoUso = clock();
         ultimaPagina->uso = true;
+        pthread_mutex_unlock(swap);
 
     }else{
 

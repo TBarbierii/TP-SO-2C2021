@@ -111,7 +111,8 @@ t_paquete* crear_paquete(cod_operacion codigo)
 
 void enviarPaquete(t_paquete* paquete, int conexion){
 
-    int bytes = paquete->buffer->size + sizeof(cod_operacion) + sizeof(uint32_t);
+	int bytes = 0;
+    bytes = paquete->buffer->size + sizeof(cod_operacion) + sizeof(uint32_t);
     void* contenido_a_enviar= serializar_paquete(paquete, bytes);
     send(conexion, contenido_a_enviar,bytes,0);
     free(contenido_a_enviar);

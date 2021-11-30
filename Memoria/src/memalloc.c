@@ -53,12 +53,13 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
             void* paginaVacia = malloc(tamanioPagina);
             for(int j=0; j<tamanioPagina;j++){
-                 char valor = "\0";
+                 char valor = '\0';
                 memcpy(paginaVacia +j, &valor, 1);
             }
            
             enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, paginaVacia);
-            free(paginaVacia);
+            
+			free(paginaVacia);
 
             list_add(carpincho->tabla_de_paginas, pagina);
         }
@@ -260,12 +261,14 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 	void escribir_paginas_en_marcos(t_pagina* pag){
 
 		if (contador >= list_size(marcos_a_asignar)) {
+			pthread_mutex_lock(swap);
 			marco = reemplazarPagina(carpincho);
+			pthread_mutex_unlock(swap);
 
 		} else {
-
+			pthread_mutex_lock(marcos_sem);
 			marco = list_get(marcos_a_asignar, contador);
-
+			pthread_mutex_unlock(marcos_sem);
 		}
 
 		if(marco->estaLibre){
@@ -274,9 +277,11 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 			memcpy(memoriaPrincipal + marco->comienzo, buffer + (contador*tamanioPagina), tamanioPagina);
 			pthread_mutex_unlock(memoria);
 
+			pthread_mutex_lock(swap);
 			pag->marco = marco;
 			pag->presente = true;
 			pag->esNueva = false;
+			pthread_mutex_unlock(swap);
 			//aca como estamos tocando el marco que son variables globales, deberiamos poner entre los semaforos
 			pthread_mutex_lock(marcos_sem);
 			marco->estaLibre = false;
@@ -373,32 +378,38 @@ t_list* buscarMarcosLibres(t_carpincho* carpincho){
 
 		if(strcmp(tipoAsignacion, "FIJA") == 0){
 			 
+			pthread_mutex_lock(marcos_sem);
 			bool buscarMarcosDelProceso(t_marco* marco){
 				return marco->proceso_asignado == carpincho->id_carpincho;
 			};
-
+		
 			t_list *marcos_del_proceso = list_filter(marcos, (void*)buscarMarcosDelProceso);
+
 
 			bool marcosLibres(t_marco* marco){
 				return marco->estaLibre;
 			};
 			
 			t_list* marcos_a_asignar = list_filter(marcos_del_proceso, (void*)marcosLibres);
+			pthread_mutex_unlock(marcos_sem);
 
 			return marcos_a_asignar;   
 			
 		}
 		if(strcmp(tipoAsignacion, "DINAMICA") == 0){
 		
-		bool noEstanAsignados(t_marco* marco){
-			return marco->proceso_asignado == -1;
-        };
+			pthread_mutex_lock(marcos_sem);
+			bool noEstanAsignados(t_marco* marco){
+				return marco->proceso_asignado == -1;
+			};
 
-	 	t_list *marcos_sin_asignar = list_filter(marcos, (void*)noEstanAsignados);
+			t_list *marcos_sin_asignar = list_filter(marcos, (void*)noEstanAsignados);
+			pthread_mutex_unlock(marcos_sem);
+
 			return marcos_sin_asignar;
-		
-		}else{
-			return NULL;
+			
+			}else{
+				return NULL;
 		}
 }
 
@@ -423,9 +434,13 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	bool buscarPag(t_pagina* pag){
     return pag->id_pagina == *pagina;
     };
-
-    t_pagina* pag = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
 	
+
+	pthread_mutex_lock(swap);
+    t_pagina* pag = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
+	pthread_mutex_unlock(swap);
+	
+	log_info(loggerServidor, "\nXDDDDDDDDDDDD");
 	
 	int DF = buscar_TLB(pag);
 
@@ -491,7 +506,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	nuevoHeap->isFree = true;
 	nuevoHeap->prevAlloc = posicionUltimoHeap;
 	nuevoHeap->nextAlloc = -1;
-
+	
 	pthread_mutex_lock(swap);
 	for(int i=0; i<cantidadDePaginasACrear; i++){
 
@@ -504,12 +519,21 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
         pagina->modificado = true;
 		pagina->id_carpincho = carpincho->id_carpincho;
 
-		enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, "");
+		void* paginaVacia = malloc(tamanioPagina);
 
+		for(int j=0; j<tamanioPagina;j++){
+            char valor = '\0';
+            memcpy(paginaVacia +j, &valor, 1);
+        }
+
+		enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, paginaVacia);
+
+		free(paginaVacia);
 		list_add(carpincho->tabla_de_paginas, pagina);
 
 	}
 	pthread_mutex_unlock(swap);
+
 
 	if(cantidadDePaginasACrear == 0){ //hay que crear el alloc en la misma pag. TODO verificar que este presente?
 
@@ -530,7 +554,9 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		int marcosFaltantes = cantidadDePaginasACrear - list_size(marcos_a_asignar);
 
 		for(int i=0; i< marcosFaltantes; i++){
-		reemplazarPagina(carpincho);
+			pthread_mutex_lock(swap);
+			reemplazarPagina(carpincho);
+			pthread_mutex_unlock(swap);
 		}//hace espacio para poner las paginas nuevas
 		list_destroy(marcos_a_asignar);
 		marcos_a_asignar = buscarMarcosLibres(carpincho);

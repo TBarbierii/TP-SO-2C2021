@@ -3,7 +3,6 @@
 int32_t buscar_TLB(t_pagina* pagina){
 
 	pthread_mutex_lock(TLB_mutex);
-
 	bool buscarPagina(t_pagina *pag){
 		return pag->id_pagina == pagina->id_pagina && pag->id_carpincho == pagina->id_carpincho;
 	};
@@ -54,10 +53,9 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		pthread_mutex_unlock(TLB_mutex);
 		free(contenido);
 
-		return victima->marco;	
-	}
+		return victima->marco;
 
-	if(strcmp(tipoAsignacion, "DINAMICA") == 0){
+	}else if(strcmp(tipoAsignacion, "DINAMICA") == 0){
 		
 		bool paginasPresentes(t_pagina* pag){
 			return pag->presente;
@@ -66,15 +64,19 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		t_list* paginas_a_reemplazar = list_create();
 
 		pthread_mutex_lock(listaCarpinchos);
-		for (int i=0; i<list_size(carpinchos); i++){
-
+		int cantidad = list_size(carpinchos);
+		pthread_mutex_unlock(listaCarpinchos);
+		
+		for (int i=0; i<cantidad; i++){
+			pthread_mutex_lock(listaCarpinchos);
 			t_carpincho* carp = list_get(carpinchos, i);
+			pthread_mutex_unlock(listaCarpinchos);
+			pthread_mutex_lock(swap);
 			t_list* paginas = list_filter(carp->tabla_de_paginas, (void*)paginasPresentes);
+			pthread_mutex_unlock(swap);
 			list_add_all(paginas_a_reemplazar, paginas);
 			list_destroy(paginas);
 		}
-		pthread_mutex_unlock(listaCarpinchos);
-	
 		
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho); 
 
@@ -83,6 +85,12 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		list_destroy(paginas_a_reemplazar);  												
 
 		void* contenido = malloc(tamanioPagina);
+		
+		for(int j=0; j<tamanioPagina;j++){
+            char valor = '\0';
+            memcpy(contenido +j, &valor, 1);
+        }
+
 		pthread_mutex_lock(memoria);
 		memcpy(contenido, memoriaPrincipal + victima->marco->comienzo, tamanioPagina);
 		pthread_mutex_unlock(memoria);
@@ -90,7 +98,6 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		if(victima->modificado)
 		enviar_pagina(victima->id_carpincho, victima->id_pagina, contenido);
 		
-
 		victima->presente = false;
 		victima->marco->estaLibre = true;
 		victima->marco->proceso_asignado = -1;
@@ -113,17 +120,18 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 }
 
 t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* carpincho){
-	
+	t_log* loggerBucle = log_create("cfg/Reemplazos.log", "Reemplazos", 1, LOG_LEVEL_INFO);
 	if(strcmp(algoritmoReemplazoMMU, "LRU") == 0){
 		
 		bool comparator(t_pagina* p1, t_pagina* p2){
 			return p1->ultimoUso < p2->ultimoUso;
 		};
-		
+		log_info(loggerBucle, "\nEl proceso que va a realizar el reemplazo es %d", carpincho->id_carpincho);
 		t_list* paginasOrdenadas = list_sorted(paginas_a_reemplazar, (void*)comparator);
 
 		t_pagina* pag = list_get(paginasOrdenadas, 0);
-
+		log_info(loggerBucle, "La pagina reemplazada es la %d y pertenece al carpincho %d\n", pag->id_pagina, pag->id_carpincho);
+		log_destroy(loggerBucle);
 		list_destroy(paginasOrdenadas);
 		return pag;
 	}
@@ -242,7 +250,6 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 		}
 
 	}
-
 }
 
 void algoritmo_reemplazo_TLB(t_pagina* pagina){
@@ -285,11 +292,9 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
 			log_info(logsObligatorios, "Entrada TLB. NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 
-		}
 
-		if(strcmp(algoritmoReemplazoTLB, "FIFO") == 0){
+		}else if(strcmp(algoritmoReemplazoTLB, "FIFO") == 0){
 
-			
 			t_pagina* pag = list_remove(TLB,0);
 			pag->presente = false;
 			log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
@@ -310,6 +315,8 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 		
 		log_info(logsObligatorios, "Entrada TLB. NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 
+	}else{
+		pthread_mutex_unlock(TLB_mutex);
 	}
 }
 
@@ -330,8 +337,8 @@ uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida){
 	log_info(logsObligatorios, "Pagina entrante: Pid: %i, Página: %i, Marco: %i", carpincho->id_carpincho, paginaPedida->id_pagina, paginaPedida->marco->id_marco);
 
 
-	heapMetadata* heap = malloc(TAMANIO_HEAP);
-	memcpy(heap, contenido, TAMANIO_HEAP);
+//	heapMetadata* heap = malloc(TAMANIO_HEAP);
+//	memcpy(heap, contenido, TAMANIO_HEAP);
 
    	pthread_mutex_lock(memoria);
 	memcpy(memoriaPrincipal + paginaPedida->marco->comienzo, contenido, tamanioPagina);
@@ -339,7 +346,7 @@ uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida){
 
 
 	algoritmo_reemplazo_TLB(paginaPedida);
-
+	free(contenido);
 	return marcoLiberado->comienzo;
 }
 
