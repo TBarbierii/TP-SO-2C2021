@@ -1,0 +1,154 @@
+[INFO] 21:00:48:407 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:00:48:407 OperacionesServidor/(17997:17997): El codigo de operacion es: 13
+[INFO] 21:00:48:408 OperacionesServidor/(17997:17997): Tipo de asignacion a utilizar: DINAMICA.
+[INFO] 21:00:53:424 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:00:53:424 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:00:53:425 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 21:00:53:425 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 256
+[INFO] 21:00:53:425 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:00:53:425 OperacionesServidor/(17997:17997): El codigo de operacion es: 11
+[INFO] 21:00:53:426 OperacionesServidor/(17997:17997): Se guarda la pagina: 0 del proceso: 1
+[INFO] 21:00:53:426 OperacionesServidor/(17997:17997): El archivo que vamos a utilizar tiene 256 cantidad de frames libres
+[INFO] 21:00:53:426 OperacionesServidor/(17997:17997): Todo bien se realizo con la asignacion Dinamica
+[INFO] 21:00:53:427 OperacionesServidor/(17997:17997): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 21:00:53:427 OperacionesServidor/(17997:17997): Se escribe sobre la particion: 0
+[INFO] 21:00:53:427 OperacionesServidor/(17997:17997): Se guardo el contenido correctamente
+[INFO] 21:00:54:627 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:00:54:627 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:00:54:628 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:00:54:628 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:00:56:031 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:00:56:031 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:00:56:032 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:00:56:032 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:00:57:535 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:00:57:535 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:00:57:537 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:00:57:537 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:00:59:141 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:00:59:141 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:00:59:142 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 21:00:59:142 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:00:59:243 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:00:59:243 OperacionesServidor/(17997:17997): El codigo de operacion es: 11
+[INFO] 21:00:59:244 OperacionesServidor/(17997:17997): Se guarda la pagina: 1 del proceso: 1
+[INFO] 21:00:59:244 OperacionesServidor/(17997:17997): No se encontro la siguiente particion
+[INFO] 21:01:00:848 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:01:00:848 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:01:00:849 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:01:00:849 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:01:02:655 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:01:02:655 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:01:02:656 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:01:02:657 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:01:04:563 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:01:04:563 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:01:04:565 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:01:04:565 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:01:05:570 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:01:05:570 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:01:05:572 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:01:05:572 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:02:55:719 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:02:55:719 OperacionesServidor/(17997:17997): El codigo de operacion es: 13
+[INFO] 21:02:55:721 OperacionesServidor/(17997:17997): Tipo de asignacion a utilizar: DINAMICA.
+[INFO] 21:03:02:931 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:02:931 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:02:932 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 21:03:02:932 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:03:02:935 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:02:935 OperacionesServidor/(17997:17997): El codigo de operacion es: 11
+[INFO] 21:03:02:937 OperacionesServidor/(17997:17997): Se guarda la pagina: 0 del proceso: 1
+[INFO] 21:03:02:937 OperacionesServidor/(17997:17997): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 21:03:02:937 OperacionesServidor/(17997:17997): Se sobreescribe sobre la particion: 0
+[INFO] 21:03:02:937 OperacionesServidor/(17997:17997): Se guardo el contenido correctamente
+[INFO] 21:03:04:158 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:04:159 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:04:160 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:03:04:160 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:03:05:568 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:05:568 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:05:570 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:03:05:570 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:03:07:076 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:07:076 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:07:077 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:03:07:077 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:03:08:685 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:08:685 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:08:686 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 21:03:08:686 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:03:08:788 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:08:788 OperacionesServidor/(17997:17997): El codigo de operacion es: 11
+[INFO] 21:03:08:790 OperacionesServidor/(17997:17997): Se guarda la pagina: 1 del proceso: 1
+[INFO] 21:03:08:790 OperacionesServidor/(17997:17997): No se encontro la siguiente particion
+[INFO] 21:03:10:399 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:10:399 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:10:400 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:03:10:400 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:03:12:210 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:12:210 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:12:211 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:03:12:211 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:03:14:121 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:14:121 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:14:122 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:03:14:122 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:03:15:133 OperacionesServidor/(17997:17997): Recibimos la informacion de la RAM
+[INFO] 21:03:15:133 OperacionesServidor/(17997:17997): El codigo de operacion es: 16
+[INFO] 21:03:15:134 OperacionesServidor/(17997:17997): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 21:03:15:134 OperacionesServidor/(17997:17997): Cantidad de frames disponibles para el proceso 1: 255
+[INFO] 21:07:26:195 OperacionesServidor/(18118:18118): Recibimos la informacion de la RAM
+[INFO] 21:07:26:195 OperacionesServidor/(18118:18118): El codigo de operacion es: 13
+[INFO] 21:07:26:196 OperacionesServidor/(18118:18118): Tipo de asignacion a utilizar: DINAMICA.
+[INFO] 21:07:29:163 OperacionesServidor/(18118:18118): Recibimos la informacion de la RAM
+[INFO] 21:07:29:163 OperacionesServidor/(18118:18118): El codigo de operacion es: 16
+[INFO] 21:07:29:164 OperacionesServidor/(18118:18118): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 21:07:29:164 OperacionesServidor/(18118:18118): Cantidad de frames disponibles para el proceso 3: 256
+[INFO] 21:07:29:166 OperacionesServidor/(18118:18118): Recibimos la informacion de la RAM
+[INFO] 21:07:29:166 OperacionesServidor/(18118:18118): El codigo de operacion es: 11
+[INFO] 21:07:29:167 OperacionesServidor/(18118:18118): Se guarda la pagina: 0 del proceso: 3
+[INFO] 21:07:29:167 OperacionesServidor/(18118:18118): El archivo que vamos a utilizar tiene 256 cantidad de frames libres
+[INFO] 21:07:29:168 OperacionesServidor/(18118:18118): Todo bien se realizo con la asignacion Dinamica
+[INFO] 21:07:29:168 OperacionesServidor/(18118:18118): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 21:07:29:168 OperacionesServidor/(18118:18118): Se escribe sobre la particion: 0
+[INFO] 21:07:29:168 OperacionesServidor/(18118:18118): Se guardo el contenido correctamente
+[INFO] 21:07:29:168 OperacionesServidor/(18118:18118): Recibimos la informacion de la RAM
+[INFO] 21:07:29:168 OperacionesServidor/(18118:18118): El codigo de operacion es: 18
+[INFO] 21:07:29:170 OperacionesServidor/(18118:18118): El proceso: 4, pide finalizar
+[INFO] 21:07:30:646 OperacionesServidor/(18118:18118): Recibimos la informacion de la RAM
+[INFO] 21:07:30:646 OperacionesServidor/(18118:18118): El codigo de operacion es: 18
+[INFO] 21:07:30:647 OperacionesServidor/(18118:18118): El proceso: 2, pide finalizar
+[INFO] 21:08:22:194 OperacionesServidor/(18118:18118): Recibimos la informacion de la RAM
+[INFO] 21:08:22:194 OperacionesServidor/(18118:18118): El codigo de operacion es: 18
+[INFO] 21:08:22:195 OperacionesServidor/(18118:18118): El proceso: 3, pide finalizar
+[INFO] 21:08:29:161 OperacionesServidor/(18118:18118): Recibimos la informacion de la RAM
+[INFO] 21:08:29:161 OperacionesServidor/(18118:18118): El codigo de operacion es: 18
+[INFO] 21:08:29:162 OperacionesServidor/(18118:18118): El proceso: 1, pide finalizar
+[INFO] 21:09:07:481 OperacionesServidor/(18221:18221): Recibimos la informacion de la RAM
+[INFO] 21:09:07:481 OperacionesServidor/(18221:18221): El codigo de operacion es: 13
+[INFO] 21:09:07:483 OperacionesServidor/(18221:18221): Tipo de asignacion a utilizar: DINAMICA.
+[INFO] 21:09:17:299 OperacionesServidor/(18221:18221): Recibimos la informacion de la RAM
+[INFO] 21:09:17:299 OperacionesServidor/(18221:18221): El codigo de operacion es: 16
+[INFO] 21:09:17:301 OperacionesServidor/(18221:18221): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 21:09:17:301 OperacionesServidor/(18221:18221): Cantidad de frames disponibles para el proceso 3: 256
+[INFO] 21:09:17:303 OperacionesServidor/(18221:18221): Recibimos la informacion de la RAM
+[INFO] 21:09:17:303 OperacionesServidor/(18221:18221): El codigo de operacion es: 11
+[INFO] 21:09:17:306 OperacionesServidor/(18221:18221): Se guarda la pagina: 0 del proceso: 3
+[INFO] 21:09:17:306 OperacionesServidor/(18221:18221): El archivo que vamos a utilizar tiene 256 cantidad de frames libres
+[INFO] 21:09:17:306 OperacionesServidor/(18221:18221): Todo bien se realizo con la asignacion Dinamica
+[INFO] 21:09:17:306 OperacionesServidor/(18221:18221): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 21:09:17:306 OperacionesServidor/(18221:18221): Se escribe sobre la particion: 0
+[INFO] 21:09:17:306 OperacionesServidor/(18221:18221): Se guardo el contenido correctamente
+[INFO] 21:09:17:308 OperacionesServidor/(18221:18221): Recibimos la informacion de la RAM
+[INFO] 21:09:17:308 OperacionesServidor/(18221:18221): El codigo de operacion es: 18
+[INFO] 21:09:17:309 OperacionesServidor/(18221:18221): El proceso: 4, pide finalizar
+[INFO] 21:09:18:769 OperacionesServidor/(18221:18221): Recibimos la informacion de la RAM
+[INFO] 21:09:18:769 OperacionesServidor/(18221:18221): El codigo de operacion es: 18
+[INFO] 21:09:18:770 OperacionesServidor/(18221:18221): El proceso: 2, pide finalizar
+[INFO] 21:10:10:278 OperacionesServidor/(18221:18221): Recibimos la informacion de la RAM
+[INFO] 21:10:10:278 OperacionesServidor/(18221:18221): El codigo de operacion es: 18
+[INFO] 21:10:10:279 OperacionesServidor/(18221:18221): El proceso: 3, pide finalizar
+[INFO] 21:10:17:297 OperacionesServidor/(18221:18221): Recibimos la informacion de la RAM
+[INFO] 21:10:17:297 OperacionesServidor/(18221:18221): El codigo de operacion es: 18
+[INFO] 21:10:17:298 OperacionesServidor/(18221:18221): El proceso: 1, pide finalizar

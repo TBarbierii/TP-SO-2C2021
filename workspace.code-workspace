@@ -23,6 +23,7 @@
 			"memoriavirtual_suspencion.h": "c",
 			"config.h": "c",
 			"unistd.h": "c"
-		}
+		},
+		"git.ignoreLimitWarning": true
 	}
 }

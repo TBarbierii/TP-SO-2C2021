@@ -82,7 +82,7 @@ void rutinaDeProceso(){
 
             }else if(rompoElHiloSegunElCodigo(codigoOperacion) == 2){
                 
-                log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho");
+                log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente");
                 sem_post(nivelMultiprocesamiento); //aumento el grado de multiprogramacion y multiprocesamiento
 	            sem_post(nivelMultiProgramacionGeneral);
                 break;

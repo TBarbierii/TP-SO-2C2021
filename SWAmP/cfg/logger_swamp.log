@@ -1,0 +1,58 @@
+[INFO] 21:00:46:628 SWAmP/(17997:17997): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 0
+[INFO] 21:00:46:628 SWAmP/(17997:17997): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 1
+[INFO] 21:00:46:628 SWAmP/(17997:17997): Se han creado todos los archivos
+[INFO] 21:00:46:628 SWAmP/(17997:17997): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 21:00:48:407 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:00:53:424 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:00:53:425 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:00:54:627 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:00:56:031 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:00:57:535 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:00:59:140 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:00:59:243 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:01:00:848 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:01:02:655 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:01:04:563 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:01:05:570 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:02:55:716 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:02:930 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:02:935 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:04:158 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:05:568 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:07:076 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:08:685 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:08:788 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:10:399 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:12:210 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:14:121 SWAmP/(17997:17997): Solicitud de memoria entrante
+[DEBUG] 21:03:15:132 SWAmP/(17997:17997): Solicitud de memoria entrante
+[INFO] 21:05:54:805 SWAmP/(18118:18118): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 0
+[INFO] 21:05:54:805 SWAmP/(18118:18118): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 1
+[INFO] 21:05:54:805 SWAmP/(18118:18118): Se han creado todos los archivos
+[INFO] 21:05:54:805 SWAmP/(18118:18118): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 21:07:26:195 SWAmP/(18118:18118): Solicitud de memoria entrante
+[DEBUG] 21:07:29:162 SWAmP/(18118:18118): Solicitud de memoria entrante
+[DEBUG] 21:07:29:166 SWAmP/(18118:18118): Solicitud de memoria entrante
+[DEBUG] 21:07:29:168 SWAmP/(18118:18118): Solicitud de memoria entrante
+[ERROR] 21:07:29:170 SWAmP/(18118:18118): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 21:07:30:646 SWAmP/(18118:18118): Solicitud de memoria entrante
+[ERROR] 21:07:30:647 SWAmP/(18118:18118): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 21:08:22:194 SWAmP/(18118:18118): Solicitud de memoria entrante
+[INFO] 21:08:22:195 SWAmP/(18118:18118): Proceso 3 finalizado con exito
+[DEBUG] 21:08:29:161 SWAmP/(18118:18118): Solicitud de memoria entrante
+[ERROR] 21:08:29:162 SWAmP/(18118:18118): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[INFO] 21:08:55:608 SWAmP/(18221:18221): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 0
+[INFO] 21:08:55:608 SWAmP/(18221:18221): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 1
+[INFO] 21:08:55:608 SWAmP/(18221:18221): Se han creado todos los archivos
+[INFO] 21:08:55:608 SWAmP/(18221:18221): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 21:09:07:481 SWAmP/(18221:18221): Solicitud de memoria entrante
+[DEBUG] 21:09:17:299 SWAmP/(18221:18221): Solicitud de memoria entrante
+[DEBUG] 21:09:17:303 SWAmP/(18221:18221): Solicitud de memoria entrante
+[DEBUG] 21:09:17:308 SWAmP/(18221:18221): Solicitud de memoria entrante
+[ERROR] 21:09:17:310 SWAmP/(18221:18221): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 21:09:18:769 SWAmP/(18221:18221): Solicitud de memoria entrante
+[ERROR] 21:09:18:770 SWAmP/(18221:18221): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 21:10:10:277 SWAmP/(18221:18221): Solicitud de memoria entrante
+[INFO] 21:10:10:279 SWAmP/(18221:18221): Proceso 3 finalizado con exito
+[DEBUG] 21:10:17:297 SWAmP/(18221:18221): Solicitud de memoria entrante
+[ERROR] 21:10:17:298 SWAmP/(18221:18221): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP

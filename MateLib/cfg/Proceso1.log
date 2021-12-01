@@ -1,0 +1,852 @@
+[INFO] 21:00:53:423 loggerContenidoProceso/(18033:18034): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 21:00:53:423 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:200
+[INFO] 21:00:53:426 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:00:53:426 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:00:54:426 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:200
+[INFO] 21:00:54:729 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:00:54:729 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:00:55:729 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:200
+[INFO] 21:00:56:133 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:00:56:133 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:00:57:133 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:200
+[INFO] 21:00:57:637 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:00:57:637 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:00:58:637 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:200
+[INFO] 21:00:59:243 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:00:59:243 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:01:00:244 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:200
+[INFO] 21:01:00:950 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:01:00:950 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:01:01:951 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:200
+[INFO] 21:01:02:758 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:01:02:758 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:01:03:759 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:200
+[INFO] 21:01:04:666 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:01:04:666 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:01:04:666 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[INFO] 21:01:05:673 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:01:05:673 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:01:05:673 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 21:01:08:174 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:01:08:174 loggerContenidoProceso/(18033:18034): Se pudo realizar con exito la operacion IO
+[INFO] 21:01:08:174 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 1001657
+[INFO] 21:01:08:274 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memfree
+[ERROR] 21:01:08:274 loggerContenidoProceso/(18033:18034): Se pudo realizar el memfree
+[INFO] 21:01:08:274 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[INFO] 21:01:08:274 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:01:08:274 loggerContenidoProceso/(18033:18034): Se pudo realizar con exito la operacion IO
+[INFO] 21:01:08:274 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 21:01:09:178 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer un memalloc
+[INFO] 21:01:09:178 loggerContenidoProceso/(18033:18034): Se pudo realizar el memalloc
+[INFO] 21:01:09:178 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 1
+[INFO] 21:01:09:178 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:01:09:178 loggerContenidoProceso/(18033:18034): Se pudo realizar con exito la operacion IO
+[INFO] 21:01:09:178 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[INFO] 21:01:11:679 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:01:11:679 loggerContenidoProceso/(18033:18034): Se pudo realizar con exito la operacion IO
+[INFO] 21:01:11:679 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 21:01:11:763 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:01:11:763 loggerContenidoProceso/(18033:18034): Se pudo realizar con exito la operacion IO
+[INFO] 21:01:11:763 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 1
+[INFO] 21:01:11:763 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:01:11:763 loggerContenidoProceso/(18033:18034): Se pudo realizar con exito la operacion IO
+[INFO] 21:01:11:763 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[INFO] 21:01:14:264 loggerContenidoProceso/(18033:18034): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:01:14:264 loggerContenidoProceso/(18033:18034): Se pudo realizar con exito la operacion IO
+[INFO] 21:01:14:264 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 1
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:265 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:265 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:266 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:266 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:267 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:267 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:268 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:268 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:269 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:269 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:269 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:269 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:269 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:282 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:284 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:284 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:285 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:285 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:286 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:286 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:298 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:298 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:298 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:299 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:299 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:299 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:299 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:299 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:299 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:299 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:01:14:299 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:299 loggerContenidoProceso/(18033:18034): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:01:14:299 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:299 loggerContenidoProceso/(18033:18034): Solicitamos realizar un memfree de 0
+[ERROR] 21:01:14:299 loggerContenidoProceso/(18033:18034): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:01:14:299 loggerContenidoProceso/(18033:18034): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[ERROR] 21:01:14:302 loggerContenidoProceso/(18033:18034): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:1
+[INFO] 21:01:14:302 loggerContenidoProceso/(18033:18034): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 21:03:02:924 loggerContenidoProceso/(18080:18081): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 21:03:02:924 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:200
+[INFO] 21:03:02:951 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:02:951 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:03:951 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:200
+[INFO] 21:03:04:263 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:04:263 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:05:264 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:200
+[INFO] 21:03:05:671 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:05:671 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:06:671 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:200
+[INFO] 21:03:07:179 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:07:179 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:08:179 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:200
+[INFO] 21:03:08:792 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:08:792 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:09:793 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:200
+[INFO] 21:03:10:502 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:10:502 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:11:502 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:200
+[INFO] 21:03:12:312 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:12:312 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:13:312 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:200
+[INFO] 21:03:14:224 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:14:224 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:14:224 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[INFO] 21:03:15:235 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:15:235 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:15:235 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 21:03:17:737 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:03:17:737 loggerContenidoProceso/(18080:18081): Se pudo realizar con exito la operacion IO
+[INFO] 21:03:17:737 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 1001657
+[INFO] 21:03:17:842 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memfree
+[ERROR] 21:03:17:842 loggerContenidoProceso/(18080:18081): Se pudo realizar el memfree
+[INFO] 21:03:17:842 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[INFO] 21:03:17:843 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:03:17:843 loggerContenidoProceso/(18080:18081): Se pudo realizar con exito la operacion IO
+[INFO] 21:03:17:843 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 21:03:18:754 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer un memalloc
+[INFO] 21:03:18:754 loggerContenidoProceso/(18080:18081): Se pudo realizar el memalloc
+[INFO] 21:03:18:754 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 1
+[INFO] 21:03:18:754 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:03:18:754 loggerContenidoProceso/(18080:18081): Se pudo realizar con exito la operacion IO
+[INFO] 21:03:18:754 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[INFO] 21:03:21:255 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:03:21:255 loggerContenidoProceso/(18080:18081): Se pudo realizar con exito la operacion IO
+[INFO] 21:03:21:255 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 21:03:21:301 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:03:21:301 loggerContenidoProceso/(18080:18081): Se pudo realizar con exito la operacion IO
+[INFO] 21:03:21:301 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 1
+[INFO] 21:03:21:302 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:03:21:302 loggerContenidoProceso/(18080:18081): Se pudo realizar con exito la operacion IO
+[INFO] 21:03:21:302 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[INFO] 21:03:23:803 loggerContenidoProceso/(18080:18081): Habiamos solicitado hacer una operacion IO y obtenemos una respuesta en base a eso
+[INFO] 21:03:23:803 loggerContenidoProceso/(18080:18081): Se pudo realizar con exito la operacion IO
+[INFO] 21:03:23:803 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 1
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:804 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:804 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:805 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:805 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:806 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:806 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:807 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:807 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:807 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:819 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:822 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:822 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:823 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:823 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:825 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:825 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memalloc de size:100
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Solicitamos realizar una operacion IO sobre el dispositivo: PILETA
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Solicitamos realizar un memfree de 0
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[ERROR] 21:03:23:838 loggerContenidoProceso/(18080:18081): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:1
+[INFO] 21:03:23:838 loggerContenidoProceso/(18080:18081): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 21:07:29:160 loggerContenidoProceso/(18159:18164): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 21:08:29:160 loggerContenidoProceso/(18159:18164): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 21:08:29:161 loggerContenidoProceso/(18159:18164): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 21:08:29:161 loggerContenidoProceso/(18159:18164): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 21:08:29:161 loggerContenidoProceso/(18159:18164): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 21:09:17:295 loggerContenidoProceso/(18258:18263): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 21:10:17:296 loggerContenidoProceso/(18258:18263): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 21:10:17:297 loggerContenidoProceso/(18258:18263): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 21:10:17:297 loggerContenidoProceso/(18258:18263): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 21:10:17:297 loggerContenidoProceso/(18258:18263): Se liberan todas las estructuras del proceso de PID:1

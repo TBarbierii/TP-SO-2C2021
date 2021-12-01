@@ -1,29 +1,1058 @@
-[INFO] 15:46:08:163 Semaforos/(10822:10830): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 15:46:08:164 Semaforos/(10822:10830): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 15:46:08:164 Semaforos/(10822:10830): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 15:48:27:139 Semaforos/(11188:11196): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 15:48:27:140 Semaforos/(11188:11196): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 15:48:27:140 Semaforos/(11188:11196): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 15:49:27:709 Semaforos/(11574:11581): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 15:49:27:709 Semaforos/(11574:11581): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 15:49:27:709 Semaforos/(11574:11581): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 15:52:44:130 Semaforos/(11922:11930): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 15:52:44:130 Semaforos/(11922:11930): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 15:52:44:130 Semaforos/(11922:11930): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 15:56:03:509 Semaforos/(12211:12220): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 15:56:03:510 Semaforos/(12211:12220): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 15:56:03:510 Semaforos/(12211:12220): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 15:58:23:278 Semaforos/(12453:12462): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 15:58:23:278 Semaforos/(12453:12462): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 15:58:23:278 Semaforos/(12453:12462): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 16:00:51:534 Semaforos/(12900:12907): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 16:00:51:535 Semaforos/(12900:12907): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 16:00:51:535 Semaforos/(12900:12907): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 16:01:16:773 Semaforos/(13044:13051): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 16:01:16:774 Semaforos/(13044:13051): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 16:01:16:774 Semaforos/(13044:13051): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 16:03:04:446 Semaforos/(13294:13303): Se ha creado un nuevo semaforo de nombre: SEM_HELLO y valor: 0
-[INFO] 16:03:04:447 Semaforos/(13294:13303): El proceso:1 realizo un wait del semaforo: SEM_HELLO y el valor decrecio a: -1
-[INFO] 16:03:04:447 Semaforos/(13294:13303): Se agrega el proceso con Pid:1 en bloqueado, y se agrega en la lista de espera del semaforo: SEM_HELLO
-[INFO] 16:03:06:984 Semaforos/(13294:13303): El proceso:2 realizo un signal del semaforo: SEM_HELLO y el valor se incremento a: 0
-[INFO] 16:03:06:984 Semaforos/(13294:13303): Se libera el proceso:2, de la lista de espera del semaforo: SEM_HELLO
+[INFO] 21:09:17:297 Semaforos/(18244:18255): Se ha creado un nuevo semaforo de nombre: SEMAFORO_NUEVO y valor: 1
+[INFO] 21:09:17:298 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:298 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:299 Semaforos/(18244:18257): Se ha creado un nuevo semaforo de nombre: SEMAFORO y valor: 1
+[INFO] 21:09:17:300 Semaforos/(18244:18257): El proceso:4 realizo un signal del semaforo: SEMAFORO y el valor se incremento a: 2
+[INFO] 21:09:17:300 Semaforos/(18244:18257): Como el semaforo: SEMAFORO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:300 Semaforos/(18244:18257): El proceso:4 realizo un signal del semaforo: SEMAFORO y el valor se incremento a: 3
+[INFO] 21:09:17:300 Semaforos/(18244:18257): Como el semaforo: SEMAFORO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:300 Semaforos/(18244:18257): El proceso:4 realizo un signal del semaforo: SEMAFORO y el valor se incremento a: 4
+[INFO] 21:09:17:300 Semaforos/(18244:18257): Como el semaforo: SEMAFORO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:300 Semaforos/(18244:18257): El proceso:4 realizo un signal del semaforo: SEMAFORO y el valor se incremento a: 5
+[INFO] 21:09:17:300 Semaforos/(18244:18257): Como el semaforo: SEMAFORO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:300 Semaforos/(18244:18257): El proceso:4 realizo un signal del semaforo: SEMAFORO y el valor se incremento a: 6
+[INFO] 21:09:17:300 Semaforos/(18244:18257): Como el semaforo: SEMAFORO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:301 Semaforos/(18244:18257): El proceso:4 realizo un signal del semaforo: SEMAFORO y el valor se incremento a: 7
+[INFO] 21:09:17:301 Semaforos/(18244:18257): Como el semaforo: SEMAFORO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:301 Semaforos/(18244:18257): El proceso:4 realizo un signal del semaforo: SEMAFORO y el valor se incremento a: 8
+[INFO] 21:09:17:301 Semaforos/(18244:18257): Como el semaforo: SEMAFORO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:301 Semaforos/(18244:18257): El proceso:4 realizo un signal del semaforo: SEMAFORO y el valor se incremento a: 9
+[INFO] 21:09:17:301 Semaforos/(18244:18257): Como el semaforo: SEMAFORO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:302 Semaforos/(18244:18257): El proceso:4 realizo un wait del semaforo: SEMAFORO y el valor decrecio a: 8
+[INFO] 21:09:17:302 Semaforos/(18244:18257): Se ejecuto un wait sobre un semaforo:SEMAFORO, pero como el valor no era menor a 1, entonces el proceso:4 no se bloqueo
+[INFO] 21:09:17:302 Semaforos/(18244:18257): El proceso:4 realizo un wait del semaforo: SEMAFORO y el valor decrecio a: 7
+[INFO] 21:09:17:302 Semaforos/(18244:18257): Se ejecuto un wait sobre un semaforo:SEMAFORO, pero como el valor no era menor a 1, entonces el proceso:4 no se bloqueo
+[INFO] 21:09:17:302 Semaforos/(18244:18257): El proceso:4 realizo un wait del semaforo: SEMAFORO y el valor decrecio a: 6
+[INFO] 21:09:17:302 Semaforos/(18244:18257): Se ejecuto un wait sobre un semaforo:SEMAFORO, pero como el valor no era menor a 1, entonces el proceso:4 no se bloqueo
+[INFO] 21:09:17:302 Semaforos/(18244:18257): El proceso:4 realizo un wait del semaforo: SEMAFORO y el valor decrecio a: 5
+[INFO] 21:09:17:302 Semaforos/(18244:18257): Se ejecuto un wait sobre un semaforo:SEMAFORO, pero como el valor no era menor a 1, entonces el proceso:4 no se bloqueo
+[INFO] 21:09:17:302 Semaforos/(18244:18257): El proceso:4 realizo un wait del semaforo: SEMAFORO y el valor decrecio a: 4
+[INFO] 21:09:17:302 Semaforos/(18244:18257): Se ejecuto un wait sobre un semaforo:SEMAFORO, pero como el valor no era menor a 1, entonces el proceso:4 no se bloqueo
+[INFO] 21:09:17:302 Semaforos/(18244:18257): El proceso:4 realizo un wait del semaforo: SEMAFORO y el valor decrecio a: 3
+[INFO] 21:09:17:302 Semaforos/(18244:18257): Se ejecuto un wait sobre un semaforo:SEMAFORO, pero como el valor no era menor a 1, entonces el proceso:4 no se bloqueo
+[INFO] 21:09:17:302 Semaforos/(18244:18257): El proceso:4 realizo un wait del semaforo: SEMAFORO y el valor decrecio a: 2
+[INFO] 21:09:17:302 Semaforos/(18244:18257): Se ejecuto un wait sobre un semaforo:SEMAFORO, pero como el valor no era menor a 1, entonces el proceso:4 no se bloqueo
+[INFO] 21:09:17:303 Semaforos/(18244:18257): El proceso:4 realizo un wait del semaforo: SEMAFORO y el valor decrecio a: 1
+[INFO] 21:09:17:303 Semaforos/(18244:18257): Se ejecuto un wait sobre un semaforo:SEMAFORO, pero como el valor no era menor a 1, entonces el proceso:4 no se bloqueo
+[INFO] 21:09:17:304 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:304 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:304 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:304 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:310 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:310 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:310 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:310 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:315 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:315 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:315 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:315 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:322 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:322 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:322 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:322 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:329 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:329 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:329 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:329 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:334 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:334 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:335 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:335 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:340 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:340 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:340 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:340 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:345 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:345 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:346 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:346 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:352 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:352 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:352 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:352 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:358 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:358 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:358 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:358 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:364 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:364 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:365 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:365 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:370 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:370 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:370 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:370 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:376 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:376 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:376 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:376 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:382 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:382 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:382 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:382 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:387 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:387 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:387 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:387 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:393 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:393 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:393 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:393 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:399 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:399 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:399 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:399 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:404 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:405 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:405 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:405 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:410 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:410 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:410 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:410 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:416 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:416 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:416 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:416 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:422 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:422 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:422 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:422 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:427 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:427 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:427 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:427 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:433 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:433 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:433 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:433 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:438 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:438 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:438 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:438 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:444 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:444 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:444 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:444 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:449 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:449 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:450 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:450 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:455 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:455 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:455 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:455 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:461 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:461 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:461 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:461 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:467 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:467 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:467 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:467 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:473 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:473 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:473 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:473 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:479 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:479 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:479 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:479 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:485 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:485 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:485 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:485 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:490 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:490 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:490 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:490 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:496 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:496 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:496 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:496 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:501 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:501 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:501 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:501 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:507 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:507 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:507 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:507 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:513 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:513 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:513 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:513 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:519 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:519 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:519 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:519 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:524 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:524 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:525 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:525 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:530 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:530 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:530 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:530 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:535 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:535 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:535 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:535 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:541 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:541 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:541 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:541 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:547 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:547 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:547 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:547 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:553 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:553 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:553 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:553 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:559 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:559 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:559 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:559 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:565 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:565 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:565 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:565 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:570 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:570 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:570 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:570 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:575 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:575 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:576 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:576 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:581 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:581 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:581 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:581 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:586 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:586 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:586 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:586 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:592 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:592 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:592 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:592 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:598 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:598 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:598 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:598 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:603 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:603 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:604 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:604 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:609 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:609 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:609 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:609 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:615 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:615 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:615 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:615 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:620 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:620 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:620 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:620 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:625 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:625 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:626 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:626 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:631 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:631 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:631 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:631 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:637 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:637 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:637 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:637 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:643 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:643 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:643 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:643 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:648 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:648 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:648 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:648 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:654 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:654 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:654 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:654 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:660 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:660 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:660 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:660 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:665 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:665 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:666 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:666 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:671 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:671 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:671 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:671 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:677 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:677 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:677 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:677 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:682 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:682 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:682 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:682 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:688 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:688 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:688 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:688 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:693 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:693 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:693 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:693 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:699 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:699 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:699 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:699 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:704 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:704 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:705 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:705 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:710 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:710 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:710 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:710 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:716 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:716 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:717 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:717 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:722 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:722 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:722 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:722 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:728 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:728 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:728 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:728 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:733 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:733 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:734 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:734 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:739 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:739 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:739 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:739 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:745 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:745 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:745 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:745 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:750 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:750 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:750 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:750 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:756 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:756 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:756 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:756 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:762 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:762 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:762 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:762 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:768 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:768 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:768 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:768 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:773 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:773 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:774 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:774 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:779 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:779 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:779 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:779 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:785 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:785 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:785 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:785 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:790 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:790 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:790 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:790 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:797 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:797 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:797 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:797 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:802 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:802 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:803 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:803 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:808 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:808 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:808 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:808 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:814 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:814 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:814 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:814 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:819 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:819 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:820 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:820 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:825 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:825 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:825 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:825 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:831 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:831 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:831 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:831 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:837 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:837 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:837 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:837 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:842 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:842 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:842 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:842 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:848 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:848 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:848 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:848 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:854 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:854 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:854 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:854 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:860 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:860 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:860 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:860 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:865 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:865 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:865 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:865 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:871 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:871 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:871 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:871 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:877 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:877 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:877 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:877 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:882 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:882 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:882 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:882 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:888 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:888 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:888 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:888 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:894 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:894 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:894 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:894 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:899 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:899 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:899 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:899 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:905 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:905 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:905 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:905 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:911 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:911 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:911 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:911 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:916 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:916 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:916 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:916 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:923 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:923 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:923 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:923 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:928 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:928 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:928 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:928 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:934 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:934 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:934 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:934 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:940 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:940 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:940 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:940 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:946 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:946 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:946 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:946 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:952 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:952 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:953 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:953 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:958 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:958 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:958 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:958 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:964 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:964 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:965 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:965 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:970 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:970 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:970 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:970 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:976 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:976 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:976 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:976 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:983 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:983 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:983 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:983 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:988 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:988 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:988 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:989 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:17:994 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:17:994 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:17:994 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:17:994 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:000 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:000 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:000 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:000 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:005 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:005 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:005 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:005 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:011 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:011 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:011 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:011 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:017 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:017 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:017 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:017 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:022 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:022 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:022 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:022 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:027 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:027 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:027 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:027 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:033 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:033 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:033 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:033 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:038 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:038 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:038 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:038 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:044 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:044 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:045 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:045 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:050 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:050 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:050 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:050 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:056 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:056 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:056 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:056 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:062 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:062 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:062 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:062 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:068 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:068 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:068 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:068 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:074 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:074 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:074 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:074 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:079 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:079 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:079 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:079 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:085 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:085 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:086 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:086 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:091 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:091 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:091 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:091 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:097 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:097 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:097 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:097 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:103 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:103 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:103 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:103 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:109 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:109 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:109 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:109 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:115 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:115 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:115 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:115 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:120 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:120 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:120 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:120 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:125 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:125 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:126 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:126 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:131 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:131 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:131 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:131 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:137 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:137 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:137 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:137 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:143 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:143 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:143 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:143 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:149 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:149 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:149 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:149 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:154 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:154 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:154 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:154 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:160 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:160 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:160 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:160 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:165 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:165 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:166 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:166 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:171 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:171 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:171 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:171 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:177 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:177 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:177 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:177 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:183 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:183 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:183 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:183 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:188 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:188 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:188 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:188 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:194 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:194 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:194 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:194 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:200 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:200 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:200 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:200 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:205 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:205 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:205 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:205 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:211 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:211 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:211 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:211 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:217 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:217 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:217 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:217 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:223 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:223 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:223 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:223 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:229 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:229 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:229 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:229 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:235 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:235 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:235 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:235 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:241 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:241 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:241 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:241 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:246 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:246 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:246 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:246 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:251 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:251 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:252 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:252 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:257 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:257 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:257 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:257 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:263 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:263 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:263 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:263 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:268 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:268 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:269 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:269 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:274 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:274 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:274 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:274 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:280 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:280 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:280 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:280 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:286 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:286 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:286 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:286 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:293 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:293 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:293 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:293 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:298 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:298 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:298 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:298 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:304 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:304 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:304 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:304 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:310 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:310 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:310 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:310 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:316 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:316 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:316 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:316 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:322 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:322 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:322 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:322 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:327 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:327 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:327 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:327 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:333 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:333 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:333 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:333 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:338 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:338 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:338 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:338 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:343 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:343 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:343 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:343 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:349 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:349 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:349 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:349 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:355 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:355 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:355 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:355 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:360 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:360 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:361 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:361 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:366 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:366 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:366 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:366 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:372 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:372 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:372 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:372 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:378 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:378 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:378 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:378 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:383 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:383 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:383 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:383 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:389 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:389 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:389 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:389 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:394 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:394 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:394 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:394 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:400 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:400 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:400 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:400 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:406 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:406 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:406 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:406 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:412 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:412 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:412 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:412 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:417 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:418 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:418 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:418 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:423 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:423 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:423 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:423 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:429 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:429 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:429 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:429 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:435 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:435 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:435 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:435 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:441 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:441 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:441 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:441 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:447 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:447 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:447 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:447 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:453 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:453 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:453 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:453 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:458 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:458 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:458 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:458 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:463 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:463 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:464 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:464 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:469 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:469 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:470 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:470 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:475 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:475 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:475 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:475 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:481 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:481 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:481 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:481 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:487 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:487 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:487 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:487 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:492 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:492 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:492 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:492 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:498 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:498 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:498 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:498 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:504 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:504 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:504 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:504 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:509 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:509 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:509 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:509 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:515 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:515 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:515 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:515 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:521 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:521 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:521 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:521 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:527 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:527 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:527 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:527 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:533 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:533 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:533 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:533 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:540 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:540 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:540 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:540 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:546 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:546 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:546 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:546 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:551 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:551 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:551 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:551 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:556 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:556 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:557 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:557 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:562 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:562 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:562 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:562 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:568 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:568 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:568 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:568 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:574 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:574 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:574 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:574 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:580 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:580 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:580 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:580 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:585 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:585 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:585 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:585 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:591 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:591 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:592 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:592 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:597 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:597 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:598 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:598 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:603 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:603 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:603 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:603 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:608 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:608 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:608 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:608 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:613 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:613 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:614 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:614 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:620 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:620 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:620 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:620 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:625 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:625 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:626 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:626 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:633 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:633 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:633 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:633 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:638 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:638 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:638 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:638 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:644 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:644 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:644 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:644 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:650 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:650 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:650 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:650 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:655 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:655 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:655 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:655 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:661 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:661 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:661 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:661 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:667 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:667 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:668 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:668 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:673 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:673 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:673 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:673 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:678 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:678 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:679 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:679 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:684 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:684 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:684 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:684 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:690 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:690 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:690 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:690 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:696 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:696 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:696 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:696 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:701 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:701 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:701 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:701 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:707 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:707 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:707 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:707 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:713 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:713 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:713 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:713 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:718 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:718 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:718 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:718 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:724 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:724 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:724 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:724 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:730 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:730 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:730 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:730 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:735 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:735 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:736 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:736 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:741 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:741 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:741 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:741 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:746 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:746 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:747 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:747 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:752 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:752 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:752 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:752 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:758 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:758 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:758 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:758 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:763 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:763 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 21:09:18:763 Semaforos/(18244:18255): El proceso:2 realizo un signal del semaforo: SEMAFORO_NUEVO y el valor se incremento a: 2
+[INFO] 21:09:18:763 Semaforos/(18244:18255): Como el semaforo: SEMAFORO_NUEVO, no tiene procesos esperando solo se aumenta su valor
+[INFO] 21:09:18:769 Semaforos/(18244:18255): El proceso:2 realizo un wait del semaforo: SEMAFORO_NUEVO y el valor decrecio a: 1
+[INFO] 21:09:18:769 Semaforos/(18244:18255): Se ejecuto un wait sobre un semaforo:SEMAFORO_NUEVO, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo

@@ -181,8 +181,8 @@ void cerrarProceso(t_buffer* bufferActual,t_log* logger){
 	pthread_mutex_unlock(modificarExec);
 
 	/* le notificamos a memoria que haga todo el trabajo de sacar las cosas de memoria y swap */
-	finalizarEnMemoria(procesoActual, logger);
 	log_info(logger,"Le notificamos a memoria para que libere la memoria del carpincho: %d", pidProcesoAEliminar);
+	finalizarEnMemoria(procesoActual, logger);
 
 
 
@@ -219,7 +219,7 @@ void informarCierreDeProceso(proceso_kernel* proceso,t_log* loggerActual){
 
 	memcpy(paquete->buffer->stream + desplazamiento, &(valorReturn) , sizeof(uint32_t));
 
-	log_info(loggerActual,"Enviamos que queremos cerrar el carpincho");
+	log_info(loggerActual,"Enviamos que vamos a cerrar el carpincho");
     enviarPaquete(paquete,proceso->conexion);
 
 }
