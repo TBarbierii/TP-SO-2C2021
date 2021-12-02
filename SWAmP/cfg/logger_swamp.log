@@ -146,3 +146,204 @@
 [ERROR] 16:38:06:458 SWAmP/(9865:9865): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
 [DEBUG] 16:38:06:494 SWAmP/(9865:9865): Solicitud de memoria entrante
 [ERROR] 16:38:06:497 SWAmP/(9865:9865): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[INFO] 16:43:26:219 SWAmP/(10283:10283): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 256 y id: 0
+[INFO] 16:43:26:267 SWAmP/(10283:10283): Se han creado todos los archivos
+[INFO] 16:43:26:277 SWAmP/(10283:10283): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 16:43:29:512 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:265 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:291 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:323 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:326 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:329 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:336 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:356 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:360 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:364 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:370 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:382 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:385 SWAmP/(10283:10283): Solicitud de memoria entrante
+[DEBUG] 16:44:12:388 SWAmP/(10283:10283): Solicitud de memoria entrante
+[INFO] 16:48:06:023 SWAmP/(10582:10582): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 1024 cantidad de frames disponibles: 32 y id: 0
+[INFO] 16:48:06:074 SWAmP/(10582:10582): Se han creado todos los archivos
+[INFO] 16:48:06:084 SWAmP/(10582:10582): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 16:48:07:981 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:319 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:343 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:375 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:378 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:385 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:391 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:405 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:409 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:415 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:611 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:715 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:12:917 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:13:020 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:13:224 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:13:327 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:13:630 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:13:733 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:14:039 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:14:141 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:14:445 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:14:548 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:14:953 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:15:055 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:15:059 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:16:460 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:16:563 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:16:566 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:18:968 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:19:070 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:19:075 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:22:478 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:22:581 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:22:584 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:31:523 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:31:625 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:31:731 SWAmP/(10582:10582): Solicitud de memoria entrante
+[DEBUG] 16:48:31:740 SWAmP/(10582:10582): Solicitud de memoria entrante
+[INFO] 16:48:31:752 SWAmP/(10582:10582): Proceso 3 finalizado con exito
+[DEBUG] 16:48:31:767 SWAmP/(10582:10582): Solicitud de memoria entrante
+[INFO] 16:48:31:774 SWAmP/(10582:10582): Proceso 2 finalizado con exito
+[DEBUG] 16:48:31:774 SWAmP/(10582:10582): Solicitud de memoria entrante
+[INFO] 16:48:31:777 SWAmP/(10582:10582): Proceso 1 finalizado con exito
+[INFO] 16:49:42:912 SWAmP/(10776:10776): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 1024 cantidad de frames disponibles: 32 y id: 0
+[INFO] 16:49:42:965 SWAmP/(10776:10776): Se han creado todos los archivos
+[INFO] 16:49:42:975 SWAmP/(10776:10776): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 16:49:43:796 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:316 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:341 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:368 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:371 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:377 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:382 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:399 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:404 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:410 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:604 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:709 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:49:910 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:50:016 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:50:216 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:50:321 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:50:622 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:50:726 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:51:028 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:51:133 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:51:435 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:51:539 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:51:940 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:49:52:042 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:04:976 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:10:981 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:10:986 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:10:994 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:048 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:051 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:054 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:081 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:084 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:095 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:311 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:417 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:631 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:737 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:11:950 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:12:053 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:12:362 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:12:465 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:12:774 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:12:877 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:13:186 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:13:289 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:13:700 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:50:13:804 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:39:716 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:291 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:296 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:300 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:343 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:345 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:348 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:364 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:373 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:378 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:591 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:697 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:41:912 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:42:015 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:42:224 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:42:327 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:42:638 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:42:740 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:43:049 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:43:152 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:43:461 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:43:564 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:43:973 SWAmP/(10776:10776): Solicitud de memoria entrante
+[DEBUG] 16:53:44:076 SWAmP/(10776:10776): Solicitud de memoria entrante
+[INFO] 16:56:34:736 SWAmP/(11769:11769): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 256 y id: 0
+[INFO] 16:56:34:788 SWAmP/(11769:11769): Se han creado todos los archivos
+[INFO] 16:56:34:799 SWAmP/(11769:11769): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 16:56:38:209 SWAmP/(11769:11769): Solicitud de memoria entrante
+[DEBUG] 16:57:07:795 SWAmP/(11769:11769): Solicitud de memoria entrante
+[DEBUG] 16:57:07:836 SWAmP/(11769:11769): Solicitud de memoria entrante
+[DEBUG] 16:57:07:877 SWAmP/(11769:11769): Solicitud de memoria entrante
+[DEBUG] 16:57:08:331 SWAmP/(11769:11769): Solicitud de memoria entrante
+[DEBUG] 16:57:08:439 SWAmP/(11769:11769): Solicitud de memoria entrante
+[INFO] 17:05:40:904 SWAmP/(12106:12106): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 256 y id: 0
+[INFO] 17:05:40:952 SWAmP/(12106:12106): Se han creado todos los archivos
+[INFO] 17:05:40:963 SWAmP/(12106:12106): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 17:05:44:035 SWAmP/(12106:12106): Solicitud de memoria entrante
+[DEBUG] 17:06:05:494 SWAmP/(12106:12106): Solicitud de memoria entrante
+[DEBUG] 17:06:05:516 SWAmP/(12106:12106): Solicitud de memoria entrante
+[DEBUG] 17:06:05:545 SWAmP/(12106:12106): Solicitud de memoria entrante
+[DEBUG] 17:06:05:979 SWAmP/(12106:12106): Solicitud de memoria entrante
+[DEBUG] 17:06:06:087 SWAmP/(12106:12106): Solicitud de memoria entrante
+[INFO] 17:11:06:052 SWAmP/(12450:12450): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 256 y id: 0
+[INFO] 17:11:06:103 SWAmP/(12450:12450): Se han creado todos los archivos
+[INFO] 17:11:06:115 SWAmP/(12450:12450): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 17:11:07:974 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:12:815 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:12:830 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:12:873 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:13:307 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:13:415 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:13:763 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:13:766 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:13:782 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:14:198 SWAmP/(12450:12450): Solicitud de memoria entrante
+[DEBUG] 17:11:14:302 SWAmP/(12450:12450): Solicitud de memoria entrante
+[INFO] 17:12:12:589 SWAmP/(12566:12566): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 4096 cantidad de frames disponibles: 256 y id: 0
+[INFO] 17:12:12:631 SWAmP/(12566:12566): Se han creado todos los archivos
+[INFO] 17:12:12:640 SWAmP/(12566:12566): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 17:12:19:228 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:27:732 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:27:758 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:27:784 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:28:168 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:28:272 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:28:714 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:28:717 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:28:729 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:29:133 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:12:29:237 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:19:391 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:28:361 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:28:369 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:28:385 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:28:836 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:28:942 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:29:298 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:29:306 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:29:309 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:29:736 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:16:29:840 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:17:32:857 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:17:38:071 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:17:38:079 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:17:38:087 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:17:38:542 SWAmP/(12566:12566): Solicitud de memoria entrante
+[DEBUG] 17:17:38:750 SWAmP/(12566:12566): Solicitud de memoria entrante

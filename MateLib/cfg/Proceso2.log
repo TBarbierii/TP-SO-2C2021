@@ -122,3 +122,280 @@
 [INFO] 16:37:22:466 loggerContenidoProceso/(9900:9904): Estamos recibiendo todo para cerrar la conexion y terminar
 [INFO] 16:37:22:466 loggerContenidoProceso/(9900:9904): Se pudo cerrar el proceso de PID:2 correctamente en el BackEnd
 [INFO] 16:37:22:467 loggerContenidoProceso/(9900:9904): Se liberan todas las estructuras del proceso de PID:2
+[INFO] 16:44:12:304 loggerContenidoProceso/(10355:10357): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 16:44:12:305 loggerContenidoProceso/(10355:10357): Solicitamos realizar un memalloc de size:23
+[INFO] 16:44:12:334 loggerContenidoProceso/(10355:10357): Habiamos solicitado hacer un memalloc
+[INFO] 16:44:12:334 loggerContenidoProceso/(10355:10357): Se pudo realizar el memalloc
+[INFO] 16:44:20:949 loggerContenidoProceso/(10355:10357): Solicitamos realizar un memalloc de size:23
+[INFO] 16:44:20:950 loggerContenidoProceso/(10355:10357): Solicitamos realizar un memalloc de size:23
+[ERROR] 16:44:20:950 loggerContenidoProceso/(10355:10357): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:44:20:950 loggerContenidoProceso/(10355:10357): Solicitamos realizar un memRead 10009
+[ERROR] 16:44:20:950 loggerContenidoProceso/(10355:10357): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:44:20:950 loggerContenidoProceso/(10355:10357): Solicitamos realizar un memRead -1
+[ERROR] 16:44:20:950 loggerContenidoProceso/(10355:10357): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:44:20:951 loggerContenidoProceso/(10355:10357): Se ha solicitado cerrar el carpincho de pid:2 , este es un hasta adios
+[ERROR] 16:44:20:951 loggerContenidoProceso/(10355:10357): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:2
+[INFO] 16:44:20:951 loggerContenidoProceso/(10355:10357): Se liberan todas las estructuras del proceso de PID:2
+[INFO] 16:48:12:356 loggerContenidoProceso/(10622:10624): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 16:48:12:356 loggerContenidoProceso/(10622:10624): Solicitamos realizar un memalloc de size:23
+[INFO] 16:48:12:383 loggerContenidoProceso/(10622:10624): Habiamos solicitado hacer un memalloc
+[INFO] 16:48:12:383 loggerContenidoProceso/(10622:10624): Se pudo realizar el memalloc
+[INFO] 16:48:12:715 loggerContenidoProceso/(10622:10624): Solicitamos realizar un memalloc de size:23
+[INFO] 16:48:13:022 loggerContenidoProceso/(10622:10624): Habiamos solicitado hacer un memalloc
+[INFO] 16:48:13:022 loggerContenidoProceso/(10622:10624): Se pudo realizar el memalloc
+[INFO] 16:48:13:735 loggerContenidoProceso/(10622:10624): Solicitamos realizar un memalloc de size:23
+[INFO] 16:48:14:143 loggerContenidoProceso/(10622:10624): Habiamos solicitado hacer un memalloc
+[INFO] 16:48:14:143 loggerContenidoProceso/(10622:10624): Se pudo realizar el memalloc
+[INFO] 16:48:24:594 loggerContenidoProceso/(10622:10624): Solicitamos realizar un memRead 10009
+[INFO] 16:48:24:699 loggerContenidoProceso/(10622:10624): Habiamos solicitado hacer un memread
+[INFO] 16:48:24:699 loggerContenidoProceso/(10622:10624): El tamanio de lo que vamos a leer es de:5 bytes
+[INFO] 16:48:24:699 loggerContenidoProceso/(10622:10624): Contenido que llego del memread:  
+
+[INFO] 16:48:24:699 loggerContenidoProceso/(10622:10624): Solicitamos realizar un memRead 10019
+[INFO] 16:48:24:803 loggerContenidoProceso/(10622:10624): Habiamos solicitado hacer un memread
+[INFO] 16:48:24:803 loggerContenidoProceso/(10622:10624): El tamanio de lo que vamos a leer es de:5 bytes
+[INFO] 16:48:24:803 loggerContenidoProceso/(10622:10624): Contenido que llego del memread:  
+
+[INFO] 16:48:31:727 loggerContenidoProceso/(10622:10624): Se ha solicitado cerrar el carpincho de pid:2 , este es un hasta adios
+[INFO] 16:48:31:754 loggerContenidoProceso/(10622:10624): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:48:31:754 loggerContenidoProceso/(10622:10624): Se pudo cerrar el proceso de PID:2 correctamente en el BackEnd
+[INFO] 16:48:31:754 loggerContenidoProceso/(10622:10624): Se liberan todas las estructuras del proceso de PID:2
+[INFO] 16:49:49:352 loggerContenidoProceso/(10810:10812): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 16:49:49:352 loggerContenidoProceso/(10810:10812): Solicitamos realizar un memalloc de size:23
+[INFO] 16:49:49:375 loggerContenidoProceso/(10810:10812): Habiamos solicitado hacer un memalloc
+[INFO] 16:49:49:375 loggerContenidoProceso/(10810:10812): Se pudo realizar el memalloc
+[INFO] 16:49:49:708 loggerContenidoProceso/(10810:10812): Solicitamos realizar un memalloc de size:23
+[INFO] 16:49:50:014 loggerContenidoProceso/(10810:10812): Habiamos solicitado hacer un memalloc
+[INFO] 16:49:50:015 loggerContenidoProceso/(10810:10812): Se pudo realizar el memalloc
+[INFO] 16:49:50:726 loggerContenidoProceso/(10810:10812): Solicitamos realizar un memalloc de size:23
+[INFO] 16:49:51:132 loggerContenidoProceso/(10810:10812): Habiamos solicitado hacer un memalloc
+[INFO] 16:49:51:132 loggerContenidoProceso/(10810:10812): Se pudo realizar el memalloc
+[INFO] 16:50:11:045 loggerContenidoProceso/(10880:10882): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 16:50:11:045 loggerContenidoProceso/(10880:10882): Solicitamos realizar un memalloc de size:23
+[INFO] 16:50:11:067 loggerContenidoProceso/(10880:10882): Habiamos solicitado hacer un memalloc
+[INFO] 16:50:11:067 loggerContenidoProceso/(10880:10882): Se pudo realizar el memalloc
+[INFO] 16:50:11:426 loggerContenidoProceso/(10880:10882): Solicitamos realizar un memalloc de size:23
+[INFO] 16:50:11:743 loggerContenidoProceso/(10880:10882): Habiamos solicitado hacer un memalloc
+[INFO] 16:50:11:743 loggerContenidoProceso/(10880:10882): Se pudo realizar el memalloc
+[INFO] 16:50:12:468 loggerContenidoProceso/(10880:10882): Solicitamos realizar un memalloc de size:23
+[INFO] 16:50:12:882 loggerContenidoProceso/(10880:10882): Habiamos solicitado hacer un memalloc
+[INFO] 16:50:12:882 loggerContenidoProceso/(10880:10882): Se pudo realizar el memalloc
+[INFO] 16:50:16:629 loggerContenidoProceso/(10880:10882): Solicitamos realizar un memRead 10009
+[INFO] 16:53:41:334 loggerContenidoProceso/(11133:11135): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 16:53:41:334 loggerContenidoProceso/(11133:11135): Solicitamos realizar un memalloc de size:23
+[INFO] 16:53:41:354 loggerContenidoProceso/(11133:11135): Habiamos solicitado hacer un memalloc
+[INFO] 16:53:41:354 loggerContenidoProceso/(11133:11135): Se pudo realizar el memalloc
+[INFO] 16:53:41:705 loggerContenidoProceso/(11133:11135): Solicitamos realizar un memalloc de size:23
+[INFO] 16:53:42:021 loggerContenidoProceso/(11133:11135): Habiamos solicitado hacer un memalloc
+[INFO] 16:53:42:021 loggerContenidoProceso/(11133:11135): Se pudo realizar el memalloc
+[INFO] 16:53:42:743 loggerContenidoProceso/(11133:11135): Solicitamos realizar un memalloc de size:23
+[INFO] 16:53:43:154 loggerContenidoProceso/(11133:11135): Habiamos solicitado hacer un memalloc
+[INFO] 16:53:43:154 loggerContenidoProceso/(11133:11135): Se pudo realizar el memalloc
+[INFO] 17:11:13:760 loggerContenidoProceso/(12501:12514): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 17:11:13:760 loggerContenidoProceso/(12501:12514): Solicitamos realizar un memalloc de size:10
+[INFO] 17:11:13:788 loggerContenidoProceso/(12501:12514): Habiamos solicitado hacer un memalloc
+[INFO] 17:11:13:788 loggerContenidoProceso/(12501:12514): Se pudo realizar el memalloc
+[INFO] 17:11:13:788 loggerContenidoProceso/(12501:12514): Solicitamos realizar un memWrite de 10009 y tamanio:10
+[INFO] 17:11:13:994 loggerContenidoProceso/(12501:12514): Habiamos solicitado hacer un memwrite
+[INFO] 17:11:13:994 loggerContenidoProceso/(12501:12514): Se pudo hacer el memwrite solicitado
+[INFO] 17:11:13:994 loggerContenidoProceso/(12501:12514): Solicitamos realizar un memalloc de size:4
+[INFO] 17:11:14:309 loggerContenidoProceso/(12501:12514): Habiamos solicitado hacer un memalloc
+[INFO] 17:11:14:309 loggerContenidoProceso/(12501:12514): Se pudo realizar el memalloc
+[INFO] 17:11:14:309 loggerContenidoProceso/(12501:12514): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:11:14:413 loggerContenidoProceso/(12501:12514): Habiamos solicitado hacer un memwrite
+[INFO] 17:11:14:413 loggerContenidoProceso/(12501:12514): Se pudo hacer el memwrite solicitado
+[INFO] 17:11:50:443 loggerContenidoProceso/(12501:12514): Solicitamos realizar un memRead 10009
+[INFO] 17:12:28:711 loggerContenidoProceso/(12682:12695): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 17:12:28:711 loggerContenidoProceso/(12682:12695): Solicitamos realizar un memalloc de size:10
+[INFO] 17:12:28:723 loggerContenidoProceso/(12682:12695): Habiamos solicitado hacer un memalloc
+[INFO] 17:12:28:723 loggerContenidoProceso/(12682:12695): Se pudo realizar el memalloc
+[INFO] 17:12:28:723 loggerContenidoProceso/(12682:12695): Solicitamos realizar un memWrite de 10009 y tamanio:10
+[INFO] 17:12:28:929 loggerContenidoProceso/(12682:12695): Habiamos solicitado hacer un memwrite
+[INFO] 17:12:28:929 loggerContenidoProceso/(12682:12695): Se pudo hacer el memwrite solicitado
+[INFO] 17:12:28:929 loggerContenidoProceso/(12682:12695): Solicitamos realizar un memalloc de size:4
+[INFO] 17:12:29:239 loggerContenidoProceso/(12682:12695): Habiamos solicitado hacer un memalloc
+[INFO] 17:12:29:239 loggerContenidoProceso/(12682:12695): Se pudo realizar el memalloc
+[INFO] 17:12:29:239 loggerContenidoProceso/(12682:12695): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:12:29:344 loggerContenidoProceso/(12682:12695): Habiamos solicitado hacer un memwrite
+[INFO] 17:12:29:344 loggerContenidoProceso/(12682:12695): Se pudo hacer el memwrite solicitado
+[INFO] 17:12:29:344 loggerContenidoProceso/(12682:12695): Solicitamos realizar un memRead 10009
+[INFO] 17:12:29:548 loggerContenidoProceso/(12682:12695): Habiamos solicitado hacer un memread
+[INFO] 17:12:29:548 loggerContenidoProceso/(12682:12695): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:12:29:548 loggerContenidoProceso/(12682:12695): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:12:29:548 loggerContenidoProceso/(12682:12695): Solicitamos realizar un memRead 100112
+[INFO] 17:12:29:653 loggerContenidoProceso/(12682:12695): Habiamos solicitado hacer un memread
+[INFO] 17:12:29:653 loggerContenidoProceso/(12682:12695): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:12:29:653 loggerContenidoProceso/(12682:12695): Contenido que llego del memread:  
+
+[INFO] 17:12:29:653 loggerContenidoProceso/(12682:12695): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:12:29:757 loggerContenidoProceso/(12682:12695): Habiamos solicitado hacer un memwrite
+[INFO] 17:12:29:757 loggerContenidoProceso/(12682:12695): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:29:294 loggerContenidoProceso/(12935:12947): Se ha creado el carpincho:2, y se ha logrado conectar correctamente al backend
+[INFO] 17:16:29:294 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memalloc de size:10
+[INFO] 17:16:29:324 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memalloc
+[INFO] 17:16:29:325 loggerContenidoProceso/(12935:12947): Se pudo realizar el memalloc
+[INFO] 17:16:29:325 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 10009 y tamanio:10
+[INFO] 17:16:29:531 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:29:531 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:29:531 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memalloc de size:4
+[INFO] 17:16:29:847 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memalloc
+[INFO] 17:16:29:847 loggerContenidoProceso/(12935:12947): Se pudo realizar el memalloc
+[INFO] 17:16:29:847 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:16:29:951 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:29:951 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:30:387 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:16:30:594 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:30:594 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:16:30:594 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:16:30:594 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:16:30:698 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:30:698 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:16:30:698 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:16:30:698 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:16:30:802 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:30:802 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:34:815 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:16:35:020 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:35:020 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:16:35:020 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:16:35:020 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:16:35:123 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:35:123 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:16:35:123 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:16:35:123 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:16:35:227 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:35:227 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:39:240 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:16:39:445 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:39:445 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:16:39:445 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:16:39:445 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:16:39:548 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:39:548 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:16:39:548 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:16:39:548 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:16:39:653 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:39:653 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:43:668 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:16:43:874 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:43:874 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:16:43:874 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:16:43:874 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:16:43:979 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:43:979 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:16:43:979 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:16:43:980 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:16:44:084 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:44:084 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:48:098 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:16:48:304 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:48:304 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:16:48:304 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:16:48:304 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:16:48:408 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:48:408 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:16:48:408 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:16:48:408 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:16:48:512 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:48:512 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:52:525 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:16:52:730 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:52:730 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:16:52:730 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:16:52:730 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:16:52:834 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:52:834 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:16:52:834 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: 
+ 
+
+[INFO] 17:16:52:834 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:16:52:938 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:52:938 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:16:56:950 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:16:57:155 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:57:155 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:16:57:155 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:16:57:155 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:16:57:259 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:16:57:259 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:16:57:259 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:16:57:259 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:16:57:363 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:16:57:363 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:17:01:378 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:17:01:582 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:01:582 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:17:01:582 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:17:01:582 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:17:01:686 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:01:686 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:17:01:686 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:17:01:686 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:17:01:790 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:17:01:790 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:17:05:802 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:17:06:007 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:06:007 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:17:06:007 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:17:06:007 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:17:06:111 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:06:111 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:17:06:111 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:17:06:111 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:17:06:214 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:17:06:214 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:17:10:229 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:17:10:434 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:10:434 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:17:10:434 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:17:10:434 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:17:10:539 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:10:539 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:17:10:539 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:17:10:539 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:17:10:642 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:17:10:642 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:17:14:655 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:17:14:860 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:14:860 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:17:14:860 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:17:14:860 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:17:14:964 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:14:964 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:17:14:964 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:17:14:964 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4
+[INFO] 17:17:15:068 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memwrite
+[INFO] 17:17:15:068 loggerContenidoProceso/(12935:12947): Se pudo hacer el memwrite solicitado
+[INFO] 17:17:19:080 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 10009
+[INFO] 17:17:19:286 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:19:286 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:10 bytes
+[INFO] 17:17:19:286 loggerContenidoProceso/(12935:12947): Contenido que llego del memread: CARPINCHO2 
+
+[INFO] 17:17:19:286 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memRead 100112
+[INFO] 17:17:19:388 loggerContenidoProceso/(12935:12947): Habiamos solicitado hacer un memread
+[INFO] 17:17:19:388 loggerContenidoProceso/(12935:12947): El tamanio de lo que vamos a leer es de:4 bytes
+[INFO] 17:17:19:388 loggerContenidoProceso/(12935:12947): Contenido que llego del memread:  
+
+[INFO] 17:17:19:389 loggerContenidoProceso/(12935:12947): Solicitamos realizar un memWrite de 100112 y tamanio:4

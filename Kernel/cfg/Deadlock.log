@@ -1,25 +1,84 @@
-[INFO] 16:37:13:393 Deadlock/(9881:9890): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+[INFO] 17:13:15:545 Deadlock/(12664:12673): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
 
-[INFO] 16:37:13:395 Deadlock/(9881:9890): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 6
+[INFO] 17:13:15:546 Deadlock/(12664:12673): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
 
-[WARNING] 16:37:13:400 Deadlock/(9881:9890): El proceso 2 se encuentra en Dealock
-[WARNING] 16:37:13:405 Deadlock/(9881:9890): El proceso 3 se encuentra en Dealock
-[WARNING] 16:37:13:406 Deadlock/(9881:9890): El proceso 4 se encuentra en Dealock
-[WARNING] 16:37:13:406 Deadlock/(9881:9890): El proceso 5 se encuentra en Dealock
-[INFO] 16:37:13:408 Deadlock/(9881:9890): El proceso que se sacara por el Deadlock es el :5
+[INFO] 17:13:15:547 Deadlock/(12664:12673): No hay deadlock porque no hay suficientes procesos para que ocurra
 
-[INFO] 16:37:13:417 Deadlock/(9881:9890): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 4
+[INFO] 17:14:05:549 Deadlock/(12664:12673): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
 
-[INFO] 16:37:13:418 Deadlock/(9881:9890): No hay deadlock porque no hay suficientes procesos para que ocurra
-[INFO] 16:38:03:428 Deadlock/(9881:9890): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+[INFO] 17:14:05:550 Deadlock/(12664:12673): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
 
-[INFO] 16:38:03:429 Deadlock/(9881:9890): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 2
+[INFO] 17:14:05:551 Deadlock/(12664:12673): No hay deadlock porque no hay suficientes procesos para que ocurra
 
-[WARNING] 16:38:03:430 Deadlock/(9881:9890): El proceso 6 se encuentra en Dealock
-[WARNING] 16:38:03:431 Deadlock/(9881:9890): El proceso 7 se encuentra en Dealock
-[INFO] 16:38:03:431 Deadlock/(9881:9890): El proceso que se sacara por el Deadlock es el :7
+[INFO] 17:14:55:551 Deadlock/(12664:12673): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
 
-[INFO] 16:38:03:441 Deadlock/(9881:9890): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 17:14:55:552 Deadlock/(12664:12673): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
 
-[INFO] 16:38:03:441 Deadlock/(9881:9890): No hay deadlock porque no hay suficientes procesos para que ocurra
+[INFO] 17:14:55:552 Deadlock/(12664:12673): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:15:45:552 Deadlock/(12664:12673): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:15:45:553 Deadlock/(12664:12673): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:15:45:553 Deadlock/(12664:12673): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:17:16:230 Deadlock/(12909:12916): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:17:16:231 Deadlock/(12909:12916): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:17:16:232 Deadlock/(12909:12916): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:18:25:422 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:18:25:423 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:18:25:424 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:19:15:425 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:19:15:425 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:19:15:425 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:20:05:426 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:20:05:426 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:20:05:427 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:20:55:427 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:20:55:427 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:20:55:427 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:21:45:428 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:21:45:429 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:21:45:429 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:22:35:429 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:22:35:430 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:22:35:430 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:23:25:430 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:23:25:431 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:23:25:431 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:24:15:431 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:24:15:432 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:24:15:432 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
+
+[INFO] 17:25:05:432 Deadlock/(13215:13221): Se ejecuta algoritmo de deteccion y recuperacion de deadlock 
+
+[INFO] 17:25:05:432 Deadlock/(13215:13221): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+
+[INFO] 17:25:05:433 Deadlock/(13215:13221): No hay deadlock porque no hay suficientes procesos para que ocurra
 

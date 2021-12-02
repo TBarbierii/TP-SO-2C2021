@@ -29,9 +29,8 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		
 		pthread_mutex_lock(tabla_paginas);
 		t_list* paginas_a_reemplazar = list_filter(carpincho->tabla_de_paginas, (void*)paginasPresentes);
-		pthread_mutex_unlock(tabla_paginas);
-
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho);   
+		pthread_mutex_unlock(tabla_paginas);
 
 		log_info(logsObligatorios, "Pagina víctima: Pid: %i, Página: %i, Marco: %i", carpincho->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 
@@ -85,8 +84,9 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		}
 
 		
-		
+		pthread_mutex_lock(tabla_paginas);
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho); 
+		pthread_mutex_unlock(tabla_paginas);
 
 		log_info(logsObligatorios, "Pagina víctima: Pid: %i, Página: %i, Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 
