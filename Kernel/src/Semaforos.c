@@ -326,9 +326,10 @@ void desalojarSemaforosDeProceso(proceso_kernel* procesoASacarPorDeadlock){
     int procesoConPid(proceso_kernel* procesoBuscado){
         return procesoBuscado->pid == procesoASacarPorDeadlock->pid;
     }
+    // s3 -> 3 -> s4 -> 4 -> s1
 
 
-    //primero desalojamos los semaforos que tiene
+    //primero lo sacamos de la lista de los seamforos que esta esperando
     while(!list_is_empty(procesoASacarPorDeadlock->listaRecursosSolicitados)){
         
         semaforo* semaforoLiberado = list_remove(procesoASacarPorDeadlock->listaRecursosSolicitados, 0);
@@ -341,39 +342,63 @@ void desalojarSemaforosDeProceso(proceso_kernel* procesoASacarPorDeadlock){
     while(!list_is_empty(procesoASacarPorDeadlock->listaRecursosRetenidos)){
         
         semaforo* semaforoRetenido = list_remove(procesoASacarPorDeadlock->listaRecursosRetenidos, 0);
-        
+        //4->listaRecursosRetenidos =  {s4}
         //por cada semaforo que esta reteniendo, aumentamos su valor 
         semaforoRetenido->valor++;
         
+        //s4->listaProcesosEnEspera = {p3}
         if(!list_is_empty(semaforoRetenido->listaDeProcesosEnEspera)){ //si tiene cola de espera, vamos a poner al primero que retenga el semaoforo y ponerlo en el ready indicado
             
             proceso_kernel* procesoQueTendraElsemaforo = list_remove(semaforoRetenido->listaDeProcesosEnEspera, 0);
+            //p3->listaRecursosRetenidos= {s3,s4}
             list_add(procesoQueTendraElsemaforo->listaRecursosRetenidos, semaforoRetenido);
+            //y como el proceso estaba solicitando el semaforo actual solo, lo vamos a sacar porque ahora lo retiene
+            list_remove(procesoQueTendraElsemaforo->listaRecursosSolicitados, 0);
             
             proceso_kernel* procesoActual = list_remove_by_condition(procesosSuspendedBlock, procesoConPid);                                                    
 
-            if(procesoActual != NULL){ //si esta, se agrega a esta lista, y se notifica que hay un procesoo que quiere entrar a READY
-
-                
-                list_add(procesosSuspendedReady, procesoQueTendraElsemaforo);
-
-                sem_post(procesoNecesitaEntrarEnReady); //alertamos que hay un proceso que solicita entrar en ready
-
-
-            }else{ //si esta solo bloqueado, se aagrega directo a ready y se saca de blocked
+            if(procesoActual == NULL){ //si esta solo bloqueado, se aagrega directo se saca de blocked
                 
                 list_remove_by_condition(procesosBlocked, procesoConPid);
 
+            }
+
+            //el otro proceso entraria en ready, ya que no va a estar pidiendo mas recursos
+
+            int proceso_para_liberar(proceso_kernel* p){
+                return procesoQueTendraElsemaforo->pid == p->pid;
+            }
+            
+            
+
+            proceso_kernel* proceso_Actual_liberado = list_remove_by_condition(procesosSuspendedBlock, proceso_para_liberar);
+
+                                                             
+
+            if(proceso_Actual_liberado != NULL){ //si esta solo bloqueado, se aagrega directo se saca de blocked
+                    
+                list_add(procesosSuspendedReady, procesoQueTendraElsemaforo);
+                
+
+                sem_post(procesoNecesitaEntrarEnReady); //alertamos que hay un proceso que solicita entrar en ready
+                
+                //esto es un aviso para el planificador de mediano plazo de que hay un proceso nuevo y quiza deberia entrar si solo hay procesos de Bloqueados
+                sem_post(signalSuspensionProceso);
+            
+            }else{ //si esta solo bloqueado, se aagrega directo a ready y lo sacamos de blocked
+
+                
+                list_remove_by_condition(procesosBlocked, proceso_para_liberar);
+                
                 list_add(procesosReady, procesoQueTendraElsemaforo);
+                clock_gettime(CLOCK_REALTIME, &(procesoQueTendraElsemaforo->tiempoDeArriboColaReady)); //esto sirve para HRRN, para estimar cuando empezo un proceso a estar en ready y cuanto tiempo pasa ahi
+                
                 
                 sem_post(hayProcesosReady); //alertamos que hay un proceso nuevo en ready
 
             }
 
-
-
         }
-        
 
     }
 

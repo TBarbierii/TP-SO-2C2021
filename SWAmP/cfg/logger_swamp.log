@@ -56,3 +56,45 @@
 [INFO] 21:10:10:279 SWAmP/(18221:18221): Proceso 3 finalizado con exito
 [DEBUG] 21:10:17:297 SWAmP/(18221:18221): Solicitud de memoria entrante
 [ERROR] 21:10:17:298 SWAmP/(18221:18221): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[INFO] 23:45:22:965 SWAmP/(10752:10752): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 0
+[INFO] 23:45:23:022 SWAmP/(10752:10752): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 1
+[INFO] 23:45:23:025 SWAmP/(10752:10752): Se han creado todos los archivos
+[INFO] 23:45:23:033 SWAmP/(10752:10752): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 23:45:26:459 SWAmP/(10752:10752): Solicitud de memoria entrante
+[DEBUG] 23:45:42:686 SWAmP/(10752:10752): Solicitud de memoria entrante
+[ERROR] 23:45:42:693 SWAmP/(10752:10752): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 23:50:05:071 SWAmP/(10752:10752): Solicitud de memoria entrante
+[DEBUG] 23:50:26:306 SWAmP/(10752:10752): Solicitud de memoria entrante
+[ERROR] 23:50:26:309 SWAmP/(10752:10752): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 23:52:41:833 SWAmP/(10752:10752): Solicitud de memoria entrante
+[DEBUG] 23:52:59:828 SWAmP/(10752:10752): Solicitud de memoria entrante
+[ERROR] 23:52:59:832 SWAmP/(10752:10752): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 23:56:08:489 SWAmP/(10752:10752): Solicitud de memoria entrante
+[DEBUG] 23:56:33:309 SWAmP/(10752:10752): Solicitud de memoria entrante
+[ERROR] 23:56:33:315 SWAmP/(10752:10752): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 00:02:49:524 SWAmP/(10752:10752): Solicitud de memoria entrante
+[DEBUG] 00:02:58:685 SWAmP/(10752:10752): Solicitud de memoria entrante
+[ERROR] 00:02:58:688 SWAmP/(10752:10752): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[INFO] 00:16:53:709 SWAmP/(12586:12586): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 0
+[INFO] 00:16:53:766 SWAmP/(12586:12586): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 1
+[INFO] 00:16:53:769 SWAmP/(12586:12586): Se han creado todos los archivos
+[INFO] 00:16:53:778 SWAmP/(12586:12586): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 00:16:55:851 SWAmP/(12586:12586): Solicitud de memoria entrante
+[DEBUG] 00:17:03:777 SWAmP/(12586:12586): Solicitud de memoria entrante
+[ERROR] 00:17:03:788 SWAmP/(12586:12586): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 00:17:29:593 SWAmP/(12586:12586): Solicitud de memoria entrante
+[DEBUG] 00:17:41:043 SWAmP/(12586:12586): Solicitud de memoria entrante
+[ERROR] 00:17:41:049 SWAmP/(12586:12586): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[INFO] 00:30:57:839 SWAmP/(13287:13287): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 0
+[INFO] 00:30:57:892 SWAmP/(13287:13287): Se crea el archivo SWAP en el path: /home/utnso/swap2.bin, de size: 262144 cantidad de frames disponibles: 256 y id: 1
+[INFO] 00:30:57:895 SWAmP/(13287:13287): Se han creado todos los archivos
+[INFO] 00:30:57:903 SWAmP/(13287:13287): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 00:30:59:980 SWAmP/(13287:13287): Solicitud de memoria entrante
+[DEBUG] 00:31:57:045 SWAmP/(13287:13287): Solicitud de memoria entrante
+[ERROR] 00:31:57:055 SWAmP/(13287:13287): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 00:35:55:585 SWAmP/(13287:13287): Solicitud de memoria entrante
+[DEBUG] 00:36:05:084 SWAmP/(13287:13287): Solicitud de memoria entrante
+[ERROR] 00:36:05:088 SWAmP/(13287:13287): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP
+[DEBUG] 00:37:14:640 SWAmP/(13287:13287): Solicitud de memoria entrante
+[DEBUG] 00:37:25:114 SWAmP/(13287:13287): Solicitud de memoria entrante
+[ERROR] 00:37:25:117 SWAmP/(13287:13287): NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP

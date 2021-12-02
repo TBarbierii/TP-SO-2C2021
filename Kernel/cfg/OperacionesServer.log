@@ -4730,3 +4730,1053 @@
 [INFO] 21:10:17:297 Memoria/(18244:18254): El codigo de operacion es: 1
 [INFO] 21:10:17:297 Memoria/(18244:18254): Se pudo realizar toda la finalizacion en Memoria y SWAmP
 [INFO] 21:10:17:297 Operaciones/(18244:18254): Enviamos que vamos a cerrar el carpincho
+[INFO] 23:45:36:586 Operaciones/(10800:10818): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:586 Operaciones/(10800:10818): El codigo de operacion es: 0
+[INFO] 23:45:36:587 Operaciones/(10800:10818): Vamos a inicializar un carpincho
+[INFO] 23:45:36:588 Operaciones/(10800:10818): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:45:36:618 Memoria/(10800:10803): Recibimos la informacion de Memoria
+[INFO] 23:45:36:618 Memoria/(10800:10803): El codigo de operacion es: 0
+[INFO] 23:45:36:647 Operaciones/(10800:10809): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:647 Operaciones/(10800:10809): El codigo de operacion es: 2
+[INFO] 23:45:36:648 Operaciones/(10800:10809): Vamos a inicializar un semaforo
+[INFO] 23:45:36:656 Operaciones/(10800:10809): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:656 Operaciones/(10800:10809): El codigo de operacion es: 2
+[INFO] 23:45:36:657 Operaciones/(10800:10809): Vamos a inicializar un semaforo
+[INFO] 23:45:36:659 Operaciones/(10800:10809): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:659 Operaciones/(10800:10809): El codigo de operacion es: 2
+[INFO] 23:45:36:660 Operaciones/(10800:10809): Vamos a inicializar un semaforo
+[INFO] 23:45:36:661 Operaciones/(10800:10809): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:661 Operaciones/(10800:10809): El codigo de operacion es: 2
+[INFO] 23:45:36:661 Operaciones/(10800:10809): Vamos a inicializar un semaforo
+[INFO] 23:45:36:662 Operaciones/(10800:10809): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:663 Operaciones/(10800:10809): El codigo de operacion es: 2
+[INFO] 23:45:36:663 Operaciones/(10800:10809): Vamos a inicializar un semaforo
+[INFO] 23:45:36:664 Operaciones/(10800:10809): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:664 Operaciones/(10800:10809): El codigo de operacion es: 2
+[INFO] 23:45:36:664 Operaciones/(10800:10809): Vamos a inicializar un semaforo
+[INFO] 23:45:36:668 Operaciones/(10800:10821): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:668 Operaciones/(10800:10821): El codigo de operacion es: 0
+[INFO] 23:45:36:668 Operaciones/(10800:10821): Vamos a inicializar un carpincho
+[INFO] 23:45:36:670 Operaciones/(10800:10821): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:45:36:679 Memoria/(10800:10803): Recibimos la informacion de Memoria
+[INFO] 23:45:36:679 Memoria/(10800:10803): El codigo de operacion es: 0
+[INFO] 23:45:36:682 Operaciones/(10800:10807): Recibimos la informacion de un carpincho
+[INFO] 23:45:36:682 Operaciones/(10800:10807): El codigo de operacion es: 3
+[INFO] 23:45:36:682 Operaciones/(10800:10807): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:37:666 Operaciones/(10800:10824): Recibimos la informacion de un carpincho
+[INFO] 23:45:37:666 Operaciones/(10800:10824): El codigo de operacion es: 0
+[INFO] 23:45:37:667 Operaciones/(10800:10824): Vamos a inicializar un carpincho
+[INFO] 23:45:37:667 Operaciones/(10800:10824): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:45:37:670 Memoria/(10800:10803): Recibimos la informacion de Memoria
+[INFO] 23:45:37:670 Memoria/(10800:10803): El codigo de operacion es: 0
+[INFO] 23:45:37:673 Operaciones/(10800:10805): Recibimos la informacion de un carpincho
+[INFO] 23:45:37:673 Operaciones/(10800:10805): El codigo de operacion es: 3
+[INFO] 23:45:37:673 Operaciones/(10800:10805): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:38:667 Operaciones/(10800:10827): Recibimos la informacion de un carpincho
+[INFO] 23:45:38:667 Operaciones/(10800:10827): El codigo de operacion es: 0
+[INFO] 23:45:38:667 Operaciones/(10800:10827): Vamos a inicializar un carpincho
+[INFO] 23:45:38:667 Operaciones/(10800:10827): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:45:38:670 Memoria/(10800:10803): Recibimos la informacion de Memoria
+[INFO] 23:45:38:671 Memoria/(10800:10803): El codigo de operacion es: 0
+[INFO] 23:45:38:673 Operaciones/(10800:10811): Recibimos la informacion de un carpincho
+[INFO] 23:45:38:673 Operaciones/(10800:10811): El codigo de operacion es: 3
+[INFO] 23:45:38:673 Operaciones/(10800:10811): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:39:667 Operaciones/(10800:10830): Recibimos la informacion de un carpincho
+[INFO] 23:45:39:667 Operaciones/(10800:10830): El codigo de operacion es: 0
+[INFO] 23:45:39:668 Operaciones/(10800:10830): Vamos a inicializar un carpincho
+[INFO] 23:45:39:668 Operaciones/(10800:10830): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:45:39:671 Memoria/(10800:10803): Recibimos la informacion de Memoria
+[INFO] 23:45:39:672 Memoria/(10800:10803): El codigo de operacion es: 0
+[INFO] 23:45:39:674 Operaciones/(10800:10812): Recibimos la informacion de un carpincho
+[INFO] 23:45:39:674 Operaciones/(10800:10812): El codigo de operacion es: 3
+[INFO] 23:45:39:674 Operaciones/(10800:10812): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:39:687 Operaciones/(10800:10807): Recibimos la informacion de un carpincho
+[INFO] 23:45:39:687 Operaciones/(10800:10807): El codigo de operacion es: 3
+[INFO] 23:45:39:688 Operaciones/(10800:10807): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:40:669 Operaciones/(10800:10833): Recibimos la informacion de un carpincho
+[INFO] 23:45:40:669 Operaciones/(10800:10833): El codigo de operacion es: 0
+[INFO] 23:45:40:669 Operaciones/(10800:10833): Vamos a inicializar un carpincho
+[INFO] 23:45:40:670 Operaciones/(10800:10833): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:45:40:672 Memoria/(10800:10803): Recibimos la informacion de Memoria
+[INFO] 23:45:40:672 Memoria/(10800:10803): El codigo de operacion es: 0
+[INFO] 23:45:40:675 Operaciones/(10800:10805): Recibimos la informacion de un carpincho
+[INFO] 23:45:40:675 Operaciones/(10800:10805): El codigo de operacion es: 3
+[INFO] 23:45:40:675 Operaciones/(10800:10805): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:40:677 Operaciones/(10800:10814): Recibimos la informacion de un carpincho
+[INFO] 23:45:40:677 Operaciones/(10800:10814): El codigo de operacion es: 3
+[INFO] 23:45:40:677 Operaciones/(10800:10814): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:41:669 Operaciones/(10800:10836): Recibimos la informacion de un carpincho
+[INFO] 23:45:41:669 Operaciones/(10800:10836): El codigo de operacion es: 0
+[INFO] 23:45:41:669 Operaciones/(10800:10836): Vamos a inicializar un carpincho
+[INFO] 23:45:41:670 Operaciones/(10800:10836): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:45:41:672 Memoria/(10800:10803): Recibimos la informacion de Memoria
+[INFO] 23:45:41:673 Memoria/(10800:10803): El codigo de operacion es: 0
+[INFO] 23:45:41:675 Operaciones/(10800:10811): Recibimos la informacion de un carpincho
+[INFO] 23:45:41:675 Operaciones/(10800:10811): El codigo de operacion es: 3
+[INFO] 23:45:41:675 Operaciones/(10800:10811): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:41:678 Operaciones/(10800:10816): Recibimos la informacion de un carpincho
+[INFO] 23:45:41:678 Operaciones/(10800:10816): El codigo de operacion es: 3
+[INFO] 23:45:41:678 Operaciones/(10800:10816): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:42:669 Operaciones/(10800:10809): Recibimos la informacion de un carpincho
+[INFO] 23:45:42:669 Operaciones/(10800:10809): El codigo de operacion es: 1
+[INFO] 23:45:42:669 Operaciones/(10800:10809): Vamos a eliminar un carpincho
+[INFO] 23:45:42:670 Operaciones/(10800:10809): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 23:45:42:671 Operaciones/(10800:10809): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 23:45:42:675 Operaciones/(10800:10812): Recibimos la informacion de un carpincho
+[INFO] 23:45:42:675 Operaciones/(10800:10812): El codigo de operacion es: 3
+[INFO] 23:45:42:676 Operaciones/(10800:10812): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:42:680 Memoria/(10800:10809): Recibimos la informacion de Memoria
+[INFO] 23:45:42:680 Memoria/(10800:10809): El codigo de operacion es: 1
+[INFO] 23:45:42:681 Memoria/(10800:10809): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 23:45:42:683 Operaciones/(10800:10809): Enviamos que vamos a cerrar el carpincho
+[INFO] 23:45:43:679 Operaciones/(10800:10814): Recibimos la informacion de un carpincho
+[INFO] 23:45:43:679 Operaciones/(10800:10814): El codigo de operacion es: 3
+[INFO] 23:45:43:680 Operaciones/(10800:10814): Vamos a hacer un wait de un semaforo
+[INFO] 23:45:44:681 Operaciones/(10800:10816): Recibimos la informacion de un carpincho
+[INFO] 23:45:44:681 Operaciones/(10800:10816): El codigo de operacion es: 3
+[INFO] 23:45:44:681 Operaciones/(10800:10816): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:20:206 Operaciones/(11236:11257): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:206 Operaciones/(11236:11257): El codigo de operacion es: 0
+[INFO] 23:50:20:207 Operaciones/(11236:11257): Vamos a inicializar un carpincho
+[INFO] 23:50:20:208 Operaciones/(11236:11257): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:50:20:241 Memoria/(11236:11240): Recibimos la informacion de Memoria
+[INFO] 23:50:20:241 Memoria/(11236:11240): El codigo de operacion es: 0
+[INFO] 23:50:20:266 Operaciones/(11236:11246): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:266 Operaciones/(11236:11246): El codigo de operacion es: 2
+[INFO] 23:50:20:269 Operaciones/(11236:11246): Vamos a inicializar un semaforo
+[INFO] 23:50:20:276 Operaciones/(11236:11246): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:276 Operaciones/(11236:11246): El codigo de operacion es: 2
+[INFO] 23:50:20:277 Operaciones/(11236:11246): Vamos a inicializar un semaforo
+[INFO] 23:50:20:279 Operaciones/(11236:11246): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:279 Operaciones/(11236:11246): El codigo de operacion es: 2
+[INFO] 23:50:20:279 Operaciones/(11236:11246): Vamos a inicializar un semaforo
+[INFO] 23:50:20:280 Operaciones/(11236:11246): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:280 Operaciones/(11236:11246): El codigo de operacion es: 2
+[INFO] 23:50:20:281 Operaciones/(11236:11246): Vamos a inicializar un semaforo
+[INFO] 23:50:20:282 Operaciones/(11236:11246): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:282 Operaciones/(11236:11246): El codigo de operacion es: 2
+[INFO] 23:50:20:282 Operaciones/(11236:11246): Vamos a inicializar un semaforo
+[INFO] 23:50:20:283 Operaciones/(11236:11246): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:284 Operaciones/(11236:11246): El codigo de operacion es: 2
+[INFO] 23:50:20:284 Operaciones/(11236:11246): Vamos a inicializar un semaforo
+[INFO] 23:50:20:288 Operaciones/(11236:11263): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:289 Operaciones/(11236:11263): El codigo de operacion es: 0
+[INFO] 23:50:20:289 Operaciones/(11236:11263): Vamos a inicializar un carpincho
+[INFO] 23:50:20:289 Operaciones/(11236:11263): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:50:20:295 Memoria/(11236:11240): Recibimos la informacion de Memoria
+[INFO] 23:50:20:296 Memoria/(11236:11240): El codigo de operacion es: 0
+[INFO] 23:50:20:300 Operaciones/(11236:11248): Recibimos la informacion de un carpincho
+[INFO] 23:50:20:302 Operaciones/(11236:11248): El codigo de operacion es: 3
+[INFO] 23:50:20:302 Operaciones/(11236:11248): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:21:286 Operaciones/(11236:11270): Recibimos la informacion de un carpincho
+[INFO] 23:50:21:286 Operaciones/(11236:11270): El codigo de operacion es: 0
+[INFO] 23:50:21:287 Operaciones/(11236:11270): Vamos a inicializar un carpincho
+[INFO] 23:50:21:287 Operaciones/(11236:11270): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:50:21:292 Memoria/(11236:11240): Recibimos la informacion de Memoria
+[INFO] 23:50:21:292 Memoria/(11236:11240): El codigo de operacion es: 0
+[INFO] 23:50:21:295 Operaciones/(11236:11249): Recibimos la informacion de un carpincho
+[INFO] 23:50:21:295 Operaciones/(11236:11249): El codigo de operacion es: 3
+[INFO] 23:50:21:295 Operaciones/(11236:11249): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:22:287 Operaciones/(11236:11276): Recibimos la informacion de un carpincho
+[INFO] 23:50:22:287 Operaciones/(11236:11276): El codigo de operacion es: 0
+[INFO] 23:50:22:287 Operaciones/(11236:11276): Vamos a inicializar un carpincho
+[INFO] 23:50:22:288 Operaciones/(11236:11276): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:50:22:291 Memoria/(11236:11240): Recibimos la informacion de Memoria
+[INFO] 23:50:22:291 Memoria/(11236:11240): El codigo de operacion es: 0
+[INFO] 23:50:22:294 Operaciones/(11236:11250): Recibimos la informacion de un carpincho
+[INFO] 23:50:22:294 Operaciones/(11236:11250): El codigo de operacion es: 3
+[INFO] 23:50:22:295 Operaciones/(11236:11250): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:23:286 Operaciones/(11236:11282): Recibimos la informacion de un carpincho
+[INFO] 23:50:23:286 Operaciones/(11236:11282): El codigo de operacion es: 0
+[INFO] 23:50:23:287 Operaciones/(11236:11282): Vamos a inicializar un carpincho
+[INFO] 23:50:23:287 Operaciones/(11236:11282): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:50:23:290 Memoria/(11236:11240): Recibimos la informacion de Memoria
+[INFO] 23:50:23:290 Memoria/(11236:11240): El codigo de operacion es: 0
+[INFO] 23:50:23:293 Operaciones/(11236:11251): Recibimos la informacion de un carpincho
+[INFO] 23:50:23:293 Operaciones/(11236:11251): El codigo de operacion es: 3
+[INFO] 23:50:23:293 Operaciones/(11236:11251): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:23:309 Operaciones/(11236:11248): Recibimos la informacion de un carpincho
+[INFO] 23:50:23:309 Operaciones/(11236:11248): El codigo de operacion es: 3
+[INFO] 23:50:23:310 Operaciones/(11236:11248): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:24:287 Operaciones/(11236:11289): Recibimos la informacion de un carpincho
+[INFO] 23:50:24:287 Operaciones/(11236:11289): El codigo de operacion es: 0
+[INFO] 23:50:24:287 Operaciones/(11236:11289): Vamos a inicializar un carpincho
+[INFO] 23:50:24:287 Operaciones/(11236:11289): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:50:24:291 Memoria/(11236:11240): Recibimos la informacion de Memoria
+[INFO] 23:50:24:291 Memoria/(11236:11240): El codigo de operacion es: 0
+[INFO] 23:50:24:293 Operaciones/(11236:11252): Recibimos la informacion de un carpincho
+[INFO] 23:50:24:294 Operaciones/(11236:11252): El codigo de operacion es: 3
+[INFO] 23:50:24:294 Operaciones/(11236:11252): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:24:298 Operaciones/(11236:11249): Recibimos la informacion de un carpincho
+[INFO] 23:50:24:298 Operaciones/(11236:11249): El codigo de operacion es: 3
+[INFO] 23:50:24:298 Operaciones/(11236:11249): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:25:287 Operaciones/(11236:11295): Recibimos la informacion de un carpincho
+[INFO] 23:50:25:287 Operaciones/(11236:11295): El codigo de operacion es: 0
+[INFO] 23:50:25:288 Operaciones/(11236:11295): Vamos a inicializar un carpincho
+[INFO] 23:50:25:288 Operaciones/(11236:11295): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:50:25:291 Memoria/(11236:11240): Recibimos la informacion de Memoria
+[INFO] 23:50:25:291 Memoria/(11236:11240): El codigo de operacion es: 0
+[INFO] 23:50:25:294 Operaciones/(11236:11253): Recibimos la informacion de un carpincho
+[INFO] 23:50:25:294 Operaciones/(11236:11253): El codigo de operacion es: 3
+[INFO] 23:50:25:295 Operaciones/(11236:11253): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:25:296 Operaciones/(11236:11250): Recibimos la informacion de un carpincho
+[INFO] 23:50:25:296 Operaciones/(11236:11250): El codigo de operacion es: 3
+[INFO] 23:50:25:297 Operaciones/(11236:11250): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:26:287 Operaciones/(11236:11246): Recibimos la informacion de un carpincho
+[INFO] 23:50:26:287 Operaciones/(11236:11246): El codigo de operacion es: 1
+[INFO] 23:50:26:288 Operaciones/(11236:11246): Vamos a eliminar un carpincho
+[INFO] 23:50:26:289 Operaciones/(11236:11246): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 23:50:26:290 Operaciones/(11236:11246): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 23:50:26:295 Operaciones/(11236:11251): Recibimos la informacion de un carpincho
+[INFO] 23:50:26:295 Operaciones/(11236:11251): El codigo de operacion es: 3
+[INFO] 23:50:26:295 Operaciones/(11236:11251): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:26:302 Memoria/(11236:11246): Recibimos la informacion de Memoria
+[INFO] 23:50:26:302 Memoria/(11236:11246): El codigo de operacion es: 1
+[INFO] 23:50:26:302 Memoria/(11236:11246): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 23:50:26:303 Operaciones/(11236:11246): Enviamos que vamos a cerrar el carpincho
+[INFO] 23:50:27:296 Operaciones/(11236:11252): Recibimos la informacion de un carpincho
+[INFO] 23:50:27:297 Operaciones/(11236:11252): El codigo de operacion es: 3
+[INFO] 23:50:27:297 Operaciones/(11236:11252): Vamos a hacer un wait de un semaforo
+[INFO] 23:50:28:297 Operaciones/(11236:11253): Recibimos la informacion de un carpincho
+[INFO] 23:50:28:297 Operaciones/(11236:11253): El codigo de operacion es: 3
+[INFO] 23:50:28:298 Operaciones/(11236:11253): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:53:783 Operaciones/(11436:11460): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:783 Operaciones/(11436:11460): El codigo de operacion es: 0
+[INFO] 23:52:53:784 Operaciones/(11436:11460): Vamos a inicializar un carpincho
+[INFO] 23:52:53:784 Operaciones/(11436:11460): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:52:53:813 Memoria/(11436:11443): Recibimos la informacion de Memoria
+[INFO] 23:52:53:813 Memoria/(11436:11443): El codigo de operacion es: 0
+[INFO] 23:52:53:813 Operaciones/(11436:11446): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:814 Operaciones/(11436:11446): El codigo de operacion es: 2
+[INFO] 23:52:53:814 Operaciones/(11436:11446): Vamos a inicializar un semaforo
+[INFO] 23:52:53:814 Operaciones/(11436:11446): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:814 Operaciones/(11436:11446): El codigo de operacion es: 2
+[INFO] 23:52:53:814 Operaciones/(11436:11446): Vamos a inicializar un semaforo
+[INFO] 23:52:53:816 Operaciones/(11436:11446): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:816 Operaciones/(11436:11446): El codigo de operacion es: 2
+[INFO] 23:52:53:816 Operaciones/(11436:11446): Vamos a inicializar un semaforo
+[INFO] 23:52:53:816 Operaciones/(11436:11446): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:816 Operaciones/(11436:11446): El codigo de operacion es: 2
+[INFO] 23:52:53:816 Operaciones/(11436:11446): Vamos a inicializar un semaforo
+[INFO] 23:52:53:817 Operaciones/(11436:11446): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:817 Operaciones/(11436:11446): El codigo de operacion es: 2
+[INFO] 23:52:53:817 Operaciones/(11436:11446): Vamos a inicializar un semaforo
+[INFO] 23:52:53:817 Operaciones/(11436:11446): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:817 Operaciones/(11436:11446): El codigo de operacion es: 2
+[INFO] 23:52:53:817 Operaciones/(11436:11446): Vamos a inicializar un semaforo
+[INFO] 23:52:53:826 Operaciones/(11436:11464): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:826 Operaciones/(11436:11464): El codigo de operacion es: 0
+[INFO] 23:52:53:826 Operaciones/(11436:11464): Vamos a inicializar un carpincho
+[INFO] 23:52:53:826 Operaciones/(11436:11464): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:52:53:834 Memoria/(11436:11443): Recibimos la informacion de Memoria
+[INFO] 23:52:53:834 Memoria/(11436:11443): El codigo de operacion es: 0
+[INFO] 23:52:53:834 Operaciones/(11436:11449): Recibimos la informacion de un carpincho
+[INFO] 23:52:53:834 Operaciones/(11436:11449): El codigo de operacion es: 3
+[INFO] 23:52:53:834 Operaciones/(11436:11449): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:54:822 Operaciones/(11436:11471): Recibimos la informacion de un carpincho
+[INFO] 23:52:54:823 Operaciones/(11436:11471): El codigo de operacion es: 0
+[INFO] 23:52:54:823 Operaciones/(11436:11471): Vamos a inicializar un carpincho
+[INFO] 23:52:54:823 Operaciones/(11436:11471): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:52:54:828 Memoria/(11436:11443): Recibimos la informacion de Memoria
+[INFO] 23:52:54:828 Memoria/(11436:11443): El codigo de operacion es: 0
+[INFO] 23:52:54:828 Operaciones/(11436:11451): Recibimos la informacion de un carpincho
+[INFO] 23:52:54:828 Operaciones/(11436:11451): El codigo de operacion es: 3
+[INFO] 23:52:54:828 Operaciones/(11436:11451): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:55:822 Operaciones/(11436:11477): Recibimos la informacion de un carpincho
+[INFO] 23:52:55:822 Operaciones/(11436:11477): El codigo de operacion es: 0
+[INFO] 23:52:55:822 Operaciones/(11436:11477): Vamos a inicializar un carpincho
+[INFO] 23:52:55:823 Operaciones/(11436:11477): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:52:55:827 Memoria/(11436:11443): Recibimos la informacion de Memoria
+[INFO] 23:52:55:827 Memoria/(11436:11443): El codigo de operacion es: 0
+[INFO] 23:52:55:828 Operaciones/(11436:11453): Recibimos la informacion de un carpincho
+[INFO] 23:52:55:828 Operaciones/(11436:11453): El codigo de operacion es: 3
+[INFO] 23:52:55:828 Operaciones/(11436:11453): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:56:827 Operaciones/(11436:11483): Recibimos la informacion de un carpincho
+[INFO] 23:52:56:827 Operaciones/(11436:11483): El codigo de operacion es: 0
+[INFO] 23:52:56:828 Operaciones/(11436:11483): Vamos a inicializar un carpincho
+[INFO] 23:52:56:828 Operaciones/(11436:11483): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:52:56:835 Operaciones/(11436:11449): Recibimos la informacion de un carpincho
+[INFO] 23:52:56:835 Operaciones/(11436:11449): El codigo de operacion es: 3
+[INFO] 23:52:56:835 Operaciones/(11436:11449): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:56:837 Memoria/(11436:11443): Recibimos la informacion de Memoria
+[INFO] 23:52:56:837 Memoria/(11436:11443): El codigo de operacion es: 0
+[INFO] 23:52:56:838 Operaciones/(11436:11454): Recibimos la informacion de un carpincho
+[INFO] 23:52:56:838 Operaciones/(11436:11454): El codigo de operacion es: 3
+[INFO] 23:52:56:838 Operaciones/(11436:11454): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:57:822 Operaciones/(11436:11490): Recibimos la informacion de un carpincho
+[INFO] 23:52:57:822 Operaciones/(11436:11490): El codigo de operacion es: 0
+[INFO] 23:52:57:822 Operaciones/(11436:11490): Vamos a inicializar un carpincho
+[INFO] 23:52:57:822 Operaciones/(11436:11490): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:52:57:826 Memoria/(11436:11443): Recibimos la informacion de Memoria
+[INFO] 23:52:57:826 Memoria/(11436:11443): El codigo de operacion es: 0
+[INFO] 23:52:57:827 Operaciones/(11436:11455): Recibimos la informacion de un carpincho
+[INFO] 23:52:57:827 Operaciones/(11436:11455): El codigo de operacion es: 3
+[INFO] 23:52:57:827 Operaciones/(11436:11455): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:57:828 Operaciones/(11436:11451): Recibimos la informacion de un carpincho
+[INFO] 23:52:57:828 Operaciones/(11436:11451): El codigo de operacion es: 3
+[INFO] 23:52:57:828 Operaciones/(11436:11451): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:58:821 Operaciones/(11436:11496): Recibimos la informacion de un carpincho
+[INFO] 23:52:58:822 Operaciones/(11436:11496): El codigo de operacion es: 0
+[INFO] 23:52:58:822 Operaciones/(11436:11496): Vamos a inicializar un carpincho
+[INFO] 23:52:58:822 Operaciones/(11436:11496): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:52:58:826 Memoria/(11436:11443): Recibimos la informacion de Memoria
+[INFO] 23:52:58:826 Memoria/(11436:11443): El codigo de operacion es: 0
+[INFO] 23:52:58:826 Operaciones/(11436:11456): Recibimos la informacion de un carpincho
+[INFO] 23:52:58:826 Operaciones/(11436:11456): El codigo de operacion es: 3
+[INFO] 23:52:58:826 Operaciones/(11436:11456): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:58:828 Operaciones/(11436:11453): Recibimos la informacion de un carpincho
+[INFO] 23:52:58:828 Operaciones/(11436:11453): El codigo de operacion es: 3
+[INFO] 23:52:58:828 Operaciones/(11436:11453): Vamos a hacer un wait de un semaforo
+[INFO] 23:52:59:820 Operaciones/(11436:11446): Recibimos la informacion de un carpincho
+[INFO] 23:52:59:820 Operaciones/(11436:11446): El codigo de operacion es: 1
+[INFO] 23:52:59:820 Operaciones/(11436:11446): Vamos a eliminar un carpincho
+[INFO] 23:52:59:820 Operaciones/(11436:11446): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 23:52:59:820 Operaciones/(11436:11446): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 23:52:59:827 Memoria/(11436:11446): Recibimos la informacion de Memoria
+[INFO] 23:52:59:827 Memoria/(11436:11446): El codigo de operacion es: 1
+[INFO] 23:52:59:827 Memoria/(11436:11446): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 23:52:59:827 Operaciones/(11436:11446): Enviamos que vamos a cerrar el carpincho
+[INFO] 23:52:59:839 Operaciones/(11436:11454): Recibimos la informacion de un carpincho
+[INFO] 23:52:59:839 Operaciones/(11436:11454): El codigo de operacion es: 3
+[INFO] 23:52:59:839 Operaciones/(11436:11454): Vamos a hacer un wait de un semaforo
+[INFO] 23:53:00:828 Operaciones/(11436:11455): Recibimos la informacion de un carpincho
+[INFO] 23:53:00:828 Operaciones/(11436:11455): El codigo de operacion es: 3
+[INFO] 23:53:00:828 Operaciones/(11436:11455): Vamos a hacer un wait de un semaforo
+[INFO] 23:53:01:827 Operaciones/(11436:11456): Recibimos la informacion de un carpincho
+[INFO] 23:53:01:827 Operaciones/(11436:11456): El codigo de operacion es: 3
+[INFO] 23:53:01:827 Operaciones/(11436:11456): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:27:249 Operaciones/(11799:11822): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:249 Operaciones/(11799:11822): El codigo de operacion es: 0
+[INFO] 23:56:27:249 Operaciones/(11799:11822): Vamos a inicializar un carpincho
+[INFO] 23:56:27:249 Operaciones/(11799:11822): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:56:27:287 Memoria/(11799:11806): Recibimos la informacion de Memoria
+[INFO] 23:56:27:287 Memoria/(11799:11806): El codigo de operacion es: 0
+[INFO] 23:56:27:287 Operaciones/(11799:11809): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:287 Operaciones/(11799:11809): El codigo de operacion es: 2
+[INFO] 23:56:27:287 Operaciones/(11799:11809): Vamos a inicializar un semaforo
+[INFO] 23:56:27:287 Operaciones/(11799:11809): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:288 Operaciones/(11799:11809): El codigo de operacion es: 2
+[INFO] 23:56:27:288 Operaciones/(11799:11809): Vamos a inicializar un semaforo
+[INFO] 23:56:27:288 Operaciones/(11799:11809): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:288 Operaciones/(11799:11809): El codigo de operacion es: 2
+[INFO] 23:56:27:288 Operaciones/(11799:11809): Vamos a inicializar un semaforo
+[INFO] 23:56:27:288 Operaciones/(11799:11809): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:288 Operaciones/(11799:11809): El codigo de operacion es: 2
+[INFO] 23:56:27:288 Operaciones/(11799:11809): Vamos a inicializar un semaforo
+[INFO] 23:56:27:288 Operaciones/(11799:11809): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:288 Operaciones/(11799:11809): El codigo de operacion es: 2
+[INFO] 23:56:27:288 Operaciones/(11799:11809): Vamos a inicializar un semaforo
+[INFO] 23:56:27:289 Operaciones/(11799:11809): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:289 Operaciones/(11799:11809): El codigo de operacion es: 2
+[INFO] 23:56:27:289 Operaciones/(11799:11809): Vamos a inicializar un semaforo
+[INFO] 23:56:27:300 Operaciones/(11799:11828): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:300 Operaciones/(11799:11828): El codigo de operacion es: 0
+[INFO] 23:56:27:300 Operaciones/(11799:11828): Vamos a inicializar un carpincho
+[INFO] 23:56:27:302 Operaciones/(11799:11828): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:56:27:310 Memoria/(11799:11806): Recibimos la informacion de Memoria
+[INFO] 23:56:27:310 Memoria/(11799:11806): El codigo de operacion es: 0
+[INFO] 23:56:27:310 Operaciones/(11799:11811): Recibimos la informacion de un carpincho
+[INFO] 23:56:27:310 Operaciones/(11799:11811): El codigo de operacion es: 3
+[INFO] 23:56:27:311 Operaciones/(11799:11811): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:28:298 Operaciones/(11799:11834): Recibimos la informacion de un carpincho
+[INFO] 23:56:28:299 Operaciones/(11799:11834): El codigo de operacion es: 0
+[INFO] 23:56:28:299 Operaciones/(11799:11834): Vamos a inicializar un carpincho
+[INFO] 23:56:28:299 Operaciones/(11799:11834): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:56:28:309 Memoria/(11799:11806): Recibimos la informacion de Memoria
+[INFO] 23:56:28:309 Memoria/(11799:11806): El codigo de operacion es: 0
+[INFO] 23:56:28:309 Operaciones/(11799:11813): Recibimos la informacion de un carpincho
+[INFO] 23:56:28:309 Operaciones/(11799:11813): El codigo de operacion es: 3
+[INFO] 23:56:28:309 Operaciones/(11799:11813): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:29:301 Operaciones/(11799:11840): Recibimos la informacion de un carpincho
+[INFO] 23:56:29:301 Operaciones/(11799:11840): El codigo de operacion es: 0
+[INFO] 23:56:29:301 Operaciones/(11799:11840): Vamos a inicializar un carpincho
+[INFO] 23:56:29:301 Operaciones/(11799:11840): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:56:29:310 Memoria/(11799:11806): Recibimos la informacion de Memoria
+[INFO] 23:56:29:310 Memoria/(11799:11806): El codigo de operacion es: 0
+[INFO] 23:56:29:310 Operaciones/(11799:11815): Recibimos la informacion de un carpincho
+[INFO] 23:56:29:310 Operaciones/(11799:11815): El codigo de operacion es: 3
+[INFO] 23:56:29:310 Operaciones/(11799:11815): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:30:298 Operaciones/(11799:11853): Recibimos la informacion de un carpincho
+[INFO] 23:56:30:298 Operaciones/(11799:11853): El codigo de operacion es: 0
+[INFO] 23:56:30:298 Operaciones/(11799:11853): Vamos a inicializar un carpincho
+[INFO] 23:56:30:299 Operaciones/(11799:11853): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:56:30:303 Memoria/(11799:11806): Recibimos la informacion de Memoria
+[INFO] 23:56:30:303 Memoria/(11799:11806): El codigo de operacion es: 0
+[INFO] 23:56:30:303 Operaciones/(11799:11816): Recibimos la informacion de un carpincho
+[INFO] 23:56:30:303 Operaciones/(11799:11816): El codigo de operacion es: 3
+[INFO] 23:56:30:303 Operaciones/(11799:11816): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:30:311 Operaciones/(11799:11811): Recibimos la informacion de un carpincho
+[INFO] 23:56:30:311 Operaciones/(11799:11811): El codigo de operacion es: 3
+[INFO] 23:56:30:311 Operaciones/(11799:11811): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:31:305 Operaciones/(11799:11861): Recibimos la informacion de un carpincho
+[INFO] 23:56:31:306 Operaciones/(11799:11861): El codigo de operacion es: 0
+[INFO] 23:56:31:306 Operaciones/(11799:11861): Vamos a inicializar un carpincho
+[INFO] 23:56:31:306 Operaciones/(11799:11861): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:56:31:310 Operaciones/(11799:11813): Recibimos la informacion de un carpincho
+[INFO] 23:56:31:310 Operaciones/(11799:11813): El codigo de operacion es: 3
+[INFO] 23:56:31:310 Operaciones/(11799:11813): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:31:315 Memoria/(11799:11806): Recibimos la informacion de Memoria
+[INFO] 23:56:31:315 Memoria/(11799:11806): El codigo de operacion es: 0
+[INFO] 23:56:31:316 Operaciones/(11799:11817): Recibimos la informacion de un carpincho
+[INFO] 23:56:31:316 Operaciones/(11799:11817): El codigo de operacion es: 3
+[INFO] 23:56:31:316 Operaciones/(11799:11817): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:32:302 Operaciones/(11799:11867): Recibimos la informacion de un carpincho
+[INFO] 23:56:32:302 Operaciones/(11799:11867): El codigo de operacion es: 0
+[INFO] 23:56:32:302 Operaciones/(11799:11867): Vamos a inicializar un carpincho
+[INFO] 23:56:32:302 Operaciones/(11799:11867): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 23:56:32:311 Operaciones/(11799:11815): Recibimos la informacion de un carpincho
+[INFO] 23:56:32:311 Operaciones/(11799:11815): El codigo de operacion es: 3
+[INFO] 23:56:32:311 Operaciones/(11799:11815): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:32:312 Memoria/(11799:11806): Recibimos la informacion de Memoria
+[INFO] 23:56:32:312 Memoria/(11799:11806): El codigo de operacion es: 0
+[INFO] 23:56:32:312 Operaciones/(11799:11818): Recibimos la informacion de un carpincho
+[INFO] 23:56:32:312 Operaciones/(11799:11818): El codigo de operacion es: 3
+[INFO] 23:56:32:313 Operaciones/(11799:11818): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:33:292 Operaciones/(11799:11809): Recibimos la informacion de un carpincho
+[INFO] 23:56:33:292 Operaciones/(11799:11809): El codigo de operacion es: 1
+[INFO] 23:56:33:292 Operaciones/(11799:11809): Vamos a eliminar un carpincho
+[INFO] 23:56:33:292 Operaciones/(11799:11809): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 23:56:33:292 Operaciones/(11799:11809): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 23:56:33:300 Memoria/(11799:11809): Recibimos la informacion de Memoria
+[INFO] 23:56:33:300 Memoria/(11799:11809): El codigo de operacion es: 1
+[INFO] 23:56:33:300 Memoria/(11799:11809): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 23:56:33:300 Operaciones/(11799:11809): Enviamos que vamos a cerrar el carpincho
+[INFO] 23:56:33:304 Operaciones/(11799:11816): Recibimos la informacion de un carpincho
+[INFO] 23:56:33:304 Operaciones/(11799:11816): El codigo de operacion es: 3
+[INFO] 23:56:33:305 Operaciones/(11799:11816): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:34:316 Operaciones/(11799:11817): Recibimos la informacion de un carpincho
+[INFO] 23:56:34:316 Operaciones/(11799:11817): El codigo de operacion es: 3
+[INFO] 23:56:34:316 Operaciones/(11799:11817): Vamos a hacer un wait de un semaforo
+[INFO] 23:56:35:313 Operaciones/(11799:11818): Recibimos la informacion de un carpincho
+[INFO] 23:56:35:313 Operaciones/(11799:11818): El codigo de operacion es: 3
+[INFO] 23:56:35:313 Operaciones/(11799:11818): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:52:636 Operaciones/(12115:12140): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:636 Operaciones/(12115:12140): El codigo de operacion es: 0
+[INFO] 00:02:52:636 Operaciones/(12115:12140): Vamos a inicializar un carpincho
+[INFO] 00:02:52:636 Operaciones/(12115:12140): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:02:52:659 Memoria/(12115:12122): Recibimos la informacion de Memoria
+[INFO] 00:02:52:659 Memoria/(12115:12122): El codigo de operacion es: 0
+[INFO] 00:02:52:660 Operaciones/(12115:12125): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:660 Operaciones/(12115:12125): El codigo de operacion es: 2
+[INFO] 00:02:52:660 Operaciones/(12115:12125): Vamos a inicializar un semaforo
+[INFO] 00:02:52:662 Operaciones/(12115:12125): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:662 Operaciones/(12115:12125): El codigo de operacion es: 2
+[INFO] 00:02:52:662 Operaciones/(12115:12125): Vamos a inicializar un semaforo
+[INFO] 00:02:52:662 Operaciones/(12115:12125): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:662 Operaciones/(12115:12125): El codigo de operacion es: 2
+[INFO] 00:02:52:662 Operaciones/(12115:12125): Vamos a inicializar un semaforo
+[INFO] 00:02:52:662 Operaciones/(12115:12125): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:662 Operaciones/(12115:12125): El codigo de operacion es: 2
+[INFO] 00:02:52:662 Operaciones/(12115:12125): Vamos a inicializar un semaforo
+[INFO] 00:02:52:663 Operaciones/(12115:12125): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:663 Operaciones/(12115:12125): El codigo de operacion es: 2
+[INFO] 00:02:52:663 Operaciones/(12115:12125): Vamos a inicializar un semaforo
+[INFO] 00:02:52:663 Operaciones/(12115:12125): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:663 Operaciones/(12115:12125): El codigo de operacion es: 2
+[INFO] 00:02:52:663 Operaciones/(12115:12125): Vamos a inicializar un semaforo
+[INFO] 00:02:52:674 Operaciones/(12115:12143): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:674 Operaciones/(12115:12143): El codigo de operacion es: 0
+[INFO] 00:02:52:674 Operaciones/(12115:12143): Vamos a inicializar un carpincho
+[INFO] 00:02:52:674 Operaciones/(12115:12143): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:02:52:688 Memoria/(12115:12122): Recibimos la informacion de Memoria
+[INFO] 00:02:52:688 Memoria/(12115:12122): El codigo de operacion es: 0
+[INFO] 00:02:52:688 Operaciones/(12115:12127): Recibimos la informacion de un carpincho
+[INFO] 00:02:52:688 Operaciones/(12115:12127): El codigo de operacion es: 3
+[INFO] 00:02:52:688 Operaciones/(12115:12127): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:53:673 Operaciones/(12115:12146): Recibimos la informacion de un carpincho
+[INFO] 00:02:53:673 Operaciones/(12115:12146): El codigo de operacion es: 0
+[INFO] 00:02:53:673 Operaciones/(12115:12146): Vamos a inicializar un carpincho
+[INFO] 00:02:53:673 Operaciones/(12115:12146): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:02:53:678 Memoria/(12115:12122): Recibimos la informacion de Memoria
+[INFO] 00:02:53:678 Memoria/(12115:12122): El codigo de operacion es: 0
+[INFO] 00:02:53:679 Operaciones/(12115:12129): Recibimos la informacion de un carpincho
+[INFO] 00:02:53:679 Operaciones/(12115:12129): El codigo de operacion es: 3
+[INFO] 00:02:53:679 Operaciones/(12115:12129): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:54:671 Operaciones/(12115:12149): Recibimos la informacion de un carpincho
+[INFO] 00:02:54:672 Operaciones/(12115:12149): El codigo de operacion es: 0
+[INFO] 00:02:54:672 Operaciones/(12115:12149): Vamos a inicializar un carpincho
+[INFO] 00:02:54:672 Operaciones/(12115:12149): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:02:54:679 Memoria/(12115:12122): Recibimos la informacion de Memoria
+[INFO] 00:02:54:679 Memoria/(12115:12122): El codigo de operacion es: 0
+[INFO] 00:02:54:679 Operaciones/(12115:12131): Recibimos la informacion de un carpincho
+[INFO] 00:02:54:679 Operaciones/(12115:12131): El codigo de operacion es: 3
+[INFO] 00:02:54:679 Operaciones/(12115:12131): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:55:667 Operaciones/(12115:12159): Recibimos la informacion de un carpincho
+[INFO] 00:02:55:667 Operaciones/(12115:12159): El codigo de operacion es: 0
+[INFO] 00:02:55:667 Operaciones/(12115:12159): Vamos a inicializar un carpincho
+[INFO] 00:02:55:668 Operaciones/(12115:12159): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:02:55:672 Memoria/(12115:12122): Recibimos la informacion de Memoria
+[INFO] 00:02:55:672 Memoria/(12115:12122): El codigo de operacion es: 0
+[INFO] 00:02:55:672 Operaciones/(12115:12132): Recibimos la informacion de un carpincho
+[INFO] 00:02:55:672 Operaciones/(12115:12132): El codigo de operacion es: 3
+[INFO] 00:02:55:672 Operaciones/(12115:12132): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:55:689 Operaciones/(12115:12127): Recibimos la informacion de un carpincho
+[INFO] 00:02:55:689 Operaciones/(12115:12127): El codigo de operacion es: 3
+[INFO] 00:02:55:689 Operaciones/(12115:12127): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:56:673 Operaciones/(12115:12162): Recibimos la informacion de un carpincho
+[INFO] 00:02:56:673 Operaciones/(12115:12162): El codigo de operacion es: 0
+[INFO] 00:02:56:673 Operaciones/(12115:12162): Vamos a inicializar un carpincho
+[INFO] 00:02:56:673 Operaciones/(12115:12162): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:02:56:680 Operaciones/(12115:12129): Recibimos la informacion de un carpincho
+[INFO] 00:02:56:680 Operaciones/(12115:12129): El codigo de operacion es: 3
+[INFO] 00:02:56:680 Operaciones/(12115:12129): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:56:680 Memoria/(12115:12122): Recibimos la informacion de Memoria
+[INFO] 00:02:56:680 Memoria/(12115:12122): El codigo de operacion es: 0
+[INFO] 00:02:56:681 Operaciones/(12115:12133): Recibimos la informacion de un carpincho
+[INFO] 00:02:56:681 Operaciones/(12115:12133): El codigo de operacion es: 3
+[INFO] 00:02:56:681 Operaciones/(12115:12133): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:57:673 Operaciones/(12115:12165): Recibimos la informacion de un carpincho
+[INFO] 00:02:57:673 Operaciones/(12115:12165): El codigo de operacion es: 0
+[INFO] 00:02:57:673 Operaciones/(12115:12165): Vamos a inicializar un carpincho
+[INFO] 00:02:57:673 Operaciones/(12115:12165): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:02:57:677 Memoria/(12115:12122): Recibimos la informacion de Memoria
+[INFO] 00:02:57:677 Memoria/(12115:12122): El codigo de operacion es: 0
+[INFO] 00:02:57:677 Operaciones/(12115:12134): Recibimos la informacion de un carpincho
+[INFO] 00:02:57:677 Operaciones/(12115:12134): El codigo de operacion es: 3
+[INFO] 00:02:57:677 Operaciones/(12115:12134): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:57:681 Operaciones/(12115:12131): Recibimos la informacion de un carpincho
+[INFO] 00:02:57:681 Operaciones/(12115:12131): El codigo de operacion es: 3
+[INFO] 00:02:57:682 Operaciones/(12115:12131): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:58:665 Operaciones/(12115:12125): Recibimos la informacion de un carpincho
+[INFO] 00:02:58:665 Operaciones/(12115:12125): El codigo de operacion es: 1
+[INFO] 00:02:58:665 Operaciones/(12115:12125): Vamos a eliminar un carpincho
+[INFO] 00:02:58:665 Operaciones/(12115:12125): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 00:02:58:665 Operaciones/(12115:12125): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 00:02:58:674 Operaciones/(12115:12132): Recibimos la informacion de un carpincho
+[INFO] 00:02:58:674 Operaciones/(12115:12132): El codigo de operacion es: 3
+[INFO] 00:02:58:674 Operaciones/(12115:12132): Vamos a hacer un wait de un semaforo
+[INFO] 00:02:58:684 Memoria/(12115:12125): Recibimos la informacion de Memoria
+[INFO] 00:02:58:684 Memoria/(12115:12125): El codigo de operacion es: 1
+[INFO] 00:02:58:684 Memoria/(12115:12125): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 00:02:58:684 Operaciones/(12115:12125): Enviamos que vamos a cerrar el carpincho
+[INFO] 00:02:59:681 Operaciones/(12115:12133): Recibimos la informacion de un carpincho
+[INFO] 00:02:59:681 Operaciones/(12115:12133): El codigo de operacion es: 3
+[INFO] 00:02:59:682 Operaciones/(12115:12133): Vamos a hacer un wait de un semaforo
+[INFO] 00:03:00:678 Operaciones/(12115:12134): Recibimos la informacion de un carpincho
+[INFO] 00:03:00:678 Operaciones/(12115:12134): El codigo de operacion es: 3
+[INFO] 00:03:00:678 Operaciones/(12115:12134): Vamos a hacer un wait de un semaforo
+[INFO] 00:16:57:727 Operaciones/(12559:12591): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:727 Operaciones/(12559:12591): El codigo de operacion es: 0
+[INFO] 00:16:57:727 Operaciones/(12559:12591): Vamos a inicializar un carpincho
+[INFO] 00:16:57:727 Operaciones/(12559:12591): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:16:57:756 Memoria/(12559:12566): Recibimos la informacion de Memoria
+[INFO] 00:16:57:756 Memoria/(12559:12566): El codigo de operacion es: 0
+[INFO] 00:16:57:757 Operaciones/(12559:12569): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:757 Operaciones/(12559:12569): El codigo de operacion es: 2
+[INFO] 00:16:57:757 Operaciones/(12559:12569): Vamos a inicializar un semaforo
+[INFO] 00:16:57:758 Operaciones/(12559:12569): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:758 Operaciones/(12559:12569): El codigo de operacion es: 2
+[INFO] 00:16:57:758 Operaciones/(12559:12569): Vamos a inicializar un semaforo
+[INFO] 00:16:57:758 Operaciones/(12559:12569): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:758 Operaciones/(12559:12569): El codigo de operacion es: 2
+[INFO] 00:16:57:758 Operaciones/(12559:12569): Vamos a inicializar un semaforo
+[INFO] 00:16:57:758 Operaciones/(12559:12569): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:759 Operaciones/(12559:12569): El codigo de operacion es: 2
+[INFO] 00:16:57:759 Operaciones/(12559:12569): Vamos a inicializar un semaforo
+[INFO] 00:16:57:759 Operaciones/(12559:12569): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:759 Operaciones/(12559:12569): El codigo de operacion es: 2
+[INFO] 00:16:57:759 Operaciones/(12559:12569): Vamos a inicializar un semaforo
+[INFO] 00:16:57:760 Operaciones/(12559:12569): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:760 Operaciones/(12559:12569): El codigo de operacion es: 2
+[INFO] 00:16:57:760 Operaciones/(12559:12569): Vamos a inicializar un semaforo
+[INFO] 00:16:57:775 Operaciones/(12559:12594): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:775 Operaciones/(12559:12594): El codigo de operacion es: 0
+[INFO] 00:16:57:775 Operaciones/(12559:12594): Vamos a inicializar un carpincho
+[INFO] 00:16:57:775 Operaciones/(12559:12594): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:16:57:788 Memoria/(12559:12566): Recibimos la informacion de Memoria
+[INFO] 00:16:57:788 Memoria/(12559:12566): El codigo de operacion es: 0
+[INFO] 00:16:57:788 Operaciones/(12559:12571): Recibimos la informacion de un carpincho
+[INFO] 00:16:57:788 Operaciones/(12559:12571): El codigo de operacion es: 3
+[INFO] 00:16:57:788 Operaciones/(12559:12571): Vamos a hacer un wait de un semaforo
+[INFO] 00:16:58:770 Operaciones/(12559:12597): Recibimos la informacion de un carpincho
+[INFO] 00:16:58:770 Operaciones/(12559:12597): El codigo de operacion es: 0
+[INFO] 00:16:58:770 Operaciones/(12559:12597): Vamos a inicializar un carpincho
+[INFO] 00:16:58:770 Operaciones/(12559:12597): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:16:58:777 Memoria/(12559:12566): Recibimos la informacion de Memoria
+[INFO] 00:16:58:777 Memoria/(12559:12566): El codigo de operacion es: 0
+[INFO] 00:16:58:777 Operaciones/(12559:12573): Recibimos la informacion de un carpincho
+[INFO] 00:16:58:777 Operaciones/(12559:12573): El codigo de operacion es: 3
+[INFO] 00:16:58:777 Operaciones/(12559:12573): Vamos a hacer un wait de un semaforo
+[INFO] 00:16:59:770 Operaciones/(12559:12600): Recibimos la informacion de un carpincho
+[INFO] 00:16:59:770 Operaciones/(12559:12600): El codigo de operacion es: 0
+[INFO] 00:16:59:770 Operaciones/(12559:12600): Vamos a inicializar un carpincho
+[INFO] 00:16:59:770 Operaciones/(12559:12600): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:16:59:776 Memoria/(12559:12566): Recibimos la informacion de Memoria
+[INFO] 00:16:59:776 Memoria/(12559:12566): El codigo de operacion es: 0
+[INFO] 00:16:59:777 Operaciones/(12559:12575): Recibimos la informacion de un carpincho
+[INFO] 00:16:59:777 Operaciones/(12559:12575): El codigo de operacion es: 3
+[INFO] 00:16:59:777 Operaciones/(12559:12575): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:00:771 Operaciones/(12559:12603): Recibimos la informacion de un carpincho
+[INFO] 00:17:00:771 Operaciones/(12559:12603): El codigo de operacion es: 0
+[INFO] 00:17:00:771 Operaciones/(12559:12603): Vamos a inicializar un carpincho
+[INFO] 00:17:00:772 Operaciones/(12559:12603): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:00:780 Memoria/(12559:12566): Recibimos la informacion de Memoria
+[INFO] 00:17:00:780 Memoria/(12559:12566): El codigo de operacion es: 0
+[INFO] 00:17:00:781 Operaciones/(12559:12576): Recibimos la informacion de un carpincho
+[INFO] 00:17:00:781 Operaciones/(12559:12576): El codigo de operacion es: 3
+[INFO] 00:17:00:781 Operaciones/(12559:12576): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:00:789 Operaciones/(12559:12571): Recibimos la informacion de un carpincho
+[INFO] 00:17:00:789 Operaciones/(12559:12571): El codigo de operacion es: 3
+[INFO] 00:17:00:789 Operaciones/(12559:12571): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:01:770 Operaciones/(12559:12609): Recibimos la informacion de un carpincho
+[INFO] 00:17:01:770 Operaciones/(12559:12609): El codigo de operacion es: 0
+[INFO] 00:17:01:770 Operaciones/(12559:12609): Vamos a inicializar un carpincho
+[INFO] 00:17:01:770 Operaciones/(12559:12609): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:01:777 Memoria/(12559:12566): Recibimos la informacion de Memoria
+[INFO] 00:17:01:777 Memoria/(12559:12566): El codigo de operacion es: 0
+[INFO] 00:17:01:778 Operaciones/(12559:12573): Recibimos la informacion de un carpincho
+[INFO] 00:17:01:778 Operaciones/(12559:12577): Recibimos la informacion de un carpincho
+[INFO] 00:17:01:778 Operaciones/(12559:12577): El codigo de operacion es: 3
+[INFO] 00:17:01:778 Operaciones/(12559:12577): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:01:778 Operaciones/(12559:12573): El codigo de operacion es: 3
+[INFO] 00:17:01:778 Operaciones/(12559:12573): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:02:771 Operaciones/(12559:12612): Recibimos la informacion de un carpincho
+[INFO] 00:17:02:772 Operaciones/(12559:12612): El codigo de operacion es: 0
+[INFO] 00:17:02:772 Operaciones/(12559:12612): Vamos a inicializar un carpincho
+[INFO] 00:17:02:772 Operaciones/(12559:12612): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:02:777 Operaciones/(12559:12575): Recibimos la informacion de un carpincho
+[INFO] 00:17:02:777 Operaciones/(12559:12575): El codigo de operacion es: 3
+[INFO] 00:17:02:777 Operaciones/(12559:12575): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:02:778 Memoria/(12559:12566): Recibimos la informacion de Memoria
+[INFO] 00:17:02:778 Memoria/(12559:12566): El codigo de operacion es: 0
+[INFO] 00:17:02:779 Operaciones/(12559:12579): Recibimos la informacion de un carpincho
+[INFO] 00:17:02:779 Operaciones/(12559:12579): El codigo de operacion es: 3
+[INFO] 00:17:02:779 Operaciones/(12559:12579): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:03:762 Operaciones/(12559:12569): Recibimos la informacion de un carpincho
+[INFO] 00:17:03:762 Operaciones/(12559:12569): El codigo de operacion es: 1
+[INFO] 00:17:03:762 Operaciones/(12559:12569): Vamos a eliminar un carpincho
+[INFO] 00:17:03:762 Operaciones/(12559:12569): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 00:17:03:762 Operaciones/(12559:12569): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 00:17:03:774 Memoria/(12559:12569): Recibimos la informacion de Memoria
+[INFO] 00:17:03:774 Memoria/(12559:12569): El codigo de operacion es: 1
+[INFO] 00:17:03:774 Memoria/(12559:12569): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 00:17:03:774 Operaciones/(12559:12569): Enviamos que vamos a cerrar el carpincho
+[INFO] 00:17:03:783 Operaciones/(12559:12576): Recibimos la informacion de un carpincho
+[INFO] 00:17:03:783 Operaciones/(12559:12576): El codigo de operacion es: 3
+[INFO] 00:17:03:783 Operaciones/(12559:12576): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:04:778 Operaciones/(12559:12577): Recibimos la informacion de un carpincho
+[INFO] 00:17:04:779 Operaciones/(12559:12577): El codigo de operacion es: 3
+[INFO] 00:17:04:779 Operaciones/(12559:12577): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:05:780 Operaciones/(12559:12579): Recibimos la informacion de un carpincho
+[INFO] 00:17:05:780 Operaciones/(12559:12579): El codigo de operacion es: 3
+[INFO] 00:17:05:780 Operaciones/(12559:12579): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:34:985 Operaciones/(12720:12750): Recibimos la informacion de un carpincho
+[INFO] 00:17:34:985 Operaciones/(12720:12750): El codigo de operacion es: 0
+[INFO] 00:17:34:985 Operaciones/(12720:12750): Vamos a inicializar un carpincho
+[INFO] 00:17:34:988 Operaciones/(12720:12750): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:35:021 Memoria/(12720:12727): Recibimos la informacion de Memoria
+[INFO] 00:17:35:021 Memoria/(12720:12727): El codigo de operacion es: 0
+[INFO] 00:17:35:021 Operaciones/(12720:12730): Recibimos la informacion de un carpincho
+[INFO] 00:17:35:021 Operaciones/(12720:12730): El codigo de operacion es: 2
+[INFO] 00:17:35:021 Operaciones/(12720:12730): Vamos a inicializar un semaforo
+[INFO] 00:17:35:023 Operaciones/(12720:12730): Recibimos la informacion de un carpincho
+[INFO] 00:17:35:023 Operaciones/(12720:12730): El codigo de operacion es: 2
+[INFO] 00:17:35:023 Operaciones/(12720:12730): Vamos a inicializar un semaforo
+[INFO] 00:17:35:023 Operaciones/(12720:12730): Recibimos la informacion de un carpincho
+[INFO] 00:17:35:023 Operaciones/(12720:12730): El codigo de operacion es: 2
+[INFO] 00:17:35:023 Operaciones/(12720:12730): Vamos a inicializar un semaforo
+[INFO] 00:17:35:023 Operaciones/(12720:12730): Recibimos la informacion de un carpincho
+[INFO] 00:17:35:023 Operaciones/(12720:12730): El codigo de operacion es: 2
+[INFO] 00:17:35:023 Operaciones/(12720:12730): Vamos a inicializar un semaforo
+[INFO] 00:17:35:024 Operaciones/(12720:12730): Recibimos la informacion de un carpincho
+[INFO] 00:17:35:024 Operaciones/(12720:12730): El codigo de operacion es: 2
+[INFO] 00:17:35:024 Operaciones/(12720:12730): Vamos a inicializar un semaforo
+[INFO] 00:17:35:024 Operaciones/(12720:12730): Recibimos la informacion de un carpincho
+[INFO] 00:17:35:024 Operaciones/(12720:12730): El codigo de operacion es: 2
+[INFO] 00:17:35:024 Operaciones/(12720:12730): Vamos a inicializar un semaforo
+[INFO] 00:17:35:038 Operaciones/(12720:12753): Recibimos la informacion de un carpincho
+[INFO] 00:17:35:039 Operaciones/(12720:12753): El codigo de operacion es: 0
+[INFO] 00:17:35:039 Operaciones/(12720:12753): Vamos a inicializar un carpincho
+[INFO] 00:17:35:039 Operaciones/(12720:12753): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:35:048 Memoria/(12720:12727): Recibimos la informacion de Memoria
+[INFO] 00:17:35:048 Memoria/(12720:12727): El codigo de operacion es: 0
+[INFO] 00:17:35:049 Operaciones/(12720:12732): Recibimos la informacion de un carpincho
+[INFO] 00:17:35:049 Operaciones/(12720:12732): El codigo de operacion es: 3
+[INFO] 00:17:35:049 Operaciones/(12720:12732): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:36:035 Operaciones/(12720:12756): Recibimos la informacion de un carpincho
+[INFO] 00:17:36:035 Operaciones/(12720:12756): El codigo de operacion es: 0
+[INFO] 00:17:36:035 Operaciones/(12720:12756): Vamos a inicializar un carpincho
+[INFO] 00:17:36:035 Operaciones/(12720:12756): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:36:040 Memoria/(12720:12727): Recibimos la informacion de Memoria
+[INFO] 00:17:36:040 Memoria/(12720:12727): El codigo de operacion es: 0
+[INFO] 00:17:36:040 Operaciones/(12720:12734): Recibimos la informacion de un carpincho
+[INFO] 00:17:36:040 Operaciones/(12720:12734): El codigo de operacion es: 3
+[INFO] 00:17:36:041 Operaciones/(12720:12734): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:37:036 Operaciones/(12720:12759): Recibimos la informacion de un carpincho
+[INFO] 00:17:37:036 Operaciones/(12720:12759): El codigo de operacion es: 0
+[INFO] 00:17:37:036 Operaciones/(12720:12759): Vamos a inicializar un carpincho
+[INFO] 00:17:37:036 Operaciones/(12720:12759): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:37:040 Memoria/(12720:12727): Recibimos la informacion de Memoria
+[INFO] 00:17:37:040 Memoria/(12720:12727): El codigo de operacion es: 0
+[INFO] 00:17:37:040 Operaciones/(12720:12736): Recibimos la informacion de un carpincho
+[INFO] 00:17:37:040 Operaciones/(12720:12736): El codigo de operacion es: 3
+[INFO] 00:17:37:041 Operaciones/(12720:12736): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:38:035 Operaciones/(12720:12762): Recibimos la informacion de un carpincho
+[INFO] 00:17:38:037 Operaciones/(12720:12762): El codigo de operacion es: 0
+[INFO] 00:17:38:037 Operaciones/(12720:12762): Vamos a inicializar un carpincho
+[INFO] 00:17:38:037 Operaciones/(12720:12762): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:38:043 Memoria/(12720:12727): Recibimos la informacion de Memoria
+[INFO] 00:17:38:043 Memoria/(12720:12727): El codigo de operacion es: 0
+[INFO] 00:17:38:044 Operaciones/(12720:12737): Recibimos la informacion de un carpincho
+[INFO] 00:17:38:044 Operaciones/(12720:12737): El codigo de operacion es: 3
+[INFO] 00:17:38:044 Operaciones/(12720:12737): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:38:050 Operaciones/(12720:12732): Recibimos la informacion de un carpincho
+[INFO] 00:17:38:050 Operaciones/(12720:12732): El codigo de operacion es: 3
+[INFO] 00:17:38:050 Operaciones/(12720:12732): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:39:039 Operaciones/(12720:12765): Recibimos la informacion de un carpincho
+[INFO] 00:17:39:039 Operaciones/(12720:12765): El codigo de operacion es: 0
+[INFO] 00:17:39:040 Operaciones/(12720:12765): Vamos a inicializar un carpincho
+[INFO] 00:17:39:040 Operaciones/(12720:12765): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:39:042 Operaciones/(12720:12734): Recibimos la informacion de un carpincho
+[INFO] 00:17:39:042 Operaciones/(12720:12734): El codigo de operacion es: 3
+[INFO] 00:17:39:042 Operaciones/(12720:12734): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:39:043 Memoria/(12720:12727): Recibimos la informacion de Memoria
+[INFO] 00:17:39:043 Memoria/(12720:12727): El codigo de operacion es: 0
+[INFO] 00:17:39:044 Operaciones/(12720:12738): Recibimos la informacion de un carpincho
+[INFO] 00:17:39:044 Operaciones/(12720:12738): El codigo de operacion es: 3
+[INFO] 00:17:39:044 Operaciones/(12720:12738): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:40:038 Operaciones/(12720:12768): Recibimos la informacion de un carpincho
+[INFO] 00:17:40:038 Operaciones/(12720:12768): El codigo de operacion es: 0
+[INFO] 00:17:40:038 Operaciones/(12720:12768): Vamos a inicializar un carpincho
+[INFO] 00:17:40:038 Operaciones/(12720:12768): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:17:40:041 Operaciones/(12720:12736): Recibimos la informacion de un carpincho
+[INFO] 00:17:40:041 Operaciones/(12720:12736): El codigo de operacion es: 3
+[INFO] 00:17:40:041 Operaciones/(12720:12736): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:40:045 Memoria/(12720:12727): Recibimos la informacion de Memoria
+[INFO] 00:17:40:045 Memoria/(12720:12727): El codigo de operacion es: 0
+[INFO] 00:17:40:045 Operaciones/(12720:12739): Recibimos la informacion de un carpincho
+[INFO] 00:17:40:045 Operaciones/(12720:12739): El codigo de operacion es: 3
+[INFO] 00:17:40:045 Operaciones/(12720:12739): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:41:030 Operaciones/(12720:12730): Recibimos la informacion de un carpincho
+[INFO] 00:17:41:030 Operaciones/(12720:12730): El codigo de operacion es: 1
+[INFO] 00:17:41:030 Operaciones/(12720:12730): Vamos a eliminar un carpincho
+[INFO] 00:17:41:030 Operaciones/(12720:12730): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 00:17:41:030 Operaciones/(12720:12730): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 00:17:41:042 Memoria/(12720:12730): Recibimos la informacion de Memoria
+[INFO] 00:17:41:042 Memoria/(12720:12730): El codigo de operacion es: 1
+[INFO] 00:17:41:042 Memoria/(12720:12730): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 00:17:41:042 Operaciones/(12720:12730): Enviamos que vamos a cerrar el carpincho
+[INFO] 00:17:41:045 Operaciones/(12720:12737): Recibimos la informacion de un carpincho
+[INFO] 00:17:41:045 Operaciones/(12720:12737): El codigo de operacion es: 3
+[INFO] 00:17:41:045 Operaciones/(12720:12737): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:42:044 Operaciones/(12720:12738): Recibimos la informacion de un carpincho
+[INFO] 00:17:42:044 Operaciones/(12720:12738): El codigo de operacion es: 3
+[INFO] 00:17:42:044 Operaciones/(12720:12738): Vamos a hacer un wait de un semaforo
+[INFO] 00:17:43:046 Operaciones/(12720:12739): Recibimos la informacion de un carpincho
+[INFO] 00:17:43:046 Operaciones/(12720:12739): El codigo de operacion es: 3
+[INFO] 00:17:43:046 Operaciones/(12720:12739): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:50:936 Operaciones/(13413:13438): Recibimos la informacion de un carpincho
+[INFO] 00:31:50:936 Operaciones/(13413:13438): El codigo de operacion es: 0
+[INFO] 00:31:50:937 Operaciones/(13413:13438): Vamos a inicializar un carpincho
+[INFO] 00:31:50:938 Operaciones/(13413:13438): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:31:50:981 Memoria/(13413:13416): Recibimos la informacion de Memoria
+[INFO] 00:31:50:981 Memoria/(13413:13416): El codigo de operacion es: 0
+[INFO] 00:31:51:005 Operaciones/(13413:13421): Recibimos la informacion de un carpincho
+[INFO] 00:31:51:005 Operaciones/(13413:13421): El codigo de operacion es: 2
+[INFO] 00:31:51:006 Operaciones/(13413:13421): Vamos a inicializar un semaforo
+[INFO] 00:31:51:011 Operaciones/(13413:13421): Recibimos la informacion de un carpincho
+[INFO] 00:31:51:011 Operaciones/(13413:13421): El codigo de operacion es: 2
+[INFO] 00:31:51:011 Operaciones/(13413:13421): Vamos a inicializar un semaforo
+[INFO] 00:31:51:014 Operaciones/(13413:13421): Recibimos la informacion de un carpincho
+[INFO] 00:31:51:015 Operaciones/(13413:13421): El codigo de operacion es: 2
+[INFO] 00:31:51:015 Operaciones/(13413:13421): Vamos a inicializar un semaforo
+[INFO] 00:31:51:016 Operaciones/(13413:13421): Recibimos la informacion de un carpincho
+[INFO] 00:31:51:016 Operaciones/(13413:13421): El codigo de operacion es: 2
+[INFO] 00:31:51:016 Operaciones/(13413:13421): Vamos a inicializar un semaforo
+[INFO] 00:31:51:018 Operaciones/(13413:13421): Recibimos la informacion de un carpincho
+[INFO] 00:31:51:018 Operaciones/(13413:13421): El codigo de operacion es: 2
+[INFO] 00:31:51:018 Operaciones/(13413:13421): Vamos a inicializar un semaforo
+[INFO] 00:31:51:020 Operaciones/(13413:13421): Recibimos la informacion de un carpincho
+[INFO] 00:31:51:020 Operaciones/(13413:13421): El codigo de operacion es: 2
+[INFO] 00:31:51:020 Operaciones/(13413:13421): Vamos a inicializar un semaforo
+[INFO] 00:31:51:024 Operaciones/(13413:13443): Recibimos la informacion de un carpincho
+[INFO] 00:31:51:026 Operaciones/(13413:13443): El codigo de operacion es: 0
+[INFO] 00:31:51:026 Operaciones/(13413:13443): Vamos a inicializar un carpincho
+[INFO] 00:31:51:027 Operaciones/(13413:13443): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:31:51:034 Memoria/(13413:13416): Recibimos la informacion de Memoria
+[INFO] 00:31:51:034 Memoria/(13413:13416): El codigo de operacion es: 0
+[INFO] 00:31:51:043 Operaciones/(13413:13423): Recibimos la informacion de un carpincho
+[INFO] 00:31:51:044 Operaciones/(13413:13423): El codigo de operacion es: 3
+[INFO] 00:31:51:044 Operaciones/(13413:13423): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:52:023 Operaciones/(13413:13446): Recibimos la informacion de un carpincho
+[INFO] 00:31:52:024 Operaciones/(13413:13446): El codigo de operacion es: 0
+[INFO] 00:31:52:024 Operaciones/(13413:13446): Vamos a inicializar un carpincho
+[INFO] 00:31:52:024 Operaciones/(13413:13446): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:31:52:027 Memoria/(13413:13416): Recibimos la informacion de Memoria
+[INFO] 00:31:52:027 Memoria/(13413:13416): El codigo de operacion es: 0
+[INFO] 00:31:52:030 Operaciones/(13413:13425): Recibimos la informacion de un carpincho
+[INFO] 00:31:52:031 Operaciones/(13413:13425): El codigo de operacion es: 3
+[INFO] 00:31:52:031 Operaciones/(13413:13425): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:53:024 Operaciones/(13413:13449): Recibimos la informacion de un carpincho
+[INFO] 00:31:53:024 Operaciones/(13413:13449): El codigo de operacion es: 0
+[INFO] 00:31:53:024 Operaciones/(13413:13449): Vamos a inicializar un carpincho
+[INFO] 00:31:53:024 Operaciones/(13413:13449): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:31:53:027 Memoria/(13413:13416): Recibimos la informacion de Memoria
+[INFO] 00:31:53:028 Memoria/(13413:13416): El codigo de operacion es: 0
+[INFO] 00:31:53:031 Operaciones/(13413:13426): Recibimos la informacion de un carpincho
+[INFO] 00:31:53:031 Operaciones/(13413:13426): El codigo de operacion es: 3
+[INFO] 00:31:53:031 Operaciones/(13413:13426): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:54:024 Operaciones/(13413:13452): Recibimos la informacion de un carpincho
+[INFO] 00:31:54:025 Operaciones/(13413:13452): El codigo de operacion es: 0
+[INFO] 00:31:54:025 Operaciones/(13413:13452): Vamos a inicializar un carpincho
+[INFO] 00:31:54:025 Operaciones/(13413:13452): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:31:54:028 Memoria/(13413:13416): Recibimos la informacion de Memoria
+[INFO] 00:31:54:029 Memoria/(13413:13416): El codigo de operacion es: 0
+[INFO] 00:31:54:032 Operaciones/(13413:13427): Recibimos la informacion de un carpincho
+[INFO] 00:31:54:032 Operaciones/(13413:13427): El codigo de operacion es: 3
+[INFO] 00:31:54:032 Operaciones/(13413:13427): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:54:050 Operaciones/(13413:13423): Recibimos la informacion de un carpincho
+[INFO] 00:31:54:051 Operaciones/(13413:13423): El codigo de operacion es: 3
+[INFO] 00:31:54:051 Operaciones/(13413:13423): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:55:024 Operaciones/(13413:13455): Recibimos la informacion de un carpincho
+[INFO] 00:31:55:024 Operaciones/(13413:13455): El codigo de operacion es: 0
+[INFO] 00:31:55:024 Operaciones/(13413:13455): Vamos a inicializar un carpincho
+[INFO] 00:31:55:025 Operaciones/(13413:13455): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:31:55:027 Memoria/(13413:13416): Recibimos la informacion de Memoria
+[INFO] 00:31:55:028 Memoria/(13413:13416): El codigo de operacion es: 0
+[INFO] 00:31:55:030 Operaciones/(13413:13428): Recibimos la informacion de un carpincho
+[INFO] 00:31:55:030 Operaciones/(13413:13428): El codigo de operacion es: 3
+[INFO] 00:31:55:031 Operaciones/(13413:13428): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:55:032 Operaciones/(13413:13425): Recibimos la informacion de un carpincho
+[INFO] 00:31:55:033 Operaciones/(13413:13425): El codigo de operacion es: 3
+[INFO] 00:31:55:033 Operaciones/(13413:13425): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:56:025 Operaciones/(13413:13459): Recibimos la informacion de un carpincho
+[INFO] 00:31:56:025 Operaciones/(13413:13459): El codigo de operacion es: 0
+[INFO] 00:31:56:026 Operaciones/(13413:13459): Vamos a inicializar un carpincho
+[INFO] 00:31:56:026 Operaciones/(13413:13459): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:31:56:029 Memoria/(13413:13416): Recibimos la informacion de Memoria
+[INFO] 00:31:56:029 Memoria/(13413:13416): El codigo de operacion es: 0
+[INFO] 00:31:56:032 Operaciones/(13413:13424): Recibimos la informacion de un carpincho
+[INFO] 00:31:56:032 Operaciones/(13413:13424): El codigo de operacion es: 3
+[INFO] 00:31:56:032 Operaciones/(13413:13424): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:56:034 Operaciones/(13413:13426): Recibimos la informacion de un carpincho
+[INFO] 00:31:56:034 Operaciones/(13413:13426): El codigo de operacion es: 3
+[INFO] 00:31:56:034 Operaciones/(13413:13426): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:57:024 Operaciones/(13413:13421): Recibimos la informacion de un carpincho
+[INFO] 00:31:57:025 Operaciones/(13413:13421): El codigo de operacion es: 1
+[INFO] 00:31:57:025 Operaciones/(13413:13421): Vamos a eliminar un carpincho
+[INFO] 00:31:57:026 Operaciones/(13413:13421): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 00:31:57:026 Operaciones/(13413:13421): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 00:31:57:034 Operaciones/(13413:13427): Recibimos la informacion de un carpincho
+[INFO] 00:31:57:036 Operaciones/(13413:13427): El codigo de operacion es: 3
+[INFO] 00:31:57:036 Operaciones/(13413:13427): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:57:039 Memoria/(13413:13421): Recibimos la informacion de Memoria
+[INFO] 00:31:57:039 Memoria/(13413:13421): El codigo de operacion es: 1
+[INFO] 00:31:57:040 Memoria/(13413:13421): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 00:31:57:041 Operaciones/(13413:13421): Enviamos que vamos a cerrar el carpincho
+[INFO] 00:31:58:037 Operaciones/(13413:13428): Recibimos la informacion de un carpincho
+[INFO] 00:31:58:038 Operaciones/(13413:13428): El codigo de operacion es: 3
+[INFO] 00:31:58:038 Operaciones/(13413:13428): Vamos a hacer un wait de un semaforo
+[INFO] 00:31:59:038 Operaciones/(13413:13424): Recibimos la informacion de un carpincho
+[INFO] 00:31:59:038 Operaciones/(13413:13424): El codigo de operacion es: 3
+[INFO] 00:31:59:038 Operaciones/(13413:13424): Vamos a hacer un wait de un semaforo
+[INFO] 00:35:58:983 Operaciones/(13947:13965): Recibimos la informacion de un carpincho
+[INFO] 00:35:58:984 Operaciones/(13947:13965): El codigo de operacion es: 0
+[INFO] 00:35:58:984 Operaciones/(13947:13965): Vamos a inicializar un carpincho
+[INFO] 00:35:58:985 Operaciones/(13947:13965): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:35:59:019 Memoria/(13947:13950): Recibimos la informacion de Memoria
+[INFO] 00:35:59:020 Memoria/(13947:13950): El codigo de operacion es: 0
+[INFO] 00:35:59:041 Operaciones/(13947:13955): Recibimos la informacion de un carpincho
+[INFO] 00:35:59:041 Operaciones/(13947:13955): El codigo de operacion es: 2
+[INFO] 00:35:59:042 Operaciones/(13947:13955): Vamos a inicializar un semaforo
+[INFO] 00:35:59:053 Operaciones/(13947:13955): Recibimos la informacion de un carpincho
+[INFO] 00:35:59:053 Operaciones/(13947:13955): El codigo de operacion es: 2
+[INFO] 00:35:59:053 Operaciones/(13947:13955): Vamos a inicializar un semaforo
+[INFO] 00:35:59:055 Operaciones/(13947:13955): Recibimos la informacion de un carpincho
+[INFO] 00:35:59:055 Operaciones/(13947:13955): El codigo de operacion es: 2
+[INFO] 00:35:59:056 Operaciones/(13947:13955): Vamos a inicializar un semaforo
+[INFO] 00:35:59:057 Operaciones/(13947:13955): Recibimos la informacion de un carpincho
+[INFO] 00:35:59:057 Operaciones/(13947:13955): El codigo de operacion es: 2
+[INFO] 00:35:59:057 Operaciones/(13947:13955): Vamos a inicializar un semaforo
+[INFO] 00:35:59:058 Operaciones/(13947:13955): Recibimos la informacion de un carpincho
+[INFO] 00:35:59:058 Operaciones/(13947:13955): El codigo de operacion es: 2
+[INFO] 00:35:59:059 Operaciones/(13947:13955): Vamos a inicializar un semaforo
+[INFO] 00:35:59:060 Operaciones/(13947:13955): Recibimos la informacion de un carpincho
+[INFO] 00:35:59:060 Operaciones/(13947:13955): El codigo de operacion es: 2
+[INFO] 00:35:59:061 Operaciones/(13947:13955): Vamos a inicializar un semaforo
+[INFO] 00:35:59:064 Operaciones/(13947:13969): Recibimos la informacion de un carpincho
+[INFO] 00:35:59:064 Operaciones/(13947:13969): El codigo de operacion es: 0
+[INFO] 00:35:59:064 Operaciones/(13947:13969): Vamos a inicializar un carpincho
+[INFO] 00:35:59:065 Operaciones/(13947:13969): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:35:59:070 Memoria/(13947:13950): Recibimos la informacion de Memoria
+[INFO] 00:35:59:070 Memoria/(13947:13950): El codigo de operacion es: 0
+[INFO] 00:35:59:073 Operaciones/(13947:13957): Recibimos la informacion de un carpincho
+[INFO] 00:35:59:074 Operaciones/(13947:13957): El codigo de operacion es: 3
+[INFO] 00:35:59:074 Operaciones/(13947:13957): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:00:062 Operaciones/(13947:13972): Recibimos la informacion de un carpincho
+[INFO] 00:36:00:063 Operaciones/(13947:13972): El codigo de operacion es: 0
+[INFO] 00:36:00:063 Operaciones/(13947:13972): Vamos a inicializar un carpincho
+[INFO] 00:36:00:063 Operaciones/(13947:13972): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:36:00:066 Memoria/(13947:13950): Recibimos la informacion de Memoria
+[INFO] 00:36:00:066 Memoria/(13947:13950): El codigo de operacion es: 0
+[INFO] 00:36:00:069 Operaciones/(13947:13959): Recibimos la informacion de un carpincho
+[INFO] 00:36:00:069 Operaciones/(13947:13959): El codigo de operacion es: 3
+[INFO] 00:36:00:070 Operaciones/(13947:13959): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:01:064 Operaciones/(13947:13975): Recibimos la informacion de un carpincho
+[INFO] 00:36:01:064 Operaciones/(13947:13975): El codigo de operacion es: 0
+[INFO] 00:36:01:064 Operaciones/(13947:13975): Vamos a inicializar un carpincho
+[INFO] 00:36:01:064 Operaciones/(13947:13975): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:36:01:067 Memoria/(13947:13950): Recibimos la informacion de Memoria
+[INFO] 00:36:01:068 Memoria/(13947:13950): El codigo de operacion es: 0
+[INFO] 00:36:01:070 Operaciones/(13947:13958): Recibimos la informacion de un carpincho
+[INFO] 00:36:01:070 Operaciones/(13947:13958): El codigo de operacion es: 3
+[INFO] 00:36:01:070 Operaciones/(13947:13958): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:02:064 Operaciones/(13947:13978): Recibimos la informacion de un carpincho
+[INFO] 00:36:02:064 Operaciones/(13947:13978): El codigo de operacion es: 0
+[INFO] 00:36:02:064 Operaciones/(13947:13978): Vamos a inicializar un carpincho
+[INFO] 00:36:02:065 Operaciones/(13947:13978): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:36:02:067 Memoria/(13947:13950): Recibimos la informacion de Memoria
+[INFO] 00:36:02:068 Memoria/(13947:13950): El codigo de operacion es: 0
+[INFO] 00:36:02:070 Operaciones/(13947:13960): Recibimos la informacion de un carpincho
+[INFO] 00:36:02:071 Operaciones/(13947:13960): El codigo de operacion es: 3
+[INFO] 00:36:02:071 Operaciones/(13947:13960): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:02:085 Operaciones/(13947:13957): Recibimos la informacion de un carpincho
+[INFO] 00:36:02:085 Operaciones/(13947:13957): El codigo de operacion es: 3
+[INFO] 00:36:02:085 Operaciones/(13947:13957): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:03:064 Operaciones/(13947:13981): Recibimos la informacion de un carpincho
+[INFO] 00:36:03:065 Operaciones/(13947:13981): El codigo de operacion es: 0
+[INFO] 00:36:03:065 Operaciones/(13947:13981): Vamos a inicializar un carpincho
+[INFO] 00:36:03:065 Operaciones/(13947:13981): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:36:03:068 Memoria/(13947:13950): Recibimos la informacion de Memoria
+[INFO] 00:36:03:068 Memoria/(13947:13950): El codigo de operacion es: 0
+[INFO] 00:36:03:071 Operaciones/(13947:13961): Recibimos la informacion de un carpincho
+[INFO] 00:36:03:071 Operaciones/(13947:13961): El codigo de operacion es: 3
+[INFO] 00:36:03:071 Operaciones/(13947:13959): Recibimos la informacion de un carpincho
+[INFO] 00:36:03:072 Operaciones/(13947:13959): El codigo de operacion es: 3
+[INFO] 00:36:03:072 Operaciones/(13947:13959): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:03:074 Operaciones/(13947:13961): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:04:065 Operaciones/(13947:13985): Recibimos la informacion de un carpincho
+[INFO] 00:36:04:066 Operaciones/(13947:13985): El codigo de operacion es: 0
+[INFO] 00:36:04:066 Operaciones/(13947:13985): Vamos a inicializar un carpincho
+[INFO] 00:36:04:066 Operaciones/(13947:13985): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:36:04:069 Memoria/(13947:13950): Recibimos la informacion de Memoria
+[INFO] 00:36:04:070 Memoria/(13947:13950): El codigo de operacion es: 0
+[INFO] 00:36:04:072 Operaciones/(13947:13958): Recibimos la informacion de un carpincho
+[INFO] 00:36:04:073 Operaciones/(13947:13958): El codigo de operacion es: 3
+[INFO] 00:36:04:073 Operaciones/(13947:13958): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:04:074 Operaciones/(13947:13962): Recibimos la informacion de un carpincho
+[INFO] 00:36:04:075 Operaciones/(13947:13962): El codigo de operacion es: 3
+[INFO] 00:36:04:076 Operaciones/(13947:13962): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:05:065 Operaciones/(13947:13955): Recibimos la informacion de un carpincho
+[INFO] 00:36:05:065 Operaciones/(13947:13955): El codigo de operacion es: 1
+[INFO] 00:36:05:066 Operaciones/(13947:13955): Vamos a eliminar un carpincho
+[INFO] 00:36:05:067 Operaciones/(13947:13955): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 00:36:05:067 Operaciones/(13947:13955): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 00:36:05:073 Operaciones/(13947:13960): Recibimos la informacion de un carpincho
+[INFO] 00:36:05:073 Operaciones/(13947:13960): El codigo de operacion es: 3
+[INFO] 00:36:05:073 Operaciones/(13947:13960): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:05:080 Memoria/(13947:13955): Recibimos la informacion de Memoria
+[INFO] 00:36:05:080 Memoria/(13947:13955): El codigo de operacion es: 1
+[INFO] 00:36:05:080 Memoria/(13947:13955): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 00:36:05:081 Operaciones/(13947:13955): Enviamos que vamos a cerrar el carpincho
+[INFO] 00:36:06:075 Operaciones/(13947:13961): Recibimos la informacion de un carpincho
+[INFO] 00:36:06:076 Operaciones/(13947:13961): El codigo de operacion es: 3
+[INFO] 00:36:06:076 Operaciones/(13947:13961): Vamos a hacer un wait de un semaforo
+[INFO] 00:36:07:078 Operaciones/(13947:13962): Recibimos la informacion de un carpincho
+[INFO] 00:36:07:079 Operaciones/(13947:13962): El codigo de operacion es: 3
+[INFO] 00:36:07:079 Operaciones/(13947:13962): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:19:008 Operaciones/(14119:14137): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:009 Operaciones/(14119:14137): El codigo de operacion es: 0
+[INFO] 00:37:19:009 Operaciones/(14119:14137): Vamos a inicializar un carpincho
+[INFO] 00:37:19:011 Operaciones/(14119:14137): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:37:19:047 Memoria/(14119:14122): Recibimos la informacion de Memoria
+[INFO] 00:37:19:048 Memoria/(14119:14122): El codigo de operacion es: 0
+[INFO] 00:37:19:066 Operaciones/(14119:14127): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:067 Operaciones/(14119:14127): El codigo de operacion es: 2
+[INFO] 00:37:19:067 Operaciones/(14119:14127): Vamos a inicializar un semaforo
+[INFO] 00:37:19:076 Operaciones/(14119:14127): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:076 Operaciones/(14119:14127): El codigo de operacion es: 2
+[INFO] 00:37:19:076 Operaciones/(14119:14127): Vamos a inicializar un semaforo
+[INFO] 00:37:19:080 Operaciones/(14119:14127): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:080 Operaciones/(14119:14127): El codigo de operacion es: 2
+[INFO] 00:37:19:080 Operaciones/(14119:14127): Vamos a inicializar un semaforo
+[INFO] 00:37:19:081 Operaciones/(14119:14127): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:082 Operaciones/(14119:14127): El codigo de operacion es: 2
+[INFO] 00:37:19:082 Operaciones/(14119:14127): Vamos a inicializar un semaforo
+[INFO] 00:37:19:083 Operaciones/(14119:14127): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:083 Operaciones/(14119:14127): El codigo de operacion es: 2
+[INFO] 00:37:19:083 Operaciones/(14119:14127): Vamos a inicializar un semaforo
+[INFO] 00:37:19:086 Operaciones/(14119:14127): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:086 Operaciones/(14119:14127): El codigo de operacion es: 2
+[INFO] 00:37:19:086 Operaciones/(14119:14127): Vamos a inicializar un semaforo
+[INFO] 00:37:19:090 Operaciones/(14119:14141): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:090 Operaciones/(14119:14141): El codigo de operacion es: 0
+[INFO] 00:37:19:090 Operaciones/(14119:14141): Vamos a inicializar un carpincho
+[INFO] 00:37:19:091 Operaciones/(14119:14141): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:37:19:097 Memoria/(14119:14122): Recibimos la informacion de Memoria
+[INFO] 00:37:19:097 Memoria/(14119:14122): El codigo de operacion es: 0
+[INFO] 00:37:19:102 Operaciones/(14119:14128): Recibimos la informacion de un carpincho
+[INFO] 00:37:19:102 Operaciones/(14119:14128): El codigo de operacion es: 3
+[INFO] 00:37:19:103 Operaciones/(14119:14128): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:20:091 Operaciones/(14119:14144): Recibimos la informacion de un carpincho
+[INFO] 00:37:20:091 Operaciones/(14119:14144): El codigo de operacion es: 0
+[INFO] 00:37:20:091 Operaciones/(14119:14144): Vamos a inicializar un carpincho
+[INFO] 00:37:20:091 Operaciones/(14119:14144): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:37:20:095 Memoria/(14119:14122): Recibimos la informacion de Memoria
+[INFO] 00:37:20:096 Memoria/(14119:14122): El codigo de operacion es: 0
+[INFO] 00:37:20:099 Operaciones/(14119:14125): Recibimos la informacion de un carpincho
+[INFO] 00:37:20:099 Operaciones/(14119:14125): El codigo de operacion es: 3
+[INFO] 00:37:20:099 Operaciones/(14119:14125): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:21:092 Operaciones/(14119:14147): Recibimos la informacion de un carpincho
+[INFO] 00:37:21:093 Operaciones/(14119:14147): El codigo de operacion es: 0
+[INFO] 00:37:21:093 Operaciones/(14119:14147): Vamos a inicializar un carpincho
+[INFO] 00:37:21:093 Operaciones/(14119:14147): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:37:21:096 Memoria/(14119:14122): Recibimos la informacion de Memoria
+[INFO] 00:37:21:096 Memoria/(14119:14122): El codigo de operacion es: 0
+[INFO] 00:37:21:099 Operaciones/(14119:14129): Recibimos la informacion de un carpincho
+[INFO] 00:37:21:099 Operaciones/(14119:14129): El codigo de operacion es: 3
+[INFO] 00:37:21:100 Operaciones/(14119:14129): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:22:093 Operaciones/(14119:14151): Recibimos la informacion de un carpincho
+[INFO] 00:37:22:094 Operaciones/(14119:14151): El codigo de operacion es: 0
+[INFO] 00:37:22:094 Operaciones/(14119:14151): Vamos a inicializar un carpincho
+[INFO] 00:37:22:094 Operaciones/(14119:14151): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:37:22:098 Memoria/(14119:14122): Recibimos la informacion de Memoria
+[INFO] 00:37:22:098 Memoria/(14119:14122): El codigo de operacion es: 0
+[INFO] 00:37:22:100 Operaciones/(14119:14134): Recibimos la informacion de un carpincho
+[INFO] 00:37:22:101 Operaciones/(14119:14134): El codigo de operacion es: 3
+[INFO] 00:37:22:101 Operaciones/(14119:14134): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:22:112 Operaciones/(14119:14128): Recibimos la informacion de un carpincho
+[INFO] 00:37:22:112 Operaciones/(14119:14128): El codigo de operacion es: 3
+[INFO] 00:37:22:112 Operaciones/(14119:14128): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:23:094 Operaciones/(14119:14155): Recibimos la informacion de un carpincho
+[INFO] 00:37:23:094 Operaciones/(14119:14155): El codigo de operacion es: 0
+[INFO] 00:37:23:095 Operaciones/(14119:14155): Vamos a inicializar un carpincho
+[INFO] 00:37:23:095 Operaciones/(14119:14155): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:37:23:098 Memoria/(14119:14122): Recibimos la informacion de Memoria
+[INFO] 00:37:23:098 Memoria/(14119:14122): El codigo de operacion es: 0
+[INFO] 00:37:23:101 Operaciones/(14119:14125): Recibimos la informacion de un carpincho
+[INFO] 00:37:23:102 Operaciones/(14119:14125): El codigo de operacion es: 3
+[INFO] 00:37:23:102 Operaciones/(14119:14125): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:23:104 Operaciones/(14119:14132): Recibimos la informacion de un carpincho
+[INFO] 00:37:23:105 Operaciones/(14119:14132): El codigo de operacion es: 3
+[INFO] 00:37:23:106 Operaciones/(14119:14132): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:24:094 Operaciones/(14119:14159): Recibimos la informacion de un carpincho
+[INFO] 00:37:24:094 Operaciones/(14119:14159): El codigo de operacion es: 0
+[INFO] 00:37:24:095 Operaciones/(14119:14159): Vamos a inicializar un carpincho
+[INFO] 00:37:24:095 Operaciones/(14119:14159): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 00:37:24:098 Memoria/(14119:14122): Recibimos la informacion de Memoria
+[INFO] 00:37:24:099 Memoria/(14119:14122): El codigo de operacion es: 0
+[INFO] 00:37:24:101 Operaciones/(14119:14129): Recibimos la informacion de un carpincho
+[INFO] 00:37:24:101 Operaciones/(14119:14129): El codigo de operacion es: 3
+[INFO] 00:37:24:101 Operaciones/(14119:14129): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:24:103 Operaciones/(14119:14135): Recibimos la informacion de un carpincho
+[INFO] 00:37:24:103 Operaciones/(14119:14135): El codigo de operacion es: 3
+[INFO] 00:37:24:105 Operaciones/(14119:14135): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:25:094 Operaciones/(14119:14127): Recibimos la informacion de un carpincho
+[INFO] 00:37:25:094 Operaciones/(14119:14127): El codigo de operacion es: 1
+[INFO] 00:37:25:095 Operaciones/(14119:14127): Vamos a eliminar un carpincho
+[INFO] 00:37:25:096 Operaciones/(14119:14127): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 00:37:25:096 Operaciones/(14119:14127): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 00:37:25:102 Operaciones/(14119:14134): Recibimos la informacion de un carpincho
+[INFO] 00:37:25:102 Operaciones/(14119:14134): El codigo de operacion es: 3
+[INFO] 00:37:25:103 Operaciones/(14119:14134): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:25:110 Memoria/(14119:14127): Recibimos la informacion de Memoria
+[INFO] 00:37:25:110 Memoria/(14119:14127): El codigo de operacion es: 1
+[INFO] 00:37:25:111 Memoria/(14119:14127): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 00:37:25:111 Operaciones/(14119:14127): Enviamos que vamos a cerrar el carpincho
+[INFO] 00:37:26:107 Operaciones/(14119:14132): Recibimos la informacion de un carpincho
+[INFO] 00:37:26:108 Operaciones/(14119:14132): El codigo de operacion es: 3
+[INFO] 00:37:26:108 Operaciones/(14119:14132): Vamos a hacer un wait de un semaforo
+[INFO] 00:37:27:107 Operaciones/(14119:14135): Recibimos la informacion de un carpincho
+[INFO] 00:37:27:108 Operaciones/(14119:14135): El codigo de operacion es: 3
+[INFO] 00:37:27:109 Operaciones/(14119:14135): Vamos a hacer un wait de un semaforo

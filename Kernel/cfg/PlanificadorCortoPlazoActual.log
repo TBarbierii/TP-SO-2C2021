@@ -2117,3 +2117,873 @@
 [INFO] 21:10:10:278 Thread-CPU/(18244:18256): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
 [INFO] 21:10:17:298 Thread-CPU/(18244:18254): La tarea realizada fue: 1
 [INFO] 21:10:17:298 Thread-CPU/(18244:18254): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[DEBUG] 23:45:33:965 PlanificadorCortoPlazo/(10800:10804): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 23:45:36:621 Thread-CPU/(10800:10809): SE replanifica con SJF
+[INFO] 23:45:36:635 Replanificacion/(10800:10809): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 23:45:36:638 Thread-CPU/(10800:10809): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.029523
+[DEBUG] 23:45:36:639 Thread-CPU/(10800:10809): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 23:45:36:640 Thread-CPU/(10800:10809): Se envia info del pid a Matelib
+[INFO] 23:45:36:642 Thread-CPU/(10800:10809): Se ejecuto tarea de conexion
+[INFO] 23:45:36:655 Thread-CPU/(10800:10809): La tarea realizada fue: 2
+[INFO] 23:45:36:656 Thread-CPU/(10800:10809): Se ejecuto tarea de conexion
+[INFO] 23:45:36:658 Thread-CPU/(10800:10809): La tarea realizada fue: 2
+[INFO] 23:45:36:658 Thread-CPU/(10800:10809): Se ejecuto tarea de conexion
+[INFO] 23:45:36:661 Thread-CPU/(10800:10809): La tarea realizada fue: 2
+[INFO] 23:45:36:661 Thread-CPU/(10800:10809): Se ejecuto tarea de conexion
+[INFO] 23:45:36:662 Thread-CPU/(10800:10809): La tarea realizada fue: 2
+[INFO] 23:45:36:662 Thread-CPU/(10800:10809): Se ejecuto tarea de conexion
+[INFO] 23:45:36:663 Thread-CPU/(10800:10809): La tarea realizada fue: 2
+[INFO] 23:45:36:664 Thread-CPU/(10800:10809): Se ejecuto tarea de conexion
+[INFO] 23:45:36:665 Thread-CPU/(10800:10809): La tarea realizada fue: 2
+[INFO] 23:45:36:665 Thread-CPU/(10800:10809): Se ejecuto tarea de conexion
+[DEBUG] 23:45:36:680 Thread-CPU/(10800:10807): SE replanifica con SJF
+[INFO] 23:45:36:680 Replanificacion/(10800:10807): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 23:45:36:681 Thread-CPU/(10800:10807): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.008976
+[DEBUG] 23:45:36:681 Thread-CPU/(10800:10807): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 23:45:36:681 Thread-CPU/(10800:10807): Se envia info del pid a Matelib
+[INFO] 23:45:36:681 Thread-CPU/(10800:10807): Se ejecuto tarea de conexion
+[INFO] 23:45:36:687 Thread-CPU/(10800:10807): La tarea realizada fue: 14
+[INFO] 23:45:36:688 Thread-CPU/(10800:10807): Se ejecuto tarea de conexion
+[DEBUG] 23:45:37:671 Thread-CPU/(10800:10805): SE replanifica con SJF
+[INFO] 23:45:37:671 Replanificacion/(10800:10805): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 23:45:37:671 Thread-CPU/(10800:10805): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.003212
+[DEBUG] 23:45:37:672 Thread-CPU/(10800:10805): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 23:45:37:672 Thread-CPU/(10800:10805): Se envia info del pid a Matelib
+[INFO] 23:45:37:672 Thread-CPU/(10800:10805): Se ejecuto tarea de conexion
+[INFO] 23:45:37:674 Thread-CPU/(10800:10805): La tarea realizada fue: 14
+[INFO] 23:45:37:674 Thread-CPU/(10800:10805): Se ejecuto tarea de conexion
+[DEBUG] 23:45:38:671 Thread-CPU/(10800:10811): SE replanifica con SJF
+[INFO] 23:45:38:671 Replanificacion/(10800:10811): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 23:45:38:672 Thread-CPU/(10800:10811): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.003263
+[DEBUG] 23:45:38:672 Thread-CPU/(10800:10811): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 23:45:38:672 Thread-CPU/(10800:10811): Se envia info del pid a Matelib
+[INFO] 23:45:38:673 Thread-CPU/(10800:10811): Se ejecuto tarea de conexion
+[INFO] 23:45:38:674 Thread-CPU/(10800:10811): La tarea realizada fue: 14
+[INFO] 23:45:38:675 Thread-CPU/(10800:10811): Se ejecuto tarea de conexion
+[DEBUG] 23:45:39:672 Thread-CPU/(10800:10812): SE replanifica con SJF
+[INFO] 23:45:39:672 Replanificacion/(10800:10812): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 23:45:39:673 Thread-CPU/(10800:10812): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.003433
+[DEBUG] 23:45:39:673 Thread-CPU/(10800:10812): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 23:45:39:673 Thread-CPU/(10800:10812): Se envia info del pid a Matelib
+[INFO] 23:45:39:674 Thread-CPU/(10800:10812): Se ejecuto tarea de conexion
+[INFO] 23:45:39:675 Thread-CPU/(10800:10812): La tarea realizada fue: 14
+[INFO] 23:45:39:675 Thread-CPU/(10800:10812): Se ejecuto tarea de conexion
+[INFO] 23:45:39:692 Thread-CPU/(10800:10807): La tarea realizada fue: 3
+[INFO] 23:45:39:692 Thread-CPU/(10800:10807): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:45:39:693 Thread-CPU/(10800:10807): La ultima rafaga ejecutada del proceso es de: 3.011347
+[DEBUG] 23:45:40:673 Thread-CPU/(10800:10814): SE replanifica con SJF
+[INFO] 23:45:40:673 Replanificacion/(10800:10814): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 23:45:40:673 Thread-CPU/(10800:10814): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.002599
+[DEBUG] 23:45:40:674 Thread-CPU/(10800:10814): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 23:45:40:674 Thread-CPU/(10800:10814): Se envia info del pid a Matelib
+[INFO] 23:45:40:674 Thread-CPU/(10800:10814): Se ejecuto tarea de conexion
+[INFO] 23:45:40:676 Thread-CPU/(10800:10805): La tarea realizada fue: 3
+[INFO] 23:45:40:676 Thread-CPU/(10800:10805): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:45:40:676 Thread-CPU/(10800:10805): La ultima rafaga ejecutada del proceso es de: 3.004421
+[INFO] 23:45:40:678 Thread-CPU/(10800:10814): La tarea realizada fue: 14
+[INFO] 23:45:40:678 Thread-CPU/(10800:10814): Se ejecuto tarea de conexion
+[DEBUG] 23:45:41:673 Thread-CPU/(10800:10816): SE replanifica con SJF
+[INFO] 23:45:41:674 Replanificacion/(10800:10816): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 23:45:41:674 Thread-CPU/(10800:10816): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.003315
+[DEBUG] 23:45:41:674 Thread-CPU/(10800:10816): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 23:45:41:675 Thread-CPU/(10800:10816): Se envia info del pid a Matelib
+[INFO] 23:45:41:676 Thread-CPU/(10800:10811): La tarea realizada fue: 3
+[INFO] 23:45:41:677 Thread-CPU/(10800:10811): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:45:41:677 Thread-CPU/(10800:10811): La ultima rafaga ejecutada del proceso es de: 3.004704
+[INFO] 23:45:41:677 Thread-CPU/(10800:10816): Se ejecuto tarea de conexion
+[INFO] 23:45:41:680 Thread-CPU/(10800:10816): La tarea realizada fue: 14
+[INFO] 23:45:41:681 Thread-CPU/(10800:10816): Se ejecuto tarea de conexion
+[INFO] 23:45:42:676 Thread-CPU/(10800:10812): La tarea realizada fue: 3
+[INFO] 23:45:42:677 Thread-CPU/(10800:10812): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:45:42:677 Thread-CPU/(10800:10812): La ultima rafaga ejecutada del proceso es de: 3.003860
+[INFO] 23:45:42:685 Thread-CPU/(10800:10809): La tarea realizada fue: 1
+[INFO] 23:45:42:686 Thread-CPU/(10800:10809): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 23:45:43:681 Thread-CPU/(10800:10814): La tarea realizada fue: 3
+[INFO] 23:45:43:681 Thread-CPU/(10800:10814): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:45:43:681 Thread-CPU/(10800:10814): La ultima rafaga ejecutada del proceso es de: 3.007328
+[INFO] 23:45:44:682 Thread-CPU/(10800:10816): La tarea realizada fue: 3
+[INFO] 23:45:44:682 Thread-CPU/(10800:10816): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:45:44:682 Thread-CPU/(10800:10816): La ultima rafaga ejecutada del proceso es de: 3.007895
+[DEBUG] 23:50:17:761 PlanificadorCortoPlazo/(11236:11242): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 23:50:20:245 Thread-CPU/(11236:11246): SE replanifica con SJF
+[INFO] 23:50:20:255 Replanificacion/(11236:11246): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 23:50:20:260 Thread-CPU/(11236:11246): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.031882
+[DEBUG] 23:50:20:261 Thread-CPU/(11236:11246): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 23:50:20:261 Thread-CPU/(11236:11246): Se envia info del pid a Matelib
+[INFO] 23:50:20:263 Thread-CPU/(11236:11246): Se ejecuto tarea de conexion
+[INFO] 23:50:20:275 Thread-CPU/(11236:11246): La tarea realizada fue: 2
+[INFO] 23:50:20:276 Thread-CPU/(11236:11246): Se ejecuto tarea de conexion
+[INFO] 23:50:20:278 Thread-CPU/(11236:11246): La tarea realizada fue: 2
+[INFO] 23:50:20:278 Thread-CPU/(11236:11246): Se ejecuto tarea de conexion
+[INFO] 23:50:20:280 Thread-CPU/(11236:11246): La tarea realizada fue: 2
+[INFO] 23:50:20:280 Thread-CPU/(11236:11246): Se ejecuto tarea de conexion
+[INFO] 23:50:20:281 Thread-CPU/(11236:11246): La tarea realizada fue: 2
+[INFO] 23:50:20:282 Thread-CPU/(11236:11246): Se ejecuto tarea de conexion
+[INFO] 23:50:20:283 Thread-CPU/(11236:11246): La tarea realizada fue: 2
+[INFO] 23:50:20:283 Thread-CPU/(11236:11246): Se ejecuto tarea de conexion
+[INFO] 23:50:20:284 Thread-CPU/(11236:11246): La tarea realizada fue: 2
+[INFO] 23:50:20:285 Thread-CPU/(11236:11246): Se ejecuto tarea de conexion
+[DEBUG] 23:50:20:297 Thread-CPU/(11236:11248): SE replanifica con SJF
+[INFO] 23:50:20:297 Replanificacion/(11236:11248): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 23:50:20:298 Thread-CPU/(11236:11248): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.007042
+[DEBUG] 23:50:20:299 Thread-CPU/(11236:11248): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 23:50:20:299 Thread-CPU/(11236:11248): Se envia info del pid a Matelib
+[INFO] 23:50:20:299 Thread-CPU/(11236:11248): Se ejecuto tarea de conexion
+[INFO] 23:50:20:308 Thread-CPU/(11236:11248): La tarea realizada fue: 14
+[INFO] 23:50:20:309 Thread-CPU/(11236:11248): Se ejecuto tarea de conexion
+[DEBUG] 23:50:21:293 Thread-CPU/(11236:11249): SE replanifica con SJF
+[INFO] 23:50:21:293 Replanificacion/(11236:11249): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 23:50:21:294 Thread-CPU/(11236:11249): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.005395
+[DEBUG] 23:50:21:294 Thread-CPU/(11236:11249): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 23:50:21:294 Thread-CPU/(11236:11249): Se envia info del pid a Matelib
+[INFO] 23:50:21:295 Thread-CPU/(11236:11249): Se ejecuto tarea de conexion
+[INFO] 23:50:21:297 Thread-CPU/(11236:11249): La tarea realizada fue: 14
+[INFO] 23:50:21:298 Thread-CPU/(11236:11249): Se ejecuto tarea de conexion
+[DEBUG] 23:50:22:292 Thread-CPU/(11236:11250): SE replanifica con SJF
+[INFO] 23:50:22:292 Replanificacion/(11236:11250): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 23:50:22:292 Thread-CPU/(11236:11250): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.003608
+[DEBUG] 23:50:22:293 Thread-CPU/(11236:11250): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 23:50:22:294 Thread-CPU/(11236:11250): Se envia info del pid a Matelib
+[INFO] 23:50:22:294 Thread-CPU/(11236:11250): Se ejecuto tarea de conexion
+[INFO] 23:50:22:296 Thread-CPU/(11236:11250): La tarea realizada fue: 14
+[INFO] 23:50:22:296 Thread-CPU/(11236:11250): Se ejecuto tarea de conexion
+[DEBUG] 23:50:23:291 Thread-CPU/(11236:11251): SE replanifica con SJF
+[INFO] 23:50:23:291 Replanificacion/(11236:11251): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 23:50:23:292 Thread-CPU/(11236:11251): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.003541
+[DEBUG] 23:50:23:292 Thread-CPU/(11236:11251): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 23:50:23:292 Thread-CPU/(11236:11251): Se envia info del pid a Matelib
+[INFO] 23:50:23:293 Thread-CPU/(11236:11251): Se ejecuto tarea de conexion
+[INFO] 23:50:23:294 Thread-CPU/(11236:11251): La tarea realizada fue: 14
+[INFO] 23:50:23:295 Thread-CPU/(11236:11251): Se ejecuto tarea de conexion
+[INFO] 23:50:23:316 Thread-CPU/(11236:11248): La tarea realizada fue: 3
+[INFO] 23:50:23:318 Thread-CPU/(11236:11248): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:50:23:319 Thread-CPU/(11236:11248): La ultima rafaga ejecutada del proceso es de: 3.019486
+[DEBUG] 23:50:24:291 Thread-CPU/(11236:11252): SE replanifica con SJF
+[INFO] 23:50:24:292 Replanificacion/(11236:11252): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 23:50:24:292 Thread-CPU/(11236:11252): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.003443
+[DEBUG] 23:50:24:292 Thread-CPU/(11236:11252): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 23:50:24:293 Thread-CPU/(11236:11252): Se envia info del pid a Matelib
+[INFO] 23:50:24:293 Thread-CPU/(11236:11252): Se ejecuto tarea de conexion
+[INFO] 23:50:24:296 Thread-CPU/(11236:11252): La tarea realizada fue: 14
+[INFO] 23:50:24:296 Thread-CPU/(11236:11252): Se ejecuto tarea de conexion
+[INFO] 23:50:24:300 Thread-CPU/(11236:11249): La tarea realizada fue: 3
+[INFO] 23:50:24:300 Thread-CPU/(11236:11249): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:50:24:300 Thread-CPU/(11236:11249): La ultima rafaga ejecutada del proceso es de: 3.006191
+[DEBUG] 23:50:25:292 Thread-CPU/(11236:11253): SE replanifica con SJF
+[INFO] 23:50:25:293 Replanificacion/(11236:11253): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 23:50:25:293 Thread-CPU/(11236:11253): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.003893
+[DEBUG] 23:50:25:293 Thread-CPU/(11236:11253): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 23:50:25:294 Thread-CPU/(11236:11253): Se envia info del pid a Matelib
+[INFO] 23:50:25:294 Thread-CPU/(11236:11253): Se ejecuto tarea de conexion
+[INFO] 23:50:25:299 Thread-CPU/(11236:11250): La tarea realizada fue: 3
+[INFO] 23:50:25:299 Thread-CPU/(11236:11250): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:50:25:299 Thread-CPU/(11236:11250): La ultima rafaga ejecutada del proceso es de: 3.005580
+[INFO] 23:50:25:296 Thread-CPU/(11236:11253): La tarea realizada fue: 14
+[INFO] 23:50:25:299 Thread-CPU/(11236:11253): Se ejecuto tarea de conexion
+[INFO] 23:50:26:296 Thread-CPU/(11236:11251): La tarea realizada fue: 3
+[INFO] 23:50:26:297 Thread-CPU/(11236:11251): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:50:26:297 Thread-CPU/(11236:11251): La ultima rafaga ejecutada del proceso es de: 3.004818
+[INFO] 23:50:26:305 Thread-CPU/(11236:11246): La tarea realizada fue: 1
+[INFO] 23:50:26:306 Thread-CPU/(11236:11246): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 23:50:27:298 Thread-CPU/(11236:11252): La tarea realizada fue: 3
+[INFO] 23:50:27:298 Thread-CPU/(11236:11252): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:50:27:299 Thread-CPU/(11236:11252): La ultima rafaga ejecutada del proceso es de: 3.006125
+[INFO] 23:50:28:299 Thread-CPU/(11236:11253): La tarea realizada fue: 3
+[INFO] 23:50:28:299 Thread-CPU/(11236:11253): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:50:28:299 Thread-CPU/(11236:11253): La ultima rafaga ejecutada del proceso es de: 3.005660
+[DEBUG] 23:52:50:617 PlanificadorCortoPlazo/(11436:11444): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 23:52:53:813 Thread-CPU/(11436:11446): SE replanifica con SJF
+[INFO] 23:52:53:813 Replanificacion/(11436:11446): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 23:52:53:813 Thread-CPU/(11436:11446): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.022744
+[DEBUG] 23:52:53:813 Thread-CPU/(11436:11446): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 23:52:53:813 Thread-CPU/(11436:11446): Se envia info del pid a Matelib
+[INFO] 23:52:53:813 Thread-CPU/(11436:11446): Se ejecuto tarea de conexion
+[INFO] 23:52:53:814 Thread-CPU/(11436:11446): La tarea realizada fue: 2
+[INFO] 23:52:53:814 Thread-CPU/(11436:11446): Se ejecuto tarea de conexion
+[INFO] 23:52:53:814 Thread-CPU/(11436:11446): La tarea realizada fue: 2
+[INFO] 23:52:53:816 Thread-CPU/(11436:11446): Se ejecuto tarea de conexion
+[INFO] 23:52:53:816 Thread-CPU/(11436:11446): La tarea realizada fue: 2
+[INFO] 23:52:53:816 Thread-CPU/(11436:11446): Se ejecuto tarea de conexion
+[INFO] 23:52:53:816 Thread-CPU/(11436:11446): La tarea realizada fue: 2
+[INFO] 23:52:53:817 Thread-CPU/(11436:11446): Se ejecuto tarea de conexion
+[INFO] 23:52:53:817 Thread-CPU/(11436:11446): La tarea realizada fue: 2
+[INFO] 23:52:53:817 Thread-CPU/(11436:11446): Se ejecuto tarea de conexion
+[INFO] 23:52:53:817 Thread-CPU/(11436:11446): La tarea realizada fue: 2
+[INFO] 23:52:53:817 Thread-CPU/(11436:11446): Se ejecuto tarea de conexion
+[DEBUG] 23:52:53:834 Thread-CPU/(11436:11449): SE replanifica con SJF
+[INFO] 23:52:53:834 Replanificacion/(11436:11449): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 23:52:53:834 Thread-CPU/(11436:11449): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.007945
+[DEBUG] 23:52:53:834 Thread-CPU/(11436:11449): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 23:52:53:834 Thread-CPU/(11436:11449): Se envia info del pid a Matelib
+[INFO] 23:52:53:834 Thread-CPU/(11436:11449): Se ejecuto tarea de conexion
+[INFO] 23:52:53:835 Thread-CPU/(11436:11449): La tarea realizada fue: 14
+[INFO] 23:52:53:835 Thread-CPU/(11436:11449): Se ejecuto tarea de conexion
+[DEBUG] 23:52:54:828 Thread-CPU/(11436:11451): SE replanifica con SJF
+[INFO] 23:52:54:828 Replanificacion/(11436:11451): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 23:52:54:828 Thread-CPU/(11436:11451): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.003796
+[DEBUG] 23:52:54:828 Thread-CPU/(11436:11451): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 23:52:54:828 Thread-CPU/(11436:11451): Se envia info del pid a Matelib
+[INFO] 23:52:54:828 Thread-CPU/(11436:11451): Se ejecuto tarea de conexion
+[INFO] 23:52:54:828 Thread-CPU/(11436:11451): La tarea realizada fue: 14
+[INFO] 23:52:54:828 Thread-CPU/(11436:11451): Se ejecuto tarea de conexion
+[DEBUG] 23:52:55:827 Thread-CPU/(11436:11453): SE replanifica con SJF
+[INFO] 23:52:55:827 Replanificacion/(11436:11453): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 23:52:55:827 Thread-CPU/(11436:11453): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.003915
+[DEBUG] 23:52:55:827 Thread-CPU/(11436:11453): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 23:52:55:827 Thread-CPU/(11436:11453): Se envia info del pid a Matelib
+[INFO] 23:52:55:828 Thread-CPU/(11436:11453): Se ejecuto tarea de conexion
+[INFO] 23:52:55:828 Thread-CPU/(11436:11453): La tarea realizada fue: 14
+[INFO] 23:52:55:828 Thread-CPU/(11436:11453): Se ejecuto tarea de conexion
+[INFO] 23:52:56:835 Thread-CPU/(11436:11449): La tarea realizada fue: 3
+[INFO] 23:52:56:835 Thread-CPU/(11436:11449): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:52:56:835 Thread-CPU/(11436:11449): La ultima rafaga ejecutada del proceso es de: 3.001087
+[DEBUG] 23:52:56:837 Thread-CPU/(11436:11454): SE replanifica con SJF
+[INFO] 23:52:56:837 Replanificacion/(11436:11454): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 23:52:56:837 Thread-CPU/(11436:11454): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.008662
+[DEBUG] 23:52:56:837 Thread-CPU/(11436:11454): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 23:52:56:838 Thread-CPU/(11436:11454): Se envia info del pid a Matelib
+[INFO] 23:52:56:838 Thread-CPU/(11436:11454): Se ejecuto tarea de conexion
+[INFO] 23:52:56:838 Thread-CPU/(11436:11454): La tarea realizada fue: 14
+[INFO] 23:52:56:838 Thread-CPU/(11436:11454): Se ejecuto tarea de conexion
+[DEBUG] 23:52:57:826 Thread-CPU/(11436:11455): SE replanifica con SJF
+[INFO] 23:52:57:826 Replanificacion/(11436:11455): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 23:52:57:826 Thread-CPU/(11436:11455): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.003605
+[DEBUG] 23:52:57:826 Thread-CPU/(11436:11455): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 23:52:57:826 Thread-CPU/(11436:11455): Se envia info del pid a Matelib
+[INFO] 23:52:57:826 Thread-CPU/(11436:11455): Se ejecuto tarea de conexion
+[INFO] 23:52:57:827 Thread-CPU/(11436:11455): La tarea realizada fue: 14
+[INFO] 23:52:57:827 Thread-CPU/(11436:11455): Se ejecuto tarea de conexion
+[INFO] 23:52:57:828 Thread-CPU/(11436:11451): La tarea realizada fue: 3
+[INFO] 23:52:57:828 Thread-CPU/(11436:11451): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:52:57:828 Thread-CPU/(11436:11451): La ultima rafaga ejecutada del proceso es de: 3.000761
+[DEBUG] 23:52:58:826 Thread-CPU/(11436:11456): SE replanifica con SJF
+[INFO] 23:52:58:826 Replanificacion/(11436:11456): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 23:52:58:826 Thread-CPU/(11436:11456): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.003202
+[DEBUG] 23:52:58:826 Thread-CPU/(11436:11456): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 23:52:58:826 Thread-CPU/(11436:11456): Se envia info del pid a Matelib
+[INFO] 23:52:58:826 Thread-CPU/(11436:11456): Se ejecuto tarea de conexion
+[INFO] 23:52:58:826 Thread-CPU/(11436:11456): La tarea realizada fue: 14
+[INFO] 23:52:58:827 Thread-CPU/(11436:11456): Se ejecuto tarea de conexion
+[INFO] 23:52:58:828 Thread-CPU/(11436:11453): La tarea realizada fue: 3
+[INFO] 23:52:58:828 Thread-CPU/(11436:11453): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:52:58:828 Thread-CPU/(11436:11453): La ultima rafaga ejecutada del proceso es de: 3.000851
+[INFO] 23:52:59:827 Thread-CPU/(11436:11446): La tarea realizada fue: 1
+[INFO] 23:52:59:827 Thread-CPU/(11436:11446): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 23:52:59:839 Thread-CPU/(11436:11454): La tarea realizada fue: 3
+[INFO] 23:52:59:839 Thread-CPU/(11436:11454): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:52:59:839 Thread-CPU/(11436:11454): La ultima rafaga ejecutada del proceso es de: 3.001464
+[INFO] 23:53:00:828 Thread-CPU/(11436:11455): La tarea realizada fue: 3
+[INFO] 23:53:00:828 Thread-CPU/(11436:11455): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:53:00:828 Thread-CPU/(11436:11455): La ultima rafaga ejecutada del proceso es de: 3.001403
+[INFO] 23:53:01:827 Thread-CPU/(11436:11456): La tarea realizada fue: 3
+[INFO] 23:53:01:827 Thread-CPU/(11436:11456): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:53:01:827 Thread-CPU/(11436:11456): La ultima rafaga ejecutada del proceso es de: 3.001169
+[DEBUG] 23:56:25:229 PlanificadorCortoPlazo/(11799:11807): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 23:56:27:287 Thread-CPU/(11799:11809): SE replanifica con SJF
+[INFO] 23:56:27:287 Replanificacion/(11799:11809): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 23:56:27:287 Thread-CPU/(11799:11809): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.037607
+[DEBUG] 23:56:27:287 Thread-CPU/(11799:11809): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 23:56:27:287 Thread-CPU/(11799:11809): Se envia info del pid a Matelib
+[INFO] 23:56:27:287 Thread-CPU/(11799:11809): Se ejecuto tarea de conexion
+[INFO] 23:56:27:287 Thread-CPU/(11799:11809): La tarea realizada fue: 2
+[INFO] 23:56:27:287 Thread-CPU/(11799:11809): Se ejecuto tarea de conexion
+[INFO] 23:56:27:288 Thread-CPU/(11799:11809): La tarea realizada fue: 2
+[INFO] 23:56:27:288 Thread-CPU/(11799:11809): Se ejecuto tarea de conexion
+[INFO] 23:56:27:288 Thread-CPU/(11799:11809): La tarea realizada fue: 2
+[INFO] 23:56:27:288 Thread-CPU/(11799:11809): Se ejecuto tarea de conexion
+[INFO] 23:56:27:288 Thread-CPU/(11799:11809): La tarea realizada fue: 2
+[INFO] 23:56:27:288 Thread-CPU/(11799:11809): Se ejecuto tarea de conexion
+[INFO] 23:56:27:288 Thread-CPU/(11799:11809): La tarea realizada fue: 2
+[INFO] 23:56:27:289 Thread-CPU/(11799:11809): Se ejecuto tarea de conexion
+[INFO] 23:56:27:289 Thread-CPU/(11799:11809): La tarea realizada fue: 2
+[INFO] 23:56:27:289 Thread-CPU/(11799:11809): Se ejecuto tarea de conexion
+[DEBUG] 23:56:27:310 Thread-CPU/(11799:11811): SE replanifica con SJF
+[INFO] 23:56:27:310 Replanificacion/(11799:11811): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 23:56:27:310 Thread-CPU/(11799:11811): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.007534
+[DEBUG] 23:56:27:310 Thread-CPU/(11799:11811): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 23:56:27:310 Thread-CPU/(11799:11811): Se envia info del pid a Matelib
+[INFO] 23:56:27:310 Thread-CPU/(11799:11811): Se ejecuto tarea de conexion
+[INFO] 23:56:27:311 Thread-CPU/(11799:11811): La tarea realizada fue: 14
+[INFO] 23:56:27:311 Thread-CPU/(11799:11811): Se ejecuto tarea de conexion
+[DEBUG] 23:56:28:309 Thread-CPU/(11799:11813): SE replanifica con SJF
+[INFO] 23:56:28:309 Replanificacion/(11799:11813): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 23:56:28:309 Thread-CPU/(11799:11813): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.009919
+[DEBUG] 23:56:28:309 Thread-CPU/(11799:11813): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 23:56:28:309 Thread-CPU/(11799:11813): Se envia info del pid a Matelib
+[INFO] 23:56:28:309 Thread-CPU/(11799:11813): Se ejecuto tarea de conexion
+[INFO] 23:56:28:309 Thread-CPU/(11799:11813): La tarea realizada fue: 14
+[INFO] 23:56:28:310 Thread-CPU/(11799:11813): Se ejecuto tarea de conexion
+[DEBUG] 23:56:29:310 Thread-CPU/(11799:11815): SE replanifica con SJF
+[INFO] 23:56:29:310 Replanificacion/(11799:11815): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 23:56:29:310 Thread-CPU/(11799:11815): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.008143
+[DEBUG] 23:56:29:310 Thread-CPU/(11799:11815): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 23:56:29:310 Thread-CPU/(11799:11815): Se envia info del pid a Matelib
+[INFO] 23:56:29:310 Thread-CPU/(11799:11815): Se ejecuto tarea de conexion
+[INFO] 23:56:29:310 Thread-CPU/(11799:11815): La tarea realizada fue: 14
+[INFO] 23:56:29:310 Thread-CPU/(11799:11815): Se ejecuto tarea de conexion
+[DEBUG] 23:56:30:303 Thread-CPU/(11799:11816): SE replanifica con SJF
+[INFO] 23:56:30:303 Replanificacion/(11799:11816): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 23:56:30:303 Thread-CPU/(11799:11816): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.003490
+[DEBUG] 23:56:30:303 Thread-CPU/(11799:11816): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 23:56:30:303 Thread-CPU/(11799:11816): Se envia info del pid a Matelib
+[INFO] 23:56:30:303 Thread-CPU/(11799:11816): Se ejecuto tarea de conexion
+[INFO] 23:56:30:303 Thread-CPU/(11799:11816): La tarea realizada fue: 14
+[INFO] 23:56:30:303 Thread-CPU/(11799:11816): Se ejecuto tarea de conexion
+[INFO] 23:56:30:311 Thread-CPU/(11799:11811): La tarea realizada fue: 3
+[INFO] 23:56:30:311 Thread-CPU/(11799:11811): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:56:30:311 Thread-CPU/(11799:11811): La ultima rafaga ejecutada del proceso es de: 3.001066
+[INFO] 23:56:31:310 Thread-CPU/(11799:11813): La tarea realizada fue: 3
+[INFO] 23:56:31:310 Thread-CPU/(11799:11813): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:56:31:310 Thread-CPU/(11799:11813): La ultima rafaga ejecutada del proceso es de: 3.001108
+[DEBUG] 23:56:31:315 Thread-CPU/(11799:11817): SE replanifica con SJF
+[INFO] 23:56:31:315 Replanificacion/(11799:11817): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 23:56:31:315 Thread-CPU/(11799:11817): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.009495
+[DEBUG] 23:56:31:315 Thread-CPU/(11799:11817): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 23:56:31:315 Thread-CPU/(11799:11817): Se envia info del pid a Matelib
+[INFO] 23:56:31:315 Thread-CPU/(11799:11817): Se ejecuto tarea de conexion
+[INFO] 23:56:31:316 Thread-CPU/(11799:11817): La tarea realizada fue: 14
+[INFO] 23:56:31:316 Thread-CPU/(11799:11817): Se ejecuto tarea de conexion
+[INFO] 23:56:32:311 Thread-CPU/(11799:11815): La tarea realizada fue: 3
+[INFO] 23:56:32:311 Thread-CPU/(11799:11815): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:56:32:311 Thread-CPU/(11799:11815): La ultima rafaga ejecutada del proceso es de: 3.000782
+[DEBUG] 23:56:32:312 Thread-CPU/(11799:11818): SE replanifica con SJF
+[INFO] 23:56:32:312 Replanificacion/(11799:11818): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 23:56:32:312 Thread-CPU/(11799:11818): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.009868
+[DEBUG] 23:56:32:312 Thread-CPU/(11799:11818): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 23:56:32:312 Thread-CPU/(11799:11818): Se envia info del pid a Matelib
+[INFO] 23:56:32:312 Thread-CPU/(11799:11818): Se ejecuto tarea de conexion
+[INFO] 23:56:32:313 Thread-CPU/(11799:11818): La tarea realizada fue: 14
+[INFO] 23:56:32:313 Thread-CPU/(11799:11818): Se ejecuto tarea de conexion
+[INFO] 23:56:33:300 Thread-CPU/(11799:11809): La tarea realizada fue: 1
+[INFO] 23:56:33:300 Thread-CPU/(11799:11809): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 23:56:33:305 Thread-CPU/(11799:11816): La tarea realizada fue: 3
+[INFO] 23:56:33:305 Thread-CPU/(11799:11816): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:56:33:305 Thread-CPU/(11799:11816): La ultima rafaga ejecutada del proceso es de: 3.001774
+[INFO] 23:56:34:317 Thread-CPU/(11799:11817): La tarea realizada fue: 3
+[INFO] 23:56:34:317 Thread-CPU/(11799:11817): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:56:34:317 Thread-CPU/(11799:11817): La ultima rafaga ejecutada del proceso es de: 3.001199
+[INFO] 23:56:35:313 Thread-CPU/(11799:11818): La tarea realizada fue: 3
+[INFO] 23:56:35:313 Thread-CPU/(11799:11818): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 23:56:35:314 Thread-CPU/(11799:11818): La ultima rafaga ejecutada del proceso es de: 3.001273
+[DEBUG] 00:02:48:838 PlanificadorCortoPlazo/(12115:12123): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 00:02:52:659 Thread-CPU/(12115:12125): SE replanifica con SJF
+[INFO] 00:02:52:659 Replanificacion/(12115:12125): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 00:02:52:660 Thread-CPU/(12115:12125): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.022908
+[DEBUG] 00:02:52:660 Thread-CPU/(12115:12125): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 00:02:52:660 Thread-CPU/(12115:12125): Se envia info del pid a Matelib
+[INFO] 00:02:52:660 Thread-CPU/(12115:12125): Se ejecuto tarea de conexion
+[INFO] 00:02:52:661 Thread-CPU/(12115:12125): La tarea realizada fue: 2
+[INFO] 00:02:52:662 Thread-CPU/(12115:12125): Se ejecuto tarea de conexion
+[INFO] 00:02:52:662 Thread-CPU/(12115:12125): La tarea realizada fue: 2
+[INFO] 00:02:52:662 Thread-CPU/(12115:12125): Se ejecuto tarea de conexion
+[INFO] 00:02:52:662 Thread-CPU/(12115:12125): La tarea realizada fue: 2
+[INFO] 00:02:52:662 Thread-CPU/(12115:12125): Se ejecuto tarea de conexion
+[INFO] 00:02:52:662 Thread-CPU/(12115:12125): La tarea realizada fue: 2
+[INFO] 00:02:52:663 Thread-CPU/(12115:12125): Se ejecuto tarea de conexion
+[INFO] 00:02:52:663 Thread-CPU/(12115:12125): La tarea realizada fue: 2
+[INFO] 00:02:52:663 Thread-CPU/(12115:12125): Se ejecuto tarea de conexion
+[INFO] 00:02:52:663 Thread-CPU/(12115:12125): La tarea realizada fue: 2
+[INFO] 00:02:52:663 Thread-CPU/(12115:12125): Se ejecuto tarea de conexion
+[DEBUG] 00:02:52:688 Thread-CPU/(12115:12127): SE replanifica con SJF
+[INFO] 00:02:52:688 Replanificacion/(12115:12127): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 00:02:52:688 Thread-CPU/(12115:12127): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.014104
+[DEBUG] 00:02:52:688 Thread-CPU/(12115:12127): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 00:02:52:688 Thread-CPU/(12115:12127): Se envia info del pid a Matelib
+[INFO] 00:02:52:688 Thread-CPU/(12115:12127): Se ejecuto tarea de conexion
+[INFO] 00:02:52:689 Thread-CPU/(12115:12127): La tarea realizada fue: 14
+[INFO] 00:02:52:689 Thread-CPU/(12115:12127): Se ejecuto tarea de conexion
+[DEBUG] 00:02:53:679 Thread-CPU/(12115:12129): SE replanifica con SJF
+[INFO] 00:02:53:679 Replanificacion/(12115:12129): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 00:02:53:679 Thread-CPU/(12115:12129): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.005729
+[DEBUG] 00:02:53:679 Thread-CPU/(12115:12129): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 00:02:53:679 Thread-CPU/(12115:12129): Se envia info del pid a Matelib
+[INFO] 00:02:53:679 Thread-CPU/(12115:12129): Se ejecuto tarea de conexion
+[INFO] 00:02:53:679 Thread-CPU/(12115:12129): La tarea realizada fue: 14
+[INFO] 00:02:53:679 Thread-CPU/(12115:12129): Se ejecuto tarea de conexion
+[DEBUG] 00:02:54:679 Thread-CPU/(12115:12131): SE replanifica con SJF
+[INFO] 00:02:54:679 Replanificacion/(12115:12131): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 00:02:54:679 Thread-CPU/(12115:12131): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.006767
+[DEBUG] 00:02:54:679 Thread-CPU/(12115:12131): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 00:02:54:679 Thread-CPU/(12115:12131): Se envia info del pid a Matelib
+[INFO] 00:02:54:679 Thread-CPU/(12115:12131): Se ejecuto tarea de conexion
+[INFO] 00:02:54:679 Thread-CPU/(12115:12131): La tarea realizada fue: 14
+[INFO] 00:02:54:679 Thread-CPU/(12115:12131): Se ejecuto tarea de conexion
+[DEBUG] 00:02:55:672 Thread-CPU/(12115:12132): SE replanifica con SJF
+[INFO] 00:02:55:672 Replanificacion/(12115:12132): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 00:02:55:672 Thread-CPU/(12115:12132): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.003699
+[DEBUG] 00:02:55:672 Thread-CPU/(12115:12132): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 00:02:55:672 Thread-CPU/(12115:12132): Se envia info del pid a Matelib
+[INFO] 00:02:55:672 Thread-CPU/(12115:12132): Se ejecuto tarea de conexion
+[INFO] 00:02:55:672 Thread-CPU/(12115:12132): La tarea realizada fue: 14
+[INFO] 00:02:55:673 Thread-CPU/(12115:12132): Se ejecuto tarea de conexion
+[INFO] 00:02:55:689 Thread-CPU/(12115:12127): La tarea realizada fue: 3
+[INFO] 00:02:55:689 Thread-CPU/(12115:12127): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:02:55:689 Thread-CPU/(12115:12127): La ultima rafaga ejecutada del proceso es de: 3.000827
+[INFO] 00:02:56:680 Thread-CPU/(12115:12129): La tarea realizada fue: 3
+[INFO] 00:02:56:680 Thread-CPU/(12115:12129): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:02:56:680 Thread-CPU/(12115:12129): La ultima rafaga ejecutada del proceso es de: 3.001162
+[DEBUG] 00:02:56:680 Thread-CPU/(12115:12133): SE replanifica con SJF
+[INFO] 00:02:56:680 Replanificacion/(12115:12133): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 00:02:56:680 Thread-CPU/(12115:12133): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.006702
+[DEBUG] 00:02:56:680 Thread-CPU/(12115:12133): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 00:02:56:680 Thread-CPU/(12115:12133): Se envia info del pid a Matelib
+[INFO] 00:02:56:680 Thread-CPU/(12115:12133): Se ejecuto tarea de conexion
+[INFO] 00:02:56:681 Thread-CPU/(12115:12133): La tarea realizada fue: 14
+[INFO] 00:02:56:681 Thread-CPU/(12115:12133): Se ejecuto tarea de conexion
+[DEBUG] 00:02:57:677 Thread-CPU/(12115:12134): SE replanifica con SJF
+[INFO] 00:02:57:677 Replanificacion/(12115:12134): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 00:02:57:677 Thread-CPU/(12115:12134): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.003874
+[DEBUG] 00:02:57:677 Thread-CPU/(12115:12134): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 00:02:57:677 Thread-CPU/(12115:12134): Se envia info del pid a Matelib
+[INFO] 00:02:57:677 Thread-CPU/(12115:12134): Se ejecuto tarea de conexion
+[INFO] 00:02:57:677 Thread-CPU/(12115:12134): La tarea realizada fue: 14
+[INFO] 00:02:57:677 Thread-CPU/(12115:12134): Se ejecuto tarea de conexion
+[INFO] 00:02:57:682 Thread-CPU/(12115:12131): La tarea realizada fue: 3
+[INFO] 00:02:57:682 Thread-CPU/(12115:12131): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:02:57:682 Thread-CPU/(12115:12131): La ultima rafaga ejecutada del proceso es de: 3.002692
+[INFO] 00:02:58:674 Thread-CPU/(12115:12132): La tarea realizada fue: 3
+[INFO] 00:02:58:674 Thread-CPU/(12115:12132): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:02:58:674 Thread-CPU/(12115:12132): La ultima rafaga ejecutada del proceso es de: 3.001706
+[INFO] 00:02:58:684 Thread-CPU/(12115:12125): La tarea realizada fue: 1
+[INFO] 00:02:58:684 Thread-CPU/(12115:12125): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 00:02:59:682 Thread-CPU/(12115:12133): La tarea realizada fue: 3
+[INFO] 00:02:59:682 Thread-CPU/(12115:12133): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:02:59:682 Thread-CPU/(12115:12133): La ultima rafaga ejecutada del proceso es de: 3.001299
+[INFO] 00:03:00:678 Thread-CPU/(12115:12134): La tarea realizada fue: 3
+[INFO] 00:03:00:678 Thread-CPU/(12115:12134): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:03:00:678 Thread-CPU/(12115:12134): La ultima rafaga ejecutada del proceso es de: 3.001658
+[DEBUG] 00:16:50:752 PlanificadorCortoPlazo/(12559:12567): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 00:16:57:756 Thread-CPU/(12559:12569): SE replanifica con SJF
+[INFO] 00:16:57:756 Replanificacion/(12559:12569): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 00:16:57:756 Thread-CPU/(12559:12569): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.028605
+[DEBUG] 00:16:57:756 Thread-CPU/(12559:12569): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 00:16:57:756 Thread-CPU/(12559:12569): Se envia info del pid a Matelib
+[INFO] 00:16:57:756 Thread-CPU/(12559:12569): Se ejecuto tarea de conexion
+[INFO] 00:16:57:757 Thread-CPU/(12559:12569): La tarea realizada fue: 2
+[INFO] 00:16:57:758 Thread-CPU/(12559:12569): Se ejecuto tarea de conexion
+[INFO] 00:16:57:758 Thread-CPU/(12559:12569): La tarea realizada fue: 2
+[INFO] 00:16:57:758 Thread-CPU/(12559:12569): Se ejecuto tarea de conexion
+[INFO] 00:16:57:758 Thread-CPU/(12559:12569): La tarea realizada fue: 2
+[INFO] 00:16:57:758 Thread-CPU/(12559:12569): Se ejecuto tarea de conexion
+[INFO] 00:16:57:759 Thread-CPU/(12559:12569): La tarea realizada fue: 2
+[INFO] 00:16:57:759 Thread-CPU/(12559:12569): Se ejecuto tarea de conexion
+[INFO] 00:16:57:759 Thread-CPU/(12559:12569): La tarea realizada fue: 2
+[INFO] 00:16:57:760 Thread-CPU/(12559:12569): Se ejecuto tarea de conexion
+[INFO] 00:16:57:760 Thread-CPU/(12559:12569): La tarea realizada fue: 2
+[INFO] 00:16:57:760 Thread-CPU/(12559:12569): Se ejecuto tarea de conexion
+[DEBUG] 00:16:57:788 Thread-CPU/(12559:12571): SE replanifica con SJF
+[INFO] 00:16:57:788 Replanificacion/(12559:12571): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 00:16:57:788 Thread-CPU/(12559:12571): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.012533
+[DEBUG] 00:16:57:788 Thread-CPU/(12559:12571): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 00:16:57:788 Thread-CPU/(12559:12571): Se envia info del pid a Matelib
+[INFO] 00:16:57:788 Thread-CPU/(12559:12571): Se ejecuto tarea de conexion
+[INFO] 00:16:57:788 Thread-CPU/(12559:12571): La tarea realizada fue: 14
+[INFO] 00:16:57:788 Thread-CPU/(12559:12571): Se ejecuto tarea de conexion
+[DEBUG] 00:16:58:777 Thread-CPU/(12559:12573): SE replanifica con SJF
+[INFO] 00:16:58:777 Replanificacion/(12559:12573): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 00:16:58:777 Thread-CPU/(12559:12573): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.006828
+[DEBUG] 00:16:58:777 Thread-CPU/(12559:12573): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 00:16:58:777 Thread-CPU/(12559:12573): Se envia info del pid a Matelib
+[INFO] 00:16:58:777 Thread-CPU/(12559:12573): Se ejecuto tarea de conexion
+[INFO] 00:16:58:777 Thread-CPU/(12559:12573): La tarea realizada fue: 14
+[INFO] 00:16:58:777 Thread-CPU/(12559:12573): Se ejecuto tarea de conexion
+[DEBUG] 00:16:59:776 Thread-CPU/(12559:12575): SE replanifica con SJF
+[INFO] 00:16:59:776 Replanificacion/(12559:12575): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 00:16:59:776 Thread-CPU/(12559:12575): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.006473
+[DEBUG] 00:16:59:776 Thread-CPU/(12559:12575): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 00:16:59:776 Thread-CPU/(12559:12575): Se envia info del pid a Matelib
+[INFO] 00:16:59:776 Thread-CPU/(12559:12575): Se ejecuto tarea de conexion
+[INFO] 00:16:59:777 Thread-CPU/(12559:12575): La tarea realizada fue: 14
+[INFO] 00:16:59:777 Thread-CPU/(12559:12575): Se ejecuto tarea de conexion
+[DEBUG] 00:17:00:780 Thread-CPU/(12559:12576): SE replanifica con SJF
+[INFO] 00:17:00:780 Replanificacion/(12559:12576): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 00:17:00:780 Thread-CPU/(12559:12576): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.008072
+[DEBUG] 00:17:00:780 Thread-CPU/(12559:12576): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 00:17:00:780 Thread-CPU/(12559:12576): Se envia info del pid a Matelib
+[INFO] 00:17:00:780 Thread-CPU/(12559:12576): Se ejecuto tarea de conexion
+[INFO] 00:17:00:781 Thread-CPU/(12559:12576): La tarea realizada fue: 14
+[INFO] 00:17:00:781 Thread-CPU/(12559:12576): Se ejecuto tarea de conexion
+[INFO] 00:17:00:789 Thread-CPU/(12559:12571): La tarea realizada fue: 3
+[INFO] 00:17:00:789 Thread-CPU/(12559:12571): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:00:789 Thread-CPU/(12559:12571): La ultima rafaga ejecutada del proceso es de: 3.000816
+[DEBUG] 00:17:01:777 Thread-CPU/(12559:12577): SE replanifica con SJF
+[INFO] 00:17:01:777 Replanificacion/(12559:12577): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 00:17:01:777 Thread-CPU/(12559:12577): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.006990
+[DEBUG] 00:17:01:777 Thread-CPU/(12559:12577): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 00:17:01:777 Thread-CPU/(12559:12577): Se envia info del pid a Matelib
+[INFO] 00:17:01:777 Thread-CPU/(12559:12577): Se ejecuto tarea de conexion
+[INFO] 00:17:01:778 Thread-CPU/(12559:12577): La tarea realizada fue: 14
+[INFO] 00:17:01:778 Thread-CPU/(12559:12577): Se ejecuto tarea de conexion
+[INFO] 00:17:01:778 Thread-CPU/(12559:12573): La tarea realizada fue: 3
+[INFO] 00:17:01:778 Thread-CPU/(12559:12573): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:01:778 Thread-CPU/(12559:12573): La ultima rafaga ejecutada del proceso es de: 3.001287
+[INFO] 00:17:02:777 Thread-CPU/(12559:12575): La tarea realizada fue: 3
+[INFO] 00:17:02:777 Thread-CPU/(12559:12575): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:02:777 Thread-CPU/(12559:12575): La ultima rafaga ejecutada del proceso es de: 3.001169
+[DEBUG] 00:17:02:779 Thread-CPU/(12559:12579): SE replanifica con SJF
+[INFO] 00:17:02:779 Replanificacion/(12559:12579): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 00:17:02:779 Thread-CPU/(12559:12579): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.006940
+[DEBUG] 00:17:02:779 Thread-CPU/(12559:12579): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 00:17:02:779 Thread-CPU/(12559:12579): Se envia info del pid a Matelib
+[INFO] 00:17:02:779 Thread-CPU/(12559:12579): Se ejecuto tarea de conexion
+[INFO] 00:17:02:779 Thread-CPU/(12559:12579): La tarea realizada fue: 14
+[INFO] 00:17:02:779 Thread-CPU/(12559:12579): Se ejecuto tarea de conexion
+[INFO] 00:17:03:774 Thread-CPU/(12559:12569): La tarea realizada fue: 1
+[INFO] 00:17:03:774 Thread-CPU/(12559:12569): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 00:17:03:783 Thread-CPU/(12559:12576): La tarea realizada fue: 3
+[INFO] 00:17:03:783 Thread-CPU/(12559:12576): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:03:783 Thread-CPU/(12559:12576): La ultima rafaga ejecutada del proceso es de: 3.002919
+[INFO] 00:17:04:779 Thread-CPU/(12559:12577): La tarea realizada fue: 3
+[INFO] 00:17:04:779 Thread-CPU/(12559:12577): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:04:779 Thread-CPU/(12559:12577): La ultima rafaga ejecutada del proceso es de: 3.001325
+[INFO] 00:17:05:780 Thread-CPU/(12559:12579): La tarea realizada fue: 3
+[INFO] 00:17:05:780 Thread-CPU/(12559:12579): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:05:780 Thread-CPU/(12559:12579): La ultima rafaga ejecutada del proceso es de: 3.001762
+[DEBUG] 00:17:27:680 PlanificadorCortoPlazo/(12720:12728): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 00:17:35:021 Thread-CPU/(12720:12730): SE replanifica con SJF
+[INFO] 00:17:35:021 Replanificacion/(12720:12730): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 00:17:35:021 Thread-CPU/(12720:12730): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.032981
+[DEBUG] 00:17:35:021 Thread-CPU/(12720:12730): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 00:17:35:021 Thread-CPU/(12720:12730): Se envia info del pid a Matelib
+[INFO] 00:17:35:021 Thread-CPU/(12720:12730): Se ejecuto tarea de conexion
+[INFO] 00:17:35:021 Thread-CPU/(12720:12730): La tarea realizada fue: 2
+[INFO] 00:17:35:023 Thread-CPU/(12720:12730): Se ejecuto tarea de conexion
+[INFO] 00:17:35:023 Thread-CPU/(12720:12730): La tarea realizada fue: 2
+[INFO] 00:17:35:023 Thread-CPU/(12720:12730): Se ejecuto tarea de conexion
+[INFO] 00:17:35:023 Thread-CPU/(12720:12730): La tarea realizada fue: 2
+[INFO] 00:17:35:023 Thread-CPU/(12720:12730): Se ejecuto tarea de conexion
+[INFO] 00:17:35:023 Thread-CPU/(12720:12730): La tarea realizada fue: 2
+[INFO] 00:17:35:024 Thread-CPU/(12720:12730): Se ejecuto tarea de conexion
+[INFO] 00:17:35:024 Thread-CPU/(12720:12730): La tarea realizada fue: 2
+[INFO] 00:17:35:024 Thread-CPU/(12720:12730): Se ejecuto tarea de conexion
+[INFO] 00:17:35:025 Thread-CPU/(12720:12730): La tarea realizada fue: 2
+[INFO] 00:17:35:025 Thread-CPU/(12720:12730): Se ejecuto tarea de conexion
+[DEBUG] 00:17:35:048 Thread-CPU/(12720:12732): SE replanifica con SJF
+[INFO] 00:17:35:048 Replanificacion/(12720:12732): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 00:17:35:048 Thread-CPU/(12720:12732): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.009655
+[DEBUG] 00:17:35:049 Thread-CPU/(12720:12732): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 00:17:35:049 Thread-CPU/(12720:12732): Se envia info del pid a Matelib
+[INFO] 00:17:35:049 Thread-CPU/(12720:12732): Se ejecuto tarea de conexion
+[INFO] 00:17:35:049 Thread-CPU/(12720:12732): La tarea realizada fue: 14
+[INFO] 00:17:35:049 Thread-CPU/(12720:12732): Se ejecuto tarea de conexion
+[DEBUG] 00:17:36:040 Thread-CPU/(12720:12734): SE replanifica con SJF
+[INFO] 00:17:36:040 Replanificacion/(12720:12734): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 00:17:36:040 Thread-CPU/(12720:12734): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.004646
+[DEBUG] 00:17:36:040 Thread-CPU/(12720:12734): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 00:17:36:040 Thread-CPU/(12720:12734): Se envia info del pid a Matelib
+[INFO] 00:17:36:040 Thread-CPU/(12720:12734): Se ejecuto tarea de conexion
+[INFO] 00:17:36:041 Thread-CPU/(12720:12734): La tarea realizada fue: 14
+[INFO] 00:17:36:041 Thread-CPU/(12720:12734): Se ejecuto tarea de conexion
+[DEBUG] 00:17:37:040 Thread-CPU/(12720:12736): SE replanifica con SJF
+[INFO] 00:17:37:040 Replanificacion/(12720:12736): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 00:17:37:040 Thread-CPU/(12720:12736): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.004173
+[DEBUG] 00:17:37:040 Thread-CPU/(12720:12736): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 00:17:37:040 Thread-CPU/(12720:12736): Se envia info del pid a Matelib
+[INFO] 00:17:37:040 Thread-CPU/(12720:12736): Se ejecuto tarea de conexion
+[INFO] 00:17:37:041 Thread-CPU/(12720:12736): La tarea realizada fue: 14
+[INFO] 00:17:37:041 Thread-CPU/(12720:12736): Se ejecuto tarea de conexion
+[DEBUG] 00:17:38:043 Thread-CPU/(12720:12737): SE replanifica con SJF
+[INFO] 00:17:38:044 Replanificacion/(12720:12737): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 00:17:38:044 Thread-CPU/(12720:12737): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.006319
+[DEBUG] 00:17:38:044 Thread-CPU/(12720:12737): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 00:17:38:044 Thread-CPU/(12720:12737): Se envia info del pid a Matelib
+[INFO] 00:17:38:044 Thread-CPU/(12720:12737): Se ejecuto tarea de conexion
+[INFO] 00:17:38:044 Thread-CPU/(12720:12737): La tarea realizada fue: 14
+[INFO] 00:17:38:044 Thread-CPU/(12720:12737): Se ejecuto tarea de conexion
+[INFO] 00:17:38:050 Thread-CPU/(12720:12732): La tarea realizada fue: 3
+[INFO] 00:17:38:050 Thread-CPU/(12720:12732): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:38:050 Thread-CPU/(12720:12732): La ultima rafaga ejecutada del proceso es de: 3.001297
+[INFO] 00:17:39:042 Thread-CPU/(12720:12734): La tarea realizada fue: 3
+[INFO] 00:17:39:042 Thread-CPU/(12720:12734): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:39:042 Thread-CPU/(12720:12734): La ultima rafaga ejecutada del proceso es de: 3.001923
+[DEBUG] 00:17:39:043 Thread-CPU/(12720:12738): SE replanifica con SJF
+[INFO] 00:17:39:043 Replanificacion/(12720:12738): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 00:17:39:043 Thread-CPU/(12720:12738): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.003621
+[DEBUG] 00:17:39:043 Thread-CPU/(12720:12738): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 00:17:39:043 Thread-CPU/(12720:12738): Se envia info del pid a Matelib
+[INFO] 00:17:39:043 Thread-CPU/(12720:12738): Se ejecuto tarea de conexion
+[INFO] 00:17:39:044 Thread-CPU/(12720:12738): La tarea realizada fue: 14
+[INFO] 00:17:39:044 Thread-CPU/(12720:12738): Se ejecuto tarea de conexion
+[INFO] 00:17:40:041 Thread-CPU/(12720:12736): La tarea realizada fue: 3
+[INFO] 00:17:40:041 Thread-CPU/(12720:12736): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:40:041 Thread-CPU/(12720:12736): La ultima rafaga ejecutada del proceso es de: 3.001304
+[DEBUG] 00:17:40:045 Thread-CPU/(12720:12739): SE replanifica con SJF
+[INFO] 00:17:40:045 Replanificacion/(12720:12739): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 00:17:40:045 Thread-CPU/(12720:12739): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.006283
+[DEBUG] 00:17:40:045 Thread-CPU/(12720:12739): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 00:17:40:045 Thread-CPU/(12720:12739): Se envia info del pid a Matelib
+[INFO] 00:17:40:045 Thread-CPU/(12720:12739): Se ejecuto tarea de conexion
+[INFO] 00:17:40:045 Thread-CPU/(12720:12739): La tarea realizada fue: 14
+[INFO] 00:17:40:045 Thread-CPU/(12720:12739): Se ejecuto tarea de conexion
+[INFO] 00:17:41:042 Thread-CPU/(12720:12730): La tarea realizada fue: 1
+[INFO] 00:17:41:042 Thread-CPU/(12720:12730): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 00:17:41:045 Thread-CPU/(12720:12737): La tarea realizada fue: 3
+[INFO] 00:17:41:045 Thread-CPU/(12720:12737): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:41:045 Thread-CPU/(12720:12737): La ultima rafaga ejecutada del proceso es de: 3.001627
+[INFO] 00:17:42:044 Thread-CPU/(12720:12738): La tarea realizada fue: 3
+[INFO] 00:17:42:044 Thread-CPU/(12720:12738): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:42:044 Thread-CPU/(12720:12738): La ultima rafaga ejecutada del proceso es de: 3.000853
+[INFO] 00:17:43:047 Thread-CPU/(12720:12739): La tarea realizada fue: 3
+[INFO] 00:17:43:047 Thread-CPU/(12720:12739): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:17:43:047 Thread-CPU/(12720:12739): La ultima rafaga ejecutada del proceso es de: 3.001673
+[DEBUG] 00:31:49:118 PlanificadorCortoPlazo/(13413:13417): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 00:31:50:985 Thread-CPU/(13413:13421): SE replanifica con SJF
+[INFO] 00:31:50:997 Replanificacion/(13413:13421): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 00:31:51:000 Thread-CPU/(13413:13421): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.040135
+[DEBUG] 00:31:51:000 Thread-CPU/(13413:13421): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 00:31:51:001 Thread-CPU/(13413:13421): Se envia info del pid a Matelib
+[INFO] 00:31:51:005 Thread-CPU/(13413:13421): Se ejecuto tarea de conexion
+[INFO] 00:31:51:010 Thread-CPU/(13413:13421): La tarea realizada fue: 2
+[INFO] 00:31:51:011 Thread-CPU/(13413:13421): Se ejecuto tarea de conexion
+[INFO] 00:31:51:014 Thread-CPU/(13413:13421): La tarea realizada fue: 2
+[INFO] 00:31:51:014 Thread-CPU/(13413:13421): Se ejecuto tarea de conexion
+[INFO] 00:31:51:015 Thread-CPU/(13413:13421): La tarea realizada fue: 2
+[INFO] 00:31:51:016 Thread-CPU/(13413:13421): Se ejecuto tarea de conexion
+[INFO] 00:31:51:017 Thread-CPU/(13413:13421): La tarea realizada fue: 2
+[INFO] 00:31:51:017 Thread-CPU/(13413:13421): Se ejecuto tarea de conexion
+[INFO] 00:31:51:019 Thread-CPU/(13413:13421): La tarea realizada fue: 2
+[INFO] 00:31:51:019 Thread-CPU/(13413:13421): Se ejecuto tarea de conexion
+[INFO] 00:31:51:021 Thread-CPU/(13413:13421): La tarea realizada fue: 2
+[INFO] 00:31:51:021 Thread-CPU/(13413:13421): Se ejecuto tarea de conexion
+[DEBUG] 00:31:51:040 Thread-CPU/(13413:13423): SE replanifica con SJF
+[INFO] 00:31:51:041 Replanificacion/(13413:13423): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 00:31:51:041 Thread-CPU/(13413:13423): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.013042
+[DEBUG] 00:31:51:042 Thread-CPU/(13413:13423): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 00:31:51:042 Thread-CPU/(13413:13423): Se envia info del pid a Matelib
+[INFO] 00:31:51:043 Thread-CPU/(13413:13423): Se ejecuto tarea de conexion
+[INFO] 00:31:51:049 Thread-CPU/(13413:13423): La tarea realizada fue: 14
+[INFO] 00:31:51:050 Thread-CPU/(13413:13423): Se ejecuto tarea de conexion
+[DEBUG] 00:31:52:028 Thread-CPU/(13413:13425): SE replanifica con SJF
+[INFO] 00:31:52:028 Replanificacion/(13413:13425): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 00:31:52:029 Thread-CPU/(13413:13425): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.003165
+[DEBUG] 00:31:52:029 Thread-CPU/(13413:13425): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 00:31:52:030 Thread-CPU/(13413:13425): Se envia info del pid a Matelib
+[INFO] 00:31:52:030 Thread-CPU/(13413:13425): Se ejecuto tarea de conexion
+[INFO] 00:31:52:032 Thread-CPU/(13413:13425): La tarea realizada fue: 14
+[INFO] 00:31:52:032 Thread-CPU/(13413:13425): Se ejecuto tarea de conexion
+[DEBUG] 00:31:53:028 Thread-CPU/(13413:13426): SE replanifica con SJF
+[INFO] 00:31:53:029 Replanificacion/(13413:13426): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 00:31:53:029 Thread-CPU/(13413:13426): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.003309
+[DEBUG] 00:31:53:029 Thread-CPU/(13413:13426): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 00:31:53:029 Thread-CPU/(13413:13426): Se envia info del pid a Matelib
+[INFO] 00:31:53:030 Thread-CPU/(13413:13426): Se ejecuto tarea de conexion
+[INFO] 00:31:53:033 Thread-CPU/(13413:13426): La tarea realizada fue: 14
+[INFO] 00:31:53:034 Thread-CPU/(13413:13426): Se ejecuto tarea de conexion
+[DEBUG] 00:31:54:029 Thread-CPU/(13413:13427): SE replanifica con SJF
+[INFO] 00:31:54:029 Replanificacion/(13413:13427): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 00:31:54:030 Thread-CPU/(13413:13427): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.003290
+[DEBUG] 00:31:54:030 Thread-CPU/(13413:13427): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 00:31:54:031 Thread-CPU/(13413:13427): Se envia info del pid a Matelib
+[INFO] 00:31:54:031 Thread-CPU/(13413:13427): Se ejecuto tarea de conexion
+[INFO] 00:31:54:033 Thread-CPU/(13413:13427): La tarea realizada fue: 14
+[INFO] 00:31:54:033 Thread-CPU/(13413:13427): Se ejecuto tarea de conexion
+[INFO] 00:31:54:060 Thread-CPU/(13413:13423): La tarea realizada fue: 3
+[INFO] 00:31:54:060 Thread-CPU/(13413:13423): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:31:54:061 Thread-CPU/(13413:13423): La ultima rafaga ejecutada del proceso es de: 3.018228
+[DEBUG] 00:31:55:028 Thread-CPU/(13413:13428): SE replanifica con SJF
+[INFO] 00:31:55:028 Replanificacion/(13413:13428): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 00:31:55:029 Thread-CPU/(13413:13428): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.002970
+[DEBUG] 00:31:55:029 Thread-CPU/(13413:13428): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 00:31:55:029 Thread-CPU/(13413:13428): Se envia info del pid a Matelib
+[INFO] 00:31:55:030 Thread-CPU/(13413:13428): Se ejecuto tarea de conexion
+[INFO] 00:31:55:034 Thread-CPU/(13413:13425): La tarea realizada fue: 3
+[INFO] 00:31:55:035 Thread-CPU/(13413:13425): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:31:55:036 Thread-CPU/(13413:13425): La ultima rafaga ejecutada del proceso es de: 3.005991
+[INFO] 00:31:55:036 Thread-CPU/(13413:13428): La tarea realizada fue: 14
+[INFO] 00:31:55:036 Thread-CPU/(13413:13428): Se ejecuto tarea de conexion
+[DEBUG] 00:31:56:030 Thread-CPU/(13413:13424): SE replanifica con SJF
+[INFO] 00:31:56:030 Replanificacion/(13413:13424): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 00:31:56:030 Thread-CPU/(13413:13424): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.003271
+[DEBUG] 00:31:56:031 Thread-CPU/(13413:13424): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 00:31:56:031 Thread-CPU/(13413:13424): Se envia info del pid a Matelib
+[INFO] 00:31:56:031 Thread-CPU/(13413:13424): Se ejecuto tarea de conexion
+[INFO] 00:31:56:036 Thread-CPU/(13413:13426): La tarea realizada fue: 3
+[INFO] 00:31:56:037 Thread-CPU/(13413:13426): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:31:56:037 Thread-CPU/(13413:13426): La ultima rafaga ejecutada del proceso es de: 3.007374
+[INFO] 00:31:56:037 Thread-CPU/(13413:13424): La tarea realizada fue: 14
+[INFO] 00:31:56:038 Thread-CPU/(13413:13424): Se ejecuto tarea de conexion
+[INFO] 00:31:57:037 Thread-CPU/(13413:13427): La tarea realizada fue: 3
+[INFO] 00:31:57:038 Thread-CPU/(13413:13427): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:31:57:038 Thread-CPU/(13413:13427): La ultima rafaga ejecutada del proceso es de: 3.007041
+[INFO] 00:31:57:043 Thread-CPU/(13413:13421): La tarea realizada fue: 1
+[INFO] 00:31:57:044 Thread-CPU/(13413:13421): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 00:31:58:039 Thread-CPU/(13413:13428): La tarea realizada fue: 3
+[INFO] 00:31:58:039 Thread-CPU/(13413:13428): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:31:58:039 Thread-CPU/(13413:13428): La ultima rafaga ejecutada del proceso es de: 3.009997
+[INFO] 00:31:59:040 Thread-CPU/(13413:13424): La tarea realizada fue: 3
+[INFO] 00:31:59:040 Thread-CPU/(13413:13424): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:31:59:040 Thread-CPU/(13413:13424): La ultima rafaga ejecutada del proceso es de: 3.009564
+[DEBUG] 00:35:57:505 PlanificadorCortoPlazo/(13947:13951): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 00:35:59:024 Thread-CPU/(13947:13955): SE replanifica con SJF
+[INFO] 00:35:59:034 Replanificacion/(13947:13955): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 00:35:59:037 Thread-CPU/(13947:13955): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.034118
+[DEBUG] 00:35:59:038 Thread-CPU/(13947:13955): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 00:35:59:038 Thread-CPU/(13947:13955): Se envia info del pid a Matelib
+[INFO] 00:35:59:040 Thread-CPU/(13947:13955): Se ejecuto tarea de conexion
+[INFO] 00:35:59:052 Thread-CPU/(13947:13955): La tarea realizada fue: 2
+[INFO] 00:35:59:052 Thread-CPU/(13947:13955): Se ejecuto tarea de conexion
+[INFO] 00:35:59:054 Thread-CPU/(13947:13955): La tarea realizada fue: 2
+[INFO] 00:35:59:055 Thread-CPU/(13947:13955): Se ejecuto tarea de conexion
+[INFO] 00:35:59:056 Thread-CPU/(13947:13955): La tarea realizada fue: 2
+[INFO] 00:35:59:056 Thread-CPU/(13947:13955): Se ejecuto tarea de conexion
+[INFO] 00:35:59:058 Thread-CPU/(13947:13955): La tarea realizada fue: 2
+[INFO] 00:35:59:058 Thread-CPU/(13947:13955): Se ejecuto tarea de conexion
+[INFO] 00:35:59:060 Thread-CPU/(13947:13955): La tarea realizada fue: 2
+[INFO] 00:35:59:060 Thread-CPU/(13947:13955): Se ejecuto tarea de conexion
+[INFO] 00:35:59:061 Thread-CPU/(13947:13955): La tarea realizada fue: 2
+[INFO] 00:35:59:061 Thread-CPU/(13947:13955): Se ejecuto tarea de conexion
+[DEBUG] 00:35:59:071 Thread-CPU/(13947:13957): SE replanifica con SJF
+[INFO] 00:35:59:071 Replanificacion/(13947:13957): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 00:35:59:072 Thread-CPU/(13947:13957): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.005677
+[DEBUG] 00:35:59:072 Thread-CPU/(13947:13957): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 00:35:59:073 Thread-CPU/(13947:13957): Se envia info del pid a Matelib
+[INFO] 00:35:59:073 Thread-CPU/(13947:13957): Se ejecuto tarea de conexion
+[INFO] 00:35:59:084 Thread-CPU/(13947:13957): La tarea realizada fue: 14
+[INFO] 00:35:59:085 Thread-CPU/(13947:13957): Se ejecuto tarea de conexion
+[DEBUG] 00:36:00:067 Thread-CPU/(13947:13959): SE replanifica con SJF
+[INFO] 00:36:00:067 Replanificacion/(13947:13959): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 00:36:00:067 Thread-CPU/(13947:13959): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.003128
+[DEBUG] 00:36:00:068 Thread-CPU/(13947:13959): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 00:36:00:068 Thread-CPU/(13947:13959): Se envia info del pid a Matelib
+[INFO] 00:36:00:069 Thread-CPU/(13947:13959): Se ejecuto tarea de conexion
+[INFO] 00:36:00:071 Thread-CPU/(13947:13959): La tarea realizada fue: 14
+[INFO] 00:36:00:071 Thread-CPU/(13947:13959): Se ejecuto tarea de conexion
+[DEBUG] 00:36:01:068 Thread-CPU/(13947:13958): SE replanifica con SJF
+[INFO] 00:36:01:068 Replanificacion/(13947:13958): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 00:36:01:069 Thread-CPU/(13947:13958): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.003221
+[DEBUG] 00:36:01:069 Thread-CPU/(13947:13958): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 00:36:01:069 Thread-CPU/(13947:13958): Se envia info del pid a Matelib
+[INFO] 00:36:01:070 Thread-CPU/(13947:13958): Se ejecuto tarea de conexion
+[INFO] 00:36:01:072 Thread-CPU/(13947:13958): La tarea realizada fue: 14
+[INFO] 00:36:01:072 Thread-CPU/(13947:13958): Se ejecuto tarea de conexion
+[DEBUG] 00:36:02:068 Thread-CPU/(13947:13960): SE replanifica con SJF
+[INFO] 00:36:02:069 Replanificacion/(13947:13960): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 00:36:02:069 Thread-CPU/(13947:13960): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.003434
+[DEBUG] 00:36:02:069 Thread-CPU/(13947:13960): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 00:36:02:070 Thread-CPU/(13947:13960): Se envia info del pid a Matelib
+[INFO] 00:36:02:070 Thread-CPU/(13947:13960): Se ejecuto tarea de conexion
+[INFO] 00:36:02:072 Thread-CPU/(13947:13960): La tarea realizada fue: 14
+[INFO] 00:36:02:072 Thread-CPU/(13947:13960): Se ejecuto tarea de conexion
+[INFO] 00:36:02:089 Thread-CPU/(13947:13957): La tarea realizada fue: 3
+[INFO] 00:36:02:090 Thread-CPU/(13947:13957): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:36:02:090 Thread-CPU/(13947:13957): La ultima rafaga ejecutada del proceso es de: 3.017372
+[DEBUG] 00:36:03:069 Thread-CPU/(13947:13961): SE replanifica con SJF
+[INFO] 00:36:03:069 Replanificacion/(13947:13961): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 00:36:03:069 Thread-CPU/(13947:13961): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.003276
+[DEBUG] 00:36:03:070 Thread-CPU/(13947:13961): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 00:36:03:070 Thread-CPU/(13947:13961): Se envia info del pid a Matelib
+[INFO] 00:36:03:071 Thread-CPU/(13947:13961): Se ejecuto tarea de conexion
+[INFO] 00:36:03:073 Thread-CPU/(13947:13959): La tarea realizada fue: 3
+[INFO] 00:36:03:073 Thread-CPU/(13947:13959): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:36:03:073 Thread-CPU/(13947:13959): La ultima rafaga ejecutada del proceso es de: 3.005328
+[INFO] 00:36:03:075 Thread-CPU/(13947:13961): La tarea realizada fue: 14
+[INFO] 00:36:03:076 Thread-CPU/(13947:13961): Se ejecuto tarea de conexion
+[DEBUG] 00:36:04:070 Thread-CPU/(13947:13962): SE replanifica con SJF
+[INFO] 00:36:04:070 Replanificacion/(13947:13962): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 00:36:04:071 Thread-CPU/(13947:13962): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.003528
+[DEBUG] 00:36:04:071 Thread-CPU/(13947:13962): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 00:36:04:071 Thread-CPU/(13947:13962): Se envia info del pid a Matelib
+[INFO] 00:36:04:072 Thread-CPU/(13947:13962): Se ejecuto tarea de conexion
+[INFO] 00:36:04:074 Thread-CPU/(13947:13958): La tarea realizada fue: 3
+[INFO] 00:36:04:075 Thread-CPU/(13947:13958): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:36:04:076 Thread-CPU/(13947:13958): La ultima rafaga ejecutada del proceso es de: 3.006753
+[INFO] 00:36:04:078 Thread-CPU/(13947:13962): La tarea realizada fue: 14
+[INFO] 00:36:04:078 Thread-CPU/(13947:13962): Se ejecuto tarea de conexion
+[INFO] 00:36:05:074 Thread-CPU/(13947:13960): La tarea realizada fue: 3
+[INFO] 00:36:05:074 Thread-CPU/(13947:13960): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:36:05:075 Thread-CPU/(13947:13960): La ultima rafaga ejecutada del proceso es de: 3.004874
+[INFO] 00:36:05:083 Thread-CPU/(13947:13955): La tarea realizada fue: 1
+[INFO] 00:36:05:085 Thread-CPU/(13947:13955): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 00:36:06:078 Thread-CPU/(13947:13961): La tarea realizada fue: 3
+[INFO] 00:36:06:078 Thread-CPU/(13947:13961): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:36:06:078 Thread-CPU/(13947:13961): La ultima rafaga ejecutada del proceso es de: 3.008129
+[INFO] 00:36:07:080 Thread-CPU/(13947:13962): La tarea realizada fue: 3
+[INFO] 00:36:07:080 Thread-CPU/(13947:13962): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:36:07:081 Thread-CPU/(13947:13962): La ultima rafaga ejecutada del proceso es de: 3.009435
+[DEBUG] 00:37:17:889 PlanificadorCortoPlazo/(14119:14123): El algoritmo utilizado para planificar en el Corto Plazo sera: SJF
+[DEBUG] 00:37:19:051 Thread-CPU/(14119:14127): SE replanifica con SJF
+[INFO] 00:37:19:061 Replanificacion/(14119:14127): El proceso:1 tiene una rafaga de:1.000000
+[DEBUG] 00:37:19:063 Thread-CPU/(14119:14127): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 1, de estimacionActual:1.000000 segundos, y de responseRatio:1.036110
+[DEBUG] 00:37:19:064 Thread-CPU/(14119:14127): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 1
+[DEBUG] 00:37:19:064 Thread-CPU/(14119:14127): Se envia info del pid a Matelib
+[INFO] 00:37:19:066 Thread-CPU/(14119:14127): Se ejecuto tarea de conexion
+[INFO] 00:37:19:075 Thread-CPU/(14119:14127): La tarea realizada fue: 2
+[INFO] 00:37:19:076 Thread-CPU/(14119:14127): Se ejecuto tarea de conexion
+[INFO] 00:37:19:079 Thread-CPU/(14119:14127): La tarea realizada fue: 2
+[INFO] 00:37:19:080 Thread-CPU/(14119:14127): Se ejecuto tarea de conexion
+[INFO] 00:37:19:081 Thread-CPU/(14119:14127): La tarea realizada fue: 2
+[INFO] 00:37:19:081 Thread-CPU/(14119:14127): Se ejecuto tarea de conexion
+[INFO] 00:37:19:082 Thread-CPU/(14119:14127): La tarea realizada fue: 2
+[INFO] 00:37:19:083 Thread-CPU/(14119:14127): Se ejecuto tarea de conexion
+[INFO] 00:37:19:084 Thread-CPU/(14119:14127): La tarea realizada fue: 2
+[INFO] 00:37:19:084 Thread-CPU/(14119:14127): Se ejecuto tarea de conexion
+[INFO] 00:37:19:087 Thread-CPU/(14119:14127): La tarea realizada fue: 2
+[INFO] 00:37:19:087 Thread-CPU/(14119:14127): Se ejecuto tarea de conexion
+[DEBUG] 00:37:19:100 Thread-CPU/(14119:14128): SE replanifica con SJF
+[INFO] 00:37:19:100 Replanificacion/(14119:14128): El proceso:2 tiene una rafaga de:1.000000
+[DEBUG] 00:37:19:101 Thread-CPU/(14119:14128): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 2, de estimacionActual:1.000000 segundos, y de responseRatio:1.008661
+[DEBUG] 00:37:19:101 Thread-CPU/(14119:14128): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 2
+[DEBUG] 00:37:19:101 Thread-CPU/(14119:14128): Se envia info del pid a Matelib
+[INFO] 00:37:19:102 Thread-CPU/(14119:14128): Se ejecuto tarea de conexion
+[INFO] 00:37:19:112 Thread-CPU/(14119:14128): La tarea realizada fue: 14
+[INFO] 00:37:19:113 Thread-CPU/(14119:14128): Se ejecuto tarea de conexion
+[DEBUG] 00:37:20:096 Thread-CPU/(14119:14125): SE replanifica con SJF
+[INFO] 00:37:20:096 Replanificacion/(14119:14125): El proceso:3 tiene una rafaga de:1.000000
+[DEBUG] 00:37:20:097 Thread-CPU/(14119:14125): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 3, de estimacionActual:1.000000 segundos, y de responseRatio:1.004075
+[DEBUG] 00:37:20:097 Thread-CPU/(14119:14125): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 3
+[DEBUG] 00:37:20:098 Thread-CPU/(14119:14125): Se envia info del pid a Matelib
+[INFO] 00:37:20:098 Thread-CPU/(14119:14125): Se ejecuto tarea de conexion
+[INFO] 00:37:20:100 Thread-CPU/(14119:14125): La tarea realizada fue: 14
+[INFO] 00:37:20:101 Thread-CPU/(14119:14125): Se ejecuto tarea de conexion
+[DEBUG] 00:37:21:097 Thread-CPU/(14119:14129): SE replanifica con SJF
+[INFO] 00:37:21:097 Replanificacion/(14119:14129): El proceso:4 tiene una rafaga de:1.000000
+[DEBUG] 00:37:21:098 Thread-CPU/(14119:14129): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 4, de estimacionActual:1.000000 segundos, y de responseRatio:1.003217
+[DEBUG] 00:37:21:098 Thread-CPU/(14119:14129): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 4
+[DEBUG] 00:37:21:098 Thread-CPU/(14119:14129): Se envia info del pid a Matelib
+[INFO] 00:37:21:099 Thread-CPU/(14119:14129): Se ejecuto tarea de conexion
+[INFO] 00:37:21:101 Thread-CPU/(14119:14129): La tarea realizada fue: 14
+[INFO] 00:37:21:101 Thread-CPU/(14119:14129): Se ejecuto tarea de conexion
+[DEBUG] 00:37:22:098 Thread-CPU/(14119:14134): SE replanifica con SJF
+[INFO] 00:37:22:099 Replanificacion/(14119:14134): El proceso:5 tiene una rafaga de:1.000000
+[DEBUG] 00:37:22:099 Thread-CPU/(14119:14134): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 5, de estimacionActual:1.000000 segundos, y de responseRatio:1.003624
+[DEBUG] 00:37:22:099 Thread-CPU/(14119:14134): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 5
+[DEBUG] 00:37:22:100 Thread-CPU/(14119:14134): Se envia info del pid a Matelib
+[INFO] 00:37:22:100 Thread-CPU/(14119:14134): Se ejecuto tarea de conexion
+[INFO] 00:37:22:102 Thread-CPU/(14119:14134): La tarea realizada fue: 14
+[INFO] 00:37:22:102 Thread-CPU/(14119:14134): Se ejecuto tarea de conexion
+[INFO] 00:37:22:116 Thread-CPU/(14119:14128): La tarea realizada fue: 3
+[INFO] 00:37:22:116 Thread-CPU/(14119:14128): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:37:22:117 Thread-CPU/(14119:14128): La ultima rafaga ejecutada del proceso es de: 3.015407
+[DEBUG] 00:37:23:099 Thread-CPU/(14119:14132): SE replanifica con SJF
+[INFO] 00:37:23:099 Replanificacion/(14119:14132): El proceso:6 tiene una rafaga de:1.000000
+[DEBUG] 00:37:23:100 Thread-CPU/(14119:14132): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 6, de estimacionActual:1.000000 segundos, y de responseRatio:1.003740
+[DEBUG] 00:37:23:100 Thread-CPU/(14119:14132): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 6
+[DEBUG] 00:37:23:101 Thread-CPU/(14119:14132): Se envia info del pid a Matelib
+[INFO] 00:37:23:103 Thread-CPU/(14119:14125): La tarea realizada fue: 3
+[INFO] 00:37:23:103 Thread-CPU/(14119:14132): Se ejecuto tarea de conexion
+[INFO] 00:37:23:103 Thread-CPU/(14119:14125): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:37:23:105 Thread-CPU/(14119:14125): La ultima rafaga ejecutada del proceso es de: 3.007086
+[INFO] 00:37:23:107 Thread-CPU/(14119:14132): La tarea realizada fue: 14
+[INFO] 00:37:23:107 Thread-CPU/(14119:14132): Se ejecuto tarea de conexion
+[DEBUG] 00:37:24:099 Thread-CPU/(14119:14135): SE replanifica con SJF
+[INFO] 00:37:24:099 Replanificacion/(14119:14135): El proceso:7 tiene una rafaga de:1.000000
+[DEBUG] 00:37:24:100 Thread-CPU/(14119:14135): Se saca un carpincho de la lista de readys para ejecutar. Carpincho: 7, de estimacionActual:1.000000 segundos, y de responseRatio:1.003608
+[DEBUG] 00:37:24:100 Thread-CPU/(14119:14135): Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: 7
+[DEBUG] 00:37:24:100 Thread-CPU/(14119:14135): Se envia info del pid a Matelib
+[INFO] 00:37:24:102 Thread-CPU/(14119:14129): La tarea realizada fue: 3
+[INFO] 00:37:24:102 Thread-CPU/(14119:14135): Se ejecuto tarea de conexion
+[INFO] 00:37:24:103 Thread-CPU/(14119:14129): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:37:24:103 Thread-CPU/(14119:14129): La ultima rafaga ejecutada del proceso es de: 3.004748
+[INFO] 00:37:24:106 Thread-CPU/(14119:14135): La tarea realizada fue: 14
+[INFO] 00:37:24:106 Thread-CPU/(14119:14135): Se ejecuto tarea de conexion
+[INFO] 00:37:25:104 Thread-CPU/(14119:14134): La tarea realizada fue: 3
+[INFO] 00:37:25:104 Thread-CPU/(14119:14134): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:37:25:104 Thread-CPU/(14119:14134): La ultima rafaga ejecutada del proceso es de: 3.004564
+[INFO] 00:37:25:113 Thread-CPU/(14119:14127): La tarea realizada fue: 1
+[INFO] 00:37:25:115 Thread-CPU/(14119:14127): Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente
+[INFO] 00:37:26:109 Thread-CPU/(14119:14132): La tarea realizada fue: 3
+[INFO] 00:37:26:109 Thread-CPU/(14119:14132): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:37:26:110 Thread-CPU/(14119:14132): La ultima rafaga ejecutada del proceso es de: 3.008482
+[INFO] 00:37:27:111 Thread-CPU/(14119:14135): La tarea realizada fue: 3
+[INFO] 00:37:27:111 Thread-CPU/(14119:14135): Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo
+[INFO] 00:37:27:111 Thread-CPU/(14119:14135): La ultima rafaga ejecutada del proceso es de: 3.010844

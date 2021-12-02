@@ -1,0 +1,96 @@
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Solicitamos destruir un semaforo de nombre: SEM1
+[ERROR] 23:46:39:285 loggerContenidoProceso/(10817:10817): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Solicitamos destruir un semaforo de nombre: SEM2
+[ERROR] 23:46:39:285 loggerContenidoProceso/(10817:10817): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Solicitamos destruir un semaforo de nombre: SEM3
+[ERROR] 23:46:39:285 loggerContenidoProceso/(10817:10817): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Solicitamos destruir un semaforo de nombre: SEM4
+[ERROR] 23:46:39:285 loggerContenidoProceso/(10817:10817): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Solicitamos destruir un semaforo de nombre: SEM5
+[ERROR] 23:46:39:285 loggerContenidoProceso/(10817:10817): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Solicitamos destruir un semaforo de nombre: SEM6
+[ERROR] 23:46:39:285 loggerContenidoProceso/(10817:10817): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 23:46:39:285 loggerContenidoProceso/(10817:10817): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 23:46:39:285 loggerContenidoProceso/(10817:10817): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Solicitamos destruir un semaforo de nombre: SEM1
+[ERROR] 23:51:23:302 loggerContenidoProceso/(11256:11256): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Solicitamos destruir un semaforo de nombre: SEM2
+[ERROR] 23:51:23:302 loggerContenidoProceso/(11256:11256): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Solicitamos destruir un semaforo de nombre: SEM3
+[ERROR] 23:51:23:302 loggerContenidoProceso/(11256:11256): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Solicitamos destruir un semaforo de nombre: SEM4
+[ERROR] 23:51:23:302 loggerContenidoProceso/(11256:11256): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Solicitamos destruir un semaforo de nombre: SEM5
+[ERROR] 23:51:23:302 loggerContenidoProceso/(11256:11256): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Solicitamos destruir un semaforo de nombre: SEM6
+[ERROR] 23:51:23:302 loggerContenidoProceso/(11256:11256): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 23:51:23:302 loggerContenidoProceso/(11256:11256): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 23:51:23:302 loggerContenidoProceso/(11256:11256): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 23:54:44:714 loggerContenidoProceso/(11459:11459): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:54:44:714 loggerContenidoProceso/(11459:11459): Solicitamos destruir un semaforo de nombre: SEM1
+[ERROR] 23:54:44:714 loggerContenidoProceso/(11459:11459): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:54:44:715 loggerContenidoProceso/(11459:11459): Solicitamos destruir un semaforo de nombre: SEM2
+[ERROR] 23:54:44:715 loggerContenidoProceso/(11459:11459): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:54:44:715 loggerContenidoProceso/(11459:11459): Solicitamos destruir un semaforo de nombre: SEM3
+[ERROR] 23:54:44:715 loggerContenidoProceso/(11459:11459): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:54:44:715 loggerContenidoProceso/(11459:11459): Solicitamos destruir un semaforo de nombre: SEM4
+[ERROR] 23:54:44:715 loggerContenidoProceso/(11459:11459): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:54:44:715 loggerContenidoProceso/(11459:11459): Solicitamos destruir un semaforo de nombre: SEM5
+[ERROR] 23:54:44:715 loggerContenidoProceso/(11459:11459): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:54:44:715 loggerContenidoProceso/(11459:11459): Solicitamos destruir un semaforo de nombre: SEM6
+[ERROR] 23:54:44:715 loggerContenidoProceso/(11459:11459): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:54:44:715 loggerContenidoProceso/(11459:11459): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 23:54:44:715 loggerContenidoProceso/(11459:11459): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 23:54:44:715 loggerContenidoProceso/(11459:11459): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Solicitamos destruir un semaforo de nombre: SEM1
+[ERROR] 23:59:24:240 loggerContenidoProceso/(11821:11821): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Solicitamos destruir un semaforo de nombre: SEM2
+[ERROR] 23:59:24:240 loggerContenidoProceso/(11821:11821): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Solicitamos destruir un semaforo de nombre: SEM3
+[ERROR] 23:59:24:240 loggerContenidoProceso/(11821:11821): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Solicitamos destruir un semaforo de nombre: SEM4
+[ERROR] 23:59:24:240 loggerContenidoProceso/(11821:11821): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Solicitamos destruir un semaforo de nombre: SEM5
+[ERROR] 23:59:24:240 loggerContenidoProceso/(11821:11821): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Solicitamos destruir un semaforo de nombre: SEM6
+[ERROR] 23:59:24:240 loggerContenidoProceso/(11821:11821): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 23:59:24:240 loggerContenidoProceso/(11821:11821): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 23:59:24:240 loggerContenidoProceso/(11821:11821): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Solicitamos destruir un semaforo de nombre: SEM1
+[ERROR] 00:11:54:050 loggerContenidoProceso/(12139:12139): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Solicitamos destruir un semaforo de nombre: SEM2
+[ERROR] 00:11:54:050 loggerContenidoProceso/(12139:12139): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Solicitamos destruir un semaforo de nombre: SEM3
+[ERROR] 00:11:54:050 loggerContenidoProceso/(12139:12139): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Solicitamos destruir un semaforo de nombre: SEM4
+[ERROR] 00:11:54:050 loggerContenidoProceso/(12139:12139): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Solicitamos destruir un semaforo de nombre: SEM5
+[ERROR] 00:11:54:050 loggerContenidoProceso/(12139:12139): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Solicitamos destruir un semaforo de nombre: SEM6
+[ERROR] 00:11:54:050 loggerContenidoProceso/(12139:12139): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 00:11:54:050 loggerContenidoProceso/(12139:12139): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 00:11:54:050 loggerContenidoProceso/(12139:12139): Se liberan todas las estructuras del proceso de PID:-1
+[INFO] 00:21:35:201 loggerContenidoProceso/(12749:12749): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
+[INFO] 00:21:35:201 loggerContenidoProceso/(12749:12749): Solicitamos destruir un semaforo de nombre: SEM1
+[ERROR] 00:21:35:201 loggerContenidoProceso/(12749:12749): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:21:35:201 loggerContenidoProceso/(12749:12749): Solicitamos destruir un semaforo de nombre: SEM2
+[ERROR] 00:21:35:201 loggerContenidoProceso/(12749:12749): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:21:35:201 loggerContenidoProceso/(12749:12749): Solicitamos destruir un semaforo de nombre: SEM3
+[ERROR] 00:21:35:201 loggerContenidoProceso/(12749:12749): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:21:35:201 loggerContenidoProceso/(12749:12749): Solicitamos destruir un semaforo de nombre: SEM4
+[ERROR] 00:21:35:201 loggerContenidoProceso/(12749:12749): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:21:35:201 loggerContenidoProceso/(12749:12749): Solicitamos destruir un semaforo de nombre: SEM5
+[ERROR] 00:21:35:201 loggerContenidoProceso/(12749:12749): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:21:35:202 loggerContenidoProceso/(12749:12749): Solicitamos destruir un semaforo de nombre: SEM6
+[ERROR] 00:21:35:202 loggerContenidoProceso/(12749:12749): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 00:21:35:202 loggerContenidoProceso/(12749:12749): Se ha solicitado cerrar el carpincho de pid:-1 , este es un hasta adios
+[ERROR] 00:21:35:202 loggerContenidoProceso/(12749:12749): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:-1
+[INFO] 00:21:35:202 loggerContenidoProceso/(12749:12749): Se liberan todas las estructuras del proceso de PID:-1
