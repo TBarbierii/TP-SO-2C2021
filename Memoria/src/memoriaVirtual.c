@@ -6,6 +6,7 @@ int32_t buscar_TLB(t_pagina* pagina){
 	bool buscarPagina(t_pagina *pag){
 		return pag->id_pagina == pagina->id_pagina && pag->id_carpincho == pagina->id_carpincho;
 	};
+
 	pthread_mutex_lock(TLB_mutex);
 	t_pagina* paginaEncontrada = list_find(TLB, (void*)buscarPagina);
 	pthread_mutex_unlock(TLB_mutex);
@@ -64,22 +65,26 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		};
 
 		t_list* paginas_a_reemplazar = list_create();
-		t_list* paginas;
+		
 		pthread_mutex_lock(listaCarpinchos);
 		int cantidad = list_size(carpinchos);
 		pthread_mutex_unlock(listaCarpinchos);
 		
 		for (int i=0; i<cantidad; i++){
+			t_list* paginas;
 			pthread_mutex_lock(listaCarpinchos);
 			t_carpincho* carp = list_get(carpinchos, i);
 			pthread_mutex_unlock(listaCarpinchos);
+
 			pthread_mutex_lock(tabla_paginas);
 			paginas = list_filter(carp->tabla_de_paginas, (void*)paginasPresentes);
 			pthread_mutex_unlock(tabla_paginas);
-			list_add_all(paginas_a_reemplazar, paginas);	
+
+			list_add_all(paginas_a_reemplazar, paginas);
+			list_destroy(paginas);	
 		}
 
-		list_destroy(paginas);
+		
 		
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho); 
 
@@ -158,12 +163,16 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 
 			t_pagina* candidata = list_get(paginasOrdenadas, puntero);
 			if(candidata->uso == 0 && candidata->modificado == 0){
+				
 				carpincho->punteroClock++;
+				
 				if(carpincho->punteroClock >= list_size(paginasOrdenadas)){
 					carpincho->punteroClock = 0;
 				}
+
 				free (paginasOrdenadas);
 				return candidata;
+
 			}else{
 				puntero++;
 				if(puntero >= list_size(paginasOrdenadas)){
@@ -179,13 +188,16 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 			
 			if(candidata->uso == 0 && candidata->modificado == 1){
 				carpincho->punteroClock++;
+
 				if(carpincho->punteroClock >= list_size(paginasOrdenadas)){
 					carpincho->punteroClock = 0;
 				}
+
 				free (paginasOrdenadas);
 				return candidata;
 				
 			}else{
+				
 				puntero++;
 				candidata->uso = false;
 				if(puntero >= list_size(paginasOrdenadas)){
@@ -195,12 +207,12 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 
 		}
 
-		goto segundoIntento; //si llegó hasta aca es porque hizo las dos vueltas y tiene que empezar de nuevo
+		goto segundoIntento; 
+		//si llegó hasta aca es porque hizo las dos vueltas y tiene que empezar de nuevo
 
 		free (paginasOrdenadas);
-		}
 
-		if(strcmp(tipoAsignacion, "DINAMICA") == 0){
+		}else if(strcmp(tipoAsignacion, "DINAMICA") == 0){
 
 		punteroClock;
 

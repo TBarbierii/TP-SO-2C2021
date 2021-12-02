@@ -1,0 +1,184 @@
+[INFO] 15:49:57:540 loggerContenidoProceso/(7134:7134): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 15:49:57:540 loggerContenidoProceso/(7134:7134): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 15:49:57:546 loggerContenidoProceso/(7134:7134): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:49:57:547 loggerContenidoProceso/(7134:7134): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:49:57:547 loggerContenidoProceso/(7134:7134): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 15:49:57:550 loggerContenidoProceso/(7134:7134): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:49:57:550 loggerContenidoProceso/(7134:7134): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:49:57:550 loggerContenidoProceso/(7134:7134): Solicitamos inicializar un semaforo de nombre: SEM3, con valor : 1
+[INFO] 15:49:57:552 loggerContenidoProceso/(7134:7134): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:49:57:552 loggerContenidoProceso/(7134:7134): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:49:57:552 loggerContenidoProceso/(7134:7134): Solicitamos inicializar un semaforo de nombre: SEM4, con valor : 1
+[INFO] 15:49:57:557 loggerContenidoProceso/(7134:7134): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:49:57:557 loggerContenidoProceso/(7134:7134): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:49:57:557 loggerContenidoProceso/(7134:7134): Solicitamos inicializar un semaforo de nombre: SEM5, con valor : 1
+[INFO] 15:49:57:560 loggerContenidoProceso/(7134:7134): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:49:57:560 loggerContenidoProceso/(7134:7134): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:49:57:560 loggerContenidoProceso/(7134:7134): Solicitamos inicializar un semaforo de nombre: SEM6, con valor : 1
+[INFO] 15:49:57:562 loggerContenidoProceso/(7134:7134): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:49:57:562 loggerContenidoProceso/(7134:7134): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:50:03:568 loggerContenidoProceso/(7134:7134): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 15:50:03:583 loggerContenidoProceso/(7134:7134): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:50:03:583 loggerContenidoProceso/(7134:7134): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 15:50:03:583 loggerContenidoProceso/(7134:7134): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 15:57:29:364 loggerContenidoProceso/(7743:7743): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 15:57:29:365 loggerContenidoProceso/(7743:7743): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 15:57:29:365 loggerContenidoProceso/(7743:7743): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:57:29:365 loggerContenidoProceso/(7743:7743): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:57:29:366 loggerContenidoProceso/(7743:7743): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 15:57:29:366 loggerContenidoProceso/(7743:7743): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:57:29:366 loggerContenidoProceso/(7743:7743): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:57:29:366 loggerContenidoProceso/(7743:7743): Solicitamos inicializar un semaforo de nombre: SEM3, con valor : 1
+[INFO] 15:57:29:366 loggerContenidoProceso/(7743:7743): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:57:29:366 loggerContenidoProceso/(7743:7743): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:57:29:366 loggerContenidoProceso/(7743:7743): Solicitamos inicializar un semaforo de nombre: SEM4, con valor : 1
+[INFO] 15:57:29:367 loggerContenidoProceso/(7743:7743): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:57:29:367 loggerContenidoProceso/(7743:7743): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:57:29:367 loggerContenidoProceso/(7743:7743): Solicitamos inicializar un semaforo de nombre: SEM5, con valor : 1
+[INFO] 15:57:29:367 loggerContenidoProceso/(7743:7743): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:57:29:367 loggerContenidoProceso/(7743:7743): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:57:29:367 loggerContenidoProceso/(7743:7743): Solicitamos inicializar un semaforo de nombre: SEM6, con valor : 1
+[INFO] 15:57:29:367 loggerContenidoProceso/(7743:7743): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:57:29:367 loggerContenidoProceso/(7743:7743): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 15:57:35:374 loggerContenidoProceso/(7743:7743): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 15:57:35:377 loggerContenidoProceso/(7743:7743): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 15:57:35:377 loggerContenidoProceso/(7743:7743): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 15:57:35:378 loggerContenidoProceso/(7743:7743): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 16:03:54:438 loggerContenidoProceso/(8074:8074): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:03:54:438 loggerContenidoProceso/(8074:8074): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 16:03:54:439 loggerContenidoProceso/(8074:8074): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:03:54:439 loggerContenidoProceso/(8074:8074): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:03:54:439 loggerContenidoProceso/(8074:8074): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 16:03:54:439 loggerContenidoProceso/(8074:8074): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:03:54:439 loggerContenidoProceso/(8074:8074): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:03:54:439 loggerContenidoProceso/(8074:8074): Solicitamos inicializar un semaforo de nombre: SEM3, con valor : 1
+[INFO] 16:03:54:439 loggerContenidoProceso/(8074:8074): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:03:54:439 loggerContenidoProceso/(8074:8074): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:03:54:440 loggerContenidoProceso/(8074:8074): Solicitamos inicializar un semaforo de nombre: SEM4, con valor : 1
+[INFO] 16:03:54:440 loggerContenidoProceso/(8074:8074): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:03:54:440 loggerContenidoProceso/(8074:8074): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:03:54:440 loggerContenidoProceso/(8074:8074): Solicitamos inicializar un semaforo de nombre: SEM5, con valor : 1
+[INFO] 16:03:54:440 loggerContenidoProceso/(8074:8074): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:03:54:440 loggerContenidoProceso/(8074:8074): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:03:54:440 loggerContenidoProceso/(8074:8074): Solicitamos inicializar un semaforo de nombre: SEM6, con valor : 1
+[INFO] 16:03:54:440 loggerContenidoProceso/(8074:8074): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:03:54:441 loggerContenidoProceso/(8074:8074): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:04:00:449 loggerContenidoProceso/(8074:8074): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 16:04:00:450 loggerContenidoProceso/(8074:8074): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:04:00:450 loggerContenidoProceso/(8074:8074): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 16:04:00:450 loggerContenidoProceso/(8074:8074): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 16:16:12:028 loggerContenidoProceso/(8445:8445): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:16:12:028 loggerContenidoProceso/(8445:8445): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 16:16:12:028 loggerContenidoProceso/(8445:8445): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:16:12:028 loggerContenidoProceso/(8445:8445): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:16:12:028 loggerContenidoProceso/(8445:8445): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 16:16:12:028 loggerContenidoProceso/(8445:8445): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:16:12:029 loggerContenidoProceso/(8445:8445): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:16:12:029 loggerContenidoProceso/(8445:8445): Solicitamos inicializar un semaforo de nombre: SEM3, con valor : 1
+[INFO] 16:16:12:029 loggerContenidoProceso/(8445:8445): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:16:12:029 loggerContenidoProceso/(8445:8445): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:16:12:029 loggerContenidoProceso/(8445:8445): Solicitamos inicializar un semaforo de nombre: SEM4, con valor : 1
+[INFO] 16:16:12:029 loggerContenidoProceso/(8445:8445): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:16:12:029 loggerContenidoProceso/(8445:8445): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:16:12:029 loggerContenidoProceso/(8445:8445): Solicitamos inicializar un semaforo de nombre: SEM5, con valor : 1
+[INFO] 16:16:12:030 loggerContenidoProceso/(8445:8445): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:16:12:030 loggerContenidoProceso/(8445:8445): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:16:12:030 loggerContenidoProceso/(8445:8445): Solicitamos inicializar un semaforo de nombre: SEM6, con valor : 1
+[INFO] 16:16:12:030 loggerContenidoProceso/(8445:8445): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:16:12:030 loggerContenidoProceso/(8445:8445): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:16:18:033 loggerContenidoProceso/(8445:8445): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 16:16:18:035 loggerContenidoProceso/(8445:8445): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:16:18:035 loggerContenidoProceso/(8445:8445): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 16:16:18:036 loggerContenidoProceso/(8445:8445): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 16:18:24:379 loggerContenidoProceso/(8645:8645): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:18:24:379 loggerContenidoProceso/(8645:8645): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Solicitamos inicializar un semaforo de nombre: SEM3, con valor : 1
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:18:24:380 loggerContenidoProceso/(8645:8645): Solicitamos inicializar un semaforo de nombre: SEM4, con valor : 1
+[INFO] 16:18:24:381 loggerContenidoProceso/(8645:8645): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:18:24:381 loggerContenidoProceso/(8645:8645): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:18:24:381 loggerContenidoProceso/(8645:8645): Solicitamos inicializar un semaforo de nombre: SEM5, con valor : 1
+[INFO] 16:18:24:381 loggerContenidoProceso/(8645:8645): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:18:24:381 loggerContenidoProceso/(8645:8645): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:18:24:381 loggerContenidoProceso/(8645:8645): Solicitamos inicializar un semaforo de nombre: SEM6, con valor : 1
+[INFO] 16:18:24:381 loggerContenidoProceso/(8645:8645): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:18:24:381 loggerContenidoProceso/(8645:8645): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:18:30:385 loggerContenidoProceso/(8645:8645): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 16:18:30:387 loggerContenidoProceso/(8645:8645): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:18:30:387 loggerContenidoProceso/(8645:8645): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 16:18:30:387 loggerContenidoProceso/(8645:8645): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 16:27:53:995 loggerContenidoProceso/(9248:9248): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:27:53:995 loggerContenidoProceso/(9248:9248): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 16:27:54:003 loggerContenidoProceso/(9248:9248): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:27:54:003 loggerContenidoProceso/(9248:9248): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:27:54:003 loggerContenidoProceso/(9248:9248): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 16:27:54:006 loggerContenidoProceso/(9248:9248): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:27:54:006 loggerContenidoProceso/(9248:9248): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:27:54:006 loggerContenidoProceso/(9248:9248): Solicitamos inicializar un semaforo de nombre: SEM3, con valor : 1
+[INFO] 16:27:54:008 loggerContenidoProceso/(9248:9248): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:27:54:008 loggerContenidoProceso/(9248:9248): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:27:54:008 loggerContenidoProceso/(9248:9248): Solicitamos inicializar un semaforo de nombre: SEM4, con valor : 1
+[INFO] 16:27:54:009 loggerContenidoProceso/(9248:9248): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:27:54:010 loggerContenidoProceso/(9248:9248): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:27:54:010 loggerContenidoProceso/(9248:9248): Solicitamos inicializar un semaforo de nombre: SEM5, con valor : 1
+[INFO] 16:27:54:011 loggerContenidoProceso/(9248:9248): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:27:54:012 loggerContenidoProceso/(9248:9248): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:27:54:012 loggerContenidoProceso/(9248:9248): Solicitamos inicializar un semaforo de nombre: SEM6, con valor : 1
+[INFO] 16:27:54:018 loggerContenidoProceso/(9248:9248): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:27:54:018 loggerContenidoProceso/(9248:9248): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:28:00:022 loggerContenidoProceso/(9248:9248): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 16:28:00:048 loggerContenidoProceso/(9248:9248): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:28:00:048 loggerContenidoProceso/(9248:9248): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 16:28:00:048 loggerContenidoProceso/(9248:9248): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 16:32:06:629 loggerContenidoProceso/(9579:9579): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:32:06:629 loggerContenidoProceso/(9579:9579): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 16:32:06:635 loggerContenidoProceso/(9579:9579): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:32:06:635 loggerContenidoProceso/(9579:9579): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:32:06:635 loggerContenidoProceso/(9579:9579): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 16:32:06:642 loggerContenidoProceso/(9579:9579): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:32:06:642 loggerContenidoProceso/(9579:9579): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:32:06:642 loggerContenidoProceso/(9579:9579): Solicitamos inicializar un semaforo de nombre: SEM3, con valor : 1
+[INFO] 16:32:06:644 loggerContenidoProceso/(9579:9579): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:32:06:644 loggerContenidoProceso/(9579:9579): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:32:06:644 loggerContenidoProceso/(9579:9579): Solicitamos inicializar un semaforo de nombre: SEM4, con valor : 1
+[INFO] 16:32:06:645 loggerContenidoProceso/(9579:9579): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:32:06:645 loggerContenidoProceso/(9579:9579): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:32:06:646 loggerContenidoProceso/(9579:9579): Solicitamos inicializar un semaforo de nombre: SEM5, con valor : 1
+[INFO] 16:32:06:648 loggerContenidoProceso/(9579:9579): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:32:06:649 loggerContenidoProceso/(9579:9579): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:32:06:649 loggerContenidoProceso/(9579:9579): Solicitamos inicializar un semaforo de nombre: SEM6, con valor : 1
+[INFO] 16:32:06:650 loggerContenidoProceso/(9579:9579): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:32:06:651 loggerContenidoProceso/(9579:9579): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:32:12:652 loggerContenidoProceso/(9579:9579): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 16:32:12:682 loggerContenidoProceso/(9579:9579): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:32:12:682 loggerContenidoProceso/(9579:9579): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 16:32:12:682 loggerContenidoProceso/(9579:9579): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 16:36:25:221 loggerContenidoProceso/(9900:9900): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 16:36:25:221 loggerContenidoProceso/(9900:9900): Solicitamos inicializar un semaforo de nombre: SEM1, con valor : 1
+[INFO] 16:36:25:228 loggerContenidoProceso/(9900:9900): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:36:25:228 loggerContenidoProceso/(9900:9900): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:36:25:228 loggerContenidoProceso/(9900:9900): Solicitamos inicializar un semaforo de nombre: SEM2, con valor : 1
+[INFO] 16:36:25:231 loggerContenidoProceso/(9900:9900): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:36:25:231 loggerContenidoProceso/(9900:9900): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:36:25:231 loggerContenidoProceso/(9900:9900): Solicitamos inicializar un semaforo de nombre: SEM3, con valor : 1
+[INFO] 16:36:25:233 loggerContenidoProceso/(9900:9900): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:36:25:233 loggerContenidoProceso/(9900:9900): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:36:25:233 loggerContenidoProceso/(9900:9900): Solicitamos inicializar un semaforo de nombre: SEM4, con valor : 1
+[INFO] 16:36:25:236 loggerContenidoProceso/(9900:9900): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:36:25:236 loggerContenidoProceso/(9900:9900): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:36:25:236 loggerContenidoProceso/(9900:9900): Solicitamos inicializar un semaforo de nombre: SEM5, con valor : 1
+[INFO] 16:36:25:243 loggerContenidoProceso/(9900:9900): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:36:25:243 loggerContenidoProceso/(9900:9900): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:36:25:243 loggerContenidoProceso/(9900:9900): Solicitamos inicializar un semaforo de nombre: SEM6, con valor : 1
+[INFO] 16:36:25:244 loggerContenidoProceso/(9900:9900): Habiamos solicitado crear un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:36:25:245 loggerContenidoProceso/(9900:9900): Se pudo inicializar el semaforo que se solicito inicializar
+[INFO] 16:36:31:248 loggerContenidoProceso/(9900:9900): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 16:36:31:279 loggerContenidoProceso/(9900:9900): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 16:36:31:279 loggerContenidoProceso/(9900:9900): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 16:36:31:279 loggerContenidoProceso/(9900:9900): Se liberan todas las estructuras del proceso de PID:1

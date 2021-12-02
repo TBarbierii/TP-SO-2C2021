@@ -1,0 +1,195 @@
+[INFO] 15:42:26:238 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:42:26:239 OperacionesServidor/(6480:6480): El codigo de operacion es: 13
+[INFO] 15:42:26:241 OperacionesServidor/(6480:6480): Tipo de asignacion a utilizar: FIJA.
+[INFO] 15:42:35:188 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:42:35:188 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:42:35:189 OperacionesServidor/(6480:6480): El proceso: 1, pide finalizar
+[INFO] 15:42:41:238 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:42:41:239 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:42:41:241 OperacionesServidor/(6480:6480): El proceso: 2, pide finalizar
+[INFO] 15:42:47:261 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:42:47:261 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:42:47:262 OperacionesServidor/(6480:6480): El proceso: 3, pide finalizar
+[INFO] 15:42:53:286 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:42:53:287 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:42:53:289 OperacionesServidor/(6480:6480): El proceso: 4, pide finalizar
+[INFO] 15:42:59:310 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:42:59:310 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:42:59:311 OperacionesServidor/(6480:6480): El proceso: 5, pide finalizar
+[INFO] 15:43:05:334 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:43:05:334 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:43:05:335 OperacionesServidor/(6480:6480): El proceso: 6, pide finalizar
+[INFO] 15:43:14:357 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:43:14:357 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:43:14:358 OperacionesServidor/(6480:6480): El proceso: 7, pide finalizar
+[INFO] 15:43:14:393 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:43:14:393 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:43:14:394 OperacionesServidor/(6480:6480): El proceso: 8, pide finalizar
+[INFO] 15:46:01:768 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:46:01:769 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:46:01:770 OperacionesServidor/(6480:6480): El proceso: 9, pide finalizar
+[INFO] 15:46:47:514 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:46:47:515 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:46:47:516 OperacionesServidor/(6480:6480): El proceso: 12, pide finalizar
+[INFO] 15:46:50:517 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:46:50:517 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:46:50:518 OperacionesServidor/(6480:6480): El proceso: 11, pide finalizar
+[INFO] 15:46:53:520 OperacionesServidor/(6480:6480): Recibimos la informacion de la RAM
+[INFO] 15:46:53:521 OperacionesServidor/(6480:6480): El codigo de operacion es: 18
+[INFO] 15:46:53:522 OperacionesServidor/(6480:6480): El proceso: 10, pide finalizar
+[INFO] 15:49:51:971 OperacionesServidor/(7010:7010): Recibimos la informacion de la RAM
+[INFO] 15:49:51:971 OperacionesServidor/(7010:7010): El codigo de operacion es: 13
+[INFO] 15:49:51:973 OperacionesServidor/(7010:7010): Tipo de asignacion a utilizar: FIJA.
+[INFO] 15:50:03:572 OperacionesServidor/(7010:7010): Recibimos la informacion de la RAM
+[INFO] 15:50:03:572 OperacionesServidor/(7010:7010): El codigo de operacion es: 18
+[INFO] 15:50:03:574 OperacionesServidor/(7010:7010): El proceso: 1, pide finalizar
+[INFO] 15:50:48:066 OperacionesServidor/(7010:7010): Recibimos la informacion de la RAM
+[INFO] 15:50:48:066 OperacionesServidor/(7010:7010): El codigo de operacion es: 18
+[INFO] 15:50:48:068 OperacionesServidor/(7010:7010): El proceso: 4, pide finalizar
+[INFO] 15:50:51:067 OperacionesServidor/(7010:7010): Recibimos la informacion de la RAM
+[INFO] 15:50:51:068 OperacionesServidor/(7010:7010): El codigo de operacion es: 18
+[INFO] 15:50:51:070 OperacionesServidor/(7010:7010): El proceso: 3, pide finalizar
+[INFO] 15:50:54:073 OperacionesServidor/(7010:7010): Recibimos la informacion de la RAM
+[INFO] 15:50:54:073 OperacionesServidor/(7010:7010): El codigo de operacion es: 18
+[INFO] 15:50:54:075 OperacionesServidor/(7010:7010): El proceso: 2, pide finalizar
+[INFO] 15:57:01:503 OperacionesServidor/(7585:7585): Recibimos la informacion de la RAM
+[INFO] 15:57:01:504 OperacionesServidor/(7585:7585): El codigo de operacion es: 13
+[INFO] 15:57:01:506 OperacionesServidor/(7585:7585): Tipo de asignacion a utilizar: FIJA.
+[INFO] 15:57:35:378 OperacionesServidor/(7585:7585): Recibimos la informacion de la RAM
+[INFO] 15:57:35:380 OperacionesServidor/(7585:7585): El codigo de operacion es: 18
+[INFO] 15:57:35:381 OperacionesServidor/(7585:7585): El proceso: 1, pide finalizar
+[INFO] 15:58:35:068 OperacionesServidor/(7585:7585): Recibimos la informacion de la RAM
+[INFO] 15:58:35:068 OperacionesServidor/(7585:7585): El codigo de operacion es: 18
+[INFO] 15:58:35:069 OperacionesServidor/(7585:7585): El proceso: 5, pide finalizar
+[INFO] 15:58:55:879 OperacionesServidor/(7585:7585): Recibimos la informacion de la RAM
+[INFO] 15:58:55:880 OperacionesServidor/(7585:7585): El codigo de operacion es: 18
+[INFO] 15:58:55:880 OperacionesServidor/(7585:7585): El proceso: 4, pide finalizar
+[INFO] 15:58:58:880 OperacionesServidor/(7585:7585): Recibimos la informacion de la RAM
+[INFO] 15:58:58:881 OperacionesServidor/(7585:7585): El codigo de operacion es: 18
+[INFO] 15:58:58:882 OperacionesServidor/(7585:7585): El proceso: 3, pide finalizar
+[INFO] 15:59:01:882 OperacionesServidor/(7585:7585): Recibimos la informacion de la RAM
+[INFO] 15:59:01:883 OperacionesServidor/(7585:7585): El codigo de operacion es: 18
+[INFO] 15:59:01:884 OperacionesServidor/(7585:7585): El proceso: 2, pide finalizar
+[INFO] 16:03:26:997 OperacionesServidor/(7994:7994): Recibimos la informacion de la RAM
+[INFO] 16:03:27:001 OperacionesServidor/(7994:7994): El codigo de operacion es: 13
+[INFO] 16:03:27:004 OperacionesServidor/(7994:7994): Tipo de asignacion a utilizar: FIJA.
+[INFO] 16:04:00:450 OperacionesServidor/(7994:7994): Recibimos la informacion de la RAM
+[INFO] 16:04:00:451 OperacionesServidor/(7994:7994): El codigo de operacion es: 18
+[INFO] 16:04:00:452 OperacionesServidor/(7994:7994): El proceso: 1, pide finalizar
+[INFO] 16:05:12:766 OperacionesServidor/(7994:7994): Recibimos la informacion de la RAM
+[INFO] 16:05:12:767 OperacionesServidor/(7994:7994): El codigo de operacion es: 18
+[INFO] 16:05:12:769 OperacionesServidor/(7994:7994): El proceso: 5, pide finalizar
+[INFO] 16:07:25:417 OperacionesServidor/(7994:7994): Recibimos la informacion de la RAM
+[INFO] 16:07:25:418 OperacionesServidor/(7994:7994): El codigo de operacion es: 18
+[INFO] 16:07:25:419 OperacionesServidor/(7994:7994): El proceso: 4, pide finalizar
+[INFO] 16:07:28:419 OperacionesServidor/(7994:7994): Recibimos la informacion de la RAM
+[INFO] 16:07:28:419 OperacionesServidor/(7994:7994): El codigo de operacion es: 18
+[INFO] 16:07:28:420 OperacionesServidor/(7994:7994): El proceso: 3, pide finalizar
+[INFO] 16:07:31:420 OperacionesServidor/(7994:7994): Recibimos la informacion de la RAM
+[INFO] 16:07:31:420 OperacionesServidor/(7994:7994): El codigo de operacion es: 18
+[INFO] 16:07:31:421 OperacionesServidor/(7994:7994): El proceso: 2, pide finalizar
+[INFO] 16:16:06:563 OperacionesServidor/(8441:8441): Recibimos la informacion de la RAM
+[INFO] 16:16:06:563 OperacionesServidor/(8441:8441): El codigo de operacion es: 13
+[INFO] 16:16:06:565 OperacionesServidor/(8441:8441): Tipo de asignacion a utilizar: FIJA.
+[INFO] 16:16:18:036 OperacionesServidor/(8441:8441): Recibimos la informacion de la RAM
+[INFO] 16:16:18:036 OperacionesServidor/(8441:8441): El codigo de operacion es: 18
+[INFO] 16:16:18:037 OperacionesServidor/(8441:8441): El proceso: 1, pide finalizar
+[INFO] 16:18:18:999 OperacionesServidor/(8569:8569): Recibimos la informacion de la RAM
+[INFO] 16:18:18:999 OperacionesServidor/(8569:8569): El codigo de operacion es: 13
+[INFO] 16:18:19:001 OperacionesServidor/(8569:8569): Tipo de asignacion a utilizar: FIJA.
+[INFO] 16:18:30:386 OperacionesServidor/(8569:8569): Recibimos la informacion de la RAM
+[INFO] 16:18:30:387 OperacionesServidor/(8569:8569): El codigo de operacion es: 18
+[INFO] 16:18:30:388 OperacionesServidor/(8569:8569): El proceso: 1, pide finalizar
+[INFO] 16:20:24:602 OperacionesServidor/(8569:8569): Recibimos la informacion de la RAM
+[INFO] 16:20:24:603 OperacionesServidor/(8569:8569): El codigo de operacion es: 18
+[INFO] 16:20:24:604 OperacionesServidor/(8569:8569): El proceso: 5, pide finalizar
+[INFO] 16:20:42:045 OperacionesServidor/(8569:8569): Recibimos la informacion de la RAM
+[INFO] 16:20:42:045 OperacionesServidor/(8569:8569): El codigo de operacion es: 18
+[INFO] 16:20:42:047 OperacionesServidor/(8569:8569): El proceso: 4, pide finalizar
+[INFO] 16:20:55:304 OperacionesServidor/(8569:8569): Recibimos la informacion de la RAM
+[INFO] 16:20:55:305 OperacionesServidor/(8569:8569): El codigo de operacion es: 18
+[INFO] 16:20:55:307 OperacionesServidor/(8569:8569): El proceso: 3, pide finalizar
+[INFO] 16:20:58:307 OperacionesServidor/(8569:8569): Recibimos la informacion de la RAM
+[INFO] 16:20:58:308 OperacionesServidor/(8569:8569): El codigo de operacion es: 18
+[INFO] 16:20:58:309 OperacionesServidor/(8569:8569): El proceso: 2, pide finalizar
+[INFO] 16:27:36:746 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:27:36:746 OperacionesServidor/(9184:9184): El codigo de operacion es: 13
+[INFO] 16:27:36:748 OperacionesServidor/(9184:9184): Tipo de asignacion a utilizar: FIJA.
+[INFO] 16:28:00:033 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:28:00:034 OperacionesServidor/(9184:9184): El codigo de operacion es: 18
+[INFO] 16:28:00:035 OperacionesServidor/(9184:9184): El proceso: 1, pide finalizar
+[INFO] 16:28:42:812 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:28:42:813 OperacionesServidor/(9184:9184): El codigo de operacion es: 18
+[INFO] 16:28:42:814 OperacionesServidor/(9184:9184): El proceso: 5, pide finalizar
+[INFO] 16:28:45:838 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:28:45:838 OperacionesServidor/(9184:9184): El codigo de operacion es: 18
+[INFO] 16:28:45:839 OperacionesServidor/(9184:9184): El proceso: 4, pide finalizar
+[INFO] 16:28:48:838 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:28:48:839 OperacionesServidor/(9184:9184): El codigo de operacion es: 18
+[INFO] 16:28:48:840 OperacionesServidor/(9184:9184): El proceso: 3, pide finalizar
+[INFO] 16:28:51:843 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:28:51:844 OperacionesServidor/(9184:9184): El codigo de operacion es: 18
+[INFO] 16:28:51:848 OperacionesServidor/(9184:9184): El proceso: 2, pide finalizar
+[INFO] 16:29:32:825 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:29:32:825 OperacionesServidor/(9184:9184): El codigo de operacion es: 18
+[INFO] 16:29:32:826 OperacionesServidor/(9184:9184): El proceso: 7, pide finalizar
+[INFO] 16:29:35:836 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:29:35:836 OperacionesServidor/(9184:9184): El codigo de operacion es: 18
+[INFO] 16:29:35:838 OperacionesServidor/(9184:9184): El proceso: 6, pide finalizar
+[INFO] 16:29:35:872 OperacionesServidor/(9184:9184): Recibimos la informacion de la RAM
+[INFO] 16:29:35:873 OperacionesServidor/(9184:9184): El codigo de operacion es: 18
+[INFO] 16:29:35:874 OperacionesServidor/(9184:9184): El proceso: 8, pide finalizar
+[INFO] 16:31:53:133 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:31:53:133 OperacionesServidor/(9459:9459): El codigo de operacion es: 13
+[INFO] 16:31:53:136 OperacionesServidor/(9459:9459): Tipo de asignacion a utilizar: FIJA.
+[INFO] 16:32:12:662 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:32:12:664 OperacionesServidor/(9459:9459): El codigo de operacion es: 18
+[INFO] 16:32:12:666 OperacionesServidor/(9459:9459): El proceso: 1, pide finalizar
+[INFO] 16:32:54:224 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:32:54:224 OperacionesServidor/(9459:9459): El codigo de operacion es: 18
+[INFO] 16:32:54:225 OperacionesServidor/(9459:9459): El proceso: 5, pide finalizar
+[INFO] 16:32:57:250 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:32:57:250 OperacionesServidor/(9459:9459): El codigo de operacion es: 18
+[INFO] 16:32:57:251 OperacionesServidor/(9459:9459): El proceso: 4, pide finalizar
+[INFO] 16:33:00:255 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:33:00:255 OperacionesServidor/(9459:9459): El codigo de operacion es: 18
+[INFO] 16:33:00:256 OperacionesServidor/(9459:9459): El proceso: 3, pide finalizar
+[INFO] 16:33:03:259 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:33:03:259 OperacionesServidor/(9459:9459): El codigo de operacion es: 18
+[INFO] 16:33:03:260 OperacionesServidor/(9459:9459): El proceso: 2, pide finalizar
+[INFO] 16:33:44:237 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:33:44:237 OperacionesServidor/(9459:9459): El codigo de operacion es: 18
+[INFO] 16:33:44:238 OperacionesServidor/(9459:9459): El proceso: 7, pide finalizar
+[INFO] 16:33:47:252 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:33:47:252 OperacionesServidor/(9459:9459): El codigo de operacion es: 18
+[INFO] 16:33:47:253 OperacionesServidor/(9459:9459): El proceso: 6, pide finalizar
+[INFO] 16:33:47:288 OperacionesServidor/(9459:9459): Recibimos la informacion de la RAM
+[INFO] 16:33:47:288 OperacionesServidor/(9459:9459): El codigo de operacion es: 18
+[INFO] 16:33:47:290 OperacionesServidor/(9459:9459): El proceso: 8, pide finalizar
+[INFO] 16:36:19:353 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:36:19:354 OperacionesServidor/(9865:9865): El codigo de operacion es: 13
+[INFO] 16:36:19:357 OperacionesServidor/(9865:9865): Tipo de asignacion a utilizar: FIJA.
+[INFO] 16:36:31:261 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:36:31:261 OperacionesServidor/(9865:9865): El codigo de operacion es: 18
+[INFO] 16:36:31:263 OperacionesServidor/(9865:9865): El proceso: 1, pide finalizar
+[INFO] 16:37:13:413 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:37:13:413 OperacionesServidor/(9865:9865): El codigo de operacion es: 18
+[INFO] 16:37:13:414 OperacionesServidor/(9865:9865): El proceso: 5, pide finalizar
+[INFO] 16:37:16:449 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:37:16:449 OperacionesServidor/(9865:9865): El codigo de operacion es: 18
+[INFO] 16:37:16:450 OperacionesServidor/(9865:9865): El proceso: 4, pide finalizar
+[INFO] 16:37:19:455 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:37:19:455 OperacionesServidor/(9865:9865): El codigo de operacion es: 18
+[INFO] 16:37:19:457 OperacionesServidor/(9865:9865): El proceso: 3, pide finalizar
+[INFO] 16:37:22:464 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:37:22:465 OperacionesServidor/(9865:9865): El codigo de operacion es: 18
+[INFO] 16:37:22:466 OperacionesServidor/(9865:9865): El proceso: 2, pide finalizar
+[INFO] 16:38:03:434 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:38:03:434 OperacionesServidor/(9865:9865): El codigo de operacion es: 18
+[INFO] 16:38:03:436 OperacionesServidor/(9865:9865): El proceso: 7, pide finalizar
+[INFO] 16:38:06:457 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:38:06:457 OperacionesServidor/(9865:9865): El codigo de operacion es: 18
+[INFO] 16:38:06:458 OperacionesServidor/(9865:9865): El proceso: 6, pide finalizar
+[INFO] 16:38:06:495 OperacionesServidor/(9865:9865): Recibimos la informacion de la RAM
+[INFO] 16:38:06:495 OperacionesServidor/(9865:9865): El codigo de operacion es: 18
+[INFO] 16:38:06:496 OperacionesServidor/(9865:9865): El proceso: 8, pide finalizar

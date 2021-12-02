@@ -247,7 +247,7 @@ bool procesoEnDeadlock(proceso_kernel* proceso, proceso_kernel* proceso_apuntado
 
 
 void ejecutarAlgoritmoDeadlock(){
-    t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_INFO);
+    t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_DEBUG);
     while(1){
 
         usleep(tiempoDeadlock*1000);
@@ -331,7 +331,7 @@ void ejecutarAlgoritmoDeadlock(){
                 list_destroy(listaDeProcesos);
 
                 if(enDeadlock){
-                    log_info(logger,"El proceso %d se encuentra en Dealock", process->pid);
+                    log_warning(logger,"El proceso %d se encuentra en Dealock", process->pid);
                     list_add(procesosEnDEADLOCK, process);
                 }
             }
@@ -343,11 +343,11 @@ void ejecutarAlgoritmoDeadlock(){
                 //sacamos al proceso de mayor id, que esta al comienzo
                 proceso_kernel* procesoASacarPorDeadlock = list_remove(procesosEnDEADLOCK, 0);
                 log_info(logger,"El proceso que se sacara por el Deadlock es el :%d\n",procesoASacarPorDeadlock->pid);
-                //desalojarSemaforosDeProceso(procesoASacarPorDeadlock);
-                //finalizarProcesoPorDeadlock(procesoASacarPorDeadlock);
+                desalojarSemaforosDeProceso(procesoASacarPorDeadlock);
+                finalizarProcesoPorDeadlock(procesoASacarPorDeadlock);
                 
                 //ESTO POR AHORA, DESPUES CUANDO HAGAMOS DE QUE SACAMOS AL PROCESO BIEN Y TODO
-                break;
+                //break;
             
             }else { // no hay procesos en dealock
                 log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra");
@@ -485,6 +485,10 @@ void finalizarProcesoPorDeadlock(proceso_kernel* procesoASacarPorDeadlock){
     //el 0 que no se pudo realizar xq no existia el semaforo
     //el 2 que se pudo realizar aunque no se bloqueo
     //vamos a enviarle un codigo 3 de respuesta a la matelib, y la matelib va a cerrar todo debido a eso
+    t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",1,LOG_LEVEL_DEBUG);
+    finalizarEnMemoria(procesoASacarPorDeadlock, logger);
+    log_destroy(logger);
+
     avisarWaitDeSemaforo(procesoASacarPorDeadlock->conexion, 3);
     //ya anteriormente lo liberamos de todos lados
 

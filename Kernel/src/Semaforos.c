@@ -135,9 +135,13 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
         if(!list_is_empty(semaforoActual->listaDeProcesosEnEspera)){ // si tiene procesos esperando, liberamos 1
             
             proceso_kernel* procesoLiberado = list_remove(semaforoActual->listaDeProcesosEnEspera, 0);
+                
                 //ahora el primero que estaba bloqueado en ese semaforo, pasara a retener al semaforo
                 list_add(procesoLiberado->listaRecursosRetenidos, semaforoActual);
+                //y como era el unico semaforo que estaba solicitando se lo sacamos de su lista de solicitadoss
+                list_remove(procesoLiberado->listaRecursosSolicitados, 0);
             pthread_mutex_unlock(semaforoActual->mutex);
+                
 
             log_info(logger,"Se libera el proceso:%d, de la lista de espera del semaforo: %s", pid, nombreSem);
 
@@ -337,6 +341,9 @@ void desalojarSemaforosDeProceso(proceso_kernel* procesoASacarPorDeadlock){
         //por cada semaforo que esta esperando, aumentamos su valor y lo sacamos de la lista de espera del mismo
         semaforoLiberado->valor++;
         list_remove_by_condition(semaforoLiberado->listaDeProcesosEnEspera, procesoConPid);
+
+        printf("xd");
+    
     }
 
     while(!list_is_empty(procesoASacarPorDeadlock->listaRecursosRetenidos)){
@@ -351,6 +358,7 @@ void desalojarSemaforosDeProceso(proceso_kernel* procesoASacarPorDeadlock){
             
             proceso_kernel* procesoQueTendraElsemaforo = list_remove(semaforoRetenido->listaDeProcesosEnEspera, 0);
             //p3->listaRecursosRetenidos= {s3,s4}
+            procesoQueTendraElsemaforo->procesoApuntadoDeadlock = NULL;
             list_add(procesoQueTendraElsemaforo->listaRecursosRetenidos, semaforoRetenido);
             //y como el proceso estaba solicitando el semaforo actual solo, lo vamos a sacar porque ahora lo retiene
             list_remove(procesoQueTendraElsemaforo->listaRecursosSolicitados, 0);

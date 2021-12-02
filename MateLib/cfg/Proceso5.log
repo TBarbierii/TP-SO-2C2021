@@ -1,0 +1,110 @@
+[INFO] 15:50:00:574 loggerContenidoProceso/(7134:7159): Se ha creado el carpincho:5, y se ha logrado conectar correctamente al backend
+[INFO] 15:50:00:574 loggerContenidoProceso/(7134:7159): Solicitamos hacer un wait sobre el semaforo: SEM4
+[INFO] 15:50:00:576 loggerContenidoProceso/(7134:7159): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:50:00:576 loggerContenidoProceso/(7134:7159): Se pudo hacer el wait del semaforo
+[INFO] 15:50:03:576 loggerContenidoProceso/(7134:7159): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 15:50:45:043 loggerContenidoProceso/(7134:7159): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 15:50:45:043 loggerContenidoProceso/(7134:7159): No see pudo realizar el wait al semaforo solicitado
+[DEBUG] 15:50:45:043 loggerContenidoProceso/(7134:7159): Se liberan todas las estructuras del proceso con PID: 5, ya que nos avisaron de cerrarlo por DEADLOCK
+[INFO] 15:50:48:043 loggerContenidoProceso/(7134:7159): Solicitamos hacer un signal sobre el semaforo: SEM1
+[ERROR] 15:50:48:043 loggerContenidoProceso/(7134:7159): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:50:48:043 loggerContenidoProceso/(7134:7159): Solicitamos hacer un signal sobre el semaforo: SEM4
+[ERROR] 15:50:48:043 loggerContenidoProceso/(7134:7159): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:50:48:043 loggerContenidoProceso/(7134:7159): Se ha solicitado cerrar el carpincho de pid:5 , este es un hasta adios
+[ERROR] 15:50:48:043 loggerContenidoProceso/(7134:7159): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:5
+[INFO] 15:50:48:043 loggerContenidoProceso/(7134:7159): Se liberan todas las estructuras del proceso de PID:5
+[INFO] 15:57:32:398 loggerContenidoProceso/(7743:7799): Se ha creado el carpincho:5, y se ha logrado conectar correctamente al backend
+[INFO] 15:57:32:398 loggerContenidoProceso/(7743:7799): Solicitamos hacer un wait sobre el semaforo: SEM4
+[INFO] 15:57:32:398 loggerContenidoProceso/(7743:7799): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 15:57:32:398 loggerContenidoProceso/(7743:7799): Se pudo hacer el wait del semaforo
+[INFO] 15:57:35:399 loggerContenidoProceso/(7743:7799): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 15:58:35:064 loggerContenidoProceso/(7743:7799): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 15:58:35:064 loggerContenidoProceso/(7743:7799): No see pudo realizar el wait al semaforo solicitado
+[DEBUG] 15:58:35:064 loggerContenidoProceso/(7743:7799): Se liberan todas las estructuras del proceso con PID: 5, ya que nos avisaron de cerrarlo por DEADLOCK
+[INFO] 15:58:38:065 loggerContenidoProceso/(7743:7799): Solicitamos hacer un signal sobre el semaforo: SEM1
+[ERROR] 15:58:38:065 loggerContenidoProceso/(7743:7799): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:58:38:065 loggerContenidoProceso/(7743:7799): Solicitamos hacer un signal sobre el semaforo: SEM4
+[ERROR] 15:58:38:065 loggerContenidoProceso/(7743:7799): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 15:58:38:065 loggerContenidoProceso/(7743:7799): Se ha solicitado cerrar el carpincho de pid:5 , este es un hasta adios
+[ERROR] 15:58:38:065 loggerContenidoProceso/(7743:7799): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:5
+[INFO] 15:58:38:065 loggerContenidoProceso/(7743:7799): Se liberan todas las estructuras del proceso de PID:5
+[INFO] 16:03:57:461 loggerContenidoProceso/(8074:8086): Se ha creado el carpincho:5, y se ha logrado conectar correctamente al backend
+[INFO] 16:03:57:461 loggerContenidoProceso/(8074:8086): Solicitamos hacer un wait sobre el semaforo: SEM4
+[INFO] 16:03:57:461 loggerContenidoProceso/(8074:8086): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:03:57:461 loggerContenidoProceso/(8074:8086): Se pudo hacer el wait del semaforo
+[INFO] 16:04:00:467 loggerContenidoProceso/(8074:8086): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 16:05:12:766 loggerContenidoProceso/(8074:8086): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 16:05:12:766 loggerContenidoProceso/(8074:8086): No see pudo realizar el wait al semaforo solicitado
+[DEBUG] 16:05:12:766 loggerContenidoProceso/(8074:8086): Se liberan todas las estructuras del proceso con PID: 5, ya que nos avisaron de cerrarlo por DEADLOCK
+[INFO] 16:05:15:766 loggerContenidoProceso/(8074:8086): Solicitamos hacer un signal sobre el semaforo: SEM1
+[ERROR] 16:05:15:766 loggerContenidoProceso/(8074:8086): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:05:15:767 loggerContenidoProceso/(8074:8086): Solicitamos hacer un signal sobre el semaforo: SEM4
+[ERROR] 16:05:15:767 loggerContenidoProceso/(8074:8086): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:05:15:767 loggerContenidoProceso/(8074:8086): Se ha solicitado cerrar el carpincho de pid:5 , este es un hasta adios
+[ERROR] 16:05:15:767 loggerContenidoProceso/(8074:8086): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:5
+[INFO] 16:05:15:767 loggerContenidoProceso/(8074:8086): Se liberan todas las estructuras del proceso de PID:5
+[INFO] 16:16:15:047 loggerContenidoProceso/(8445:8466): Se ha creado el carpincho:5, y se ha logrado conectar correctamente al backend
+[INFO] 16:16:15:047 loggerContenidoProceso/(8445:8466): Solicitamos hacer un wait sobre el semaforo: SEM4
+[INFO] 16:16:15:047 loggerContenidoProceso/(8445:8466): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:16:15:047 loggerContenidoProceso/(8445:8466): Se pudo hacer el wait del semaforo
+[INFO] 16:16:18:048 loggerContenidoProceso/(8445:8466): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 16:18:27:390 loggerContenidoProceso/(8645:8664): Se ha creado el carpincho:5, y se ha logrado conectar correctamente al backend
+[INFO] 16:18:27:390 loggerContenidoProceso/(8645:8664): Solicitamos hacer un wait sobre el semaforo: SEM4
+[INFO] 16:18:27:390 loggerContenidoProceso/(8645:8664): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:18:27:390 loggerContenidoProceso/(8645:8664): Se pudo hacer el wait del semaforo
+[INFO] 16:18:30:390 loggerContenidoProceso/(8645:8664): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 16:20:24:602 loggerContenidoProceso/(8645:8664): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 16:20:24:602 loggerContenidoProceso/(8645:8664): No see pudo realizar el wait al semaforo solicitado
+[DEBUG] 16:20:24:602 loggerContenidoProceso/(8645:8664): Se liberan todas las estructuras del proceso con PID: 5, ya que nos avisaron de cerrarlo por DEADLOCK
+[INFO] 16:20:27:603 loggerContenidoProceso/(8645:8664): Solicitamos hacer un signal sobre el semaforo: SEM1
+[ERROR] 16:20:27:603 loggerContenidoProceso/(8645:8664): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:20:27:603 loggerContenidoProceso/(8645:8664): Solicitamos hacer un signal sobre el semaforo: SEM4
+[ERROR] 16:20:27:603 loggerContenidoProceso/(8645:8664): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:20:27:603 loggerContenidoProceso/(8645:8664): Se ha solicitado cerrar el carpincho de pid:5 , este es un hasta adios
+[ERROR] 16:20:27:603 loggerContenidoProceso/(8645:8664): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:5
+[INFO] 16:20:27:603 loggerContenidoProceso/(8645:8664): Se liberan todas las estructuras del proceso de PID:5
+[INFO] 16:27:57:025 loggerContenidoProceso/(9248:9260): Se ha creado el carpincho:5, y se ha logrado conectar correctamente al backend
+[INFO] 16:27:57:025 loggerContenidoProceso/(9248:9260): Solicitamos hacer un wait sobre el semaforo: SEM4
+[INFO] 16:27:57:027 loggerContenidoProceso/(9248:9260): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:27:57:027 loggerContenidoProceso/(9248:9260): Se pudo hacer el wait del semaforo
+[INFO] 16:28:00:027 loggerContenidoProceso/(9248:9260): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 16:28:42:815 loggerContenidoProceso/(9248:9260): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 16:28:42:815 loggerContenidoProceso/(9248:9260): No see pudo realizar el wait al semaforo solicitado
+[DEBUG] 16:28:42:815 loggerContenidoProceso/(9248:9260): Se liberan todas las estructuras del proceso con PID: 5, ya que nos avisaron de cerrarlo por DEADLOCK
+[INFO] 16:28:45:815 loggerContenidoProceso/(9248:9260): Solicitamos hacer un signal sobre el semaforo: SEM1
+[ERROR] 16:28:45:816 loggerContenidoProceso/(9248:9260): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:28:45:816 loggerContenidoProceso/(9248:9260): Solicitamos hacer un signal sobre el semaforo: SEM4
+[ERROR] 16:28:45:816 loggerContenidoProceso/(9248:9260): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:28:45:816 loggerContenidoProceso/(9248:9260): Se ha solicitado cerrar el carpincho de pid:5 , este es un hasta adios
+[ERROR] 16:28:45:816 loggerContenidoProceso/(9248:9260): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:5
+[INFO] 16:28:45:816 loggerContenidoProceso/(9248:9260): Se liberan todas las estructuras del proceso de PID:5
+[INFO] 16:32:09:663 loggerContenidoProceso/(9579:9602): Se ha creado el carpincho:5, y se ha logrado conectar correctamente al backend
+[INFO] 16:32:09:663 loggerContenidoProceso/(9579:9602): Solicitamos hacer un wait sobre el semaforo: SEM4
+[INFO] 16:32:09:665 loggerContenidoProceso/(9579:9602): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:32:09:665 loggerContenidoProceso/(9579:9602): Se pudo hacer el wait del semaforo
+[INFO] 16:32:12:666 loggerContenidoProceso/(9579:9602): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 16:32:54:227 loggerContenidoProceso/(9579:9602): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 16:32:54:227 loggerContenidoProceso/(9579:9602): No see pudo realizar el wait al semaforo solicitado
+[DEBUG] 16:32:54:227 loggerContenidoProceso/(9579:9602): Se liberan todas las estructuras del proceso con PID: 5, ya que nos avisaron de cerrarlo por DEADLOCK
+[INFO] 16:32:57:228 loggerContenidoProceso/(9579:9602): Solicitamos hacer un signal sobre el semaforo: SEM1
+[ERROR] 16:32:57:229 loggerContenidoProceso/(9579:9602): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:32:57:229 loggerContenidoProceso/(9579:9602): Solicitamos hacer un signal sobre el semaforo: SEM4
+[ERROR] 16:32:57:229 loggerContenidoProceso/(9579:9602): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:32:57:229 loggerContenidoProceso/(9579:9602): Se ha solicitado cerrar el carpincho de pid:5 , este es un hasta adios
+[ERROR] 16:32:57:229 loggerContenidoProceso/(9579:9602): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:5
+[INFO] 16:32:57:229 loggerContenidoProceso/(9579:9602): Se liberan todas las estructuras del proceso de PID:5
+[INFO] 16:36:28:252 loggerContenidoProceso/(9900:9922): Se ha creado el carpincho:5, y se ha logrado conectar correctamente al backend
+[INFO] 16:36:28:253 loggerContenidoProceso/(9900:9922): Solicitamos hacer un wait sobre el semaforo: SEM4
+[INFO] 16:36:28:254 loggerContenidoProceso/(9900:9922): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[INFO] 16:36:28:254 loggerContenidoProceso/(9900:9922): Se pudo hacer el wait del semaforo
+[INFO] 16:36:31:255 loggerContenidoProceso/(9900:9922): Solicitamos hacer un wait sobre el semaforo: SEM1
+[INFO] 16:37:13:416 loggerContenidoProceso/(9900:9922): Habiamos solicitado hacer un wait de un semaforo y obtenemos una respuesta en base a eso
+[ERROR] 16:37:13:416 loggerContenidoProceso/(9900:9922): No see pudo realizar el wait al semaforo solicitado
+[DEBUG] 16:37:13:416 loggerContenidoProceso/(9900:9922): Se liberan todas las estructuras del proceso con PID: 5, ya que nos avisaron de cerrarlo por DEADLOCK
+[INFO] 16:37:16:416 loggerContenidoProceso/(9900:9922): Solicitamos hacer un signal sobre el semaforo: SEM1
+[ERROR] 16:37:16:416 loggerContenidoProceso/(9900:9922): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:37:16:416 loggerContenidoProceso/(9900:9922): Solicitamos hacer un signal sobre el semaforo: SEM4
+[ERROR] 16:37:16:416 loggerContenidoProceso/(9900:9922): No se puede ejecutar esta accion porque no esta conectado al servidor
+[INFO] 16:37:16:416 loggerContenidoProceso/(9900:9922): Se ha solicitado cerrar el carpincho de pid:5 , este es un hasta adios
+[ERROR] 16:37:16:416 loggerContenidoProceso/(9900:9922): No se pudo conectar con el servidor, cerramos desde aca al proceso de pid:5
+[INFO] 16:37:16:416 loggerContenidoProceso/(9900:9922): Se liberan todas las estructuras del proceso de PID:5
