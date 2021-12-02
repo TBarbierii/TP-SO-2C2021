@@ -125,30 +125,28 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 }
 
 t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* carpincho){
-	t_log* loggerBucle = log_create("cfg/Reemplazos.log", "Reemplazos", 1, LOG_LEVEL_INFO);
+
 	if(strcmp(algoritmoReemplazoMMU, "LRU") == 0){
 		
 		bool comparator(t_pagina* p1, t_pagina* p2){
 			return p1->ultimoUso < p2->ultimoUso;
 		};
-		log_info(loggerBucle, "El proceso que va a realizar el reemplazo es %d", carpincho->id_carpincho);
+
 		t_list* paginasOrdenadas = list_sorted(paginas_a_reemplazar, (void*)comparator);
 
 		t_pagina* pag = list_get(paginasOrdenadas, 0);
-		log_info(loggerBucle, "La pagina reemplazada es la %d y pertenece al carpincho %d\n", pag->id_pagina, pag->id_carpincho);
-		log_destroy(loggerBucle);
+
 		list_destroy(paginasOrdenadas);
 		return pag;
 	}
 
 	if(strcmp(algoritmoReemplazoMMU, "CLOCK-M") == 0){
 
-		
 		bool comparator(t_pagina* p1, t_pagina* p2){
 			return p1->marco->id_marco < p2->marco->id_marco;
 		};
 		
-		t_list* paginasOrdenadas = list_sorted(paginas_a_reemplazar, (void*)comparator);
+		t_list* paginasOrdenadas = list_sorted(paginas_a_reemplazar, comparator);
 
 		if(strcmp(tipoAsignacion, "FIJA") == 0){
 

@@ -1,4 +1,0 @@
-[INFO] 13:27:10:843 Log/(9691:9885): Entrada TLB. NuevaEntrada: PID: 2	Página: 0	Marco: 0
-[INFO] 13:27:10:879 Log/(9691:9884): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 1
-[INFO] 13:30:22:840 Log/(10087:10228): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
-[INFO] 13:30:52:701 Log/(10242:10269): Entrada TLB. NuevaEntrada: PID: 1	Página: 0	Marco: 0
