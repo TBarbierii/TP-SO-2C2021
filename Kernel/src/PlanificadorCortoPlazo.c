@@ -57,7 +57,9 @@ void rutinaDeProceso(){
                 int valor = 1;
                 avisarWaitDeSemaforo(procesoListoParaEjecutar->conexion, valor);
             }
-            
+
+
+            procesoListoParaEjecutar->vuelveDeBloqueo = NO_BLOQUEADO;
             
             log_info(logger, "Se ejecuto tarea de conexion");
             int codigoOperacion = atenderMensajeEnKernel(procesoListoParaEjecutar->conexion);

@@ -78,7 +78,7 @@ pthread_mutex_t * modificarSuspendedReady;
 pthread_mutex_t * modificarBlocked;
 pthread_mutex_t * modificarSuspendedBlocked;
 
-pthread_mutex_t * nivelMultiProgramacionBajaPrioridad; //esto es para el planificador de largo plazo
+sem_t * nivelMultiProgramacionBajaPrioridad; //esto es para el planificador de largo plazo
 
 sem_t* hayProcesosNew;
 sem_t* hayProcesosReady;

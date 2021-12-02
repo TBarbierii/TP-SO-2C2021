@@ -1,0 +1,8 @@
+[WARNING] 13:27:10:842 EscrituraDeMarcos/(9691:9885): El proceso 2 va a escribir el marco 0 
+[INFO] 13:27:10:842 EscrituraDeMarcos/(9691:9885): Se escribe sobre el MARCO: 0, la PAGINA: 0, del proceso :2
+[WARNING] 13:27:10:879 EscrituraDeMarcos/(9691:9884): El proceso 1 va a escribir el marco 1 
+[INFO] 13:27:10:879 EscrituraDeMarcos/(9691:9884): Se escribe sobre el MARCO: 1, la PAGINA: 0, del proceso :1
+[WARNING] 13:30:22:840 EscrituraDeMarcos/(10087:10228): El proceso 1 va a escribir el marco 0 
+[INFO] 13:30:22:840 EscrituraDeMarcos/(10087:10228): Se escribe sobre el MARCO: 0, la PAGINA: 0, del proceso :1
+[WARNING] 13:30:52:689 EscrituraDeMarcos/(10242:10269): El proceso 1 va a escribir el marco 0 
+[INFO] 13:30:52:691 EscrituraDeMarcos/(10242:10269): Se escribe sobre el MARCO: 0, la PAGINA: 0, del proceso :1
