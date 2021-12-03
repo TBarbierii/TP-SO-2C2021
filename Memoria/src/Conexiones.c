@@ -161,11 +161,6 @@ uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del c
 	offset += sizeof(uint32_t);
 	memcpy(&tamanio, buffer + offset,sizeof(uint32_t));
 	
-	if(tamanio == 20000){
-		int procesoAcaparador=0;
-	}else if(tamanio == 10){
-		int otroaProcesos=0;
-	}
 	free(buffer);
 	
 	log_info(logger, "\nLLego el proceso para allocar: \n Pid: %i \nTamanio: %i", pid, tamanio);

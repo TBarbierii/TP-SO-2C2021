@@ -628,12 +628,6 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	pthread_mutex_lock(tabla_paginas);
 	t_list* paginasNuevas = list_filter(carpincho->tabla_de_paginas, (void*)paginas_nuevas);
 
-
-	void ponerlasPresentes(t_pagina* pag){
-		pag->presente = true;
-	};
-
-	list_iterate(paginasNuevas, (void*)ponerlasPresentes);
 	pthread_mutex_unlock(tabla_paginas);
 
 	pthread_mutex_lock(marcos_sem);
