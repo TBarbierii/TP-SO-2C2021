@@ -1,0 +1,315 @@
+[INFO] 18:15:18:575 SWAmP/(11123:11123): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 3200 cantidad de frames disponibles: 100 y id: 0
+[INFO] 18:15:18:575 SWAmP/(11123:11123): Se han creado todos los archivos
+[INFO] 18:15:18:575 SWAmP/(11123:11123): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 18:15:21:764 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:394 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:400 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:401 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:429 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:431 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:432 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:440 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:442 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:443 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:660 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:37:792 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:38:4 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:38:106 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:38:313 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:38:418 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:38:730 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:38:842 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:39:161 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:39:265 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:39:574 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:39:680 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:40:88 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:40:608 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:41:129 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:42:365 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:42:468 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:42:476 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:42:984 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:42:986 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:42:987 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:42:987 SWAmP/(11123:11123): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:16:43:492 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:43:493 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:43:494 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:43:494 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:43:998 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:43:0 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:43:0 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:43:0 SWAmP/(11123:11123): El contenido leido es  
+[DEBUG] 18:16:44:510 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:44:511 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:44:515 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:44:515 SWAmP/(11123:11123): El contenido leido es @
+[DEBUG] 18:16:45:126 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:45:128 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:45:128 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:45:130 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:45:238 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:45:744 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:45:747 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:45:747 SWAmP/(11123:11123): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:16:46:251 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:46:254 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:46:254 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:46:757 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:46:758 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:46:759 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:46:759 SWAmP/(11123:11123): El contenido leido es  
+[DEBUG] 18:16:47:269 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:47:270 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:47:272 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:47:272 SWAmP/(11123:11123): El contenido leido es @
+[DEBUG] 18:16:47:879 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:47:880 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:47:880 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:48:384 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:48:385 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:48:385 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:48:387 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:48:489 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:48:994 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:48:996 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:48:996 SWAmP/(11123:11123): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:16:49:499 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:49:501 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:49:501 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:50:6 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:50:7 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:50:8 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:50:8 SWAmP/(11123:11123): El contenido leido es  
+[DEBUG] 18:16:50:512 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:50:515 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:50:516 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:50:516 SWAmP/(11123:11123): El contenido leido es @
+[DEBUG] 18:16:51:132 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:51:133 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:51:133 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:51:656 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:51:658 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:51:658 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:52:162 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:52:163 SWAmP/(11123:11123): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:16:52:163 SWAmP/(11123:11123): El contenido leido es 
+[DEBUG] 18:16:52:164 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:52:270 SWAmP/(11123:11123): Solicitud de memoria entrante
+[DEBUG] 18:16:52:281 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:52:292 SWAmP/(11123:11123): Proceso 3 finalizado con exito
+[DEBUG] 18:16:52:292 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:52:293 SWAmP/(11123:11123): Proceso 2 finalizado con exito
+[DEBUG] 18:16:52:294 SWAmP/(11123:11123): Solicitud de memoria entrante
+[INFO] 18:16:52:296 SWAmP/(11123:11123): Proceso 1 finalizado con exito
+[INFO] 18:17:51:77 SWAmP/(11260:11260): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 3200 cantidad de frames disponibles: 100 y id: 0
+[INFO] 18:17:51:78 SWAmP/(11260:11260): Se han creado todos los archivos
+[INFO] 18:17:51:78 SWAmP/(11260:11260): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 18:17:56:834 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:09:991 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:09:0 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:09:2 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:36 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:38 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:39 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:49 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:51 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:52 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:286 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:397 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:613 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:719 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:10:927 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:11:30 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:11:341 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:11:444 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:11:752 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:11:854 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:12:161 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:12:264 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:12:677 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:13:191 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:13:706 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:14:985 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:15:107 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:15:115 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:15:630 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:15:631 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:15:632 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:15:632 SWAmP/(11260:11260): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:18:16:138 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:16:139 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:16:141 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:16:141 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:16:649 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:16:651 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:16:652 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:16:652 SWAmP/(11260:11260): El contenido leido es  
+[DEBUG] 18:18:17:160 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:17:162 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:17:164 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:17:164 SWAmP/(11260:11260): El contenido leido es @
+[DEBUG] 18:18:17:770 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:17:771 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:17:771 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:17:773 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:17:881 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:18:394 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:18:396 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:18:396 SWAmP/(11260:11260): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:18:18:901 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:18:902 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:18:902 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:19:406 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:19:408 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:19:409 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:19:409 SWAmP/(11260:11260): El contenido leido es  
+[DEBUG] 18:18:19:915 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:19:917 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:19:918 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:19:918 SWAmP/(11260:11260): El contenido leido es @
+[DEBUG] 18:18:20:525 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:20:526 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:20:527 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:21:32 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:21:33 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:21:33 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:21:35 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:21:138 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:21:645 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:21:646 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:21:646 SWAmP/(11260:11260): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:18:22:152 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:22:154 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:22:154 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:22:660 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:22:662 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:22:662 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:22:662 SWAmP/(11260:11260): El contenido leido es  
+[DEBUG] 18:18:23:166 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:23:167 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:23:168 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:23:168 SWAmP/(11260:11260): El contenido leido es @
+[DEBUG] 18:18:23:775 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:23:776 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:23:776 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:24:283 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:24:284 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:24:284 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:24:788 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:24:789 SWAmP/(11260:11260): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:18:24:789 SWAmP/(11260:11260): El contenido leido es 
+[DEBUG] 18:18:24:791 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:24:895 SWAmP/(11260:11260): Solicitud de memoria entrante
+[DEBUG] 18:18:24:908 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:24:912 SWAmP/(11260:11260): Proceso 2 finalizado con exito
+[DEBUG] 18:18:24:912 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:24:914 SWAmP/(11260:11260): Proceso 3 finalizado con exito
+[DEBUG] 18:18:24:933 SWAmP/(11260:11260): Solicitud de memoria entrante
+[INFO] 18:18:24:934 SWAmP/(11260:11260): Proceso 1 finalizado con exito
+[INFO] 18:19:02:572 SWAmP/(11348:11348): Se crea el archivo SWAP en el path: /home/utnso/swap1.bin, de size: 3200 cantidad de frames disponibles: 100 y id: 0
+[INFO] 18:19:02:572 SWAmP/(11348:11348): Se han creado todos los archivos
+[INFO] 18:19:02:572 SWAmP/(11348:11348): Inicializacion del servidor con exito, esperando conexion...
+[DEBUG] 18:19:07:532 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:574 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:576 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:578 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:580 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:582 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:586 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:591 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:592 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:593 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:796 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:19:906 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:20:109 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:20:214 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:20:416 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:20:518 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:20:823 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:20:925 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:21:232 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:21:335 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:21:643 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:21:745 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:22:244 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:22:771 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:23:280 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:24:506 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:24:611 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:24:613 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:25:115 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:25:117 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:25:118 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:25:118 SWAmP/(11348:11348): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:19:25:624 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:25:625 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:25:627 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:25:627 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:26:128 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:26:129 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:26:130 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:26:130 SWAmP/(11348:11348): El contenido leido es  
+[DEBUG] 18:19:26:631 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:26:633 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:26:634 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:26:634 SWAmP/(11348:11348): El contenido leido es @
+[DEBUG] 18:19:27:241 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:27:242 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:27:242 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:27:242 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:27:345 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:27:848 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:27:850 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:27:850 SWAmP/(11348:11348): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:19:28:354 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:28:356 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:28:356 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:28:857 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:28:858 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:28:859 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:28:859 SWAmP/(11348:11348): El contenido leido es  
+[DEBUG] 18:19:29:360 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:29:362 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:29:363 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:29:363 SWAmP/(11348:11348): El contenido leido es @
+[DEBUG] 18:19:29:968 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:29:970 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:29:971 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:30:471 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:30:473 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:30:473 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:30:474 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:30:576 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:31:79 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:31:80 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:31:80 SWAmP/(11348:11348): El contenido leido es ÿÿÿÿ 
+[DEBUG] 18:19:31:583 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:31:584 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:31:584 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:32:85 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:32:86 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:32:88 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:32:88 SWAmP/(11348:11348): El contenido leido es  
+[DEBUG] 18:19:32:591 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:32:593 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:32:596 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:32:596 SWAmP/(11348:11348): El contenido leido es @
+[DEBUG] 18:19:33:219 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:33:222 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:33:222 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:33:723 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:33:725 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:33:725 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:34:226 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:34:227 SWAmP/(11348:11348): Se leyo el contenido del archivo: /home/utnso/swap1.bin
+[INFO] 18:19:34:227 SWAmP/(11348:11348): El contenido leido es 
+[DEBUG] 18:19:34:228 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:34:333 SWAmP/(11348:11348): Solicitud de memoria entrante
+[DEBUG] 18:19:34:335 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:34:337 SWAmP/(11348:11348): Proceso 1 finalizado con exito
+[DEBUG] 18:19:34:337 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:34:338 SWAmP/(11348:11348): Proceso 2 finalizado con exito
+[DEBUG] 18:19:34:338 SWAmP/(11348:11348): Solicitud de memoria entrante
+[INFO] 18:19:34:339 SWAmP/(11348:11348): Proceso 3 finalizado con exito

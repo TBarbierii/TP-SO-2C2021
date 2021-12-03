@@ -1,0 +1,123 @@
+[INFO] 18:16:37:376 loggerContenidoProceso/(11203:11204): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 18:16:37:376 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memalloc de size:23
+[INFO] 18:16:37:424 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memalloc
+[INFO] 18:16:37:424 loggerContenidoProceso/(11203:11204): Se pudo realizar el memalloc
+[INFO] 18:16:37:445 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memalloc de size:23
+[INFO] 18:16:37:799 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memalloc
+[INFO] 18:16:37:800 loggerContenidoProceso/(11203:11204): Se pudo realizar el memalloc
+[INFO] 18:16:38:422 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memalloc de size:23
+[INFO] 18:16:38:845 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memalloc
+[INFO] 18:16:38:845 loggerContenidoProceso/(11203:11204): Se pudo realizar el memalloc
+[INFO] 18:16:39:681 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memalloc de size:10
+[INFO] 18:16:40:200 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memalloc
+[INFO] 18:16:40:200 loggerContenidoProceso/(11203:11204): Se pudo realizar el memalloc
+[INFO] 18:16:41:234 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memWrite de 10039 y tamanio:5
+[INFO] 18:16:41:344 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memwrite
+[INFO] 18:16:41:344 loggerContenidoProceso/(11203:11204): Se pudo hacer el memwrite solicitado
+[INFO] 18:16:41:344 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memWrite de 10029 y tamanio:5
+[INFO] 18:16:41:446 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memwrite
+[INFO] 18:16:41:446 loggerContenidoProceso/(11203:11204): Se pudo hacer el memwrite solicitado
+[INFO] 18:16:41:446 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memWrite de 10019 y tamanio:5
+[INFO] 18:16:41:547 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memwrite
+[INFO] 18:16:41:547 loggerContenidoProceso/(11203:11204): Se pudo hacer el memwrite solicitado
+[INFO] 18:16:41:547 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memWrite de 10009 y tamanio:5
+[INFO] 18:16:41:649 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memwrite
+[INFO] 18:16:41:649 loggerContenidoProceso/(11203:11204): Se pudo hacer el memwrite solicitado
+[INFO] 18:16:41:855 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memalloc de size:23
+[INFO] 18:16:42:480 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memalloc
+[INFO] 18:16:42:480 loggerContenidoProceso/(11203:11204): Se pudo realizar el memalloc
+[INFO] 18:16:42:480 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memalloc de size:23
+[INFO] 18:16:45:241 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memalloc
+[INFO] 18:16:45:241 loggerContenidoProceso/(11203:11204): Se pudo realizar el memalloc
+[INFO] 18:16:45:241 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memalloc de size:23
+[INFO] 18:16:48:492 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memalloc
+[INFO] 18:16:48:492 loggerContenidoProceso/(11203:11204): Se pudo realizar el memalloc
+[INFO] 18:16:48:492 loggerContenidoProceso/(11203:11204): Solicitamos realizar un memalloc de size:23
+[INFO] 18:16:52:273 loggerContenidoProceso/(11203:11204): Habiamos solicitado hacer un memalloc
+[INFO] 18:16:52:273 loggerContenidoProceso/(11203:11204): Se pudo realizar el memalloc
+[INFO] 18:16:52:273 loggerContenidoProceso/(11203:11204): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 18:16:52:293 loggerContenidoProceso/(11203:11204): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 18:16:52:293 loggerContenidoProceso/(11203:11204): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 18:16:52:293 loggerContenidoProceso/(11203:11204): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 18:18:09:979 loggerContenidoProceso/(11309:11310): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 18:18:09:979 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memalloc de size:23
+[INFO] 18:18:10:24 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memalloc
+[INFO] 18:18:10:24 loggerContenidoProceso/(11309:11310): Se pudo realizar el memalloc
+[INFO] 18:18:10:56 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memalloc de size:23
+[INFO] 18:18:10:404 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memalloc
+[INFO] 18:18:10:404 loggerContenidoProceso/(11309:11310): Se pudo realizar el memalloc
+[INFO] 18:18:11:34 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memalloc de size:23
+[INFO] 18:18:11:446 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memalloc
+[INFO] 18:18:11:446 loggerContenidoProceso/(11309:11310): Se pudo realizar el memalloc
+[INFO] 18:18:12:266 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memalloc de size:10
+[INFO] 18:18:12:785 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memalloc
+[INFO] 18:18:12:785 loggerContenidoProceso/(11309:11310): Se pudo realizar el memalloc
+[INFO] 18:18:13:810 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memWrite de 10039 y tamanio:5
+[INFO] 18:18:13:923 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memwrite
+[INFO] 18:18:13:923 loggerContenidoProceso/(11309:11310): Se pudo hacer el memwrite solicitado
+[INFO] 18:18:13:923 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memWrite de 10029 y tamanio:5
+[INFO] 18:18:14:33 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memwrite
+[INFO] 18:18:14:33 loggerContenidoProceso/(11309:11310): Se pudo hacer el memwrite solicitado
+[INFO] 18:18:14:33 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memWrite de 10019 y tamanio:5
+[INFO] 18:18:14:136 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memwrite
+[INFO] 18:18:14:136 loggerContenidoProceso/(11309:11310): Se pudo hacer el memwrite solicitado
+[INFO] 18:18:14:136 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memWrite de 10009 y tamanio:5
+[INFO] 18:18:14:238 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memwrite
+[INFO] 18:18:14:238 loggerContenidoProceso/(11309:11310): Se pudo hacer el memwrite solicitado
+[INFO] 18:18:14:445 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memalloc de size:23
+[INFO] 18:18:15:121 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memalloc
+[INFO] 18:18:15:121 loggerContenidoProceso/(11309:11310): Se pudo realizar el memalloc
+[INFO] 18:18:15:121 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memalloc de size:23
+[INFO] 18:18:17:888 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memalloc
+[INFO] 18:18:17:888 loggerContenidoProceso/(11309:11310): Se pudo realizar el memalloc
+[INFO] 18:18:17:888 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memalloc de size:23
+[INFO] 18:18:21:141 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memalloc
+[INFO] 18:18:21:141 loggerContenidoProceso/(11309:11310): Se pudo realizar el memalloc
+[INFO] 18:18:21:141 loggerContenidoProceso/(11309:11310): Solicitamos realizar un memalloc de size:23
+[INFO] 18:18:24:900 loggerContenidoProceso/(11309:11310): Habiamos solicitado hacer un memalloc
+[INFO] 18:18:24:900 loggerContenidoProceso/(11309:11310): Se pudo realizar el memalloc
+[INFO] 18:18:24:900 loggerContenidoProceso/(11309:11310): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 18:18:24:932 loggerContenidoProceso/(11309:11310): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 18:18:24:932 loggerContenidoProceso/(11309:11310): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 18:18:24:932 loggerContenidoProceso/(11309:11310): Se liberan todas las estructuras del proceso de PID:1
+[INFO] 18:19:19:573 loggerContenidoProceso/(11391:11392): Se ha creado el carpincho:1, y se ha logrado conectar correctamente al backend
+[INFO] 18:19:19:573 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memalloc de size:23
+[INFO] 18:19:19:577 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memalloc
+[INFO] 18:19:19:577 loggerContenidoProceso/(11391:11392): Se pudo realizar el memalloc
+[INFO] 18:19:19:593 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memalloc de size:23
+[INFO] 18:19:19:906 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memalloc
+[INFO] 18:19:19:906 loggerContenidoProceso/(11391:11392): Se pudo realizar el memalloc
+[INFO] 18:19:20:521 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memalloc de size:23
+[INFO] 18:19:20:926 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memalloc
+[INFO] 18:19:20:926 loggerContenidoProceso/(11391:11392): Se pudo realizar el memalloc
+[INFO] 18:19:21:746 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memalloc de size:10
+[INFO] 18:19:22:347 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memalloc
+[INFO] 18:19:22:347 loggerContenidoProceso/(11391:11392): Se pudo realizar el memalloc
+[INFO] 18:19:23:383 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memWrite de 10039 y tamanio:5
+[INFO] 18:19:23:484 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memwrite
+[INFO] 18:19:23:484 loggerContenidoProceso/(11391:11392): Se pudo hacer el memwrite solicitado
+[INFO] 18:19:23:484 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memWrite de 10029 y tamanio:5
+[INFO] 18:19:23:585 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memwrite
+[INFO] 18:19:23:585 loggerContenidoProceso/(11391:11392): Se pudo hacer el memwrite solicitado
+[INFO] 18:19:23:585 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memWrite de 10019 y tamanio:5
+[INFO] 18:19:23:685 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memwrite
+[INFO] 18:19:23:686 loggerContenidoProceso/(11391:11392): Se pudo hacer el memwrite solicitado
+[INFO] 18:19:23:686 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memWrite de 10009 y tamanio:5
+[INFO] 18:19:23:790 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memwrite
+[INFO] 18:19:23:790 loggerContenidoProceso/(11391:11392): Se pudo hacer el memwrite solicitado
+[INFO] 18:19:23:995 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memalloc de size:23
+[INFO] 18:19:24:614 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memalloc
+[INFO] 18:19:24:614 loggerContenidoProceso/(11391:11392): Se pudo realizar el memalloc
+[INFO] 18:19:24:614 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memalloc de size:23
+[INFO] 18:19:27:345 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memalloc
+[INFO] 18:19:27:346 loggerContenidoProceso/(11391:11392): Se pudo realizar el memalloc
+[INFO] 18:19:27:346 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memalloc de size:23
+[INFO] 18:19:30:576 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memalloc
+[INFO] 18:19:30:577 loggerContenidoProceso/(11391:11392): Se pudo realizar el memalloc
+[INFO] 18:19:30:577 loggerContenidoProceso/(11391:11392): Solicitamos realizar un memalloc de size:23
+[INFO] 18:19:34:334 loggerContenidoProceso/(11391:11392): Habiamos solicitado hacer un memalloc
+[INFO] 18:19:34:334 loggerContenidoProceso/(11391:11392): Se pudo realizar el memalloc
+[INFO] 18:19:34:334 loggerContenidoProceso/(11391:11392): Se ha solicitado cerrar el carpincho de pid:1 , este es un hasta adios
+[INFO] 18:19:34:336 loggerContenidoProceso/(11391:11392): Estamos recibiendo todo para cerrar la conexion y terminar
+[INFO] 18:19:34:336 loggerContenidoProceso/(11391:11392): Se pudo cerrar el proceso de PID:1 correctamente en el BackEnd
+[INFO] 18:19:34:336 loggerContenidoProceso/(11391:11392): Se liberan todas las estructuras del proceso de PID:1

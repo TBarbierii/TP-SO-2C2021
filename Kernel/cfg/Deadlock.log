@@ -357,3 +357,117 @@
 
 [INFO] 16:05:31:311 Deadlock/(13294:13300): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
 
+[INFO] 18:16:17:665 Deadlock/(11146:11152): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:16:17:669 Deadlock/(11146:11152): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:16:17:669 Deadlock/(11146:11152): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:16:17:669 Deadlock/(11146:11152): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:17:07:669 Deadlock/(11146:11152): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:17:07:669 Deadlock/(11146:11152): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:17:07:669 Deadlock/(11146:11152): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:17:07:669 Deadlock/(11146:11152): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:18:49:981 Deadlock/(11287:11293): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:18:49:981 Deadlock/(11287:11293): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:18:49:981 Deadlock/(11287:11293): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:18:49:982 Deadlock/(11287:11293): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:20:00:449 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:20:00:449 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:20:00:449 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:20:00:449 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:20:50:451 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:20:50:451 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:20:50:451 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:20:50:451 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:21:40:452 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:21:40:453 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:21:40:453 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:21:40:453 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:22:30:453 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:22:30:453 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:22:30:454 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:22:30:454 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:23:20:459 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:23:20:459 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:23:20:459 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:23:20:459 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:24:10:468 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:24:10:468 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:24:10:468 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:24:10:468 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:25:00:469 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:25:00:469 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:25:00:469 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:25:00:469 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:25:50:476 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:25:50:477 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:25:50:477 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:25:50:477 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:26:40:485 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:26:40:485 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:26:40:485 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:26:40:485 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:27:30:486 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:27:30:486 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:27:30:486 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:27:30:486 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:28:20:486 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:28:20:486 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:28:20:486 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:28:20:486 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:29:10:491 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:29:10:491 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:29:10:491 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:29:10:491 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:30:00:497 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:30:00:497 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:30:00:497 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:30:00:497 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:30:50:502 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:30:50:502 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:30:50:502 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:30:50:502 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:31:40:503 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:31:40:503 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:31:40:503 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:31:40:503 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+
+[INFO] 18:32:30:503 Deadlock/(11368:11374): Se ejecuta algoritmo de deteccion y recuperacion de deadlock
+[INFO] 18:32:30:504 Deadlock/(11368:11374): La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: 0
+[INFO] 18:32:30:504 Deadlock/(11368:11374): La cantidad de procesos en posible deadlock son: 0
+
+[INFO] 18:32:30:504 Deadlock/(11368:11374): No puede haber deadlock ya que solo hay 1 o 0 procesos reteniendo y esperando por semaforos
+

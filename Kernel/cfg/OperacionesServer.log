@@ -1423,3 +1423,357 @@
 [INFO] 16:03:07:88 Memoria/(13294:13303): Se pudo realizar toda la finalizacion en Memoria y SWAmP
 [INFO] 16:03:07:88 Operaciones/(13294:13303): Le notificamos a memoria para que libere la memoria del carpincho: 1
 [INFO] 16:03:07:88 Operaciones/(13294:13303): Enviamos que queremos cerrar el carpincho
+[INFO] 18:18:09:940 Operaciones/(11287:11313): Recibimos la informacion de un carpincho
+[INFO] 18:18:09:944 Operaciones/(11287:11313): El codigo de operacion es: 0
+[INFO] 18:18:09:944 Operaciones/(11287:11313): Vamos a inicializar un carpincho
+[INFO] 18:18:09:944 Operaciones/(11287:11313): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:18:09:978 Memoria/(11287:11290): Recibimos la informacion de Memoria
+[INFO] 18:18:09:978 Memoria/(11287:11290): El codigo de operacion es: 0
+[INFO] 18:18:09:979 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:09:980 Operaciones/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:09:980 Operaciones/(11287:11294): Vamos a realizar un Mem Alloc
+[INFO] 18:18:10:21 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:10:21 Memoria/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:10:21 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:10:24 Operaciones/(11287:11315): Recibimos la informacion de un carpincho
+[INFO] 18:18:10:24 Operaciones/(11287:11315): El codigo de operacion es: 0
+[INFO] 18:18:10:24 Operaciones/(11287:11315): Vamos a inicializar un carpincho
+[INFO] 18:18:10:24 Operaciones/(11287:11315): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:18:10:31 Memoria/(11287:11290): Recibimos la informacion de Memoria
+[INFO] 18:18:10:32 Memoria/(11287:11290): El codigo de operacion es: 0
+[INFO] 18:18:10:33 Operaciones/(11287:11296): Recibimos la informacion de un carpincho
+[INFO] 18:18:10:33 Operaciones/(11287:11296): El codigo de operacion es: 7
+[INFO] 18:18:10:33 Operaciones/(11287:11296): Vamos a realizar un Mem Alloc
+[INFO] 18:18:10:42 Memoria/(11287:11296): Recibimos la informacion de Memoria
+[INFO] 18:18:10:42 Memoria/(11287:11296): El codigo de operacion es: 7
+[INFO] 18:18:10:42 Memoria/(11287:11296): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:10:44 Operaciones/(11287:11317): Recibimos la informacion de un carpincho
+[INFO] 18:18:10:44 Operaciones/(11287:11317): El codigo de operacion es: 0
+[INFO] 18:18:10:44 Operaciones/(11287:11317): Vamos a inicializar un carpincho
+[INFO] 18:18:10:44 Operaciones/(11287:11317): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:18:10:46 Memoria/(11287:11290): Recibimos la informacion de Memoria
+[INFO] 18:18:10:46 Memoria/(11287:11290): El codigo de operacion es: 0
+[INFO] 18:18:10:47 Operaciones/(11287:11297): Recibimos la informacion de un carpincho
+[INFO] 18:18:10:47 Operaciones/(11287:11297): El codigo de operacion es: 7
+[INFO] 18:18:10:47 Operaciones/(11287:11297): Vamos a realizar un Mem Alloc
+[INFO] 18:18:10:55 Memoria/(11287:11297): Recibimos la informacion de Memoria
+[INFO] 18:18:10:55 Memoria/(11287:11297): El codigo de operacion es: 7
+[INFO] 18:18:10:55 Memoria/(11287:11297): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:10:57 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:10:57 Operaciones/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:10:57 Operaciones/(11287:11294): Vamos a realizar un Mem Alloc
+[INFO] 18:18:10:404 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:10:404 Memoria/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:10:404 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:10:405 Operaciones/(11287:11296): Recibimos la informacion de un carpincho
+[INFO] 18:18:10:405 Operaciones/(11287:11296): El codigo de operacion es: 7
+[INFO] 18:18:10:405 Operaciones/(11287:11296): Vamos a realizar un Mem Alloc
+[INFO] 18:18:10:723 Memoria/(11287:11296): Recibimos la informacion de Memoria
+[INFO] 18:18:10:723 Memoria/(11287:11296): El codigo de operacion es: 7
+[INFO] 18:18:10:723 Memoria/(11287:11296): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:10:723 Operaciones/(11287:11297): Recibimos la informacion de un carpincho
+[INFO] 18:18:10:723 Operaciones/(11287:11297): El codigo de operacion es: 7
+[INFO] 18:18:10:723 Operaciones/(11287:11297): Vamos a realizar un Mem Alloc
+[INFO] 18:18:11:33 Memoria/(11287:11297): Recibimos la informacion de Memoria
+[INFO] 18:18:11:33 Memoria/(11287:11297): El codigo de operacion es: 7
+[INFO] 18:18:11:33 Memoria/(11287:11297): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:11:34 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:11:34 Operaciones/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:11:34 Operaciones/(11287:11294): Vamos a realizar un Mem Alloc
+[INFO] 18:18:11:446 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:11:446 Memoria/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:11:446 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:11:447 Operaciones/(11287:11296): Recibimos la informacion de un carpincho
+[INFO] 18:18:11:447 Operaciones/(11287:11296): El codigo de operacion es: 7
+[INFO] 18:18:11:447 Operaciones/(11287:11296): Vamos a realizar un Mem Alloc
+[INFO] 18:18:11:858 Memoria/(11287:11296): Recibimos la informacion de Memoria
+[INFO] 18:18:11:858 Memoria/(11287:11296): El codigo de operacion es: 7
+[INFO] 18:18:11:858 Memoria/(11287:11296): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:11:858 Operaciones/(11287:11297): Recibimos la informacion de un carpincho
+[INFO] 18:18:11:858 Operaciones/(11287:11297): El codigo de operacion es: 7
+[INFO] 18:18:11:858 Operaciones/(11287:11297): Vamos a realizar un Mem Alloc
+[INFO] 18:18:12:266 Memoria/(11287:11297): Recibimos la informacion de Memoria
+[INFO] 18:18:12:266 Memoria/(11287:11297): El codigo de operacion es: 7
+[INFO] 18:18:12:266 Memoria/(11287:11297): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:12:266 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:12:266 Operaciones/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:12:266 Operaciones/(11287:11294): Vamos a realizar un Mem Alloc
+[INFO] 18:18:12:785 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:12:785 Memoria/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:12:785 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:12:785 Operaciones/(11287:11296): Recibimos la informacion de un carpincho
+[INFO] 18:18:12:785 Operaciones/(11287:11296): El codigo de operacion es: 7
+[INFO] 18:18:12:785 Operaciones/(11287:11296): Vamos a realizar un Mem Alloc
+[INFO] 18:18:13:295 Memoria/(11287:11296): Recibimos la informacion de Memoria
+[INFO] 18:18:13:295 Memoria/(11287:11296): El codigo de operacion es: 7
+[INFO] 18:18:13:295 Memoria/(11287:11296): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:13:295 Operaciones/(11287:11297): Recibimos la informacion de un carpincho
+[INFO] 18:18:13:295 Operaciones/(11287:11297): El codigo de operacion es: 7
+[INFO] 18:18:13:296 Operaciones/(11287:11297): Vamos a realizar un Mem Alloc
+[INFO] 18:18:13:809 Memoria/(11287:11297): Recibimos la informacion de Memoria
+[INFO] 18:18:13:809 Memoria/(11287:11297): El codigo de operacion es: 7
+[INFO] 18:18:13:809 Memoria/(11287:11297): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:13:810 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:13:810 Operaciones/(11287:11294): El codigo de operacion es: 10
+[INFO] 18:18:13:810 Operaciones/(11287:11294): Vamos a realizar un Mem Write
+[INFO] 18:18:13:923 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:13:923 Memoria/(11287:11294): El codigo de operacion es: 10
+[INFO] 18:18:13:923 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:18:13:924 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:13:924 Operaciones/(11287:11294): El codigo de operacion es: 10
+[INFO] 18:18:13:924 Operaciones/(11287:11294): Vamos a realizar un Mem Write
+[INFO] 18:18:14:32 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:14:33 Memoria/(11287:11294): El codigo de operacion es: 10
+[INFO] 18:18:14:33 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:18:14:34 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:14:34 Operaciones/(11287:11294): El codigo de operacion es: 10
+[INFO] 18:18:14:34 Operaciones/(11287:11294): Vamos a realizar un Mem Write
+[INFO] 18:18:14:136 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:14:136 Memoria/(11287:11294): El codigo de operacion es: 10
+[INFO] 18:18:14:136 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:18:14:136 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:14:136 Operaciones/(11287:11294): El codigo de operacion es: 10
+[INFO] 18:18:14:136 Operaciones/(11287:11294): Vamos a realizar un Mem Write
+[INFO] 18:18:14:238 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:14:238 Memoria/(11287:11294): El codigo de operacion es: 10
+[INFO] 18:18:14:238 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:18:14:238 Operaciones/(11287:11296): Recibimos la informacion de un carpincho
+[INFO] 18:18:14:238 Operaciones/(11287:11296): El codigo de operacion es: 10
+[INFO] 18:18:14:238 Operaciones/(11287:11296): Vamos a realizar un Mem Write
+[INFO] 18:18:14:340 Memoria/(11287:11296): Recibimos la informacion de Memoria
+[INFO] 18:18:14:340 Memoria/(11287:11296): El codigo de operacion es: 10
+[INFO] 18:18:14:340 Memoria/(11287:11296): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:18:14:341 Operaciones/(11287:11297): Recibimos la informacion de un carpincho
+[INFO] 18:18:14:341 Operaciones/(11287:11297): El codigo de operacion es: 10
+[INFO] 18:18:14:341 Operaciones/(11287:11297): Vamos a realizar un Mem Write
+[INFO] 18:18:14:444 Memoria/(11287:11297): Recibimos la informacion de Memoria
+[INFO] 18:18:14:444 Memoria/(11287:11297): El codigo de operacion es: 10
+[INFO] 18:18:14:444 Memoria/(11287:11297): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:18:14:445 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:14:445 Operaciones/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:14:445 Operaciones/(11287:11294): Vamos a realizar un Mem Alloc
+[INFO] 18:18:15:121 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:15:121 Memoria/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:15:121 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:15:121 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:15:121 Operaciones/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:15:121 Operaciones/(11287:11294): Vamos a realizar un Mem Alloc
+[INFO] 18:18:17:888 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:17:888 Memoria/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:17:888 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:17:888 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:17:888 Operaciones/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:17:888 Operaciones/(11287:11294): Vamos a realizar un Mem Alloc
+[INFO] 18:18:21:141 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:21:141 Memoria/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:21:141 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:21:141 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:21:141 Operaciones/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:21:141 Operaciones/(11287:11294): Vamos a realizar un Mem Alloc
+[INFO] 18:18:24:900 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:24:900 Memoria/(11287:11294): El codigo de operacion es: 7
+[INFO] 18:18:24:900 Memoria/(11287:11294): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:18:24:900 Operaciones/(11287:11296): Recibimos la informacion de un carpincho
+[INFO] 18:18:24:900 Operaciones/(11287:11296): El codigo de operacion es: 1
+[INFO] 18:18:24:900 Operaciones/(11287:11296): Vamos a eliminar un carpincho
+[INFO] 18:18:24:900 Operaciones/(11287:11296): Sacamos al carpincho de ejecucion. Pid: 2
+[INFO] 18:18:24:900 Operaciones/(11287:11294): Recibimos la informacion de un carpincho
+[INFO] 18:18:24:900 Operaciones/(11287:11294): El codigo de operacion es: 1
+[INFO] 18:18:24:900 Operaciones/(11287:11294): Vamos a eliminar un carpincho
+[INFO] 18:18:24:900 Operaciones/(11287:11294): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 18:18:24:900 Operaciones/(11287:11297): Recibimos la informacion de un carpincho
+[INFO] 18:18:24:900 Operaciones/(11287:11297): El codigo de operacion es: 1
+[INFO] 18:18:24:900 Operaciones/(11287:11297): Vamos a eliminar un carpincho
+[INFO] 18:18:24:900 Operaciones/(11287:11297): Sacamos al carpincho de ejecucion. Pid: 3
+[INFO] 18:18:24:906 Memoria/(11287:11296): Recibimos la informacion de Memoria
+[INFO] 18:18:24:906 Memoria/(11287:11296): El codigo de operacion es: 1
+[INFO] 18:18:24:906 Memoria/(11287:11296): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 18:18:24:906 Operaciones/(11287:11296): Le notificamos a memoria para que libere la memoria del carpincho: 2
+[INFO] 18:18:24:906 Operaciones/(11287:11296): Enviamos que queremos cerrar el carpincho
+[INFO] 18:18:24:907 Memoria/(11287:11297): Recibimos la informacion de Memoria
+[INFO] 18:18:24:907 Memoria/(11287:11297): El codigo de operacion es: 1
+[INFO] 18:18:24:907 Memoria/(11287:11297): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 18:18:24:907 Operaciones/(11287:11297): Le notificamos a memoria para que libere la memoria del carpincho: 3
+[INFO] 18:18:24:907 Operaciones/(11287:11297): Enviamos que queremos cerrar el carpincho
+[INFO] 18:18:24:931 Memoria/(11287:11294): Recibimos la informacion de Memoria
+[INFO] 18:18:24:931 Memoria/(11287:11294): El codigo de operacion es: 1
+[INFO] 18:18:24:931 Memoria/(11287:11294): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 18:18:24:931 Operaciones/(11287:11294): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 18:18:24:931 Operaciones/(11287:11294): Enviamos que queremos cerrar el carpincho
+[INFO] 18:19:19:571 Operaciones/(11368:11395): Recibimos la informacion de un carpincho
+[INFO] 18:19:19:571 Operaciones/(11368:11395): El codigo de operacion es: 0
+[INFO] 18:19:19:571 Operaciones/(11368:11395): Vamos a inicializar un carpincho
+[INFO] 18:19:19:571 Operaciones/(11368:11395): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:19:19:572 Memoria/(11368:11371): Recibimos la informacion de Memoria
+[INFO] 18:19:19:573 Memoria/(11368:11371): El codigo de operacion es: 0
+[INFO] 18:19:19:573 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:19:573 Operaciones/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:19:573 Operaciones/(11368:11375): Vamos a realizar un Mem Alloc
+[INFO] 18:19:19:576 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:19:576 Memoria/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:19:576 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:19:577 Operaciones/(11368:11397): Recibimos la informacion de un carpincho
+[INFO] 18:19:19:577 Operaciones/(11368:11397): El codigo de operacion es: 0
+[INFO] 18:19:19:577 Operaciones/(11368:11397): Vamos a inicializar un carpincho
+[INFO] 18:19:19:577 Operaciones/(11368:11397): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:19:19:578 Memoria/(11368:11371): Recibimos la informacion de Memoria
+[INFO] 18:19:19:578 Memoria/(11368:11371): El codigo de operacion es: 0
+[INFO] 18:19:19:580 Operaciones/(11368:11376): Recibimos la informacion de un carpincho
+[INFO] 18:19:19:580 Operaciones/(11368:11376): El codigo de operacion es: 7
+[INFO] 18:19:19:580 Operaciones/(11368:11376): Vamos a realizar un Mem Alloc
+[INFO] 18:19:19:586 Memoria/(11368:11376): Recibimos la informacion de Memoria
+[INFO] 18:19:19:587 Memoria/(11368:11376): El codigo de operacion es: 7
+[INFO] 18:19:19:588 Memoria/(11368:11376): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:19:588 Operaciones/(11368:11399): Recibimos la informacion de un carpincho
+[INFO] 18:19:19:588 Operaciones/(11368:11399): El codigo de operacion es: 0
+[INFO] 18:19:19:588 Operaciones/(11368:11399): Vamos a inicializar un carpincho
+[INFO] 18:19:19:588 Operaciones/(11368:11399): Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize
+[INFO] 18:19:19:589 Memoria/(11368:11371): Recibimos la informacion de Memoria
+[INFO] 18:19:19:589 Memoria/(11368:11371): El codigo de operacion es: 0
+[INFO] 18:19:19:590 Operaciones/(11368:11377): Recibimos la informacion de un carpincho
+[INFO] 18:19:19:590 Operaciones/(11368:11377): El codigo de operacion es: 7
+[INFO] 18:19:19:590 Operaciones/(11368:11377): Vamos a realizar un Mem Alloc
+[INFO] 18:19:19:593 Memoria/(11368:11377): Recibimos la informacion de Memoria
+[INFO] 18:19:19:593 Memoria/(11368:11377): El codigo de operacion es: 7
+[INFO] 18:19:19:593 Memoria/(11368:11377): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:19:593 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:19:594 Operaciones/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:19:594 Operaciones/(11368:11375): Vamos a realizar un Mem Alloc
+[INFO] 18:19:19:906 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:19:906 Memoria/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:19:906 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:19:907 Operaciones/(11368:11376): Recibimos la informacion de un carpincho
+[INFO] 18:19:19:907 Operaciones/(11368:11376): El codigo de operacion es: 7
+[INFO] 18:19:19:907 Operaciones/(11368:11376): Vamos a realizar un Mem Alloc
+[INFO] 18:19:20:214 Memoria/(11368:11376): Recibimos la informacion de Memoria
+[INFO] 18:19:20:214 Memoria/(11368:11376): El codigo de operacion es: 7
+[INFO] 18:19:20:214 Memoria/(11368:11376): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:20:215 Operaciones/(11368:11377): Recibimos la informacion de un carpincho
+[INFO] 18:19:20:215 Operaciones/(11368:11377): El codigo de operacion es: 7
+[INFO] 18:19:20:215 Operaciones/(11368:11377): Vamos a realizar un Mem Alloc
+[INFO] 18:19:20:519 Memoria/(11368:11377): Recibimos la informacion de Memoria
+[INFO] 18:19:20:520 Memoria/(11368:11377): El codigo de operacion es: 7
+[INFO] 18:19:20:520 Memoria/(11368:11377): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:20:521 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:20:521 Operaciones/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:20:521 Operaciones/(11368:11375): Vamos a realizar un Mem Alloc
+[INFO] 18:19:20:926 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:20:926 Memoria/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:20:926 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:20:926 Operaciones/(11368:11376): Recibimos la informacion de un carpincho
+[INFO] 18:19:20:926 Operaciones/(11368:11376): El codigo de operacion es: 7
+[INFO] 18:19:20:926 Operaciones/(11368:11376): Vamos a realizar un Mem Alloc
+[INFO] 18:19:21:335 Memoria/(11368:11376): Recibimos la informacion de Memoria
+[INFO] 18:19:21:335 Memoria/(11368:11376): El codigo de operacion es: 7
+[INFO] 18:19:21:335 Memoria/(11368:11376): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:21:336 Operaciones/(11368:11377): Recibimos la informacion de un carpincho
+[INFO] 18:19:21:336 Operaciones/(11368:11377): El codigo de operacion es: 7
+[INFO] 18:19:21:336 Operaciones/(11368:11377): Vamos a realizar un Mem Alloc
+[INFO] 18:19:21:745 Memoria/(11368:11377): Recibimos la informacion de Memoria
+[INFO] 18:19:21:745 Memoria/(11368:11377): El codigo de operacion es: 7
+[INFO] 18:19:21:745 Memoria/(11368:11377): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:21:746 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:21:746 Operaciones/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:21:746 Operaciones/(11368:11375): Vamos a realizar un Mem Alloc
+[INFO] 18:19:22:347 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:22:347 Memoria/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:22:347 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:22:347 Operaciones/(11368:11376): Recibimos la informacion de un carpincho
+[INFO] 18:19:22:347 Operaciones/(11368:11376): El codigo de operacion es: 7
+[INFO] 18:19:22:347 Operaciones/(11368:11376): Vamos a realizar un Mem Alloc
+[INFO] 18:19:22:874 Memoria/(11368:11376): Recibimos la informacion de Memoria
+[INFO] 18:19:22:874 Memoria/(11368:11376): El codigo de operacion es: 7
+[INFO] 18:19:22:874 Memoria/(11368:11376): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:22:874 Operaciones/(11368:11377): Recibimos la informacion de un carpincho
+[INFO] 18:19:22:874 Operaciones/(11368:11377): El codigo de operacion es: 7
+[INFO] 18:19:22:874 Operaciones/(11368:11377): Vamos a realizar un Mem Alloc
+[INFO] 18:19:23:383 Memoria/(11368:11377): Recibimos la informacion de Memoria
+[INFO] 18:19:23:383 Memoria/(11368:11377): El codigo de operacion es: 7
+[INFO] 18:19:23:383 Memoria/(11368:11377): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:23:383 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:23:383 Operaciones/(11368:11375): El codigo de operacion es: 10
+[INFO] 18:19:23:383 Operaciones/(11368:11375): Vamos a realizar un Mem Write
+[INFO] 18:19:23:484 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:23:484 Memoria/(11368:11375): El codigo de operacion es: 10
+[INFO] 18:19:23:484 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:19:23:484 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:23:484 Operaciones/(11368:11375): El codigo de operacion es: 10
+[INFO] 18:19:23:484 Operaciones/(11368:11375): Vamos a realizar un Mem Write
+[INFO] 18:19:23:584 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:23:585 Memoria/(11368:11375): El codigo de operacion es: 10
+[INFO] 18:19:23:585 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:19:23:585 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:23:585 Operaciones/(11368:11375): El codigo de operacion es: 10
+[INFO] 18:19:23:585 Operaciones/(11368:11375): Vamos a realizar un Mem Write
+[INFO] 18:19:23:685 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:23:685 Memoria/(11368:11375): El codigo de operacion es: 10
+[INFO] 18:19:23:685 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:19:23:686 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:23:686 Operaciones/(11368:11375): El codigo de operacion es: 10
+[INFO] 18:19:23:686 Operaciones/(11368:11375): Vamos a realizar un Mem Write
+[INFO] 18:19:23:789 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:23:789 Memoria/(11368:11375): El codigo de operacion es: 10
+[INFO] 18:19:23:789 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:19:23:790 Operaciones/(11368:11376): Recibimos la informacion de un carpincho
+[INFO] 18:19:23:790 Operaciones/(11368:11376): El codigo de operacion es: 10
+[INFO] 18:19:23:790 Operaciones/(11368:11376): Vamos a realizar un Mem Write
+[INFO] 18:19:23:892 Memoria/(11368:11376): Recibimos la informacion de Memoria
+[INFO] 18:19:23:892 Memoria/(11368:11376): El codigo de operacion es: 10
+[INFO] 18:19:23:893 Memoria/(11368:11376): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:19:23:893 Operaciones/(11368:11377): Recibimos la informacion de un carpincho
+[INFO] 18:19:23:893 Operaciones/(11368:11377): El codigo de operacion es: 10
+[INFO] 18:19:23:893 Operaciones/(11368:11377): Vamos a realizar un Mem Write
+[INFO] 18:19:23:995 Memoria/(11368:11377): Recibimos la informacion de Memoria
+[INFO] 18:19:23:995 Memoria/(11368:11377): El codigo de operacion es: 10
+[INFO] 18:19:23:995 Memoria/(11368:11377): Se pudo establecer la conexion con memoria y se realizo un Mem Write
+[INFO] 18:19:23:995 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:23:995 Operaciones/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:23:995 Operaciones/(11368:11375): Vamos a realizar un Mem Alloc
+[INFO] 18:19:24:614 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:24:614 Memoria/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:24:614 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:24:614 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:24:614 Operaciones/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:24:614 Operaciones/(11368:11375): Vamos a realizar un Mem Alloc
+[INFO] 18:19:27:345 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:27:345 Memoria/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:27:345 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:27:346 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:27:346 Operaciones/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:27:346 Operaciones/(11368:11375): Vamos a realizar un Mem Alloc
+[INFO] 18:19:30:576 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:30:576 Memoria/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:30:576 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:30:577 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:30:577 Operaciones/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:30:577 Operaciones/(11368:11375): Vamos a realizar un Mem Alloc
+[INFO] 18:19:34:334 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:34:334 Memoria/(11368:11375): El codigo de operacion es: 7
+[INFO] 18:19:34:334 Memoria/(11368:11375): Se pudo establecer la conexion con memoria y se realizo un Mem Alloc
+[INFO] 18:19:34:335 Operaciones/(11368:11375): Recibimos la informacion de un carpincho
+[INFO] 18:19:34:335 Operaciones/(11368:11375): El codigo de operacion es: 1
+[INFO] 18:19:34:335 Operaciones/(11368:11375): Vamos a eliminar un carpincho
+[INFO] 18:19:34:335 Operaciones/(11368:11375): Sacamos al carpincho de ejecucion. Pid: 1
+[INFO] 18:19:34:335 Operaciones/(11368:11376): Recibimos la informacion de un carpincho
+[INFO] 18:19:34:335 Operaciones/(11368:11377): Recibimos la informacion de un carpincho
+[INFO] 18:19:34:335 Operaciones/(11368:11376): El codigo de operacion es: 1
+[INFO] 18:19:34:335 Operaciones/(11368:11376): Vamos a eliminar un carpincho
+[INFO] 18:19:34:335 Operaciones/(11368:11377): El codigo de operacion es: 1
+[INFO] 18:19:34:335 Operaciones/(11368:11376): Sacamos al carpincho de ejecucion. Pid: 2
+[INFO] 18:19:34:335 Operaciones/(11368:11377): Vamos a eliminar un carpincho
+[INFO] 18:19:34:335 Operaciones/(11368:11377): Sacamos al carpincho de ejecucion. Pid: 3
+[INFO] 18:19:34:335 Memoria/(11368:11375): Recibimos la informacion de Memoria
+[INFO] 18:19:34:335 Memoria/(11368:11376): Recibimos la informacion de Memoria
+[INFO] 18:19:34:335 Memoria/(11368:11375): El codigo de operacion es: 1
+[INFO] 18:19:34:335 Memoria/(11368:11375): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 18:19:34:335 Memoria/(11368:11376): El codigo de operacion es: 1
+[INFO] 18:19:34:335 Operaciones/(11368:11375): Le notificamos a memoria para que libere la memoria del carpincho: 1
+[INFO] 18:19:34:336 Memoria/(11368:11376): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 18:19:34:336 Operaciones/(11368:11375): Enviamos que queremos cerrar el carpincho
+[INFO] 18:19:34:336 Operaciones/(11368:11376): Le notificamos a memoria para que libere la memoria del carpincho: 2
+[INFO] 18:19:34:336 Operaciones/(11368:11376): Enviamos que queremos cerrar el carpincho
+[INFO] 18:19:34:336 Memoria/(11368:11377): Recibimos la informacion de Memoria
+[INFO] 18:19:34:336 Memoria/(11368:11377): El codigo de operacion es: 1
+[INFO] 18:19:34:336 Memoria/(11368:11377): Se pudo realizar toda la finalizacion en Memoria y SWAmP
+[INFO] 18:19:34:336 Operaciones/(11368:11377): Le notificamos a memoria para que libere la memoria del carpincho: 3
+[INFO] 18:19:34:336 Operaciones/(11368:11377): Enviamos que queremos cerrar el carpincho

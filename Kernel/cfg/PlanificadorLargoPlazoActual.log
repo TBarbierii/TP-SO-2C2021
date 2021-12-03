@@ -65,3 +65,24 @@
 [INFO] 16:03:06:767 PlanificadorLargoPlazo/(13294:13297): Un nuevo carpincho se une a la cola de ready
 [INFO] 16:03:06:985 PlanificadorLargoPlazo/(13294:13303): Se nos va el carpincho: 2
 [INFO] 16:03:07:88 PlanificadorLargoPlazo/(13294:13303): Se nos va el carpincho: 1
+[DEBUG] 18:15:27:665 PlanificadorLargoPlazo/(11146:11149): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[DEBUG] 18:17:59:980 PlanificadorLargoPlazo/(11287:11290): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 18:18:09:944 PlanificadorLargoPlazo/(11287:11290): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 18:18:09:978 PlanificadorLargoPlazo/(11287:11290): Un nuevo carpincho se une a la cola de ready
+[INFO] 18:18:10:25 PlanificadorLargoPlazo/(11287:11290): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 18:18:10:32 PlanificadorLargoPlazo/(11287:11290): Un nuevo carpincho se une a la cola de ready
+[INFO] 18:18:10:44 PlanificadorLargoPlazo/(11287:11290): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 18:18:10:46 PlanificadorLargoPlazo/(11287:11290): Un nuevo carpincho se une a la cola de ready
+[INFO] 18:18:24:906 PlanificadorLargoPlazo/(11287:11296): Se nos va el carpincho: 2
+[INFO] 18:18:24:907 PlanificadorLargoPlazo/(11287:11297): Se nos va el carpincho: 3
+[INFO] 18:18:24:932 PlanificadorLargoPlazo/(11287:11294): Se nos va el carpincho: 1
+[DEBUG] 18:19:10:445 PlanificadorLargoPlazo/(11368:11371): Se inicializa la planificacion de largo plazo con algoritmo FIFO
+[INFO] 18:19:19:572 PlanificadorLargoPlazo/(11368:11371): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 18:19:19:573 PlanificadorLargoPlazo/(11368:11371): Un nuevo carpincho se une a la cola de ready
+[INFO] 18:19:19:578 PlanificadorLargoPlazo/(11368:11371): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 18:19:19:578 PlanificadorLargoPlazo/(11368:11371): Un nuevo carpincho se une a la cola de ready
+[INFO] 18:19:19:589 PlanificadorLargoPlazo/(11368:11371): Se esta sacando un carpincho de la cola de new, que lo vamos a poner en ready y inicializar en memoria
+[INFO] 18:19:19:589 PlanificadorLargoPlazo/(11368:11371): Un nuevo carpincho se une a la cola de ready
+[INFO] 18:19:34:336 PlanificadorLargoPlazo/(11368:11375): Se nos va el carpincho: 1
+[INFO] 18:19:34:336 PlanificadorLargoPlazo/(11368:11376): Se nos va el carpincho: 2
+[INFO] 18:19:34:336 PlanificadorLargoPlazo/(11368:11377): Se nos va el carpincho: 3

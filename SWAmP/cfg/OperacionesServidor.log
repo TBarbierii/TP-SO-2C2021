@@ -1,0 +1,858 @@
+[INFO] 18:15:21:767 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:15:21:767 OperacionesServidor/(11123:11123): El codigo de operacion es: 13
+[INFO] 18:15:21:768 OperacionesServidor/(11123:11123): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:16:37:395 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:395 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:37:396 OperacionesServidor/(11123:11123): El proceso: 1 pide verificar si hay espacio para 2
+[INFO] 18:16:37:396 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 1: 10
+[INFO] 18:16:37:400 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:400 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:37:401 OperacionesServidor/(11123:11123): Se guarda la pagina: 0 del proceso: 1
+[INFO] 18:16:37:401 OperacionesServidor/(11123:11123): El archivo que vamos a utilizar tiene 100 cantidad de frames libres
+[INFO] 18:16:37:401 OperacionesServidor/(11123:11123): Todo bien se realizo con la asignacion Fija
+[INFO] 18:16:37:401 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:37:401 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 0
+[INFO] 18:16:37:401 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:37:401 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:401 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:37:402 OperacionesServidor/(11123:11123): Se guarda la pagina: 1 del proceso: 1
+[INFO] 18:16:37:402 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:37:402 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 1
+[INFO] 18:16:37:402 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:37:429 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:429 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:37:430 OperacionesServidor/(11123:11123): El proceso: 2 pide verificar si hay espacio para 2
+[INFO] 18:16:37:430 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 2: 10
+[INFO] 18:16:37:431 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:431 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:37:431 OperacionesServidor/(11123:11123): Se guarda la pagina: 0 del proceso: 2
+[INFO] 18:16:37:431 OperacionesServidor/(11123:11123): El archivo que vamos a utilizar tiene 90 cantidad de frames libres
+[INFO] 18:16:37:431 OperacionesServidor/(11123:11123): Todo bien se realizo con la asignacion Fija
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 10
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): Se guarda la pagina: 1 del proceso: 2
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 11
+[INFO] 18:16:37:432 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:37:440 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:441 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:37:441 OperacionesServidor/(11123:11123): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 18:16:37:441 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 18:16:37:442 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:442 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:37:443 OperacionesServidor/(11123:11123): Se guarda la pagina: 0 del proceso: 3
+[INFO] 18:16:37:443 OperacionesServidor/(11123:11123): El archivo que vamos a utilizar tiene 80 cantidad de frames libres
+[INFO] 18:16:37:443 OperacionesServidor/(11123:11123): Todo bien se realizo con la asignacion Fija
+[INFO] 18:16:37:443 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:37:443 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 20
+[INFO] 18:16:37:443 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:37:443 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:443 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:37:444 OperacionesServidor/(11123:11123): Se guarda la pagina: 1 del proceso: 3
+[INFO] 18:16:37:444 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:37:444 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 21
+[INFO] 18:16:37:444 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:37:660 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:660 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:37:661 OperacionesServidor/(11123:11123): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:16:37:661 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 1: 8
+[INFO] 18:16:37:792 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:37:792 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:37:794 OperacionesServidor/(11123:11123): Se guarda la pagina: 2 del proceso: 1
+[INFO] 18:16:37:794 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:37:794 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 2
+[INFO] 18:16:37:795 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:38:5 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:38:5 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:38:5 OperacionesServidor/(11123:11123): El proceso: 2 pide verificar si hay espacio para 1
+[INFO] 18:16:38:5 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 2: 8
+[INFO] 18:16:38:106 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:38:106 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:38:107 OperacionesServidor/(11123:11123): Se guarda la pagina: 2 del proceso: 2
+[INFO] 18:16:38:107 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:38:107 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 12
+[INFO] 18:16:38:107 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:38:313 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:38:313 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:38:315 OperacionesServidor/(11123:11123): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 18:16:38:315 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 3: 8
+[INFO] 18:16:38:418 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:38:418 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:38:419 OperacionesServidor/(11123:11123): Se guarda la pagina: 2 del proceso: 3
+[INFO] 18:16:38:419 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:38:419 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 22
+[INFO] 18:16:38:420 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:38:730 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:38:730 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:38:740 OperacionesServidor/(11123:11123): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:16:38:740 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 1: 7
+[INFO] 18:16:38:842 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:38:842 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:38:843 OperacionesServidor/(11123:11123): Se guarda la pagina: 3 del proceso: 1
+[INFO] 18:16:38:843 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:38:843 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 3
+[INFO] 18:16:38:843 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:39:161 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:39:161 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:39:163 OperacionesServidor/(11123:11123): El proceso: 2 pide verificar si hay espacio para 1
+[INFO] 18:16:39:164 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 2: 7
+[INFO] 18:16:39:265 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:39:265 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:39:266 OperacionesServidor/(11123:11123): Se guarda la pagina: 3 del proceso: 2
+[INFO] 18:16:39:266 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:39:266 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 13
+[INFO] 18:16:39:266 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:39:574 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:39:574 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:39:575 OperacionesServidor/(11123:11123): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 18:16:39:575 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 3: 7
+[INFO] 18:16:39:680 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:39:680 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:39:680 OperacionesServidor/(11123:11123): Se guarda la pagina: 3 del proceso: 3
+[INFO] 18:16:39:681 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:39:681 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 23
+[INFO] 18:16:39:681 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:40:88 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:40:88 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:40:89 OperacionesServidor/(11123:11123): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 18:16:40:89 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 1: 6
+[INFO] 18:16:40:609 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:40:609 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:40:615 OperacionesServidor/(11123:11123): El proceso: 2 pide verificar si hay espacio para 0
+[INFO] 18:16:40:615 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 2: 6
+[INFO] 18:16:41:129 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:41:129 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:41:131 OperacionesServidor/(11123:11123): El proceso: 3 pide verificar si hay espacio para 0
+[INFO] 18:16:41:131 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 3: 6
+[INFO] 18:16:42:365 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:42:365 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:42:367 OperacionesServidor/(11123:11123): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:16:42:367 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 1: 6
+[INFO] 18:16:42:468 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:42:468 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:42:469 OperacionesServidor/(11123:11123): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:16:42:469 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:42:469 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 4
+[INFO] 18:16:42:469 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:42:476 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:42:476 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:42:477 OperacionesServidor/(11123:11123): Se guarda la pagina: 0 del proceso: 1
+[INFO] 18:16:42:477 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:42:477 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 0
+[INFO] 18:16:42:477 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:42:984 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:42:984 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:42:985 OperacionesServidor/(11123:11123): Se guarda la pagina: 1 del proceso: 1
+[INFO] 18:16:42:985 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:42:985 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 1
+[INFO] 18:16:42:985 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:42:986 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:42:986 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:42:987 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:16:43:492 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:43:492 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:43:493 OperacionesServidor/(11123:11123): Se guarda la pagina: 2 del proceso: 1
+[INFO] 18:16:43:493 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:43:493 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 2
+[INFO] 18:16:43:493 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:43:493 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:43:493 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:43:494 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:16:43:998 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:43:998 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:43:999 OperacionesServidor/(11123:11123): Se guarda la pagina: 3 del proceso: 1
+[INFO] 18:16:43:999 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:43:999 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 3
+[INFO] 18:16:43:999 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:43:0 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:43:0 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:43:0 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:16:44:510 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:44:510 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:44:511 OperacionesServidor/(11123:11123): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:16:44:511 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:44:511 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 4
+[INFO] 18:16:44:511 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:44:511 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:44:511 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:44:515 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:16:45:127 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:45:127 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:45:128 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:16:45:130 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:45:130 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:45:131 OperacionesServidor/(11123:11123): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:16:45:131 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 1: 5
+[INFO] 18:16:45:238 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:45:238 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:45:240 OperacionesServidor/(11123:11123): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:16:45:240 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:45:240 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 5
+[INFO] 18:16:45:240 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:45:744 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:45:744 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:45:747 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:16:46:251 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:46:251 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:46:254 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:16:46:757 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:46:757 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:46:758 OperacionesServidor/(11123:11123): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:16:46:758 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:46:758 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 4
+[INFO] 18:16:46:758 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:46:758 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:46:759 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:46:759 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:16:47:269 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:47:269 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:47:270 OperacionesServidor/(11123:11123): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:16:47:270 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:47:270 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 5
+[INFO] 18:16:47:270 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:47:270 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:47:270 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:47:272 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:16:47:879 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:47:879 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:47:880 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:16:48:384 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:48:384 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:48:385 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 5
+[INFO] 18:16:48:387 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:48:387 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:48:388 OperacionesServidor/(11123:11123): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:16:48:388 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 1: 4
+[INFO] 18:16:48:489 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:48:489 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:48:490 OperacionesServidor/(11123:11123): Se guarda la pagina: 6 del proceso: 1
+[INFO] 18:16:48:490 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:48:490 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 6
+[INFO] 18:16:48:491 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:48:995 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:48:995 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:48:996 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:16:49:500 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:49:500 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:49:501 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:16:50:6 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:50:6 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:50:7 OperacionesServidor/(11123:11123): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:16:50:7 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:50:7 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 5
+[INFO] 18:16:50:7 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:50:7 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:50:7 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:50:8 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:16:50:513 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:50:513 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:50:514 OperacionesServidor/(11123:11123): Se guarda la pagina: 6 del proceso: 1
+[INFO] 18:16:50:514 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:50:514 OperacionesServidor/(11123:11123): Se sobreescribe sobre la particion: 6
+[INFO] 18:16:50:515 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:50:515 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:50:515 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:50:516 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:16:51:132 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:51:132 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:51:133 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:16:51:656 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:51:656 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:51:658 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 5
+[INFO] 18:16:52:162 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:52:162 OperacionesServidor/(11123:11123): El codigo de operacion es: 12
+[INFO] 18:16:52:163 OperacionesServidor/(11123:11123): El proceso: 1, pide leer su pagina numero: 6
+[INFO] 18:16:52:164 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:52:164 OperacionesServidor/(11123:11123): El codigo de operacion es: 16
+[INFO] 18:16:52:165 OperacionesServidor/(11123:11123): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:16:52:165 OperacionesServidor/(11123:11123): Cantidad de frames disponibles para el proceso 1: 3
+[INFO] 18:16:52:270 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:52:270 OperacionesServidor/(11123:11123): El codigo de operacion es: 11
+[INFO] 18:16:52:271 OperacionesServidor/(11123:11123): Se guarda la pagina: 7 del proceso: 1
+[INFO] 18:16:52:271 OperacionesServidor/(11123:11123): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:16:52:271 OperacionesServidor/(11123:11123): Se escribe sobre la particion: 7
+[INFO] 18:16:52:271 OperacionesServidor/(11123:11123): Se guardo el contenido correctamente
+[INFO] 18:16:52:291 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:52:291 OperacionesServidor/(11123:11123): El codigo de operacion es: 18
+[INFO] 18:16:52:291 OperacionesServidor/(11123:11123): El proceso: 3, pide finalizar
+[INFO] 18:16:52:292 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:52:292 OperacionesServidor/(11123:11123): El codigo de operacion es: 18
+[INFO] 18:16:52:292 OperacionesServidor/(11123:11123): El proceso: 2, pide finalizar
+[INFO] 18:16:52:294 OperacionesServidor/(11123:11123): Recibimos la informacion de la RAM
+[INFO] 18:16:52:294 OperacionesServidor/(11123:11123): El codigo de operacion es: 18
+[INFO] 18:16:52:295 OperacionesServidor/(11123:11123): El proceso: 1, pide finalizar
+[INFO] 18:17:56:838 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:17:56:839 OperacionesServidor/(11260:11260): El codigo de operacion es: 13
+[INFO] 18:17:56:840 OperacionesServidor/(11260:11260): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:18:09:992 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:09:992 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:09:994 OperacionesServidor/(11260:11260): El proceso: 1 pide verificar si hay espacio para 2
+[INFO] 18:18:09:994 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 1: 10
+[INFO] 18:18:09:1 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:09:1 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:09:2 OperacionesServidor/(11260:11260): Se guarda la pagina: 0 del proceso: 1
+[INFO] 18:18:09:2 OperacionesServidor/(11260:11260): El archivo que vamos a utilizar tiene 100 cantidad de frames libres
+[INFO] 18:18:09:2 OperacionesServidor/(11260:11260): Todo bien se realizo con la asignacion Fija
+[INFO] 18:18:09:2 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:09:2 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 0
+[INFO] 18:18:09:2 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:09:2 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:09:2 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:10:3 OperacionesServidor/(11260:11260): Se guarda la pagina: 1 del proceso: 1
+[INFO] 18:18:10:3 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:10:3 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 1
+[INFO] 18:18:10:3 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:10:36 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:36 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:10:37 OperacionesServidor/(11260:11260): El proceso: 2 pide verificar si hay espacio para 2
+[INFO] 18:18:10:37 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 2: 10
+[INFO] 18:18:10:38 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:38 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:10:39 OperacionesServidor/(11260:11260): Se guarda la pagina: 0 del proceso: 2
+[INFO] 18:18:10:39 OperacionesServidor/(11260:11260): El archivo que vamos a utilizar tiene 90 cantidad de frames libres
+[INFO] 18:18:10:39 OperacionesServidor/(11260:11260): Todo bien se realizo con la asignacion Fija
+[INFO] 18:18:10:39 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:10:39 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 10
+[INFO] 18:18:10:39 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:10:39 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:39 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:10:40 OperacionesServidor/(11260:11260): Se guarda la pagina: 1 del proceso: 2
+[INFO] 18:18:10:40 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:10:40 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 11
+[INFO] 18:18:10:40 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:10:49 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:49 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:10:50 OperacionesServidor/(11260:11260): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 18:18:10:50 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 18:18:10:51 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:51 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:10:51 OperacionesServidor/(11260:11260): Se guarda la pagina: 0 del proceso: 3
+[INFO] 18:18:10:51 OperacionesServidor/(11260:11260): El archivo que vamos a utilizar tiene 80 cantidad de frames libres
+[INFO] 18:18:10:52 OperacionesServidor/(11260:11260): Todo bien se realizo con la asignacion Fija
+[INFO] 18:18:10:52 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:10:52 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 20
+[INFO] 18:18:10:52 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:10:52 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:52 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:10:52 OperacionesServidor/(11260:11260): Se guarda la pagina: 1 del proceso: 3
+[INFO] 18:18:10:53 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:10:53 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 21
+[INFO] 18:18:10:53 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:10:286 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:286 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:10:287 OperacionesServidor/(11260:11260): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:18:10:287 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 1: 8
+[INFO] 18:18:10:397 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:397 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:10:398 OperacionesServidor/(11260:11260): Se guarda la pagina: 2 del proceso: 1
+[INFO] 18:18:10:398 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:10:398 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 2
+[INFO] 18:18:10:398 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:10:613 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:613 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:10:614 OperacionesServidor/(11260:11260): El proceso: 2 pide verificar si hay espacio para 1
+[INFO] 18:18:10:614 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 2: 8
+[INFO] 18:18:10:719 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:719 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:10:720 OperacionesServidor/(11260:11260): Se guarda la pagina: 2 del proceso: 2
+[INFO] 18:18:10:720 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:10:720 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 12
+[INFO] 18:18:10:720 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:10:928 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:10:928 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:10:929 OperacionesServidor/(11260:11260): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 18:18:10:929 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 3: 8
+[INFO] 18:18:11:30 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:11:30 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:11:31 OperacionesServidor/(11260:11260): Se guarda la pagina: 2 del proceso: 3
+[INFO] 18:18:11:32 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:11:32 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 22
+[INFO] 18:18:11:32 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:11:341 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:11:341 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:11:342 OperacionesServidor/(11260:11260): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:18:11:342 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 1: 7
+[INFO] 18:18:11:446 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:11:447 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:11:447 OperacionesServidor/(11260:11260): Se guarda la pagina: 3 del proceso: 1
+[INFO] 18:18:11:447 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:11:447 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 3
+[INFO] 18:18:11:448 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:11:752 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:11:752 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:11:753 OperacionesServidor/(11260:11260): El proceso: 2 pide verificar si hay espacio para 1
+[INFO] 18:18:11:753 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 2: 7
+[INFO] 18:18:11:855 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:11:855 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:11:855 OperacionesServidor/(11260:11260): Se guarda la pagina: 3 del proceso: 2
+[INFO] 18:18:11:856 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:11:856 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 13
+[INFO] 18:18:11:856 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:12:161 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:12:162 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:12:163 OperacionesServidor/(11260:11260): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 18:18:12:163 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 3: 7
+[INFO] 18:18:12:266 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:12:266 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:12:266 OperacionesServidor/(11260:11260): Se guarda la pagina: 3 del proceso: 3
+[INFO] 18:18:12:266 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:12:266 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 23
+[INFO] 18:18:12:266 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:12:677 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:12:678 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:12:679 OperacionesServidor/(11260:11260): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 18:18:12:679 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 1: 6
+[INFO] 18:18:13:191 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:13:191 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:13:192 OperacionesServidor/(11260:11260): El proceso: 2 pide verificar si hay espacio para 0
+[INFO] 18:18:13:193 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 2: 6
+[INFO] 18:18:13:706 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:13:706 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:13:707 OperacionesServidor/(11260:11260): El proceso: 3 pide verificar si hay espacio para 0
+[INFO] 18:18:13:707 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 3: 6
+[INFO] 18:18:14:986 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:14:986 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:14:987 OperacionesServidor/(11260:11260): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:18:14:987 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 1: 6
+[INFO] 18:18:15:107 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:15:107 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:15:108 OperacionesServidor/(11260:11260): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:18:15:108 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:15:108 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 4
+[INFO] 18:18:15:108 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:15:116 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:15:116 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:15:117 OperacionesServidor/(11260:11260): Se guarda la pagina: 0 del proceso: 1
+[INFO] 18:18:15:117 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:15:117 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 0
+[INFO] 18:18:15:117 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:15:630 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:15:630 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:15:631 OperacionesServidor/(11260:11260): Se guarda la pagina: 1 del proceso: 1
+[INFO] 18:18:15:631 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:15:631 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 1
+[INFO] 18:18:15:631 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:15:631 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:15:631 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:15:632 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:18:16:138 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:16:138 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:16:139 OperacionesServidor/(11260:11260): Se guarda la pagina: 2 del proceso: 1
+[INFO] 18:18:16:139 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:16:139 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 2
+[INFO] 18:18:16:139 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:16:139 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:16:139 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:16:141 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:18:16:650 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:16:650 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:16:651 OperacionesServidor/(11260:11260): Se guarda la pagina: 3 del proceso: 1
+[INFO] 18:18:16:651 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:16:651 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 3
+[INFO] 18:18:16:651 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:16:651 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:16:651 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:16:652 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:18:17:161 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:17:161 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:17:162 OperacionesServidor/(11260:11260): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:18:17:162 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:17:162 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 4
+[INFO] 18:18:17:162 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:17:163 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:17:163 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:17:164 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:18:17:770 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:17:770 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:17:771 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:18:17:773 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:17:773 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:17:774 OperacionesServidor/(11260:11260): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:18:17:774 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 1: 5
+[INFO] 18:18:17:882 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:17:882 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:17:883 OperacionesServidor/(11260:11260): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:18:17:883 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:17:883 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 5
+[INFO] 18:18:17:883 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:18:395 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:18:395 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:18:396 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:18:18:901 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:18:901 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:18:902 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:18:19:406 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:19:406 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:19:407 OperacionesServidor/(11260:11260): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:18:19:408 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:19:408 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 4
+[INFO] 18:18:19:408 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:19:408 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:19:408 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:19:409 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:18:19:915 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:19:915 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:19:917 OperacionesServidor/(11260:11260): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:18:19:917 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:19:917 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 5
+[INFO] 18:18:19:917 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:19:917 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:19:917 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:19:918 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:18:20:526 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:20:526 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:20:526 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:18:21:32 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:21:32 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:21:33 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 5
+[INFO] 18:18:21:35 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:21:35 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:21:36 OperacionesServidor/(11260:11260): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:18:21:36 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 1: 4
+[INFO] 18:18:21:138 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:21:138 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:21:139 OperacionesServidor/(11260:11260): Se guarda la pagina: 6 del proceso: 1
+[INFO] 18:18:21:139 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:21:139 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 6
+[INFO] 18:18:21:139 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:21:645 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:21:645 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:21:646 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:18:22:152 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:22:152 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:22:153 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:18:22:660 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:22:660 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:22:661 OperacionesServidor/(11260:11260): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:18:22:661 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:22:661 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 5
+[INFO] 18:18:22:662 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:22:662 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:22:662 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:22:662 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:18:23:166 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:23:166 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:23:167 OperacionesServidor/(11260:11260): Se guarda la pagina: 6 del proceso: 1
+[INFO] 18:18:23:167 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:23:167 OperacionesServidor/(11260:11260): Se sobreescribe sobre la particion: 6
+[INFO] 18:18:23:167 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:23:167 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:23:167 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:23:168 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:18:23:775 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:23:775 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:23:776 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:18:24:283 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:24:283 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:24:284 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 5
+[INFO] 18:18:24:788 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:24:788 OperacionesServidor/(11260:11260): El codigo de operacion es: 12
+[INFO] 18:18:24:789 OperacionesServidor/(11260:11260): El proceso: 1, pide leer su pagina numero: 6
+[INFO] 18:18:24:791 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:24:791 OperacionesServidor/(11260:11260): El codigo de operacion es: 16
+[INFO] 18:18:24:792 OperacionesServidor/(11260:11260): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:18:24:792 OperacionesServidor/(11260:11260): Cantidad de frames disponibles para el proceso 1: 3
+[INFO] 18:18:24:895 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:24:895 OperacionesServidor/(11260:11260): El codigo de operacion es: 11
+[INFO] 18:18:24:896 OperacionesServidor/(11260:11260): Se guarda la pagina: 7 del proceso: 1
+[INFO] 18:18:24:896 OperacionesServidor/(11260:11260): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:18:24:896 OperacionesServidor/(11260:11260): Se escribe sobre la particion: 7
+[INFO] 18:18:24:896 OperacionesServidor/(11260:11260): Se guardo el contenido correctamente
+[INFO] 18:18:24:910 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:24:910 OperacionesServidor/(11260:11260): El codigo de operacion es: 18
+[INFO] 18:18:24:911 OperacionesServidor/(11260:11260): El proceso: 2, pide finalizar
+[INFO] 18:18:24:912 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:24:912 OperacionesServidor/(11260:11260): El codigo de operacion es: 18
+[INFO] 18:18:24:913 OperacionesServidor/(11260:11260): El proceso: 3, pide finalizar
+[INFO] 18:18:24:933 OperacionesServidor/(11260:11260): Recibimos la informacion de la RAM
+[INFO] 18:18:24:933 OperacionesServidor/(11260:11260): El codigo de operacion es: 18
+[INFO] 18:18:24:934 OperacionesServidor/(11260:11260): El proceso: 1, pide finalizar
+[INFO] 18:19:07:532 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:07:532 OperacionesServidor/(11348:11348): El codigo de operacion es: 13
+[INFO] 18:19:07:533 OperacionesServidor/(11348:11348): Tipo de asignacion a utilizar: FIJA.
+[INFO] 18:19:19:574 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:574 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:19:575 OperacionesServidor/(11348:11348): El proceso: 1 pide verificar si hay espacio para 2
+[INFO] 18:19:19:575 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 1: 10
+[INFO] 18:19:19:576 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:576 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:19:577 OperacionesServidor/(11348:11348): Se guarda la pagina: 0 del proceso: 1
+[INFO] 18:19:19:577 OperacionesServidor/(11348:11348): El archivo que vamos a utilizar tiene 100 cantidad de frames libres
+[INFO] 18:19:19:577 OperacionesServidor/(11348:11348): Todo bien se realizo con la asignacion Fija
+[INFO] 18:19:19:577 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:19:577 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 0
+[INFO] 18:19:19:577 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:19:578 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:578 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:19:578 OperacionesServidor/(11348:11348): Se guarda la pagina: 1 del proceso: 1
+[INFO] 18:19:19:578 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:19:578 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 1
+[INFO] 18:19:19:578 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:19:581 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:581 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:19:582 OperacionesServidor/(11348:11348): El proceso: 2 pide verificar si hay espacio para 2
+[INFO] 18:19:19:582 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 2: 10
+[INFO] 18:19:19:582 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:582 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:19:584 OperacionesServidor/(11348:11348): Se guarda la pagina: 0 del proceso: 2
+[INFO] 18:19:19:585 OperacionesServidor/(11348:11348): El archivo que vamos a utilizar tiene 90 cantidad de frames libres
+[INFO] 18:19:19:585 OperacionesServidor/(11348:11348): Todo bien se realizo con la asignacion Fija
+[INFO] 18:19:19:585 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:19:585 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 10
+[INFO] 18:19:19:585 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:19:586 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:586 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:19:587 OperacionesServidor/(11348:11348): Se guarda la pagina: 1 del proceso: 2
+[INFO] 18:19:19:587 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:19:588 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 11
+[INFO] 18:19:19:588 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:19:591 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:591 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:19:592 OperacionesServidor/(11348:11348): El proceso: 3 pide verificar si hay espacio para 2
+[INFO] 18:19:19:592 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 3: 10
+[INFO] 18:19:19:592 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:592 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:19:593 OperacionesServidor/(11348:11348): Se guarda la pagina: 0 del proceso: 3
+[INFO] 18:19:19:593 OperacionesServidor/(11348:11348): El archivo que vamos a utilizar tiene 80 cantidad de frames libres
+[INFO] 18:19:19:593 OperacionesServidor/(11348:11348): Todo bien se realizo con la asignacion Fija
+[INFO] 18:19:19:593 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:19:593 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 20
+[INFO] 18:19:19:593 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:19:593 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:593 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:19:594 OperacionesServidor/(11348:11348): Se guarda la pagina: 1 del proceso: 3
+[INFO] 18:19:19:594 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:19:594 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 21
+[INFO] 18:19:19:594 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:19:796 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:796 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:19:800 OperacionesServidor/(11348:11348): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:19:19:800 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 1: 8
+[INFO] 18:19:19:906 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:19:906 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:19:907 OperacionesServidor/(11348:11348): Se guarda la pagina: 2 del proceso: 1
+[INFO] 18:19:19:907 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:19:907 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 2
+[INFO] 18:19:19:907 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:20:110 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:20:110 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:20:111 OperacionesServidor/(11348:11348): El proceso: 2 pide verificar si hay espacio para 1
+[INFO] 18:19:20:111 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 2: 8
+[INFO] 18:19:20:214 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:20:214 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:20:215 OperacionesServidor/(11348:11348): Se guarda la pagina: 2 del proceso: 2
+[INFO] 18:19:20:215 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:20:215 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 12
+[INFO] 18:19:20:215 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:20:416 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:20:416 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:20:417 OperacionesServidor/(11348:11348): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 18:19:20:418 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 3: 8
+[INFO] 18:19:20:520 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:20:520 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:20:521 OperacionesServidor/(11348:11348): Se guarda la pagina: 2 del proceso: 3
+[INFO] 18:19:20:521 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:20:521 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 22
+[INFO] 18:19:20:521 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:20:823 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:20:823 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:20:824 OperacionesServidor/(11348:11348): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:19:20:824 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 1: 7
+[INFO] 18:19:20:925 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:20:925 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:20:926 OperacionesServidor/(11348:11348): Se guarda la pagina: 3 del proceso: 1
+[INFO] 18:19:20:926 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:20:926 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 3
+[INFO] 18:19:20:926 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:21:232 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:21:232 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:21:233 OperacionesServidor/(11348:11348): El proceso: 2 pide verificar si hay espacio para 1
+[INFO] 18:19:21:233 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 2: 7
+[INFO] 18:19:21:335 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:21:335 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:21:336 OperacionesServidor/(11348:11348): Se guarda la pagina: 3 del proceso: 2
+[INFO] 18:19:21:336 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:21:336 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 13
+[INFO] 18:19:21:336 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:21:643 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:21:643 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:21:644 OperacionesServidor/(11348:11348): El proceso: 3 pide verificar si hay espacio para 1
+[INFO] 18:19:21:644 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 3: 7
+[INFO] 18:19:21:745 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:21:745 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:21:746 OperacionesServidor/(11348:11348): Se guarda la pagina: 3 del proceso: 3
+[INFO] 18:19:21:746 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:21:746 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 23
+[INFO] 18:19:21:746 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:22:244 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:22:244 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:22:245 OperacionesServidor/(11348:11348): El proceso: 1 pide verificar si hay espacio para 0
+[INFO] 18:19:22:245 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 1: 6
+[INFO] 18:19:22:771 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:22:772 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:22:773 OperacionesServidor/(11348:11348): El proceso: 2 pide verificar si hay espacio para 0
+[INFO] 18:19:22:773 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 2: 6
+[INFO] 18:19:23:281 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:23:281 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:23:282 OperacionesServidor/(11348:11348): El proceso: 3 pide verificar si hay espacio para 0
+[INFO] 18:19:23:282 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 3: 6
+[INFO] 18:19:24:506 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:24:506 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:24:507 OperacionesServidor/(11348:11348): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:19:24:507 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 1: 6
+[INFO] 18:19:24:611 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:24:612 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:24:613 OperacionesServidor/(11348:11348): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:19:24:613 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:24:613 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 4
+[INFO] 18:19:24:613 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:24:614 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:24:614 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:24:614 OperacionesServidor/(11348:11348): Se guarda la pagina: 0 del proceso: 1
+[INFO] 18:19:24:614 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:24:614 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 0
+[INFO] 18:19:24:614 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:25:116 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:25:116 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:25:117 OperacionesServidor/(11348:11348): Se guarda la pagina: 1 del proceso: 1
+[INFO] 18:19:25:117 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:25:117 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 1
+[INFO] 18:19:25:117 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:25:117 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:25:117 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:25:118 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:19:25:624 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:25:624 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:25:625 OperacionesServidor/(11348:11348): Se guarda la pagina: 2 del proceso: 1
+[INFO] 18:19:25:625 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:25:625 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 2
+[INFO] 18:19:25:625 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:25:625 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:25:625 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:25:627 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:19:26:128 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:26:128 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:26:129 OperacionesServidor/(11348:11348): Se guarda la pagina: 3 del proceso: 1
+[INFO] 18:19:26:129 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:26:129 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 3
+[INFO] 18:19:26:129 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:26:129 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:26:129 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:26:130 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:19:26:631 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:26:631 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:26:632 OperacionesServidor/(11348:11348): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:19:26:633 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:26:633 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 4
+[INFO] 18:19:26:633 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:26:633 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:26:633 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:26:634 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:19:27:241 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:27:241 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:27:242 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:19:27:242 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:27:242 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:27:244 OperacionesServidor/(11348:11348): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:19:27:244 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 1: 5
+[INFO] 18:19:27:345 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:27:345 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:27:346 OperacionesServidor/(11348:11348): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:19:27:346 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:27:346 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 5
+[INFO] 18:19:27:346 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:27:848 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:27:848 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:27:850 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:19:28:355 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:28:355 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:28:355 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:19:28:857 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:28:857 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:28:858 OperacionesServidor/(11348:11348): Se guarda la pagina: 4 del proceso: 1
+[INFO] 18:19:28:858 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:28:858 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 4
+[INFO] 18:19:28:858 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:28:858 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:28:858 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:28:859 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:19:29:360 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:29:360 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:29:361 OperacionesServidor/(11348:11348): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:19:29:362 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:29:362 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 5
+[INFO] 18:19:29:362 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:29:362 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:29:362 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:29:363 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:19:29:968 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:29:968 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:29:970 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:19:30:472 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:30:472 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:30:473 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 5
+[INFO] 18:19:30:474 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:30:474 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:30:475 OperacionesServidor/(11348:11348): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:19:30:475 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 1: 4
+[INFO] 18:19:30:576 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:30:576 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:30:577 OperacionesServidor/(11348:11348): Se guarda la pagina: 6 del proceso: 1
+[INFO] 18:19:30:577 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:30:577 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 6
+[INFO] 18:19:30:577 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:31:79 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:31:79 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:31:80 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 0
+[INFO] 18:19:31:583 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:31:583 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:31:584 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 1
+[INFO] 18:19:32:85 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:32:85 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:32:85 OperacionesServidor/(11348:11348): Se guarda la pagina: 5 del proceso: 1
+[INFO] 18:19:32:85 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:32:85 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 5
+[INFO] 18:19:32:86 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:32:86 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:32:86 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:32:87 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 2
+[INFO] 18:19:32:591 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:32:591 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:32:592 OperacionesServidor/(11348:11348): Se guarda la pagina: 6 del proceso: 1
+[INFO] 18:19:32:592 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:32:593 OperacionesServidor/(11348:11348): Se sobreescribe sobre la particion: 6
+[INFO] 18:19:32:593 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:32:593 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:32:593 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:32:596 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 3
+[INFO] 18:19:33:219 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:33:219 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:33:222 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 4
+[INFO] 18:19:33:723 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:33:723 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:33:724 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 5
+[INFO] 18:19:34:226 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:34:226 OperacionesServidor/(11348:11348): El codigo de operacion es: 12
+[INFO] 18:19:34:227 OperacionesServidor/(11348:11348): El proceso: 1, pide leer su pagina numero: 6
+[INFO] 18:19:34:228 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:34:228 OperacionesServidor/(11348:11348): El codigo de operacion es: 16
+[INFO] 18:19:34:230 OperacionesServidor/(11348:11348): El proceso: 1 pide verificar si hay espacio para 1
+[INFO] 18:19:34:230 OperacionesServidor/(11348:11348): Cantidad de frames disponibles para el proceso 1: 3
+[INFO] 18:19:34:333 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:34:333 OperacionesServidor/(11348:11348): El codigo de operacion es: 11
+[INFO] 18:19:34:334 OperacionesServidor/(11348:11348): Se guarda la pagina: 7 del proceso: 1
+[INFO] 18:19:34:334 OperacionesServidor/(11348:11348): Se guardo el contenido en el archivo: /home/utnso/swap1.bin
+[INFO] 18:19:34:334 OperacionesServidor/(11348:11348): Se escribe sobre la particion: 7
+[INFO] 18:19:34:335 OperacionesServidor/(11348:11348): Se guardo el contenido correctamente
+[INFO] 18:19:34:335 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:34:335 OperacionesServidor/(11348:11348): El codigo de operacion es: 18
+[INFO] 18:19:34:337 OperacionesServidor/(11348:11348): El proceso: 1, pide finalizar
+[INFO] 18:19:34:337 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:34:337 OperacionesServidor/(11348:11348): El codigo de operacion es: 18
+[INFO] 18:19:34:338 OperacionesServidor/(11348:11348): El proceso: 2, pide finalizar
+[INFO] 18:19:34:338 OperacionesServidor/(11348:11348): Recibimos la informacion de la RAM
+[INFO] 18:19:34:338 OperacionesServidor/(11348:11348): El codigo de operacion es: 18
+[INFO] 18:19:34:339 OperacionesServidor/(11348:11348): El proceso: 3, pide finalizar
