@@ -40,12 +40,6 @@ void inicializarSemaforosGlobales(){
     modificarSuspendedBlocked = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(modificarSuspendedBlocked,NULL);
 
-
-    nivelMultiProgramacionBajaPrioridad = malloc(sizeof(pthread_mutex_t));
-    pthread_mutex_init(nivelMultiProgramacionBajaPrioridad,NULL);
-
-    pthread_mutex_lock(nivelMultiProgramacionBajaPrioridad);
-
     
     controladorSemaforos = malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(controladorSemaforos,NULL);
@@ -55,6 +49,9 @@ void inicializarSemaforosGlobales(){
     
 
     /* semaforos */
+
+    nivelMultiProgramacionBajaPrioridad = malloc(sizeof(sem_t));
+    sem_init(nivelMultiProgramacionBajaPrioridad,1,0);
 
     procesosDisponiblesParaEjecutar = malloc(sizeof(sem_t));
     sem_init(procesosDisponiblesParaEjecutar,1,0);
@@ -98,14 +95,14 @@ void finalizarSemaforosGlobales(){
 
     pthread_mutex_destroy(contadorProcesos);
     free(contadorProcesos);
-    pthread_mutex_destroy(nivelMultiProgramacionBajaPrioridad);
-    free(nivelMultiProgramacionBajaPrioridad);
     pthread_mutex_destroy(controladorSemaforos);
     free(controladorSemaforos);
     pthread_mutex_destroy(controladorIO);
     free(controladorIO);
     
-
+    sem_destroy(nivelMultiProgramacionBajaPrioridad);
+    free(nivelMultiProgramacionBajaPrioridad);
+    
     sem_destroy(procesosDisponiblesParaEjecutar);
     free(procesosDisponiblesParaEjecutar);
     sem_destroy(hayProcesosNew);

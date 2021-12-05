@@ -25,7 +25,7 @@ int cantidadDeVecesQueProcesoPideASemaforo(proceso_kernel* procesoActual, semafo
 
 
 
-void ejecutarAlgoritmoDeadlock(){
+/* void ejecutarAlgoritmoDeadlock(){
     t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_INFO);
     while(1){
 
@@ -198,11 +198,184 @@ void ejecutarAlgoritmoDeadlock(){
 
     log_destroy(logger);
 
+} */
+
+bool procesoDeMayorPID(proceso_kernel* p1, proceso_kernel* p2){
+    return p1->pid > p2->pid;
+
 }
 
-int procesoConMayorPID(proceso_kernel* p1, proceso_kernel* p2){
-    return p1->pid > p2->pid;
+//procesoEnDeadlock(p1,p4) -> return 1; 
+
+
+bool procesoEnDeadlock(proceso_kernel* proceso, proceso_kernel* proceso_apuntado, t_list* procesosPasados){
+    
+    //esto por las dudas de que el processo original en realidad no este apuntando a nadie
+    if(proceso == NULL || proceso_apuntado == NULL){
+        return 0;
+    }else{
+
+        //primero veo si no me estoy metiendo en un bucle infinito,
+        for(int i= 0 ; i< list_size(procesosPasados); i++){
+            
+            //si el proceso_apuntado, esta en la lista de procesos que fueron pasando hasta ahora, entonces va a terminarse xq sino entraria en un bucle infinito
+            //suponete el proceso 6, 6->1->2->3->4->5->6->1->2->3. Al hacer la primer vuelta, despues cuando vuelva como el 1 estaria en la lista entra y retorna 0
+            proceso_kernel* proceso = list_get(procesosPasados, i);
+            if(proceso_apuntado->pid == proceso->pid){
+                return 0;
+            }
+        }
+        
+        //si no sale por el return 0, se agrega el proceso apuntado a la lista
+        list_add(procesosPasados, proceso_apuntado);
+
+        if(proceso_apuntado->procesoApuntadoDeadlock != NULL){
+            //if(p1 == p4->procesoApuntadoDeadlock(p1)) --> return 1
+            if(proceso->pid == proceso_apuntado->procesoApuntadoDeadlock->pid){
+                return 1;
+            }
+            
+        }
+        
+        int valorFinal= procesoEnDeadlock(proceso, proceso_apuntado->procesoApuntadoDeadlock, procesosPasados);
+
+        return valorFinal;
+    }
+
+    
 }
+
+
+void ejecutarAlgoritmoDeadlock(){
+    t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_DEBUG);
+    while(1){
+
+        usleep(tiempoDeadlock*1000);
+
+
+        pthread_mutex_lock(controladorSemaforos);
+        bloquearTodosLosSemaforos();
+        pthread_mutex_lock(modificarBlocked);
+        pthread_mutex_lock(modificarSuspendedBlocked);
+        pthread_mutex_lock(modificarExec);
+        pthread_mutex_lock(modificarReady);
+        pthread_mutex_lock(modificarSuspendedReady);
+        pthread_mutex_lock(modificarNew);
+
+        log_info(logger,"Se ejecuta algoritmo de deteccion y recuperacion de deadlock \n");
+
+        t_list* procesosEnDEADLOCK = list_create();
+
+        while(1){
+            
+            t_list* procesosAanalizar = procesosQueEstanReteniendoYEsperando(logger);
+            //una vez que tenemos los procesos, primero si vemos que hay 0 o 1 procesos, cancelamos el deadlcok
+            if(list_size(procesosAanalizar) <= 1){
+                log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra\n");
+                break;
+            }
+
+            //ahora tendriamos que por cada proceso, ver a quien apunta.
+            for(int i= 0 ; i< list_size(procesosAanalizar); i ++){
+                
+                proceso_kernel* procesoAnalizado = list_get(procesosAanalizar,i);
+                
+                //veiamos el semaforo que pide, que como va a ser 1, va a ser el primero de la lista
+                semaforo* semaforoApuntando = list_get(procesoAnalizado->listaRecursosSolicitados, 0); 
+                //esto porque consideramos que un proceso no va a poder estar pidiendo mas de 1 semaforo
+
+                //debemos buscar el proceso que tenga al semaforoApuntado entre sus semaforos retenidos
+                int proceso_apuntado(proceso_kernel * carp){
+
+                    int retorno = 0;
+
+                    for(int j=0; j< list_size(carp->listaRecursosRetenidos); j++){
+                        //vamos a ver semaforo por semaforo de los semaforos retenidos del carpincho,
+                        // y ver si entre ellos esta el semaforo que buscamos
+
+                        semaforo* sem = list_get(carp->listaRecursosRetenidos, j);
+                        if(sem->id == semaforoApuntando->id){
+                            // en caso de que este proceso tenga al semaforo, retorno que es verdadero
+                            return 1;
+                        }
+                    }
+                    return 0;
+                };
+
+                proceso_kernel* carpincho = list_find(procesosAanalizar, proceso_apuntado); 
+
+                /*
+                deadlock 1
+                1 -> 2
+
+                dealock 2
+
+                1 -> 2
+                
+                */
+
+                if(carpincho != NULL){
+                    procesoAnalizado->procesoApuntadoDeadlock = carpincho;
+                }else { //si no hay un proceso que retenga el semaforo que solicite el procesoAnalizado, deberia ser NULL el puntero
+                    procesoAnalizado->procesoApuntadoDeadlock = NULL;
+                }
+
+            }
+
+            //vamos a ver por cada proceso, si se encuentra o no en un ciclo,generando que cumpla todas las condiciones de deadlock
+            for(int k= 0 ; k< list_size(procesosAanalizar); k ++){
+                
+                t_list* listaDeProcesos = list_create();
+                proceso_kernel* process = list_get(procesosAanalizar, k);
+                int enDeadlock = procesoEnDeadlock(process, process->procesoApuntadoDeadlock, listaDeProcesos);
+                list_destroy(listaDeProcesos);
+
+                if(enDeadlock){
+                    log_warning(logger,"El proceso %d se encuentra en Dealock", process->pid);
+                    list_add(procesosEnDEADLOCK, process);
+                }
+            }
+
+            if(list_size(procesosEnDEADLOCK) >= 2){
+                //ordenamos y ponemos el de mayor pid en el comienzo
+                list_sort(procesosEnDEADLOCK, procesoDeMayorPID);
+                
+                //sacamos al proceso de mayor id, que esta al comienzo
+                proceso_kernel* procesoASacarPorDeadlock = list_remove(procesosEnDEADLOCK, 0);
+                log_info(logger,"El proceso que se sacara por el Deadlock es el :%d\n",procesoASacarPorDeadlock->pid);
+                desalojarSemaforosDeProceso(procesoASacarPorDeadlock);
+                finalizarProcesoPorDeadlock(procesoASacarPorDeadlock);
+                
+                //ESTO POR AHORA, DESPUES CUANDO HAGAMOS DE QUE SACAMOS AL PROCESO BIEN Y TODO
+                //break;
+            
+            }else { // no hay procesos en dealock
+                log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra");
+                break;
+            }
+
+            list_destroy(procesosAanalizar);
+            //despues de haber ejecutado todo lo de deadlock, vamos a quitar los elementos de la lista
+            list_clean(procesosEnDEADLOCK);
+            
+        }
+        
+        list_destroy(procesosEnDEADLOCK);
+
+        pthread_mutex_unlock(modificarNew);
+        pthread_mutex_unlock(modificarSuspendedReady);
+        pthread_mutex_unlock(modificarReady);
+        pthread_mutex_unlock(modificarExec);
+        pthread_mutex_unlock(modificarSuspendedBlocked);
+        pthread_mutex_unlock(modificarBlocked);
+        desbloquearTodosLosSemaforos();
+        pthread_mutex_unlock(controladorSemaforos);
+    } 
+
+    log_destroy(logger);
+
+} 
+
 
 int indiceDondeProcesoEstaEnLaLista(int pid, t_list* lista){
    int noEsta = -1;
@@ -263,7 +436,7 @@ int procesoReteniendo(proceso_kernel* proceso){
 t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
 
     t_list* listaFiltrada = list_create();
-    t_list* procesosQuePuedenEstarOcupandoRecursos = list_create();
+    //t_list* procesosQuePuedenEstarOcupandoRecursos = list_create();
     t_list* listaFiltradaFinal = list_create();
 
     //siempre vamos a considerar los que estan reteniendo, xq si no esta reteniendo no es causante del deadlock
@@ -275,36 +448,12 @@ t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
 
     if(!list_is_empty(listaFiltrada)){
         listaFiltradaFinal = list_filter(listaFiltrada, procesoReteniendoYEsperando);
-    }
+    } 
 
     int sizeBloqueados = list_size(listaFiltradaFinal);
-    log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d", sizeBloqueados);
-
-
-
-    //ahora filtramos los que puede ser que esten reteniendo y no pidiendo nada, ya que estos me van a liberar recursos
-    
-    list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosExec);
-    list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosReady);
-    list_add_all(procesosQuePuedenEstarOcupandoRecursos, procesosSuspendedReady);
-    
-    //int sizeNoBloqueados = list_size(procesosQuePuedenEstarOcupandoRecursos);
-    //log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que no se encuentran bloqueados son: %d", sizeNoBloqueados);
-
-    if(!list_is_empty(procesosQuePuedenEstarOcupandoRecursos)){
-        t_list* listaFiltradaFinal2 = list_filter(procesosQuePuedenEstarOcupandoRecursos, procesoReteniendo);
-
-        int sizeReteniendo = list_size(procesosQuePuedenEstarOcupandoRecursos);
-        log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que no se encuentran bloqueados, pero estan reteniendo son: %d", sizeReteniendo);
-        
-        if(!list_is_empty(listaFiltradaFinal2)){
-            list_add_all(listaFiltradaFinal, listaFiltradaFinal2);
-        }
-        list_destroy(listaFiltradaFinal2);
-    }
+    log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d\n", sizeBloqueados);
 
     list_destroy(listaFiltrada);
-    list_destroy(procesosQuePuedenEstarOcupandoRecursos);
 
     return listaFiltradaFinal;
 
@@ -336,6 +485,10 @@ void finalizarProcesoPorDeadlock(proceso_kernel* procesoASacarPorDeadlock){
     //el 0 que no se pudo realizar xq no existia el semaforo
     //el 2 que se pudo realizar aunque no se bloqueo
     //vamos a enviarle un codigo 3 de respuesta a la matelib, y la matelib va a cerrar todo debido a eso
+    t_log* logger =  log_create("cfg/ServidorActual.log","Servidor",1,LOG_LEVEL_DEBUG);
+    finalizarEnMemoria(procesoASacarPorDeadlock, logger);
+    log_destroy(logger);
+
     avisarWaitDeSemaforo(procesoASacarPorDeadlock->conexion, 3);
     //ya anteriormente lo liberamos de todos lados
 

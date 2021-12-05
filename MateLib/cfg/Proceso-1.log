@@ -1,3 +1,0 @@
-[INFO] 18:15:56:585 loggerContenidoProceso/(11172:11173): Se ha creado el carpincho -1, pero no se ha logrado conectar correctamente al backend
-[INFO] 18:15:56:585 loggerContenidoProceso/(11172:11173): Solicitamos realizar un memalloc de size:23
-[ERROR] 18:15:56:585 loggerContenidoProceso/(11172:11173): No se puede ejecutar esta accion porque no esta conectado al servidor

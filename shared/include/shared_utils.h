@@ -20,7 +20,10 @@ typedef enum tipo_bloqueo{
 }tipo_bloqueo;
 
 
-typedef struct proceso{
+
+
+
+typedef struct proceso_kernel{
     
     uint32_t pid ;
     int conexion; // es el socket del proceso
@@ -36,6 +39,8 @@ typedef struct proceso{
 	t_list* listaRecursosSolicitados;
 	
     struct timespec tiempoDeArriboColaReady; //esto nos va a servir cuando queremos calcular el tiempo que estuvo esperando un proceso en la cola de Ready, donde esta variable va a ser el inicio de cuando entro a ready
+
+    struct proceso_kernel* procesoApuntadoDeadlock;
 
 }proceso_kernel ;
 

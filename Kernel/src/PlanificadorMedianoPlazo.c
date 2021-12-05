@@ -61,7 +61,7 @@ void thread2_PMP(t_log* logger){
         pthread_mutex_unlock(modificarSuspendedReady);
             if(verdadero){
                 log_info(logger,"No hay procesos en Suspended Ready, agregamos uno de NEW en Ready");
-                pthread_mutex_unlock(nivelMultiProgramacionBajaPrioridad);
+                sem_post(nivelMultiProgramacionBajaPrioridad);
             }else{
                 log_info(logger,"Se busca un proceso de Suspended Ready y se pasa a Ready");
                 pthread_mutex_lock(modificarSuspendedReady);
