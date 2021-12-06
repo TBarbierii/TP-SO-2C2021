@@ -134,7 +134,7 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 	if(strcmp(algoritmoReemplazoMMU, "LRU") == 0){
 		
 		bool comparator(t_pagina* p1, t_pagina* p2){
-			return p1->ultimoUso < p2->ultimoUso;
+			return p1->ultimoUso <= p2->ultimoUso;
 		};
 
 		t_list* paginasOrdenadas = list_sorted(paginas_a_reemplazar, (void*)comparator);
@@ -339,6 +339,7 @@ uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida){
 	pthread_mutex_unlock(swap);
 	pthread_mutex_lock(tabla_paginas);
 	paginaPedida->marco = marcoLiberado;
+	paginaPedida->marco->proceso_asignado = carpincho->id_carpincho;
 	paginaPedida->marco->estaLibre = false;
 	paginaPedida->presente = true;
 	paginaPedida->ultimoUso = clock();

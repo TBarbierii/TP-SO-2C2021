@@ -98,8 +98,18 @@ swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger)
             }
         }
         return archivoConMasEspacio;
+    }else{
+        if(tipo_asignacion == 0){
+            int retorno = asignacion_dinamica(pid, archivo);
+            if(retorno == 1){
+                log_info(logger,"Todo bien se realizo con la asignacion Dinamica");
+            }else{
+                log_info(logger,"Fallo en la asignacion Dinamica");
+            }
+        }
+        return archivo;
     }
-    return archivo;
+    
 }
 
 
@@ -144,12 +154,14 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             free(contenidoParaLoggear);
 
             enviar_pagina(contenido_a_leer, conexion);
+        }else{
+            log_info(logger,"No se mando nada");
+            enviar_pagina(contenido_a_leer,conexion);
         }
 
         munmap(contenido_archivo, tamanio_swap);
         close(fd);
-         log_info(logger,"No se mando nada");
-        enviar_pagina(contenido_a_leer,conexion);
+
         free(contenido_a_leer);
     }
 }

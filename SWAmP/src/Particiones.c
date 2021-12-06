@@ -32,8 +32,10 @@ particion* primer_particion_libre(swap_files* archivo){
 particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PID){
 
     int particionDisponible(particion* particionActual){
-        if(particionActual->pid == PID && particionActual->hay_contenido == 0){
-            return 1;
+        if(particionActual->esta_libre == 0) {
+            if(particionActual->pid == PID && particionActual->hay_contenido == 0){
+                return 1;
+            }
         }
         return 0;
     } 

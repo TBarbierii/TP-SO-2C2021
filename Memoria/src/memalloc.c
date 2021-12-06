@@ -587,18 +587,6 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 	t_list* marcos_a_asignar = buscarMarcosLibres(carpincho);
 
-	/* if(list_size(marcos_a_asignar)<cantidadDePaginasACrear){//faltan marcos. hay que liberar los que faltan (mandar a swap)
-
-		int marcosFaltantes = cantidadDePaginasACrear - list_size(marcos_a_asignar);
-		pthread_mutex_lock(marcos_sem)
-		for(int i=0; i< marcosFaltantes; i++){
-			pthread_mutex_lock(swap);
-			reemplazarPagina(carpincho);
-			pthread_mutex_unlock(swap);
-		}//hace espacio para poner las paginas nuevas
-		list_destroy(marcos_a_asignar);
-		marcos_a_asignar = buscarMarcosLibres(carpincho);
-	}*/
 
 	if(cantidadDePaginasACrear == 1 && (*desplazamiento + TAMANIO_HEAP + tamanio) < tamanioPagina){ //actualiza el primer pedacito del heap cortado al final de la misma pagina
 
