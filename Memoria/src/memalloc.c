@@ -279,7 +279,7 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 		if (contador >= list_size(marcos_a_asignar)) {
 			pthread_mutex_lock(swap);
 			marco = reemplazarPagina(carpincho);
-			log_warning(loggerMarcos, "El proceso %i va a reemplazo el marco para escribirlo %i ", carpincho->id_carpincho, marco->id_marco);
+			log_warning(loggerMarcos, "El proceso %i va a reemplazar el marco %i para escribirlo  ", carpincho->id_carpincho, marco->id_marco);
 			pthread_mutex_unlock(swap);
 
 		} else {
@@ -628,12 +628,6 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	pthread_mutex_lock(tabla_paginas);
 	t_list* paginasNuevas = list_filter(carpincho->tabla_de_paginas, (void*)paginas_nuevas);
 
-
-	void ponerlasPresentes(t_pagina* pag){
-		pag->presente = true;
-	};
-
-	list_iterate(paginasNuevas, (void*)ponerlasPresentes);
 	pthread_mutex_unlock(tabla_paginas);
 
 	pthread_mutex_lock(marcos_sem);

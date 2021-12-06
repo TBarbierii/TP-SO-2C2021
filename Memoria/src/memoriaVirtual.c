@@ -114,7 +114,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		
 		pthread_mutex_lock(TLB_mutex);
 		bool quitarDeTLB(t_pagina* pag){
-			return victima->id_pagina == pag->id_pagina;
+			return victima->id_pagina == pag->id_pagina && victima->id_carpincho == pag->id_carpincho;
 		};
 		list_remove_by_condition(TLB, (void*)quitarDeTLB);// se quita directamente la pagina que se mando a swap.
 		pthread_mutex_unlock(TLB_mutex);
@@ -284,7 +284,6 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
 			if(!list_is_empty(paginasOrdenadas)) {
 				t_pagina* pag = list_remove(paginasOrdenadas,0);
-				pag->presente = false;
 
 				//SI le ponemos un list_remove, lo saca de la lista directamente y no es necesario hacer un remove_by_condition
 				//Si porque ahi lo esta sacando de la lista ordenada por el ultimo uso, y con ese id lo tiene que sacar de la TLB posta. list_sorted devuelve una nueva lista
@@ -294,9 +293,6 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 				};
 
 				list_remove_by_condition(TLB, (void*)buscarPag);
-				
-
-
 
 				log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
 
@@ -311,7 +307,6 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 		}else if(strcmp(algoritmoReemplazoTLB, "FIFO") == 0){
 
 			t_pagina* pag = list_remove(TLB,0);
-			pag->presente = false;
 			log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
 
 			list_add(TLB, pagina);
@@ -379,6 +374,8 @@ int32_t buscarEnTablaDePaginas(t_carpincho* carpincho, int32_t idPag){
 	if(pagina == NULL){
 		return -1;
 	}
+
+	algoritmo_reemplazo_TLB(pagina);
 
 	return pagina->marco->comienzo;
 

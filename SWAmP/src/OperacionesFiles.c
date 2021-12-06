@@ -21,6 +21,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
         if(particion_para_sobreescribir != NULL) {
             
             vaciar_particion(particion_para_sobreescribir, nombreArchivo);
+        
 
             log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
             log_info(logger,"Se sobreescribe sobre la particion: %i", particion_para_sobreescribir->num_particion);
@@ -30,7 +31,11 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
             void* contenidoArchivo = mmap(NULL, tamanio_swap, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 
             memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), mensajeAEscribir, tamanio_pagina); 
-  
+
+            heapMetadata* heap = malloc(9);
+            memcpy(heap, contenidoArchivo, 9);
+            log_info(logger, "Heap recibido %i, %i, %i", heap->prevAlloc, heap->nextAlloc, heap->isFree);
+
             munmap(contenidoArchivo, tamanio_swap);
             close(fd);
 
@@ -132,6 +137,9 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
             memcpy(contenidoParaLoggear + tamanio_pagina, &(valorsitoParaString),1);
             log_info(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
+            heapMetadata* heap = malloc(9);
+            memcpy(heap, contenido_a_leer, 9);
+            log_info(logger, "Heap leido %i, %i, %i", heap->prevAlloc, heap->nextAlloc, heap->isFree);
             log_info(logger,"El contenido leido es %s", contenidoParaLoggear);
             free(contenidoParaLoggear);
 
@@ -140,7 +148,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
 
         munmap(contenido_archivo, tamanio_swap);
         close(fd);
-        
+         log_info(logger,"No se mando nada");
         enviar_pagina(contenido_a_leer,conexion);
         free(contenido_a_leer);
     }
