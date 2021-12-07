@@ -52,6 +52,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 			return victima->id_pagina == pag->id_pagina && victima->id_carpincho ==  pag->id_carpincho;
 		};
 		list_remove_by_condition(TLB, (void*)quitarDeTLB);// se quita directamente la pagina que se mando a swap.
+		log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 		pthread_mutex_unlock(TLB_mutex);
 		free(contenido);
 

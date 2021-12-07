@@ -32,10 +32,6 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
 
             memcpy(contenidoArchivo  + (particion_para_sobreescribir->inicio_particion), mensajeAEscribir, tamanio_pagina); 
 
-            heapMetadata* heap = malloc(9);
-            memcpy(heap, contenidoArchivo, 9);
-            log_info(logger, "Heap recibido %i, %i, %i", heap->prevAlloc, heap->nextAlloc, heap->isFree);
-
             munmap(contenidoArchivo, tamanio_swap);
             close(fd);
 
@@ -147,9 +143,6 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
             memcpy(contenidoParaLoggear + tamanio_pagina, &(valorsitoParaString),1);
             log_info(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
-            heapMetadata* heap = malloc(9);
-            memcpy(heap, contenido_a_leer, 9);
-            log_info(logger, "Heap leido %i, %i, %i", heap->prevAlloc, heap->nextAlloc, heap->isFree);
             log_info(logger,"El contenido leido es %s", contenidoParaLoggear);
             free(contenidoParaLoggear);
 

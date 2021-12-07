@@ -398,7 +398,7 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 
 		}
 
-		log_error(loggerMemalloc, "BUSCANDO HUEQUITO");
+		log_error(loggerMemalloc, "Se leyo un heap");
 
 	} while (!(heap->isFree));
 
@@ -481,11 +481,14 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 	if(tamanioPagina - *desplazamiento < TAMANIO_HEAP){ //esta cortado. Actualiza el ultimo heap
 
-		void* buffer_heap = malloc(TAMANIO_HEAP);
-		memcpy(buffer_heap, heap, TAMANIO_HEAP);
 
+		void* buffer_heap = malloc(TAMANIO_HEAP);
+		void* buffer_heap2 = malloc(TAMANIO_HEAP);
+		memcpy(buffer_heap, heap, TAMANIO_HEAP);
+		log_info(loggerServidor, "DF %i", DF);
 		pthread_mutex_lock(memoria);
 		memcpy(memoriaPrincipal + DF + *desplazamiento, buffer_heap, tamanioPagina - *desplazamiento);
+		memcpy(buffer_heap2, buffer_heap, tamanioPagina - *desplazamiento);
 		pthread_mutex_unlock(memoria);
 
 		pthread_mutex_lock(tabla_paginas);
@@ -508,6 +511,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 		pthread_mutex_lock(memoria);
 		memcpy(memoriaPrincipal + DF , buffer_heap + (tamanioPagina - *desplazamiento) , TAMANIO_HEAP - (tamanioPagina - *desplazamiento));
+		memcpy(buffer_heap2 + tamanioPagina - *desplazamiento, buffer_heap + (tamanioPagina - *desplazamiento), TAMANIO_HEAP - (tamanioPagina - *desplazamiento));
 		pthread_mutex_unlock(memoria);
 		
 		pthread_mutex_lock(tabla_paginas);
@@ -515,6 +519,9 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		paginaDeSiguienteHeap->ultimoUso = clock();
 		paginaDeSiguienteHeap->uso = true;
 		pthread_mutex_unlock(tabla_paginas);
+
+		heapMetadata* heap2 = malloc(9);
+		memcpy(heap2, buffer_heap2,9);
 
 		*desplazamiento = - (tamanioPagina - *desplazamiento); //esto esta re trambolico porque despues le suma 9
 
@@ -548,14 +555,14 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	pthread_mutex_lock(swap);
 	for(int i=0; i<cantidadDePaginasACrear; i++){
 
-		t_pagina* pagina = malloc(sizeof(t_pagina));
-		pagina->id_pagina = generadorIdsPaginas(carpincho);
-		pagina->esNueva = true;
-		pagina->presente = false;
-		pagina->uso = true;
-		pagina->ultimoUso = clock();
-        pagina->modificado = true;
-		pagina->id_carpincho = carpincho->id_carpincho;
+		t_pagina* paginaNueva = malloc(sizeof(t_pagina));
+		paginaNueva->id_pagina = generadorIdsPaginas(carpincho);
+		paginaNueva->esNueva = true;
+		paginaNueva->presente = false;
+		paginaNueva->uso = true;
+		paginaNueva->ultimoUso = clock();
+        paginaNueva->modificado = true;
+		paginaNueva->id_carpincho = carpincho->id_carpincho;
 
 		void* paginaVacia = malloc(tamanioPagina);
 
@@ -564,16 +571,21 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
             memcpy(paginaVacia +j, &valor, 1);
         }
 
-		enviar_pagina(carpincho->id_carpincho, pagina->id_pagina, paginaVacia);
+		enviar_pagina(carpincho->id_carpincho, paginaNueva->id_pagina, paginaVacia);
 
 		free(paginaVacia);
-		list_add(carpincho->tabla_de_paginas, pagina);
+		list_add(carpincho->tabla_de_paginas, paginaNueva);
 
 	}
 	pthread_mutex_unlock(swap);
 
 
 	if(cantidadDePaginasACrear == 0){ //hay que crear el alloc en la misma pag. TODO verificar que este presente?
+
+			t_pagina* p = list_get(carpincho->tabla_de_paginas, list_size(carpincho->tabla_de_paginas)-1);
+
+			int DF = buscar_TLB(p);
+			reemplazo(&DF, carpincho, p);
 
 			pthread_mutex_lock(memoria);
 			memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, TAMANIO_HEAP);
@@ -590,18 +602,19 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 	if(cantidadDePaginasACrear == 1 && (*desplazamiento + TAMANIO_HEAP + tamanio) < tamanioPagina){ //actualiza el primer pedacito del heap cortado al final de la misma pagina
 
-		DF = buscar_TLB(pag);
+		t_pagina* p = list_get(carpincho->tabla_de_paginas, list_size(carpincho->tabla_de_paginas)-2);
 
-		reemplazo(&DF, carpincho, pag);
+		DF = buscar_TLB(p);
+
+		reemplazo(&DF, carpincho, p);
 
 		pthread_mutex_lock(memoria);
 		memcpy(memoriaPrincipal + DF + (*desplazamiento + TAMANIO_HEAP) + tamanio, nuevoHeap, tamanioPagina - (*desplazamiento + TAMANIO_HEAP + tamanio));
 		pthread_mutex_unlock(memoria);
-		
 		pthread_mutex_lock(tabla_paginas);
-		pag->modificado = true;
-		pag->ultimoUso = clock();
-		pag->uso = true;
+		p->modificado = true;
+		p->ultimoUso = clock();
+		p->uso = true;
 		pthread_mutex_unlock(tabla_paginas);
 
 		free(nuevoHeap);
