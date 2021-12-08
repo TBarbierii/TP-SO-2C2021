@@ -29,7 +29,7 @@ uint32_t generadorIdsPaginas(t_carpincho* carp){
 uint32_t generarDireccionLogica(uint32_t id, uint32_t desplazamiento){
 
 
-	char* primerNumero = "1";
+	/*char* primerNumero = "1";
 
 	char* id_char = string_itoa(id);
 	uint32_t veces = 3 - string_length(id_char);
@@ -55,15 +55,15 @@ uint32_t generarDireccionLogica(uint32_t id, uint32_t desplazamiento){
 	free(DESPLAZAMIENTO);
 	free(ceros);
 	free(b);
-	free(id_char);
-
+	free(id_char);*/
+	uint32_t direccionLogica = id * tamanioPagina + desplazamiento;
 	return direccionLogica;
 }
 
 uint32_t obtenerId(uint32_t num){
 
 
-	uint32_t id_retornado;
+	/*uint32_t id_retornado;
 
 	char* DL = string_itoa(num);
 	char* substring  = string_substring(DL, 1, 3);
@@ -71,8 +71,9 @@ uint32_t obtenerId(uint32_t num){
 	id_retornado = atoi(substring);
 
 	free(DL);
-	free(substring);
+	free(substring);*/
 
+	uint32_t id_retornado = num/tamanioPagina;
 
 	return id_retornado;
 
@@ -81,7 +82,7 @@ uint32_t obtenerId(uint32_t num){
 uint32_t obtenerDesplazamiento(uint32_t num){
 
 		
-		uint32_t id_retornado;
+		/*uint32_t id_retornado;
 
 		char* DL = string_itoa(num);
 		char* substring =  string_substring_from(DL, 4);
@@ -93,7 +94,9 @@ uint32_t obtenerDesplazamiento(uint32_t num){
 		 id_retornado = atoi(substring);
 
 		 free(DL);
-		 free(substring);
+		 free(substring);*/
+
+		 uint32_t id_retornado = num%tamanioPagina;
 
 		 return id_retornado;
 
@@ -120,7 +123,7 @@ uint32_t calcular_direccion_fisica(uint32_t carpincho, uint32_t direccionLogica)
 
 		t_pagina* pagina = list_find(capybara->tabla_de_paginas,(void*)buscarPagina);
 
-		direccionFisica = pagina->marco->comienzo + desplazamiento; //ver si es . o ->
+		direccionFisica = pagina->marco->comienzo + desplazamiento; 
 
 	return direccionFisica;
 }

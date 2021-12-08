@@ -32,7 +32,7 @@ void manejador_de_seniales(int numeroSenial){
 
 void imprimir_dump(t_log* log_dump, char * time){
 	
-	log_info(log_dump,"--------------------------------------------------------------------------");log_info(log_dump,"--------------------------------------------------------------------------\n");
+	log_info(log_dump,"--------------------------------------------------------------------------");
 	log_info(log_dump,"Dump: %s \n",time);
 
 	pthread_mutex_lock(TLB_mutex);
