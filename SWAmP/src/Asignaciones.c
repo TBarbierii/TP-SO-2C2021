@@ -16,7 +16,7 @@ int asignacion_dinamica(int pid, swap_files* archivo){
     if(particionActual != NULL){
         particionActual->esta_libre = 0;
         particionActual->pid = pid;
-        particionActual->hay_contenido=0;
+        particionActual->hay_contenido = 0;
         return 1;
     }
     return 0;
