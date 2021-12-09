@@ -270,8 +270,15 @@ void ejecutarAlgoritmoDeadlock(){
             
             t_list* procesosAanalizar = procesosQueEstanReteniendoYEsperando(logger);
             //una vez que tenemos los procesos, primero si vemos que hay 0 o 1 procesos, cancelamos el deadlcok
+            
+            if(procesosAanalizar == NULL) {
+                log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra\n");
+                break;
+            }
+
             if(list_size(procesosAanalizar) <= 1){
                 log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra\n");
+                list_destroy(procesosAanalizar);
                 break;
             }
 
@@ -351,6 +358,7 @@ void ejecutarAlgoritmoDeadlock(){
             
             }else { // no hay procesos en dealock
                 log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra");
+                list_destroy(procesosAanalizar);
                 break;
             }
 
@@ -447,11 +455,17 @@ t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
 
 
     if(!list_is_empty(listaFiltrada)){
-        listaFiltradaFinal = list_filter(listaFiltrada, procesoReteniendoYEsperando);
+        t_list* listaFiltro = list_filter(listaFiltrada, procesoReteniendoYEsperando);
+        list_add_all(listaFiltradaFinal, listaFiltro);
+        list_destroy(listaFiltro);
     } 
 
-    int sizeBloqueados = list_size(listaFiltradaFinal);
-    log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d\n", sizeBloqueados);
+    if(listaFiltradaFinal != NULL) {
+        int sizeBloqueados = list_size(listaFiltradaFinal);
+        log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d\n", sizeBloqueados);
+    }else{
+        log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock es 0");        
+    }
 
     list_destroy(listaFiltrada);
 
