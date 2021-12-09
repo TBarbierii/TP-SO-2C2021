@@ -1,5 +1,6 @@
 #include "Swamp.h"
 
+/* ---------------- SWAmP ---------------- */
 int main(){
     logger_swamp = log_create("./cfg/logger_swamp.log", "SWAmP", true, LOG_LEVEL_DEBUG);
     t_config* config_swamp = config_create("./cfg/ConfiguracionSwamp.config");

@@ -40,7 +40,7 @@ void limpiar_marcos_de_proceso(int PID) {
             vaciar_particion(particion_a_vaciar, archivo_swap->path);
         }
         list_destroy(marcos_de_proceso);
-        log_info(logger_swamp, "Proceso %i finalizado con exito", PID);
+        log_error(logger_swamp, "Proceso %i finalizado con exito", PID);
     }else{
         log_error(logger_swamp, "NO SE ENCONTRO EL CARPINCHO EN NINGUN ARCHIVO O NO GUARDO NADA EN SWAP");
     }
