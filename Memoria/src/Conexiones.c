@@ -53,10 +53,7 @@ void atender_solicitudes_memoria(uint32_t conexion){
 				inicializar_carpincho(conexion, loggerServidor);
 				break;
 			case MEMALLOC:
-				//pthread_mutex_lock(solicitud_mutex);
 				DL = recibir_memalloc(conexion, loggerServidor);
-				//pthread_mutex_unlock(solicitud_mutex);
-				printf("\nSe envio la DL %i\n", DL);
 
 				t_paquete* paquete = crear_paquete(MEMALLOC);
 				paquete->buffer->size = sizeof(uint32_t);
@@ -69,19 +66,13 @@ void atender_solicitudes_memoria(uint32_t conexion){
 					
 				break;
 			case MEMFREE:
-				//pthread_mutex_lock(solicitud_mutex);
 				recibir_memfree(conexion, loggerServidor);
-				//pthread_mutex_unlock(solicitud_mutex);
 				break;
 			case MEMREAD:
-				//pthread_mutex_lock(solicitud_mutex);
 				recibir_memread(conexion, loggerServidor);
-				//pthread_mutex_unlock(solicitud_mutex);
 				break;
 			case MEMWRITE:	
-				//pthread_mutex_lock(solicitud_mutex);
 				recibir_memwrite(conexion, loggerServidor);
-				//pthread_mutex_unlock(solicitud_mutex);
 				break;
 			case SUSPENSION_PROCESO:
 				recibir_suspencion(conexion, loggerServidor);
@@ -195,6 +186,7 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 
 		pthread_mutex_lock(listaCarpinchos);
 		list_add(carpinchos, carpincho);
+		list_add(carpinchosMetricas, carpincho);
 		pthread_mutex_unlock(listaCarpinchos);
 
 		log_info(logger,"Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: %d",carpincho->id_carpincho);
@@ -275,7 +267,7 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 	};
 	list_destroy_and_destroy_elements(carpincho->tabla_de_paginas, (void*)destructor);
 
-	free(carpincho); 
+
 
 }
 
@@ -397,7 +389,7 @@ int32_t recibir_memread(int socket_cliente, t_log* logger) {
 		 leido = leer_memoria(direccion_logica, carpincho, tamanio);
 	}
 
-	log_info(logger, "\nRecibimos memread: \n Pid: %i \nDirecLogica: %i \nTamanio", carpincho, direccion_logica, tamanio);
+	log_info(logger, "\nRecibimos memread: \n Pid: %i \nDirecLogica: %i \nTamanio %i", carpincho, direccion_logica, tamanio);
 
 	
 

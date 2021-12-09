@@ -73,6 +73,7 @@ void* memoriaPrincipal;
 /*Listas */
 
 t_list* carpinchos;
+t_list* carpinchosMetricas;
 t_list* marcos;
 t_list* TLB;
 

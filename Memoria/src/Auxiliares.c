@@ -5,16 +5,31 @@ void manejador_de_seniales(int numeroSenial){
 	
 	if(numeroSenial == SIGINT){
 
-			for (int i=0; i<list_size(carpinchos); i++){
-			
+			int cantidadCarpinchos = list_size(carpinchosMetricas);
+
+			for (int i=0; i<cantidadCarpinchos; i++){
+				
+				pthread_mutex_lock(listaCarpinchos);	
 			pthread_mutex_lock(listaCarpinchos);
-			t_carpincho* carp = list_get(carpinchos, i);
+			t_carpincho* carp = list_get(carpinchosMetricas, i);
 			pthread_mutex_unlock(listaCarpinchos);
 
-			log_info(logsObligatorios, "Carpincho %i. Hits: %i Misses: %i", carp->tlb_hit, carp->tlb_miss);
+			log_info(logsObligatorios, "Carpincho %i. Hits: %i Misses: %i", carp->id_carpincho, carp->tlb_hit, carp->tlb_miss);
+
+				t_carpincho* carp = list_get(carpinchosMetricas, i);
+				pthread_mutex_unlock(listaCarpinchos);
+
+				log_info(logsObligatorios, "Carpincho %i. Hits: %i Misses: %i", carp->id_carpincho, carp->tlb_hit, carp->tlb_miss);
+
 			}
 
 			log_info(logsObligatorios, "Hits totales: %i. Misses totales %i.", hits_totales, miss_totales);
+
+			void liberarCarpinchos(t_carpincho* c){
+				free(c);
+			};
+
+			list_clean_and_destroy_elements(carpinchosMetricas, (void*)liberarCarpinchos);
 		
 		exit(EXIT_SUCCESS);
 	}

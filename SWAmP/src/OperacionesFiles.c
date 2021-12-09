@@ -1,5 +1,6 @@
 #include "Swamp_lib.h"
 
+/* ---------------- Operaciones sobre archivos ---------------- */
 
 // ---------------- Escritura ---------------- /
 void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger){
@@ -21,10 +22,9 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
         if(particion_para_sobreescribir != NULL) {
             
             vaciar_particion(particion_para_sobreescribir, nombreArchivo);
-        
-
-            log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
-            log_info(logger,"Se sobreescribe sobre la particion: %i", particion_para_sobreescribir->num_particion);
+    
+            log_warning(logger,"\n      Se guarda:\n        Pagina: %i\n        Proceso: %i\n        Archivo: %s\n", pagina, PID, archivoAEscribir->path);
+            log_info(logger,"Se SOBREESCRIBE sobre la particion: %i", particion_para_sobreescribir->num_particion);
 
             int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
             truncate(archivoAEscribir->path, tamanio_swap);
@@ -41,9 +41,9 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
                 
                 int retorno = asignacion_dinamica(PID, archivoAEscribir);
                 if(retorno == 1){
-                    log_info(logger,"Todo bien se realizo con la asignacion DINAMICA");
+                //    log_info(logger,"Todo bien se realizo con la asignacion DINAMICA");
                 }else{
-                    log_info(logger,"Fallo en la asignacion DINAMICA");
+                    log_error(logger,"Fallo en la asignacion DINAMICA");
                 }
             }
 
@@ -53,8 +53,9 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
                 particionAmodificar->hay_contenido = 1;
                 particionAmodificar->num_pagina = pagina;
 
-                log_info(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
-                log_info(logger,"Se escribe sobre la particion: %i", particionAmodificar->num_particion);
+                log_warning(logger,"\n      Se guarda:\n        Pagina: %i\n        Proceso: %i\n        Archivo: %s\n", pagina, PID, archivoAEscribir->path);
+                //log_warning(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
+                log_info(logger,"Se ESCRIBE sobre la particion: %i", particionAmodificar->num_particion);
 
                 int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
                 truncate(archivoAEscribir->path, tamanio_swap);
@@ -83,15 +84,15 @@ swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger)
 
     if(archivo == NULL){ 
         swap_files* archivoConMasEspacio = buscar_archivo_con_mayor_espacio();
-        log_info(logger, "El archivo que vamos a utilizar tiene %i cantidad de frames libres", cantidad_frames_disponibles(archivoConMasEspacio));
+        log_debug(logger, "El archivo que vamos a utilizar tiene %i cantidad de frames libres", cantidad_frames_disponibles(archivoConMasEspacio));
 
         if(tipo_asignacion == 1){
 
             int retorno = asignar_marcos_maximos(pid, archivoConMasEspacio);
             if(retorno == 1){
-                log_info(logger,"Todo bien se realizo con la asignacion FIJA");
+            //    log_info(logger,"Todo bien se realizo con la asignacion FIJA");
             }else{
-                log_info(logger,"Fallo en la asignacion FIJA");
+                log_error(logger,"Fallo en la asignacion FIJA");
             }
         }
 
@@ -137,7 +138,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             char valorsitoParaString = '\0';
             memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
             memcpy(contenidoParaLoggear + tamanio_pagina, &(valorsitoParaString),1);
-            log_info(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
+            log_warning(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
             log_info(logger,"El contenido leido es %s", contenidoParaLoggear);
             free(contenidoParaLoggear);
 

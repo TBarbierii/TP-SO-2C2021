@@ -53,8 +53,7 @@ typedef struct {
     int pid;
     int inicio_particion;
     int esta_libre;
-    int hay_contenido; //esto es para que el proceso, cuando busque una pagina de las que le pertenecen, 
-                      //pueda buscar las que no estan siendo utilizadas actualemnte, en caso de utilizarla se pone en 1, en caso de que se libere, la ponemos en 0.
+    int hay_contenido; 
 }particion;
 
 
@@ -73,6 +72,9 @@ int cantidad_frames_disponibles(swap_files* path_swap);
 swap_files* encontrar_swap_file(char* path_swap);
 void vaciar_particion(particion* particion_a_vaciar, char* path_swap);
 particion* buscar_particion_en_base_a_pagina(int numero_pagina, swap_files* archivo);
+particion* primer_particion_libre(swap_files* archivo);
+particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PID);
+particion* particion_disponible_para_sobreescribir(swap_files* archivo, int PID, int id_pagina);
 
 
 /* ---------------- PAGINAS ---------------- */
@@ -82,6 +84,9 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
 
 /* ---------------- ASIGNACIONES ---------------- */
 void manejar_asignacion();
+int asignacion_dinamica(int pid, swap_files* archivo);
+int asignar_marcos_maximos(int pid, swap_files* archivo);
+void asignar_marcos_proceso(int pid,swap_files* archivo);
 
 
 /* ---------------- AUXILIARES ---------------- */
@@ -89,30 +94,18 @@ int verificar_pid_en_swap_file(uint32_t PID, char* path_swap);
 int pid_se_encuentra_en_particion(swap_files* archivo_swap, uint32_t PID);
 int cantidad_frames_disponibles_para_proceso(int PID, t_log* logger);
 swap_files* encontrar_swap_file_en_base_a_pid(uint32_t PID);
+swap_files* buscar_archivo_con_mayor_espacio();
+
+
+/* ---------------- ESCRITURA DE ARCHIVOS ---------------- */
+void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger);
+void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid, char* nombreArchivo, t_log* logger);
+swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger);
 
 
 /* ---------------- FINALIZACION ---------------- */
 void eliminarParticiones(t_list* listaParticiones);
 void destruirArchivosSwapFiles();
 void limpiar_marcos_de_proceso(int PID);
-
-
-/* ---------------- ESCRITURA DE ARCHIVOS ---------------- */
-void escribirContenido(void* mensajeAEscribir, int id_pagina, int PID, t_log* logger);
-void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int pid, char* nombreArchivo, t_log* logger);
-
-
-/* ---------------- ESCRITURA DE PAGINAS ---------------- */
-swap_files* buscar_archivo_con_mayor_espacio();
-swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger);
-int asignacion_dinamica(int pid, swap_files* archivo);
-int asignar_marcos_maximos(int pid, swap_files* archivo);
-void asignar_marcos_proceso(int pid,swap_files* archivo);
-particion* primer_particion_libre(swap_files* archivo);
-particion* primer_particion_disponible_para_escribir(swap_files* archivo, int PID);
-particion* particion_disponible_para_sobreescribir(swap_files* archivo, int PID, int id_pagina);
-
-
-
 
 #endif

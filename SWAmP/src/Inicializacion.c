@@ -61,7 +61,7 @@ void crear_archivos_swap(t_list* archivos_swap, int cantidad_particiones, t_log*
         nuevoArchivo->particiones_swap = crear_lista_particiones((tamanio_swap/tamanio_pagina));
         list_add(lista_swap_files, nuevoArchivo);
 
-        log_info(logger,"Se crea el archivo SWAP en el path: %s, de size: %d cantidad de frames disponibles: %i y id: %i",nuevoArchivo->path, tamanio_swap, cantidad_frames_disponibles(nuevoArchivo), nuevoArchivo->id);
+        log_debug(logger,"\n     Se crea el archivo SWAP en el path: %s\n     size: %d\n     cantidad de frames disponibles: %i\n     id: %i",nuevoArchivo->path, tamanio_swap, cantidad_frames_disponibles(nuevoArchivo), nuevoArchivo->id);
         
         free(path_swap);
         id_swap++;

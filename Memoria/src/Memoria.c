@@ -8,6 +8,7 @@ void inicializarListas(){
     carpinchos = list_create();
     marcos = list_create();
     TLB = list_create();
+    carpinchosMetricas = list_create();
 }
 
 void finalizarListas(){

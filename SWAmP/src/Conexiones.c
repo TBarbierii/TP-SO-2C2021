@@ -1,6 +1,6 @@
 #include "Conexiones.h"
 
-
+/* ---------------- Conexiones ---------------- */
 int iniciar_servidor_swamp() {
 
 	int servidor = iniciar_servidor(ip_swap, puerto_swap); 
@@ -40,8 +40,8 @@ int atender_mensaje_ram(int conexion) {
 		return -1;
 	}
 
-	log_info(logger_servidor,"Recibimos la informacion de la RAM");
-	log_info(logger_servidor,"El codigo de operacion es: %d",paquete->codigo_operacion);
+//	log_info(logger_servidor,"Recibimos la informacion de la RAM");
+//	log_info(logger_servidor,"El codigo de operacion es: %d",paquete->codigo_operacion);
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
@@ -108,11 +108,11 @@ uint32_t recibir_tipo_asignacion(t_buffer* buffer, t_log* logger) {
 	memcpy(&(tipo_asignacion), data, sizeof(uint32_t));
 	
 	if(tipo_asignacion == 0) {
-		log_info(logger, "Tipo de asignacion a utilizar: DINAMICA.");
+		log_error(logger, "Tipo de asignacion a utilizar: DINAMICA.");
 	}else if(tipo_asignacion == 1) {
-		log_info(logger, "Tipo de asignacion a utilizar: FIJA.");		
+		log_error(logger, "Tipo de asignacion a utilizar: FIJA.");		
 	}else{
-		log_info(logger, "Tipo de asignacion incorrecto.");
+		log_error(logger, "Tipo de asignacion incorrecto.");
 	}
 	
 	return tipo_asignacion;
@@ -131,7 +131,7 @@ void recibir_pagina(t_buffer* buffer, t_log *logger) {
 	memcpy(&(id_pagina), data + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
     memcpy(contenido, data + desplazamiento , tamanio_pagina);
-	log_info(logger, "Se guarda la pagina: %d del proceso: %d",id_pagina, PID);
+//	log_info(logger, "Se guarda la pagina: %d del proceso: %d",id_pagina, PID);
 
 	escribirContenido(contenido, id_pagina, PID, logger);
 	free(contenido);
@@ -216,7 +216,11 @@ void notificar_finalizacion_de_proceso(int conexion) {
 void notificar_insuficiencia_de_espacio_para_proceso(int conexion, int valor) {
 
 	t_paquete *paquete = crear_paquete(CONSULTAR_ESPACIO); 
-	printf("\nVALOR:%i\n", valor);
+	if(valor == 1) {
+		printf("\nHAY ESPACIO EN SWAP\n");
+	}else{
+		printf("\nARCHIVOS DE SWAP COMPLETOS\n");
+	}
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	uint32_t desplazamiento=0;
