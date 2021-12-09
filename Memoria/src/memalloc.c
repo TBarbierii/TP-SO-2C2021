@@ -146,8 +146,8 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
             pagina = paginaSig->id_pagina;
         }
         uint32_t DL = generarDireccionLogica(pagina, desplazamiento + TAMANIO_HEAP);
-		free(heap);
 		list_destroy(marcos_a_asignar);
+		free(heap);
         return DL;
         
 
@@ -524,7 +524,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		*desplazamiento = - (tamanioPagina - *desplazamiento); //esto esta re trambolico porque despues le suma 9
 
 		free(buffer_heap);
-		free(heap);
+		//free(heap);
 
 	}else{
 
@@ -537,7 +537,7 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		pag->ultimoUso = clock();
 		pag->uso = true;
 		pthread_mutex_unlock(tabla_paginas);
-		free(heap);
+		//free(heap);
 
 	}
 
