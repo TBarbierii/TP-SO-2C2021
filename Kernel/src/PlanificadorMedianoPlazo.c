@@ -8,7 +8,7 @@ void planificadorMedianoPlazo(){
 
     pthread_t t1, t2;
 
-    pthread_create(&t1, NULL,(void *) thread1_PMP, logger); //este tenemos que analizarlo
+    pthread_create(&t1, NULL,(void *) thread1_PMP, logger);
     pthread_create(&t2, NULL,(void *) thread2_PMP, logger);
     
     pthread_join(t1,NULL);
