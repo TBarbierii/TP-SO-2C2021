@@ -56,6 +56,8 @@ pthread_mutex_t * marcos_sem;
 pthread_mutex_t * solicitud_mutex;
 pthread_mutex_t * tabla_paginas;
 pthread_mutex_t * recorrer_marcos_mutex;
+pthread_mutex_t * hits_sem;
+pthread_mutex_t * miss_sem;
 
 t_log* logsObligatorios;
 t_log* dumpTLB;
@@ -104,6 +106,8 @@ uint32_t obtenerDesplazamiento(uint32_t);
 uint32_t obtenerId(uint32_t);
 void manejador_de_seniales(int numeroSenial);
 void imprimir_dump(t_log* log_dump, char * time);
+void dividirAllocs(t_carpincho* carpincho, int32_t posicionHeap, int32_t pagina, uint32_t tamanio, int32_t desplazamiento );
+void consolidar_allocs(int desplazamientoHeapLiberado, t_pagina* pagina, int32_t prevAlloc, int32_t nextAlloc, t_carpincho* carpincho);
 
 
 #endif

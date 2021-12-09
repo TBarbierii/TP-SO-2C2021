@@ -90,7 +90,7 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
         reemplazo(&DF, carpincho, primeraPag);
 
-        heapMetadata *heap = malloc(TAMANIO_HEAP); //liberar
+        heapMetadata *heap = malloc(TAMANIO_HEAP);
         int32_t posicionHeap = 0;
         int32_t pagina, desplazamiento;
 
@@ -115,8 +115,11 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
 
             uint32_t espacioEncontrado = heap->nextAlloc - posicionHeap - TAMANIO_HEAP;
 
-            if (tamanio == espacioEncontrado || tamanio + TAMANIO_HEAP < espacioEncontrado ){ // +9 porque si es mas chico en lo que sobra tiene que entrar el otro heap (aunque tambien habria que agregar +minimo_espacio_aceptable)
-                break;
+            if 	   	(tamanio == espacioEncontrado){//entro justo
+				break;
+			}else if (tamanio + TAMANIO_HEAP < espacioEncontrado ){// +9 porque si es mas chico, en lo que sobra tiene que entrar el otro heap 
+				break;
+				dividirAllocs(carpincho, posicionHeap, pagina, tamanio, desplazamiento); 
             }else{
 			
 			pthread_mutex_lock(recorrer_marcos_mutex);
@@ -125,8 +128,6 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
             }
 
         }
-
-        //dividirAllocs(carpincho, posicionHeap, pagina, tamanio, desplazamiento);
 
         if(heap->nextAlloc == -1){
 
@@ -145,6 +146,8 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
             pagina = paginaSig->id_pagina;
         }
         uint32_t DL = generarDireccionLogica(pagina, desplazamiento + TAMANIO_HEAP);
+		free(heap);
+		list_destroy(marcos_a_asignar);
         return DL;
         
 
@@ -481,14 +484,12 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 	if(tamanioPagina - *desplazamiento < TAMANIO_HEAP){ //esta cortado. Actualiza el ultimo heap
 
-
 		void* buffer_heap = malloc(TAMANIO_HEAP);
-		void* buffer_heap2 = malloc(TAMANIO_HEAP);
+
 		memcpy(buffer_heap, heap, TAMANIO_HEAP);
-		log_info(loggerServidor, "DF %i", DF);
+
 		pthread_mutex_lock(memoria);
 		memcpy(memoriaPrincipal + DF + *desplazamiento, buffer_heap, tamanioPagina - *desplazamiento);
-		memcpy(buffer_heap2, buffer_heap, tamanioPagina - *desplazamiento);
 		pthread_mutex_unlock(memoria);
 
 		pthread_mutex_lock(tabla_paginas);
@@ -511,7 +512,6 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 		pthread_mutex_lock(memoria);
 		memcpy(memoriaPrincipal + DF , buffer_heap + (tamanioPagina - *desplazamiento) , TAMANIO_HEAP - (tamanioPagina - *desplazamiento));
-		memcpy(buffer_heap2 + tamanioPagina - *desplazamiento, buffer_heap + (tamanioPagina - *desplazamiento), TAMANIO_HEAP - (tamanioPagina - *desplazamiento));
 		pthread_mutex_unlock(memoria);
 		
 		pthread_mutex_lock(tabla_paginas);
@@ -520,8 +520,6 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		paginaDeSiguienteHeap->uso = true;
 		pthread_mutex_unlock(tabla_paginas);
 
-		heapMetadata* heap2 = malloc(9);
-		memcpy(heap2, buffer_heap2,9);
 
 		*desplazamiento = - (tamanioPagina - *desplazamiento); //esto esta re trambolico porque despues le suma 9
 
@@ -639,6 +637,8 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 	free(nuevoHeap);
 	
 	list_iterate(paginasNuevas, (void*)algoritmo_reemplazo_TLB);
+
+	list_destroy(paginasNuevas);
 
 	return 1;
 }

@@ -15,7 +15,7 @@ int32_t buscar_TLB(t_pagina* pagina){
 		return -1;
 	}
 
-		return paginaEncontrada->marco->comienzo;
+	return paginaEncontrada->marco->comienzo;
 	
 }
 
@@ -391,13 +391,18 @@ void reemplazo(int32_t *DF, t_carpincho* carpincho, t_pagina* pagina){
 		
 		if(*DF == -1) *DF = swapear(carpincho, pagina);
 			carpincho->tlb_miss++;
+
+			pthread_mutex_lock(miss_sem);
 			miss_totales++;
+			pthread_mutex_unlock(miss_sem);
 
 	}else{//hit
 		
 		usleep(retardoAciertoTLB * 1000);
 		carpincho->tlb_hit++;
+		pthread_mutex_lock(hits_sem);
 		hits_totales++;
+		pthread_mutex_unlock(hits_sem);
 	}
 
 }

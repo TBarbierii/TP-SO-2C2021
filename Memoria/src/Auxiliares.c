@@ -4,7 +4,18 @@
 void manejador_de_seniales(int numeroSenial){
 	
 	if(numeroSenial == SIGINT){
-		//imprimir todo lo de la tlb hits and misses
+
+			for (int i=0; i<list_size(carpinchos); i++){
+			
+			pthread_mutex_lock(listaCarpinchos);
+			t_carpincho* carp = list_get(carpinchos, i);
+			pthread_mutex_unlock(listaCarpinchos);
+
+			log_info(logsObligatorios, "Carpincho %i. Hits: %i Misses: %i", carp->tlb_hit, carp->tlb_miss);
+			}
+
+			log_info(logsObligatorios, "Hits totales: %i. Misses totales %i.", hits_totales, miss_totales);
+		
 		exit(EXIT_SUCCESS);
 	}
 
@@ -62,6 +73,10 @@ void dividirAllocs(t_carpincho* carpincho, int32_t posicionHeap, int32_t pagina,
 	heapMetadata* ultimoHeap = malloc(TAMANIO_HEAP);
 	heapMetadata* nuevoHeap = malloc(TAMANIO_HEAP);
 
+	int32_t primerHeapNext, ultimoHeapPrev;
+	int32_t nuevoHeapPrev = posicionHeap, nuevoHeapNext;
+	int32_t posicionNuevoHeap = posicionHeap + TAMANIO_HEAP + tamanio;
+
 	bool buscarPagina(t_pagina* p){
 		return p->id_pagina == pagina;
 	};
@@ -77,13 +92,12 @@ void dividirAllocs(t_carpincho* carpincho, int32_t posicionHeap, int32_t pagina,
 
 	nuevoHeap->isFree=true;
 	nuevoHeap->nextAlloc = primerHeap->nextAlloc;
+	nuevoHeap->prevAlloc = nuevoHeapPrev;
 
 	int nextAlloc = primerHeap->nextAlloc;
 
 	primerHeap->isFree=false;
-	primerHeap->nextAlloc = posicionHeap + TAMANIO_HEAP + tamanio;
-
-
+	primerHeap->nextAlloc = posicionNuevoHeap;
 
 	pthread_mutex_lock(memoria);
 	memcpy( memoriaPrincipal + pag->marco->comienzo  + desplazamiento, primerHeap, TAMANIO_HEAP);
@@ -102,19 +116,16 @@ void dividirAllocs(t_carpincho* carpincho, int32_t posicionHeap, int32_t pagina,
 		memcpy(ultimoHeap, memoriaPrincipal + paginaSiguiente->marco->comienzo + (nextAlloc - posicionHeap - TAMANIO_HEAP), TAMANIO_HEAP);
 		pthread_mutex_unlock(memoria);
 
-		nuevoHeap->prevAlloc = ultimoHeap->prevAlloc;
 	
 	} else{
 		pthread_mutex_lock(memoria);
 		memcpy(ultimoHeap, memoriaPrincipal + pag->marco->comienzo + (nextAlloc - posicionHeap - TAMANIO_HEAP), TAMANIO_HEAP);
 		pthread_mutex_unlock(memoria);
 
-		nuevoHeap->prevAlloc = ultimoHeap->prevAlloc;
 	}
 
 
-
-	ultimoHeap->prevAlloc = posicionHeap + TAMANIO_HEAP + tamanio;
+	ultimoHeap->prevAlloc = posicionNuevoHeap;
 	
 	pthread_mutex_lock(memoria);
 	memcpy(memoriaPrincipal + pag->marco->comienzo + (nextAlloc - posicionHeap - TAMANIO_HEAP), ultimoHeap,TAMANIO_HEAP);
@@ -124,5 +135,210 @@ void dividirAllocs(t_carpincho* carpincho, int32_t posicionHeap, int32_t pagina,
 	pthread_mutex_lock(memoria);
 	memcpy(memoriaPrincipal + pag->marco->comienzo + desplazamiento + TAMANIO_HEAP + tamanio, nuevoHeap, TAMANIO_HEAP);
 	pthread_mutex_unlock(memoria);
+
+
+	free(primerHeap);
+	free(ultimoHeap);
+	free(nuevoHeap);
+}
+
+void consolidar_allocs(int desplazamientoHeapLiberado, t_pagina* pagina, int32_t prevAlloc, int32_t nextAlloc, t_carpincho* carpincho){
+	
+	heapMetadata* heapLiberado = malloc(TAMANIO_HEAP);
+	heapMetadata* heapAnterior = malloc(TAMANIO_HEAP);
+	heapMetadata* heapPosterior = malloc(TAMANIO_HEAP);
+	heapMetadata* heapSiguienteDelSiguiente = malloc(TAMANIO_HEAP);
+
+	t_pagina* paginaDelSiguienteDelSiguiente; 
+	t_pagina* paginaDelHeapAnterior;
+
+	int desplazamiento, idPagina, lecturaAnterior, lecturaSiguienteSiguiente, nextNextAlloc;
+	int32_t DF;
+
+	bool buscarPag(t_pagina* pag){
+    return pag->id_pagina == idPagina;
+    };
+
+	//leer heap liberado
+
+	DF = buscar_TLB(pagina);
+
+	reemplazo(&DF, carpincho, pagina);
+
+	pthread_mutex_lock(memoria);
+	memcpy(heapLiberado, memoriaPrincipal + pagina->marco->comienzo + desplazamientoHeapLiberado - TAMANIO_HEAP, TAMANIO_HEAP);
+	pthread_mutex_unlock(memoria);
+
+	//leer el alloc anterior
+
+	if (heapLiberado->prevAlloc != -1 ){ // lee el anterior solo si existe un anterior
+
+		idPagina= prevAlloc/tamanioPagina;
+
+		paginaDelHeapAnterior = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
+
+		desplazamiento = prevAlloc % tamanioPagina;
+
+		DF = buscar_TLB(paginaDelHeapAnterior);
+
+		reemplazo(&DF, carpincho, paginaDelHeapAnterior);
+
+		pthread_mutex_lock(memoria);
+		memcpy(heapAnterior, memoriaPrincipal + paginaDelHeapAnterior->marco->comienzo + desplazamiento, TAMANIO_HEAP);
+		pthread_mutex_unlock(memoria);
+
+		lecturaAnterior = 1;
+	}
+
+	//leer el alloc posterior
+
+	idPagina= nextAlloc/tamanioPagina;
+
+	t_pagina* paginaDelHeapPosterior = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
+
+	desplazamiento = nextAlloc % tamanioPagina;
+
+	DF = buscar_TLB(paginaDelHeapPosterior);
+
+	reemplazo(&DF, carpincho, paginaDelHeapPosterior);
+
+	pthread_mutex_lock(memoria);
+	memcpy(heapPosterior, memoriaPrincipal + paginaDelHeapPosterior->marco->comienzo + desplazamiento, TAMANIO_HEAP);
+	pthread_mutex_unlock(memoria);
+
+	//lee el siguiente del siguiente
+
+	if(heapPosterior->nextAlloc != -1){
+
+		nextNextAlloc = heapPosterior->nextAlloc;
+		
+		idPagina= nextNextAlloc/tamanioPagina;
+
+		paginaDelSiguienteDelSiguiente = list_find(carpincho->tabla_de_paginas, (void*)buscarPag);
+
+		desplazamiento = nextNextAlloc % tamanioPagina;
+
+		DF = buscar_TLB(paginaDelSiguienteDelSiguiente);
+
+		reemplazo(&DF, carpincho, paginaDelSiguienteDelSiguiente);
+
+		pthread_mutex_lock(memoria);
+		memcpy(heapSiguienteDelSiguiente, memoriaPrincipal + paginaDelSiguienteDelSiguiente->marco->comienzo + desplazamiento, TAMANIO_HEAP);
+		pthread_mutex_unlock(memoria);
+
+		lecturaSiguienteSiguiente = 1;
+	}
+	
+	//casos
+
+	if (heapLiberado->prevAlloc == -1 && heapPosterior->nextAlloc == -1){//hay un solo alloc y hay que liberar todas las paginas
+
+		void destructor(t_pagina* pag){
+			pag->marco->estaLibre = true;
+			pag->marco->proceso_asignado = -1;
+			free(pag);
+		};
+
+		list_clean_and_destroy_elements(carpincho->tabla_de_paginas, (void*)destructor);
+
+
+
+
+		carpincho->contadorPag -- ;
+
+	}else if(lecturaAnterior == 1 && lecturaSiguienteSiguiente == 1 && heapAnterior->isFree && heapPosterior->isFree){ //ambos estan libres
+
+		heapAnterior->nextAlloc = heapPosterior->nextAlloc;
+
+		desplazamiento = prevAlloc % tamanioPagina;
+
+		DF = buscar_TLB(paginaDelHeapAnterior);
+
+		reemplazo(&DF, carpincho, paginaDelHeapAnterior);
+
+		pthread_mutex_lock(memoria);
+		memcpy( memoriaPrincipal + paginaDelHeapAnterior->marco->comienzo + desplazamiento, heapAnterior, TAMANIO_HEAP);//graba el heap anterior actualizado
+		pthread_mutex_unlock(memoria);
+
+		heapSiguienteDelSiguiente->prevAlloc = prevAlloc;
+
+		desplazamiento = nextNextAlloc % tamanioPagina;
+
+		DF = buscar_TLB(paginaDelSiguienteDelSiguiente);
+
+		reemplazo(&DF, carpincho, paginaDelSiguienteDelSiguiente);
+		
+		pthread_mutex_lock(memoria);
+		memcpy(memoriaPrincipal + paginaDelSiguienteDelSiguiente->marco->comienzo + desplazamiento, heapSiguienteDelSiguiente, TAMANIO_HEAP);//graba el heap siguiente del siguiente actualizado
+		pthread_mutex_unlock(memoria);
+
+	}else if (lecturaAnterior == 1 && heapAnterior->isFree && !heapPosterior->isFree){
+		
+		heapAnterior->nextAlloc = nextAlloc;
+
+		desplazamiento = prevAlloc % tamanioPagina;
+
+		pthread_mutex_lock(memoria);
+		memcpy( memoriaPrincipal + paginaDelHeapAnterior->marco->comienzo + desplazamiento, heapAnterior, TAMANIO_HEAP);//graba el heap anterior actualizado
+		pthread_mutex_unlock(memoria);
+
+		heapPosterior->prevAlloc = prevAlloc;
+
+		desplazamiento = nextAlloc % tamanioPagina;
+
+		DF = buscar_TLB(paginaDelSiguienteDelSiguiente);
+
+		reemplazo(&DF, carpincho, paginaDelSiguienteDelSiguiente);
+
+		pthread_mutex_lock(memoria);
+		memcpy(memoriaPrincipal + paginaDelHeapPosterior->marco->comienzo + desplazamiento, heapPosterior, TAMANIO_HEAP);//graba el heap siguiente del siguiente actualizado
+		pthread_mutex_unlock(memoria);
+
+
+	}else if (lecturaAnterior == 1 && lecturaSiguienteSiguiente == 1 && heapPosterior->isFree && !heapAnterior->isFree){
+
+		heapLiberado->nextAlloc = heapPosterior->nextAlloc;
+
+		DF = buscar_TLB(pagina);
+
+		reemplazo(&DF, carpincho, pagina);
+
+		pthread_mutex_lock(memoria);
+		memcpy( memoriaPrincipal + pagina->marco->comienzo + desplazamientoHeapLiberado - TAMANIO_HEAP, heapLiberado, TAMANIO_HEAP);
+		pthread_mutex_unlock(memoria);
+
+		heapSiguienteDelSiguiente->prevAlloc = heapPosterior->prevAlloc;
+
+		DF = buscar_TLB(paginaDelSiguienteDelSiguiente);
+
+		reemplazo(&DF, carpincho, paginaDelSiguienteDelSiguiente);
+
+		pthread_mutex_lock(memoria);
+		memcpy(memoriaPrincipal + paginaDelSiguienteDelSiguiente->marco->comienzo + desplazamiento, heapSiguienteDelSiguiente, TAMANIO_HEAP);//graba el heap siguiente del siguiente actualizado
+		pthread_mutex_unlock(memoria);
+
+	}else if (lecturaAnterior == 1 && lecturaSiguienteSiguiente == 0 && heapPosterior->isFree && !heapAnterior->isFree){
+
+		heapLiberado->nextAlloc = -1;
+
+		DF = buscar_TLB(pagina);
+
+		reemplazo(&DF, carpincho, pagina);
+
+		pthread_mutex_lock(memoria);
+		memcpy( memoriaPrincipal + pagina->marco->comienzo + desplazamientoHeapLiberado, heapLiberado, TAMANIO_HEAP);
+		pthread_mutex_unlock(memoria);
+
+		pagina->modificado = true;
+        pagina->ultimoUso = clock();
+        pagina->uso = true;
+
+
+	}	
+	free(heapLiberado);
+	free(heapAnterior);
+	free(heapPosterior);
+	free(heapSiguienteDelSiguiente);
+
 
 }

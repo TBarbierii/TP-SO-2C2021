@@ -25,6 +25,7 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
 
     heapMetadata *heap = malloc(TAMANIO_HEAP);
+    int32_t prevAlloc, nextAlloc;
 
     if(desplazamiento < TAMANIO_HEAP){//esta cortado y empieza en la pagina anterior
 
@@ -59,6 +60,8 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
         memcpy(heap, buffer_heap, TAMANIO_HEAP);
 
         heap->isFree = true;
+        prevAlloc = heap->prevAlloc;
+        nextAlloc = heap->nextAlloc;
 
         memcpy(buffer_heap, heap, TAMANIO_HEAP);
 
@@ -91,6 +94,8 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
         pthread_mutex_unlock(memoria);
 
         heap->isFree = true;
+        prevAlloc = heap->prevAlloc;
+        nextAlloc = heap->nextAlloc;
 
         pthread_mutex_lock(memoria);
         memcpy(memoriaPrincipal + DF + (desplazamiento - TAMANIO_HEAP), heap, TAMANIO_HEAP);
@@ -102,9 +107,8 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
 
         free(heap);
     }
-
-
-    //consolidar_allocs y liberar_paginas
+    
+    consolidar_allocs(desplazamiento, pagina, prevAlloc, nextAlloc, capybara);
 
 }
 
