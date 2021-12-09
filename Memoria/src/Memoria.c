@@ -80,6 +80,11 @@ void inicializarTodo(){
     recorrer_marcos_mutex =  malloc(sizeof(pthread_mutex_t));
     pthread_mutex_init(recorrer_marcos_mutex,NULL);
 
+    hits_sem=  malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(hits_sem,NULL);
+
+    miss_sem =  malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(miss_sem,NULL);
 
     id_carpincho = 1;
 
