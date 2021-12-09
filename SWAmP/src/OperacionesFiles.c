@@ -37,6 +37,15 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
 
             log_info(logger,"Se guardo el contenido correctamente");
         }else{
+            if(tipo_asignacion == 0){
+                
+                int retorno = asignacion_dinamica(PID, archivoAEscribir);
+                if(retorno == 1){
+                    log_info(logger,"Todo bien se realizo con la asignacion DINAMICA");
+                }else{
+                    log_info(logger,"Fallo en la asignacion DINAMICA");
+                }
+            }
 
             particion* particionAmodificar = primer_particion_disponible_para_escribir(archivoAEscribir, PID);
 
@@ -78,31 +87,17 @@ swap_files* escritura_en_archivo_en_base_tipo_asignacion(int pid, t_log* logger)
 
         if(tipo_asignacion == 1){
 
-            int retorno= asignar_marcos_maximos(pid, archivoConMasEspacio);
+            int retorno = asignar_marcos_maximos(pid, archivoConMasEspacio);
             if(retorno == 1){
-                log_info(logger,"Todo bien se realizo con la asignacion Fija");
+                log_info(logger,"Todo bien se realizo con la asignacion FIJA");
             }else{
-                log_info(logger,"Fallo en la asignacion Fija");
+                log_info(logger,"Fallo en la asignacion FIJA");
             }
+        }
 
-        }else{
-            int retorno = asignacion_dinamica(pid, archivoConMasEspacio);
-            if(retorno == 1){
-                log_info(logger,"Todo bien se realizo con la asignacion Dinamica");
-            }else{
-                log_info(logger,"Fallo en la asignacion Dinamica");
-            }
-        }
         return archivoConMasEspacio;
+
     }else{
-        if(tipo_asignacion == 0){
-            int retorno = asignacion_dinamica(pid, archivo);
-            if(retorno == 1){
-                log_info(logger,"Todo bien se realizo con la asignacion Dinamica");
-            }else{
-                log_info(logger,"Fallo en la asignacion Dinamica");
-            }
-        }
         return archivo;
     }
     
