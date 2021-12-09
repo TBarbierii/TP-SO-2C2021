@@ -33,7 +33,7 @@ uint32_t suspender_proceso(uint32_t pid){
    
    list_iterate(paginas_que_se_van, (void*)volarPaginas);
 
-
+    //list_destroy(paginas_que_se_van); ?
 
    
 }

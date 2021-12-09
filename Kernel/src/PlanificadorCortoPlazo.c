@@ -2,13 +2,12 @@
 
 void rutinaDeProceso(){
     
-    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","Thread-CPU", 1, LOG_LEVEL_DEBUG);
-    
     while(1){
 
         //como son hilos creados al comienzo, aca deberiamos sacar al primer proceso que este en exec y agregarlo
         sem_wait(procesosDisponiblesParaEjecutar);
 
+        t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","Thread-CPU", 1, LOG_LEVEL_DEBUG);
         //vamos a sacar al primero que esta en READY, replanificando por las dudas
         pthread_mutex_lock(modificarReady);
             replanificacion(logger); //en este momento replanifico y ordeno la lista de readys segun el criterio seleccionado
@@ -61,9 +60,9 @@ void rutinaDeProceso(){
 
             procesoListoParaEjecutar->vuelveDeBloqueo = NO_BLOQUEADO;
             
-            log_info(logger, "Se ejecuto tarea de conexion");
+            log_warning(logger, "Se ejecuto tarea de conexion");
             int codigoOperacion = atenderMensajeEnKernel(procesoListoParaEjecutar->conexion);
-            log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
+//            log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
 
             if(rompoElHiloSegunElCodigo(codigoOperacion) == 1){
 
@@ -93,9 +92,9 @@ void rutinaDeProceso(){
 
         }
 
+        log_destroy(logger);
     }
 
-    log_destroy(logger);
 
 }
 

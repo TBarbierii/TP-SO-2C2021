@@ -13,7 +13,7 @@ void atenderSolicitudesKernel(){
 	while(1){
 		pthread_t cliente;
 		int conexion = esperar_cliente(servidor);
-		log_info(logger,"Se unio un carpincho");
+		log_warning(logger,"Se unio un carpincho");
 		
 		pthread_create(&cliente,NULL,(void*)atenderMensajeEnKernel,(void *) conexion);
 		pthread_detach(cliente);
@@ -39,8 +39,8 @@ int atenderMensajeEnKernel(int conexion) {
 		return -1;
 	}
 
-	log_info(logger,"Recibimos la informacion de un carpincho");
-	log_info(logger,"El codigo de operacion es: %d",paquete->codigo_operacion);
+	log_debug(logger,"Recibimos la informacion de un carpincho");
+//	log_info(logger,"El codigo de operacion es: %d",paquete->codigo_operacion);
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(conexion, &(paquete->buffer->size), sizeof(uint32_t), 0);
@@ -177,7 +177,7 @@ void cerrarProceso(t_buffer* bufferActual,t_log* logger){
 
 	pthread_mutex_lock(modificarExec); //busco al proceso y lo saco
 		proceso_kernel* procesoActual =list_remove_by_condition(procesosExec, buscarProcesoPorPid);
-		log_info(logger,"Sacamos al carpincho de ejecucion. Pid: %d", procesoActual->pid);
+		log_error(logger,"Sacamos al carpincho de ejecucion. Pid: %d", procesoActual->pid);
 	pthread_mutex_unlock(modificarExec);
 
 	/* le notificamos a memoria que haga todo el trabajo de sacar las cosas de memoria y swap */

@@ -167,7 +167,7 @@ void consolidar_allocs(int desplazamientoHeapLiberado, t_pagina* pagina, int32_t
 	t_pagina* paginaDelSiguienteDelSiguiente; 
 	t_pagina* paginaDelHeapAnterior;
 
-	int desplazamiento, idPagina, lecturaAnterior, lecturaSiguienteSiguiente, nextNextAlloc;
+	int desplazamiento, idPagina, lecturaAnterior = 0, lecturaSiguienteSiguiente = 0, nextNextAlloc;
 	int32_t DF;
 
 	bool buscarPag(t_pagina* pag){
@@ -251,12 +251,10 @@ void consolidar_allocs(int desplazamientoHeapLiberado, t_pagina* pagina, int32_t
 		void destructor(t_pagina* pag){
 			pag->marco->estaLibre = true;
 			pag->marco->proceso_asignado = -1;
-			free(pag);
+//			free(pag);
 		};
 
 		list_clean_and_destroy_elements(carpincho->tabla_de_paginas, (void*)destructor);
-
-
 
 
 		carpincho->contadorPag -- ;

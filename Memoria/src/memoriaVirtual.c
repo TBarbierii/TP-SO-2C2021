@@ -54,6 +54,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		list_remove_by_condition(TLB, (void*)quitarDeTLB);// se quita directamente la pagina que se mando a swap.
 		log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 		pthread_mutex_unlock(TLB_mutex);
+		list_destroy(paginas_a_reemplazar); 
 		free(contenido);
 
 		return victima->marco;
@@ -171,7 +172,7 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 					carpincho->punteroClock = 0;
 				}
 
-				free (paginasOrdenadas);
+				list_destroy(paginasOrdenadas);
 				return candidata;
 
 			}else{
@@ -194,7 +195,7 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 					carpincho->punteroClock = 0;
 				}
 
-				free (paginasOrdenadas);
+				list_destroy(paginasOrdenadas);
 				return candidata;
 				
 			}else{
@@ -211,7 +212,7 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 		goto segundoIntento; 
 		//si llegó hasta aca es porque hizo las dos vueltas y tiene que empezar de nuevo
 
-		free (paginasOrdenadas);
+		list_destroy(paginasOrdenadas);
 
 		}else if(strcmp(tipoAsignacion, "DINAMICA") == 0){
 
@@ -227,7 +228,7 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 				if(punteroClock >= list_size(paginasOrdenadas)){
 					punteroClock = 0;
 				}
-				free (paginasOrdenadas);
+				list_destroy(paginasOrdenadas);
 				return candidata;
 			}else{
 				punteroClock++;
@@ -247,7 +248,7 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 				if(punteroClock >= list_size(paginasOrdenadas)){
 					punteroClock = 0;
 				}
-				free (paginasOrdenadas);
+				list_destroy(paginasOrdenadas);
 				return candidata;
 				
 			}else{
@@ -262,7 +263,7 @@ t_pagina* algoritmo_reemplazo_MMU(t_list* paginas_a_reemplazar, t_carpincho* car
 
 		goto segundoIntentoDinamica; //si llegó hasta aca es porque hizo las dos vueltas y tiene que empezar de nuevo
 
-		free (paginasOrdenadas);
+		list_destroy(paginasOrdenadas);
 		}
 
 	}

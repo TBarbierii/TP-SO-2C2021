@@ -41,6 +41,7 @@ int crearSemaforo(char* nombreSem, unsigned int valorSem){
     }else{
         log_warning(logger,"Se esta intentando crear un semaforo: %s pero ya esta creado", nombreSem);
         log_destroy(logger);
+        free(nombreSem);
         return 0;
     }
     
