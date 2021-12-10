@@ -133,8 +133,9 @@ void finalizarListas(){
 }
 
 
-t_config* inicializarConfig(){
-    return config_create("cfg/ConfiguracionKernel.config");
+t_config* inicializarConfig(char* path){
+    //return config_create("cfg/ConfiguracionKernel.config");
+    return config_create(path);
 }
 
 void obtenerValoresDelConfig(t_config* configActual){
@@ -231,7 +232,7 @@ void finalizarDispositivosIO(){
 
 
 
-int main(){
+int main(int argc, char *argv[]){
 
     t_log* logger = log_create("cfg/KernelActual.log","KernelActual",0,LOG_LEVEL_INFO);
 
@@ -239,7 +240,14 @@ int main(){
     cantidadDeProcesosActual = 0;
 
     inicializarListas();
-    t_config* configActual = inicializarConfig();
+
+    if(argc < 2){
+        perror("Falta path de archivo de configuración.");
+        return -1;
+    }
+
+    t_config* configActual = inicializarConfig(argv[1]);
+
     
     log_info(logger,"Se inicializan el config y las listas de planificacion");
     

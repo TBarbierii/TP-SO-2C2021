@@ -107,7 +107,7 @@ pthread_mutex_t* controladorIO;
 void inicializarListas();
 void inicializarSemaforosGlobales();
 void finalizarListas();
-t_config* inicializarConfig();
+t_config* inicializarConfig(char*);
 
 void obtenerValoresDelConfig(t_config* configActual);
 void inicializarDispositivosIO(char ** dispositivos, char** duraciones);

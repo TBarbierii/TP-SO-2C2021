@@ -1,9 +1,16 @@
 #include "Swamp.h"
 
 /* ---------------- SWAmP ---------------- */
-int main(){
+int main(int argc, char *argv[]){
+    
     logger_swamp = log_create("./cfg/logger_swamp.log", "SWAmP", true, LOG_LEVEL_DEBUG);
-    t_config* config_swamp = config_create("./cfg/ConfiguracionSwamp.config");
+
+    if(argc < 2){
+        perror("Falta path de archivo de configuración.");
+        return -1;
+    }
+    
+    t_config* config_swamp = config_create(argv[1]);
     lista_swap_files = list_create();
 
     obtener_valores_config(config_swamp,logger_swamp);
