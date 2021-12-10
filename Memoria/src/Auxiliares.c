@@ -8,18 +8,12 @@ void manejador_de_seniales(int numeroSenial){
 			int cantidadCarpinchos = list_size(carpinchosMetricas);
 
 			for (int i=0; i<cantidadCarpinchos; i++){
-				
-				pthread_mutex_lock(listaCarpinchos);	
+					
 			pthread_mutex_lock(listaCarpinchos);
 			t_carpincho* carp = list_get(carpinchosMetricas, i);
 			pthread_mutex_unlock(listaCarpinchos);
 
-			log_info(logsObligatorios, "Carpincho %i. Hits: %i Misses: %i", carp->id_carpincho, carp->tlb_hit, carp->tlb_miss);
-
-				t_carpincho* carp = list_get(carpinchosMetricas, i);
-				pthread_mutex_unlock(listaCarpinchos);
-
-				log_info(logsObligatorios, "Carpincho %i. Hits: %i Misses: %i", carp->id_carpincho, carp->tlb_hit, carp->tlb_miss);
+			log_info(logsObligatorios, "Carpincho %i. Hits: %i Misses: %i.", carp->id_carpincho, carp->tlb_hit, carp->tlb_miss);
 
 			}
 
@@ -258,6 +252,8 @@ void consolidar_allocs(int desplazamientoHeapLiberado, t_pagina* pagina, int32_t
 
 
 		carpincho->contadorPag -- ;
+
+		log_info(loggerServidor, "Se liberaron 1 paginas del carpincho %i", carpincho->id_carpincho);
 
 	}else if(lecturaAnterior == 1 && lecturaSiguienteSiguiente == 1 && heapAnterior->isFree && heapPosterior->isFree){ //ambos estan libres
 
