@@ -1,7 +1,8 @@
 #include "Memoria.h"
 
-t_config* inicializarConfig(){
-    return config_create("cfg/ConfiguracionMemoria.config");
+t_config* inicializarConfig(char* path){
+    //return config_create("cfg/ConfiguracionMemoria.config");
+    return config_create(path);
 }
 
 void inicializarListas(){
@@ -137,9 +138,17 @@ void finalizarMemoria() {
 
 }
 
-int main(){
+int main(int argc, char *argv[]){
 
-    t_config* configActual = inicializarConfig();
+    //t_config* configActual = inicializarConfig();
+
+    if(argc < 2){
+        perror("Falta path de archivo de configuración.");
+        return -1;
+    }
+
+    t_config* configActual = inicializarConfig(argv[1]);
+
     obtenerValoresDelConfig(configActual);
     inicializarTodo();
     inicializarMemoria();
