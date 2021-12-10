@@ -15,6 +15,7 @@ uint32_t administrar_allocs(uint32_t pid, uint32_t tamanio){
   
     uint32_t direccionLogica = administrar_paginas(carpincho, tamanio, marcos_a_asignar);
 	
+	log_info(loggerServidor, "El carpincho: %i ahora tiene %i paginas",carpincho->id_carpincho, list_size(carpincho->tabla_de_paginas));
 
     return direccionLogica;
 
@@ -35,7 +36,6 @@ uint32_t administrar_paginas(t_carpincho* carpincho, uint32_t tamanio, t_list* m
         int conexion = consultar_espacio(carpincho->id_carpincho, cantidadDePaginasACrear);
 
         uint32_t respuesta = (uint32_t)atender_respuestas_swap(conexion);
-        printf("\nRespuesta consulta: %i\n", respuesta);
         pthread_mutex_unlock(swap);
 
         if(respuesta == 0) return 0;
@@ -282,7 +282,7 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 		if (contador >= list_size(marcos_a_asignar)) {
 			pthread_mutex_lock(swap);
 			marco = reemplazarPagina(carpincho);
-			log_warning(loggerMarcos, "El proceso %i va a reemplazar el marco %i para escribirlo  ", carpincho->id_carpincho, marco->id_marco);
+			log_warning(loggerMarcos, "El carpincho %i va a reemplazar el marco %i para escribirlo", carpincho->id_carpincho, marco->id_marco);
 			pthread_mutex_unlock(swap);
 
 		} else {
@@ -292,7 +292,6 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 			}else if (strcmp(tipoAsignacion, "FIJA") == 0){
 				marco = list_get(marcos_a_asignar, contador);
 			}
-			log_warning(loggerMarcos, "El proceso %i va a escribir el marco %i ", carpincho->id_carpincho, marco->id_marco);
 		}
 
 		if(marco->estaLibre){
@@ -312,7 +311,7 @@ void escribirMemoria(void* buffer, t_list* paginas, t_list* marcos_a_asignar, t_
 			marco->proceso_asignado=carpincho->id_carpincho;
 			
 
-			log_info(loggerMarcos, "Se escribe sobre el MARCO: %d, la PAGINA: %d, del proceso :%d", marco->id_marco, pag->id_pagina, carpincho->id_carpincho);
+			log_info(loggerMarcos, "Se escribe sobre el MARCO: %d, la PAGINA: %d, del carpincho :%d", marco->id_marco, pag->id_pagina, carpincho->id_carpincho);
 			
 		}
 		contador++;
@@ -401,7 +400,7 @@ int buscarSiguienteHeapLibre(heapMetadata* heap, int32_t *DF, t_carpincho* carpi
 
 		}
 
-		log_error(loggerMemalloc, "Se leyo un heap");
+		log_info(loggerMemalloc, "Se leyo un heap del carpincho: %i", carpincho->id_carpincho);
 
 	} while (!(heap->isFree));
 
@@ -458,7 +457,6 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 
 	uint32_t respuesta = (uint32_t)atender_respuestas_swap(conexion);
 	
-	printf("\nRespuesta consulta: %i\n", respuesta);
 	pthread_mutex_unlock(listaCarpinchos);
 	if(respuesta == 0){ 
 		return 0;

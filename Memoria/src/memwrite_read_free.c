@@ -108,6 +108,8 @@ void liberar_alloc(uint32_t carpincho, uint32_t DL){
         free(heap);
     }
     
+    log_info(loggerServidor, "Se libero alloc del carpincho %i", capybara->id_carpincho);
+
     consolidar_allocs(desplazamiento, pagina, prevAlloc, nextAlloc, capybara);
 
 }
@@ -342,5 +344,3 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
     return leido;
 
 }
-
-
