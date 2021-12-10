@@ -18,7 +18,7 @@ void rutinaDeProceso(){
         //lo ponemos en la lista de exec
         pthread_mutex_lock(modificarExec);
             list_add(procesosExec, procesoListoParaEjecutar);
-            log_debug(logger, "Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: %d", procesoListoParaEjecutar->pid);
+            log_warning(logger, "Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: %d", procesoListoParaEjecutar->pid);
         pthread_mutex_unlock(modificarExec);
         
 
@@ -60,9 +60,9 @@ void rutinaDeProceso(){
 
             procesoListoParaEjecutar->vuelveDeBloqueo = NO_BLOQUEADO;
             
-            log_warning(logger, "Se ejecuto tarea de conexion");
+            log_info(logger, "Se ejecuto tarea de conexion");
             int codigoOperacion = atenderMensajeEnKernel(procesoListoParaEjecutar->conexion);
-//            log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
+
 
             if(rompoElHiloSegunElCodigo(codigoOperacion) == 1){
 
@@ -103,7 +103,7 @@ void rutinaDeProceso(){
 
 void planificadorCortoPlazo(){
 
-    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 1, LOG_LEVEL_DEBUG);
     log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: %s",algoritmoPlanificacion);
     inicializarHilosCPU();
     while(1){
