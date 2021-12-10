@@ -189,8 +189,10 @@ void* generar_buffer_allocs(uint32_t tamanio, heapMetadata* heap, uint32_t cantP
             void* buffer_heap = malloc(TAMANIO_HEAP);
             memcpy(buffer_heap, heap, TAMANIO_HEAP);
             int offset = (despl + TAMANIO_HEAP + tamanio) - tamanioPagina;
-        
-            memcpy(stream_allocs, buffer_heap - offset, (despl + TAMANIO_HEAP));
+			
+            memcpy(stream_allocs, buffer_heap - offset, (offset + TAMANIO_HEAP));
+			//memcpy(stream_allocs, buffer_heap - despl, (despl + TAMANIO_HEAP));
+
                
             free(buffer_heap);
 
@@ -518,13 +520,14 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		paginaDeSiguienteHeap->uso = true;
 		pthread_mutex_unlock(tabla_paginas);
 
-
 		*desplazamiento = - (tamanioPagina - *desplazamiento); //esto esta re trambolico porque despues le suma 9
 
 		free(buffer_heap);
 		//free(heap);
 
 	}else{
+
+		//*desplazamiento = - (tamanioPagina - *desplazamiento);
 
 		pthread_mutex_lock(memoria);
 		memcpy(memoriaPrincipal + DF + *desplazamiento, heap, TAMANIO_HEAP);
@@ -616,7 +619,8 @@ uint32_t crearAllocNuevo(int *pagina, int tamanio, heapMetadata* heap, int posic
 		p->uso = true;
 		pthread_mutex_unlock(tabla_paginas);
 
-		free(nuevoHeap);
+		//free(nuevoHeap);
+
 
 	}
 
