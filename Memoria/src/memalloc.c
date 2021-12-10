@@ -191,7 +191,7 @@ void* generar_buffer_allocs(uint32_t tamanio, heapMetadata* heap, uint32_t cantP
             int offset = (despl + TAMANIO_HEAP + tamanio) - tamanioPagina;
 			
             memcpy(stream_allocs, buffer_heap - offset, (offset + TAMANIO_HEAP));
-			//memcpy(stream_allocs, buffer_heap - despl, (despl + TAMANIO_HEAP));
+			//memcpy(stream_allocs, buffer_heap - offset, (despl + TAMANIO_HEAP));
 
                
             free(buffer_heap);
