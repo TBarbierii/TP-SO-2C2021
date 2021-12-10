@@ -32,7 +32,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho);   
 		pthread_mutex_unlock(tabla_paginas);
 
-		log_info(logsObligatorios, "Pagina víctima: Pid: %i, Página: %i, Marco: %i", carpincho->id_carpincho, victima->id_pagina, victima->marco->id_marco);
+		log_warning(logsObligatorios, "[SWAP] Pagina víctima: Pid: %i, Página: %i, Marco: %i", carpincho->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 
 		void* contenido = malloc(tamanioPagina);
 		pthread_mutex_lock(memoria);
@@ -52,7 +52,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 			return victima->id_pagina == pag->id_pagina && victima->id_carpincho ==  pag->id_carpincho;
 		};
 		list_remove_by_condition(TLB, (void*)quitarDeTLB);// se quita directamente la pagina que se mando a swap.
-		log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
+		log_warning(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 		pthread_mutex_unlock(TLB_mutex);
 		list_destroy(paginas_a_reemplazar); 
 		free(contenido);
@@ -90,7 +90,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 		t_pagina* victima = algoritmo_reemplazo_MMU(paginas_a_reemplazar, carpincho); 
 		pthread_mutex_unlock(tabla_paginas);
 
-		log_info(logsObligatorios, "Pagina víctima: Pid: %i, Página: %i, Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
+		log_warning(logsObligatorios, "[SWAP] Pagina víctima: Pid: %i, Página: %i, Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 
 		list_destroy(paginas_a_reemplazar);  												
 
@@ -296,25 +296,25 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
 				list_remove_by_condition(TLB, (void*)buscarPag);
 
-				log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
+				log_warning(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
 
 			}
 
 			list_add(TLB, pagina);
 			pthread_mutex_unlock(TLB_mutex);
 
-			log_info(logsObligatorios, "Entrada TLB. NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
+			log_warning(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 
 
 		}else if(strcmp(algoritmoReemplazoTLB, "FIFO") == 0){
 
 			t_pagina* pag = list_remove(TLB,0);
-			log_info(logsObligatorios, "Entrada TLB. Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
+			log_warning(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
 
 			list_add(TLB, pagina);
 			pthread_mutex_unlock(TLB_mutex);
 
-			log_info(logsObligatorios, "Entrada TLB. NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
+			log_warning(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 
 		}
 
@@ -325,7 +325,7 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 		}
 		pthread_mutex_unlock(TLB_mutex);
 		
-		log_info(logsObligatorios, "Entrada TLB. NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
+		log_warning(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 
 	}else{
 		pthread_mutex_unlock(TLB_mutex);
@@ -349,7 +349,7 @@ uint32_t swapear(t_carpincho* carpincho, t_pagina* paginaPedida){
 	paginaPedida->modificado = false;
 	pthread_mutex_unlock(tabla_paginas);
 
-	log_info(logsObligatorios, "Pagina entrante: Pid: %i, Página: %i, Marco: %i", carpincho->id_carpincho, paginaPedida->id_pagina, paginaPedida->marco->id_marco);
+	log_warning(logsObligatorios, "[SWAP] Pagina entrante: Pid: %i, Página: %i, Marco: %i", carpincho->id_carpincho, paginaPedida->id_pagina, paginaPedida->marco->id_marco);
 
 
 //	heapMetadata* heap = malloc(TAMANIO_HEAP);

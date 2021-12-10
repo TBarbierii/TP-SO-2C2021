@@ -134,7 +134,7 @@ void* atender_respuestas_swap(uint32_t conexion){
 		log_error(loggerServidor, "el cliente se desconecto. Terminando servidor");
 		break;
 	default:
-		log_warning(loggerServidor, "Se recibio un codigo de operacion incorrecto");
+		log_error(loggerServidor, "Se recibio un codigo de operacion incorrecto");
 		break;
 	}
 
@@ -154,7 +154,7 @@ uint32_t recibir_memalloc(int socket_cliente, t_log* logger) //devuelve DL del c
 	
 	free(buffer);
 	
-	log_info(logger, "\nLLego el proceso para allocar: \n Pid: %i \nTamanio: %i", pid, tamanio);
+	log_debug(logger, "[MATE_MEMALLOC] El carpincho: %i pide allocar: %i bytes", pid, tamanio);
 	
 	uint32_t direccionLogica = administrar_allocs(pid, tamanio);
 
@@ -177,7 +177,7 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 
 		carpincho->tabla_de_paginas = list_create();
 		carpincho->conexion = conexion;
-		log_info(logger,"Agregamos nuevo carpincho a memoria, y su pid es: %d",carpincho->id_carpincho);
+		log_debug(logger,"[MATE_INIT] Se inicializo el carpincho: %d",carpincho->id_carpincho);
 
 		carpincho->contadorPag=0;
 		carpincho->tlb_hit=0;
@@ -188,8 +188,6 @@ void inicializar_carpincho(int conexion ,t_log* logger){
 		list_add(carpinchos, carpincho);
 		list_add(carpinchosMetricas, carpincho);
 		pthread_mutex_unlock(listaCarpinchos);
-
-		log_info(logger,"Agregamos un carpincho a la lista de carpinchos, para que se le asigne memoria, y su pid es: %d",carpincho->id_carpincho);
 
 
 		enviarInformacionAdministrativaDelProceso(carpincho);
@@ -209,6 +207,7 @@ void enviarInformacionAdministrativaDelProceso(t_carpincho* carpincho){
 	enviarPaquete(paquete, carpincho->conexion);
 
 }
+
 uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 
 	uint32_t pidProcesoAEliminar;
@@ -242,15 +241,11 @@ uint32_t cerrar_carpincho(uint32_t conexion,t_log* logger){
 	pthread_mutex_lock(listaCarpinchos);
 	t_carpincho* carpincho =list_remove_by_condition(carpinchos, buscarProcesoPorPid);
 	pthread_mutex_unlock(listaCarpinchos);
-	log_info(logger,"Sacamos al carpincho. Pid: %d", carpincho->id_carpincho);
+	log_debug(logger,"[MATE_CLOSE] Sacamos al carpincho: %d", carpincho->id_carpincho);
 
 	informarCierreDeProceso(carpincho,logger);
 
 	finalizar_swap(pidProcesoAEliminar);
-	//loguear
-
-	log_info(logger,"Se nos va el carpincho: %d", carpincho->id_carpincho);
-
 
 
 	void destructor(t_pagina* pagina){
@@ -281,7 +276,7 @@ void informarCierreDeProceso(t_carpincho* carpincho,t_log* loggerActual){
 
 	memcpy(paquete->buffer->stream, &(valorReturn) , sizeof(uint32_t));
 
-	log_info(loggerActual,"Enviamos que queremos cerrar el carpincho", carpincho->id_carpincho);
+	log_info(loggerActual,"Enviamos que queremos cerrar el carpincho %i", carpincho->id_carpincho);
     enviarPaquete(paquete, carpincho->conexion);
 	//cerrar hilo
 
@@ -334,7 +329,7 @@ int32_t recibir_memfree(int socket_cliente, t_log* logger) {
 		 confirmacion =1;
 	}
 
-	log_info(logger, "\nRecibimos memfree: \n Pid: %i \nDirecLogica: %i", carpincho, direccionLogica);
+	log_debug(logger, "[MATE_MEMFREE] EL carpincho: %i pide liberar la direcLogica: %i", carpincho, direccionLogica);
 
 	liberar_alloc(carpincho, direccionLogica);
 
@@ -348,6 +343,8 @@ int32_t recibir_memfree(int socket_cliente, t_log* logger) {
     memcpy(paquete->buffer->stream + offset, &confirmacion, sizeof(int32_t));
 
 	enviarPaquete(paquete, socket_cliente);
+
+	log_info(loggerServidor, "El carpincho: %i ahora tiene %i paginas", carpincho, list_size(capybara->tabla_de_paginas));
 
 	return 0;
 }
@@ -389,9 +386,7 @@ int32_t recibir_memread(int socket_cliente, t_log* logger) {
 		 leido = leer_memoria(direccion_logica, carpincho, tamanio);
 	}
 
-	log_info(logger, "\nRecibimos memread: \n Pid: %i \nDirecLogica: %i \nTamanio %i", carpincho, direccion_logica, tamanio);
-
-	
+	log_debug(logger, "[MATE_MEMREAD] El carpincho %i pide leer la direcLogica %i. Tamanio %i", carpincho, direccion_logica, tamanio);
 
 	t_paquete *paquete = crear_paquete(MEMREAD);
 
@@ -449,7 +444,7 @@ int32_t recibir_memwrite(int socket_cliente, t_log* logger) {
 		 confirmacion =1;
 	}
 
-	log_info(logger, "\nRecibimos memwrite: \n Pid: %i \nDirecLogica: %i \nTamanio: %i", carpincho, direccion_logica, tamanio);
+	log_debug(logger, "[MATE_MEMWRITE] El carpincho %i pide escribir la direcLogica %i. Tamanio: %i", carpincho, direccion_logica, tamanio);
 
 	escribir_memoria(carpincho, direccion_logica, contenido, tamanio);// Retorna un entero si se pudo escribir o no
 	
@@ -642,7 +637,7 @@ void responderOperacionNoValida(int conexion, cod_operacion tareaRealizada, t_lo
 
 	t_paquete *paquete = crear_paquete(tareaRealizada);
 	
-	log_info(logger,"Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL");
+	log_error(logger,"Esta tarea no nos corresponde realizarla a nosotros ya que se debe realizar en el KERNEL");
 
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
