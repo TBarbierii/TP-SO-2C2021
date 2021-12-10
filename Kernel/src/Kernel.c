@@ -234,7 +234,7 @@ void finalizarDispositivosIO(){
 
 int main(int argc, char *argv[]){
 
-    t_log* logger = log_create("cfg/KernelActual.log","KernelActual",0,LOG_LEVEL_INFO);
+    t_log* logger = log_create("cfg/KernelActual.log","KernelActual",1,LOG_LEVEL_INFO);
 
     valorIdSemaforos = 0;
     cantidadDeProcesosActual = 0;
@@ -249,15 +249,15 @@ int main(int argc, char *argv[]){
     t_config* configActual = inicializarConfig(argv[1]);
 
     
-    log_info(logger,"Se inicializan el config y las listas de planificacion");
+    log_info(logger,"[GENERAL] Se inicializan el config y las listas de planificacion");
     
     obtenerValoresDelConfig(configActual);
 
-    log_info(logger,"Se inicializan los valores provenientes del config");
+    log_info(logger,"[GENERAL] Se inicializan los valores provenientes del config");
 
     inicializarSemaforosGlobales();
 
-    log_info(logger,"Se inicializan los semaforos utilizados para la sincronizacion de los planificadores");
+    log_info(logger,"[GENERAL] Se inicializan los semaforos utilizados para la sincronizacion de los planificadores");
     
 
     ejecutarDispositivosIO();
@@ -289,7 +289,7 @@ int main(int argc, char *argv[]){
     finalizarDispositivosIO();
     finalizarConfig(configActual);
 
-    log_info(logger,"Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas");
+    log_info(logger,"[GENERAL] Se finaliza la ejecucion del modulo del kernel, cerrando todas las variables asignadas");
 
     log_destroy(logger);
 

@@ -262,7 +262,7 @@ void ejecutarAlgoritmoDeadlock(){
         pthread_mutex_lock(modificarSuspendedReady);
         pthread_mutex_lock(modificarNew);
 
-        log_info(logger,"Se ejecuta algoritmo de deteccion y recuperacion de deadlock \n");
+        log_info(logger,"\n[DEADLOCK] Se ejecuta algoritmo de deteccion y recuperacion de deadlock ");
 
         t_list* procesosEnDEADLOCK = list_create();
 
@@ -272,12 +272,12 @@ void ejecutarAlgoritmoDeadlock(){
             //una vez que tenemos los procesos, primero si vemos que hay 0 o 1 procesos, cancelamos el deadlcok
             
             if(procesosAanalizar == NULL) {
-                log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra\n");
+                log_info(logger,"[DEADLOCK] No hay deadlock porque no hay suficientes procesos para que ocurra\n");
                 break;
             }
 
             if(list_size(procesosAanalizar) <= 1){
-                log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra\n");
+                log_info(logger,"[DEADLOCK] No hay deadlock porque no hay suficientes procesos para que ocurra\n");
                 list_destroy(procesosAanalizar);
                 break;
             }
@@ -311,16 +311,6 @@ void ejecutarAlgoritmoDeadlock(){
 
                 proceso_kernel* carpincho = list_find(procesosAanalizar, proceso_apuntado); 
 
-                /*
-                deadlock 1
-                1 -> 2
-
-                dealock 2
-
-                1 -> 2
-                
-                */
-
                 if(carpincho != NULL){
                     procesoAnalizado->procesoApuntadoDeadlock = carpincho;
                 }else { //si no hay un proceso que retenga el semaforo que solicite el procesoAnalizado, deberia ser NULL el puntero
@@ -338,7 +328,7 @@ void ejecutarAlgoritmoDeadlock(){
                 list_destroy(listaDeProcesos);
 
                 if(enDeadlock){
-                    log_warning(logger,"El proceso %d se encuentra en Dealock", process->pid);
+                    log_warning(logger,"[DEADLOCK] El proceso %d se encuentra en Dealock", process->pid);
                     list_add(procesosEnDEADLOCK, process);
                 }
             }
@@ -349,7 +339,7 @@ void ejecutarAlgoritmoDeadlock(){
                 
                 //sacamos al proceso de mayor id, que esta al comienzo
                 proceso_kernel* procesoASacarPorDeadlock = list_remove(procesosEnDEADLOCK, 0);
-                log_info(logger,"El proceso que se sacara por el Deadlock es el :%d\n",procesoASacarPorDeadlock->pid);
+                log_info(logger,"[DEADLOCK] El proceso que se sacara por el Deadlock es el :%d\n",procesoASacarPorDeadlock->pid);
                 desalojarSemaforosDeProceso(procesoASacarPorDeadlock);
                 finalizarProcesoPorDeadlock(procesoASacarPorDeadlock);
                 
@@ -357,7 +347,7 @@ void ejecutarAlgoritmoDeadlock(){
                 //break;
             
             }else { // no hay procesos en dealock
-                log_info(logger,"No hay deadlock porque no hay suficientes procesos para que ocurra");
+                log_info(logger,"[DEADLOCK] No hay deadlock porque no hay suficientes procesos para que ocurra\n");
                 list_destroy(procesosAanalizar);
                 break;
             }
@@ -462,9 +452,9 @@ t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
 
     if(listaFiltradaFinal != NULL) {
         int sizeBloqueados = list_size(listaFiltradaFinal);
-        log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d\n", sizeBloqueados);
+        log_info(loggerActual,"[DEALOCK] La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d\n", sizeBloqueados);
     }else{
-        log_info(loggerActual,"La cantidad de procesos agarrados para el deadlock es 0");        
+        log_info(loggerActual,"[DEALOCK] La cantidad de procesos agarrados para el deadlock es 0");        
     }
 
     list_destroy(listaFiltrada);

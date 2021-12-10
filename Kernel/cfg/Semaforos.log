@@ -1,0 +1,23 @@
+[INFO] 13:27:05:821 Semaforos/(9865:9875): Se ha creado un nuevo semaforo de nombre: smirnoffc2 y valor: 1
+[INFO] 13:27:05:826 Semaforos/(9865:9875): Se ha creado un nuevo semaforo de nombre: smirnoffc3 y valor: 0
+[INFO] 13:27:05:830 Semaforos/(9865:9875): El proceso:2 realizo un signal del semaforo: smirnoffc3 y el valor se incremento a: 1
+[INFO] 13:27:05:832 Semaforos/(9865:9875): Como el semaforo: smirnoffc3, no tiene procesos esperando solo se aumenta su valor
+[INFO] 13:27:05:836 Semaforos/(9865:9875): El proceso:2 realizo un wait del semaforo: smirnoffc2 y el valor decrecio a: 0
+[INFO] 13:27:05:837 Semaforos/(9865:9875): Se ejecuto un wait sobre un semaforo:smirnoffc2, pero como el valor no era menor a 1, entonces el proceso:2 no se bloqueo
+[INFO] 13:27:05:844 Semaforos/(9865:9875): El proceso:2 realizo un wait del semaforo: smirnoffc2 y el valor decrecio a: -1
+[INFO] 13:27:05:846 Semaforos/(9865:9875): Se agrega el proceso con Pid:2 en bloqueado, y se agrega en la lista de espera del semaforo: smirnoffc2
+[WARNING] 13:27:10:807 Semaforos/(9865:9873): Se esta intentando crear un semaforo: smirnoffc2 pero ya esta creado
+[INFO] 13:27:10:813 Semaforos/(9865:9873): El proceso:1 realizo un signal del semaforo: smirnoffc2 y el valor se incremento a: 0
+[INFO] 13:27:10:814 Semaforos/(9865:9873): Se libera el proceso:1, de la lista de espera del semaforo: smirnoffc2
+[INFO] 13:30:22:793 Semaforos/(10211:10219): Se ha creado un nuevo semaforo de nombre: smirnoffc2 y valor: 1
+[INFO] 13:30:22:798 Semaforos/(10211:10219): Se ha creado un nuevo semaforo de nombre: smirnoffc3 y valor: 0
+[INFO] 13:30:22:808 Semaforos/(10211:10219): El proceso:1 realizo un signal del semaforo: smirnoffc3 y el valor se incremento a: 1
+[INFO] 13:30:22:810 Semaforos/(10211:10219): Como el semaforo: smirnoffc3, no tiene procesos esperando solo se aumenta su valor
+[INFO] 13:30:22:816 Semaforos/(10211:10219): El proceso:1 realizo un wait del semaforo: smirnoffc2 y el valor decrecio a: 0
+[INFO] 13:30:22:817 Semaforos/(10211:10219): Se ejecuto un wait sobre un semaforo:smirnoffc2, pero como el valor no era menor a 1, entonces el proceso:1 no se bloqueo
+[INFO] 13:30:52:636 Semaforos/(10250:10259): Se ha creado un nuevo semaforo de nombre: smirnoffc2 y valor: 1
+[INFO] 13:30:52:641 Semaforos/(10250:10259): Se ha creado un nuevo semaforo de nombre: smirnoffc3 y valor: 0
+[INFO] 13:30:52:646 Semaforos/(10250:10259): El proceso:1 realizo un signal del semaforo: smirnoffc3 y el valor se incremento a: 1
+[INFO] 13:30:52:648 Semaforos/(10250:10259): Como el semaforo: smirnoffc3, no tiene procesos esperando solo se aumenta su valor
+[INFO] 13:30:52:651 Semaforos/(10250:10259): El proceso:1 realizo un wait del semaforo: smirnoffc2 y el valor decrecio a: 0
+[INFO] 13:30:52:652 Semaforos/(10250:10259): Se ejecuto un wait sobre un semaforo:smirnoffc2, pero como el valor no era menor a 1, entonces el proceso:1 no se bloqueo
