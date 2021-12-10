@@ -216,11 +216,11 @@ void notificar_finalizacion_de_proceso(int conexion) {
 void notificar_insuficiencia_de_espacio_para_proceso(int conexion, int valor) {
 
 	t_paquete *paquete = crear_paquete(CONSULTAR_ESPACIO); 
-	if(valor == 1) {
+/*	if(valor == 1) {
 		printf("\nHAY ESPACIO EN SWAP\n");
 	}else{
 		printf("\nARCHIVOS DE SWAP COMPLETOS\n");
-	}
+	}*/
 	paquete->buffer->size = sizeof(uint32_t);
     paquete->buffer->stream = malloc(paquete->buffer->size);
 	uint32_t desplazamiento=0;

@@ -139,7 +139,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
             memcpy(contenidoParaLoggear + tamanio_pagina, &(valorsitoParaString),1);
             log_warning(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
-            log_info(logger,"El contenido leido es %s", contenidoParaLoggear);
+//            log_info(logger,"El contenido leido es %s", contenidoParaLoggear);
             free(contenidoParaLoggear);
 
             enviar_pagina(contenido_a_leer, conexion);
