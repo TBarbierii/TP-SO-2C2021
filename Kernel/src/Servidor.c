@@ -954,8 +954,6 @@ void notificarSuspensionDeProceso(proceso_kernel* proceso, t_log* logger){
 
 		memcpy(paquete->buffer->stream + desplazamiento, &(proceso->pid) , sizeof(uint32_t));
 		enviarPaquete(paquete,proceso->conexionConMemoria);
-
-		atenderMensajeDeMemoria(proceso);
 	}
 }
 
