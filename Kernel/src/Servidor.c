@@ -177,7 +177,7 @@ void cerrarProceso(t_buffer* bufferActual,t_log* logger){
 
 	pthread_mutex_lock(modificarExec); //busco al proceso y lo saco
 		proceso_kernel* procesoActual =list_remove_by_condition(procesosExec, buscarProcesoPorPid);
-		log_error(logger,"Sacamos al carpincho de ejecucion. Pid: %d", procesoActual->pid);
+		//log_info(logger,"Sacamos al carpincho de ejecucion. Pid: %d", procesoActual->pid);
 	pthread_mutex_unlock(modificarExec);
 
 	/* le notificamos a memoria que haga todo el trabajo de sacar las cosas de memoria y swap */
@@ -219,7 +219,7 @@ void informarCierreDeProceso(proceso_kernel* proceso,t_log* loggerActual){
 
 	memcpy(paquete->buffer->stream + desplazamiento, &(valorReturn) , sizeof(uint32_t));
 
-	log_info(loggerActual,"Enviamos que vamos a cerrar el carpincho");
+	
     enviarPaquete(paquete,proceso->conexion);
 
 }
@@ -472,6 +472,8 @@ void inicializarEnMemoria(proceso_kernel* proceso, t_log* logger){
 	}else{
 		proceso->pid = -1;
 	}
+
+	log_error(logger, "El nuevo carpincho que entra al sistema permitido por el grado de multiprogramacion es:%i", proceso->pid);
 
 }
 

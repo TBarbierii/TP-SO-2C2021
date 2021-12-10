@@ -2,7 +2,7 @@
 
 void planificadorMedianoPlazo(){
 
-    t_log* logger = log_create("cfg/PlanificadorMedianoPlazoActual.log","PlanificadorMedianoPlazo", 0, LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/PlanificadorMedianoPlazoActual.log","PlanificadorMedianoPlazo", 1, LOG_LEVEL_DEBUG);
     
     log_debug(logger,"Se inicializa la planificacion de mediano plazo");
 
@@ -32,7 +32,7 @@ void thread1_PMP(t_log* logger){
 
         if(list_is_empty(procesosReady) && !list_is_empty(procesosNew) && !list_is_empty(procesosBlocked)){
             proceso_kernel* procesoASuspender = list_remove(procesosBlocked, list_size(procesosBlocked)-1);
-            log_info(logger,"Se encontro que hay solo procesos IO Bound ocupando la Multiprogramacion, por lo tanto ponemos uno en Suspended-Blocked, el cual es: %d",procesoASuspender->pid);
+            log_warning(logger,"Se encontro que hay solo procesos IO Bound ocupando la Multiprogramacion, por lo tanto ponemos uno en Suspended-Blocked, el cual es: %d",procesoASuspender->pid);
             list_add(procesosSuspendedBlock, procesoASuspender);
             notificarSuspensionDeProceso(procesoASuspender, logger);
             sem_post(nivelMultiProgramacionGeneral);
@@ -63,7 +63,7 @@ void thread2_PMP(t_log* logger){
                 log_info(logger,"No hay procesos en Suspended Ready, agregamos uno de NEW en Ready");
                 sem_post(nivelMultiProgramacionBajaPrioridad);
             }else{
-                log_info(logger,"Se busca un proceso de Suspended Ready y se pasa a Ready");
+                log_warning(logger,"Se busca un proceso de Suspended Ready y se pasa a Ready");
                 pthread_mutex_lock(modificarSuspendedReady);
                     proceso_kernel* procesoParaPreparar = list_remove(procesosSuspendedReady,0);
                 pthread_mutex_unlock(modificarSuspendedReady);

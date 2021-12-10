@@ -487,7 +487,7 @@ int agregarInfoAdministrativa(int conexion, mate_instance* lib_ref, t_buffer* bu
 
     lib_ref->group_info->loggerProceso = log_create(nombreLog,"loggerContenidoProceso",1,LOG_LEVEL_DEBUG);
     
-    log_info(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho:%d, y se ha logrado conectar correctamente al backend", lib_ref->group_info->pid);
+    log_debug(lib_ref->group_info->loggerProceso,"Se ha creado el carpincho:%d, y se ha logrado conectar correctamente al backend", lib_ref->group_info->pid);
 
     free(pidCarpincho);
     free(nombreLog);
@@ -509,14 +509,14 @@ int liberarEstructurasDeProceso(t_buffer* buffer, mate_instance* lib_ref){
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
     if(valor == 1){
-        log_info(lib_ref->group_info->loggerProceso,"Se pudo cerrar el proceso de PID:%d correctamente en el BackEnd", lib_ref->group_info->pid);
+        log_debug(lib_ref->group_info->loggerProceso,"Se pudo cerrar el proceso de PID:%d correctamente en el BackEnd", lib_ref->group_info->pid);
     }else{
         log_error(lib_ref->group_info->loggerProceso,"No se pudo cerrar el proceso de PID:%d, correctamente en el BackEnd",lib_ref->group_info->pid);
     }
 
 
 
-    log_info(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
+    log_debug(lib_ref->group_info->loggerProceso,"Se liberan todas las estructuras del proceso de PID:%d",lib_ref->group_info->pid);
     log_destroy(lib_ref->group_info->loggerProceso);
     close(lib_ref->group_info->conexionConBackEnd);
     free(lib_ref->group_info);
@@ -639,11 +639,11 @@ int notificacionMemFree(t_buffer* buffer, t_log* logger){
 	int valor;
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 
-    if(valor < 0){
-        log_info(logger,"No se pudo hacer el memfree del size solicitado");
+    if(valor == 0){
+        log_error(logger,"No se pudo hacer el memfree del size solicitado");
         valor = MATE_FREE_FAULT;
     }else{
-        log_error(logger,"Se pudo realizar el memfree");
+        log_info(logger,"Se pudo realizar el memfree");
     }
 
     return valor;
@@ -680,9 +680,9 @@ int notificacionMemWrite(t_buffer* buffer, t_log* logger){
 
     if(valor == 1){
         log_info(logger,"Se pudo hacer el memwrite solicitado");
-        valor = MATE_WRITE_FAULT;
     }else{
         log_error(logger,"No se pudo realizar el memwrite");
+        valor = MATE_WRITE_FAULT;
     }
 
     return valor;
