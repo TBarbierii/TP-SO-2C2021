@@ -22,7 +22,8 @@
 			"temporal.h": "c",
 			"memoriavirtual_suspencion.h": "c",
 			"config.h": "c",
-			"unistd.h": "c"
+			"unistd.h": "c",
+			"signal.h": "c"
 		},
 		"git.ignoreLimitWarning": true
 	}
