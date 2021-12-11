@@ -23,8 +23,8 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
             
             vaciar_particion(particion_para_sobreescribir, nombreArchivo);
     
-            log_warning(logger,"\n      Se guarda:\n        Pagina: %i\n        Proceso: %i\n        Archivo: %s\n", pagina, PID, archivoAEscribir->path);
-            log_info(logger,"Se SOBREESCRIBE sobre la particion: %i", particion_para_sobreescribir->num_particion);
+            log_warning(logger,"\n      Se guarda:\n        Pagina:  %i\n        Proceso: %i\n        Archivo: %s\n        SOBREESCRIBE particion: %i\n", pagina, PID, archivoAEscribir->path, particion_para_sobreescribir->num_particion);
+            //log_info(logger,"Se SOBREESCRIBE sobre la particion: %i", particion_para_sobreescribir->num_particion);
 
             int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
             truncate(archivoAEscribir->path, tamanio_swap);
@@ -35,7 +35,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
             munmap(contenidoArchivo, tamanio_swap);
             close(fd);
 
-            log_info(logger,"Se guardo el contenido correctamente");
+            log_info(logger,"Se guardo el contenido correctamente\n");
         }else{
             if(tipo_asignacion == 0){
                 
@@ -53,9 +53,9 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
                 particionAmodificar->hay_contenido = 1;
                 particionAmodificar->num_pagina = pagina;
 
-                log_warning(logger,"\n      Se guarda:\n        Pagina: %i\n        Proceso: %i\n        Archivo: %s\n", pagina, PID, archivoAEscribir->path);
+                log_warning(logger,"\n      Se guarda:\n        Pagina:  %i\n        Proceso: %i\n        Archivo: %s\n        ESCRIBE particion: %i\n", pagina, PID, archivoAEscribir->path, particionAmodificar->num_particion);
                 //log_warning(logger,"Se guardo el contenido en el archivo: %s", archivoAEscribir->path);
-                log_info(logger,"Se ESCRIBE sobre la particion: %i", particionAmodificar->num_particion);
+                //log_info(logger,"Se ESCRIBE sobre la particion: %i", particionAmodificar->num_particion);
 
                 int fd = open(archivoAEscribir->path, O_RDWR, (mode_t) 0777);
                 truncate(archivoAEscribir->path, tamanio_swap);
@@ -66,7 +66,7 @@ void escribirContenidoSobreElArchivo(void* mensajeAEscribir, int pagina, int PID
                 munmap(contenidoArchivo, tamanio_swap);
                 close(fd);
 
-                log_info(logger,"Se guardo el contenido correctamente");
+                log_info(logger,"Se guardo el contenido correctamente\n");
 
             }else{
                 log_info(logger,"No se encontro la siguiente particion");
@@ -138,7 +138,7 @@ void leer_contenido(uint32_t PID, uint32_t id_pagina, int conexion, t_log* logge
             char valorsitoParaString = '\0';
             memcpy(contenidoParaLoggear, contenido_a_leer, tamanio_pagina);
             memcpy(contenidoParaLoggear + tamanio_pagina, &(valorsitoParaString),1);
-            log_warning(logger,"Se leyo el contenido del archivo: %s", archivo_swap->path);
+            log_warning(logger,"Se leyo el contenido del archivo: %s y se envio a Memoria", archivo_swap->path);
 //            log_info(logger,"El contenido leido es %s", contenidoParaLoggear);
             free(contenidoParaLoggear);
 

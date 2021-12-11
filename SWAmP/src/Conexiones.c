@@ -9,7 +9,7 @@ int iniciar_servidor_swamp() {
 
 	while(1){
 		int conexion = esperar_cliente(servidor);
-		log_debug(logger_swamp,"Solicitud de memoria entrante");
+		log_debug(logger_swamp,"------ SOLICITUD DE MEMORIA ENTRANTE ------");
 		atender_mensaje_ram(conexion);
 	}
 
@@ -30,7 +30,7 @@ uint32_t recibir_operacion(uint32_t socket_cliente) {
 
 int atender_mensaje_ram(int conexion) {
 
-	t_log* logger_servidor =  log_create("cfg/OperacionesServidor.log","OperacionesServidor",1,LOG_LEVEL_DEBUG);
+	t_log* logger_servidor =  log_create("cfg/OperacionesServidor.log","OperacionesServidor",1,LOG_LEVEL_TRACE);
 
 	t_paquete* paquete = malloc(sizeof(t_paquete));
 
@@ -243,7 +243,11 @@ void atender_solicitud_consulta_espacio(t_buffer* buffer, int conexion, t_log* l
 	memcpy(&(marcos_pedidos), data + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
-	log_info(logger,"El proceso: %d pide verificar si hay espacio para %i",PID, marcos_pedidos);
+	if(marcos_pedidos == 1) {
+		log_trace(logger,"El proceso: %d pide verificar si hay espacio para %i pagina",PID, marcos_pedidos);
+	}else if(marcos_pedidos > 1 || marcos_pedidos == 0) {
+		log_trace(logger,"El proceso: %d pide verificar si hay espacio para %i paginas",PID, marcos_pedidos);
+	}
 
 	valor = cantidad_frames_disponibles_para_proceso(PID, logger);
 

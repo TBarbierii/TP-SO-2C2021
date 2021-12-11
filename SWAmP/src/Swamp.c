@@ -3,7 +3,7 @@
 /* ---------------- SWAmP ---------------- */
 int main(int argc, char *argv[]){
     
-    logger_swamp = log_create("./cfg/logger_swamp.log", "SWAmP", true, LOG_LEVEL_DEBUG);
+    logger_swamp = log_create("./cfg/logger_swamp.log", "SWAmP", true, LOG_LEVEL_TRACE);
 
     if(argc < 2){
         perror("Falta path de archivo de configuración.");
