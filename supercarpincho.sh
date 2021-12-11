@@ -34,4 +34,8 @@ echo -e "\n\n Compilar los carpinchos de prueba\n\n"
 cd $PRUEBACARPINCHO
 make compile
 
+cd
+mkdir dumps
+mkdir dumps/tlb
+
 echo -e "\n\nDale boooooo, dale boooo!\n\n"
