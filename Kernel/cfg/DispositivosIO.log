@@ -1,0 +1,9 @@
+[DEBUG] 13:27:04:346 DispositivosIO/(9865:9865): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 13:27:04:352 DispositivosIO/(9865:9865): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
+[INFO] 13:27:10:892 DispositivosIO/(9865:9873): Agregamos al proceso en bloqueo y en el dispositivo: HUMEDAL
+[INFO] 13:27:10:893 DispositivosIO/(9865:9867): Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:3500
+[INFO] 13:27:14:395 DispositivosIO/(9865:9867): Termino de ejecutar el proceso:1 sobre el dispositivo IO:HUMEDAL, lo ponemos en ready si el nivel de multiprogramacion lo permite
+[DEBUG] 13:30:20:623 DispositivosIO/(10211:10211): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 13:30:20:629 DispositivosIO/(10211:10211): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500
+[DEBUG] 13:30:50:004 DispositivosIO/(10250:10250): Se crea un hilo para ejecutar el Dispositivio IO: PILETA, con tiempo de espera: 2500
+[DEBUG] 13:30:50:010 DispositivosIO/(10250:10250): Se crea un hilo para ejecutar el Dispositivio IO: HUMEDAL, con tiempo de espera: 3500

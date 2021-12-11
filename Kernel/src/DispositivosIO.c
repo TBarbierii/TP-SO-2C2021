@@ -17,7 +17,7 @@ void ejecutarDispositivosIO(){
         dispositivoIO* dispositivoActual= list_remove(listaParaEjecutarHilosDeDispositivos,0);
         /* crear el hilo y bla bla bla */
         pthread_t hiloDeEjecucion;
-        log_debug(loggerDevicesIO, "Se crea un hilo para ejecutar el Dispositivio IO: %s, con tiempo de espera: %d", dispositivoActual->nombre, dispositivoActual->duracionRafaga);
+        log_debug(loggerDevicesIO, "[DISPOSITIVOS-IO] Se crea un hilo para ejecutar el Dispositivio IO: %s, con tiempo de espera: %d", dispositivoActual->nombre, dispositivoActual->duracionRafaga);
         
         pthread_create(&hiloDeEjecucion, NULL, (void *) rutinaDispositivoIO, dispositivoActual);
         pthread_detach(hiloDeEjecucion);
@@ -36,7 +36,7 @@ void rutinaDispositivoIO(dispositivoIO* dispositivo){
     while(1){
         sem_wait(dispositivo->activadorDispositivo);
 
-        log_info(loggerDevicesIO,"Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:%d", dispositivo->duracionRafaga);   
+        log_info(loggerDevicesIO,"[DISPOSITIVOS-IO] Un nuevo proceso entro a solicitar el recurso y tendra que esperar durante:%d", dispositivo->duracionRafaga);   
         /*tiempo que pasa en el bloqueo */
         usleep(dispositivo->duracionRafaga*1000);
 
@@ -45,7 +45,7 @@ void rutinaDispositivoIO(dispositivoIO* dispositivo){
             proceso_kernel* procesoLiberado = list_remove(dispositivo->listaDeProcesosEnEspera, 0);
         pthread_mutex_unlock(dispositivo->mutex);
 
-        log_info(loggerDevicesIO,"Termino de ejecutar el proceso:%d sobre el dispositivo IO:%s, lo ponemos en ready si el nivel de multiprogramacion lo permite", procesoLiberado->pid, dispositivo->nombre);   
+        log_info(loggerDevicesIO,"[DISPOSITIVOS-IO] Termino de ejecutar el proceso:%d sobre el dispositivo IO:%s, lo ponemos en ready si el nivel de multiprogramacion lo permite", procesoLiberado->pid, dispositivo->nombre);   
         ponerEnElReadyIndicado(procesoLiberado);
     }
 
@@ -121,7 +121,7 @@ void agregarProcesoADispositivo(proceso_kernel* proceso, dispositivoIO* device){
     sem_post(signalSuspensionProceso);
     
 
-    log_info(loggerDevicesIO,"Agregamos al proceso en bloqueo y en el dispositivo: %s", device->nombre);
+    log_info(loggerDevicesIO,"[DISPOSITIVOS-IO] Agregamos al proceso en bloqueo y en el dispositivo: %s", device->nombre);
 
     /*alerto que hay un nuevo proceso que quiere ejecutar el Dispositivo IO */
     sem_post(device->activadorDispositivo);

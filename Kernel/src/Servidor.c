@@ -8,12 +8,12 @@ void atenderSolicitudesKernel(){
 
 	int servidor = iniciar_servidor(ipKernel, puertoServer); // devuelve el socket del servidor
 	
-	log_info(logger,"Inicializamos el servidor para que se nos unan los carpinchos");
+	log_debug(logger,"[SERVER] Inicializamos el servidor para que se nos unan los carpinchos");
 
 	while(1){
 		pthread_t cliente;
 		int conexion = esperar_cliente(servidor);
-		log_warning(logger,"Se unio un carpincho");
+		log_warning(logger,"[SERVER] Se unio un carpincho");
 		
 		pthread_create(&cliente,NULL,(void*)atenderMensajeEnKernel,(void *) conexion);
 		pthread_detach(cliente);
@@ -35,11 +35,11 @@ int atenderMensajeEnKernel(int conexion) {
 
 	if(recv(conexion, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
-		log_error(logger,"Fallo en recibir la info de la conexion");
+		log_error(logger,"[SERVER] Fallo en recibir la info de la conexion");
 		return -1;
 	}
 
-	log_debug(logger,"Recibimos la informacion de un carpincho");
+	//log_debug(logger,"[SERVER] Recibimos la informacion de un carpincho");
 //	log_info(logger,"El codigo de operacion es: %d",paquete->codigo_operacion);
 
 	paquete->buffer = malloc(sizeof(t_buffer));
@@ -55,57 +55,57 @@ int atenderMensajeEnKernel(int conexion) {
 
 	switch(paquete->codigo_operacion){
         case INICIALIZAR_ESTRUCTURA:;
-			log_info(logger,"Vamos a inicializar un carpincho");
+			log_info(logger,"[SERVER] Vamos a inicializar un carpincho");
 			inicializarProcesoNuevo(conexion, logger);
 			break;
 
         case CERRAR_INSTANCIA:;
-			log_info(logger,"Vamos a eliminar un carpincho");
+			log_info(logger,"[SERVER] Vamos a eliminar un carpincho");
 			cerrarProceso(paquete->buffer, logger);
         break;
 
 		case INICIAR_SEMAFORO:;
-			log_info(logger,"Vamos a inicializar un semaforo");
+			log_info(logger,"[SERVER] Vamos a inicializar un semaforo");
 			iniciarSemaforo(paquete->buffer, conexion);
 		break;
 
         case SEM_WAIT:;
-			log_info(logger,"Vamos a hacer un wait de un semaforo");
+			log_info(logger,"[SERVER] Vamos a hacer un wait de un semaforo");
 			valorOperacion = hacerWaitDeSemaforo(paquete->buffer, conexion);
         break;
 
         case SEM_SIGNAL:;
-			log_info(logger,"Vamos a hacer un post de un semaforo");
+			log_info(logger,"[SERVER] Vamos a hacer un post de un semaforo");
 			hacerPostDeSemaforo(paquete->buffer, conexion);
         break;
 
         case CERRAR_SEMAFORO:;
-			log_info(logger,"Vamos a cerrar un semaforo");
+			log_info(logger,"[SERVER] Vamos a cerrar un semaforo");
 			cerrarSemaforo(paquete->buffer, conexion);
         break;
 
         case CONECTAR_IO:;
-			log_info(logger,"Vamos a realizar una peticion a un dispositivo IO");
+			log_info(logger,"[SERVER] Vamos a realizar una peticion a un dispositivo IO");
 			valorOperacion = conectarDispositivoIO(paquete->buffer, conexion);
         break;
 
 		case MEMALLOC:;
-			log_info(logger,"Vamos a realizar un Mem Alloc");
+			log_info(logger,"[SERVER] Vamos a realizar un Mem Alloc");
 			memAlloc(paquete->buffer, logger);
 		break;
 
 		case MEMFREE:;
-			log_info(logger,"Vamos a realizar un Mem Free");
+			log_info(logger,"[SERVER] Vamos a realizar un Mem Free");
 			memFree(paquete->buffer, logger);
 		break;
 
 		case MEMREAD:;
-			log_info(logger,"Vamos a realizar un Mem Read");
+			log_info(logger,"[SERVER] Vamos a realizar un Mem Read");
 			memRead(paquete->buffer, logger);
 		break;
 
 		case MEMWRITE:;
-			log_info(logger,"Vamos a realizar un Mem Write");
+			log_info(logger,"[SERVER] Vamos a realizar un Mem Write");
 			memWrite(paquete->buffer, logger);
 		break;
 	}
@@ -140,7 +140,7 @@ void inicializarProcesoNuevo(int conexion ,t_log* logger){
 
 	pthread_mutex_lock(modificarNew);
 		list_add(procesosNew, procesoNuevo);
-		log_info(logger,"Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize");
+		log_info(logger,"[SERVER] Agregamos un carpincho a la lista de news, para que el planificador de largo plazo lo analize");
 	pthread_mutex_unlock(modificarNew);
 
 
@@ -177,11 +177,11 @@ void cerrarProceso(t_buffer* bufferActual,t_log* logger){
 
 	pthread_mutex_lock(modificarExec); //busco al proceso y lo saco
 		proceso_kernel* procesoActual =list_remove_by_condition(procesosExec, buscarProcesoPorPid);
-		log_error(logger,"Sacamos al carpincho de ejecucion. Pid: %d", procesoActual->pid);
+		//log_info(logger,"Sacamos al carpincho de ejecucion. Pid: %d", procesoActual->pid);
 	pthread_mutex_unlock(modificarExec);
 
 	/* le notificamos a memoria que haga todo el trabajo de sacar las cosas de memoria y swap */
-	log_info(logger,"Le notificamos a memoria para que libere la memoria del carpincho: %d", pidProcesoAEliminar);
+	log_info(logger,"[SERVER] Le notificamos a memoria para que libere la memoria del carpincho: %d", pidProcesoAEliminar);
 	finalizarEnMemoria(procesoActual, logger);
 
 
@@ -219,7 +219,7 @@ void informarCierreDeProceso(proceso_kernel* proceso,t_log* loggerActual){
 
 	memcpy(paquete->buffer->stream + desplazamiento, &(valorReturn) , sizeof(uint32_t));
 
-	log_info(loggerActual,"Enviamos que vamos a cerrar el carpincho");
+	
     enviarPaquete(paquete,proceso->conexion);
 
 }
@@ -473,6 +473,8 @@ void inicializarEnMemoria(proceso_kernel* proceso, t_log* logger){
 		proceso->pid = -1;
 	}
 
+	log_error(logger, "[SERVER] El nuevo carpincho que entra al sistema permitido por el grado de multiprogramacion es:%i", proceso->pid);
+
 }
 
 void finalizarEnMemoria(proceso_kernel* proceso, t_log* logger){
@@ -503,12 +505,12 @@ int atenderMensajeDeMemoria(proceso_kernel* proceso) {
 
 	if(recv(proceso->conexionConMemoria, &(paquete->codigo_operacion), sizeof(cod_operacion), 0) < 1){
 		free(paquete);
-		log_error(logger,"Fallo en recibir la info de la conexion");
+		log_error(logger,"[MEMORIA] Fallo en recibir la info de la conexion");
 		return -1;
 	}
 
-	log_info(logger,"Recibimos la informacion de Memoria");
-	log_info(logger,"El codigo de operacion es: %d",paquete->codigo_operacion);
+	log_warning(logger,"Recibimos la informacion de Memoria");
+	//log_info(logger,"El codigo de operacion es: %d",paquete->codigo_operacion);
 
 	paquete->buffer = malloc(sizeof(t_buffer));
 	recv(proceso->conexionConMemoria, &(paquete->buffer->size), sizeof(uint32_t), 0);
@@ -544,7 +546,7 @@ int atenderMensajeDeMemoria(proceso_kernel* proceso) {
 			notificacionSuspensionProceso(proceso, paquete->buffer, logger);
 			break;
 		default:;
-		log_info(logger,"No se metio por ningun lado wtf");
+		log_info(logger,"[MEMORIA] No se metio por ningun lado wtf");
 		break;
 	}
 	
@@ -807,7 +809,7 @@ void notificacionMemAlloc(proceso_kernel* proceso, t_buffer* buffer, t_log* logg
 
     memcpy(paquete->buffer->stream + desplazamiento2, &(valorDireccion) , sizeof(int32_t));
     enviarPaquete(paquete, proceso->conexion);
-	log_info(logger,"Se pudo establecer la conexion con memoria y se realizo un Mem Alloc");
+	log_info(logger,"[MEMORIA] Se pudo establecer la conexion con memoria y se realizo un Mem Alloc");
 
 }
 
@@ -827,7 +829,7 @@ void notificacionMemFree(proceso_kernel* proceso, t_buffer* buffer, t_log* logge
 
     memcpy(paquete->buffer->stream + desplazamiento2, &(valor) , sizeof(uint32_t));
     enviarPaquete(paquete, proceso->conexion);
-	log_info(logger,"Se pudo establecer la conexion con memoria y se realizo un Mem Free");
+	log_info(logger,"[MEMORIA] Se pudo establecer la conexion con memoria y se realizo un Mem Free");
 
 }
 
@@ -865,7 +867,7 @@ void notificacionMemRead(proceso_kernel* proceso, t_buffer* buffer, t_log* logge
 	if(size != 0){
 		free(contenido);
 	}
-	log_info(logger,"Se pudo establecer la conexion con memoria y se realizo un Mem Read");
+	log_info(logger,"[MEMORIA] Se pudo establecer la conexion con memoria y se realizo un Mem Read");
 
 }
 
@@ -885,7 +887,7 @@ void notificacionMemWrite(proceso_kernel* proceso, t_buffer* buffer, t_log* logg
     memcpy(paquete->buffer->stream + desplazamiento2, &(valor) , sizeof(uint32_t));
     enviarPaquete(paquete, proceso->conexion);
 
-	log_info(logger,"Se pudo establecer la conexion con memoria y se realizo un Mem Write");
+	log_info(logger,"[MEMORIA] Se pudo establecer la conexion con memoria y se realizo un Mem Write");
 
 
 }
@@ -897,9 +899,9 @@ void notificacionSuspensionProceso(proceso_kernel* proceso, t_buffer* buffer, t_
 	memcpy(&(valor), stream+desplazamiento, sizeof(uint32_t));
 	
 	if(valor){
-		log_info(logger,"Se pudo establecer la conexion con memoria y se suspendio el proceso");
+		log_info(logger,"[MEMORIA] Se pudo establecer la conexion con memoria y se suspendio el proceso");
 	}else{
-		log_info(logger,"Se pudo establecer la conexion con memoria y no se pudo suspender el proceso");
+		log_error(logger,"[MEMORIA] Se pudo establecer la conexion con memoria y no se pudo suspender el proceso");
 	}
 	
 
@@ -930,10 +932,10 @@ int notificacionFinalizacionMemoria(t_buffer* buffer,t_log* logger){
 	memcpy(&(valor), data + desplazamiento, sizeof(uint32_t));
 
 	if(valor == 1){
-		log_info(logger, "Se pudo realizar toda la finalizacion en Memoria y SWAmP");
+		log_info(logger, "[MEMORIA] Se pudo realizar toda la finalizacion en Memoria y SWAmP");
 	}else
 	{
-		log_error(logger,"Algo fallo en la finalizacion en Memoria y SWAmP");
+		log_error(logger,"[MEMORIA] Algo fallo en la finalizacion en Memoria y SWAmP");
 	}
 	
 
@@ -961,7 +963,7 @@ void notificarSuspensionDeProceso(proceso_kernel* proceso, t_log* logger){
 
 int validacionConexionConMemoria(proceso_kernel* proceso, t_log* logger){
 	if(proceso->conexionConMemoria == -1){
-		log_error(logger,"La conexion con la Memoria fallo");
+		log_error(logger,"[MEMORIA] La conexion con la Memoria fallo");
 		return 0;
 	}
 	return 1;

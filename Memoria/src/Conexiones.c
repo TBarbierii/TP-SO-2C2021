@@ -376,6 +376,7 @@ int32_t recibir_memread(int socket_cliente, t_log* logger) {
 	};
 	t_pagina* pagina = list_find(capybara->tabla_de_paginas, (void*)buscarPagina);
 
+	log_debug(logger, "[MATE_MEMREAD] El carpincho %i pide leer la direcLogica %i. Tamanio %i", carpincho, direccion_logica, tamanio);
 
 	void* leido ;
 
@@ -386,7 +387,6 @@ int32_t recibir_memread(int socket_cliente, t_log* logger) {
 		 leido = leer_memoria(direccion_logica, carpincho, tamanio);
 	}
 
-	log_debug(logger, "[MATE_MEMREAD] El carpincho %i pide leer la direcLogica %i. Tamanio %i", carpincho, direccion_logica, tamanio);
 
 	t_paquete *paquete = crear_paquete(MEMREAD);
 

@@ -12,13 +12,13 @@ void rutinaDeProceso(){
         pthread_mutex_lock(modificarReady);
             replanificacion(logger); //en este momento replanifico y ordeno la lista de readys segun el criterio seleccionado
             proceso_kernel* procesoListoParaEjecutar = list_remove(procesosReady, 0);
-            log_debug(logger, "Se saca un carpincho de la lista de readys para ejecutar. Carpincho: %d, de estimacionActual:%f segundos, y de responseRatio:%f",procesoListoParaEjecutar->pid, procesoListoParaEjecutar->rafagaEstimada, procesoListoParaEjecutar->responseRatio);
+            log_debug(logger, "\n[CORTO-PLAZO] Se saca un carpincho de la lista de readys para ejecutar. Carpincho: %d, de estimacionActual:%f segundos, y de responseRatio:%f",procesoListoParaEjecutar->pid, procesoListoParaEjecutar->rafagaEstimada, procesoListoParaEjecutar->responseRatio);
         pthread_mutex_unlock(modificarReady);
     
         //lo ponemos en la lista de exec
         pthread_mutex_lock(modificarExec);
             list_add(procesosExec, procesoListoParaEjecutar);
-            log_debug(logger, "Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: %d", procesoListoParaEjecutar->pid);
+            log_warning(logger, "[CORTO-PLAZO] Se agrega un nuevo carpincho a la lista de carpinchos en ejecucion. Carpincho: %d", procesoListoParaEjecutar->pid);
         pthread_mutex_unlock(modificarExec);
         
 
@@ -32,7 +32,7 @@ void rutinaDeProceso(){
 
         //aca recien le vamos a notificar al proceso que se inicializa y su id, es decir cuando esta en ejecucion
         if(procesoListoParaEjecutar->vuelveDeBloqueo == NO_BLOQUEADO){
-                log_debug(logger, "Se envia info del pid a Matelib");
+                log_debug(logger, "[THREAD-CPU] Se envia info del pid a Matelib");
                 enviarInformacionAdministrativaDelProceso(procesoListoParaEjecutar);
         }
 
@@ -46,13 +46,13 @@ void rutinaDeProceso(){
             if(procesoListoParaEjecutar->vuelveDeBloqueo == BLOCK_IO){
 
                 //le avisamos que se pudo realizar la IO
-                log_info(logger, "Le avisamos al proceso que se pudo ejecutar el IO correctamente");
+                log_info(logger, "[THREAD-CPU] Le avisamos al proceso que se pudo ejecutar el IO correctamente");
                 int valor = 1;
                 avisarconexionConDispositivoIO(procesoListoParaEjecutar->conexion, valor);
 
             }else if (procesoListoParaEjecutar->vuelveDeBloqueo == BLOCK_SEM){
                 //le avisamos que se pudo realizar el WAIT
-                log_info(logger, "Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente");
+                log_info(logger, "[THREAD-CPU] Le avisamos al proceso que se pudo ejecutar el SEM_WAIT correctamente");
                 int valor = 1;
                 avisarWaitDeSemaforo(procesoListoParaEjecutar->conexion, valor);
             }
@@ -60,13 +60,13 @@ void rutinaDeProceso(){
 
             procesoListoParaEjecutar->vuelveDeBloqueo = NO_BLOQUEADO;
             
-            log_warning(logger, "Se ejecuto tarea de conexion");
+            log_info(logger, "[THREAD-CPU] Se ejecuto tarea de conexion");
             int codigoOperacion = atenderMensajeEnKernel(procesoListoParaEjecutar->conexion);
-//            log_info(logger, "La tarea realizada fue: %d", codigoOperacion);
+
 
             if(rompoElHiloSegunElCodigo(codigoOperacion) == 1){
 
-                log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo");
+                log_info(logger, "[THREAD-CPU] Se realizo una operacion que termina con la ejecucion del Carpincho por el momento para bloquearlo");
                 //clock_t end = clock();
                 clock_gettime(CLOCK_REALTIME, &end);
                 long seconds = end.tv_sec - begin.tv_sec;
@@ -74,7 +74,7 @@ void rutinaDeProceso(){
                 double elapsed = seconds + nanoseconds*1e-9;
 
                 //double tiempoPasado = (end - start) / CLOCKS_PER_SEC;
-                log_info(logger,"La ultima rafaga ejecutada del proceso es de: %f",elapsed);
+                log_info(logger,"[THREAD-CPU] La ultima rafaga ejecutada del proceso es de: %f\n",elapsed);
                 procesoListoParaEjecutar->ultimaRafagaEjecutada = elapsed;
 
                 calcularEstimacion(procesoListoParaEjecutar); //aaca calculo la ultima estimacion nueva en base a la ultima rafaga ejecutada
@@ -83,7 +83,7 @@ void rutinaDeProceso(){
 
             }else if(rompoElHiloSegunElCodigo(codigoOperacion) == 2){
                 
-                log_info(logger, "Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente");
+                log_info(logger, "[THREAD-CPU] Se realizo una operacion que termina con la ejecucion del Carpincho y los sacamos definitivamente\n");
                 sem_post(nivelMultiprocesamiento); //aumento el grado de multiprogramacion y multiprocesamiento
 	            sem_post(nivelMultiProgramacionGeneral);
                 break;
@@ -103,8 +103,8 @@ void rutinaDeProceso(){
 
 void planificadorCortoPlazo(){
 
-    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 0, LOG_LEVEL_DEBUG);
-    log_debug(logger, "El algoritmo utilizado para planificar en el Corto Plazo sera: %s",algoritmoPlanificacion);
+    t_log* logger = log_create("cfg/PlanificadorCortoPlazoActual.log","PlanificadorCortoPlazo", 1, LOG_LEVEL_DEBUG);
+    log_debug(logger, "[CORTO-PLAZO] El algoritmo utilizado para planificar en el Corto Plazo sera: %s",algoritmoPlanificacion);
     inicializarHilosCPU();
     while(1){
     
@@ -146,13 +146,13 @@ int rompoElHiloSegunElCodigo(int codigo){
 void replanificacion(t_log* logger){
 
     if(strcmp(algoritmoPlanificacion, "HRRN") == 0){
-        log_debug(logger,"Se replanifica con HRRN");
+        log_debug(logger,"[CORTO-PLAZO] Se replanifica con HRRN");
         aplicarHRRN();
     }else if(strcmp(algoritmoPlanificacion, "SJF") == 0){
-        log_debug(logger,"SE replanifica con SJF");
+        log_debug(logger,"[CORTO-PLAZO] SE replanifica con SJF");
         aplicarSJF();
     }else{
-        log_error(logger,"No se puede replanificar porque no hay un algoritmo identificado");
+        log_error(logger,"[CORTO-PLAZO] No se puede replanificar porque no hay un algoritmo identificado");
     }
 
 }
@@ -175,7 +175,7 @@ bool comparadorDeRafagas(proceso_kernel* unCarpincho, proceso_kernel* otroCarpin
 
 void mostrarRafagaEstimada(proceso_kernel* unCarpincho){
     t_log* logger =log_create("cfg/PlanificadorCortoPlazoActual.log","Replanificacion", 1, LOG_LEVEL_DEBUG);
-    log_info(logger,"El proceso:%d tiene una rafaga de:%f",unCarpincho->pid, unCarpincho->rafagaEstimada);
+    log_info(logger,"[CORTO-PLAZO] El proceso:%d tiene una rafaga de:%f",unCarpincho->pid, unCarpincho->rafagaEstimada);
     log_destroy(logger);  
 }
 
@@ -218,7 +218,7 @@ bool comparadorResponseRatio(proceso_kernel* unCarpincho, proceso_kernel* otroCa
 
 void mostrarResponseRatio(proceso_kernel* unCarpincho){
     t_log* logger=log_create("cfg/PlanificadorCortoPlazoActual.log","Replanificacion", 1, LOG_LEVEL_DEBUG);
-    log_info(logger,"El proceso:%d tiene un ratio de:%f",unCarpincho->pid, unCarpincho->responseRatio);
+    log_info(logger,"[CORTO-PLAZO] El proceso:%d tiene un ratio de:%f",unCarpincho->pid, unCarpincho->responseRatio);
     log_destroy(logger);  
 }
 

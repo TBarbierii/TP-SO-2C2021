@@ -23,7 +23,7 @@ int crearSemaforo(char* nombreSem, unsigned int valorSem){
         semaforo* semaforoNuevo = malloc(sizeof(semaforo));
         semaforoNuevo->nombre = nombreSem;
         semaforoNuevo->valor = valorSem;
-        log_info(logger,"Se ha creado un nuevo semaforo de nombre: %s y valor: %u",nombreSem, valorSem);
+        log_info(logger,"[SEMAFOROS] Se ha creado un nuevo semaforo de nombre: %s y valor: %u",nombreSem, valorSem);
         semaforoNuevo->listaDeProcesosEnEspera = list_create();
         //le vamos a dar un mutex al semaforo para agregar y sacar elementos de la su lista de bloqueados
         semaforoNuevo->mutex = malloc(sizeof(pthread_mutex_t));
@@ -39,7 +39,7 @@ int crearSemaforo(char* nombreSem, unsigned int valorSem){
         log_destroy(logger);
         return 1;
     }else{
-        log_warning(logger,"Se esta intentando crear un semaforo: %s pero ya esta creado", nombreSem);
+        log_warning(logger,"[SEMAFOROS] Se esta intentando crear un semaforo: %s pero ya esta creado", nombreSem);
         log_destroy(logger);
         free(nombreSem);
         return 0;
@@ -67,7 +67,7 @@ int destruirSemaforo(char* nombreSem){
     pthread_mutex_unlock(controladorSemaforos);
 
     if(semaforoNuevo != NULL){
-        log_info(logger,"Se va a destruir un semaforo llamado: %s", nombreSem);    
+        log_info(logger,"[SEMAFOROS] Se va a destruir un semaforo llamado: %s", nombreSem);    
         /*aca deberiamos sacar a todos los elementos que se encuentran bloqueados en el semaforo y ponerlos en ready */
         //eso lo tengo con una funcion quiza que lo ponga en ready si estaba en blocked, y en suspended- reday si estaba en suspended-blocked
         list_destroy(semaforoNuevo->listaDeProcesosEnEspera);
@@ -79,7 +79,7 @@ int destruirSemaforo(char* nombreSem){
         log_destroy(logger);
         return 1;
     }else{
-        log_warning(logger,"Se esta intentando destruir un semaforo: %s, el cual no existe", nombreSem);
+        log_warning(logger,"[SEMAFOROS] Se esta intentando destruir un semaforo: %s, el cual no existe", nombreSem);
         log_destroy(logger);
         return 0;
     }
@@ -115,7 +115,7 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
 
         semaforoActual->valor++;
 
-        log_info(logger,"El proceso:%d realizo un signal del semaforo: %s y el valor se incremento a: %d",pid, nombreSem, semaforoActual->valor);
+        log_info(logger,"[SEMAFOROS] El proceso:%d realizo un signal del semaforo: %s y el valor se incremento a: %d",pid, nombreSem, semaforoActual->valor);
 
         bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
                 if(procesoBuscado->pid == pid){
@@ -144,7 +144,7 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
             pthread_mutex_unlock(semaforoActual->mutex);
                 
 
-            log_info(logger,"Se libera el proceso:%d, de la lista de espera del semaforo: %s", pid, nombreSem);
+            log_info(logger,"[SEMAFOROS] Se libera el proceso:%d, de la lista de espera del semaforo: %s", pid, nombreSem);
 
             /* sacamos al proceso de la lista de bloqueados */
             ponerEnElReadyIndicado(procesoLiberado);
@@ -154,7 +154,7 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
 
         }else{ // si no tiene procesos esperando, solo notificamos que se cambios el valor del semaforo
             pthread_mutex_unlock(semaforoActual->mutex);
-            log_info(logger,"Como el semaforo: %s, no tiene procesos esperando solo se aumenta su valor", nombreSem);
+            log_info(logger,"[SEMAFOROS] Como el semaforo: %s, no tiene procesos esperando solo se aumenta su valor", nombreSem);
             
         }
 
@@ -163,7 +163,7 @@ int realizarSignalDeSemaforo(char* nombreSem, int pid){
     
     }else{ //si no existe avisamos que se quiso hacer un acmbio sobre un semaforo que no existe
         
-        log_warning(logger,"El proceso:%d, esta intentando hacer un signal de un semaforo: %s, el cual no existe", pid, nombreSem);
+        log_warning(logger,"[SEMAFOROS] El proceso:%d, esta intentando hacer un signal de un semaforo: %s, el cual no existe", pid, nombreSem);
         log_destroy(logger);
         return 0;
 
@@ -197,7 +197,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
 
         semaforoActual->valor--;
 
-        log_info(logger,"El proceso:%d realizo un wait del semaforo: %s y el valor decrecio a: %d",pid, nombreSem, semaforoActual->valor);
+        log_info(logger,"[SEMAFOROS] El proceso:%d realizo un wait del semaforo: %s y el valor decrecio a: %d",pid, nombreSem, semaforoActual->valor);
 
         bool buscarProcesoConPid(proceso_kernel* procesoBuscado){
             return procesoBuscado->pid == pid;
@@ -217,7 +217,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
             pthread_mutex_unlock(semaforoActual->mutex);
 
 
-            log_info(logger,"Se agrega el proceso con Pid:%d en bloqueado, y se agrega en la lista de espera del semaforo: %s", pid, nombreSem);
+            log_info(logger,"[SEMAFOROS] Se agrega el proceso con Pid:%d en bloqueado, y se agrega en la lista de espera del semaforo: %s", pid, nombreSem);
             
 
             /* agregamos al proceso en la lista de bloqueados */
@@ -241,7 +241,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
                 //le asignamos que tiene el recurso como retenido
                 list_add(procesoAbloquear->listaRecursosRetenidos, semaforoActual);
             pthread_mutex_unlock(semaforoActual->mutex);
-            log_info(logger,"Se ejecuto un wait sobre un semaforo:%s, pero como el valor no era menor a 1, entonces el proceso:%d no se bloqueo", nombreSem, pid);
+            log_info(logger,"[SEMAFOROS] Se ejecuto un wait sobre un semaforo:%s, pero como el valor no era menor a 1, entonces el proceso:%d no se bloqueo", nombreSem, pid);
             
 
             log_destroy(logger);
@@ -250,7 +250,7 @@ int realizarWaitDeSemaforo(char* nombreSem, int pid){
     
     }else{ //si no existe avisamos que se quiso hacer un cambio sobre un semaforo que no existe
         
-        log_warning(logger,"Se esta intentando hacer un wait de un semaforo: %s, el cual no existe", nombreSem);
+        log_warning(logger,"[SEMAFOROS] Se esta intentando hacer un wait de un semaforo: %s, el cual no existe", nombreSem);
         log_destroy(logger);
         return 0;
 

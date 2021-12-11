@@ -214,6 +214,8 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
         ultimaPagina->uso = true;
         pthread_mutex_unlock(swap);
 
+        log_info(loggerServidor, "Se escribio la memoria correctamente. Carpincho %i. DirecLogica %i. Tamanio %i", carpincho, direccion_logica, tam);
+
     }else{
 
         pthread_mutex_lock(memoria);
@@ -225,6 +227,8 @@ uint32_t escribir_memoria(uint32_t carpincho ,uint32_t direccion_logica, void* c
         pagina->ultimoUso = clock();
         pagina->uso = true;
         pthread_mutex_unlock(tabla_paginas);
+
+        log_info(loggerServidor, "Se escribio la memoria correctamente. Carpincho %i. DirecLogica %i. Tamanio %i", carpincho, direccion_logica, tam);
 
         return 0;
     }
@@ -328,6 +332,7 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
         ultimaPagina->uso = true;
         pthread_mutex_unlock(tabla_paginas);
 
+
     }else{
         
         pthread_mutex_lock(memoria);
@@ -340,7 +345,8 @@ void* leer_memoria(uint32_t DL, uint32_t carpincho, uint32_t tam){
         pthread_mutex_unlock(tabla_paginas);
     }
      
- 
+    log_info(loggerServidor, "Se leyo la memoria correctamente. Carpincho %i. DirecLogica %i. Tamanio %i", carpincho, DL, tam);
+    
     return leido;
 
 }
