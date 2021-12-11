@@ -247,7 +247,7 @@ bool procesoEnDeadlock(proceso_kernel* proceso, proceso_kernel* proceso_apuntado
 
 
 void ejecutarAlgoritmoDeadlock(){
-    t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_DEBUG);
+    t_log* logger = log_create("cfg/Deadlock.log","Deadlock",1,LOG_LEVEL_TRACE);
     while(1){
 
         usleep(tiempoDeadlock*1000);
@@ -339,7 +339,7 @@ void ejecutarAlgoritmoDeadlock(){
                 
                 //sacamos al proceso de mayor id, que esta al comienzo
                 proceso_kernel* procesoASacarPorDeadlock = list_remove(procesosEnDEADLOCK, 0);
-                log_info(logger,"[DEADLOCK] El proceso que se sacara por el Deadlock es el :%d\n",procesoASacarPorDeadlock->pid);
+                log_trace(logger,"[DEADLOCK] El proceso que se sacara por el Deadlock es el :%d\n",procesoASacarPorDeadlock->pid);
                 desalojarSemaforosDeProceso(procesoASacarPorDeadlock);
                 finalizarProcesoPorDeadlock(procesoASacarPorDeadlock);
                 
@@ -452,9 +452,9 @@ t_list* procesosQueEstanReteniendoYEsperando(t_log* loggerActual){
 
     if(listaFiltradaFinal != NULL) {
         int sizeBloqueados = list_size(listaFiltradaFinal);
-        log_info(loggerActual,"[DEALOCK] La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d\n", sizeBloqueados);
+        log_info(loggerActual,"[DEADLOCK] La cantidad de procesos agarrados para el deadlock que se encuentran bloqueados, reteniendo y esperando son: %d\n", sizeBloqueados);
     }else{
-        log_info(loggerActual,"[DEALOCK] La cantidad de procesos agarrados para el deadlock es 0");        
+        log_info(loggerActual,"[DEADLOCK] La cantidad de procesos agarrados para el deadlock es 0");        
     }
 
     list_destroy(listaFiltrada);
