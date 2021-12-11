@@ -48,7 +48,7 @@ void inicializarTodo(){
     
     inicializarListas();
 
-    logsObligatorios =  log_create("cfg/logsObligatorios.log","Log",1,LOG_LEVEL_INFO);
+    logsObligatorios =  log_create("cfg/logsObligatorios.log","Log",1,LOG_LEVEL_TRACE);
     loggerServidor =  log_create("cfg/Servidor.log","ServidorYSwamp",1,LOG_LEVEL_DEBUG);
     loggerMemalloc =  log_create("cfg/Memalloc.log","Memalloc",1,LOG_LEVEL_INFO);
 

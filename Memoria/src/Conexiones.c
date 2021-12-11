@@ -291,6 +291,8 @@ uint32_t recibir_suspencion(conexion, logger){
 
 	free(buffer);
 
+	log_debug(logger, "[SUSPENSION] EL carpincho: %i pide suspender", pid);
+
 	suspender_proceso(pid);
 
 }

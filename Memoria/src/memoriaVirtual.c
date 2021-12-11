@@ -52,7 +52,7 @@ t_marco* reemplazarPagina(t_carpincho* carpincho){
 			return victima->id_pagina == pag->id_pagina && victima->id_carpincho ==  pag->id_carpincho;
 		};
 		list_remove_by_condition(TLB, (void*)quitarDeTLB);// se quita directamente la pagina que se mando a swap.
-		log_warning(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
+		log_trace(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", victima->id_carpincho, victima->id_pagina, victima->marco->id_marco);
 		pthread_mutex_unlock(TLB_mutex);
 		list_destroy(paginas_a_reemplazar); 
 		free(contenido);
@@ -296,25 +296,25 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 
 				list_remove_by_condition(TLB, (void*)buscarPag);
 
-				log_warning(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
+				log_trace(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
 
 			}
 
 			list_add(TLB, pagina);
 			pthread_mutex_unlock(TLB_mutex);
 
-			log_warning(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
+			log_trace(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 
 
 		}else if(strcmp(algoritmoReemplazoTLB, "FIFO") == 0){
 
 			t_pagina* pag = list_remove(TLB,0);
-			log_warning(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
+			log_trace(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
 
 			list_add(TLB, pagina);
 			pthread_mutex_unlock(TLB_mutex);
 
-			log_warning(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
+			log_trace(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 
 		}
 
@@ -325,7 +325,7 @@ void algoritmo_reemplazo_TLB(t_pagina* pagina){
 		}
 		pthread_mutex_unlock(TLB_mutex);
 		
-		log_warning(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
+		log_trace(logsObligatorios, "[TLB] NuevaEntrada: PID: %i	Página: %i	Marco: %i", pagina->id_carpincho, pagina->id_pagina, pagina->marco->id_marco);
 
 	}else{
 		pthread_mutex_unlock(TLB_mutex);
