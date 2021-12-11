@@ -247,11 +247,13 @@ void consolidar_allocs(int desplazamientoHeapLiberado, t_pagina* pagina, int32_t
 		
 		void destructor(t_pagina* pag){
 
-
+			pthread_mutex_lock(TLB_mutex);
 			bool quitarDeTLB(t_pagina* p){
 				return pag->id_pagina == p->id_pagina && pag->id_carpincho ==  p->id_carpincho;
 			};
 			list_remove_by_condition(TLB, (void*)quitarDeTLB);// se quita directamente la pagina que se mando a swap.
+			log_trace(logsObligatorios, "[TLB] Victima: PID: %i	Página: %i	Marco: %i", pag->id_carpincho, pag->id_pagina, pag->marco->id_marco);
+			pthread_mutex_unlock(TLB_mutex);
 
 			pag->marco->estaLibre = true;
 			pag->marco->proceso_asignado = -1;
