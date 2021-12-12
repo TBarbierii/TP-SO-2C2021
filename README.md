@@ -1,1 +1,3 @@
-# tp-2021-2c-UCM-20-SO
+# TP-SO-2C2021
+
+Trabajo práctico de Sistemas Operativos, materia de tercer año de la carrera de Ingeniería en Sistemas de Información de la Universidad Tecnológica Nacional Facultad Regional Buenos Aires.
